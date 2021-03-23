@@ -1,13 +1,11 @@
 # Module 8 – Advance Cloud Defense
 
-<p align="left"><img src="../Images/asc-labs-advanced.gif?raw=true"></p>
-
-#### 🎓 Level: 300 (Advanced)
-#### ⌛ Estimated time to complete this lab: 60 minutes
 
 ### Exercise 1: Using JIT to reduce attack surface
 
-1.	From Security Center sidebar, click on **Azure Defender**.
+1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
+
+2.	From Security Center sidebar, click on **Azure Defender**.
 
 2.	On the Advanced protection part at the bottom, click on **Just-in-time VM access** (You should see 2 unprotected status).
 
