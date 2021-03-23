@@ -1,18 +1,14 @@
 # Module 1 – Preparing the Environment
 
-<p align="left"><img src="../Images/asc-labs-beginner.gif?raw=true"></p>
-
-#### 🎓 Level: 100 (Beginner)
-#### ⌛ Estimated time to complete this lab: 30 minutes
 
 ### Exercise 1: Log in to Azure Portal (as admin)
 
-## Instructions 
+#### Instructions 
 
  
  
 
-1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab. 
+1. On your browser a virtual machine (JumpVM) is loaded. Use this virtual machine throughout the workshop to perform the lab. 
 
  
  
@@ -26,7 +22,7 @@
 
   
 
-## Login to Azure Portal 
+#### Login to Azure Portal 
 
  
  
