@@ -3,9 +3,9 @@
 
 ### Exercise 1: Using JIT to reduce attack surface
 
-1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
+1.	If you are not already logged in to the https://portal.azure.com, click on the Azure Portal icon on the JumpVM on the left and login with the Azure credentials provided in the Lab Environment output page.
 
-2.	From Security Center sidebar, click on **Azure Defender**.
+2.	From the Security Center sidebar, click on **Azure Defender**.
 
 2.	On the Advanced protection part at the bottom, click on **Just-in-time VM access** (You should see 2 unprotected status).
 
@@ -88,4 +88,4 @@ It maps the current state of these items with the state during the previous scan
 
 ### Summary
 
-  * In this lab you have completed Expolring **Security Center** features **Using JIT to reduce attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**
+  * In this module, you have completed exploring different **Security Center** features - **Using JIT to reduce attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**. You have reached the end of the lab.
