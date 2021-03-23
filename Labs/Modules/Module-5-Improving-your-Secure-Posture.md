@@ -1,9 +1,9 @@
 # Module 5 - Improving your Secure Posture
 
 
-## Objectives
+## Overview
 
-This exercise guides you how to use the vulnerability assessment for virtual machines and container, along with automation and data query.
+This module will walk you through how to use the vulnerability assessment for Virtual Machines and Containers, along with working with Workflow Automation and data query.
 
 ### Exercise 1: Vulnerability assessment for VMs
 
@@ -273,4 +273,6 @@ More details on the [official article](https://docs.microsoft.com/en-us/azure/se
 
 ### Summary
 
-  * In this lab you have completed Expolring **Security Center** features **Vulnerability assessment for VMs**, **Vulnerability assessment for Containers**, **Automate recommendations with workflow automation** and **Accessing your secure score via ARG**
+  * In this module, you have completed exploring more **Security Center** features - **Vulnerability assessment for VMs**, **Vulnerability assessment for Containers**, **Automate recommendations with workflow automation** and **Accessing your secure score via ARG**.
+
+Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
