@@ -3,7 +3,7 @@
 
 ## Objectives
 
-In this exercise, you will understand how to configure the continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings. Moreover, you will learn how to enable the integration between Azure Security Center and Azure Sentinel.
+In this module, you will understand how to configure the continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings. Moreover, you will learn how to enable the integration between Azure Security Center and Azure Sentinel.
 
 ### Exercise 1: Using continuous export
 
@@ -81,4 +81,6 @@ In this exercise, you will understand how to configure the continuous export for
 
 ### Summary
 
-  * In this lab you have completed configuring continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings and enable the integration between Azure Security Center and Azure Sentinel
+In this lab you have completed configuring continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings and enable the integration between Azure Security Center and Azure Sentinel.
+
+Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
