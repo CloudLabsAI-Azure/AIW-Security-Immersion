@@ -1,16 +1,14 @@
 # Module 4 - Regulatory Compliance
 
-<p align="left"><img src="../Images/asc-labs-intermediate.gif?raw=true"></p>
-
-#### 🎓 Level: 200 (Intermediate)
-#### ⌛ Estimated time to complete this lab: 60 minutes
 
 ## Objectives
 This exercise guides you through the current Security Center policies, based on Azure Policy, and shows you where to enable or disable Security Center polices.
 
 ### Exercise 1: Understanding Regulatory Compliance dashboard
 
-1.	From **Security Center main dashboard**, select **Regulatory Compliance** tile (this pilar is also available from the sidebar).
+1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
+
+2.	From **Security Center main dashboard**, select **Regulatory Compliance** tile (this pilar is also available from the sidebar).
 
 2.	Regulatory Compliance dashboard opens. On this page, you can see the compliance standards currently assigned to your subscription.
 

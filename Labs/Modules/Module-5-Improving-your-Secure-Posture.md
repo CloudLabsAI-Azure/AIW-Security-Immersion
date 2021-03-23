@@ -1,11 +1,8 @@
 # Module 5 - Improving your Secure Posture
 
-<p align="left"><img src="../Images/asc-labs-advanced.gif?raw=true"></p>
-
-#### 🎓 Level: 300 (Advanced)
-#### ⌛ Estimated time to complete this lab: 60 minutes
 
 ## Objectives
+
 This exercise guides you how to use the vulnerability assessment for virtual machines and container, along with automation and data query.
 
 ### Exercise 1: Vulnerability assessment for VMs
@@ -16,7 +13,9 @@ When a machine is found that doesn't have vulnerability assessment solution depl
 
 **Explore vulnerability assessment recommendations:**
 
-1.	From Security Center sidebar, click on **Recommendations**.
+1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
+
+2.	From Security Center sidebar, click on **Recommendations**.
 
 2.	Expend **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
 

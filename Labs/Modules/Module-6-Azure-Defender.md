@@ -1,18 +1,17 @@
 # Module 6 - Azure Defender
 
-<p align="left"><img src="../Images/asc-labs-advanced.gif?raw=true"></p>
-
-#### 🎓 Level: 300 (Advanced)
-#### ⌛ Estimated time to complete this lab: 60 minutes
 
 ## Objectives
+
 This exercise guides you how
 
 ### Exercise 1: Alert validation
 
 Here let’s cover the new Alert Simulation, which should be out in the first week of December
 
-1.	Open the preview page of security alerts by using this [link](https://portal.azure.com/?feature.argsecurityalerts=true&feature.customportal=false#blade/Microsoft_Azure_Security/SecurityMenuBlade/7)
+1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
+
+2.	Open the preview page of security alerts by using this [link](https://portal.azure.com/?feature.argsecurityalerts=true&feature.customportal=false#blade/Microsoft_Azure_Security/SecurityMenuBlade/7)
 
 2.	Create an alert simulation for VM:
     - On Security alerts page, click on **Sample alerts** button.

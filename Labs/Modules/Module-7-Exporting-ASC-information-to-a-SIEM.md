@@ -1,54 +1,53 @@
 # Module 7 – Exporting ASC information to a SIEM
 
-<p align="left"><img src="../Images/asc-labs-intermediate.gif?raw=true"></p>
-
-#### 🎓 Level: 200 (Intermediate)
-#### ⌛ Estimated time to complete this lab: 30 minutes
 
 ## Objectives
+
 In this exercise, you will understand how to configure the continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings. Moreover, you will learn how to enable the integration between Azure Security Center and Azure Sentinel.
 
 ### Exercise 1: Using continuous export
 
-1.	On Security Center’s sidebar, click on **Pricing & settings**.
+1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
 
-2.	Select **Azure subscription 1**.
+2.	On Security Center’s sidebar, click on **Pricing & settings**.
+
+3.	Select **Azure subscription 1**.
 
 ![Pricing & settings page](../Images/asc-pricing-settings-sub.gif?raw=true)
 
-3.	From the Azure Defender plans’ sidebar, click on **Continuous export**.
+4.	From the Azure Defender plans’ sidebar, click on **Continuous export**.
 
-4.	Here you can configure streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
+5.	Here you can configure streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
 
-5.	Select the **Log Analytics workspace** option.
+6.	Select the **Log Analytics workspace** option.
 
-6.	On the Exported data types, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
+7.	On the Exported data types, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
 
-7.	On the Export configuration, select a resource group: *asclabs*
+8.	On the Export configuration, select a resource group: *asclabs*
 
-8.	On the Export target, select the target Log Analytics workspace: *asclab-la-xxx*
+9.	On the Export target, select the target Log Analytics workspace: *asclab-la-xxx*
 
-9.	Click on the **Save** button on the top menu.
+10.	Click on the **Save** button on the top menu.
 
 ![Continuous export settings page](../Images/asc-continuous-export-settings.gif?raw=true)
 
 > Note: Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
-10.	On the Azure portal, navigate to **Log Analytics workspaces** service or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
+11.	On the Azure portal, navigate to **Log Analytics workspaces** service or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
-11.	Click on the **asclab-la-xxx** workspace.
+12.	Click on the **asclab-la-xxx** workspace.
 
-12.	From the workspace’s sidebar, click on the **Logs** button.
+13.	From the workspace’s sidebar, click on the **Logs** button.
 
-13.	On the welcome page, click on the **Get Started** button and then **close the Queries window**.
+14.	On the welcome page, click on the **Get Started** button and then **close the Queries window**.
 
 ![Continuous export settings page](../Images/log-analytic-started.png)
 
-14.	From the left pane, notice the following tables: `SecureityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary`.
+15.	From the left pane, notice the following tables: `SecureityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary`.
 
 ![Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
 
-15.	Query the tables later on to validate data streaming - double click on the desired table to open a new query. Then click **Run**.
+16.	Query the tables later on to validate data streaming - double click on the desired table to open a new query. Then click **Run**.
 
 ![Respective tables in the Log Analytics workspace](../Images/log-editor-run.png)
 

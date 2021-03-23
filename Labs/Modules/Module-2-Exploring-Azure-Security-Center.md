@@ -1,13 +1,9 @@
 # Module 2 - Exploring Azure Security Center
 
-<p align="left"><img src="../Images/asc-labs-beginner.gif?raw=true"></p>
-
-#### 🎓 Level: 100 (Beginner)
-#### ⌛ Estimated time to complete this lab: 60 minutes
 
 ### Exercise 1: Understanding Azure Security Center dashboard
 
-1.	Navigate to the **Azure Portal** (https://portal.azure.com) using the credentials you created in the previous module.
+1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
 
 2.	From the left navigation pane, click on **Security Center**. You can also navigate to Azure Security Center dashboard by using the top search bar.
 

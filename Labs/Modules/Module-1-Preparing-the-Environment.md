@@ -1,18 +1,14 @@
 # Module 1 – Preparing the Environment
 
-<p align="left"><img src="../Images/asc-labs-beginner.gif?raw=true"></p>
 
-#### 🎓 Level: 100 (Beginner)
-#### ⌛ Estimated time to complete this lab: 30 minutes
+## Exercise 1: Log in to Azure Portal (as admin)
 
-### Exercise 1: Log in to Azure Portal (as admin)
-
-## Instructions 
+### Instructions 
 
  
  
 
-1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab. 
+1. On your browser a virtual machine (JumpVM) is loaded. Use this virtual machine throughout the workshop to perform the lab. 
 
  
  
@@ -26,7 +22,7 @@
 
   
 
-## Login to Azure Portal 
+### Login to Azure Portal 
 
  
  
@@ -103,9 +99,9 @@
 
 10. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
-### Exercise 2: Enabling Azure Defender
+## Exercise 2: Enabling Azure Defender
 
-#### Subscription upgrade and agents installation
+### Subscription upgrade and agents installation
 1. Open **Azure Portal** and navigate to **Security Center** blade.
 
 2. Click on **Getting started** page from the left pane, On the **Upgrade** Tab, select subscription (Azure subscription 1) and press **Upgrade**.
@@ -120,7 +116,7 @@
 
 > Notice that you enabled Azure Defender at a subscription level, but Log Analytics workspace pricing is still set on Free (means Azure Defender is OFF).
 
-#### Configure the data collection settings in ASC
+### Configure the data collection settings in ASC
 1. On **Pricing and Settings** page, press on the Log Analytics workspace named **asc-lab-xxx**
 
 ![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
@@ -156,6 +152,6 @@
 > * To enable Azure Defender on a subscription, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
 
 
-###Summary
+### Summary
 
   * In this lab you have completed Enabling Azure Defender.
