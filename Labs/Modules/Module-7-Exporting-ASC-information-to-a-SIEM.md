@@ -1,7 +1,7 @@
 # Module 7 – Exporting ASC information to a SIEM
 
 
-## Objectives
+## Overview
 
 In this module, you will understand how to configure the continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings. Moreover, you will learn how to enable the integration between Azure Security Center and Azure Sentinel.
 
