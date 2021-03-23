@@ -154,4 +154,4 @@
 
 ### Summary
 
-  * In this lab you have completed Enabling Azure Defender.
+  * In this module, you have learned how to enable Azure Defender. Now you can move on to the next module.
