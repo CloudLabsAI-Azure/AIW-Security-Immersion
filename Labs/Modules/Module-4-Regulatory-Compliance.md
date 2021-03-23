@@ -1,9 +1,6 @@
 # Module 4 - Regulatory Compliance
 
 
-## Objectives
-This exercise guides you through the current Security Center policies, based on Azure Policy, and shows you where to enable or disable Security Center polices.
-
 ### Exercise 1: Understanding Regulatory Compliance dashboard
 
 1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
@@ -137,4 +134,6 @@ Navigate to Azure Policy blade. You can also select this [link](https://portal.a
 
 ### Summary
 
-  * In this lab you have completed Expolring **Security Center** features **Regulatory Compliance dashboard**, **Adding new standards** and **Creating your own benchmark**
+In this module, you have completed Exploring **Security Center** features - **Regulatory Compliance dashboard**, **Adding new standards** and **Creating your own benchmark**.
+
+Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
