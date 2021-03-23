@@ -225,4 +225,6 @@ Add each policy one by one:
 
 ### Summary
 
-In this module, you have completed Exploring **Security Center** features, **ASC default policy**, **Azure Policy**, **Creating resource exemption**, **Creating policy enforcement and deny**, and **Creating a custom policy**
+In this module, you have completed Exploring **Security Center** features, **ASC default policy**, **Azure Policy**, **Creating resource exemption**, **Creating policy enforcement and deny**, and **Creating a custom policy**.
+
+Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
