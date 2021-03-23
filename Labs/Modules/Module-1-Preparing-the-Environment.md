@@ -1,9 +1,9 @@
 # Module 1 – Preparing the Environment
 
 
-### Exercise 1: Log in to Azure Portal (as admin)
+## Exercise 1: Log in to Azure Portal (as admin)
 
-#### Instructions 
+### Instructions 
 
  
  
@@ -22,7 +22,7 @@
 
   
 
-#### Login to Azure Portal 
+### Login to Azure Portal 
 
  
  
@@ -99,9 +99,9 @@
 
 10. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
-### Exercise 2: Enabling Azure Defender
+## Exercise 2: Enabling Azure Defender
 
-#### Subscription upgrade and agents installation
+### Subscription upgrade and agents installation
 1. Open **Azure Portal** and navigate to **Security Center** blade.
 
 2. Click on **Getting started** page from the left pane, On the **Upgrade** Tab, select subscription (Azure subscription 1) and press **Upgrade**.
@@ -116,7 +116,7 @@
 
 > Notice that you enabled Azure Defender at a subscription level, but Log Analytics workspace pricing is still set on Free (means Azure Defender is OFF).
 
-#### Configure the data collection settings in ASC
+### Configure the data collection settings in ASC
 1. On **Pricing and Settings** page, press on the Log Analytics workspace named **asc-lab-xxx**
 
 ![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
