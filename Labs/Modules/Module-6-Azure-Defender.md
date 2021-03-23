@@ -133,4 +133,6 @@ In this exercise, we will use one of the endpoints which allows to retrieve a li
 
 7.	You should now see a sample response preview in JSON format.
 
-### Continue with the next lab: [Module 7 - Exporting ASC information to a SIEM](../Modules/Module-7-Exporting-ASC-information-to-a-SIEM.md)
+### Summary
+
+  * In this lab you have completed Expolring **Security Center** features **Alert validation**, **Alert suppression** and **Accessing Security Alerts using Graph Security API**

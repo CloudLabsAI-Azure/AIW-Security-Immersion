@@ -80,3 +80,6 @@ In this exercise, you will understand how to configure the continuous export for
 
 ![Enable incidents](../Images/asc-sentinel-enable-incidents.gif?raw=true)
 
+### Summary
+
+  * In this lab you have completed configuring continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings and enable the integration between Azure Security Center and Azure Sentinel

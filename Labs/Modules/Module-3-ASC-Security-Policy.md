@@ -8,7 +8,7 @@
 ## Objectives
 This exercise guides you through the current Security Center policies, based on Azure Policy, and shows you where to enable or disable Security Center polices.
 
-## Exercise 1: Overview of the ASC policy
+### Exercise 1: Overview of the ASC policy
 
 1.	On Security Center blade, from the left navigation pave, click on **Security policy**.
 
@@ -51,7 +51,7 @@ Effect | Description
 
 12.	Click **Save**. Wait for the policy update until complete successful.
 
-## Exercise 2: Explore Azure Policy
+### Exercise 2: Explore Azure Policy
 
 1.	On Azure Portal, navigate to **Azure Policy blade**. You can use the search box on the upper part or  navigate to: https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade
 
@@ -76,7 +76,7 @@ Effect | Description
 
 8.	As you can see, this is the same assignment page as presented in the previous section. Click **Cancel**.
 
-## Exercise 3: Create resource exemption for a recommendation
+### Exercise 3: Create resource exemption for a recommendation
 
 Resource exemption will allow increased granularity for you to fine-tune recommendations by providing the ability to exempt certain resources from evaluation.
 When working with a recommendation, you can create an exemption by clicking the ellipsis menu on the right side and then select create exemption.
@@ -224,3 +224,6 @@ Add each policy one by one:
 
 6.	Your custom initiative is now assigned.
 
+### Summary
+
+  * In this lab you have completed Expolring **Security Center** features **ASC default policy**, **Azure Policy**, **Creating resource exemption**, **Creating a policy enforcement and deny** and **Creating a custom policy**

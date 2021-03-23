@@ -87,3 +87,7 @@ It maps the current state of these items with the state during the previous scan
 5.	Click on **Enable File Integrity Monitoring** button.
 
 ![File Integrity Monitoring2](../Images/File-Integrity-Monitoring2.png)
+
+### Summary
+
+  * In this lab you have completed Expolring **Security Center** features **Using JIT to reduce attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**

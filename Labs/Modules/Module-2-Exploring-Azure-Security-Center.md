@@ -5,7 +5,7 @@
 #### 🎓 Level: 100 (Beginner)
 #### ⌛ Estimated time to complete this lab: 60 minutes
 
-## Exercise 1: Understanding Azure Security Center dashboard
+### Exercise 1: Understanding Azure Security Center dashboard
 
 1.	Navigate to the **Azure Portal** (https://portal.azure.com) using the credentials you created in the previous module.
 
@@ -64,7 +64,7 @@ Resources are divided by their health status. Clicking on this tile will redirec
 ![Overview: Inventory tile](../Images/inventory-tile.png)
 
 
-## Exercise 2: Exploring Secure Score and Recommendations
+### Exercise 2: Exploring Secure Score and Recommendations
 
 **Exploring Secure Score**
 
@@ -219,3 +219,6 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 > Inventory dashboard is fully built on top of Azure Resource Graph (ARG) which stores all of ASC security posture data and leveraging its powerful KQL engine.
 > It enables you to reach deep insights quickly and easily on top of ASC data and cross reference with any other resource properties.
 
+### Summary
+
+  * In this lab you have completed understanding **Azure Security Center dashboard**, exploring its **Secure Score and Recommendations** & **Inventory capability**

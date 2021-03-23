@@ -5,7 +5,7 @@
 #### 🎓 Level: 100 (Beginner)
 #### ⌛ Estimated time to complete this lab: 30 minutes
 
-# Exercise 1: Log in to Azure Portal (as admin)
+### Exercise 1: Log in to Azure Portal (as admin)
 
 ## Instructions 
 
@@ -103,7 +103,7 @@
 
 10. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
-### Exercise 3: Enabling Azure Defender
+### Exercise 2: Enabling Azure Defender
 
 #### Subscription upgrade and agents installation
 1. Open **Azure Portal** and navigate to **Security Center** blade.
@@ -154,3 +154,8 @@
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable Azure Defender on.
 > * You can enable Azure Defender trial for 30-days on a subscriptions only if not previously used.
 > * To enable Azure Defender on a subscription, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
+
+
+###Summary
+
+  * In this lab you have completed Enabling Azure Defender.

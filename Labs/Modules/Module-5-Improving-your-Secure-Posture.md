@@ -270,3 +270,8 @@ SecurityResources
 ![](../Images/run-query2.png)
 
 More details on the [official article](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls) or on the [blog post](https://techcommunity.microsoft.com/t5/azure-security-center/querying-your-secure-score-across-multiple-subscriptions-in/ba-p/1749193)
+
+
+### Summary
+
+  * In this lab you have completed Expolring **Security Center** features **Vulnerability assessment for VMs**, **Vulnerability assessment for Containers**, **Automate recommendations with workflow automation** and **Accessing your secure score via ARG**
