@@ -154,4 +154,4 @@
 
 ### Summary
 
-  * In this module, you have learned how to enable Azure Defender. Now you can move on to the next module.
+  In this module, you have learned how to enable Azure Defender. Now you can move on to the next module by clicking on the Next button at the bottom right of the page.
