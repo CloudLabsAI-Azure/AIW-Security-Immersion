@@ -225,4 +225,4 @@ Add each policy one by one:
 
 ### Summary
 
-  * In this lab you have completed Exploring **Security Center** features **ASC default policy**, **Azure Policy**, **Creating resource exemption**, **Creating policy enforcement and deny** and **Creating a custom policy**
+In this module, you have completed Exploring **Security Center** features, **ASC default policy**, **Azure Policy**, **Creating resource exemption**, **Creating policy enforcement and deny**, and **Creating a custom policy**
