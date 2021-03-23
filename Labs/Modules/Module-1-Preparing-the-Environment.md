@@ -8,7 +8,7 @@
  
  
 
-1. On the left side of the screen, a virtual machine (JumpVM) is already loaded. You have to use this virtual machine throughout the workshop to perform the lab. If you are unable to view the Virtual Machine, check if the virtual machines are running by Navigating to the Virtual Machines tab on top right of the lab guide. Also, you can directly RDP into the Virtual Machine using the Details of labvm provided in the Environment Details tab.
+1. On the left side of the screen, a virtual machine (JumpVM) is already loaded. You have to use this virtual machine throughout the workshop to perform the lab. If you are unable to view the Virtual Machine, check if the virtual machines are running by Navigating to the Virtual Machines tab on the top right of the lab guide. Also, you can directly RDP into the Virtual Machine using the Details of labvm provided in the Environment Details tab.
 
  
  
@@ -27,7 +27,7 @@
  
  
 
-1. In the JumpVM, Launch Azure Portal using the shortcut available on desktop.  
+1. In the JumpVM, Launch Azure Portal using the shortcut available on the desktop.  
 
     
 
@@ -49,7 +49,7 @@
 
     
 
-4. Please close the pop-up by clicking **Continue without signing-in** . 
+4. Please close the pop-up by clicking **Continue without signing-in**. 
 
  
  
@@ -104,7 +104,7 @@
 ### Subscription upgrade and agents installation
 1. Open **Azure Portal** and navigate to **Security Center** blade.
 
-2. Click on **Getting started** page from the left pane, On the **Upgrade** Tab, select subscription (Azure subscription 1) and press **Upgrade**.
+2. Click on the **Getting started** page from the left pane, On the **Upgrade** Tab, select subscription (Azure subscription 1) and press **Upgrade**.
 
 ![Overview: Inventory tile](../Images/get-started.png)
 
@@ -112,16 +112,16 @@
 
 4. Return to Azure security Center blade and Click on **Pricing & settings**.
 
-5. Your subscription (Azure subscription 1) should be listed and Azure Defender plan should be **On (partial)** (if it does not, close your browser session and open a new one).
+5. Your subscription (Azure subscription 1) should be listed and the Azure Defender plan should be **On (partial)** (if it does not, close your browser session and open a new one).
 
 > Notice that you enabled Azure Defender at a subscription level, but Log Analytics workspace pricing is still set on Free (means Azure Defender is OFF).
 
 ### Configure the data collection settings in ASC
-1. On **Pricing and Settings** page, press on the Log Analytics workspace named **asc-lab-xxx**
+1. On the **Pricing and Settings** page, press on the Log Analytics workspace named **asc-lab-xxx**
 
 ![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
 
-2. On the Azure Defender Plans page, select **Azure Defender on** and press **Save**. Now both subscription and Log Analytics workspace should be set to **On** for Azure Defender plan.
+2. On the Azure Defender Plans page, select **Azure Defender on** and press **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
 
 ![Enable Azure Defender on the workspace level](../Images/asc-enable-defender-workspace.gif?raw=true)
 
@@ -148,7 +148,7 @@
 > Please notice:
 > * To get the full functionality of Azure Security Center and Azure Defender, both subscription and Log Analytics workspace should be enabled for Defender. Once you enable it, under the hood the required Log Analytics solutions will be added to the workspace.
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable Azure Defender on.
-> * You can enable Azure Defender trial for 30-days on a subscriptions only if not previously used.
+> * You can enable Azure Defender trial for 30-days on a subscription-only if not previously used.
 > * To enable Azure Defender on a subscription, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
 
 
