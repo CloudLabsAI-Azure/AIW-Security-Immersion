@@ -1,14 +1,14 @@
-# Module 1 – Preparing the Environment
+# Module 1 – Getting started with the Environment
 
 
-## Exercise 1: Log in to Azure Portal (as admin)
+## Exercise 1: Log in to Azure Portal
 
 ### Instructions 
 
  
  
 
-1. On your browser a virtual machine (JumpVM) is loaded. Use this virtual machine throughout the workshop to perform the lab. 
+1. On the left side of the screen, a virtual machine (JumpVM) is already loaded. You have to use this virtual machine throughout the workshop to perform the lab. If you are unable to view the Virtual Machine, check if the virtual machines are running by Navigating to the Virtual Machines tab on top right of the lab guide. Also, you can directly RDP into the Virtual Machine using the Details of labvm provided in the Environment Details tab.
 
  
  
