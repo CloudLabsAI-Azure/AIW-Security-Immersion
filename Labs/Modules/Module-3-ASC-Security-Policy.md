@@ -1,16 +1,15 @@
 # Module 3 - Security Policy
 
-<p align="left"><img src="../Images/asc-labs-intermediate.gif?raw=true"></p>
-
-#### 🎓 Level: 200 (Intermediate)
-#### ⌛ Estimated time to complete this lab: 60 minutes
 
 ## Objectives
+
 This exercise guides you through the current Security Center policies, based on Azure Policy, and shows you where to enable or disable Security Center polices.
 
 ### Exercise 1: Overview of the ASC policy
 
-1.	On Security Center blade, from the left navigation pave, click on **Security policy**.
+1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
+
+2.	On Security Center blade, from the left navigation pave, click on **Security policy**.
 
 2.	On Policy Management page, select **Azure subscription**.
 
