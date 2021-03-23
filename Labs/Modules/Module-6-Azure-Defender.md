@@ -1,9 +1,6 @@
 # Module 6 - Azure Defender
 
 
-## Objectives
-
-This exercise guides you how
 
 ### Exercise 1: Alert validation
 
@@ -134,4 +131,6 @@ In this exercise, we will use one of the endpoints which allows to retrieve a li
 
 ### Summary
 
-  * In this lab you have completed Expolring **Security Center** features **Alert validation**, **Alert suppression** and **Accessing Security Alerts using Graph Security API**
+In this module, you have completed exploring more **Security Center** features - **Alert validation**, **Alert suppression** and **Accessing Security Alerts using Graph Security API**.
+
+Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
