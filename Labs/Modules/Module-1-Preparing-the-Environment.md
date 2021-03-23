@@ -152,6 +152,6 @@
 > * To enable Azure Defender on a subscription, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
 
 
-###Summary
+### Summary
 
   * In this lab you have completed Enabling Azure Defender.
