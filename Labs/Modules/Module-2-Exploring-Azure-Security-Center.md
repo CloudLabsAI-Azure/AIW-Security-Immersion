@@ -217,4 +217,6 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 ### Summary
 
-  * In this lab you have completed understanding **Azure Security Center dashboard**, exploring its **Secure Score and Recommendations** & **Inventory capability**
+  In this module, you have explored **Azure Security Center dashboard**, **Secure Score and Recommendations** & **Inventory capability**. 
+  
+  Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
