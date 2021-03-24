@@ -7,7 +7,7 @@ The exercises in this module will guide you through the current Security Center 
 
 ### Exercise 1: Overview of the ASC policy
 
-1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
+1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab if not logged in already.
 
 2.	On the Security Center blade, from the left navigation, pave, click on **Security policy**.
 
@@ -21,22 +21,8 @@ Note: This is the default policy for Azure Security Center recommendations which
 
 4.	To view the policy, click on **ASC Default**.
 
-5.	On the selected scope (Azure subscription 1 with 1 security policy assignment), you can see overall effective policies in Security Center.
-
-6.	As you can see, policies are set to different effects based on the order of evaluation:
-
-Effect | Description
------- | -------- | 
-**Disabled** | This effect is useful for testing situations or for when the policy definition has parameterized the effect. This flexibility makes it possible to disable a single assignment instead of disabling all of that policy's assignments.
-**Audit** | Audit is used to create a warning event in the activity log when evaluating a non-compliant resource, but it doesn't stop the request.
-**AuditIfNotExists** | AuditIfNotExists enables auditing of resources related to the resource that matches the if condition but doesn't have the properties specified in the details of the then condition.
-
-*Read more on Azure Policy effects* [*here*](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects)
-
 > ❗ Important: <br>
 > You should see a different subscription GUID on your environment
-
-7.	Click on the assign assignment: **ASC Default (subscription: dd82589b-444c-45a8-863a-816243ce017d)**. Azure Security Center assess your environment and audit data and do not enforce without your approval.
 
 8.	On the Edit Initiative Assignment page, click on **Parameters**
 
@@ -66,14 +52,11 @@ Effect | Description
 
 5.	Notice the number of policies included in each initiative (policies column)
 
-6.	Both initiatives are assigned to your subscription automatically. To see current assignments, click on **Assignment** from the left navigation pane. Both policy initiatives have a different name for the assignment, for example:
+6.	To see current assignments, click on **Assignment** from the left navigation pane. Policy initiatives have a different name for the assignment, for example:
 
     - *ASC Default (subscription: dd82589b-444c-45a8-863a-816243ce017d)*
-    - *ASC DataProtection (subscription: dd82589b-444c-45a8-863a-816243ce017d)*
 
-7.	Click on **ASC Default** to edit assignment details
-
-8.	As you can see, this is the same assignment page as presented in the previous section. Click **Cancel**.
+7.	Click on **ASC Default** to see the assignment details.
 
 ### Exercise 3: Create resource exemption for a recommendation
 
@@ -114,7 +97,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
     - The resource is listed in the Not applicable tab of the recommendation details page
     - The information strip at the top of the recommendation details page lists the number of exempted resources: **1**
 
-8.	Open the **Not applicable** tab to review your exempted resource – you can see our resource along with the reason/description value.
+8.	Refresh tab and open the **Not applicable** tab to review your exempted resource – you can see our resource along with the reason/description value.
 
 9.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
 
@@ -139,29 +122,29 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 ![Secure Transfer](../Images/secure-transfer.png)
 
-5.	On the **Deny - Prevent resource creation**, select **Azure subscription 1** (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied.
+5.	On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied.
 
 ![Prevent resource creation](../Images/asc-storage-deny-policy.gif?raw=true)
 
-6.	Go back to the **recommendations view**, and from the search area, type **Auditing**. Click on the recommendation **Auditing on SQL server should be enabled**.
+6.	Go back to the **recommendations view**, set the **Response action** fileter as **Select All**, and from the search area, type **Auditing**. Click on the recommendation **Auditing on SQL server should be enabled**.
 
 ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
-7.	On the recommendations page, from the top menu bar, click on the **Enforce** button. Using this option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
-
-![Sql Auditing](../Images/auditing-create.png)
+7.	On the **Auditing on SQL server should be enabled** page, from the top menu bar, click on the **Enforce** button. Using this option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
 
 8.	Once the configuration pane opens with all of the policy configuration options, select the following configuration settings:
 
-* On Scope, select **Azure subscription 1**. **Click Select**.
+* On Scope, select your subscription.
 * Click **Next**
 * Keep retention days as it is and select the resource group **asclab**
 Select **Review + create** to assign the policy to your subscription.
 * Click **Create**
 
+![Sql Auditing](../Images/auditing-create.png)
+
 ![Sql Auditing](../Images/auditing-create1.png)
 
-9. On the recommendation page, **select** the SQL Server resource found on the **unhealthy resources** tab (asclab-sql-xxx) and click **Remediate**. Change the retention days parameter to 180 and then click **Remediate 1 resource**. By doing both operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
+9. On the **Auditing on SQL server should be enabled** page, **select** the SQL Server resource found on the **unhealthy resources** tab of **Affected resources**(asclab-sql-xxx here xxx is the unique ID) and click **Remediate**. Change the retention days parameter to 180 and then click **Remediate 1 resource**. By doing both operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
 
 ![Sql Auditing](../Images/auditing-create2.png)
 
@@ -180,7 +163,7 @@ Select **Review + create** to assign the policy to your subscription.
 3.	From the top menu, select **+Initiative definition**.
 
 4.	On the New Initiative definition page, select the following:
-    - Initiative scope: Azure subscription 1
+    - Initiative scope: Your Subscription
     - Name: Contoso Security Benchmark
     - Description: Baseline for security policies to appear alongside with the built-in recommendations
     - Category: select Create new and type: Contoso
@@ -207,7 +190,7 @@ Add each policy one by one:
 
 1.	Navigate to Security Center and the Security policy page from the sidebar.
 
-2.	Select **Azure subscription 1** as a scope for your custom initiative.
+2.	Select your subscription as a scope for your custom initiative.
 
 > Note: You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Security Center.
 
