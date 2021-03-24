@@ -5,106 +5,40 @@
 
 ### Instructions 
 
- 
- 
-
 1. On the left side of the screen, a virtual machine (JumpVM) is already loaded. You have to use this virtual machine throughout the workshop to perform the lab. If you are unable to view the Virtual Machine, check if the virtual machines are running by navigating to the Virtual Machines tab on the top right of the lab guide. Also, you can directly RDP into the Virtual Machine using the Details of labvm provided in the Environment Details tab.
-
- 
- 
 
 2. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your email address provided at registration. 
 
-
-  
-
 3. You can also open the Lab Guide on Separate full window by selecting the **Split Window** icon in the bottom right corner. 
-
-  
 
 ### Login to Azure Portal 
 
- 
- 
-
 1. In the JumpVM, Launch Azure Portal using the shortcut available on the desktop.  
 
-    
-
-2. Select **Get started** for Edge browser prompts. 
-
- 
- 
-
-   ![](../Images/edge-get-started-window.png "Get started") 
-
-    
-
-3. On the next window, click on **Confirm**. 
-
- 
- 
-
-   ![](../Images/edge-confirm.png "Confirm") 
-
-    
-
-4. Please close the pop-up by clicking **Continue without signing-in**. 
-
- 
- 
-
-   ![](../Images/edge-continue.png "Confirm") 
-
-    
-
-5. Now, you will see two tabs opened by default in the edge browser, close the first tab named **Microsoft Edge**. 
-
- 
- 
-
-   ![](../Images/close-tab.png "Close Tab") 
-
-    
-
-6. On the **Sign into Microsoft Azure** tab, you will see the login screen, enter the following email/username, and, then click on **Next**.  
+2. On the **Sign into Microsoft Azure** tab, you will see the login screen, enter the following email/username, and, then click on **Next**.  
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject> 
 
-    
-
    ![](../Images/azure-login-enter-email.png "Enter Email") 
 
-      
-
-7. Now enter the following password and click on **Sign in**. 
+3. Now enter the following password and click on **Sign in**. 
 
    * Password: <inject key="AzureAdUserPassword"></inject> 
 
-    
-
    ![](../Images/azure-login-enter-password1.png "Enter Password") 
 
-      
+4. If you see the pop-up **Stay Signed in?**, click on No 
 
-8. If you see the pop-up **Stay Signed in?**, click on No 
+5. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab. 
 
- 
- 
-
-9. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab. 
-
- 
- 
-
-10. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+6. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
 ## Exercise 2: Enabling Azure Defender
 
 ### Subscription upgrade and agents installation
 1. Open **Azure Portal** and navigate to **Security Center** blade.
 
-2. Click on the **Getting started** page from the left pane, On the **Upgrade** Tab, select subscription (Azure subscription 1) and press **Upgrade**.
+2. Click on the **Getting started** page from the left pane, On the **Upgrade** Tab, select your subscription and press **Upgrade**.
 
 ![Overview: Inventory tile](../Images/get-started.png)
 
@@ -112,12 +46,14 @@
 
 4. Return to Azure security Center blade and Click on **Pricing & settings**.
 
-5. Your subscription (Azure subscription 1) should be listed and the Azure Defender plan should be **On (partial)** (if it does not, close your browser session and open a new one).
+5. Your subscription should be listed and the Azure Defender plan should be **On** (if it does not, close your browser session and open a new one).
 
-> Notice that you enabled Azure Defender at a subscription level, but Log Analytics workspace pricing is still set on Free (means Azure Defender is OFF).
+> Notice that you enabled Azure Defender at a subscription level, but Log Analytics workspace pricing is still set Off (means Azure Defender is OFF).
 
 ### Configure the data collection settings in ASC
-1. On the **Pricing and Settings** page, press on the Log Analytics workspace named **asc-lab-xxx**
+1. On the **Pricing and Settings** page, press on the Log Analytics workspace named **asc-lab-{DeploymentID}**
+
+    **Note**: Deployment ID can be obtained from the Lab Environment Details Tab.
 
 ![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
 
@@ -125,7 +61,7 @@
 
 ![Enable Azure Defender on the workspace level](../Images/asc-enable-defender-workspace.gif?raw=true)
 
-3. Go back to the **Pricing & Setting** and drill down into your **Azure subscription** (Azure subscription 1).
+3. Go back to the **Pricing & Setting** and drill down into your **Azure subscription**.
 
 4. Navigate to **Auto provisioning**
 
@@ -133,7 +69,7 @@
 
 6. Click **Edit configuration**.
 
-7. On the workspace configuration section, use the **Connect Azure VMs to a different workspace** option to select your workspace **asc-lab-xxx** (which has been created by the ARM template).
+7. On the workspace configuration section, use the **Connect Azure VMs to a different workspace** option to select your workspace **asc-lab-{DeploymentID}**.
 
 8. Under **Store additional raw data - Windows security events** section, select **All Events** option.
 
