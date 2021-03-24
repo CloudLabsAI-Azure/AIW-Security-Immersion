@@ -3,7 +3,7 @@
 
 ### Exercise 1: Understanding Regulatory Compliance dashboard
 
-1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
+1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab if not logged in already.
 
 2.	From **Security Center main dashboard**, select **Regulatory Compliance** tile (this pilar is also available from the sidebar).
 
@@ -11,17 +11,17 @@
 
 3.	On the top strip, notice the number of **passed vs. failed controls** across standards.
 
-4.	On the main page, select **ISO 27001** standard. Notice the different compliance controls mapped to assessments.
-
 ![Regulatory compliance assessment and standards](../Images/asc-regulatory-compliance-assessment-standards.png)
+
+4.	On the main page, select **ISO 27001** standard. Notice the different compliance controls mapped to assessments.
 
 5.	Locate the **Communications security** compliance control. Notice the compliance domain **A13.2. Information transfer** and expend to show **A13.2.1. Information transfer policies and procedures** – both are currently *failed*.
 
-6.	From this view you can also remediate assessments. Click the first assessment **Function App should only be accessible over HTTPS**.
-
 ![Remmediate function app](../Images/communications-security.png)
 
-7.	On the recommendation *Function App should only be accessible over HTTPS*, select the unhealthy resource (asclab-fa-xxx) and click **Remediate**. Confirm by selecting **Remediate 1 resource**.
+6.	From this view you can also remediate assessments. Click the first assessment **Function App should only be accessible over HTTPS**.
+
+7.	On the recommendation *Function App should only be accessible over HTTPS*, select the unhealthy resource (asclab-fa-xxx here xxx is the unique ID) and click **Remediate**. Confirm by selecting **Remediate 1 resource**.
 
 ![Remmediate function app](../Images/asc-remmediate-function-app.gif?raw=true)
 
@@ -39,7 +39,7 @@ You can add additional industry standards (represented as compliance packages) s
 
 ![Manage compliance policies](../Images/manage-compliance-policies.png)
 
-2.	Select a scope to assign the new package: **Azure subscription 1**.
+2.	Select a scope to assign the new package: **Your Subscription**.
 
 3.	On the **Industry & regulatory standards** section, notice the out of the box standards. Click on **Add more standards**.
 
@@ -72,7 +72,7 @@ Navigate to Azure Policy blade. You can also select this [link](https://portal.a
 
 ![Benchmark Policy](../Images/benchmark-policy.png)
 
-3.	On the Basics tab, select a **scope as a location for the new definition**. The recommended approach is to select management groups.
+3.	On the Basics tab, select your Subscription.
 
 4.	Select a name, for example: **Custom Benchmark**.
 
