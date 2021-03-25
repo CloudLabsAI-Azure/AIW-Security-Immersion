@@ -75,7 +75,7 @@ In this module, you will understand how to configure the continuous export for L
 
 9.	On the Configuration section, locate the **Your subscription** and change the toggle button to **Connect**. Wait for the connection status to be: `Connected`.
 
-![Connect Azure Security Center to Azure Sentinel](../Images/asc-sentinel-data-connector-page.gif?raw=true)
+![Connect Azure Security Center to Azure Sentinel](../Images/asc-sentinel-data-connector-page.png)
 
 10.	On the Create incidents (recommended) click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
 
