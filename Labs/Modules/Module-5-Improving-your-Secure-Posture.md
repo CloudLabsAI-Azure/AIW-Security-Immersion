@@ -13,7 +13,7 @@ When a machine is found that doesn't have vulnerability assessment solution depl
 
 **Explore vulnerability assessment recommendations:**
 
-1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
+1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab.
 
 2.	From Security Center sidebar, click on **Recommendations**.
 
@@ -131,11 +131,11 @@ In this lab, you will create a new Logic App and then trigger it automatically u
 
 2.	Click **Add** and **Consumption** to create a new Logic App.
 
-3.	On the Basics tab, select **Azure subscription 1** and resource group **asclab**.
+3.	On the Basics tab, select your subscription and resource group **asclab**.
 
 4.	On the Logic app name field enter *Send-RecommendationsChanges*.
 
-5.	Select location, for example: **West Europe** (it’s recommended to use the same region as used in the previous exercises).
+5.	Select location, for example: **East US** (it’s recommended to use the same region as used in the previous exercises).
 
 6.	Keep Log Analytics option as **Off**.
 
@@ -199,7 +199,7 @@ Link to recommendation: `Properties Links Azure Portal Uri`</br>
     - General:
         - Name: *Send-RecommendationsChanges*
         - Description: *Send email message when a recommendation is created or triggered*
-        - Subscription: *Azure subscription 1*
+        - Subscription: *Your Subscription*
         - Resource group: *asclab*
     - Trigger conditions:
         - Select Security Center data types: *Security Center recommendations*
@@ -207,7 +207,7 @@ Link to recommendation: `Properties Links Azure Portal Uri`</br>
         - Recommendation severity: *All severities selected*
         - Recommendation state: *All states selected*
     - Actions:
-        - Show Logic App instances from the following subscriptions: *Azure subscription 1*
+        - Show Logic App instances from the following subscriptions: *Your Subscription*
         - Logic App name: *Send-RecommendationsChanges*
     Click **Create** to complete the task.
 

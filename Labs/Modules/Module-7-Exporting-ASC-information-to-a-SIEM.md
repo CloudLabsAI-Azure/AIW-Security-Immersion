@@ -11,7 +11,7 @@ In this module, you will understand how to configure the continuous export for L
 
 2.	On Security Center’s sidebar, click on **Pricing & settings**.
 
-3.	Select **Azure subscription 1**.
+3.	Select **Your Subscription**.
 
 ![Pricing & settings page](../Images/asc-pricing-settings-sub.gif?raw=true)
 
@@ -25,7 +25,9 @@ In this module, you will understand how to configure the continuous export for L
 
 8.	On the Export configuration, select a resource group: *asclabs*
 
-9.	On the Export target, select the target Log Analytics workspace: *asclab-la-xxx*
+9.	On the Export target, select the target Log Analytics workspace: *asclab-la-{DeploymentID}*
+
+    **Note**: Deployment ID can be obtained from the Lab Environment Details tab.
 
 10.	Click on the **Save** button on the top menu.
 
@@ -35,7 +37,7 @@ In this module, you will understand how to configure the continuous export for L
 
 11.	On the Azure portal, navigate to **Log Analytics workspaces** service or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
-12.	Click on the **asclab-la-xxx** workspace.
+12.	Click on the **asclab-la-{DeploymentID}** workspace.
 
 13.	From the workspace’s sidebar, click on the **Logs** button.
 
@@ -43,7 +45,7 @@ In this module, you will understand how to configure the continuous export for L
 
 ![Continuous export settings page](../Images/log-analytic-started.png)
 
-15.	From the left pane, notice the following tables: `SecureityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary`.
+15.	From the left pane, notice the following tables: `SecureityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in **Security and Audit**.
 
 ![Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
 
@@ -57,9 +59,9 @@ In this module, you will understand how to configure the continuous export for L
 
 2.	On the Azure Sentinel workspaces, click on **Connect** workspace button – for this exercise we’ll use the same Log Analytics workspace used by Security Center.
 
-3.	On the **Add Azure Sentinel** to a workspace, select **asclab-la-xxx** workspace. Click **Add**.
+3.	On the **Add Azure Sentinel** to a workspace, select **asclab-la-{DeploymentID}** workspace. Click **Add**.
 
-4.	Adding Azure Sentinel to workspace asclab-la-xxx is now in progress. The process will few minutes. 
+4.	Adding Azure Sentinel to workspace asclab-la-{DeploymentID} is now in progress. This process will take few minutes. 
 
 5.	Once Sentinel News and guides opens, use the Azure Security Center connector to enable the integration.
 
@@ -71,9 +73,9 @@ In this module, you will understand how to configure the continuous export for L
 
 ![ASC pricing & settings page](../Images/Azure-defender-open.png)
 
-9.	On the Configuration section, locate the **Azure subscription 1** and change the toggle button to **Connect**. Wait for the connection status to be: `Connected`.
+9.	On the Configuration section, locate the **Your subscription** and change the toggle button to **Connect**. Wait for the connection status to be: `Connected`.
 
-![Connect Azure Security Center to Azure Sentinel](../Images/asc-sentinel-data-connector-page.gif?raw=true)
+![Connect Azure Security Center to Azure Sentinel](../Images/asc-sentinel-data-connector-page.png)
 
 10.	On the Create incidents (recommended) click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
 
