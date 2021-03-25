@@ -6,7 +6,7 @@
 
 Here let’s cover the new Alert Simulation, which should be out in the first week of December
 
-1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
+1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab if not logged in already.
 
 2.	Open the preview page of security alerts by using this [link](https://portal.azure.com/?feature.argsecurityalerts=true&feature.customportal=false#blade/Microsoft_Azure_Security/SecurityMenuBlade/7)
 
@@ -15,7 +15,7 @@ Here let’s cover the new Alert Simulation, which should be out in the first we
     
     ![Create sample virtual machine security alerts](../Images/SampleAlerts.png)
     
-    - Select **Azure subscription 1**.
+    - Select **Your Subscription**.
     - On the Azure Defender plans, keep only **Virtual Machines** selected.
     - Click on the **Create sample alerts** button to trigger the alert simulation for VMs.
 
@@ -39,7 +39,7 @@ Here let’s cover the new Alert Simulation, which should be out in the first we
 
 8.	Create an alert simulation for Key Vaults:
     - On Security alerts page, click on **sample alerts** button.
-    - Select **Azure subscription 1**.
+    - Select **Your Subscription**.
     - On the Azure Defender plans, keep only **Key Vaults** selected.
     - Click **Create sample alerts** button to trigger the alert simulation for Key Vaults.
 9.	Sample alerts creating in progress, wait for the process to complete. You can track the progress by opening the notification center or on activity log (this process usually takes 2 minutes to complete)
@@ -79,12 +79,6 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 6.	Set rule expiration to be tomorrow (just a day ahead). **Click Apply and wait 10 minutes for the new rule to be applied.**
 
-7.	Validate your alert suppression rule:
-    - From the top menu, click on the **Create sample alerts** button.
-    - Select the **Key vaults** plan only.
-    - Click **Create sample alerts**.
-    - You should now see only **4** Key Vaults alerts **excluding the High volume of operations in a Key Vault**.
-
 > Note, you can create suppression rules on a management group level by using a built-in policy definition named Deploy - Configure suppression rules for Azure Security Center alerts in Azure Policy. To suppress alerts at the subscription level, you can use the Azure portal or REST APIs.
 
 8. You can change your existing suppression rules or create new ones: from the top menu, select **Suppression rules**. 
@@ -117,17 +111,25 @@ In this exercise, we will use one of the endpoints which allows to retrieve a li
 
 3.	On the HTTP tab, review the endpoint URL: `https://graph.microsoft.com/v1.0/security/alerts`.
 
-4.	You need to login using credentials given in the Environment Details.
+4.	Click on **Try It** then click on User icon to login. You need to login using credentials given in the Environment Details.
 
 ![Create sample virtual machine security alerts](../Images/rest-execute-login.png)
 
-5.	On the right side, click on **Try it** to load the graph explorer with the required endpoint.
+5.  Click **Accept** to allow access.
 
-6.	Click on **Run query** button.
+![Consent-Accept](../Images/consent-accept.png)
 
-![Create sample virtual machine security alerts](../Images/rest-execute.png)
+6.  Now click on **Modify Permissions (Preview)**, wait for two permissions to load. scroll to the right end of permissions then click on **Consent** of both permissions one after another, Click on **Accept** for each permission to get **Consented**
 
-7.	You should now see a sample response preview in JSON format.
+![Consent](../Images/consent.png)
+
+7.  Verify both permissions are **Consented**
+
+![Consent2](../Images/consent2.png)
+
+6.	Click on **Run query** button. You should now see a sample response preview in JSON format.
+
+![Create sample virtual machine security alerts](../Images/consent-response.png)
 
 ### Summary
 
