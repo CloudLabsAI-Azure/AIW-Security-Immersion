@@ -46,7 +46,7 @@ In this lab we will use only one but selecting different/additional subscription
 ![Overview: Azure Defender tile](../Images/azure-defender-tile.png)
 
 
-11.	On the **Regulatory Compliance** tile, you can get insights into your compliance posture based on continuous assessment of your both Azure and hybrid cloud environments. This tile shows only 4 standards which are SOC TSP, ISO 27001, PCI DSS 3.2.1 and Azure CIS 1.1.0. Clicking on this tile will redirects you to Regulatory Compliance dashboard – where you can add additional standards and explore the current ones.
+11.	On the **Regulatory Compliance** tile, you can get insights into your compliance posture based on continuous assessment of your both Azure and hybrid cloud environments. This tile shows only 4 standards which are SOC TSP, ISO 27001, PCI DSS 3.2.1 and Azure Security Benchn. Clicking on this tile will redirects you to Regulatory Compliance dashboard – where you can add additional standards and explore the current ones.
 
 ![Overview: Regulatory Compliance tile](../Images/regulatory-compliance-tile.png)
 
@@ -105,10 +105,10 @@ Exploring secure score
 
 5.	Look for the **Encrypt data in transit** security control. Notice its max score 4 and the potential increase for the score. You should have more than three recommendations within this control.
 
-6.	Click on the **Secure transfer to storage accounts should be enabled** recommendation. As you can see, this recommendation has the **Quick Fix** avaialble in **Remediation steps**.
+6.	Click on the **Secure transfer to storage accounts should be enabled** recommendation.
 
 > ⭐ Notice: <br>
-> Quick Fix allows you to remediate a group of resources quickly when possible with a single click. This option is only available for supported recommendations and enables you to quickly improve your secure score and increase the security in your environment.
+> You can observe for few recommendations Quick Fix option is available. Quick Fix allows you to remediate a group of resources quickly when possible with a single click. This option is only available for supported recommendations and enables you to quickly improve your secure score and increase the security in your environment.
 
 7.	On the top section, notice the following:
 
@@ -119,7 +119,7 @@ Exploring secure score
 
 ![Recommendation top menu](../Images/asc-storage-top-menu.gif?raw=true)
 
-8. The next important part is the **Remediation Steps** which contains the remediation logic. As you can see, you can remediate the select resource/s either by following the step-by-step instructions, use the provided ARM template or REST API to automate the process by yourself or use the Quick Fix button which triggers the ARM call for you.
+8. The next important part is the **Remediation Steps** which contains the remediation logic. As you can see, you can remediate the select resource/s either by following the step-by-step instructions, use the provided ARM template or REST API to automate the process by yourself.
 
 * Click on the **view remediation logic*
 * Notice the automatic remediation script content (ARM Template):
