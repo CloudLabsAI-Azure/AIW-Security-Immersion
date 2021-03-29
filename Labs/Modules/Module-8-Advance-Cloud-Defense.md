@@ -1,11 +1,20 @@
 # Module 8 – Advance Cloud Defense
 
+### Overview
+
+In this exercise, you will explore Azure Defender features for advance cloud defence
+
+You will be performing the following activities to achieve the goal.
+
+* Using JIT(Just In Time access to VMs) to reduce attack surface
+* Using Application control to deal with malicious and/or unauthorized software
+* Using File integrity monitoring (FIM) to monitor Operating System files
 
 ### Exercise 1: Using JIT to reduce attack surface
 
 1.	If you are not already logged in to the https://portal.azure.com, click on the Azure Portal icon on the JumpVM on the left and login with the Azure credentials provided in the Lab Environment Details tab.
 
-2.	From the Security Center sidebar, click on **Azure Defender**.
+2.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then select **Azure Defender** under **Cloud Security** from left sidebar.
 
 2.	On the Advanced protection part at the bottom, click on **Just-in-time VM access** (You should see number of unprotected status).
 
@@ -51,7 +60,7 @@
 
 Application control helps you deal with malicious and/or unauthorized software, by allowing only specific applications to run on your machines.
 
-1.	From Security Center sidebar, click on **Azure Defender**.
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then select **Azure Defender** under **Cloud Security** from left sidebar.
 
 2.	On the Advanced protection part at the bottom, click on **Adaptive application control**
 
@@ -70,7 +79,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 File integrity monitoring (FIM), also known as change monitoring, examines operating system files, Windows registries, application software, Linux system files, and more, for changes that might indicate an attack.
 It maps the current state of these items with the state during the previous scan and alerts you if suspicious modifications have been made. To enable FIM, follow the instructions below:
 
-1.	From Security Center sidebar, click on **Azure Defender**.
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then select **Azure Defender** under **Cloud Security** from left sidebar.
 
 2.	On the Advanced protection part at the bottom, click on **File Integrity Monitoring** tile.
 
