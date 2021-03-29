@@ -1,11 +1,20 @@
 # Module 4 - Regulatory Compliance
 
+### Overview
+
+In this exercise, you will learn about Regulatory Compliance features
+
+You will be performing the following activities to achieve the goal.
+
+* Exploring Regulatory Compliance dashboard
+* Adding new standards to Compliance policies
+* Creating custom benchmark
 
 ### Exercise 1: Understanding Regulatory Compliance dashboard
 
 1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab if not logged in already.
 
-2.	From **Security Center main dashboard**, select **Regulatory Compliance** tile (this pilar is also available from the sidebar).
+2.	On the **Azure Portal** top search bar search for **Security Center** and click to open, select **Regulatory Compliance** tile (this pilar is also available from the left sidebar).
 
 2.	Regulatory Compliance dashboard opens. On this page, you can see the compliance standards currently assigned to your subscription.
 
@@ -35,7 +44,7 @@
 
 You can add additional industry standards (represented as compliance packages) such as IST SP 800-53 R4, SWIFT CSP CSCF-v2020, UK Official and more.
 
-1.	From the top menu bar, select **Manage compliance policies**.
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open, select **Regulatory Compliance** tile from the left sidebar, then from the top menu bar, select **Manage compliance policies**.
 
 ![Manage compliance policies](../Images/manage-compliance-policies.png)
 
@@ -64,7 +73,7 @@ Once you create your custom initiative, ASC allows you to add it as security pol
 * Having security requirements represent as custom recommendations under the recommendation list.
 * Having a way to track compliance status using regulatory compliance dashboard.
 
-Navigate to Azure Policy blade. You can also select this [link](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview).
+On the **Azure Portal** top search bar search for **Policy** and click to open, You can also select this [link](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview).
 
 1.	From the left pane, select **Definitions**.
 
@@ -112,7 +121,7 @@ Navigate to Azure Policy blade. You can also select this [link](https://portal.a
 15.	You can assign policy and initiative parameters to be used during the assignment process. Skip this section and click on Review + Create to validate your settings. Then, click on Create.
 16.	You should now see your new initiative listed – **Custom Benchmark** along with the additional metadata (scope, category, etc.)
 
-17.	To assign your new security policy, open **Security Center blade**.
+17.	To assign your new security policy, On the **Azure Portal** top search bar search for **Security Center** and click to open.
 
 18.	From the left navigation pane, under Management section, click on **Security policy**.
 

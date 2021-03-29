@@ -1,14 +1,22 @@
 # Module 6 - Azure Defender
 
+### Overview
 
+In this exercise, you will explore Azure Defender
+
+You will be performing the following activities to achieve the goal.
+
+* Creating Sample Alerts
+* Creating suppression rule to automatically dismiss similar alerts
+* Accessing Security Alerts using Graph Security API
 
 ### Exercise 1: Alert validation
 
-Here let’s cover the new Alert Simulation, which should be out in the first week of December
+Here let’s cover the new Alert Simulation
 
 1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab if not logged in already.
 
-2.	Open the preview page of security alerts by using this [link](https://portal.azure.com/?feature.argsecurityalerts=true&feature.customportal=false#blade/Microsoft_Azure_Security/SecurityMenuBlade/7)
+2.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then select **Security alerts** under **General** from left sidebar or by using this [link](https://portal.azure.com/?feature.argsecurityalerts=true&feature.customportal=false#blade/Microsoft_Azure_Security/SecurityMenuBlade/7)
 
 2.	Create an alert simulation for VM:
     - On Security alerts page, click on **Sample alerts** button.
@@ -63,7 +71,7 @@ Here let’s cover the new Alert Simulation, which should be out in the first we
 When a single alert isn't interesting or relevant, you can manually dismiss it.
 In the previous step, we used the dismiss option to manually dismiss a single alert. However, you can use the suppression rules feature to automatically dismiss similar alerts in the future.
 
-1.	From Security Center sidebar, select **Security alerts**.
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then select **Security alerts** under **General** from left sidebar.
 
 2.	Select **High volume of operations in a Key Vault** alert and then click on **Take action**.
 

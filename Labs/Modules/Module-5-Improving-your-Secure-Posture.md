@@ -15,7 +15,7 @@ When a machine is found that doesn't have vulnerability assessment solution depl
 
 1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab.
 
-2.	From Security Center sidebar, click on **Recommendations**.
+2.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then click on **Recommendations** from left sidebar.
 
 2.	Expend **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
 
@@ -44,7 +44,7 @@ When a machine is found that doesn't have vulnerability assessment solution depl
 > Note: You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
 
 10.	Ensure the VM extension is deployed on the relevant machines:
-    - From Azure Portal, open **Virtual Machines**.
+    - From Azure Portal, search **Virtual Machines** in top search bar then click open.
     - Select **asclab-win**.
     - From the sidebar, click on **Extensions**.
     - Make sure to have `WindowsAgent.AzureSecurityCenter` extension installed and successfully provisioned.
@@ -67,11 +67,11 @@ Then, it exposes detailed findings per image. All vulnerabilities can be found i
 
 To simulate a container registry image with vulnerabilities, we will use ACR tasks commands and sample image:
 
-1. On the Azure portal, navigate to **Container registries** blade or click [here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerRegistry%2Fregistries).
+1. On the **Azure Portal** top search bar search for **Container registries** and click to open, or click [here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerRegistry%2Fregistries).
 
 2. Copy the name or your container registry, for example: *asclabcrktfvrxcne4kki*
 
-3. Open [Azure Cloud Shell](https://shell.azure.com/) using the bash environment.
+3. In the Azure portal, open Cloud Shell pane by selecting on the toolbar icon directly to the right of the search textbox or click on [Azure Cloud Shell](https://shell.azure.com/), If prompted to select either Bash or PowerShell, select Bash.
 
 4. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
 
@@ -95,7 +95,7 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
 7.	The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the recommendation.
 
-8.	From Security Center sidebar, click on **Recommendations**.
+8.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then click on **Recommendations** from left sidebar.
 
 9.	Expend **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)**.
 
@@ -191,7 +191,7 @@ Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
 **Create a new workflow automation instance**
 
-1.	From Security Center's sidebar, select **Workflow automation**.
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then select **Workflow automation** under **Management** from left sidebar.
 
 2.	Click **Add workflow automation**.
 
@@ -240,7 +240,7 @@ Once you start to get email notifications, you can disable the automation by sel
 Azure Resource Graph (ARG) provide an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
 Azure Secure Score data is available in ARG so you can query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscription.
 
-1.	From the Azure Portal, search for *Resource Graph Explorer* (or arg).
+1.	On the **Azure Portal** top search bar search for *Resource Graph Explorer* (or arg) and click to open.
 
 ![Resource Graph Explorer](../Images/asc-resource-graph-explorer.gif?raw=true)
 

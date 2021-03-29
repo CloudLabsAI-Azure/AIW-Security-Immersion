@@ -9,7 +9,7 @@ In this module, you will understand how to configure the continuous export for L
 
 1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment output page.
 
-2.	On Security Center’s sidebar, click on **Pricing & settings**.
+2.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then click on **Pricing & settings** under **Management** in left sidebar.
 
 3.	Select **Your Subscription**.
 
@@ -35,7 +35,7 @@ In this module, you will understand how to configure the continuous export for L
 
 > Note: Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
-11.	On the Azure portal, navigate to **Log Analytics workspaces** service or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
+11.	On the **Azure Portal** top search bar search for **Log Analytics workspaces** and click to open or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
 12.	Click on the **asclab-la-{DeploymentID}** workspace.
 
@@ -55,7 +55,7 @@ In this module, you will understand how to configure the continuous export for L
 
 ### Exercise 2: Integration with Azure Sentinel
 
-1.	On the Azure portal, navigate to **Azure Sentinel** service or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
+1.	On the **Azure Portal** top search bar search for **Azure Sentinel** and click to open or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
 
 2.	On the Azure Sentinel workspaces, click on **Connect** workspace button – for this exercise we’ll use the same Log Analytics workspace used by Security Center.
 

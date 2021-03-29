@@ -9,7 +9,9 @@ The exercises in this module will guide you through the current Security Center 
 
 1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab if not logged in already.
 
-2.	On the Security Center blade, from the left navigation, pave, click on **Security policy**.
+2.	On the **Azure Portal** top search bar search for **Security Center** and click to open.
+
+3.	On the Security Center blade, from the left navigation pane, click on **Security policy**.
 
 2.	On the Policy Management page, select **Azure subscription**.
 
@@ -38,7 +40,7 @@ Note: This is the default policy for Azure Security Center recommendations which
 
 ### Exercise 2: Explore Azure Policy
 
-1.	On Azure Portal, navigate to **Azure Policy blade**. You can use the search box on the upper part or  navigate to https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade
+1.	On the **Azure Portal** top search bar search for **Policy** and click to open or navigate to https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade
 
 2.	From the left navigation pane, under the **Authoring** section, click on **Definitions** to explore the built-in policy definitions and initiatives.
 
@@ -65,7 +67,9 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 Note: Exemptions is a premium Azure policy capability that's offered for Azure Defender customers with no additional cost. For other users, charges may apply in the future.
 
-1.	Open **Security Center blade** and from the left navigation pane and select **Recommendations**.
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open.
+
+2.	Open **Security Center blade** and from the left navigation pane and select **Recommendations**.
 
 2.	Expand **Secure management ports** security control.
 
@@ -101,13 +105,15 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 9.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
 
-10.	Navigate to **Azure Policy blade** and select **Exemptions** from the left navigation pane. Notice your newly created exemption listed there.
+10.	On the **Azure Portal** top search bar search for **Policy** and click to open, select **Exemptions** from the left navigation pane. Notice your newly created exemption listed there.
 
 ![Exempttion tab](../Images/exemptions-policy.png)
 
 ### Exercise 4: Create policy enforcement and deny
 
-1.	From **Security Center sidebar**, select **Recommendations**.
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open.
+
+2.	From **Security Center sidebar**, select **Recommendations** under **General**.
 
 2.	On recommendations filters, set the **Response action** as **Deny**.
 
@@ -156,9 +162,9 @@ Select **Review + create** to assign the policy to your subscription.
 
 ***Create a custom initiative using Azure Policy***
 
-1.	Navigate to **Azure Policy blade**.
+1.	On the **Azure Portal** top search bar search for **Policy** and click to open or navigate to https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade
 
-2.	Select **Definitions** from the sidebar.
+2.	Select **Definitions** from the left navigation pane.
 
 3.	From the top menu, select **+Initiative definition**.
 
@@ -188,7 +194,7 @@ Add each policy one by one:
 
 ***Add a custom initiative to your subscription***
 
-1.	Navigate to Security Center and the Security policy page from the sidebar.
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open then select **Security policy** page from the left sidebar.
 
 2.	Select your subscription as a scope for your custom initiative.
 
