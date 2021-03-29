@@ -1,11 +1,20 @@
 # Module 2 - Exploring Azure Security Center
 
+### Overview
+
+In this exercise, you will explore Azure Security Center Dashboard
+
+You will be performing the following activities to achieve the goal.
+
+* Overview of Security Center dashboard features **Azure Secure Score, Regulatory Compliance and Azure Defender**.
+* Exploring Security Controls and Recommendations
+* Exploring the Inventory capability
 
 ### Exercise 1: Understanding Azure Security Center dashboard
 
 1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab if not logged in already.
 
-2.	From the left navigation pane, click on **Security Center**. You can also navigate to Azure Security Center dashboard by using the top search bar.
+2.	On the **Azure Portal** top search bar search for **Security Center** and click to open.
 
 3.	On the **Overview** blade notes that it now provides a unified view into the security posture and includes multiple independent cloud security pillars such as **Azure Secure Score, Regulatory Compliance and Azure Defender**. 
 Each of these pillars also has its own dedicated dashboard allowing deeper insights and actions around that vertical, providing easy access and better visibility for security professionals.
@@ -67,9 +76,9 @@ Resources are divided by their health status. Clicking on this tile will redirec
 Previously, we briefly explored the Secure Score tile on the overview page. Now let’s dive into this capability and the associated recommendations. Azure Security Center continually assesses your resources. All findings are aggregated into a single score (Secure Score) which measures your current security posture of your subscription/s; the higher the score, the lower the identified risk level.
 Exploring secure score
 
-1.	Go to the **Azure Security Center Overview blade**.
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open.
 
-2.	From the left navigation pane, under the **Cloud Security** section, press on the **Secure Score** button.
+2.	From the left navigation pane, under the **Cloud Security** section, Select the **Secure Score** button.
 
 3.	On the Secure Score page, **review your current overall secure score**.
 
@@ -86,7 +95,9 @@ Exploring secure score
 
 **Exploring Security Controls and Recommendations**
 
-1.	On the recommendations page, pay attention to the first part of the page; the **summary view** which includes the current score, progress on the recommendations (both completed security controls and recommendations) and resource health (by severity).
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open. From the left navigation pane, under the **General** section, Select the **Recommendations** button.
+
+2.	On the recommendations page, pay attention to the first part of the page; the **summary view** which includes the current score, progress on the recommendations (both completed security controls and recommendations) and resource health (by severity).
 
 2.	On the top menu, click on **Download CSV report** button – this allow you to get a snapshot of your resources, their health status and the associated recommendations. You can use it for pivoting and reporting.
 
@@ -151,7 +162,7 @@ resources. Note: It can take several minutes after remediation completes to see 
 
 Asset inventory dashboard allows you to get a single pane of glass view to all your resources covered by Azure Security Center. It also provides per-resource visibility to all Security Center’s information and additional resource details including security posture and protection status. Since this dashboard is based on Azure Resource Graph (ARG), you can run queries across subscriptions at scale quickly and easily.
 
-1.	From Security Center’s sidebar, select **Inventory**
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open. From the left navigation pane, under the **General** section, Select the **Inventory** button.
 
 2.	Hover to the **Summaries strip** at the top of the page.
 
