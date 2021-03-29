@@ -2,7 +2,7 @@
 
 ### Overview
 
-In this exercise, you will explore Azure Security Center Dashboard
+In this exercise, you will explore Azure Security Center Dashboard features overview.
 
 You will be performing the following activities to achieve the goal.
 
