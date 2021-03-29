@@ -191,7 +191,7 @@ Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
 **Create a new workflow automation instance**
 
-1.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then select **Workflow automation** under **Management**.
+1.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then select **Workflow automation** under **Management** from left sidebar.
 
 2.	Click **Add workflow automation**.
 
