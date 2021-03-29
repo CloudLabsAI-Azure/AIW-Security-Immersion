@@ -1,5 +1,14 @@
 # Module 1 – Getting started with the Environment
 
+### Overview
+
+In this exercise, you will learn how to enable Azure Defender in your subscription
+
+You will be performing the following activities to achieve the goal.
+
+* Login to Azure Portal to access your subscription
+* Upgrade your subscription to enable Azure Defender Plan
+* Configure data collection in ASC
 
 ## Exercise 1: Log in to Azure Portal
 
@@ -36,7 +45,7 @@
 ## Exercise 2: Enabling Azure Defender
 
 ### Subscription upgrade and agents installation
-1. Open **Azure Portal** and navigate to **Security Center** blade.
+1. On the **Azure Portal** top search bar search for **Security Center** and click to open.
 
 2. Click on the **Getting started** page from the left pane, On the **Upgrade** Tab, select your subscription and press **Upgrade**.
 
@@ -51,13 +60,15 @@
 > Notice that you enabled Azure Defender at a subscription level, but Log Analytics workspace pricing is still set Off (means Azure Defender is OFF).
 
 ### Configure the data collection settings in ASC
-1. On the **Pricing and Settings** page, press on the Log Analytics workspace named **asc-lab-{DeploymentID}**
+1. On the **Azure Portal** top search bar search for **Security Center** and click to open.
+
+2. Click on the **Pricing and Settings** page from the left pane, select Log Analytics workspace named **asc-lab-{DeploymentID}**
 
     **Note**: Deployment ID can be obtained from the Lab Environment Details Tab.
 
 ![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
 
-2. On the Azure Defender Plans page, select **Azure Defender on** and press **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
+2. On the Azure Defender Plans page, select **Azure Defender on** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
 
 ![Enable Azure Defender on the workspace level](../Images/asc-enable-defender-workspace.gif?raw=true)
 
@@ -70,6 +81,8 @@
 6. Click **Edit configuration**.
 
 7. On the workspace configuration section, use the **Connect Azure VMs to a different workspace** option to select your workspace **asc-lab-{DeploymentID}**.
+
+8. When **Apply changes to existing VMs** popup prompted select **Existing and new VMs**.
 
 8. Under **Store additional raw data - Windows security events** section, select **All Events** option.
 
