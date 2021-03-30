@@ -3,48 +3,48 @@
 
 ## Overview
 
-The exercises in this module will guide you through the current Security Center policies, based on Azure Policy, and show you where to enable or disable Security Center policies.
+In this module, we will guide you through the current Security Center policies set by Azure. Also, we will walk you through the methods to enable or disable the Security policies. 
 
 ### Exercise 1: Overview of the ASC policy
 
-1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab if not logged in already.
+1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
 
-2.	On the **Azure Portal** top search bar search for **Security Center** and click to open.
+2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-3.	On the Security Center blade, from the left navigation pane, click on **Security policy**.
+3.	Click on **Security policy** from the left navigation pane under the Security Center section.
 
-2.	On the Policy Management page, select **Azure subscription**.
+4.	On the Policy Management page, select **Azure subscription**.
 
-3.	As you can see on the top part, there is 1 assignment at the **Security center default policy** which is ASC default.
+5.	By default, there is 1 assignment at the **Security center default policy** which is **ASC default**.
 
 ![Security center default policy](../Images/asc-default-policy-subscription.png)
 
-Note: This is the default policy for Azure Security Center recommendations which is enabled by default on your subscription. This is the default set of policies monitored by Azure Security Center. It was automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information please visit https://aka.ms/ascpolicies
+Note: This policy is enabled by default on your subscription as per Azure Security Center recommendations. This is the default set of policies monitored by Azure Security Center. It is automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
 
 4.	To view the policy, click on **ASC Default**.
 
 > ❗ Important: <br>
 > You should see a different subscription GUID on your environment
 
-8.	On the Edit Initiative Assignment page, click on **Parameters**
+8.	On the **Edit Initiative Assignment** page, click on **Parameters**.
 
-9.	On the **Network Security Groups on the subnet level should be enabled**, change the action to AuditIfNotExists to enable monitoring of NSGs on subnets.
+9.	On the **Network Security Groups on the subnet level should be enabled**, change the action to **AuditIfNotExists** to enable monitoring of NSGs on subnets.
 
-10.	Click on **Review + save**
+10.	Click on **Review + save**.
 
-11.	On the review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists**
+11.	On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists**
 
 ![Modifying Security Center default policy assignment](../Images/asc-default-policy-nsg-recommendation.png)
 
-12.	Click **Save**. Wait for the policy update to complete successfully.
+12.	Click on **Save**. Wait for the policy update to complete successfully.
 
 ### Exercise 2: Explore Azure Policy
 
-1.	On the **Azure Portal** top search bar search for **Policy** and click to open or navigate to https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade
+1.	Type **Policy** in the search box located on the top of the **Azure Portal** page and click on it. Alternately, you can navigate to the policy section by clicking on this link https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade.
 
-2.	From the left navigation pane, under the **Authoring** section, click on **Definitions** to explore the built-in policy definitions and initiatives.
+2.	From the left navigation pane, under the **Authoring** section, click on **Definitions**. This is where you can explore the built-in policy definitions and initiatives.
 
-3.	From the top menu, use the filter button and set Category as **Security Center** and Definitions Type as Initiative
+3.	From the top menu, use the filter button and set the Category as **Security Center** and Definitions Type as **Initiative**
 
 4.	You can now see two built-in initiatives used by Azure Security Center:
     -	*Azure Security Benchmark*
@@ -67,7 +67,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 Note: Exemptions is a premium Azure policy capability that's offered for Azure Defender customers with no additional cost. For other users, charges may apply in the future.
 
-1.	On the **Azure Portal** top search bar search for **Security Center** and click to open.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
 2.	Open **Security Center blade** and from the left navigation pane and select **Recommendations**.
 
@@ -88,7 +88,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
     - Switch the **expiration** toggle button **ON** and set datetime for two days ahead on 12:00 AM.
     - Select **Waiver** as exemption category.
     - Provide a description: **Testing exemption capability – module 3**.
-    - Select **Create**.
+    - Click on **Create**.
 
 ![Exempt tab](../Images/exempt-scope.png)
 
@@ -105,13 +105,13 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 9.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
 
-10.	On the **Azure Portal** top search bar search for **Policy** and click to open, select **Exemptions** from the left navigation pane. Notice your newly created exemption listed there.
+10.	Type **Policy** in the search box located on the top of the Azure Portal page and click on it. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there., select **Exemptions** from the left navigation pane. Notice your newly created exemption listed there.
 
 ![Exempttion tab](../Images/exemptions-policy.png)
 
 ### Exercise 4: Create policy enforcement and deny
 
-1.	On the **Azure Portal** top search bar search for **Security Center** and click to open.
+1.	Type **Security Center** in the search box located on the top of the Azure Portal page and click on it..
 
 2.	From **Security Center sidebar**, select **Recommendations** under **General**.
 
@@ -124,7 +124,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 4.	From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
 > ❗ Important: <br>
-> Security misconfigurations are a major cause of security incidents
+> Security misconfigurations are a major cause of security incidents.
 
 ![Secure Transfer](../Images/secure-transfer.png)
 
@@ -132,11 +132,11 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 ![Prevent resource creation](../Images/asc-storage-deny-policy.gif?raw=true)
 
-6.	Go back to the **recommendations view**, set the **Response action** filter as **Select All**, and from the search area, type **Auditing**. Click on the recommendation **Auditing on SQL server should be enabled**.
+6.	Go back to the **recommendations view**, set the **Response action** filter as **Select All**. In the search box, type **Auditing**. Click on the recommendation **Auditing on SQL server should be enabled**.
 
 ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
-7.	On the **Auditing on SQL server should be enabled** page, from the top menu bar, click on the **Enforce** button. Using this option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
+7.	On the **Auditing on SQL server should be enabled** page, from the top menu bar, click on the **Enforce** button. This option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
 
 8.	Once the configuration pane opens with all of the policy configuration options, select the following configuration settings:
 
@@ -162,11 +162,11 @@ Select **Review + create** to assign the policy to your subscription.
 
 ***Create a custom initiative using Azure Policy***
 
-1.	On the **Azure Portal** top search bar search for **Policy** and click to open or navigate to https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade
+1.	Type Policy in the search box located on the top of the Azure Portal page and click to open it or navigate to https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade
 
 2.	Select **Definitions** from the left navigation pane.
 
-3.	From the top menu, select **+Initiative definition**.
+3.	From the top menu, select **+Initiative definition** to add new initiative
 
 4.	On the New Initiative definition page, select the following:
     - Initiative location: Your Subscription
@@ -188,13 +188,13 @@ Add each policy one by one:
     - *SSH access from the Internet should be blocked*
     - *Storage accounts should restrict network access*
 
-7. Select **Review + Create**. Click **Create**.
+7. Select **Review + Create**and click on **Create**.
 
 ![custom initiative](../Images/policy-definition.png)
 
 ***Add a custom initiative to your subscription***
 
-1.	On the **Azure Portal** top search bar search for **Security Center** and click to open then select **Security policy** page from the left sidebar.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then select **Security policy** page from the left sidebar..
 
 2.	Select your subscription as a scope for your custom initiative.
 
@@ -214,6 +214,6 @@ Add each policy one by one:
 
 ### Summary
 
-In this module, you have completed Exploring **Security Center** features, **ASC default policy**, **Azure Policy**, **Creating resource exemption**, **Creating policy enforcement and deny**, and **Creating a custom policy**.
+In this module, you have completed Exploring **Security Center** features, **ASC default policy, Azure Policy, Created resource exemption, Created policy enforcement and deny,** and **Created custom policy**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
