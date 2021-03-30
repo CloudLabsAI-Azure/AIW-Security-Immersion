@@ -55,11 +55,11 @@ In this lab we will use only one but selecting different/additional subscription
 ![Overview: Azure Defender tile](../Images/azure-defender-tile.png)
 
 
-11.	On the **Regulatory Compliance** tile, you can get insights into your compliance posture based on continuous assessment of your both Azure and hybrid cloud environments. This tile shows only 4 standards which are SOC TSP, ISO 27001, PCI DSS 3.2.1 and Azure Security Benchn. Clicking on this tile will redirects you to Regulatory Compliance dashboard – where you can add additional standards and explore the current ones.
+11.	On the **Regulatory Compliance** tile, you can get insights into your compliance posture based on continuous assessment of your both Azure and hybrid cloud environments. This tile shows following standards which are SOC TSP, ISO 27001, PCI DSS 3.2.1 and Azure Security Benchn. Clicking on this tile will redirects you to Regulatory Compliance dashboard – where you can add additional standards and explore the current ones.
 
 ![Overview: Regulatory Compliance tile](../Images/regulatory-compliance-tile.png)
 
-12.	The last tile on the overview page is the **Inventory** – it shows the number of unmonitored VMs alongside with the total covered resources - **you should expect to have zero unmonitored VMs**.
+12.	The last tile on the overview page is the **Assessed resources** which is **Inventory** – it shows the number of unmonitored VMs alongside with the total covered resources - **you should expect to have zero unmonitored VMs**.
 Resources are divided by their health status. Clicking on this tile will redirects you to the asset inventory dashboard where you can explore your resource and their security posture – see a dedicated exercise below.
 
 > ❗ Important: <br>
@@ -156,7 +156,7 @@ Exploring secure score
 11. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected 
 resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
 
-12.	Return to recommendations list. Expend the "Manage access and permissions" security control, you can now see recommendations flagged. Those aren’t included in the calculation of your score. They should be still remediated, so that when the preview period ends, they will contribute towards your score.
+12.	Return to recommendations list. Expend the "Manage access and permissions" security control, you can now see recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated, so that when the preview period ends, they will contribute towards your score.
 
 ### Exercise 3: Exploring the Inventory capability
 
@@ -189,7 +189,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 ![Remediate a resource](../Images/linux-recom.png)
 
-10.	Go back to Inventory page and clear search key word **linux** then from the filter menu, select the **Resource Group** filter and then **asclab-asc**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with no active recommendations. Clear the filter by selecting **Resource Group** and then **Select all**.
+10.	Go back to Inventory page and clear search key word **linux** then from the filter menu, select the **Resource Group** filter and then **asclab-aks**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
 
 ![Remediate a resource](../Images/filter-rg.png)
 
@@ -197,9 +197,9 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 11.	From the filter menu, select the **Resource Group** filter and then select all. again from the filter menu, select **Recommendations**, uncheck **select all** option and then select the **Auditing on SQL Server should be enabled**. You can also use the search area within the filter to better find across the list. Clear your filter.
 
-12.	Tag is very common asset management in Azure to do asset management. Using this view, you can assign tags to the filtered resources: 
+12.	Tag is very common asset management in Azure to do asset management. Resources can be tagged using Tag name and value, assign tags to the below filtered resources: 
 
-* Remove the **Recommendations** filter then filter the **Resource type** column to include only **App Services**.
+* Filter the **Resource type** column to include only **App Services**.
 * **Select** the two app service named as *asclab-fa-xx* and *asclab-app-xx*. (Here **xx** is the uniquie id of resource).
 * From the top menu, click **Assign tags**
 * Assign `Environment` as the name and  `Production` as the value.
