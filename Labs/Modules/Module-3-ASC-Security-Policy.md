@@ -79,7 +79,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 4.	On the list of **unhealthy resources**, see the current resources: *asclab-win* and *asclab-linux*.
 
-5.	Select the **asclab-win** resource and then click on **Create exemption**.
+5.	Select the **asclab-win** resource and then click on **Exempt**.
 
 ![Create exemption](../Images/asc-management-ports-resource-exemption.gif?raw=true)
 
@@ -132,7 +132,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 ![Prevent resource creation](../Images/asc-storage-deny-policy.gif?raw=true)
 
-6.	Go back to the **recommendations view**, set the **Response action** fileter as **Select All**, and from the search area, type **Auditing**. Click on the recommendation **Auditing on SQL server should be enabled**.
+6.	Go back to the **recommendations view**, set the **Response action** filter as **Select All**, and from the search area, type **Auditing**. Click on the recommendation **Auditing on SQL server should be enabled**.
 
 ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
@@ -169,7 +169,7 @@ Select **Review + create** to assign the policy to your subscription.
 3.	From the top menu, select **+Initiative definition**.
 
 4.	On the New Initiative definition page, select the following:
-    - Initiative scope: Your Subscription
+    - Initiative location: Your Subscription
     - Name: Contoso Security Benchmark
     - Description: Baseline for security policies to appear alongside with the built-in recommendations
     - Category: select Create new and type: Contoso
