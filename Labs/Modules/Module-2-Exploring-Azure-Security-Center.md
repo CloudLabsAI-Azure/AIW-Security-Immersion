@@ -112,7 +112,7 @@ Exploring secure score
 
 ![Recommendations group by controls](../Images/asc-recommendations-group-by-controls.gif?raw=true)
 
-5.	Look for the **Encrypt data in transit** security control. Notice its max score of 4 and the potential increase for the score. You should have more than three recommendations within this control.
+5.	Look for the **Encrypt data in transit** security control. Notice its max score is around 4 and the potential increase for the score. You should have more than three recommendations within this control.
 
     **Note**: It takes few hours for all the data to be loaded, In case if you don't see above option in the list that means it is not populated yet in the recommendations. You can continue to next exercise and verify this after some time
 
@@ -124,7 +124,7 @@ Exploring secure score
 7.	On the top section, notice the following:
 
 * Title of the recommendation: **Secure transfer to storage accounts should be enabled**
-* Top menu controls: **Exempt**, **Deny**
+* Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
 * Severity indicator: **High**
 * Refreshens interval on supported recommendations: **30 Min**
 
@@ -149,14 +149,14 @@ Exploring secure score
 
 
 
-9.	In the bottom section, **select a resource** (the single storage account on the unhealthy tab) and **click Remediate**.
+9.	Close the template window, in the bottom section, **select a resource** (the single storage account on the **Unhealthy resources** tab of **Affected resources**) and click **Remediate**.
 
 10. On the right pane, review the implications for this remediation and press **Remediate 1 resource**.
 
 11. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected 
 resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
 
-12.	Return to recommendations list. Expand the "Manage access and permissions" security control, you can now see recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
+> **Info**: In recommendation list, you can now see few recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
 ### Exercise 3: Exploring the Inventory capability
 
@@ -196,7 +196,9 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 > Notice! The entire grid can be filtered and sorted
 
-11.	From the filter menu, select the **Resource Group** filter and then **select all**. again from the filter menu, select **Recommendations**, uncheck **select all** option and then select the **Auditing on SQL Server should be enabled**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
+11.	From the filter menu, select the **Resource Group** filter and then **select all**. Again from the filter menu, select **Recommendations**, uncheck **select all** option and then select the **Auditing on SQL Server should be enabled**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
+
+    **Note**: If you don't see **Auditing on SQL Server should be enabled** in search that means it is not loaded yet to recommendations, Note down this step number and verify this after some time.
 
 12.	Tags is a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
@@ -206,11 +208,13 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 * Assign `Environment` as the name and  `Production` as the value.
 * Click **Save**.
 
+    **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this after some time.
+
 ![Inventory: Assign tags](../Images/asc-inventory-assign-tags.gif?raw=true)
 
-13.	Go to add filter and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
+13.	From the filter pane, remove the **Resource type** filter then go to add filter and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
-14.	From the filter pane, remove the **Resource type** filter then select **Azure Defender** and set value to **On**. On the **Resource Group** select **asclab**. From the top menu bar, click on **Download CSV report**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Azure Defender plan (when applicable).
+14.	From the filter pane, remove the **Security findings** filter if you added in previous step then select **Azure Defender** and set value to **On**. On the **Resource Group** select **asclab** (Unselect remaining). From the top menu bar, click on **Download CSV report**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Azure Defender plan (when applicable).
 
 ![Inventory: Assign tags](../Images/download-csv.png)
 
