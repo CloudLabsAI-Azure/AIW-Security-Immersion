@@ -156,7 +156,7 @@ Exploring secure score
 11. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected 
 resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
 
-12.	Return to recommendations list. Expand the "Manage access and permissions" security control, you can now see recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
+> **Info**: In recommendation list, you can now see few recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
 ### Exercise 3: Exploring the Inventory capability
 
