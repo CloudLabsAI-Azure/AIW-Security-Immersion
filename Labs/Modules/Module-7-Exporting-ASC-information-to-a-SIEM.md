@@ -7,6 +7,10 @@ In this module, you will configure the continuous export for Log Analytics works
 
 ### Exercise 1: Using continuous export
 
+Azure Security Center generates detailed security alerts and recommendations. You can view them in the portal or through programmatic tools. You might also need to export some or all of this information for tracking with other monitoring tools in your environment.
+
+Continuous export lets you fully customize what will be exported, and where it will go. Even though the feature is called continuous, there's also an option to export weekly snapshots of secure score or regulatory compliance data.
+
 1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Pricing & settings** under **Management** tab in left sidebar.
@@ -54,6 +58,8 @@ In this module, you will configure the continuous export for Log Analytics works
 ![Respective tables in the Log Analytics workspace](../Images/log-editor-run.png)
 
 ### Exercise 2: Integration with Azure Sentinel
+
+Integration with Azure Sentinel will enable centralized monitoring of alerts and discovery data. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
 1.	Type **Azure Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
 
