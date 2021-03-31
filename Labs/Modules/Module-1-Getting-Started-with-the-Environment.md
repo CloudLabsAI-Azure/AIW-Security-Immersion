@@ -9,7 +9,6 @@ You will be performing the following activities to achieve the goal.
   - Login to Azure Portal to access your subscription
   - Upgrade your subscription to enable Azure Defender Plan
   - Configure data collection in ASC
-  - new line
 
 ## Exercise 1: Log in to Azure Portal
 
