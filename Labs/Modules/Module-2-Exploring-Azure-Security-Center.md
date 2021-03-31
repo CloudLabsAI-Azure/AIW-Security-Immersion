@@ -196,7 +196,9 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 > Notice! The entire grid can be filtered and sorted
 
-11.	From the filter menu, select the **Resource Group** filter and then **select all**. again from the filter menu, select **Recommendations**, uncheck **select all** option and then select the **Auditing on SQL Server should be enabled**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
+11.	From the filter menu, select the **Resource Group** filter and then **select all**. Again from the filter menu, select **Recommendations**, uncheck **select all** option and then select the **Auditing on SQL Server should be enabled**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
+
+    **Note**: If you don't see **Auditing on SQL Server should be enabled** in search that means it is not loaded yet to recommendations, Note down this step number and verify this after some time.
 
 12.	Tags is a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
@@ -206,11 +208,13 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 * Assign `Environment` as the name and  `Production` as the value.
 * Click **Save**.
 
+    **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this after some time.
+
 ![Inventory: Assign tags](../Images/asc-inventory-assign-tags.gif?raw=true)
 
-13.	Go to add filter and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
+13.	From the filter pane, remove the **Resource type** filter then go to add filter and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
-14.	From the filter pane, remove the **Resource type** filter then select **Azure Defender** and set value to **On**. On the **Resource Group** select **asclab**. From the top menu bar, click on **Download CSV report**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Azure Defender plan (when applicable).
+14.	From the filter pane, remove the **Security findings** filter if you added in previous step then select **Azure Defender** and set value to **On**. On the **Resource Group** select **asclab** (Unselect remaining). From the top menu bar, click on **Download CSV report**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Azure Defender plan (when applicable).
 
 ![Inventory: Assign tags](../Images/download-csv.png)
 
