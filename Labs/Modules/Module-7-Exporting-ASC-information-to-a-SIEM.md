@@ -23,7 +23,7 @@ In this module, you will configure the continuous export for Log Analytics works
 
 7.	On the Exported data types, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
 
-8.	On the Export configuration, select a resource group: *asclabs*
+8.	On the Export configuration, select a resource group: *asclab*
 
 9.	On the Export target, select the target Log Analytics workspace: *asclab-la-{DeploymentID}*
 
@@ -39,17 +39,17 @@ In this module, you will configure the continuous export for Log Analytics works
 
 12.	Click on the **asclab-la-{DeploymentID}** workspace.
 
-13.	From the workspace’s sidebar, click on the **Logs** button.
+13.	From the workspace’s sidebar, click on the **Logs** button under **General** section.
 
 14.	On the welcome page, click on the **Get Started** button and then **close the Queries window**.
 
 ![Continuous export settings page](../Images/log-analytic-started.png)
 
-15.	From the left pane, notice the following tables: `SecureityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in **Security and Audit**.
-
-![Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
+15.	From the left pane, notice the following tables: `SecureityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
 
 16.	Query the tables later on to validate data streaming - double click on the desired table to open a new query. Then click **Run**.
+
+![Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
 
 ![Respective tables in the Log Analytics workspace](../Images/log-editor-run.png)
 
@@ -57,9 +57,9 @@ In this module, you will configure the continuous export for Log Analytics works
 
 1.	Type **Azure Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
 
-2.	On the Azure Sentinel workspaces, click on the **Connect** workspace button – for this exercise we’ll use the same Log Analytics workspace used by Security Center.
+2.	On the Azure Sentinel workspaces, click on the **Connect workspace** button – for this exercise we’ll use the same Log Analytics workspace used by Security Center.
 
-3.	On the **Add Azure Sentinel** to a workspace, select **asclab-la-{DeploymentID}** workspace. Click on **Add**.
+3.	On the **Add Azure Sentinel to a workspace**, select **asclab-la-{DeploymentID}** workspace. Click on **Add**.
 
 4.	Adding Azure Sentinel to workspace asclab-la-{DeploymentID} is now in progress. This process will take few minutes to complete. 
 
