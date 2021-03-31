@@ -15,15 +15,15 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Recommendations** from the left sidebar.
 
-3.	Expand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
+3.	Go to bottom of page and expand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
 
 4.	Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines** recommendation listed here. If you don’t, you will need **24 hours** to have the recommendation with the assessment.
 
 ![](../Images/remediate-blade.png)
 
-5.	Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it. This is a Quick Fix that allows you to deploy the VM extension on the desired VMs.
+5.	Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
 
-6.	Click to expand **Remediation steps** – in addition to the Quick Fix remediation option, you can also use the **View recommendation logic** option to expose an automatic remediation script content (ARM template). Once done, **Close** this window.
+6.	Click to expand **Remediation steps** – then click on **View recommendation logic** option to expose an automatic remediation script content (ARM template). Once done, **Close** this window.
 
 ![](../Images/remediation-logic.png)
 
@@ -46,7 +46,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
     - Select **asclab-win**.
     - From the sidebar, click on **Extensions**.
     - Make sure to have `WindowsAgent.AzureSecurityCenter` extension installed and successfully provisioned.
-    - Repeat the process for **asclab-linux** – you should expect to see a different name for the extension on Linux platform: LinuxAgent.AzureSecurityCenter.
+    - Repeat the process for **asclab-linux** – you should expect to see a different name for the extension on Linux platform: `LinuxAgent.AzureSecurityCenter`.
 
 ![](../Images/win-ext.png)
 
@@ -106,7 +106,7 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
 ![](../Images/acr2.png)
 
-11.	Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab-xxx).
+11.	Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
 
 12.	On the **Security Checks** section, notice the number of vulnerabilities.
 
@@ -114,7 +114,7 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
 ![](../Images/acr3.png)
 
-Notice the vulnerability description, general information (containing the Svss 3.0 base score, SVEs, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
+Notice the vulnerability description, general information (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
 
 ### Exercise 3: Automate recommendations with workflow automation
 
@@ -135,6 +135,8 @@ Every security program includes multiple workflows for incident response. The pr
 6.	Keep Log Analytics option as **Off**.
 
 7.	Select **Review + Creation** and then click on **Create**.
+
+8.	When the **Deployment** is completed click on **Go to resource**
 
 ![](../Images/logic-app.png)
 
@@ -163,7 +165,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 13.	Click in the **Subject box**, then type: **Recommendation changed:**
 
-14.	Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on **Dynamic content** and then select `Properties Display Name` (click Add dynamic content if it doesn’t pop out automatically.
+14.	Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on **Dynamic content** and then select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
 
 15.	Click into the Body text box and type the following:
 
@@ -173,7 +175,7 @@ Every security program includes multiple workflows for incident response. The pr
 **Status:**</br>
 **Link to recommendation:**</br>
 
-16.	Click just after each section, to get your cursor in the right place. In the **dynamic content box**, click on **See more** and match each line to the following content:
+16.	Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by selecting in the list:
 
 Recommendation: `Properties Display Name`</br>
 Description: `Properties Metadata Description`</br>
@@ -186,7 +188,7 @@ Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
 **Create a new workflow automation instance**
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select Workflow automation under **Management** section from the left sidebar.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workflow automation** under **Management** section from the left sidebar.
 
 2.	Click on **Add workflow automation**.
 
@@ -219,14 +221,14 @@ Once you start to get email notifications, you can disable the automation by sel
 
 6.	Test/trigger your automation manually:
     - On Security Center sidebar, click on **Recommendations**.
-    - Look for any recommendations that has a **Quick Fix banner**.
+    - Look for recommendation **Azure Defender for SQL should be enabled on your SQL servers** under **Remediate vulnerabilities** click on it.
 
     ![](../Images/trigger-logic-app.png)
 
 
-    - Select a resource and then click on the **Trigger Logic App** button.
-    - In the Logic App Trigger blade, select the Logic App you created in the previous step (Send-RecommendationsChanges).
-    - You should receive an email containing ...
+    - Select resource **asclab-sql-xxx** (here xxx is unique ID) and then click on the **Trigger Logic App** button.
+    - In the Logic App Trigger blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
+    - You should receive an email, verify in your inbox.
 
 
 ![](../Images/trigger-logic-app1.png)
