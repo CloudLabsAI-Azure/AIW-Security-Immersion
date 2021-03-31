@@ -6,9 +6,9 @@ In this exercise, you will learn how to enable Azure Defender in your subscripti
 
 You will be performing the following activities to achieve the goal.
 
-* Login to Azure Portal to access your subscription
-* Upgrade your subscription to enable Azure Defender Plan
-* Configure data collection in ASC
+  - Login to Azure Portal to access your subscription
+  - Upgrade your subscription to enable Azure Defender Plan
+  - Configure data collection in ASC
 
 ## Exercise 1: Log in to Azure Portal
 
