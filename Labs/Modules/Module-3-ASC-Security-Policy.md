@@ -69,22 +69,24 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-2.	Open **Security Center blade** and from the left navigation pane and select **Recommendations**.
+2.	Select **Recommendations** from the left navigation pane.
 
-2.	Expand **Secure management ports** security control.
+2.	Go to bottom of page and expand **Secure management ports** security control from the list.
 
 3.	Select the **Management ports should be closed on your virtual machines** recommendation.
 
 ![policy assignment](../Images/secure-management-ports.png)
 
-4.	On the list of **unhealthy resources**, see the current resources: *asclab-win* and *asclab-linux*.
+   **Note**: If you don't see above option that means it is not loaded yet to control list, Note down this step number and verify this after some time.
+
+4.	On the list of **Unhealthy resources** under **Affected resources**, see the current resources: *asclab-win* and *asclab-linux*.
 
 5.	Select the **asclab-win** resource and then click on **Exempt**.
 
 ![Create exemption](../Images/asc-management-ports-resource-exemption.gif?raw=true)
 
 6.	The create **exemption pane** opens:
-    - Keep the name as **ASC-asclab-win-restrictAccessToManagementPortsMonitoring**.
+    - Name: **ASC-Management ports should be closed on your virtual machines**.
     - Switch the **expiration** toggle button **ON** and set datetime for two days ahead on 12:00 AM.
     - Select **Waiver** as exemption category.
     - Provide a description: **Testing exemption capability – module 3**.
@@ -105,7 +107,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 9.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
 
-10.	Type **Policy** in the search box located on the top of the Azure Portal page and click on it. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there., select **Exemptions** from the left navigation pane. Notice your newly created exemption listed there.
+10.	Type **Policy** in the search box located on the top of the Azure Portal page and click on it. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there.
 
 ![Exempttion tab](../Images/exemptions-policy.png)
 
@@ -115,7 +117,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 2.	From **Security Center sidebar**, select **Recommendations** under **General**.
 
-2.	On recommendations filters, set the **Response action** as **Deny**.
+2.	On recommendations filters, set the **Response actions** as **Deny**.
 
 ![Auditing on SQL server should be enabled](../Images/asc-recommendations-filters-deny.gif?raw=true)
 
@@ -128,7 +130,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 ![Secure Transfer](../Images/secure-transfer.png)
 
-5.	On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied.
+5.	On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
 ![Prevent resource creation](../Images/asc-storage-deny-policy.gif?raw=true)
 
@@ -188,21 +190,21 @@ Add each policy one by one:
     - *SSH access from the Internet should be blocked*
     - *Storage accounts should restrict network access*
 
-7. Select **Review + Create**and click on **Create**.
+7. Select **Review + Create** and click on **Create**.
 
 ![custom initiative](../Images/policy-definition.png)
 
 ***Add a custom initiative to your subscription***
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then select **Security policy** page from the left sidebar..
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then from the left sidebar under **Management** section select **Security policy** page.
 
 2.	Select your subscription as a scope for your custom initiative.
 
 > Note: You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Security Center.
 
-3.	In the Security policy page, under Your custom initiatives, click **Add a custom initiative**.
+3.	In the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
 
-4.	Your newly created initiative is listed: *Contoso Security Benchmark*. Select **Add***.
+4.	Your newly created initiative is listed: *Contoso Security Benchmark*. Select **Add**.
 
 ![Add custom initiative](../Images/custom-initiatives.png)
 
