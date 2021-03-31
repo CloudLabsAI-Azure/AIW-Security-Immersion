@@ -53,7 +53,7 @@ You will be performing the following activities to achieve the goal.
 
 3. Click on **Install agents**, if the button is greyed out, then it's already set to **On**.
 
-4. Return to Azure security Center blade and click on **Pricing & settings**.
+4. Return to Azure security Center blade and click on **Pricing & settings** from the left pane.
 
 5. Your subscription should be listed here and the Azure Defender plan should appear **On** (if it does not, close your browser session and open a new one).
 
