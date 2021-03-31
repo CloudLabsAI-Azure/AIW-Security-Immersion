@@ -27,7 +27,7 @@ You will be performing the following activities to achieve the goal.
 
 5.	Click on the **What’s new** button – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
 
-6.	Note the **high-level numbers** at the top menu; This view allows you to see a summary of your subscriptions, active recommendations, security alerts alongside connected cloud accounts (AWS account and GCP projects – will be discussed in the next modules).
+6.	Note the **high-level numbers** at the top menu; This view allows you to see a summary of your subscriptions, assessed resource, active recommendations and security alerts.
 
 ![Azure Security Center: Top menu](../Images/asc-dashboard-top-menu.gif?raw=true)
 
@@ -57,7 +57,7 @@ You will be performing the following activities to achieve the goal.
 
 ![Overview: Regulatory Compliance tile](../Images/regulatory-compliance-tile.png)
 
-12.	The last tile on the overview page is the **Assessed resources** which is essentially the **Inventory** – it shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**.
+12.	The next tile on the overview page is the **Assessed resources** which is essentially the **Inventory** – it shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**.
 Resources are divided by their health status. Clicking on this tile will redirects you to the asset inventory dashboard where you can explore your resource and their security posture – see a dedicated exercise below.
 
 > ❗ Important: <br>
@@ -114,6 +114,8 @@ Exploring secure score
 
 5.	Look for the **Encrypt data in transit** security control. Notice its max score of 4 and the potential increase for the score. You should have more than three recommendations within this control.
 
+    **Note**: It takes few hours for all the data to be loaded, In case if you don't see above option in the list that means it is not populated yet in the recommendations. You can continue to next exercise and verify this after some time
+
 6.	Click on the **Secure transfer to storage accounts should be enabled** recommendation.
 
 > ⭐ Notice: <br>
@@ -166,18 +168,17 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 ![Remediate a resource](../Images/inventory.png)
 
-3.	Notice the total number of resources: **20**
+   **Note**: The numbers on the images will vary according to time, So you might wont see same numbers.
 
-> ⭐ Notice: <br>
-> The total number of resources are the ones that are connected to the Security Center and NOT the total number of resources that you have in your subscriptions/s.
+3.	Notice the total number of resources, The total number of resources are the ones that are connected to the Security Center and NOT the total number of resources that you have in your subscriptions/s
 
-4.	Notice the number of **unhealthy resources: 14** (resources with actionable recommendations based on the selected filter)
+4.	Notice the number of **unhealthy resources**, The unhealthy resources are the resources with actionable recommendations based on the selected filter.
 
-5.	Notice the **unmonitored resources: 0** (indicates if there are resources with Log Analytics agent deployed but with health issues). Since we enabled the auto-provisioning in the previous module, all existing VMs are covered and connected = monitored.
+5.	Notice the **unmonitored resources**, The unmonitored resources indicates if there are resources with Log Analytics agent deployed but with health issues. Since we enabled the auto-provisioning in the previous module, all existing VMs are covered and connected = monitored.
 
 6.	Use the **Filter by name** box to search for **linux**. You should now see a filtered view containing your desired resource: *asclab-linux*
 
-7.	Hover on the **recommendations** column to see a tooltip with the active recommendations. You should expect to see **8 active out of around 16** recommendations – these are the recommendations you must attend.
+7.	Hover on the **recommendations** column to see a tooltip with the active recommendations. You should expect to see **active vs total recommendations** – these are the recommendations you must attend.
 
 8.	Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**.
 
@@ -187,7 +188,9 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 ![Remediate a resource](../Images/linux-recom.png)
 
-10.	Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Group** filter and then **asclab-aks**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
+   **Note**: It will take few hours for all the recommendations to get loaded.
+
+10.	Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Group** filter and then **asclab-aks** (Unselect remaining). Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
 
 ![Remediate a resource](../Images/filter-rg.png)
 
