@@ -41,7 +41,7 @@ In this exercise we will cover the new Alert Simulation
 
 ![Create sample virtual machine security alerts](../Images/Alert-Description.png)
 
-7.	To explore the full details of the alert, click on **View full details**.
+7.	To explore the full details of the alert, click on **View full details**. When you are done return to **Security alerts** page**.
 
 ![Create sample virtual machine security alerts](../Images/Alert-Description-Details.png)
 
@@ -90,7 +90,7 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 > Note, you can create suppression rules on a management group level by using a built-in policy definition named Deploy - Configure suppression rules for Azure Security Center alerts in Azure Policy. To suppress alerts at the subscription level, you can use the Azure portal or REST APIs.
 
-8. You can change your existing suppression rules or create new ones: from the top menu, select **Suppression rules**. 
+8. You can change your existing suppression rules or create new ones: On **Security alerts** page from the top menu, select **Suppression rules**. 
 
 ![Create sample virtual machine security alerts](../Images/alert-suppression.png)
 
@@ -102,10 +102,6 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 ![Create sample virtual machine security alerts](../Images/suppression-filter-options.png)
 
-12. You should now expect to see only **1 dismissed alert**: High volume of operations in a Key Vault Sample alert.
-
-![Create sample virtual machine security alerts](../Images/suppression-filter.png)
-
 ### Exercise 3: Accessing Security Alerts using Graph Security API
 
 You can also query security alerts data using REST APIs, such as the Microsoft Graph Security API that provides a unified interface and schema to integrate with security solutions from Microsoft and Partners.
@@ -116,11 +112,11 @@ In this exercise, we will use one of the endpoints which allows to retrieve a li
 
 2.	Scroll down to the **Example** section for a request or [click here](https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0&tabs=http#example).
 
-![Create sample virtual machine security alerts](../Images/rest-tryit.png)
-
 3.	On the HTTP tab, review the endpoint URL: `https://graph.microsoft.com/v1.0/security/alerts`.
 
 4.	Click on **Try It** then click on the User icon to login. You need to login using credentials provided in the **Environment Details** tab.
+
+![Create sample virtual machine security alerts](../Images/rest-tryit.png)
 
 ![Create sample virtual machine security alerts](../Images/rest-execute-login.png)
 
@@ -128,7 +124,7 @@ In this exercise, we will use one of the endpoints which allows to retrieve a li
 
 ![Consent-Accept](../Images/consent-accept.png)
 
-6.  Now click on **Modify Permissions (Preview)** and wait for two permissions to load. Scroll to the right side of permissions then click on **Consent**, do this for both permissions. Click on **Accept** for each permission to get **Consented**
+6.  Now click on **Modify Permissions (Preview)** and wait for two permissions to load. Scroll to the right side of permissions then click on **Consent**, do this for both permissions. When asked login using credentials provided in the **Environment Details** tab, click on **Accept** for each permission to get **Consented**
 
 ![Consent](../Images/consent.png)
 
