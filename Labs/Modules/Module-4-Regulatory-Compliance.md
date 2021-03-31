@@ -18,13 +18,13 @@ You will be performing the following activities to achieve the goal.
 
 3.	Once the Regulatory Compliance dashboard opens you can see the compliance standards currently assigned to your subscription.
 
-4.	On the top strip, notice the number of **passed vs. failed controls** across standards.
+4.	On the top strip, notice the number of **Passed vs. failed controls** across standards.
 
 ![Regulatory compliance assessment and standards](../Images/asc-regulatory-compliance-assessment-standards.png)
 
 5.	On the main page, select **ISO 27001** standard. Notice the different compliance controls mapped to assessments.
 
-6.	Locate the **A13 Communications security** compliance control. Click on the compliance domain **A13.2. Information transfer** and expand it to show **A13.2.1. Information transfer policies and procedures** – Both are currently in _failed_ status.
+6.	Locate and expand the **A13 Communications security** compliance control. Click on the compliance domain **A13.2. Information transfer** and expand **A13.2.1. Information transfer policies and procedures** – Observe both _failed_ status.
 
 ![Remmediate function app](../Images/communications-security.png)
 
@@ -36,7 +36,7 @@ You will be performing the following activities to achieve the goal.
 
 9.	Return to the dashboard. Here, you can export the regulatory standard compliance status report as a PDF or CSV file. From the top menu bar, click on **Download report**.
 
-10.	On the Report standard dropdown menu, select **PSI DSS 3.2.1** and **PDF**. Click on **Download**
+10.	On the Report standard dropdown menu, select **PCI DSS 3.2.1** and **PDF**. Click on **Download**
 
 11.	A local PDF file is now stored on your machine. Open the **PCI DSS 3.2.1 Compliance Report** and explore it – This report summarizes the status of those assessments on your environment, as mapped to the associated controls.
 
@@ -52,7 +52,7 @@ You can add additional industry standards (represented as compliance packages) s
 
 3.	In the **Industry & regulatory standards** section, notice the out of the box standards. Click on **Add more standards**.
 
-4.	On the **Add regulatory compliance standards** window, locate the **Azure CIS 1.1.0 (New)** standard and click on **Add**.
+4.	On the **Add regulatory compliance standards** window, locate the **Azure CIS 1.1.0** standard and click on **Add**.
 
 ![Manage compliance policies](../Images/add-more-standards.png)
 
@@ -89,11 +89,11 @@ Type **Policy** in the search box located on the top of the **Azure Portal** pag
 
 6.	Select **Category**. You can decide to use existing one (for example: Security Center) or to create your own one. *The recommended approach is to use a custom one so you can quickly filter policy definitions and initiatives when needed (for example: Contoso)*.
 
-7.	Select **Version** number. Each policy definition and initiative contain a version in its metadata section. You can decide to have major versions (1.0), minor version (1.1) and so. See this file for additional instructions. Click **Next**.
+7.	Provide **Version** number. Each policy definition and initiative contain a version in its metadata section. You can decide to have major versions (1.0), minor version (1.1) and so.
 
 ![Benchmark Next](../Images/benchmark-create.png)
 
-8.	Click on **Groups**, in this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create Group**.
+8.	On the **Initiative definition** blade click on **Groups**, in this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create Group**.
 
 9.	Once you do that, you will be able to create a New Group. For this demonstration, we will name it **Group 1**. Next, click on **Create new** under Subgroup and name it **Sub-group1** and provide a description. Please note that additional metadata can be used as well. The location of the policyMetadata object that has additional details about the control and compliance domain. Click on **Save** to create the new group.
 
@@ -103,7 +103,7 @@ Type **Policy** in the search box located on the top of the **Azure Portal** pag
 
 11.	Now you should have two groups to help you organize your policies within the initiative.
 
-12.	Click on the **Policies** tab. Here you can add policy definitions, both built-in and custom. Click **Add policy definition(s)**. Select your desired polices, if you create a benchmark, you can also leverage existing policy definitions from **Microsoft managed** tab. For example, you can choose the following policies and select Add:
+12.	On the **Initiative definition** blade, click on the **Policies** tab. Here you can add policy definitions, both built-in and custom. Click **Add policy definition(s)**. Select your desired polices, if you create a benchmark, you can also leverage existing policy definitions from **Microsoft managed** tab. For example, you can choose the following policies and select Add:
     -	Audit virtual machines without disaster recovery configured
     -	Azure Backup should be enabled for Virtual Machines
     -	Audit VMs that do not use managed disks
@@ -112,7 +112,7 @@ Type **Policy** in the search box located on the top of the **Azure Portal** pag
 
 13.	Every policy on the list, has its definition name, reference ID and the associated group. However, you do need to define a group for each policy. To do so, click on the **…** to open the context menu and select **Edit groups**.
 
-14.	Make sure all policies are associated to a group. Please notice that policies can be associated to multiple groups.
+14.	Make sure all policies are associated to a group. Please notice that policies can be associated to multiple groups. Here we are selecting **Group 1** and select **Save**.
 
 ![edit group](../Images/edit-group.png)
 
@@ -134,7 +134,7 @@ Type **Policy** in the search box located on the top of the **Azure Portal** pag
 
 ![Add a custom initiative](../Images/add-a-custom-initiative.png)
 
-21.	On **Add custom initiative** window, your new standard should be listed. Now you can click on **Add** to assign to it. Once assigned. Once assigned, it will be listed in the Recommendations blade and will be added in the **Regulatory Compliance** dashboard too.
+21.	On **Add custom initiative** window, your new standard should be listed. Now you can click on **Add** to assign to it. Once assigned, it will be listed in the Recommendations blade and will be added in the **Regulatory Compliance** dashboard too.
 
 ![Custom Initiative](../Images/custom-initiative.png)
 
