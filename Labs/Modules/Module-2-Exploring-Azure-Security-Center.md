@@ -19,7 +19,7 @@ You will be performing the following activities to achieve the goal.
 3.	The Security Center Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Azure Secure Score, Regulatory Compliance and Azure Defender**.
 
 > ❗ Important: <br>
-> It takes few hours for all tiles on the Overview Page to update.
+> It takes few minutes for all tiles on the Overview Page to update.
 
 ![Azure Security Center: Overview dashboard](../Images/asc-dashboard-overview-updated.png)
 
