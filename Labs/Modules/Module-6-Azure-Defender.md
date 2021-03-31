@@ -1,8 +1,8 @@
-# Module 6 - Azure Defender
+# Module 6 - Azure Defender and Security Center
 
 ### Overview
 
-In this exercise, you will explore Azure Defender
+In this exercise, you will explore Azure Defender and Security Center features
 
 You will be performing the following activities to achieve the goal.
 
