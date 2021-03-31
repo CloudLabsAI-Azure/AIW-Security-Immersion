@@ -124,7 +124,7 @@ Exploring secure score
 7.	On the top section, notice the following:
 
 * Title of the recommendation: **Secure transfer to storage accounts should be enabled**
-* Top menu controls: **Exempt**, **Deny**
+* Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
 * Severity indicator: **High**
 * Refreshens interval on supported recommendations: **30 Min**
 
@@ -149,7 +149,7 @@ Exploring secure score
 
 
 
-9.	Close the template window, in the bottom section, **select a resource** (the single storage account on the unhealthy tab) and **click Remediate**.
+9.	Close the template window, in the bottom section, **select a resource** (the single storage account on the **Unhealthy resources** tab of **Affected resources**) and click **Remediate**.
 
 10. On the right pane, review the implications for this remediation and press **Remediate 1 resource**.
 
