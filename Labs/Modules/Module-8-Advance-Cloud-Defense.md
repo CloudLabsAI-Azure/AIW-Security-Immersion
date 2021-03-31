@@ -12,11 +12,11 @@ You will be performing the following activities to achieve the goal.
 
 ### Exercise 1: Using JIT to reduce attack surface
 
-1.	If you are not already logged in to the https://portal.azure.co. Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab.
+1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab.
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from left sidebar.
 
-3.	Navigate to the bottom section under Advanced protection, click on **Just-in-time VM access** (You should see number of unprotected status).
+3.	Navigate to the bottom section under Advanced protection, click on **Just-in-time VM access** (You should see unprotected status number).
 
 ![Advanced protection options](../Images/asc-defender-advanced-protection-jit.gif?raw=true)
 
@@ -48,7 +48,7 @@ You will be performing the following activities to achieve the goal.
 
 14.	You should see the following error message: *Remote Desktop can't connect to the remote computer*. In this scenario, the remote access to the server is not enable.
 
-15.	Return to the VM blade. On the Connect page, request JIT access. On the **Source IP**, select **My IP** and then click on **Request access**. You should now see the following message: *Access approved on port 3389 from the selected IPs. You can now connect.*
+15.	Return to the VM blade Connect page, On the **Source IP**, select **My IP** and then click on **Request access**. You should now see the following message: *Access approved on port 3389 from the selected IPs. You can now connect.*
 
 16.	Try to connect again to validate your JIT access to the VM. Use the same file you downloaded previously.
 
@@ -86,6 +86,8 @@ It maps the current state of these items with the state during the previous scan
 ![File Integrity Monitoring1](../Images/File-Integrity-Monitoring.png)
 
 3.	On the FIM configuration page, select the **Log Analytics workspace listed** `asclab-la-{DeploymentID}` (or just by clicking on the Upgrade icon - it indicates that FIM is not enabled for the selected workspace).
+
+    **Note**: Deployment ID can be obtained from the Lab Environment output page.
 
 4.	On the Enable FIM window, **review the default recommended settings** for Windows files, Registry and Linux files.
 
