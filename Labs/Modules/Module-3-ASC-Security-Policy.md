@@ -7,6 +7,8 @@ In this module, we will guide you through the current Security Center policies s
 
 ### Exercise 1: Overview of the ASC policy
 
+In this exercise, You will get an overview of an index of Azure Policy built-in policy definitions related to Azure Security Center and about initiatives, policies, and how they relate to Security Center's recommendation.
+
 1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
@@ -39,6 +41,8 @@ Note: This policy is enabled by default on your subscription as per Azure Securi
 12.	Click on **Save**. Wait for the policy update to complete successfully.
 
 ### Exercise 2: Explore Azure Policy
+
+Azure Policy keeps track of compliance for your Azure resources based on policy definitions you assign, these are called policy assignments. By default, Microsoft provides many built-in definitions that you can leverage as you see fit.
 
 1.	Type **Policy** in the search box located on the top of the **Azure Portal** page and click on it. Alternately, you can navigate to the policy section by clicking on this link https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade.
 
@@ -113,6 +117,8 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 ### Exercise 4: Create policy enforcement and deny
 
+In this exercise, you will learn how to use Azure Policy to do some of the more common tasks related to assigning, denying, and managing policies across your organization.
+
 1.	Type **Security Center** in the search box located on the top of the Azure Portal page and click on it..
 
 2.	From **Security Center sidebar**, select **Recommendations** under **General**.
@@ -161,6 +167,8 @@ Select **Review + create** to assign the policy to your subscription.
 11.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
 
 ### Exercise 5: Create a custom policy
+
+A custom policy definition allows customers to define their own rules for using Azure. Whatever the business driver for creating a custom policy, the steps are the same for defining the new custom policy.
 
 ***Create a custom initiative using Azure Policy***
 
