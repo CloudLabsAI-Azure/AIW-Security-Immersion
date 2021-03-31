@@ -1,6 +1,6 @@
 # Module 1 – Getting started with the Environment
 
-### Overview
+## Overview
 
 In this exercise, you will learn how to enable Azure Defender in your subscription
 
@@ -45,6 +45,7 @@ You will be performing the following activities to achieve the goal.
 ## Exercise 2: Enabling Azure Defender
 
 ### Subscription upgrade and agents installation
+
 1. Type **Security Center** in the search box on top of the **Azure Portal** and click to open it.
 
 2. Click on the **Getting started** from the left pane. Click on the **Upgrade Tab**, select your subscription and click **Upgrade**.
@@ -60,6 +61,7 @@ You will be performing the following activities to achieve the goal.
 > Notice that you enabled Azure Defender at a subscription level, but Log Analytics workspace pricing is still set **Off** (means Azure Defender is OFF).
 
 ### Configure the data collection settings in ASC
+
 1.	Type **Security Center** in the search box on top of the **Azure Portal** and click to open it.
 
 2. Click on the **Pricing and Settings** from the left pane, select the Log Analytics workspace named **asc-lab-{DeploymentID}**
@@ -101,6 +103,6 @@ You will be performing the following activities to achieve the goal.
 > * To enable Azure Defender on a subscription, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
 
 
-### Summary
+## Summary
 
   In this module, you have learned how to enable Azure Defender. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
