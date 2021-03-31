@@ -12,7 +12,7 @@ You will be performing the following activities to achieve the goal.
 
 ## Exercise 1: Log in to Azure Portal
 
-In this exercise you will learn how to login to the Azure Portal in the JumpVM using user credentials provided under the Environment Details for accessing the Azure Portal
+In this exercise you will learn how to login to the Azure Portal in the JumpVM using user credentials provided under the Environment Details to access the Azure Portal
 
 ### Instructions 
 
