@@ -12,11 +12,11 @@ You will be performing the following activities to achieve the goal.
 
 ### Exercise 1: Alert validation
 
-Here let’s cover the new Alert Simulation
+In this exercise we will cover the new Alert Simulation
 
-1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab if not logged in already.
+1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab if you are not logged in already.
 
-2.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then select **Security alerts** under **General** from left sidebar or by using this [link](https://portal.azure.com/?feature.argsecurityalerts=true&feature.customportal=false#blade/Microsoft_Azure_Security/SecurityMenuBlade/7)
+2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, select **Security alerts** under **General** tab from left sidebar or by using this [link](https://portal.azure.com/?feature.argsecurityalerts=true&feature.customportal=false#blade/Microsoft_Azure_Security/SecurityMenuBlade/7)
 
 2.	Create an alert simulation for VM:
     - On Security alerts page, click on **Sample alerts** button.
@@ -29,7 +29,7 @@ Here let’s cover the new Alert Simulation
 
 ![Create sample virtual machine security alerts](../Images/asc-create-sample-security-alerts-vm.gif?raw=true)
 
-3.	Sample alerts creation in progress, wait for the process to complete. You can track the progress by opening the notification center or on activity log (this process usually takes 2 minutes to complete)
+3.	You will see Sample alerts creation in progress, wait for the process to complete. Now you can track the progress by opening the notification center or on activity log (this process usually takes 2 minutes to complete)
 
 4.	On the alerts page, you should now see 5 different sample events for a resource named `Sample-VM`. Each alert has the Sample alert banner next to it.
 
@@ -37,7 +37,7 @@ Here let’s cover the new Alert Simulation
 
 5.	Click on the **Digital currency mining related behavior detected alert**.
 
-6.	The details pane opens. Notice the alert properties at the top (severity, status, and time) along with the alerts description and affected resources. At the bottom part, you can see the kill chain intent of the alert based on the MITRE ATT&CK® framework. This specific alert is at the *Execution* phase.
+6.	After the details pane opens, notice the alert properties at the top (severity, status, and time) along with the alerts description and affected resources. At the bottom section, you can see the kill chain intent of the alert based on the MITRE ATT&CK® framework. This specific alert is at the *Execution* phase.
 
 ![Create sample virtual machine security alerts](../Images/Alert-Description.png)
 
@@ -50,7 +50,8 @@ Here let’s cover the new Alert Simulation
     - Select **Your Subscription**.
     - On the Azure Defender plans, keep only **Key Vaults** selected.
     - Click **Create sample alerts** button to trigger the alert simulation for Key Vaults.
-9.	Sample alerts creating in progress, wait for the process to complete. You can track the progress by opening the notification center or on activity log (this process usually takes 2 minutes to complete)
+    
+9.	After the Sample alerts creating in progress appear, wait for the process to complete. You can track the progress by opening the notification center or on activity log (this process usually takes 2 minutes to complete)
 
 10.	On the alerts page, you should now see 5 different sample events for a resource named `Sample-KV`. Each alert has the `Sample alert` banner next to it.
 
@@ -71,17 +72,17 @@ Here let’s cover the new Alert Simulation
 When a single alert isn't interesting or relevant, you can manually dismiss it.
 In the previous step, we used the dismiss option to manually dismiss a single alert. However, you can use the suppression rules feature to automatically dismiss similar alerts in the future.
 
-1.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then select **Security alerts** under **General** from left sidebar.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Security alerts** under **General** from left sidebar.
 
 2.	Select **High volume of operations in a Key Vault** alert and then click on **Take action**.
 
 ![Create sample virtual machine security alerts](../Images/Highvolume-Alert-Description-.png)
 
-3.	Expend the Suppress similar alerts section and click on **Create Suppression Rule**.
+3.	Expand the **Suppress similar alerts** section and click on **Create Suppression Rule**.
 
-4.	The new suppression rule pane opens, provide a rule name: *Testing-AutoDismiss-KV*.
+4.	After the new suppression rule pane opens, provide a rule name: *Testing-AutoDismiss-KV*.
 
-5.	On the reason field, select Other and leave a comment: *Lab 6 exercise*.
+5.	On the reason field, select **Other** and leave a comment: *Lab 6 exercise*.
 
 ![Create sample virtual machine security alerts](../Images/Create-Suppression-Rule.png)
 
@@ -95,9 +96,9 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 9. Click on the rule you have recently created: `Testing-AutoDismiss-KV`.
 
-10. Change the expiration to be a month ahead from the current date. Click **Apply**.
+10. Change the expiration to be a month ahead from the current date. Next, Click on **Apply**.
 
-11. View dismissed alerts: On the Security alerts main page, on the filters section, change the Status filter to show only **Dismissed** items.
+11. To view the dismissed alerts: Navigate to Security alerts main page and to the filters section. Change the Status filter to show only **Dismissed** items.
 
 ![Create sample virtual machine security alerts](../Images/suppression-filter-options.png)
 
@@ -107,7 +108,7 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 ### Exercise 3: Accessing Security Alerts using Graph Security API
 
-You can also query security alerts data using REST APIs such as the Microsoft Graph Security API which provides a unified interface and schema to integrate with security solutions from Microsoft and Partners.
+You can also query security alerts data using REST APIs, such as the Microsoft Graph Security API that provides a unified interface and schema to integrate with security solutions from Microsoft and Partners.
 
 In this exercise, we will use one of the endpoints which allows to retrieve a list of alert objects.
 
@@ -119,15 +120,15 @@ In this exercise, we will use one of the endpoints which allows to retrieve a li
 
 3.	On the HTTP tab, review the endpoint URL: `https://graph.microsoft.com/v1.0/security/alerts`.
 
-4.	Click on **Try It** then click on User icon to login. You need to login using credentials given in the Environment Details.
+4.	Click on **Try It** then click on the User icon to login. You need to login using credentials provided in the **Environment Details** tab.
 
 ![Create sample virtual machine security alerts](../Images/rest-execute-login.png)
 
-5.  Click **Accept** to allow access.
+5.  Click on **Accept** to allow access.
 
 ![Consent-Accept](../Images/consent-accept.png)
 
-6.  Now click on **Modify Permissions (Preview)**, wait for two permissions to load. scroll to the right end of permissions then click on **Consent** of both permissions one after another, Click on **Accept** for each permission to get **Consented**
+6.  Now click on **Modify Permissions (Preview)** and wait for two permissions to load. Scroll to the right side of permissions then click on **Consent**, do this for both permissions. Click on **Accept** for each permission to get **Consented**
 
 ![Consent](../Images/consent.png)
 
@@ -135,12 +136,12 @@ In this exercise, we will use one of the endpoints which allows to retrieve a li
 
 ![Consent2](../Images/consent2.png)
 
-6.	Click on **Run query** button. You should now see a sample response preview in JSON format.
+6.	Click on the **Run query** button. You should now see a sample response preview in JSON format.
 
 ![Create sample virtual machine security alerts](../Images/consent-response.png)
 
 ### Summary
 
-In this module, you have completed exploring more **Security Center** features - **Alert validation**, **Alert suppression** and **Accessing Security Alerts using Graph Security API**.
+In this module, you have completed exploring more **Security Center** features - **Alert validation**, **Alert suppression** and **Accessed Security Alerts using Graph Security API**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.

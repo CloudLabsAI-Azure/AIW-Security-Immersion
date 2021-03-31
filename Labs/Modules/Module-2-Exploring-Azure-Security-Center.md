@@ -112,7 +112,7 @@ Exploring secure score
 
 ![Recommendations group by controls](../Images/asc-recommendations-group-by-controls.gif?raw=true)
 
-5.	Look for the **Encrypt data in transit** security control. Notice its max score of 4 and the potential increase for the score. You should have more than three recommendations within this control.
+5.	Look for the **Encrypt data in transit** security control. Notice its max score is around 4 and the potential increase for the score. You should have more than three recommendations within this control.
 
     **Note**: It takes few hours for all the data to be loaded, In case if you don't see above option in the list that means it is not populated yet in the recommendations. You can continue to next exercise and verify this after some time
 
@@ -124,7 +124,7 @@ Exploring secure score
 7.	On the top section, notice the following:
 
 * Title of the recommendation: **Secure transfer to storage accounts should be enabled**
-* Top menu controls: **Exempt**, **Deny**
+* Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
 * Severity indicator: **High**
 * Refreshens interval on supported recommendations: **30 Min**
 
@@ -149,14 +149,14 @@ Exploring secure score
 
 
 
-9.	In the bottom section, **select a resource** (the single storage account on the unhealthy tab) and **click Remediate**.
+9.	Close the template window, in the bottom section, **select a resource** (the single storage account on the **Unhealthy resources** tab of **Affected resources**) and click **Remediate**.
 
 10. On the right pane, review the implications for this remediation and press **Remediate 1 resource**.
 
 11. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected 
 resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
 
-12.	Return to recommendations list. Expand the "Manage access and permissions" security control, you can now see recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
+> **Info**: In recommendation list, you can now see few recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
 ### Exercise 3: Exploring the Inventory capability
 

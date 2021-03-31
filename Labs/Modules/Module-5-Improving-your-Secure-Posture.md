@@ -3,48 +3,46 @@
 
 ## Overview
 
-This module will walk you through how to use the vulnerability assessment for Virtual Machines and Containers, along with working with Workflow Automation and data query.
+This module will walk you through the process to use the vulnerability assessment for Virtual Machines and Containers, along with the usage of Workflow Automation and data query.
 
 ### Exercise 1: Vulnerability assessment for VMs
 
-With Azure Defender for servers, you can quickly deploy the integrated vulnerability assessment solution (powered by Qualys) with no additional configuration or extra costs.
-Once the vulnerability assessment scanner is deployed, it continually assesses all the installed applications on a virtual machine to find vulnerabilities and presents its findings in the Azure Security Center console.
-When a machine is found that doesn't have vulnerability assessment solution deployed, Azure Security Center generates a recommendation: *A vulnerability assessment solution should be enabled on your virtual machines*. To remediate a resource, you can click on the Quick Fix button to deploy the necessary VM extension.
+With Azure Defender for servers, you can quickly deploy the integrated vulnerability assessment solution (powered by Qualys) with no additional configuration or extra costs. Once the vulnerability assessment scanner is deployed, it continually assesses all the installed applications on a virtual machine to find vulnerabilities and presents its findings in the Azure Security Center console. When a machine is found that doesn't have a vulnerability assessment solution deployed, Azure Security Center generates a recommendation that looks like this: _A vulnerability assessment solution should be enabled on your virtual machines._ To remediate a resource, you can click on the **Quick Fix** button to deploy the necessary VM extension.
 
 **Explore vulnerability assessment recommendations:**
 
-1.	Click on the Azure Portal icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab.
+1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab, if you are not logged in already.
 
-2.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then click on **Recommendations** from left sidebar.
+2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Recommendations** from the left sidebar.
 
-2.	Expend **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
+3.	Expand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
 
-3.	Make sure you have *A vulnerability assessment solution should be enabled on your virtual machines* recommendation. If you don’t have this recommendation on the list, you will probably need 24 hours to have the recommendation with the assessment.
+4.	Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines** recommendation listed here. If you don’t, you will need **24 hours** to have the recommendation with the assessment.
 
 ![](../Images/remediate-blade.png)
 
-4.	Open the **A vulnerability assessment solution should be enabled on your virtual machines” recommendation** – this recommendation is a Quick Fix one which allows you to deploy the VM extension on the desired VMs.
+5.	Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it. This is a Quick Fix that allows you to deploy the VM extension on the desired VMs.
 
-5.	Expend **Remediation steps** – in addition to the Quick Fix remediation option, you can also use the **view recommendation logic** option to expose an automatic remediation script content (ARM template). **Close this window.**
+6.	Click to expand **Remediation steps** – in addition to the Quick Fix remediation option, you can also use the **View recommendation logic** option to expose an automatic remediation script content (ARM template). Once done, **Close** this window.
 
 ![](../Images/remediation-logic.png)
 
-6.	From the unhealthy tab, select both *asclab-win* and *aslab-linux* virtual machines. Click **Remediate**.
+7.	From the unhealthy tab, select both *asclab-win* and *aslab-linux* virtual machines. Click on  **Remediate**.
 
 ![](../Images/remediate-asclab-win.png)
 
-7.	On the **Choose a vulnerability assessment solution** select **Recommended: Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers)**. Click **Proceed**.
+8.	On the **Choose a vulnerability assessment solution** select **Recommended: Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers)**. Click on  **Proceed**.
 
 ![](../Images/proceed.png)
 
-8.	A window opens, review the list of VMs and click **Remediate 2 resource** button.
+9.	A window will open, on this page review the list of VMs and click the **Remediate 2 resource** button.
 
-9.	Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. Wait 5-10 minutes for the process to complete.
+10.	Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. Wait for 5-10 minutes for the process to complete.
 
 > Note: You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
 
 10.	Ensure the VM extension is deployed on the relevant machines:
-    - From Azure Portal, search **Virtual Machines** in top search bar then click open.
+    - Type **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
     - Select **asclab-win**.
     - From the sidebar, click on **Extensions**.
     - Make sure to have `WindowsAgent.AzureSecurityCenter` extension installed and successfully provisioned.
@@ -62,12 +60,11 @@ When a machine is found that doesn't have vulnerability assessment solution depl
 
 ### Exercise 2: Vulnerability assessment for Containers
 
-Azure Security Center scans images in your ACR (Azure Container Registry) that are pushed to the registry, imported into the registry, or any images pulled within the last 30 day.
-Then, it exposes detailed findings per image. All vulnerabilities can be found in the following recommendation: Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys).
+Azure Security Center scans images in your Azure Container Registry (ACR) that are pushed and imported into the registry, it also contains any other images pulled within the last 30 days. Then, it exposes detailed findings per image. All vulnerabilities can be found in the following recommendation: **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys).**
 
 To simulate a container registry image with vulnerabilities, we will use ACR tasks commands and sample image:
 
-1. On the **Azure Portal** top search bar search for **Container registries** and click to open, or click [here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerRegistry%2Fregistries).
+1. Type **Container registries** in the search box located on the top of the **Azure Portal** page and click on it, or click [here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerRegistry%2Fregistries).
 
 2. Copy the name or your container registry, for example: *asclabcrktfvrxcne4kki*
 
@@ -93,11 +90,11 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
 6. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s
 
-7.	The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the recommendation.
+7.	The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
-8.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then click on **Recommendations** from left sidebar.
+8.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then click on **Recommendations** from the left sidebar.
 
-9.	Expend **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)**.
+9.	Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)**.
 
 ![](../Images/acr.png)
 
@@ -109,7 +106,7 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
 ![](../Images/acr2.png)
 
-11.	Expend the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab-xxx).
+11.	Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab-xxx).
 
 12.	On the **Security Checks** section, notice the number of vulnerabilities.
 
@@ -121,13 +118,11 @@ Notice the vulnerability description, general information (containing the Svss 3
 
 ### Exercise 3: Automate recommendations with workflow automation
 
-Every security program includes multiple workflows for incident response. These processes might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps.
-Using workflow automation, you can trigger logic apps to automate processes in real-time with Security Center events (security alerts or recommendations).
-In this lab, you will create a new Logic App and then trigger it automatically using workflow automation feature when there is a change with a specific recommendation.
+Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Security Center events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using workflow automation feature when there is a change with a specific recommendation.
 
 **Create a new Logic App:**
 
-1.	On the Azure Portal, type *Logic Apps* on the search field at the top or [click here](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Logic%2Fworkflows).
+1.	Type **Logic Apps** in the search box located on the top of the **Azure Portal** page and click on it, or [click here](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Logic%2Fworkflows).
 
 2.	Click **Add** and **Consumption** to create a new Logic App.
 
@@ -139,34 +134,34 @@ In this lab, you will create a new Logic App and then trigger it automatically u
 
 6.	Keep Log Analytics option as **Off**.
 
-7.	Select **Review + Creation** and then **Create**.
+7.	Select **Review + Creation** and then click on **Create**.
 
 ![](../Images/logic-app.png)
 
-8.	The Logic Apps Designer opens, select **Blank Logic App**.
+8.	After the Logic Apps Designer opens, select **Blank Logic App**.
 
 ![](../Images/open-logic-app.png)
 
-9.	At the search control, type *Security Center* and select **When an Azure Security Center Recommendation is created or triggered**.
+9.	Type **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered**.
 
 ![](../Images/triggered.png)
 
-10.	Click on new step and type *Outlook send*.
+10.	Click on the **new step** button and type **Outlook send**.
 
 ![](../Images/newstep.png)
 
 
 
 
-11. Scroll down the list, and click **Send an email (V2)** action to add it to the Designer.
+11. Scroll down the list, and click on **Send an email (V2)** action to add it to the Designer.
 
 > Note: you will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
-12.	In the Send an email (V2), add your email address to the **To** field.
+12.	In the Send an email (V2), add your email address in the **To** field.
 
-> Later, you will use that email address to check if you received an email using workflow automation feature.
+> Later, you will use the same email address to check if you have received an email using workflow automation feature.
 
-13.	Click in the **Subject box**, then type: *Recommendation changed:*
+13.	Click in the **Subject box**, then type: **Recommendation changed:**
 
 14.	Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on **Dynamic content** and then select `Properties Display Name` (click Add dynamic content if it doesn’t pop out automatically.
 
@@ -185,15 +180,15 @@ Description: `Properties Metadata Description`</br>
 Status: `Properties Status Code`</br>
 Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
-17.	Your Logic App should now look like the below screenshot. If so, click on **Save** in the Logic App Designer.
+17.	Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
 
 ![Logic App worklfow](../Images/outlook-send.png)
 
 **Create a new workflow automation instance**
 
-1.	On the **Azure Portal** top search bar search for **Security Center** and click to open, then select **Workflow automation** under **Management** from left sidebar.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select Workflow automation under **Management** section from the left sidebar.
 
-2.	Click **Add workflow automation**.
+2.	Click on **Add workflow automation**.
 
 3.	A pane appears on the right side. Enter the following for each field:
     - General:
@@ -213,7 +208,7 @@ Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
 ![](../Images/workflow-automation.png)
 
-4.	Wait for the banner *Workflow automation created successfully. Changes may take up to 5 minutes to be reflected*. From now on, you will get email notifications for recommendations.
+4.	Wait for the message *"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"* to appear. From now on, you will get email notifications for recommendations.
 Once you start to get email notifications, you can disable the automation by selecting the workflow and clicking on **Disable**.
 
 > Please be aware that if your trigger is a recommendation that has "sub-recommendations” / “nested recommendations”, the logic app will not trigger for every new security finding; only when the status of the parent
@@ -224,12 +219,12 @@ Once you start to get email notifications, you can disable the automation by sel
 
 6.	Test/trigger your automation manually:
     - On Security Center sidebar, click on **Recommendations**.
-    - Look for any recommendations that has a Quick Fix banner.
+    - Look for any recommendations that has a **Quick Fix banner**.
 
     ![](../Images/trigger-logic-app.png)
 
 
-    - Select a resource and then click on **Trigger Logic App** button.
+    - Select a resource and then click on the **Trigger Logic App** button.
     - In the Logic App Trigger blade, select the Logic App you created in the previous step (Send-RecommendationsChanges).
     - You should receive an email containing ...
 
@@ -240,7 +235,7 @@ Once you start to get email notifications, you can disable the automation by sel
 Azure Resource Graph (ARG) provide an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
 Azure Secure Score data is available in ARG so you can query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscription.
 
-1.	On the **Azure Portal** top search bar search for *Resource Graph Explorer* (or arg) and click to open.
+1.	Type **arg** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
 
 ![Resource Graph Explorer](../Images/asc-resource-graph-explorer.gif?raw=true)
 
@@ -255,9 +250,9 @@ SecurityResources
 
 ![](../Images/run-query1.png)
 
-3.	You should now see your subscription ID listed along with the current score (in points), the max score and the score as percentage.
+3.	You should now see your subscription ID listed here along with the current score (in points), the max score and the score in percentage.
 
-4.	To return the status of all the security controls, select **New query**, paste the following KQL query and click on **Run query**:
+4.	To return the status of all the security controls, select **New query**. Next, paste the following KQL query and click on **Run query**:
 
 ```
 SecurityResources
@@ -273,6 +268,6 @@ More details on the [official article](https://docs.microsoft.com/en-us/azure/se
 
 ### Summary
 
-  * In this module, you have completed exploring more **Security Center** features - **Vulnerability assessment for VMs**, **Vulnerability assessment for Containers**, **Automate recommendations with workflow automation** and **Accessing your secure score via ARG**.
+  * In this module, you have completed exploring more **Security Center** features - **Vulnerability assessment for VMs**, **Vulnerability assessment for Containers**, **Automated recommendations with workflow automation** and **Accessed your secure score via ARG**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
