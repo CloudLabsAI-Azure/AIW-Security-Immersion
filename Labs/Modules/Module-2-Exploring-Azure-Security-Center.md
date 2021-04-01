@@ -31,7 +31,7 @@ In Azure Security Center, You will be interacting with Security Center dashboard
 
 6.	Note the **high-level numbers** at the top menu; This view allows you to see a summary of your subscriptions, assessed resource, active recommendations and security alerts.
 
-![Azure Security Center: Top menu](../Images/asc-dashboard-top-menu.gif?raw=true)
+![Azure Security Center: Top menu](../Images/whatsnew.png)
 
 7.	From the top menu bar, **click** on **Azure subscriptions**.
 
@@ -130,7 +130,7 @@ Exploring secure score
 * Severity indicator: **High**
 * Refreshens interval on supported recommendations: **30 Min**
 
-![Recommendation top menu](../Images/asc-storage-top-menu.gif?raw=true)
+![Recommendation top menu](../Images/tiles-overview.png)
 
 8. The next important part is the **Remediation Steps** which contains the remediation logic. As you can see, you can remediate the selected resource/s either by following the step-by-step instructions, use the provided ARM template, or REST API to automate the process.
 
@@ -181,6 +181,8 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 6.	Use the **Filter by name** box to search for **linux**. You should now see a filtered view containing your desired resource: *asclab-linux*
 
 7.	Hover on the **recommendations** column to see a tooltip with the active recommendations. You should expect to see **active vs total recommendations** – these are the recommendations you must attend.
+
+![linux-recommendations](../Images/linux-recommendations.png)
 
 8.	Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**.
 

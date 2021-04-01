@@ -25,6 +25,8 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 6.	Select the **Log Analytics workspace** option.
 
+![continuous-export](../Images/continuous-export.png)
+
 7.	On the Exported data types, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
 
 8.	On the Export configuration, select a resource group: *asclab*
@@ -65,7 +67,11 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 2.	On the Azure Sentinel workspaces, click on the **Connect workspace** button – for this exercise we’ll use the same Log Analytics workspace used by Security Center.
 
+![connect-workspace1](../Images/connect-workspace1.png)
+
 3.	On the **Add Azure Sentinel to a workspace**, select **asclab-la-{DeploymentID}** workspace. Click on **Add**.
+
+![connect-workspace2](../Images/connect-workspace2.png)
 
 4.	Adding Azure Sentinel to workspace asclab-la-{DeploymentID} is now in progress. This process will take few minutes to complete. 
 

@@ -68,6 +68,8 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 2. Copy the name or your container registry, for example: *asclabcrktfvrxcne4kki*
 
+![acr-select](../Images/acr-select.png)
+
 3. In the Azure portal, open Cloud Shell pane by selecting on the toolbar icon directly to the right of the search textbox or click on [Azure Cloud Shell](https://shell.azure.com/), If prompted to select either Bash or PowerShell, select Bash.
 
 4. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
