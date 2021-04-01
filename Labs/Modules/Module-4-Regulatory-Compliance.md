@@ -12,6 +12,10 @@ You will be performing the following activities to achieve the goal.
 
 ### Exercise 1: Understanding Regulatory Compliance dashboard
 
+Azure Security Center helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard. The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
+
+Security Center continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards applied to your subscriptions.
+
 1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab if you are not logged in already.
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, select **Regulatory Compliance** tile (this pilar is also available from the left sidebar).

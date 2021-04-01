@@ -1,4 +1,4 @@
-# Module 6 - Azure Defender and Security Center
+# Module 6 - Azure Defender and Security Center Alerts
 
 ### Overview
 
@@ -12,7 +12,7 @@ You will be performing the following activities to achieve the goal.
 
 ### Exercise 1: Alert validation
 
-In this exercise we will cover the new Alert Simulation
+In this exercise we will cover the new Alert Simulation as Alerts are the notifications that Security Center generates when it detects threats on your resources. It prioritizes and lists the alerts along with the information needed to quickly investigate the problem. Security Center also provides recommendations for how you can remediate an attack.
 
 1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab if you are not logged in already.
 

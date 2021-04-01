@@ -12,6 +12,8 @@ You will be performing the following activities to achieve the goal.
 
 ### Exercise 1: Using JIT to reduce attack surface
 
+In the simplest terms, the “attack surface” is the sum total of resources exposed to exploit within your enterprise. Defending the attack surface was a lot less complicated when a defined corporate “perimeter” existed, neatly separating a company’s assets from the outside world using **Just-in-time VM access**.
+
 1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab.
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from left sidebar.

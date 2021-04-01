@@ -1,16 +1,18 @@
 # Module 1 – Getting started with the Environment
 
-### Overview
+## Overview
 
 In this exercise, you will learn how to enable Azure Defender in your subscription
 
 You will be performing the following activities to achieve the goal.
 
-* Login to Azure Portal to access your subscription
-* Upgrade your subscription to enable Azure Defender Plan
-* Configure data collection in ASC
+  - Login to Azure Portal to access your subscription
+  - Upgrade your subscription to enable Azure Defender Plan
+  - Configure data collection in ASC
 
 ## Exercise 1: Log in to Azure Portal
+
+In this exercise you will learn how to login to the Azure Portal in the JumpVM using user credentials provided under the Environment Details to access the Azure Portal
 
 ### Instructions 
 
@@ -44,7 +46,10 @@ You will be performing the following activities to achieve the goal.
 
 ## Exercise 2: Enabling Azure Defender
 
+In this exercise you will be getting started with functionality of Azure Security Center and Azure Defender and how to enable Azure Defender on a subscription.
+
 ### Subscription upgrade and agents installation
+
 1. Type **Security Center** in the search box on top of the **Azure Portal** and click to open it.
 
 2. Click on the **Getting started** from the left pane. Click on the **Upgrade Tab**, select your subscription and click **Upgrade**.
@@ -60,6 +65,7 @@ You will be performing the following activities to achieve the goal.
 > Notice that you enabled Azure Defender at a subscription level, but Log Analytics workspace pricing is still set **Off** (means Azure Defender is OFF).
 
 ### Configure the data collection settings in ASC
+
 1.	Type **Security Center** in the search box on top of the **Azure Portal** and click to open it.
 
 2. Click on the **Pricing and Settings** from the left pane, select the Log Analytics workspace named **asc-lab-{DeploymentID}**
@@ -68,29 +74,29 @@ You will be performing the following activities to achieve the goal.
 
 ![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
 
-2. On the **Azure Defender Plans** page, select **Azure Defender on** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
+3. On the **Azure Defender Plans** page, select **Azure Defender on** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
 
 ![Enable Azure Defender on the workspace level](../Images/asc-enable-defender-workspace.gif?raw=true)
 
-3. Go back to the **Pricing & Setting** and drill down into your **Azure subscription**.
+4. Go back to the **Pricing & Setting** and drill down into your **Azure subscription**.
 
-4. Navigate to **Auto provisioning**.
+5. Navigate to **Auto provisioning**.
 
-5. On the **Auto provisioning - Extensions** page, set **Log Analytics agent for Azure VMs** to **On** (if it is not already set to On)
+6. On the **Auto provisioning - Extensions** page, set **Log Analytics agent for Azure VMs** to **On** (if it is not already set to On)
 
-6. Click on **Edit configuration**.
+7. Click on **Edit configuration**.
 
-7. On the workspace configuration section, use the **Connect Azure VMs to a different workspace** option to select your workspace **asc-lab-{DeploymentID}**.
+8. On the workspace configuration section, use the **Connect Azure VMs to a different workspace** option to select your workspace **asc-lab-{DeploymentID}**.
 
-8. When **Apply changes to existing VMs** popup window is prompted, select **Existing and new VMs**.
+9. When **Apply changes to existing VMs** popup window is prompted, select **Existing and new VMs**.
 
-8. Under **Store additional raw data - Windows security events** section, select **All Events** option.
+10. Under **Store additional raw data - Windows security events** section, select **All Events** option.
 
 ![Enable Azure Defender on the workspace level](../Images/asc-extension-deployment-configuration.png)
 
-9. Click on **Apply**.
+11. Click on **Apply**.
 
-10. And finally, click on **Save**.
+12. And finally, click on **Save**.
 
 <br>
 
@@ -101,6 +107,6 @@ You will be performing the following activities to achieve the goal.
 > * To enable Azure Defender on a subscription, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
 
 
-### Summary
+## Summary
 
   In this module, you have learned how to enable Azure Defender. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
