@@ -31,7 +31,7 @@ In Azure Security Center, You will be interacting with Security Center dashboard
 
 6.	Note the **high-level numbers** at the top menu; This view allows you to see a summary of your subscriptions, assessed resource, active recommendations and security alerts.
 
-![Azure Security Center: Top menu](../Images/asc-dashboard-top-menu.gif?raw=true)
+![Azure Security Center: Top menu](../Images/whatsnew.png)
 
 7.	From the top menu bar, **click** on **Azure subscriptions**.
 
