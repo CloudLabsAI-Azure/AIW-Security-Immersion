@@ -88,6 +88,8 @@ In this exercise you will be getting started with functionality of Azure Securit
 
 7. Click on **Edit configuration**.
 
+![auto-provisioning](../Images/auto-provisioning.png)
+
 8. On the workspace configuration section, use the **Connect Azure VMs to a different workspace** option to select your workspace **asc-lab-{DeploymentID}**.
 
 9. When **Apply changes to existing VMs** popup window is prompted, select **Existing and new VMs**.
