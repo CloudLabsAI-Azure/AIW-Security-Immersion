@@ -182,6 +182,8 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 7.	Hover on the **recommendations** column to see a tooltip with the active recommendations. You should expect to see **active vs total recommendations** – these are the recommendations you must attend.
 
+![linux-recommendations](../Images/linux-recommendations.png)
+
 8.	Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**.
 
 ![Remediate a resource](../Images/linux-vm.png)
