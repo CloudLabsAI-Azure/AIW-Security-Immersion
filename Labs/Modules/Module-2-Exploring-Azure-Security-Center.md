@@ -130,7 +130,7 @@ Exploring secure score
 * Severity indicator: **High**
 * Refreshens interval on supported recommendations: **30 Min**
 
-![Recommendation top menu](../Images/asc-storage-top-menu.gif?raw=true)
+![Recommendation top menu](../Images/tiles-overview.png)
 
 8. The next important part is the **Remediation Steps** which contains the remediation logic. As you can see, you can remediate the selected resource/s either by following the step-by-step instructions, use the provided ARM template, or REST API to automate the process.
 
