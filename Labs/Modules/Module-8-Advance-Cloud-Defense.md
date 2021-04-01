@@ -46,11 +46,15 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 12.	On the Connect with RDP, click on the **Download RDP file anyway** button. Alternatively, from the VM blade, look for the Public IP address and try to connect using RDP.
 
+![download-anyway](../Images/download-anyway.png)
+
 13.	Click on the downloaded file to initiate a remote connection to the server. On the warning message, **ignore the message by clicking on Connect**.
 
 14.	You should see the following error message: *Remote Desktop can't connect to the remote computer*. In this scenario, the remote access to the server is not enable.
 
 15.	Return to the VM blade Connect page, On the **Source IP**, select **My IP** and then click on **Request access**. You should now see the following message: *Access approved on port 3389 from the selected IPs. You can now connect.*
+
+![request-access](../Images/request-access.png)
 
 16.	Try to connect again to validate your JIT access to the VM. Use the same file you downloaded previously.
 
