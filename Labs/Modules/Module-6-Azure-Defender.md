@@ -124,7 +124,7 @@ In this exercise, we will use one of the endpoints which allows to retrieve a li
 
 ![Consent-Accept](../Images/consent-accept.png)
 
-6.  Now click on **Modify Permissions (Preview)** and wait for two permissions to load. Scroll to the right side of permissions then click on **Consent**, do this for both permissions. When asked login using credentials provided in the **Environment Details** tab, click on **Accept** for each permission to get **Consented**
+6.  Now click on **Modify Permissions (Preview)** and wait for two permissions to load. Scroll to the right side of permissions then click on **Consent**, do this for both permissions. When prompted for login, login using credentials provided in the **Environment Details** tab, click on **Accept** for each permission to get **Consented**
 
 ![Consent](../Images/consent.png)
 
