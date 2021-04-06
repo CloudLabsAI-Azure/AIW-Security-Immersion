@@ -108,7 +108,6 @@ In this exercise you will be getting started with functionality of Azure Securit
 > * To get the full functionality of Azure Security Center and Azure Defender, both subscription and Log Analytics workspace should be enabled for Defender. Once you enable it,  the required Log Analytics solutions will be added to the workspace.
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Azure Defender.
 > * You can enable Azure Defender trial for 30-days on a subscription-only, if not previously used.
-> * To enable Azure Defender on a subscription, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
 
 
 ## Summary
