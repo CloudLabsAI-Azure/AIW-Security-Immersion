@@ -134,7 +134,7 @@ In this exercise, we will use one of the endpoints which allows to retrieve a li
 
 6.	Click on the **Run query** button. You should now see a sample response preview in JSON format.
 
-![Create sample virtual machine security alerts](../Images/consent-response.png)
+![Create sample virtual machine security alerts](../Images/get.png)
 
 ### Summary
 
