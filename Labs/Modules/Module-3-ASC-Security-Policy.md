@@ -23,22 +23,22 @@ In this exercise, You will get an overview of an index of Azure Policy built-in 
 
 Note: This policy is enabled by default on your subscription as per Azure Security Center recommendations. This is the default set of policies monitored by Azure Security Center. It is automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
 
-4.	To view the policy, click on **ASC Default**.
+6.	To view the policy, click on **ASC Default**.
 
 > ❗ Important: <br>
 > You should see a different subscription GUID on your environment
 
-8.	On the **Edit Initiative Assignment** page, click on **Parameters**.
+7.	On the **Edit Initiative Assignment** page, click on **Parameters**.
 
-9.	On the **Network Security Groups on the subnet level should be enabled**, change the action to **AuditIfNotExists** to enable monitoring of NSGs on subnets.
+8.	On the **Network Security Groups on the subnet level should be enabled**, change the action to **AuditIfNotExists** to enable monitoring of NSGs on subnets.
 
-10.	Click on **Review + save**.
+9.	Click on **Review + save**.
 
-11.	On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists**
+10.	On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists**
 
     ![Modifying Security Center default policy assignment](../Images/asc-default-policy-nsg-recommendation.png)
 
-12.	Click on **Save**. Wait for the policy update to complete successfully.
+11.	Click on **Save**. Wait for the policy update to complete successfully.
 
 ### Exercise 2: Explore Azure Policy
 
