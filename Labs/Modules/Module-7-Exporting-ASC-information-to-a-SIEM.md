@@ -51,7 +51,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 ![Continuous export settings page](../Images/log-analytic-started.png)
 
-15.	From the left pane, notice the following tables: `SecureityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
+15.	From the left pane, notice the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
 
 16.	Query the tables later on to validate data streaming - double click on the desired table to open a new query. Then click **Run**.
 
