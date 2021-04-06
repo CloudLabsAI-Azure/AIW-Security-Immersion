@@ -53,11 +53,9 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 15.	From the left pane, notice the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
 
-16.	Query the tables later on to validate data streaming - double click on the desired table to open a new query. Then click **Run**.
+16.	Query the tables to validate data streaming - For example Go to **Tables** expand **Security and Audit** double click on **Security Event** to open in query window. Now click on **Run** and See the results below
 
 ![Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
-
-![Respective tables in the Log Analytics workspace](../Images/log-editor-run.png)
 
 ### Exercise 2: Integration with Azure Sentinel
 
