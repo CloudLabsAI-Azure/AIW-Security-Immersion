@@ -18,17 +18,17 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from left sidebar.
 
-3.	Navigate to the bottom section under Advanced protection, click on **Just-in-time VM access** (You should see unprotected status number).
+3.	Navigate to the bottom section under **Advanced protection**, click on **Just-in-time VM access** (You should see unprotected status number).
 
 ![Advanced protection options](../Images/asc-defender-advanced-protection-jit.gif?raw=true)
 
-4.	Whn you are in the Just-in-time VM access page, select the **Not configure** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
+4.	When you are in the **Just-in-time VM access** page, select the **Not configured** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
 
 5.	Select **asclab-win** and then click on the **Enable JIT on 1 VM** button.
 
 ![Enable JIT on Windows VM](../Images/asc-enable-jit-win-vm.gif?raw=true)
 
-6.	On the JIT VM access configuration, keep just the **3389 (RDP) port and remove all the others**. To remove, click on the ellipses and then click on **Delete**.
+6.	On the **JIT VM access configuration** page, keep just the **3389 (RDP) port** and remove all the other ports listed. To remove, click on the ellipses icon (...) for each port and then click on **Delete**.
 
 7.	Click **Save** to apply the VM access configuration.
 
@@ -36,31 +36,31 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 8.	Review the **Configured** tab, now you should see your VM configured: `asclab-win`.
 
-9.	On the Azure portal sidebar, click on **Virtual Machines**.
+9.	Type **Virtual machines** in the search box located on the top of the Azure Portal page and click on it.
 
-10.	Click on **asclab-win**.
+10. Select the virtual machine **asclab-win**.
 
-11.	From the top menu, click on **Connect** button and then select **RDP**.
+11. From the top menu, click on **Connect** button and then select **RDP**.
 
-![Windows VM - Connect RDP](../Images/asc-win-vm-connect-rdp.gif?raw=true)
+    ![Windows VM - Connect RDP](../Images/asc-win-vm-connect-rdp.gif?raw=true)
 
-12.	On the Connect with RDP, click on the **Download RDP file anyway** button. Alternatively, from the VM blade, look for the Public IP address and try to connect using RDP.
+12. On the **Connect with RDP** section , click on the **Download RDP file anyway** button. Alternatively, from the VM blade, look for the Public IP address and try to connect using RDP.
 
-![download-anyway](../Images/download-anyway.png)
+    ![download-anyway](../Images/download-anyway.png)
 
-13.	Click on the downloaded file to initiate a remote connection to the server. On the warning message, **ignore the message by clicking on Connect**.
+13. Click on the downloaded file to initiate a remote connection to the server. On the warning message, ignore the message by clicking on **Connect**.
 
-14.	You should see the following error message: *Remote Desktop can't connect to the remote computer*. In this scenario, the remote access to the server is not enable.
+14. You should see the following error message: *Remote Desktop can't connect to the remote computer*. In this scenario, the remote access to the server is not enabled.Close the popup window
 
-15.	Return to the VM blade Connect page, On the **Source IP**, select **My IP** and then click on **Request access**. You should now see the following message: *Access approved on port 3389 from the selected IPs. You can now connect.*
+15. Return to the VM blade **Connect** page, On the **Source IP**, select **My IP** and then click on **Request access**. You should now see the following message: *Access approved on port 3389 from the selected IPs. You can now connect.*
 
-![request-access](../Images/request-access.png)
+   ![request-access](../Images/request-access.png)
 
-16.	Try to connect again to validate your JIT access to the VM. Use the same file you downloaded previously.
+16. Try to connect again to validate your JIT access to the VM. Use the same file you downloaded previously.
 
-17.	Now you should get the prompt for the local admin credentials. Login using the username and password credentials listed under **Resource Group: asclab**.
+17. Now you should get the prompt for the local admin credentials. Login using the **VM Username** and **VM Password** credentials listed under the **Resource Group: asclab** of **Environment details** tab.
 
-18.	You **are now connected to asclab-win** server. Close the remote control session/log off.
+18. You **are now connected to asclab-win** server. Close the remote control session/log off.
 
 ### Exercise 2: Adaptive Application Control
 
@@ -72,13 +72,13 @@ Application control helps you deal with malicious and/or unauthorized software, 
 
 ![Adaptive Application Control1](../Images/adaptive-application-control.png)
 
-4.	The Adaptive application controls page opens with your VMs grouped into the following tabs: Configured, Recommended and No recommendations.
+3.	The Adaptive application controls page opens with your VMs grouped into the following tabs: Configured, Recommended and No recommendation.
 
-5.	Click on the **Recommended** tab.
+4.	Click on the **Recommended** tab.
 
 ![Adaptive Application Control2](../Images/adaptive-application-control2.png)
 
-6.	If this tab does not contain any group yet, it means that Security Center needs at least two weeks of data to define the unique recommendations per group of machines.
+5.	If this tab does not contain any group yet, it means that Security Center needs at least two weeks of data to define the unique recommendations per group of machines.
 
 ### Exercise 3: File Integrity Monitoring
 
@@ -91,11 +91,11 @@ It maps the current state of these items with the state during the previous scan
 
 ![File Integrity Monitoring1](../Images/File-Integrity-Monitoring.png)
 
-3.	On the FIM configuration page, select the **Log Analytics workspace listed** `asclab-la-{DeploymentID}` (or just by clicking on the Upgrade icon - it indicates that FIM is not enabled for the selected workspace).
+3.	On **File Integrity Monitoring** page, select the **Log Analytics workspace listed** `asclab-la-{DeploymentID}` (or just by clicking on the Enable button - it indicates that File Integrity Monitoring is not enabled for the selected workspace).
 
     **Note**: Deployment ID can be obtained from the Lab Environment output page.
 
-4.	On the Enable FIM window, **review the default recommended settings** for Windows files, Registry and Linux files.
+4.	On the Enable File Integrity Monitoring window, review the default **recommended settings** for Windows files, Registry and Linux files.
 
 5.	Click on **Enable File Integrity Monitoring** button.
 
