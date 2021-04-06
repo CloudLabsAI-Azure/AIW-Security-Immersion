@@ -53,7 +53,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 15.	From the left pane, notice the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
 
-16.	Query the tables to validate data streaming - For example Go to **Tables** expand **Security and Audit** double click on **Security Event** to open in query window. Now click on **Run** and See the results below
+16.	Query the tables to validate data streaming - For example, Click on **Tables** expand **Security and Audit** double click on **Security Event** to open in query window. Now click on **Run** and see the results below.
 
 ![Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
 
@@ -73,9 +73,9 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 4.	Adding Azure Sentinel to workspace asclab-la-{DeploymentID} is now in progress. This process will take few minutes to complete. 
 
-5.	Once Sentinel News and guides open, use the Azure Security Center connector to enable the integration.
+5.	Once Azure Sentinel News and guides open, use the Azure Security Center connector to enable the integration.
 
-6.	From Sentinel’s sidebar, click on the **Data connectors**.
+6.	From Azure Sentinel’s sidebar, click on the **Data connectors**.
 
 7.	On the Data connectors page, use the search field and type: *Azure Defender*.
 
