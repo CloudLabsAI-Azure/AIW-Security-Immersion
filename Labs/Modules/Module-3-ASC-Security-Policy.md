@@ -134,7 +134,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 > ❗ Important: <br>
 > Security misconfigurations are a major cause of security incidents.
 
-![Secure Transfer](../Images/secure-transfer.png)
+  ![Secure Transfer](../Images/secure-transfer.png)
 
 5.	On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
@@ -188,7 +188,7 @@ A custom policy definition allows customers to define their own rules for using 
     - Version: **1**
     - Click **Next**
   
-   ![Policy initiative definition settings page](../Images/asc-new-policy-initiative-definition.gif?raw=true)
+    ![Policy initiative definition settings page](../Images/asc-new-policy-initiative-definition.gif?raw=true)
 
 5.	On the Policies tab, select **Add policy definitions**.
 
