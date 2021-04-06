@@ -83,13 +83,13 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
    **Note**: If you don't see above option that means it is not loaded yet to control list, Note down this step number and verify this after some time.
 
-4.	On the list of **Unhealthy resources** under **Affected resources**, see the current resources: *asclab-win* and *asclab-linux*.
+5.	On the list of **Unhealthy resources** under **Affected resources**, see the current resources: *asclab-win* and *asclab-linux*.
 
-5.	Select the **asclab-win** resource and then click on **Exempt**.
+6.	Select the **asclab-win** resource and then click on **Exempt**.
 
     ![Create exemption](../Images/asc-management-ports-resource-exemption.gif?raw=true)
 
-6.	The **Exempt pane** opens:
+7.	The **Exempt pane** opens:
     - Name: **ASC-Management ports should be closed on your virtual machines**.
     - Check the **Set an expiration date** option and set datetime for two days ahead on 12:00 AM.
     - Select **Waiver** as exemption category.
@@ -102,16 +102,16 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 > **Mitigated** - This issue isn't relevant to the resource because it's been handled by a different tool or process than the one being suggested
 > **Waiver** - Accepting the risk for this resource
 
-7.	It might take up to **30 min for the exemption to take effect**. Once this happens:
+8.	It might take up to **30 min for the exemption to take effect**. Once this happens:
     - The resource doesn't impact your secure score.
     - The resource is listed in the Not applicable tab of the recommendation details page
     - The information strip at the top of the recommendation details page lists the number of exempted resources: **1**
 
-8.	Refresh tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
+9.	Refresh tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
 
-9.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
+10.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
 
-10.	Type **Policy** in the search box located on the top of the Azure Portal page and click on it. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there.
+11.	Type **Policy** in the search box located on the top of the Azure Portal page and click on it. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there.
 
     ![Exempttion tab](../Images/exemptions-policy.png)
 
@@ -123,50 +123,50 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 2.	From **Security Center sidebar**, select **Recommendations** under **General**.
 
-2.	On recommendations filters, set the **Response actions** as **Deny**.
+3.	On recommendations filters, set the **Response actions** as **Deny**.
 
     ![Auditing on SQL server should be enabled](../Images/asc-recommendations-filters-deny.gif?raw=true)
 
-3.	From the filtered recommendations list, select **Secure transfer to storage accounts should be enabled**.
+4.	From the filtered recommendations list, select **Secure transfer to storage accounts should be enabled**.
 
-4.	From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
+5.	From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
 > ❗ Important: <br>
 > Security misconfigurations are a major cause of security incidents.
 
   ![Secure Transfer](../Images/secure-transfer.png)
 
-5.	On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
+6.	On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
     ![Prevent resource creation](../Images/asc-storage-deny-policy.gif?raw=true)
 
-6.	Go back to the **recommendations view**, set the **Response action** filter as **Select All**. In the search box, type **Auditing**. Click on the recommendation **Auditing on SQL server should be enabled**.
+7.	Go back to the **recommendations view**, set the **Response action** filter as **Select All**. In the search box, type **Auditing**. Click on the recommendation **Auditing on SQL server should be enabled**.
 
     ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
-7.	On the **Auditing on SQL server should be enabled** page, from the top menu bar, click on the **Enforce** button. This option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
+8.	On the **Auditing on SQL server should be enabled** page, from the top menu bar, click on the **Enforce** button. This option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
 
-8. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
+9. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
 
 * Under the **Basics** tab under the Scope header, select the ellipse icon (...) to select your subscription and click on **Select**
 * Then click on **Next**
 
   ![Sql Auditing](../Images/auditing-create.png)
 
-9. Next, under the **Parameters** tab leave the retention days to default value populated and select the resource group **asclab** from the drop down menu.
+10. Next, under the **Parameters** tab leave the retention days to default value populated and select the resource group **asclab** from the drop down menu.
 
 * Select **Review + create** to assign the policy to your subscription.
 * Click **Create**
 
   ![Sql Auditing](../Images/auditing-create1.png)
 
-10. On the **Auditing on SQL server should be enabled** page, **select** the SQL Server resource found on the **unhealthy resources** tab of **Affected resources**(asclab-sql-xxx here xxx is the unique ID) and click **Remediate**. Change the retention days parameter to 180 and then click **Remediate 1 resource**. By doing both operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
+11. On the **Auditing on SQL server should be enabled** page, **select** the SQL Server resource found on the **unhealthy resources** tab of **Affected resources**(asclab-sql-xxx here xxx is the unique ID) and click **Remediate**. Change the retention days parameter to 180 and then click **Remediate 1 resource**. By doing both operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
 
     ![Sql Auditing](../Images/auditing-create2.png)
 
-11.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/prevent-misconfigurations#recommendations-with-denyenforce-options "Recommendations with deny/enforce options") to view a full list of recommendations with deny/enforce options along with a detailed explanation of this capability.
+12.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/prevent-misconfigurations#recommendations-with-denyenforce-options "Recommendations with deny/enforce options") to view a full list of recommendations with deny/enforce options along with a detailed explanation of this capability.
 
-12.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
+13.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
 
 ### Exercise 5: Create a custom policy
 
