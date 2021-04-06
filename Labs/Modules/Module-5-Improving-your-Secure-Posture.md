@@ -115,7 +115,7 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
 13.	Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
 
-    ![](../Images/affectedresources.png)
+    ![](../Images/affectedresources..png)
 
 14.	On the **Security Checks** section, notice the number of vulnerabilities.
 
