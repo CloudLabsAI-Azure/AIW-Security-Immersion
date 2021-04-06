@@ -77,9 +77,9 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
     ![cloudshell-select](../Images/bash.png)
 
-6. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
+5. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
 
-7.	Build a Linux container image from the hello-world image hosted at Microsoft Container Registry and push it to the existing Azure Container Registry instance on your subscription:
+6.	Build a Linux container image from the hello-world image hosted at Microsoft Container Registry and push it to the existing Azure Container Registry instance on your subscription:
 
 Run the the following two script blocks:
 
@@ -95,17 +95,17 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
 ![Build Linux container in Cloud Shell](../Images/asc-build-linux-container-cloud-shell.gif?raw=true)
 
-8. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s
+7. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s
 
-9. The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
+8. The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
-10.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then click on **Recommendations** from the left sidebar under the **General** section.
+9.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then click on **Recommendations** from the left sidebar under the **General** section.
 
-11.	Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)**.
+10.	Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)**.
 
     ![](../Images/acr.png)
 
-12.	On the recommendation page, notice the following details at the upper section:
+11.	On the recommendation page, notice the following details at the upper section:
 
     - Unhealthy registries: *1/1*
     - Severity : *High*
@@ -113,13 +113,13 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
    ![](../Images/acr2.png)
 
-13.	Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
+12.	Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
 
     ![](../Images/affectedresources..png)
 
-14.	On the **Security Checks** section, notice the number of vulnerabilities.
+13.	On the **Security Checks** section, notice the number of vulnerabilities.
 
-15.	Click on the first security check to open the **XXXXXX- User(s) with Blank Password** pane.
+14.	Click on the first security check to open the **XXXXXX- User(s) with Blank Password** pane.
 
     >XXXXXX is the ID of the security finding.
 
