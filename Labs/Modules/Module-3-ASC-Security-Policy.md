@@ -13,7 +13,7 @@ In this exercise, You will get an overview of an index of Azure Policy built-in 
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-3.	Click on **Security policy** from the left navigation pane under the Security Center section.
+3.	Click on **Security policy** from the left navigation pane under the **Management** section.
 
 4.	On the Policy Management page, select **Azure subscription**.
 
@@ -48,7 +48,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 2.	From the left navigation pane, under the **Authoring** section, click on **Definitions**. This is where you can explore the built-in policy definitions and initiatives.
 
-3.	From the top menu, use the filter button and set the Category as **Security Center** and Definitions Type as **Initiative**
+3.	From the top menu, use the filter button and check the Category **Security Center**(Uncheck remaining) and set the Definitions Type as **Initiative**
 
 4.	You can now see two built-in initiatives used by Azure Security Center:
     -	*Azure Security Benchmark*
@@ -89,9 +89,9 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 ![Create exemption](../Images/asc-management-ports-resource-exemption.gif?raw=true)
 
-6.	The create **exemption pane** opens:
+6.	The **Exempt pane** opens:
     - Name: **ASC-Management ports should be closed on your virtual machines**.
-    - Switch the **expiration** toggle button **ON** and set datetime for two days ahead on 12:00 AM.
+    - Check the **Set an expiration date** option and set datetime for two days ahead on 12:00 AM.
     - Select **Waiver** as exemption category.
     - Provide a description: **Testing exemption capability – module 3**.
     - Click on **Create**.
@@ -107,7 +107,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
     - The resource is listed in the Not applicable tab of the recommendation details page
     - The information strip at the top of the recommendation details page lists the number of exempted resources: **1**
 
-8.	Refresh tab and open the **Not applicable** tab to review your exempted resource – you can see our resource along with the reason/description value.
+8.	Refresh tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
 
 9.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
 
@@ -146,25 +146,27 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 7.	On the **Auditing on SQL server should be enabled** page, from the top menu bar, click on the **Enforce** button. This option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
 
-8.	Once the configuration pane opens with all of the policy configuration options, select the following configuration settings:
+8. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
 
-* On Scope, select your subscription.
-* Click **Next**
-* Keep retention days as it is and select the resource group **asclab**
-Select **Review + create** to assign the policy to your subscription.
+* Under the **Basics** tab under the Scope header, select the ellipse icon (...) to select your subscription and click on **Select**
+* Then click on **Next**
+
+  ![Sql Auditing](../Images/auditing-create.png)
+
+9. Next, under the **Parameters** tab leave the retention days to default value populated and select the resource group **asclab** from the drop down menu.
+
+* Select **Review + create** to assign the policy to your subscription.
 * Click **Create**
 
-![Sql Auditing](../Images/auditing-create.png)
+  ![Sql Auditing](../Images/auditing-create1.png)
 
-![Sql Auditing](../Images/auditing-create1.png)
-
-9. On the **Auditing on SQL server should be enabled** page, **select** the SQL Server resource found on the **unhealthy resources** tab of **Affected resources**(asclab-sql-xxx here xxx is the unique ID) and click **Remediate**. Change the retention days parameter to 180 and then click **Remediate 1 resource**. By doing both operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
+10. On the **Auditing on SQL server should be enabled** page, **select** the SQL Server resource found on the **unhealthy resources** tab of **Affected resources**(asclab-sql-xxx here xxx is the unique ID) and click **Remediate**. Change the retention days parameter to 180 and then click **Remediate 1 resource**. By doing both operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
 
 ![Sql Auditing](../Images/auditing-create2.png)
 
-10.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/prevent-misconfigurations#recommendations-with-denyenforce-options "Recommendations with deny/enforce options") to view a full list of recommendations with deny/enforce options along with a detailed explanation of this capability.
+11.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/prevent-misconfigurations#recommendations-with-denyenforce-options "Recommendations with deny/enforce options") to view a full list of recommendations with deny/enforce options along with a detailed explanation of this capability.
 
-11.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
+12.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
 
 ### Exercise 5: Create a custom policy
 
@@ -180,10 +182,10 @@ A custom policy definition allows customers to define their own rules for using 
 
 4.	On the New Initiative definition page, select the following:
     - Initiative location: Your Subscription
-    - Name: Contoso Security Benchmark
+    - Name: **Contoso Security Benchmark**
     - Description: Baseline for security policies to appear alongside with the built-in recommendations
-    - Category: select Create new and type: Contoso
-    - Version: 1
+    - Category: select Create new and type: **Contoso**
+    - Version: **1**
     - Click **Next**
   
  ![Policy initiative definition settings page](../Images/asc-new-policy-initiative-definition.gif?raw=true)
@@ -192,6 +194,7 @@ A custom policy definition allows customers to define their own rules for using 
 
 6.	The Add policy definition(s) pane opens: <br>
 Add each policy one by one:
+      Search and select the below policy definitions and Click on **Add**
     - *Managed identity should be used in your Function App*
     - *Custom subscription owner roles should not exist*
     - *Public network access on Azure SQL Database should be disabled*
@@ -204,19 +207,19 @@ Add each policy one by one:
 
 ***Add a custom initiative to your subscription***
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then from the left sidebar under **Management** section select **Security policy** page.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then from the left sidebar under **Management** section select **Security policy**.
 
 2.	Select your subscription as a scope for your custom initiative.
 
-> Note: You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Security Center.
+   > Note: You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Security Center.
 
 3.	In the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
 
-4.	Your newly created initiative is listed: *Contoso Security Benchmark*. Select **Add**.
+    ![Add custom initiative](../Images/custom-initiatives.png)
 
-![Add custom initiative](../Images/custom-initiatives.png)
+4.	Your newly created initiative is listed: **Contoso Security Benchmark**. Select **Add**.
 
-![Assign custom initiative](../Images/asc-assign-custom-initiative.gif?raw=true)
+    ![Assign custom initiative](../Images/asc-assign-custom-initiative.gif?raw=true)
 
 5.	On **Assign Initiative** page, select **Review + Create** and then **Create**.
 
