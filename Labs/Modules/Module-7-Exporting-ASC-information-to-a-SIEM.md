@@ -19,7 +19,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 ![Pricing & settings page](../Images/asc-pricing-settings-sub.gif?raw=true)
 
-4.	From the Azure Defender plans sidebar, click on **Continuous export**.
+4.	From the Azure Defender plans sidebar, click on **Continuous export** under the **Settings** section.
 
 5.	Here you can configure the streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
 
@@ -27,33 +27,35 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 ![continuous-export](../Images/continuous-export.png)
 
-7.	On the Exported data types, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
+7.	Under the **Exported data types** section of **Continuous export** page, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
 
-8.	On the Export configuration, select a resource group: *asclab*
+8.	Under the **Export configuration** section of **Continuous export** page, select the resource group: *asclab* from the drop down menu.
 
-9.	On the Export target, select the target Log Analytics workspace: *asclab-la-{DeploymentID}*
+9.	Under the **Export target** section, select the target Log Analytics workspace: *asclab-la-{DeploymentID}*
 
     **Note**: Deployment ID can be obtained from the Lab Environment Details tab.
 
-10.	Click on the **Save** button on the top menu.
+10. Click on the **Save** button on the top menu.
 
 ![Continuous export settings page](../Images/asc-continuous-export-settings.gif?raw=true)
 
 > Note: Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
-11.	Type **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
+11. Type **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
-12.	Click on the **asclab-la-{DeploymentID}** workspace.
+12. Click on the **asclab-la-{DeploymentID}** workspace.
 
-13.	From the workspace’s sidebar, click on the **Logs** button under **General** section.
+13. From the workspace’s sidebar, click on the **Logs** button under **General** section.
 
-14.	On the welcome page, click on the **Get Started** button and then **close the Queries window**.
+14. On the welcome page, click on the **Get Started** button and then close the **Queries** window.
 
-![Continuous export settings page](../Images/log-analytic-started.png)
+    ![Continuous export settings page](../Images/log-analytic-started.png)
 
-15.	From the left pane, notice the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
+15. From the left pane select the **Tables** tab and **enable** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
 
-16.	Query the tables to validate data streaming - For example, Click on **Tables** expand **Security and Audit** double click on **Security Event** to open in query window. Now click on **Run** and see the results below.
+   ![Tables page](../Images/showtables.png)
+
+16. Query the tables to validate data streaming - For example, Click on **Tables** expand **Security and Audit** double click on **Security Event** to open in query window. Now click on **Run** and see the results below.
 
 ![Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
 
@@ -61,11 +63,11 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 Integration with Azure Sentinel will enable centralized monitoring of alerts and discovery data. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
-1.	Type **Azure Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
+1. Type **Azure Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
 
-2.	On the Azure Sentinel workspaces, click on the **Connect workspace** button – for this exercise we’ll use the same Log Analytics workspace used by Security Center.
+2.	On the **Azure Sentinel** blade, click on the **Create Azure Sentinel** button – for this exercise we’ll use the same Log Analytics workspace used by Security Center.
 
-![connect-workspace1](../Images/connect-workspace1.png)
+![connect-workspace1](../Images/sentinel.png)
 
 3.	On the **Add Azure Sentinel to a workspace**, select **asclab-la-{DeploymentID}** workspace. Click on **Add**.
 
@@ -87,7 +89,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 ![Connect Azure Security Center to Azure Sentinel](../Images/asc-sentinel-data-connector-page.png)
 
-10.	On the Create incidents (recommended) click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
+10. On the Create incidents (recommended) click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
 
 ![Enable incidents](../Images/asc-sentinel-enable-incidents.gif?raw=true)
 
