@@ -205,7 +205,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
     ![Remediate a resource](../Images/linux-recom.png)
 
-   **Note**: It will take few hours for all the recommendations to get loaded.
+    **Note**: It will take few hours for all the recommendations to get loaded.
 
 10. Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Group** filter and then provide the value **asclab-aks** (Unselect remaining). Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
 
