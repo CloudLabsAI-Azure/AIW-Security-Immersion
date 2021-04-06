@@ -181,7 +181,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 2. Hover to the **Summaries strip** at the top of the page.
 
-![Remediate a resource](../Images/inventory.png)
+   ![Remediate a resource](../Images/inventory.png)
 
    **Note**: The numbers on the images will vary according to time, So you might wont see same numbers.
 
@@ -243,7 +243,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 17. On the **Azure Resource Graph Explorer** blade, click on **Run Query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs and here it gets very powerful.
  
-   ![Inventory: Assign tags](../Images/run-query.png)
+    ![Inventory: Assign tags](../Images/run-query.png)
 
 18. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as *asc-filtered-query* and select **save**.
 
