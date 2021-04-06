@@ -54,13 +54,13 @@ In this exercise you will be getting started with functionality of Azure Securit
 
 2. Click on the **Getting started** from the left pane. Click on the **Upgrade** tab, select your subscription and click **Upgrade**.
 
-![Overview: Inventory tile](../Images/get-started.png)
+   ![Overview: Inventory tile](../Images/get-started.png)
 
 >Note: You may have to scroll down to find the **Upgrade** button.
 
 3. Click on **Install agents**, if the button is greyed out, then it's already set to **On**.
 
-![install-agents](../Images/installagents.png)
+   ![install-agents](../Images/installagents.png)
 
 4. Return to Azure security Center blade and click on **Pricing & settings** under the **Management** section from the left pane.
 
@@ -74,11 +74,11 @@ In this exercise you will be getting started with functionality of Azure Securit
 
 2. Click on the **Pricing and settings** under the **Management** section from the left pane, select the Log Analytics workspace named **asclab-la-{DeploymentID}** 
 
-![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
+   ![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
 
 3. On the **Settings |Azure Defender Plans** page, select **Azure Defender on** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
 
-![Enable Azure Defender on the workspace level](../Images/asc-enable-defender-workspace.gif?raw=true)
+   ![Enable Azure Defender on the workspace level](../Images/asc-enable-defender-workspace.gif?raw=true)
 
 4. Go back to the **Security center | Pricing & settings** page and select your **Azure subscription**.
 
@@ -88,19 +88,19 @@ In this exercise you will be getting started with functionality of Azure Securit
 
 7. Click on **Edit configuration** under the **Configuration** header of Log Analytics agent for Azure VMs extension. A new window of Extension deployment configuration is opened.
 
-![auto-provisioning](../Images/auto-provisioning.png)
+  ![auto-provisioning](../Images/auto-provisioning.png)
 
 8. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace** option and then select your workspace **asclab-la-{DeploymentID}** from the drop down menu.
 
- ![workspace configuration](../Images/connectazurevms.png)
+   ![workspace configuration](../Images/connectazurevms.png)
 
 9. When **Apply changes to existing VMs?** popup window is prompted, select **Existing and new VMs**.
 
-  ![Apply changes](../Images/applychanges.png)
+   ![Apply changes](../Images/applychanges.png)
 
 10. Next, under the **Store additional raw data - Windows security events** section, select **All Events** option.
 
-![Enable Azure Defender on the workspace level](../Images/allevents.png)
+   ![Enable Azure Defender on the workspace level](../Images/allevents.png)
 
 11. Click on **Apply**.
 
