@@ -224,7 +224,7 @@ Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
 Once you start to get email notifications, you can disable the automation by selecting the workflow and clicking on **Disable**.
 
-> Please be aware that if your trigger is a recommendation that has "sub-recommendations” / “nested recommendations”, the logic app will not trigger for every new security finding; only when the status of the parent
+> Please be aware that if your trigger is a recommendation that has "sub-recommendations” / “nested recommendations”, the logic app will not trigger for every new security finding when the status of the parent has changed.
 
 5. Once the automation is automatically triggered, you should expect the email message to look like the screenshot below:
 
