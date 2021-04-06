@@ -35,7 +35,7 @@ In Azure Security Center, You will be interacting with Security Center dashboard
 
 6. Note the **high-level numbers** at the top menu; This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active recommendations and Security alerts.**
 
-  ![Azure Security Center: Dashboard](../Images/asc-dashboard.png)
+   ![Azure Security Center: Dashboard](../Images/asc-dashboard.png)
 
 7. From the top menu bar, **click** on **Azure subscriptions**.
 
@@ -57,7 +57,7 @@ In Azure Security Center, You will be interacting with Security Center dashboard
 
 11. On the **Azure Defender** tile, you can see the coverage of your connected resources(2) for the currently selected subscription and the recent **security alerts**(4), color-coded by severity. Your current resource coverage should be fully covered **100%**(3) which means **full protection**. Clicking on this tile will redirects you Azure Defender dashboard.
 
-   ![Overview: Azure Defender tile](../Images/azure-defender.png)
+    ![Overview: Azure Defender tile](../Images/azure-defender.png)
 
 12. Next select the **Regulatory Compliance** from the **Cloud Security** section of the Security Center page.
 
