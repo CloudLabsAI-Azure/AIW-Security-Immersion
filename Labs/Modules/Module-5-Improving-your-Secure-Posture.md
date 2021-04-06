@@ -232,7 +232,7 @@ Once you start to get email notifications, you can disable the automation by sel
     - You should receive an email, verify in your inbox.
 
 
-    ![](../Images/trigger-logic-app1.png)
+  ![](../Images/trigger-logic-app1.png)
 
 ### Exercise 4: Accessing your secure score via ARG
 Azure Resource Graph (ARG) provide an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
