@@ -237,7 +237,7 @@ Once you start to get email notifications, you can disable the automation by sel
     ![](../Images/trigger-logic-app.png)
 
     - Select resource **asclab-sql-xxx** (here xxx is unique ID) and then click on the **Trigger Logic App** button.
-    - In the Logic App Trigger blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
+    - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
     - You should receive an email, verify in your inbox.
 
 
