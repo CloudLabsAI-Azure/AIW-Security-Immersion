@@ -19,44 +19,43 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 4.	Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines** recommendation listed here. If you don’t, you will need **24 hours** to have the recommendation with the assessment.
 
-![](../Images/remediate-blade.png)
+   ![](../Images/remediate-blade.png)
 
 5.	Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
 
 6.	Click to expand **Remediation steps** – then click on **View recommendation logic** option to expose an automatic remediation script content (ARM template). Once done, **Close** this window.
 
-![](../Images/remediation-logic.png)
+   ![](../Images/remediation-logic.png)
 
-7.	From the unhealthy tab, select both *asclab-win* and *aslab-linux* virtual machines. Click on  **Remediate**.
+7.	From the **unhealthy resources** tab, select both *asclab-win* and *aslab-linux* virtual machines. Click on  **Remediate**.
 
-![](../Images/remediate-asclab-win.png)
+   ![](../Images/remediate-asclab-win.png)
 
 8.	On the **Choose a vulnerability assessment solution** select **Recommended: Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers)**. Click on  **Proceed**.
 
-![](../Images/proceed.png)
+   ![](../Images/proceed.png)
 
-9.	A window will open, on this page review the list of VMs and click the **Remediate 2 resource** button.
+9.	A window of **Remediate resources** will open, on this page review the list of VMs and click on **Remediate 2 resource** 
 
-10.	Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. Wait for 5-10 minutes for the process to complete.
+10.	Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
-> Note: You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
+   > Note: You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
 
-10.	Ensure the VM extension is deployed on the relevant machines:
+11.	Ensure the VM extension is deployed on the relevant machines:
     - Type **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
     - Select **asclab-win**.
-    - From the sidebar, click on **Extensions**.
-    - Make sure to have `WindowsAgent.AzureSecurityCenter` extension installed and successfully provisioned.
-    - Repeat the process for **asclab-linux** – you should expect to see a different name for the extension on Linux platform: `LinuxAgent.AzureSecurityCenter`.
+    - From the sidebar, click on **Extensions** under the **Settings** section.
+    - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and status is **Provisioning succeeded**.
+  
+    ![](../Images/win-ext.png)
 
-![](../Images/win-ext.png)
+12. Repeat the above step (step10) for **asclab-linux** – you should expect to see a different name for the extension on Linux platform: `LinuxAgent.AzureSecurityCenter`.
 
-
-![](../Images/linux-ext.png)
-
+    ![](../Images/linux-ext.png)
 
 > Note: There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
 
-11.	The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on ASC console within 24 hours.
+13.	The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on ASC console within 24 hours.
 
 ### Exercise 2: Vulnerability assessment for Containers
 
@@ -68,13 +67,19 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 2. Copy the name or your container registry, for example: *asclabcrktfvrxcne4kki*
 
-![acr-select](../Images/acr-select.png)
+   ![acr-select](../Images/acr-select.png)
 
-3. In the Azure portal, open Cloud Shell pane by selecting on the toolbar icon directly to the right of the search textbox or click on [Azure Cloud Shell](https://shell.azure.com/), If prompted to select either Bash or PowerShell, select Bash.
+3. In the Azure portal, open **Cloud Shell** pane by selecting on the toolbar icon directly to the right of the search textbox or click on [Azure Cloud Shell](https://shell.azure.com/).
 
-4. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
+   ![cloudshell-select](../Images/ex4-cloudshell.png)
 
-5.	Build a Linux container image from the hello-world image hosted at Microsoft Container Registry and push it to the existing Azure Container Registry instance on your subscription:
+4. If prompted to select either Bash or PowerShell, select **Bash**.
+
+    ![cloudshell-select](../Images/bash.png)
+
+6. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
+
+7.	Build a Linux container image from the hello-world image hosted at Microsoft Container Registry and push it to the existing Azure Container Registry instance on your subscription:
 
 Run the the following two script blocks:
 
@@ -82,7 +87,7 @@ Run the the following two script blocks:
 echo FROM mcr.microsoft.com/azuredocs/aci-helloworld > Dockerfile
 ```
 
-Modify the following script to include your container registry name:
+Modify the following script to include your container registry name in the placeholder <your container registry name>
 
 ```
 az acr build --image sample/hello-world:v1 --registry <your container registry name> --file Dockerfile .
@@ -90,31 +95,35 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
 ![Build Linux container in Cloud Shell](../Images/asc-build-linux-container-cloud-shell.gif?raw=true)
 
-6. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s
+8. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s
 
-7.	The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
+9. The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
-8.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then click on **Recommendations** from the left sidebar.
+10.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then click on **Recommendations** from the left sidebar under the **General** section.
 
-9.	Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)**.
+11.	Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)**.
 
-![](../Images/acr.png)
+    ![](../Images/acr.png)
 
-10.	On the recommendation page, notice the following details at the upper section:
+12.	On the recommendation page, notice the following details at the upper section:
 
     - Unhealthy registries: *1/1*
-    - Severity of recommendation: *High*
+    - Severity : *High*
     - Total vulnerabilities: *expect to see more than 2 vulnerabilities*
 
-![](../Images/acr2.png)
+   ![](../Images/acr2.png)
 
-11.	Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
+13.	Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
 
-12.	On the **Security Checks** section, notice the number of vulnerabilities.
+    ![](../Images/affectedresources.png)
 
-13.	Click on the first security check to open the right pane.
+14.	On the **Security Checks** section, notice the number of vulnerabilities.
 
-![](../Images/acr3.png)
+15.	Click on the first security check to open the **XXXXXX- User(s) with Blank Password** pane.
+
+    >XXXXXX is the ID of the security finding.
+
+    ![](../Images/securitychecks.png)
 
 Notice the vulnerability description, general information (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
 
@@ -126,7 +135,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 1.	Type **Logic Apps** in the search box located on the top of the **Azure Portal** page and click on it, or [click here](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Logic%2Fworkflows).
 
-2.	Click **Add** and **Consumption** to create a new Logic App.
+2.	Click on **+Add** and select **Consumption** to create a new Logic App.
 
 3.	On the Basics tab, select your subscription and resource group **asclab**.
 
@@ -134,42 +143,41 @@ Every security program includes multiple workflows for incident response. The pr
 
 5.	Select location, for example: **East US** (it’s recommended to use the same region as used in the previous exercises).
 
-6.	Keep Log Analytics option as **Off**.
+6.	Ensure the **Enable log analytics** option is unchecked.
 
-7.	Select **Review + Creation** and then click on **Create**.
+7.	Select **Review + Create** and then click on **Create**.
+
+    ![](../Images/logic-app.png)
 
 8.	When the **Deployment** is completed click on **Go to resource**
 
-![](../Images/logic-app.png)
+    ![](../Images/gotoresource.png)
 
-8.	After the Logic Apps Designer opens, select **Blank Logic App**.
+9.	After the Logic Apps Designer opens, select **Blank Logic App**.
 
-![](../Images/open-logic-app.png)
+    ![](../Images/open-logic-app.png)
 
-9.	Type **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered**.
+10.	Type **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered** from the list of **Triggers**
 
-![](../Images/triggered.png)
+    ![](../Images/triggered.png)
 
-10.	Click on the **new step** button and type **Outlook send**.
+11.	Click on the **new step** button and type **Outlook send**.
 
-![](../Images/newstep.png)
+    ![](../Images/newstep.png)
 
-
-
-
-11. Scroll down the list, and click on **Send an email (V2)** action to add it to the Designer.
+12. From the list of actions, select **Send an email (V2)** action to add it to the Designer.
 
 > Note: you will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
-12.	In the Send an email (V2), add your email address in the **To** field.
+13.	In the Send an email (V2), add the email address used for performing the lab in the **To** field.
 
 > Later, you will use the same email address to check if you have received an email using workflow automation feature.
 
-13.	Click in the **Subject box**, then type: **Recommendation changed:**
+14.	Click in the **Subject box**, then type: **Recommendation changed:**
 
-14.	Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on **Dynamic content** and then select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
+15.	Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on **Dynamic content** tab and then select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
 
-15.	Click into the Body text box and type the following:
+16.	Click into the Body text box and type the following:
 
 **The following recommendation has been changed**</br>
 **Recommendation:**</br>
@@ -177,14 +185,14 @@ Every security program includes multiple workflows for incident response. The pr
 **Status:**</br>
 **Link to recommendation:**</br>
 
-16.	Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by selecting in the list:
+17.	Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by selecting in the list:
 
 Recommendation: `Properties Display Name`</br>
 Description: `Properties Metadata Description`</br>
 Status: `Properties Status Code`</br>
 Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
-17.	Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
+18.	Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
 
 ![Logic App worklfow](../Images/outlook-send.png)
 
@@ -196,10 +204,10 @@ Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
 3.	A pane appears on the right side. Enter the following for each field:
     - General:
-        - Name: *Send-RecommendationsChanges*
-        - Description: *Send email message when a recommendation is created or triggered*
+        - Name: **Send-RecommendationsChanges**
+        - Description: **Send email message when a recommendation is created or triggered**
         - Subscription: *Your Subscription*
-        - Resource group: *asclab*
+        - Resource group: **asclab**
     - Trigger conditions:
         - Select Security Center data types: *Security Center recommendations*
         - Recommendations name: *All recommendations selected*
@@ -212,7 +220,8 @@ Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
 ![](../Images/workflow-automation.png)
 
-4.	Wait for the message *"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"* to appear. From now on, you will get email notifications for recommendations.
+4.	Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations.
+
 Once you start to get email notifications, you can disable the automation by selecting the workflow and clicking on **Disable**.
 
 > Please be aware that if your trigger is a recommendation that has "sub-recommendations” / “nested recommendations”, the logic app will not trigger for every new security finding; only when the status of the parent
@@ -222,7 +231,7 @@ Once you start to get email notifications, you can disable the automation by sel
 ![Workflow automation generated email message](../Images/asc-workflow-automation-automated-email.gif?raw=true)
 
 6.	Test/trigger your automation manually:
-    - On Security Center sidebar, click on **Recommendations**.
+    - On Security Center sidebar, click on **Recommendations** from the **General** section.
     - Look for recommendation **Azure Defender for SQL should be enabled on your SQL servers** under **Remediate vulnerabilities** click on it.
 
     ![](../Images/trigger-logic-app.png)
