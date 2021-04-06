@@ -100,7 +100,7 @@ In this exercise you will be getting started with functionality of Azure Securit
 
 10. Next, under the **Store additional raw data - Windows security events** section, select **All Events** option.
 
-   ![Enable Azure Defender on the workspace level](../Images/allevents.png)
+    ![Enable Azure Defender on the workspace level](../Images/allevents.png)
 
 11. Click on **Apply**.
 
