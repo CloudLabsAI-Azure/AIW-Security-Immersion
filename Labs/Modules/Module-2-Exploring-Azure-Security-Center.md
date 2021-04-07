@@ -165,9 +165,9 @@ Exploring secure score
 ```
    ![Recommendation top menu](../Images/quick-fix-logic.png)
 
-12. Close the template window, in the bottom section, **select a resource** (the single storage account on the **Unhealthy resources** tab of **Affected resources**) and click **Remediate** you are navigated to a new window of **Remediate resources**
+12. Close the template window, in the bottom section, **select a resource** (the single storage account on the **Unhealthy resources** tab of **Affected resources**) and click **Fix** you are navigated to a new window of **Fixing resources**
 
-13. On the right pane, review the implications for this remediation and press **Remediate 1 resource**.
+13. On the right pane, review the implications for this remediation and press **Fix 1 resource**.
 
 14. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
 
@@ -185,7 +185,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
    **Note**: The numbers on the images will vary according to time, So you might wont see same numbers.
 
-3. Notice the total number of resources, The total number of resources are the ones that are connected to the Security Center and NOT the total number of resources that you have in your subscriptions/s
+3. Notice the total number of resources, The total number of resources are the ones that are connected to the Security Center and NOT the total number of resources that you have in your subscription
 
 4. Notice the number of **unhealthy resources**, The unhealthy resources are the resources with actionable recommendations based on the selected filter.
 
