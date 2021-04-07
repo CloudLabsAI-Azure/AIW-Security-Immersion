@@ -42,11 +42,11 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 11. From the top menu, click on **Connect** button and then select **RDP**.
 
-    ![Windows VM - Connect RDP](../Images/asc-win-vm-connect-rdp.gif?raw=true)
+   ![Windows VM - Connect RDP](../Images/asc-win-vm-connect-rdp.gif?raw=true)
 
 12. On the **Connect with RDP** section, click on the **Download RDP file anyway** button. Alternatively, from the VM blade, look for the Public IP address and try to connect using RDP.
 
-    ![download-anyway](../Images/download-anyway.png)
+   ![download-anyway](../Images/download-anyway.png)
 
 13. Click on the downloaded file to initiate a remote connection to the server. On the warning message, ignore the message by clicking on **Connect**.
 
@@ -78,7 +78,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 
 ![Adaptive Application Control2](../Images/adaptive-application-control2.png)
 
-5.	If this tab does not contain any group yet, it means that Security Center needs at least two weeks of data to define the unique recommendations per group of machines.
+>Note: First-time users will not get any group information under the Group Name section. It is because Security Center needs at least two weeks of data to define the unique recommendations per group of machines. 
 
 ### Exercise 3: File Integrity Monitoring
 
