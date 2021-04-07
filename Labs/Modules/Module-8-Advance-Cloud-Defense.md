@@ -58,7 +58,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 16. Try to connect again to validate your JIT access to the VM. Use the same file you downloaded previously.
 
-17. Now you should get the prompt for the local admin credentials. Login using the **VM Username** and **VM Password** credentials listed under the **Resource Group: asclab** of **Environment details** tab.
+17. Now you should get the prompt for the local admin credentials. Login using the **VM Username** and **VM Password** credentials listed under the **Resource Group: asclab** section of **Environment details** tab.
 
 18. You **are now connected to asclab-win** server. Close the remote control session/log off.
 
