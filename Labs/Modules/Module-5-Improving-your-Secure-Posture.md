@@ -15,7 +15,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Recommendations** from the left sidebar.
 
-3.	Go to bottom of page and expand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
+3.	Go to the bottom of the page and expand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
 
 4.	Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines** recommendation listed here. If you don’t, you will need **24 hours** to have the recommendation with the assessment.
 
@@ -23,7 +23,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 5.	Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
 
-6.	Click to expand **Remediation steps** – then click on **View recommendation logic** option to expose an automatic remediation script content (ARM template). Once done, **Close** this window.
+6.	Click to expand **Remediation steps** – then click on the **View recommendation logic** option to expose an automatic remediation script content (ARM template). Once done, **Close** this window.
 
    ![](../Images/remediation-logic.png)
 
@@ -45,17 +45,17 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
     - Type **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
     - Select **asclab-win**.
     - From the sidebar, click on **Extensions** under the **Settings** section.
-    - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and status is **Provisioning succeeded**.
+    - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
     ![](../Images/win-ext.png)
 
-12. Repeat the above step (step10) for **asclab-linux** – you should expect to see a different name for the extension on Linux platform: `LinuxAgent.AzureSecurityCenter`.
+12. Repeat the above step (step10) for **asclab-linux** – you should expect to see a different name for the extension on the Linux platform: `LinuxAgent.AzureSecurityCenter`.
 
     ![](../Images/linux-ext.png)
 
 > Note: There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
 
-13.	The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on ASC console within 24 hours.
+13.	The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on the ASC console within 24 hours.
 
 ### Exercise 2: Vulnerability assessment for Containers
 
@@ -69,7 +69,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
    ![acr-select](../Images/acr-select.png)
 
-3. In the Azure portal, open **Cloud Shell** pane by selecting on the toolbar icon directly to the right of the search textbox or click on [Azure Cloud Shell](https://shell.azure.com/).
+3. In the Azure portal, open the **Cloud Shell** pane by selecting the toolbar icon directly to the right of the search textbox or click on [Azure Cloud Shell](https://shell.azure.com/).
 
    ![cloudshell-select](../Images/ex4-cloudshell.png)
 
@@ -81,7 +81,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 6.	Build a Linux container image from the hello-world image hosted at Microsoft Container Registry and push it to the existing Azure Container Registry instance on your subscription:
 
-Run the the following two script blocks:
+Run the following two script blocks:
 
 ```
 echo FROM mcr.microsoft.com/azuredocs/aci-helloworld > Dockerfile
@@ -108,7 +108,7 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 11.	On the recommendation page, notice the following details at the upper section:
 
     - Unhealthy registries: *1/1*
-    - Severity : *High*
+    - Severity: *High*
     - Total vulnerabilities: *expect to see more than 2 vulnerabilities*
 
    ![](../Images/acr2.png)
@@ -129,7 +129,7 @@ Notice the vulnerability description, general information (containing the Cvss 2
 
 ### Exercise 3: Automate recommendations with workflow automation
 
-Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Security Center events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using workflow automation feature when there is a change with a specific recommendation.
+Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Security Center events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
 
 **Create a new Logic App:**
 
@@ -175,7 +175,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 14.	Click in the **Subject box**, then type: **Recommendation changed:**
 
-15.	Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on **Dynamic content** tab and then select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
+15.	Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on the **Dynamic content** tab and then select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
 
 16.	Click into the Body text box and type the following:
 
@@ -231,7 +231,7 @@ Once you start to get email notifications, you can disable the automation by sel
 ![Workflow automation generated email message](../Images/asc-workflow-automation-automated-email.gif?raw=true)
 
 6.	Test/trigger your automation manually:
-    - On Security Center sidebar, click on **Recommendations** from the **General** section.
+    - On the Security Center sidebar, click on **Recommendations** from the **General** section.
     - Look for recommendation **Azure Defender for SQL should be enabled on your SQL servers** under **Remediate vulnerabilities** click on it.
 
     ![](../Images/trigger-logic-app.png)
@@ -244,8 +244,8 @@ Once you start to get email notifications, you can disable the automation by sel
   ![](../Images/trigger-logic-app1.png)
 
 ### Exercise 4: Accessing your secure score via ARG
-Azure Resource Graph (ARG) provide an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
-Azure Secure Score data is available in ARG so you can query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscription.
+Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
+Azure Secure Score data is available in ARG so you can query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
 
 1.	Type **arg** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
 
