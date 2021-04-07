@@ -89,7 +89,7 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 5.	Provide **Custom Benchmark** as Name.
 
-6.	Enter **Custom Benchmark Policy** as description.
+6.	Enter **Custom Benchmark Policy** as Description.
 
 7.	Select **Category**. You can decide to use the existing one (for example: Security Center) or to create your own one. *The recommended approach is to use a custom one so you can quickly filter policy definitions and initiatives when needed (for example: Contoso)*.
 
