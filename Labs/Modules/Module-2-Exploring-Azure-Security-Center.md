@@ -48,7 +48,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 9. Go back to the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
-   ![Overview: Secure Score tile](../Images/asc-overview-secure-score-tile.gif?raw=true)
+   ![Overview: Secure Score tile](../Images/asc-overview-secure-score-tile1.png?raw=true)
 
 > ⭐ Good to know: <br>
 > The higher the score, the lower the identified risk level.
@@ -145,10 +145,10 @@ Exploring secure score
 
 9. On the top section, notice the following:
 
-* Title of the recommendation: **Secure transfer to storage accounts should be enabled**
-* Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
-* Severity indicator: **High**
-* Freshness interval: **30 Min** 
+- Title of the recommendation: **Secure transfer to storage accounts should be enabled**
+- Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
+- Severity indicator: **High**
+- Freshness interval: **30 Min** 
 
 ![Recommendation top menu](../Images/tiles-overview.png)
 
@@ -165,11 +165,11 @@ Exploring secure score
 ```
    ![Recommendation top menu](../Images/quick-fix-logic.png)
 
-12. Close the template window, in the bottom section, **select a resource** (the single storage account on the **Unhealthy resources** tab of **Affected resources**) and click **Remediate** you are navigated to a new window of **Remediate resources**
+12. Close the template window, in the bottom section, **select a resource** (the single storage account on the **Unhealthy resources** tab of **Affected resources**) and click on **Fix** this will open a new window of **Fix resources**.
 
-13. On the right pane, review the implications for this remediation and press **Remediate 1 resource**.
+13. On the right pane, review the implications for this remediation and press **Fix 1 resource**.
 
-14. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
+14. Wait for a notification: ✅ **Fix successful** - Successfully remediated the issues on the selected resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
 
 > **Info**: In the recommendation list, you can now see few recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
