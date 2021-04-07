@@ -12,7 +12,7 @@ You will be performing the following activities to achieve the goal.
 
 ### Exercise 1: Understanding Azure Security Center dashboard
 
-In Azure Security Center, You will be interacting with Security Center dashboard which provides a unified view into the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
+In Azure Security Center, You will be interacting with the Security Center dashboard which provides a unified view into the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
 
 1. Launch **Azure Portal** using the desktop icon on the JumpVM and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
 
@@ -39,7 +39,7 @@ In Azure Security Center, You will be interacting with Security Center dashboard
 
 7. From the top menu bar, **click** on **Azure subscriptions**.
 
-8. On the **Coverage** page, note that your Subscription is listed under **Fully covered** tab – which means that your subscription is covered by Azure Defender. (you should also see a message: *Looking good! The subscriptions below are fully protected*)
+8. On the **Coverage** page, note that your Subscription is listed under the **Fully covered** tab – which means that your subscription is covered by Azure Defender. (you should also see a message: *Looking good! The subscriptions below are fully protected*)
 
    ![Azure Security Center: Coverage](../Images/asc-subscriptions-coverage.gif?raw=true)
 
@@ -59,15 +59,15 @@ In Azure Security Center, You will be interacting with Security Center dashboard
 
     ![Overview: Azure Defender tile](../Images/azure-defender.png)
 
-12. Next select the **Regulatory Compliance** from the **Cloud Security** section of the Security Center page.
+12. Next, select the **Regulatory Compliance** from the **Cloud Security** section of the Security Center page.
 
 13. On the **Regulatory Compliance** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark, ISO 27001, PCI DSS 3.2.1 and SOC TSP**. Click on **Show all 4** to check the compliance status.
  
- >Clicking on this tile will redirect you to Regulatory Compliance dashboard – where you can add additional standards and explore the current ones.
+ >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones.
 
    ![Overview: Regulatory Compliance tile](../Images/regulatorycompliance.png)
    
-14. Next Click on **Inventory** from the **General** section of Security Center.
+14. Next Click on **Inventory** from the **General** section of the Security Center.
 
 15. The next tile on the overview page is the **Assessed resources** which is essentially the **Inventory** – it shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**.
 Resources are divided by their health status. Clicking on this tile will redirects you to the asset inventory dashboard where you can explore your resource and their security posture – see a dedicated exercise below.
@@ -115,7 +115,7 @@ Exploring secure score
 
    ![Recommendations view](../Images/Recommendations.png)
 
-3. From the top menu, click on **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated recommendations. You can use this file for pivoting and reporting.
+3. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated recommendations. You can use this file for pivoting and reporting.
 
 4. The second part of the page contains a list of all recommendations grouped by security **Controls**:
 
@@ -130,11 +130,11 @@ Exploring secure score
 
 ![Recommendations group by controls](../Images/asc-recommendations-group-by-controls.gif?raw=true)
 
-6. Look for the **Encrypt data in transit** security control under the **Controls**.You may have to scroll down to view it.
+6. Look for the **Encrypt data in transit** security control under the **Controls**. You may have to scroll down to view it.
 
 7. Notice its max score is around 4 and the potential increase for the score. You should have more than three recommendations within this control.
 
-    **Note**: It takes few hours for all the data to be loaded, In case if you don't see above option in the list that means it is not populated yet in the recommendations. You can continue to next exercise and verify this after some time
+    **Note**: It takes few hours for all the data to be loaded, In case if you don't see the above option in the list that means it is not populated yet in the recommendations. You can continue to the next exercise and verify this after some time
 
 8. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it.
 
@@ -165,31 +165,31 @@ Exploring secure score
 ```
    ![Recommendation top menu](../Images/quick-fix-logic.png)
 
-12. Close the template window, in the bottom section, **select a resource** (the single storage account on the **Unhealthy resources** tab of **Affected resources**) and click **Fix** you are navigated to a new window of **Fixing resources**
+12. Close the template window, in the bottom section, **select a resource** (the single storage account on the **Unhealthy resources** tab of **Affected resources**) and click **Remediate** you are navigated to a new window of **Remediate resources**
 
-13. On the right pane, review the implications for this remediation and press **Fix 1 resource**.
+13. On the right pane, review the implications for this remediation and press **Remediate 1 resource**.
 
 14. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
 
-> **Info**: In recommendation list, you can now see few recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
+> **Info**: In the recommendation list, you can now see few recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
 ### Exercise 3: Exploring the Inventory capability
 
 Asset inventory dashboard allows you to get a single pane of glass view to all your resources covered by Azure Security Center. It also provides per-resource visibility to all Security Center’s information and additional resource details including security posture and protection status. Since this dashboard is based on Azure Resource Graph (ARG), you can run queries across subscriptions at a large scale, quickly and easily.
 
-1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it. From the left navigation pane, under the **General** section, Select the **Inventory** button.
+1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it. From the left navigation pane, under the **General** section, select the **Inventory** button.
 
 2. Hover to the **Summaries strip** at the top of the page.
 
    ![Remediate a resource](../Images/inventory.png)
 
-   **Note**: The numbers on the images will vary according to time, So you might wont see same numbers.
+   **Note**: The numbers on the images will vary according to time, So you might not see the same numbers.
 
-3. Notice the total number of resources, The total number of resources are the ones that are connected to the Security Center and NOT the total number of resources that you have in your subscription
+3. Notice the total number of resources, The total number of resources are the ones that are connected to the Security Center and NOT the total number of resources that you have in your subscriptions/s
 
 4. Notice the number of **unhealthy resources**, The unhealthy resources are the resources with actionable recommendations based on the selected filter.
 
-5. Notice the **unmonitored resources**, The unmonitored resources indicates if there are resources with Log Analytics agent deployed but with health issues. Since we enabled the auto-provisioning in the previous module, all existing VMs are covered and connected = monitored.
+5. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with Log Analytics agent deployed but with health issues. Since we enabled the auto-provisioning in the previous module, all existing VMs are covered and connected = monitored.
 
 6. Use the **Filter by name** box to search for **linux**. You should now see a filtered view containing your desired resource: **asclab-linux**
 
@@ -213,14 +213,14 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 > Notice! The entire grid can be filtered and sorted
 
-11.	From the filter menu, select the **Resource Group** filter and **select all** under the Value. Again from the filter menu, select **Recommendations**, uncheck **select all** option under the Value and then select the **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
+11.	From the filter menu, select the **Resource Group** filter and **select all** under the Value. Again from the filter menu, select **Recommendations**, uncheck the **select all** option under the Value and then select the **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
 
     **Note**: If you don't see **Auditing on SQL Server should be enabled** in search that means it is not loaded yet to recommendations, Note down this step number and verify this after some time.
 
-12.	Tags is a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
+12.	Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
 * Filter the **Resource type** column to include only **App Services**: Select the **Resource type** filter and select **app services** under the Value and Click on **OK**
-* **Select** the checkboxes of the two app service named as *asclab-fa-xx* and *asclab-app-xx*. (Here **xx** is the unique id of resource).
+* **Select** the checkboxes of the two app services named *asclab-fa-xx* and *asclab-app-xx*. (Here **xx** is the unique id of resource).
 * From the top menu, click **Assign tags**
 * Assign `Environment` as the name and  `Production` as the value.
 * Click **Save**.
@@ -231,7 +231,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 13. From the filter pane, remove the **Resource type** filter then go to add filter and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
-14. From the filter pane, remove the **Security findings** filter if you added in previous step then select **Azure Defender** filter and set value to **On** and Click on **OK**. On the **Resource Group** select **asclab** (Unselect remaining) and again Click on **Ok**
+14. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Azure Defender** filter and set value to **On** and click on **OK**. On the **Resource Group** select **asclab** (Unselect remaining) and again Click on **Ok**
 
     ![Inventory: Assign tags](../Images/download-csv.png)
 
@@ -248,7 +248,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 18. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as *asc-filtered-query* and select **save**.
 
 > ⭐ Good to know: <br>
-> Inventory dashboard is fully built on top of Azure Resource Graph (ARG) which stores all of ASC security posture data and leveraging its powerful KQL engine.
+> The Inventory dashboard is fully built on top of Azure Resource Graph (ARG) which stores all of ASC security posture data and leveraging its powerful KQL engine.
 > It enables you to reach deep insights quickly and easily on top of ASC data and cross-reference with any other resource properties.
 
 ### Summary
