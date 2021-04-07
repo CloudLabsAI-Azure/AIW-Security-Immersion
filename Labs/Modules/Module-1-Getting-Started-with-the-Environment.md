@@ -54,6 +54,8 @@ In this exercise you will be getting started with functionality of Azure Securit
 
 2. Click on the **Getting started** from the left pane. Click on the **Upgrade** tab, select your subscription and click **Upgrade**.
 
+   ![Overview: Inventory tile](../Images/get-started-1.png)
+
    ![Overview: Inventory tile](../Images/get-started.png)
 
 >Note: You may have to scroll down to find the **Upgrade** button.
