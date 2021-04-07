@@ -109,6 +109,8 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 9.	Refresh tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
 
+    ![Exempttion tab](../Images/not-applicable-resource-tab.png)
+
 10.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
 
 11.	Type **Policy** in the search box located on the top of the Azure Portal page and click on it. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there.
