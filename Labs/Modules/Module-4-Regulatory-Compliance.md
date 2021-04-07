@@ -87,7 +87,7 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 4.	Under the **Basics** tab, select your Subscription.
 
-5.	Enter **Custom Benchmark** as Name.
+5.	Provide **Custom Benchmark** as Name.
 
 6.	Enter **Custom Benchmark Policy** as description.
 
