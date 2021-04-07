@@ -98,6 +98,8 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 12. On the Create incidents (recommended) click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
 
     ![Enable incidents](../Images/asc-sentinel-enable-incidents.gif?raw=true)
+ 
+ >You may have to scroll down to find the option.
 
 ### Summary
 
