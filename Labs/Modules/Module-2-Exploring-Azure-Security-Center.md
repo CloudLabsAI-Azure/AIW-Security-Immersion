@@ -154,7 +154,7 @@ Exploring secure score
 
 10. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s either by following the step-by-step instructions, use the provided ARM template in the next step, or REST API to automate the process.
 
-11. Expand the **Remediation Steps** menu on the **Secure transfer to storage accounts should be enabled** page and Click on the **view remediation logic**, notice the automatic remediation script content (ARM Template) as shown below:
+11. Expand the **Remediation Steps** menu on the **Secure transfer to storage accounts should be enabled** page and Click on the **Quick fix logic**, notice the automatic remediation script content (ARM Template) as shown below:
 
 ```json
 {
@@ -163,7 +163,7 @@ Exploring secure score
   }
 }
 ```
-   ![Recommendation top menu](../Images/view-remediation-logic.png)
+   ![Recommendation top menu](../Images/quick-fix-logic.png)
 
 12. Close the template window, in the bottom section, **select a resource** (the single storage account on the **Unhealthy resources** tab of **Affected resources**) and click **Remediate** you are navigated to a new window of **Remediate resources**
 
