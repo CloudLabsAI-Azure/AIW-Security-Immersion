@@ -50,7 +50,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 14. On the welcome page, click on the **Get Started** button and then close the **Queries** window.
 
    ![Continuous export settings page](../Images/log-analytic-started.png)
-   
+
    ![Continuous export settings page](../Images/log-analytic-started2.png)
 
 15. From the left pane select the **Tables** tab and **enable** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
@@ -101,7 +101,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
     ![Enable incidents](../Images/asc-sentinel-enable-incidents.gif?raw=true)
  
- >You may have to scroll down to find the option.
+ >Note: You may have to scroll down to find the option.
 
 ### Summary
 
