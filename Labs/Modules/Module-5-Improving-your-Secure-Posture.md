@@ -23,19 +23,19 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 5.	Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
 
-6.	Click to expand **Remediation steps** – then click on the **View recommendation logic** option to expose an automatic remediation script content (ARM template). Once done, **Close** this window.
+6.	Click to expand **Remediation steps** – then click on the **Quick fix logic** option to expose an automatic remediation script content (ARM template). Once done, **Close** this window.
 
-   ![](../Images/remediation-logic.png)
+   ![](../Images/quick-logic.png)
 
-7.	From the **unhealthy resources** tab, select both *asclab-win* and *aslab-linux* virtual machines. Click on  **Remediate**.
+7.	From the **unhealthy resources** tab, select both *asclab-win* and *aslab-linux* virtual machines. Click on  **fix**.
 
-   ![](../Images/remediate-asclab-win.png)
+   ![](../Images/fix-asclab-win.png)
 
 8.	On the **Choose a vulnerability assessment solution** select **Recommended: Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers)**. Click on  **Proceed**.
 
    ![](../Images/proceed.png)
 
-9.	A window of **Remediate resources** will open, on this page review the list of VMs and click on **Remediate 2 resource** 
+9.	A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resource** 
 
 10.	Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
