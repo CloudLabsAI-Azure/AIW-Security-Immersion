@@ -12,7 +12,7 @@ You will be performing the following activities to achieve the goal.
 
 ## Exercise 1: Log in to Azure Portal
 
-In this exercise you will learn how to login to the Azure Portal in the JumpVM using user credentials provided under the Environment Details to access the Azure Portal
+In this exercise, you will learn how to login to the Azure Portal in the JumpVM using user credentials provided under the Environment Details to access the Azure Portal
 
 ### Instructions 
 
@@ -38,7 +38,7 @@ In this exercise you will learn how to login to the Azure Portal in the JumpVM u
 
    ![](../Images/azure-login-enter-password1.png "Enter Password") 
 
-4. First time users are often prompted requesting access to **Stay Signed in**. If you see any such pop-up window, click on **No**.
+4. First-time users are often prompted requesting access to **Stay Signed in**. If you see any such pop-up window, click on **No**.
 
 5. If you see any additional pop-up like, You have free **Azure Advisor recommendations!** Close the window to continue the lab. 
 
@@ -46,7 +46,7 @@ In this exercise you will learn how to login to the Azure Portal in the JumpVM u
 
 ## Exercise 2: Enabling Azure Defender
 
-In this exercise you will be getting started with functionality of Azure Security Center and Azure Defender and how to enable Azure Defender on a subscription.
+In this exercise, you will be getting started with the functionality of Azure Security Center and Azure Defender and how to enable Azure Defender on a subscription.
 
 ### Subscription upgrade and agents installation
 
@@ -100,20 +100,20 @@ In this exercise you will be getting started with functionality of Azure Securit
 
    ![Apply changes](../Images/applychanges.png)
 
-10. Next, under the **Store additional raw data - Windows security events** section, select **All Events** option.
+10. Next, under the **Store additional raw data - Windows security events** section, select the **All Events** option.
 
     ![Enable Azure Defender on the workspace level](../Images/allevents.png)
 
 11. Click on **Apply**.
 
-12. And after all the configuration are made click on **Save** on the Settings | Auto provisioning page.
+12. And after all the configurations are made click on **Save** on the Settings | Auto provisioning page.
 
 <br>
 
 > Please notice:
 > * To get the full functionality of Azure Security Center and Azure Defender, both subscription and Log Analytics workspace should be enabled for Defender. Once you enable it,  the required Log Analytics solutions will be added to the workspace.
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Azure Defender.
-> * You can enable Azure Defender trial for 30-days on a subscription-only, if not previously used.
+> * You can enable the Azure Defender trial for 30-days on a subscription-only, if not previously used.
 
 
 ## Summary
