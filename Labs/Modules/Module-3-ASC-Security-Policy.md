@@ -7,7 +7,7 @@ In this module, we will guide you through the current Security Center policies s
 
 ### Exercise 1: Overview of the ASC policy
 
-In this exercise, You will get an overview of an index of Azure Policy built-in policy definitions related to Azure Security Center and about initiatives, policies, and how they relate to Security Center's recommendation.
+In this exercise, You will get an overview of an index of Azure Policy built-in policy definitions related to Azure Security Center and about initiatives, policies, and how they relate to the Security Center's recommendation.
 
 1.  Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
 
@@ -75,13 +75,13 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 2.	Select **Recommendations** from the left navigation pane.
 
-2.	Go to bottom of page and expand **Secure management ports** security control from the list.
+3.	Go to the bottom of the page and expand **Secure management ports** security control from the list.
 
-3.	Select the **Management ports should be closed on your virtual machines** recommendation.
+4.	Select the **Management ports should be closed on your virtual machines** recommendation.
 
     ![policy assignment](../Images/secure-management-ports.png)
 
-   **Note**: If you don't see above option that means it is not loaded yet to control list, Note down this step number and verify this after some time.
+   **Note**: If you don't see the above option that means it is not loaded yet to the control list, Note down this step number and verify this after some time.
 
 5.	On the list of **Unhealthy resources** under **Affected resources**, see the current resources: *asclab-win* and *asclab-linux*.
 
@@ -121,7 +121,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 1.	Type **Security Center** in the search box located on the top of the Azure Portal page and click on it..
 
-2.	From **Security Center sidebar**, select **Recommendations** under **General**.
+2.	From the **Security Center sidebar**, select **Recommendations** under **General**.
 
 3.	On recommendations filters, set the **Response actions** as **Deny**.
 
@@ -148,7 +148,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 9. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
 
-* Under the **Basics** tab under the Scope header, select the ellipse icon (...) to select your subscription and click on **Select**
+* Under the **Basics** tab under the Scope header, select the ellipse icon (...) to select your subscription and click on the **Select**
 * Then click on **Next**
 
   ![Sql Auditing](../Images/auditing-create.png)
@@ -170,7 +170,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 ### Exercise 5: Create a custom policy
 
-A custom policy definition allows customers to define their own rules for using Azure. Whatever the business driver for creating a custom policy, the steps are the same for defining the new custom policy.
+A custom policy definition allows customers to define their own rules for using Azure. Whatever the business driver for creating a custom policy, the steps are the same for defining the new the custom policy.
 
 ***Create a custom initiative using Azure Policy***
 
@@ -178,12 +178,12 @@ A custom policy definition allows customers to define their own rules for using 
 
 2.	Select **Definitions** from the left navigation pane.
 
-3.	From the top menu, select **+Initiative definition** to add new initiative
+3.	From the top menu, select **+Initiative definition** to add a new initiative
 
 4.	On the New Initiative definition page, select the following:
     - Initiative location: Your Subscription
     - Name: **Contoso Security Benchmark**
-    - Description: Baseline for security policies to appear alongside with the built-in recommendations
+    - Description: Baseline for security policies to appear alongside the built-in recommendations
     - Category: select Create new and type: **Contoso**
     - Version: **1**
     - Click **Next**
@@ -207,13 +207,13 @@ Add each policy one by one:
 
 ***Add a custom initiative to your subscription***
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then from the left sidebar under **Management** section select **Security policy**.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then from the left sidebar under the **Management** section select **Security policy**.
 
 2.	Select your subscription as a scope for your custom initiative.
 
    > Note: You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Security Center.
 
-3.	In the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
+3.	On the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
 
     ![Add custom initiative](../Images/custom-initiatives.png)
 
@@ -221,7 +221,7 @@ Add each policy one by one:
 
     ![Assign custom initiative](../Images/asc-assign-custom-initiative.gif?raw=true)
 
-5.	On **Assign Initiative** page, select **Review + Create** and then **Create**.
+5.	On the **Assign Initiative** page, select **Review + Create** and then **Create**.
 
 6.	Your custom initiative is now assigned.
 
