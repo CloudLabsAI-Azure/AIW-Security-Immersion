@@ -160,9 +160,9 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
   ![Sql Auditing](../Images/auditing-create1.png)
 
-11. On the **Auditing on SQL server should be enabled** page, **select** the SQL Server resource found on the **unhealthy resources** tab of **Affected resources**(asclab-sql-xxx here xxx is the unique ID) and click **Remediate**. Change the retention days parameter to 180 and then click **Remediate 1 resource**. By doing both operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
+11. On the **Auditing on SQL server should be enabled** page, **select** the SQL Server resource found on the **unhealthy resources** tab of **Affected resources**(asclab-sql-xxx here xxx is the unique ID) and click **Fix**. Change the retention days parameter to 180 and then click **Fix 1 resource**. By doing both operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
 
-    ![Sql Auditing](../Images/auditing-create2.png)
+    ![Sql Auditing](../Images/auditing-fix-create.png)
 
 12.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/prevent-misconfigurations#recommendations-with-denyenforce-options "Recommendations with deny/enforce options") to view a full list of recommendations with deny/enforce options along with a detailed explanation of this capability.
 
