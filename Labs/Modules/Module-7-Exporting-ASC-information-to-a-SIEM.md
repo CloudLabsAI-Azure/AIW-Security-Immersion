@@ -13,7 +13,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab
 
-2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Pricing & settings** under **Management** tab in left sidebar.
+2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Pricing & settings** under the **Management** tab in the left sidebar.
 
 3.	Select **Your Subscription**.
 
@@ -55,7 +55,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
    ![Tables page](../Images/showtables.png)
 
-16. Query the tables to validate data streaming - For example, Click on **Tables** expand **Security and Audit** double click on **Security Event** to open in query window. Now click on **Run** and see the results below.
+16. Query the tables to validate data streaming - For example, Click on **Tables** expand **Security and Audit** double click on **Security Event** to open in the query window. Now click on **Run** and see the results below.
 
    ![Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
 
@@ -65,7 +65,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 1. Type **Azure Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
 
-2.	On the **Azure Sentinel** blade, click on the **Create Azure Sentinel** button – for this exercise we’ll use the same Log Analytics workspace used by Security Center.
+2.	On the **Azure Sentinel** blade, click on the **Create Azure Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by Security Center.
 
    ![connect-workspace1](../Images/sentinel.png)
 
@@ -81,7 +81,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 6. Select the workspace **asclab-la-{DeploymentID}** on the **Azure sentinel** page. 
 
-7. Next, select the **News and guides** option from General section of **Azure Sentinel** page. Once the **News and guides** opens, use the Azure Security Center connector to enable the integration.
+7. Next, select the **News and guides** option from General section of **Azure Sentinel** page. Once the **News and guides** open, use the Azure Security Center connector to enable the integration.
 
 8.	From Azure Sentinel’s sidebar, click on the **Data connectors** under the **Configuration** section.
 
