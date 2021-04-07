@@ -27,9 +27,9 @@ Continuous export lets you fully customize what will be exported, and where it w
 
    ![continuous-export](../Images/continuous-export.png)
 
-7.	Under the **Exported data types** section of **Continuous export** page, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
+7.	Under the **Exported data types** section of the **Continuous export** page, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
 
-8.	Under the **Export configuration** section of **Continuous export** page, select the resource group: *asclab* from the drop down menu.
+8.	Under the **Export configuration** section of the **Continuous export** page, select the resource group: *asclab* from the drop down menu.
 
 9.	Under the **Export target** section, select the target Log Analytics workspace: *asclab-la-{DeploymentID}*
 
@@ -45,7 +45,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 12. Click on the **asclab-la-{DeploymentID}** workspace.
 
-13. From the workspace’s sidebar, click on the **Logs** button under **General** section.
+13. From the workspace’s sidebar, click on the **Logs** button under the **General** section.
 
 14. On the welcome page, click on the **Get Started** button and then close the **Queries** window.
 
@@ -75,13 +75,13 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 4.	Adding Azure Sentinel to workspace asclab-la-{DeploymentID} is now in progress. This process will take few minutes to complete. 
 
-5.	Once the deployment of workspace is completed you will get a notication as **Successfully added Azure Sentinel**. **Refresh** the page to see the workspace listed on Azure Sentinel page.
+5.	Once the deployment of workspace is completed you will get a notification as **Successfully added Azure Sentinel**. **Refresh** the page to see the workspace listed on Azure Sentinel page.
 
   ![Add sentinel](../Images/sentinelws.png)
 
 6. Select the workspace **asclab-la-{DeploymentID}** on the **Azure sentinel** page. 
 
-7. Next, select the **News and guides** option from General section of **Azure Sentinel** page. Once the **News and guides** open, use the Azure Security Center connector to enable the integration.
+7. Next, select the **News and guides** option from the General section of the **Azure Sentinel** page. Once the **News and guides** open, use the Azure Security Center connector to enable the integration.
 
 8.	From Azure Sentinel’s sidebar, click on the **Data connectors** under the **Configuration** section.
 
