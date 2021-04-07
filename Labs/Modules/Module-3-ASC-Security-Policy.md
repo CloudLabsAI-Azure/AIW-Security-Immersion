@@ -106,8 +106,12 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
     - The resource doesn't impact your secure score.
     - The resource is listed in the Not applicable tab of the recommendation details page
     - The information strip at the top of the recommendation details page lists the number of exempted resources: **1**
+    
+    <br>
 
 9.	Refresh tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
+
+    ![Exempttion tab](../Images/not-applicable-resource-tab.png)
 
 10.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
 
