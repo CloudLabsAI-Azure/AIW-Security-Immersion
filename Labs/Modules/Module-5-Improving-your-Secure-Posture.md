@@ -47,11 +47,11 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
     - From the sidebar, click on **Extensions** under the **Settings** section.
     - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
-    ![](../Images/win-ext.png)
+   ![](../Images/win-ext.png)
 
 12. Repeat the above step (step10) for **asclab-linux** – you should expect to see a different name for the extension on the Linux platform: `LinuxAgent.AzureSecurityCenter`.
 
-    ![](../Images/linux-ext.png)
+   ![](../Images/linux-ext.png)
 
 > Note: There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
 
