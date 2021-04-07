@@ -36,7 +36,7 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
 8.	On the recommendation *Function App should only be accessible over HTTPS*, select the unhealthy resource under the Affected resources(asclab-fa-xxx here xxx is the unique ID) and click on **Remediate**. Confirm the action by selecting **Remediate 1 resource**.
 
-    ![Remmediate function app](../Images/asc-remmediate-function-app.gif?raw=true)
+   ![Remmediate function app](../Images/asc-remmediate-function-app.png)
 
 9.	Return to the dashboard. Here, you can export the regulatory standard compliance status report as a PDF or CSV file. From the top menu bar, click on **Download report**.
 
