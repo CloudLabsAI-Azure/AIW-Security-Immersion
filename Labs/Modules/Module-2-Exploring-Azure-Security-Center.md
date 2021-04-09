@@ -169,7 +169,7 @@ Exploring secure score
 
 13. On the right pane, review the implications for this remediation and press **Fix 1 resource**.
 
-14. Wait for a notification: ✅ **Fix successful** - Successfully remediated the issues on the selected resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
+14. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
 
 > **Info**: In the recommendation list, you can now see few recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
