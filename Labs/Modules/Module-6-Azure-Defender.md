@@ -108,9 +108,9 @@ You can also query security alerts data using REST APIs, such as the Microsoft G
 
 In this exercise, we will use one of the endpoints which allow retrieving a list of alert objects.
 
-1.	Navigate to [List alerts](https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0) page.
+1.	In your **JumpVM** open a new browser window and navigate to https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0 page.
 
-2.	Scroll down to the **Example** section for a request or [click here](https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0&tabs=http#example).
+2.	Scroll down to the **Example** section for a request or open this URL https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0&tabs=http#example in your **JumpVM**.
 
 3.	On the HTTP tab, review the endpoint URL: `https://graph.microsoft.com/v1.0/security/alerts`.
 
@@ -125,6 +125,8 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 ![Consent-Accept](../Images/consent-accept.png)
 
 6.  Now click on **Modify Permissions (Preview)** and wait for two permissions to load. Scroll to the right side of permissions then click on **Consent**, do this for both permissions. When prompted for login, login using credentials provided in the **Environment Details** tab, click on **Accept** for each permission to get **Consented**
+
+    > **Note** : If you are not able to get **Consented**, please minimize the size of window by clicking on `ctrl+-`
 
 ![Consent](../Images/consent.png)
 
