@@ -183,17 +183,17 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
    ![Remediate a resource](../Images/inventory.png)
 
-   **Note**: The numbers on the images will vary according to time, So you might not see the same numbers.
+   **Note**: In your environment, these numbers may not be the same, since it varies in time
 
-3. Notice the total number of resources, The total number of resources are the ones that are connected to the Security Center and NOT the total number of resources that you have in your subscriptions/s
+3. Notice the total number of resources, The total number of resources are the ones that are connected to the Security Center and NOT the total number of resources that you have in your subscriptions.
 
 4. Notice the number of **unhealthy resources**, The unhealthy resources are the resources with actionable recommendations based on the selected filter.
 
-5. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with Log Analytics agent deployed but with health issues. Since we enabled the auto-provisioning in the previous module, all existing VMs are covered and connected = monitored.
+5. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with Log Analytics agent deployed but with health issues. Since we enabled the auto-provisioning in the previous module, all existing VMs are covered and connected, which means they are monitored.
 
 6. Use the **Filter by name** box to search for **linux**. You should now see a filtered view containing your desired resource: **asclab-linux**
 
-7. Hover on the **recommendations** column to see a tooltip with the active recommendations. You should expect to see **Active-xx of xx Recommendations** – these are the active recommendations you must attend.
+7. Hover on the red bar in the **recommendations** column to see a tooltip with the active recommendations.. You should expect to see **Active-xx of xx Recommendations** – these are the active recommendations you must attend.
 
    ![linux-recommendations](../Images/linux-recommendations.png)
 
