@@ -93,7 +93,6 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
     - Name: **ASC-Management ports should be closed on your virtual machines**.
     - Check the **Set an expiration date** option and set datetime for two days ahead on 12:00 AM.
     - Select **Waiver** as exemption category.
-    - Provide a description: **Testing exemption capability – module 3**.
     - Click on **Create**.
 
 ![Exempt tab](../Images/exempt-scope.png)
