@@ -44,7 +44,7 @@ Note: This policy is enabled by default on your subscription as per Azure Securi
 
 Azure Policy keeps track of compliance for your Azure resources based on policy definitions you assign, these are called policy assignments. By default, Microsoft provides many built-in definitions that you can leverage as you see fit.
 
-1.	Type **Policy** in the search box located on the top of the **Azure Portal** page and click on it. Alternately, you can navigate to the policy section by clicking on this link https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade.
+1.	Type **Policy** in the search box located on the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **JumpVM** and navigate to this link https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade.
 
 2.	From the left navigation pane, under the **Authoring** section, click on **Definitions**. This is where you can explore the built-in policy definitions and initiatives.
 
