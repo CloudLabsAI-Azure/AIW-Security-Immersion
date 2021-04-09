@@ -84,9 +84,9 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 5.	On the reason field, select **Other** and leave a comment: *Lab 6 exercise*.
 
-![Create sample virtual machine security alerts](../Images/Create-Suppression-Rule.png)
-
 6.	Set rule expiration to be tomorrow (just a day ahead). **Click Apply and wait 10 minutes for the new rule to be applied.**
+
+    ![Create sample virtual machine security alerts](../Images/Create-Suppression-Rule1.png)
 
 > Note: you can create suppression rules on a management group level by using a built-in policy definition named Deploy - Configure suppression rules for Azure Security Center alerts in Azure Policy. To suppress alerts at the subscription level, you can use the Azure portal or REST APIs.
 
