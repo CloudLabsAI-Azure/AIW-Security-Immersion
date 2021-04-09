@@ -76,7 +76,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 
 4.	Click on the **Recommended** tab.
 
-![Adaptive Application Control2](../Images/adaptive-application-control2.png)
+![Adaptive Application Control2](../Images/adaptive-application-control-new.png)
 
 >Note: First-time users will not get any group information under the Group Name section. It is because Security Center needs at least two weeks of data to define the unique recommendations per group of machines. 
 
