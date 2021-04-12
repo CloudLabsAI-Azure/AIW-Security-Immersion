@@ -11,15 +11,15 @@ Azure Security Center generates detailed security alerts and recommendations. Yo
 
 Continuous export lets you fully customize what will be exported, and where it will go. Even though the feature is called continuous, there's also an option to export weekly snapshots of secure score or regulatory compliance data.
 
-1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab
+1.	Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab
 
-2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Pricing & settings** under the **Management** tab in the left sidebar.
+2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Pricing & settings** under the **Management** tab in the left side pane.
 
 3.	Select **Your Subscription**.
 
    ![Pricing & settings page](../Images/asc-pricing-settings-sub.gif?raw=true)
 
-4.	From the Azure Defender plans sidebar, click on **Continuous export** under the **Settings** section.
+4.	From the Azure Defender plans page, click on **Continuous export** under the **Settings** section.
 
 5.	Here you can configure the streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
 
@@ -86,7 +86,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 7. Next, select the **News and guides** option from the General section of the **Azure Sentinel** page. Once the **News and guides** open, use the Azure Security Center connector to enable the integration.
 
-8.	From Azure Sentinel sidebar, click on the **Data connectors** under the **Configuration** section.
+8.	From Azure Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
 
 9.	On the **Data connectors** page, use the search field and type: *Azure Defender*.
 
