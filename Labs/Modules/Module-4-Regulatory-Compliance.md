@@ -144,7 +144,7 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 23.	Follow the **on-screen instructions to assign it on the desired scope**. If you decide to include parameters in your initiative here is where you can do it. Click on **Review + create** to start the validation process and then click on **Create**.
 
-24.	After some time your new custom benchmark is displayed in Regulatory compliance along with the built-in regulatory standards.
+24.	After some time your new custom benchmark is displayed in Regulatory compliance dashboard along with the built-in regulatory standards.
 
 ### Summary
 
