@@ -9,7 +9,7 @@ In this module, we will guide you through the current Security Center policies s
 
 In this exercise, You will get an overview of an index of Azure Policy built-in policy definitions related to Azure Security Center and about initiatives, policies, and how they relate to the Security Center's recommendation.
 
-1.  Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
+1.  Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
@@ -44,7 +44,7 @@ Note: This policy is enabled by default on your subscription as per Azure Securi
 
 Azure Policy keeps track of compliance for your Azure resources based on policy definitions you assign, these are called policy assignments. By default, Microsoft provides many built-in definitions that you can leverage as you see fit.
 
-1.	Type **Policy** in the search box located on the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **JumpVM** and navigate to this link https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade.
+1.	Type **Policy** in the search box located on the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **labvm-xxxxxx** and navigate to this link https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade.
 
 2.	From the left navigation pane, under the **Authoring** section, click on **Definitions**. This is where you can explore the built-in policy definitions and initiatives.
 
@@ -124,7 +124,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 1.	Type **Security Center** in the search box located on the top of the Azure Portal page and click on it..
 
-2.	From the **Security Center sidebar**, select **Recommendations** under **General**.
+2.	From the **Security Center** left side pane, select **Recommendations** under **General**.
 
 3.	On recommendations filters, set the **Response actions** as **Deny**.
 
@@ -210,7 +210,7 @@ Add each policy one by one:
 
 ***Add a custom initiative to your subscription***
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then from the left sidebar under the **Management** section select **Security policy**.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then from the left side pane under the **Management** section select **Security policy**.
 
 2.	Select your subscription as a scope for your custom initiative.
 
