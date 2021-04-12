@@ -13,9 +13,9 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 1.	Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab, if you are not logged in already.
 
-2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Recommendations** from the left sidebar.
+2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Recommendations** from the left side pane.
 
-3.	GExpand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
+3.	Expand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
 
 4.	Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines** recommendation listed here. If you don’t, you will need **24 hours** to have the recommendation with the assessment.
 
@@ -98,7 +98,7 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
 8. The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
-9.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then click on **Recommendations** from the left sidebar under the **General** section.
+9.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then click on **Recommendations** from the left side pane under the **General** section.
 
 10.	Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)**.
 
@@ -197,7 +197,7 @@ Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
 **Create a new workflow automation instance**
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workflow automation** under **Management** section from the left sidebar.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workflow automation** under **Management** section from the left side pane.
 
 2.	Click on **Add workflow automation**.
 
@@ -230,14 +230,14 @@ Once you start to get email notifications, you can disable the automation by sel
 ![Workflow automation generated email message](../Images/asc-workflow-automation-automated-email.gif?raw=true)
 
 6.	Test/trigger your automation manually:
-    - On the Security Center sidebar, click on **Recommendations** from the **General** section.
+    - On the Security Center pane, click on **Recommendations** from the **General** section.
     - Look for recommendation **Azure Defender for SQL should be enabled on your SQL servers** under **Remediate vulnerabilities** click on it.
 
     ![](../Images/trigger-logic-app.png)
 
     - Select resource **asclab-sql-xxx** (here xxx is unique ID) and then click on the **Trigger Logic App** button.
     - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
-    - You should receive an email, verify in your inbox.
+    - You should receive an email, verify in your inbox. On the labvm-xxxxxx open a new tab in web browser and navigate to https://outlook.office365.com.
 
 
   ![](../Images/trigger-logic-app1.png)
