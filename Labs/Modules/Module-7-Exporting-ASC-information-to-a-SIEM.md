@@ -57,7 +57,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
    ![Tables page](../Images/showtables.png)
 
-16. Query the tables to validate data streaming - For example, Click on **Tables(1)** expand **Security and Audit(2)** double click on **Security Event(3)** to open in the query window. Now click on **Run** and see the results below.
+16. Query the tables to validate data streaming - For example, Click on **Tables (1)** expand **Security and Audit (2)** double click on **Security Event (3)** to open in the query window. Now click on **Run (4)** and see the results below.
 
    ![Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
 > **Note:** Since the continuous export was just enabled, you may need to wait for sometime for new events to show up.
@@ -86,11 +86,11 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 7. Next, select the **News and guides** option from the General section of the **Azure Sentinel** page.
 
-8.	From Azure Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
+8.	From Azure Sentinel side pane, click on the **Data connectors (1)** under the **Configuration** section.
 
 9.	On the **Data connectors** page, use the search field and type: *Azure Defender*.
 
-10. Select the **Azure Defender** connector and then click on **Open connector page**.
+10. Select the **Azure Defender (2)** connector and then click on **Open connector page (3)**.
 
     ![ASC pricing & settings page](../Images/Azure-defender-open.png)
 
