@@ -16,7 +16,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 ### Instructions 
 
-1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-xxxxxx**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the labvm-xxxxxx load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
+1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-xxxxxx**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-xxxxxx** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
 
 2. All user credentials for accessing the **Azure Portal** can be viewed under the **Environment Details** tab for ease of access. Do note that the same information will also be sent to your registered email address. 
 
@@ -24,7 +24,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 ### Login to Azure Portal 
 
-1. In the labvm, Launch **Azure Portal** using the desktop icon.  
+1. In the **labvm**, Launch **Azure Portal** using the desktop icon.  
 
 2. Now you should be on the **Microsoft Azure** login screen. Enter the following username and click on **Next**.  
 
@@ -42,7 +42,6 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 5. If you see any additional pop-up like, You have free **Azure Advisor recommendations!** Close the window to continue the lab. 
 
-6. Click on **Maybe Later** on the **Welcome to Microsoft Azure** window and skip the tour.
 
 ## Exercise 2: Enabling Azure Defender
 
