@@ -45,7 +45,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 12. Click on the **asclab-la-{DeploymentID}** workspace.
 
-13. From the workspace’s sidebar, click on the **Logs** button under the **General** section.
+13. From the left side pane, click on the **Logs** button under the **General** section.
 
 14. On the welcome page, click on the **Get Started** button and then close the **Queries** window.
 
@@ -57,9 +57,10 @@ Continuous export lets you fully customize what will be exported, and where it w
 
    ![Tables page](../Images/showtables.png)
 
-16. Query the tables to validate data streaming - For example, Click on **Tables** expand **Security and Audit** double click on **Security Event** to open in the query window. Now click on **Run** and see the results below.
+16. Query the tables to validate data streaming - For example, Click on **Tables(1)** expand **Security and Audit(2)** double click on **Security Event(3)** to open in the query window. Now click on **Run** and see the results below.
 
    ![Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
+> **Note:** Since the continuous export was just enabled, you may need to wait for sometime for new events to show up.
 
 ### Exercise 2: Integration with Azure Sentinel
 
@@ -77,7 +78,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 4.	Adding Azure Sentinel to workspace asclab-la-{DeploymentID} is now in progress. This process will take few minutes to complete. 
 
-5.	Once the deployment of workspace is completed you will get a notification as **Successfully added Azure Sentinel**. **Refresh** the page to see the workspace listed on Azure Sentinel page.
+5.	Once the deployment of workspace is completed you will get a notification **Successfully added Azure Sentinel**. Refresh the web browser page to see the workspace listed on Azure Sentinel page.
 
   ![Add sentinel](../Images/sentinelws.png)
 
