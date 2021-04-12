@@ -70,7 +70,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 14. Next Click on **Inventory** from the **General** section of the Security Center.
 
 15. Once you are in the **Inventory** page – it shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**.
-Resources are classified according to their health status. Clicking on this tile will redirect you to the asset inventory dashboard where you can explore your resource and their security posture – see a dedicated exercise below.
+Resources are classified according to their health status.
 
 > ❗ Important: <br>
 > Unmonitored VMs are considered as virtual machines that have Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
