@@ -18,7 +18,7 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
 1.	Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab if you are not logged in already.
 
-2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, from the overview page select the **Regulatory Compliance** tile (this pilar is also available from the left sid e pane under the Cloud Security section).
+2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, from the overview page select the **Regulatory Compliance** tile (this pilar is also available on the left side under the Cloud Security section).
 
 3.	Once the Regulatory Compliance dashboard opens you can see the compliance standards currently assigned to your subscription.
 
@@ -91,7 +91,7 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 6.	Enter **Custom Benchmark Policy** as Description.
 
-7.	Select **Category**. You can decide to use the existing one (for example: Security Center) or to create your own one. The recommended approach is to use a custom one so you can quickly filter policy definitions and initiatives when needed (for example: Contoso).
+7.	Select **Category**. Here, you can decide to use an existing one (for example: Security Center) or to create your own.
 
 8.	Provide **Version** number. Each policy definition and initiative contain a version in its metadata section. You can decide to have major versions (1.0), minor version (1.1) and so.
 
