@@ -88,7 +88,7 @@ Exploring secure score
 
 1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it.
 
-2.	From the left navigation pane, under the **Cloud Security** section, Select the **Secure Score**.
+2.	From the left navigation pane, under the **Cloud Security** section, Select **Secure Score**.
 
 3.	On theSecurity Center | Secure Score page, review your current **Overall Secure Score**.
 
@@ -171,7 +171,7 @@ Exploring secure score
 
 14. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
 
-> **Info**: In the recommendation list, you can now see a few recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
+> **Info**: In the recommendation list, you can now see some recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
 ### Exercise 3: Exploring the Inventory capability
 
@@ -193,7 +193,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 6. Use the **Filter by name** box to search for **linux** **(1)**. You should now see a filtered view containing your desired resource: **asclab-linux**
 
-7. Hover on the red bar in the **recommendations** **(2)** column to see a tooltip with the active recommendations.. You should expect to see **Active-xx of xx Recommendations** – these are the active recommendations you must attend.
+7. Hover on the red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**.. You should expect to see **Active-xx of xx Recommendations** – these are the active recommendations you must attend.
 
    ![linux-recommendations](../Images/linux-recommendations.png)
 
