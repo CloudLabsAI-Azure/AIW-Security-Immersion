@@ -11,11 +11,11 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 **Explore vulnerability assessment recommendations:**
 
-1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab, if you are not logged in already.
+1.	Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab, if you are not logged in already.
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Recommendations** from the left sidebar.
 
-3.	Go to the bottom of the page and expand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
+3.	GExpand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
 
 4.	Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines** recommendation listed here. If you don’t, you will need **24 hours** to have the recommendation with the assessment.
 
@@ -35,7 +35,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
    ![](../Images/proceed.png)
 
-9.	A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resource** 
+9.	A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources** 
 
 10.	Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
@@ -43,8 +43,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 11.	Ensure the VM extension is deployed on the relevant machines:
     - Type **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
-    - Select **asclab-win**.
-    - From the sidebar, click on **Extensions** under the **Settings** section.
+    - Select **asclab-win(1)**. next, click on **Extensions(2)** under the **Settings** section.
     - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
    ![](../Images/win-ext.png)
