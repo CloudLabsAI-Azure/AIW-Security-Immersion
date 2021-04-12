@@ -55,7 +55,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 10. From the **Security Center** page Select the  **Azure Defender** from the **Cloud Security** section.
 
-11. On the **Azure Defender** tile, you can see the coverage of your connected resources(2) for the currently selected subscription and the recent **security alerts**(4), color-coded by severity. Your current resource coverage should be fully covered **100%**(3) which means **full protection**. Clicking on this tile will redirects you Azure Defender dashboard.
+11. On the **Azure Defender** tile **(1)**, you can see the coverage of your connected resources(2) for the currently selected subscription and the recent **security alerts**(4), color-coded by severity. Your current resource coverage should be fully covered **100%**(3) which means **full protection**. Clicking on this tile will redirect you to Azure Defender dashboard.
 
     ![Overview: Azure Defender tile](../Images/azure-defender.png)
 
@@ -70,7 +70,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 14. Next Click on **Inventory** from the **General** section of the Security Center.
 
 15. The next tile on the overview page is the **Assessed resources** which is essentially the **Inventory** – it shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**.
-Resources are divided by their health status. Clicking on this tile will redirects you to the asset inventory dashboard where you can explore your resource and their security posture – see a dedicated exercise below.
+Resources are classified according to their health status. Clicking on this tile will redirect you to the asset inventory dashboard where you can explore your resource and their security posture – see a dedicated exercise below.
 
 > ❗ Important: <br>
 > Unmonitored VMs are considered as virtual machines that have Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
@@ -88,7 +88,7 @@ Exploring secure score
 
 1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it.
 
-2.	From the left navigation pane, under the **Cloud Security** section, Select the **Secure Score** button.
+2.	From the left navigation pane, under the **Cloud Security** section, Select the **Secure Score**.
 
 3.	On theSecurity Center | Secure Score page, review your current **Overall Secure Score**.
 
@@ -141,7 +141,7 @@ Exploring secure score
    ![Recommendations view](../Images/sec-transfer.png)
    
 > ⭐ Notice: <br>
-> You can observe for few recommendations Quick Fix option is also available. Quick Fix allows you to remediate a group of resources quickly whenever possible with a single click. This option is only available for supported recommendations and enables you to quickly improve your secure score and increase the security in your environment.
+> For some recommendations, a Quick Fix option is also available. Quick Fix allows you to remediate a group of resources quickly whenever possible with a single click. This option is only available for supported recommendations and enables you to quickly improve your secure score and increase the security in your environment.
 
 9. On the top section, notice the following:
 
@@ -171,7 +171,7 @@ Exploring secure score
 
 14. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
 
-> **Info**: In the recommendation list, you can now see few recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
+> **Info**: In the recommendation list, you can now see a few recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
 ### Exercise 3: Exploring the Inventory capability
 
@@ -191,9 +191,9 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 5. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with Log Analytics agent deployed but with health issues. Since we enabled the auto-provisioning in the previous module, all existing VMs are covered and connected, which means they are monitored.
 
-6. Use the **Filter by name** box to search for **linux**. You should now see a filtered view containing your desired resource: **asclab-linux**
+6. Use the **Filter by name** box to search for **linux** **(1)**. You should now see a filtered view containing your desired resource: **asclab-linux**
 
-7. Hover on the red bar in the **recommendations** column to see a tooltip with the active recommendations.. You should expect to see **Active-xx of xx Recommendations** – these are the active recommendations you must attend.
+7. Hover on the red bar in the **recommendations** **(2)** column to see a tooltip with the active recommendations.. You should expect to see **Active-xx of xx Recommendations** – these are the active recommendations you must attend.
 
    ![linux-recommendations](../Images/linux-recommendations.png)
 
@@ -211,7 +211,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
     ![Remediate a resource](../Images/filter-rg.png)
 
-> Notice! The entire grid can be filtered and sorted
+> **Note:** The list can be filtered and sorted.
 
 11.	From the filter menu, select the **Resource Group** filter and **select all** under the Value. Again from the filter menu, select **Recommendations**, uncheck the **select all** option under the Value and then select the **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
 
@@ -229,7 +229,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
     ![Inventory: Assign tags](../Images/asc-inventory-assign-tags.gif?raw=true)
 
-13. From the filter pane, remove the **Resource type** filter then go to add filter and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
+13. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
 14. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Azure Defender** filter and set value to **On** and click on **OK**. On the **Resource Group** select **asclab** (Unselect remaining) and again Click on **Ok**
 
