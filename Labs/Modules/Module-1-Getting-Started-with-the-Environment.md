@@ -51,7 +51,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 1. Type **Security Center** in the search box on top of the **Azure Portal** and click to open it.
 
-2. Click on the **Getting started** from the left pane. Click on the **Upgrade** tab, select your subscription and click **Upgrade**.
+2. Click on the **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, select your **subscription (3)** and click **Upgrade (4)**.
 
    ![Overview: Inventory tile](../Images/get-started-1.png)
 
@@ -83,15 +83,15 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 4. Go back to the **Security center | Pricing & settings** page and select your **Azure subscription**.
 
-5. Navigate to **Auto provisioning** under the Settings section.
+5. Navigate to **Auto provisioning (1)** under the Settings section.
 
-6. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs** to **On** (if it is not already set to On)
+6. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
 
-7. Click on **Edit configuration** under the **Configuration** header of Log Analytics agent for Azure VMs extension. A new window of Extension deployment configuration is opened.
+7. Click on **Edit configuration (3)** under the **Configuration** header of Log Analytics agent for Azure VMs extension. A new window of Extension deployment configuration is opened.
 
   ![auto-provisioning](../Images/auto-provisioning.png)
 
-8. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace** option and then select your workspace **asclab-la-{DeploymentID}** from the drop down menu.
+8. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **asclab-la-{DeploymentID} (2)** from the drop down menu.
 
    ![workspace configuration](../Images/connectazurevms.png)
 
