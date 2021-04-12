@@ -114,11 +114,11 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 ![Group create](../Images/add-policy.png)
 
-14.	Every policy on the list, has its definition name, reference ID and the associated group. However, you do need to define a group for each policy. To do so, click on the **…** to open the context menu and select **Edit groups**.
+14.	Every policy on the list, has its definition name, reference ID and the associated group. However, you do need to define a group for each policy. To do so, click on the **… (1)** to open the context menu and select **Edit groups (2)**.
 
    ![edit group](../Images/edit-group.png)
 
-15.	Make sure all policies are associated to a group. Please notice that policies can be associated to multiple groups. Here we are selecting **Group 1** and select **Save**.
+15.	Make sure all policies are associated to a group. Please notice that policies can be associated to multiple groups. Here we are selecting **Group 1 (1)** and select **Save (2)**.
 
     ![edit group](../Images/edit-group1.png)
 
@@ -128,9 +128,9 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 18.	To assign your new security policy, type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-19.	From the left navigation pane, under the **Management** section, click on **Security policy**.
+19.	From the left navigation pane, under the **Management** section, click on **Security policy (1)**.
 
-20.	Select a **Subscription** to assign your new security policy.
+20.	Select a **Subscription (2)** to assign your new security policy.
 
   ![security policy](../Images/security-policy.png)
 
