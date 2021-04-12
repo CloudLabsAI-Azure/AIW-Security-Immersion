@@ -47,7 +47,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 2.	From the left navigation pane, under the **Authoring** section, click on **Definitions**. This is where you can explore the built-in policy definitions and initiatives.
 
-3.	From the top menu, use the filter ribbon and seclect **Security Center** from the category filter and set the Definitions Type as **Initiative**
+3.	From the top menu, use the filter ribbon and select **Security Center** from the category filter and set the Definitions Type as **Initiative**
 
 4.	You can now see two built-in initiatives used by Azure Security Center:
     -	*Azure Security Benchmark*
@@ -57,7 +57,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 5.	Notice the number of policies included in each initiative (policies column)
 
-6.	To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the assignment, for example:
+6.	To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the assignments, for example:
 
     - *ASC Default (subscription: dd82589b-444c-45a8-863a-816243ce017d)*
 
