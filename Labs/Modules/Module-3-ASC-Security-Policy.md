@@ -162,7 +162,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
   ![Sql Auditing](../Images/auditing-create1.png)
 
-11. On the **Auditing on SQL server should be enabled** page, **select** the SQL Server resource found on the **unhealthy resources** tab of **Affected resources** named **<inject key="SQL Server" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** and click **Fix**. Change the retention days parameter to 180 and then click **Fix 1 resource**. By doing both operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
+11. On the **Auditing on SQL server should be enabled** page, **select** the **SQL Server resource (1)** found on the **unhealthy resources** tab of **Affected resources** named **<inject key="SQL Server" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** and click **Fix (2)**. Change the **retention days (3)** parameter to 180 and then click **Fix 1 resource (4)**. By doing both operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
 
     ![Sql Auditing](../Images/auditing-fix-create.png)
 
@@ -192,18 +192,18 @@ A custom policy definition allows customers to define their own rules for using 
   
     ![Policy initiative definition settings page](../Images/asc-new-policy-initiative-definition.gif?raw=true)
 
-5.	On the Policies tab, select **Add policy definitions**.
+5.	On the Policies tab, select **Add policy definition(s) (1)**.
 
 6.	The Add policy definition(s) pane opens: <br>
 Add each policy one by one:
-      Search and select the below policy definitions and Click on **Add**
+      Search and select the **below policy (2)** definitions and Click on **Add (4)**
     - *Managed identity should be used in your Function App*
     - *Custom subscription owner roles should not exist*
     - *Public network access on Azure SQL Database should be disabled*
     - *SSH access from the Internet should be blocked*
     - *Storage accounts should restrict network access*
 
-7. Select **Review + Create** and click on **Create**.
+7. Select **Review + Create (5)** and click on **Create**.
 
    ![custom initiative](../Images/policy-definition.png)
 
