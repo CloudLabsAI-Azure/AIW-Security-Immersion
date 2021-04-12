@@ -99,7 +99,7 @@ Exploring secure score
 > 
 > For more information on how the score is calculated, [refer to the secure score documentation page](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#how-your-secure-score-is-calculated).
 
-4. Again on the Security Center | Secure Score page observe the tile **Subscriptions with the lowest scores** – this section helps in prioritizing work on the subscriptions. Since this demo is based on a single subscription, you will see only one.
+4. Again on the Security Center | Secure Score page observe the tile **Subscriptions with the lowest scores** – This score helps in determining which subscription needs your attention. Since this demo is based on a single subscription, you will see only one.
 
    ![Subscriptions with lowest scores](../Images/subscore.png)
 
