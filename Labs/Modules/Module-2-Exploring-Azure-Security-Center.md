@@ -55,7 +55,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 10. From the **Security Center** page Select the  **Azure Defender** from the **Cloud Security** section.
 
-11. On the **Azure Defender** **tile** **(1)**, you can see the coverage of your **connected resources(2)** for the currently selected subscription and the recent **security alerts(4)**, color-coded by severity. Your current resource coverage should be **fully covered 100%(3)** which means **full protection**. Clicking on this tile will redirect you to Azure Defender dashboard.
+11. On the **Azure Defender** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity. Clicking on this option will redirect you to Azure Defender dashboard.
 
     ![Overview: Azure Defender tile](../Images/azure-defender.png)
 
@@ -111,7 +111,7 @@ Exploring secure score
 
 1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it. From the left navigation pane, under the **General** section, Select the **Recommendations** button.
 
-2. On the recommendations page, pay attention to the first part of the page; the **summary view**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
+2. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
 
    ![Recommendations view](../Images/Recommendations.png)
 
@@ -154,7 +154,7 @@ Exploring secure score
 
 10. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s either by following the step-by-step instructions, use the provided ARM template in the next step, or REST API to automate the process.
 
-11. Expand the **Remediation Steps** menu on the **Secure transfer to storage accounts should be enabled** page and Click on the **Quick fix logic**, notice the automatic remediation script content (ARM Template) as shown below:
+11. Expand the **Remediation Steps (1)** menu on the **Secure transfer to storage accounts should be enabled** page and Click on the **Quick fix logic (2)**, notice the automatic remediation script content (ARM Template) as shown below:
 
 ```json
 {
@@ -207,7 +207,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
     **Note**: It will take few hours for all the recommendations to get loaded.
 
-10. Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Group** filter and then provide the value **asclab-aks** (Unselect remaining). Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
+10. Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (Unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
 
     ![Remediate a resource](../Images/filter-rg.png)
 
@@ -231,11 +231,11 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 13. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
-14. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Azure Defender** filter and set value to **On** and click on **OK**. On the **Resource Group** select **asclab** (Unselect remaining) and again Click on **Ok**
+14. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Azure Defender (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again Click on **Ok**
 
     ![Inventory: Assign tags](../Images/download-csv.png)
 
-15. From the top menu bar, click on **Download CSV report**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Azure Defender plan (when applicable).
+15. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Azure Defender plan (when applicable).
 
 16. From the top menu, click on **Open query**.
 
