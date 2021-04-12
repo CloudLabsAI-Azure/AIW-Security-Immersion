@@ -168,11 +168,11 @@ Exploring secure score
     ```
   ![Recommendation top menu](../Images/quick-fix-logic.png)
 
-12. Close the template window, in the bottom section
+12. Click on close button present in the bottom of template window.
 
   ![](../Images/ex2.step12.png)
 
-13. Under **Affected resources**, **select a resource** (the single storage account on the **Unhealthy resources**) and click on **Fix**.
+13. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**.
 
   ![](../Images/ex2.step12(2).png)
   
