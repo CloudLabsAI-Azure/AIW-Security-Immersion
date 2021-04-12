@@ -231,6 +231,7 @@ Once you start to get email notifications, you can disable the automation by sel
 
 6.	Test/trigger your automation manually:
     - On the Security Center pane, click on **Recommendations** from the **General** section.
+    
     - Look for recommendation **Azure Defender for SQL should be enabled on your SQL servers** under **Remediate vulnerabilities** click on it.
 
     ![](../Images/trigger-logic-app.png)
