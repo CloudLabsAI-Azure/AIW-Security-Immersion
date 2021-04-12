@@ -72,7 +72,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 When a single alert isn't interesting or relevant, you can manually dismiss it.
 In the previous step, we used the dismiss option to manually dismiss a single alert. However, you can use the suppression rules feature to automatically dismiss similar alerts in the future.
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Security alerts** under **General**.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Security alerts** under **General** from the left side pane.
 
 2.	Select **High volume of operations in a Key Vault** alert and then click on **Take action**.
 
