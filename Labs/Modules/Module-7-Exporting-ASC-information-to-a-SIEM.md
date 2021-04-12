@@ -19,7 +19,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
    ![Pricing & settings page](../Images/asc-pricing-settings-sub.gif?raw=true)
 
-4.	From the Azure Defender plans page, click on **Continuous export** under the **Settings** section.
+4.	From the Azure Defender plans side pane, click on **Continuous export** under the **Settings** section.
 
 5.	Here you can configure the streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
 
@@ -84,7 +84,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 6. Select the workspace **asclab-la-{DeploymentID}** on the **Azure Sentinel** page. 
 
-7. Next, select the **News and guides** option from the General section of the **Azure Sentinel** page. Once the **News and guides** open, use the Azure Security Center connector to enable the integration.
+7. Next, select the **News and guides** option from the General section of the **Azure Sentinel** page.
 
 8.	From Azure Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
 
