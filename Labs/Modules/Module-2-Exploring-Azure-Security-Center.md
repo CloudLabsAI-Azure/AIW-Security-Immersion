@@ -14,7 +14,7 @@ You will be performing the following activities to achieve the goal.
 
 In Azure Security Center, You will be interacting with the Security Center dashboard which provides a unified view into the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
 
-1. Launch **Azure Portal** using the desktop icon on the labvm and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
+1. Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
 
 2. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it.
 
@@ -55,13 +55,13 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 10. From the **Security Center** page Select the  **Azure Defender** from the **Cloud Security** section.
 
-11. On the **Azure Defender** tile **(1)**, you can see the coverage of your connected resources(2) for the currently selected subscription and the recent **security alerts**(4), color-coded by severity. Your current resource coverage should be fully covered **100%**(3) which means **full protection**. Clicking on this tile will redirect you to Azure Defender dashboard.
+11. On the **Azure Defender** **tile** **(1)**, you can see the coverage of your **connected resources(2)** for the currently selected subscription and the recent **security alerts(4)**, color-coded by severity. Your current resource coverage should be **fully covered 100%(3)** which means **full protection**. Clicking on this tile will redirect you to Azure Defender dashboard.
 
     ![Overview: Azure Defender tile](../Images/azure-defender.png)
 
 12. Next, select the **Regulatory Compliance** from the **Cloud Security** section of the Security Center page.
 
-13. On the **Regulatory Compliance** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark, ISO 27001, PCI DSS 3.2.1 and SOC TSP**. Click on **Show all 4** to check the compliance status.
+13. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark(2), ISO 27001, PCI DSS 3.2.1 and SOC TSP(3)**. Click on **Show all 4 (4)** to check the compliance status.
  
  >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones.
 
@@ -69,7 +69,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
    
 14. Next Click on **Inventory** from the **General** section of the Security Center.
 
-15. The next tile on the overview page is the **Assessed resources** which is essentially the **Inventory** – it shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**.
+15. Once you are in the **Inventory** page – it shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**.
 Resources are classified according to their health status. Clicking on this tile will redirect you to the asset inventory dashboard where you can explore your resource and their security posture – see a dedicated exercise below.
 
 > ❗ Important: <br>
