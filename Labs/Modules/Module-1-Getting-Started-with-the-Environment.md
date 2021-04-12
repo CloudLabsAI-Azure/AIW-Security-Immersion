@@ -93,7 +93,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 6. Click on **Edit configuration (3)** under the **Configuration** header of Log Analytics agent for Azure VMs extension. A new window of Extension deployment configuration is opened.
 
-  ![auto-provisioning](../Images/auto-provisioning.png)
+  ![auto-provisioning](../Images/ex2.step6.png)
 
 7. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **asclab-la-{DeploymentID} (2)** from the drop down menu.
 
