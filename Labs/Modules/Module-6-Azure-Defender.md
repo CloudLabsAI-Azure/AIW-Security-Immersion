@@ -98,7 +98,7 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 9. Change the expiration to be a month ahead from the current date. Next, click on **Apply**.
 
-10. To view the dismissed alerts: Navigate to Security alerts the main page and to the filters section. Change the **Status** filter value to show only **Dismissed** items.
+10. To view the dismissed alerts: Navigate to Security alerts the main page and to the filters section. Change the **Status (1)** filter value to show only **Dismissed (2)** items and click **Ok (3)**.
 
 ![Create sample virtual machine security alerts](../Images/suppression-filter-options.png)
 
@@ -114,7 +114,7 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 
 3.	On the HTTP tab, review the endpoint URL: `https://graph.microsoft.com/v1.0/security/alerts`.
 
-4.	Click on **Try It** then click on the User icon to login. You need to login using the credentials provided in the **Environment Details** tab.
+4.	Click on **Try It (1)** then click on the **User icon (2)** to login. You need to login using the credentials provided in the **Environment Details** tab.
 
 ![Create sample virtual machine security alerts](../Images/rest-tryit.png)
 
