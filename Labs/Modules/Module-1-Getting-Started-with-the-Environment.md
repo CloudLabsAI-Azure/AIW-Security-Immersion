@@ -18,9 +18,15 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-xxxxxx**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-xxxxxx** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
 
+![](../Images/ex1.inst-a.png)
+
 2. All user credentials for accessing the **Azure Portal** can be viewed under the **Environment Details** tab for ease of access. Do note that the same information will also be sent to your registered email address. 
 
+![](../Images/ex1.inst-b.png)
+
 3. The Lab Guide can also be opened on a separate window by selecting the **Split Window** icon in the bottom right corner. This will result in the window detaching from the right side providing more on-screen space for your virtual machine.
+
+![](../Images/ex1.inst-c.png)
 
 ### Login to Azure Portal 
 
@@ -71,41 +77,39 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 ### Configure the data collection settings in ASC
 
-1.	Type **Security Center** in the search box on top of the **Azure Portal** and click to open it.
-
-2. Click on the **Pricing and settings** under the **Management** section from the left pane, select the Log Analytics workspace named **<inject key="log analytics workspace" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
+1.	In **Pricing and settings** present under **Management** section, select the Log Analytics workspace named **<inject key="log analytics workspace" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
 
    ![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
 
-3. On the **Settings |Azure Defender Plans** page, select **Azure Defender on** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
+2. On the **Settings |Azure Defender Plans** page, select **Azure Defender on** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
 
    ![Enable Azure Defender on the workspace level](../Images/asc-enable-defender-workspace.gif?raw=true)
 
-4. Go back to the **Security center | Pricing & settings** page and select your **Azure subscription**.
+3. Go back to the **Security center | Pricing & settings** page and select your **Azure subscription**.
 
-5. Navigate to **Auto provisioning (1)** under the Settings section.
+4. Navigate to **Auto provisioning (1)** under the Settings section.
 
-6. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
+5. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
 
-7. Click on **Edit configuration (3)** under the **Configuration** header of Log Analytics agent for Azure VMs extension. A new window of Extension deployment configuration is opened.
+6. Click on **Edit configuration (3)** under the **Configuration** header of Log Analytics agent for Azure VMs extension. A new window of Extension deployment configuration is opened.
 
   ![auto-provisioning](../Images/auto-provisioning.png)
 
-8. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **asclab-la-{DeploymentID} (2)** from the drop down menu.
+7. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **asclab-la-{DeploymentID} (2)** from the drop down menu.
 
    ![workspace configuration](../Images/connectazurevms.png)
 
-9. When **Apply changes to existing VMs?** popup window is prompted, select **Existing and new VMs**.
+8. When **Apply changes to existing VMs?** popup window is prompted, select **Existing and new VMs**.
 
    ![Apply changes](../Images/applychanges.png)
 
-10. Next, under the **Store additional raw data - Windows security events** section, select the **All Events** option.
+9. Next, under the **Store additional raw data - Windows security events** section, select the **All Events** option.
 
     ![Enable Azure Defender on the workspace level](../Images/allevents.png)
 
-11. Click on **Apply**.
+10. Click on **Apply**.
 
-12. And after all the configurations are made click on **Save** on the Settings | Auto provisioning page.
+11. And after all the configurations are made click on **Save** on the Settings | Auto provisioning page.
 
 <br>
 
