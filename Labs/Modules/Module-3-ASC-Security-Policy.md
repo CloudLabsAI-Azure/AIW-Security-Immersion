@@ -25,7 +25,6 @@ Note: This policy is enabled by default on your subscription as per Azure Securi
 
 6.	To view the policy, click on **ASC Default (subscription...)**.
 
-> ❗ **Note**: <br>
 > Note: the assignment name will have GUID of the subscription in your lab environment.
 
 7.	On the **Edit Initiative Assignment** page, click on **Parameters**.
