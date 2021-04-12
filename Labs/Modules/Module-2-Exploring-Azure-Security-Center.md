@@ -41,7 +41,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 8. On the **Coverage** page, note that your Subscription is listed under the **Fully covered** tab – which means that your subscription is covered by Azure Defender. (you should also see a message: *Looking good! The subscriptions below are fully protected*)
 
-   ![Azure Security Center: Coverage](../Images/asc-subscriptions-coverage.gif?raw=true)
+   ![Azure Security Center: Coverage](../Images/m2ex1.step8.png)
 
 > ⭐ Good to know: <br>
 > This page shows a list of subscriptions and their coverage type. You can use this page to find subscriptions that are not covered by Azure Security Center and identify “shadow IT” subscriptions.
@@ -55,7 +55,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 10. From the **Security Center** page Select the  **Azure Defender** from the **Cloud Security** section.
 
-11. On the **Azure Defender** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity. Clicking on this option will redirect you to Azure Defender dashboard.
+11. On the **Azure Defender** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
 
     ![Overview: Azure Defender tile](../Images/azure-defender.png)
 
@@ -67,10 +67,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
    ![Overview: Regulatory Compliance tile](../Images/regulatorycompliance.png)
    
-14. Next Click on **Inventory** from the **General** section of the Security Center.
-
-15. Once you are in the **Inventory** page – it shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**.
-Resources are classified according to their health status.
+14. Next Click on **Inventory** from the **General** section of the Security Center. It shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
 
 > ❗ Important: <br>
 > Unmonitored VMs are considered as virtual machines that have Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
@@ -90,12 +87,12 @@ Exploring secure score
 
 2.	From the left navigation pane, under the **Cloud Security** section, Select **Secure Score**.
 
-3.	On theSecurity Center | Secure Score page, review your current **Overall Secure Score**.
+3.	On the Security Center | Secure Score page, review your current **Overall Secure Score**.
 
 > ⭐ Notice: <br>
 > The score is shown as a percentage value, you can also see the points based on which the score is calculated, next to the percentage. See the following example:
 > 
-> ![Overall Secure Score](../Images/asc-dashboard-score.gif?raw=true)
+> ![Overall Secure Score](../Images/ex2.step3.png)
 > 
 > For more information on how the score is calculated, [refer to the secure score documentation page](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#how-your-secure-score-is-calculated).
 
@@ -107,17 +104,19 @@ Exploring secure score
   
    ![Recommendations view](../Images/view-recommendations.png)
 
+6. Close the **View recommendations** page to return to **Recommendations** page.
+
+   ![Recommendations view](../Images/ex2.step5.png)
+
 **Exploring Security Controls and Recommendations**
 
-1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it. From the left navigation pane, under the **General** section, Select the **Recommendations** button.
-
-2. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
+1. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
 
    ![Recommendations view](../Images/Recommendations.png)
 
-3. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated recommendations. You can use this file for pivoting and reporting.
+2. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated recommendations. You can use this file for pivoting and reporting.
 
-4. The second part of the page contains a list of all recommendations grouped by security **Controls**:
+3. The second part of the page contains a list of all recommendations grouped by security **Controls**:
 
 > ⭐ Notice: <br>
 > -	Each security control is a logical group of related security recommendations and represents a "security risk" that you should prioritize and mitigate.
@@ -126,52 +125,60 @@ Exploring secure score
 > -	To get the max score, fix all recommendations for all resources in a control.
 > To understand how the score and the downstream recommendations are calculated, please visit our official [documentation](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#calculations---understanding-your-score "Understanding your score calculation").
 
-5. On the right side, switch the toggle button of **Group by Controls** to **OFF** to disable the group by controls view – now you should get a flat view of all recommendations. After viewing all the recommendations switch it back to **ON**.
+4. On the right side, switch the toggle button of **Group by Controls** to **OFF** to disable the group by controls view – now you should get a flat view of all recommendations. After viewing all the recommendations switch it back to **ON**.
 
 ![Recommendations group by controls](../Images/asc-recommendations-group-by-controls.gif?raw=true)
 
-6. Look for the **Encrypt data in transit** security control under the **Controls**. You may have to scroll down to view it.
+5. Look for the **Encrypt data in transit** security control under the **Controls**. You may have to scroll down to view it.
 
-7. Notice its max score is around 4 and the potential increase for the score. You should have more than three recommendations within this control.
+6. Notice its max score is around 4 and the potential increase for the score. You should have more than three recommendations within this control.
 
     **Note**: It takes few hours for all the data to be loaded, In case if you don't see the above option in the list that means it is not populated yet in the recommendations. You can continue to the next exercise and verify this after some time
 
-8. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it.
+7. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it.
 
-   ![Recommendations view](../Images/sec-transfer.png)
+   ![](../Images/ex2.step8.png)
    
 > ⭐ Notice: <br>
 > For some recommendations, a Quick Fix option is also available. Quick Fix allows you to remediate a group of resources quickly whenever possible with a single click. This option is only available for supported recommendations and enables you to quickly improve your secure score and increase the security in your environment.
 
-9. On the top section, notice the following:
+8. On the top section, notice the following:
 
 - Title of the recommendation: **Secure transfer to storage accounts should be enabled**
 - Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
 - Severity indicator: **High**
 - Freshness interval: **30 Min** 
 
-![Recommendation top menu](../Images/tiles-overview.png)
+![Recommendation top menu](../Images/ex2.step9.png)
 
-10. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s either by following the step-by-step instructions, use the provided ARM template in the next step, or REST API to automate the process.
+9. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s either by following the step-by-step instructions, use the provided ARM template in the next step, or REST API to automate the process.
 
-11. Expand the **Remediation Steps (1)** menu on the **Secure transfer to storage accounts should be enabled** page and Click on the **Quick fix logic (2)**, notice the automatic remediation script content (ARM Template) as shown below:
+10. Expand the **Remediation Steps (1)** menu on the **Secure transfer to storage accounts should be enabled** page and Click on the **Quick fix logic (2)**, notice the automatic remediation script content (ARM Template) as shown below:
 
-```json
-{
-  "properties": {
-    "supportsHttpsTrafficOnly": true
-  }
-}
-```
-   ![Recommendation top menu](../Images/quick-fix-logic.png)
+    ```json
+    {
+      "properties": {
+        "supportsHttpsTrafficOnly": true
+      }
+    }
+    ```
+  ![Recommendation top menu](../Images/quick-fix-logic.png)
 
-12. Close the template window, in the bottom section, **select a resource** (the single storage account on the **Unhealthy resources** tab of **Affected resources**) and click on **Fix** this will open a new window of **Fix resources**.
+12. Close the template window, in the bottom section
 
-13. On the right pane, review the implications for this remediation and press **Fix 1 resource**.
+  ![](../Images/ex2.step12.png)
 
-14. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
+13. Under **Affected resources**, **select a resource** (the single storage account on the **Unhealthy resources**) and click on **Fix**.
 
-> **Info**: In the recommendation list, you can now see some recommendations flagged as in preview. Those aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
+  ![](../Images/ex2.step12(2).png)
+  
+14. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
+
+  ![](../Images/ex2.step13.png)
+  
+15. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
+
+> **Info**: In the recommendation list, you can now see some recommendations flagged as in preview. They aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
 ### Exercise 3: Exploring the Inventory capability
 
@@ -195,7 +202,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 7. Hover on the red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**.. You should expect to see **Active-xx of xx Recommendations** – these are the active recommendations you must attend.
 
-   ![linux-recommendations](../Images/linux-recommendations.png)
+   ![linux-recommendations](../Images/ex3.step7.png)
 
 8. Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**.
 
@@ -203,7 +210,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 9.	On the resource health pane for **asclab-linux**, review the virtual machine information alongside the recommendation list.
 
-    ![Remediate a resource](../Images/linux-recom.png)
+    ![Remediate a resource](../Images/ex3.step9(1).png)
 
     **Note**: It will take few hours for all the recommendations to get loaded.
 
@@ -231,7 +238,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 13. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
-14. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Azure Defender (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again Click on **Ok**
+14. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Azure Defender (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again click on **Ok**
 
     ![Inventory: Assign tags](../Images/download-csv.png)
 
