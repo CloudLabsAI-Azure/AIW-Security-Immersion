@@ -14,60 +14,58 @@ You will be performing the following activities to achieve the goal.
 
 In Azure Security Center, You will be interacting with the Security Center dashboard which provides a unified view into the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
 
-1. Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
+1. Navigate to **Security Center** in the Azure portal(perform if not already on the Security center page).
 
-2. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it.
-
-3. The Security Center Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Secure Score, Regulatory Compliance and Azure Defender**.
+2. The Security Center Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Secure Score, Regulatory Compliance and Azure Defender**.
 
 > ❗ Important: <br>
 > It takes few minutes for all tiles on the Overview Page to update.
 
   ![Azure Security Center: Overview dashboard](../Images/asc-dashboard-overview-updated.png)
 
-4. Note that the **Subscriptions** icon on the **top menu bar** allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
+3. Note that the **Subscriptions** icon on the **top menu bar** allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
 
    ![Azure Security Center: subscriptions](../Images/asc-subscriptions.png)
 
-5. Click on the **What’s new** button – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
+4. Click on the **What’s new** button – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
 
    ![Azure Security Center: what's new](../Images/asc-whatsnew.png)
 
-6. Note the **high-level numbers** at the top menu; This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active recommendations and Security alerts.**
+5. Note the **high-level numbers** at the top menu; This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active recommendations and Security alerts.**
 
    ![Azure Security Center: Dashboard](../Images/asc-dashboard.png)
 
-7. From the top menu bar, **click** on **Azure subscriptions**.
+6. From the top menu bar, **click** on **Azure subscriptions**.
 
-8. On the **Coverage** page, note that your Subscription is listed under the **Fully covered** tab – which means that your subscription is covered by Azure Defender. (you should also see a message: *Looking good! The subscriptions below are fully protected*)
+7. On the **Coverage** page, note that your Subscription is listed under the **Fully covered** tab – which means that your subscription is covered by Azure Defender. (you should also see a message: *Looking good! The subscriptions below are fully protected*)
 
    ![Azure Security Center: Coverage](../Images/m2ex1.step8.png)
 
 > ⭐ Good to know: <br>
 > This page shows a list of subscriptions and their coverage type. You can use this page to find subscriptions that are not covered by Azure Security Center and identify “shadow IT” subscriptions.
 
-9. Go back to the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
+8. Go back to the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
    ![Overview: Secure Score tile](../Images/asc-overview-secure-score-tile1.png?raw=true)
 
 > ⭐ Good to know: <br>
 > The higher the score, the lower the identified risk level.
 
-10. From the **Security Center** page Select the  **Azure Defender** from the **Cloud Security** section.
+9. From the **Security Center** page Select the  **Azure Defender** from the **Cloud Security** section.
 
-11. On the **Azure Defender** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
+10. On the **Azure Defender** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
 
     ![Overview: Azure Defender tile](../Images/azure-defender.png)
 
-12. Next, select the **Regulatory Compliance** from the **Cloud Security** section of the Security Center page.
+11. Next, select the **Regulatory Compliance** from the **Cloud Security** section of the Security Center page.
 
-13. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark(2), ISO 27001, PCI DSS 3.2.1 and SOC TSP(3)**. Click on **Show all 4 (4)** to check the compliance status.
+12. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark(2), ISO 27001, PCI DSS 3.2.1 and SOC TSP(3)**. Click on **Show all 4 (4)** to check the compliance status.
  
  >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones.
 
    ![Overview: Regulatory Compliance tile](../Images/regulatorycompliance.png)
    
-14. Next Click on **Inventory** from the **General** section of the Security Center. It shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
+13. Next Click on **Inventory** from the **General** section of the Security Center. It shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
 
 > ❗ Important: <br>
 > Unmonitored VMs are considered as virtual machines that have Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
