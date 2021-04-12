@@ -124,7 +124,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 1.	Type **Security Center** in the search box located on the top of the Azure Portal page and click on it..
 
-2.	From the **Security Center** left side pane, select **Recommendations** under **General**.
+2.	From the left side pane of **Security Center**, select **Recommendations** under **General**.
 
 3.	On recommendations filters, set the **Response actions** as **Deny**.
 
