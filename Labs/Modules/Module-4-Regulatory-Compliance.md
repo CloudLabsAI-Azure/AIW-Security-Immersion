@@ -138,7 +138,7 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
   ![Add a custom initiative](../Images/add-a-custom-initiative.png)
 
-22.	On **Add custom initiative** window, your new standard should be listed. Now you can click on **Add** to assign to it. Once assigned, it will be listed in the Recommendations blade and will be added in the **Regulatory Compliance** dashboard too.
+22.	On **Add custom initiative** window, your new standard should be listed. Custom Benchmark initiative can be added by clicking on **Add** button. Once assigned, it will be listed in the Recommendations blade and will be added in the **Regulatory Compliance** dashboard too.
 
   ![Custom Initiative](../Images/custom-initiative.png)
 
