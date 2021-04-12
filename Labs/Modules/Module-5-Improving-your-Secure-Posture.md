@@ -15,7 +15,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Recommendations** from the left side pane.
 
-3.	GExpand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
+3.	Expand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
 
 4.	Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines** recommendation listed here. If you don’t, you will need **24 hours** to have the recommendation with the assessment.
 
@@ -230,14 +230,15 @@ Once you start to get email notifications, you can disable the automation by sel
 ![Workflow automation generated email message](../Images/asc-workflow-automation-automated-email.gif?raw=true)
 
 6.	Test/trigger your automation manually:
-    - On the Security Center page, click on **Recommendations** from the **General** section.
+    - On the Security Center pane, click on **Recommendations** from the **General** section.
+    
     - Look for recommendation **Azure Defender for SQL should be enabled on your SQL servers** under **Remediate vulnerabilities** click on it.
 
     ![](../Images/trigger-logic-app.png)
 
     - Select resource **asclab-sql-xxx** (here xxx is unique ID) and then click on the **Trigger Logic App** button.
     - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
-    - You should receive an email, verify in your inbox.
+    - You should receive an email, verify in your inbox. On the labvm-xxxxxx open a new tab in web browser and navigate to https://outlook.office365.com.
 
 
   ![](../Images/trigger-logic-app1.png)
