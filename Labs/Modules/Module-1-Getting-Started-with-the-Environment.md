@@ -74,7 +74,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 1.	Type **Security Center** in the search box on top of the **Azure Portal** and click to open it.
 
-2. Click on the **Pricing and settings** under the **Management** section from the left pane, select the Log Analytics workspace named <inject key="workspaceName" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
+2. Click on the **Pricing and settings** under the **Management** section from the left pane, select the Log Analytics workspace named <inject key="log analytics workspace" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />
 
    ![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
 
