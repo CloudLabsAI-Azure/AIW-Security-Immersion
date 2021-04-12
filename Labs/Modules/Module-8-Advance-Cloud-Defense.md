@@ -14,9 +14,9 @@ You will be performing the following activities to achieve the goal.
 
 In the simplest terms, the “attack surface” is the sum total of resources exposed to exploit within your enterprise. Defending the attack surface was a lot less complicated when a defined corporate “perimeter” existed, neatly separating a company’s assets from the outside world using **Just-in-time VM access**.
 
-1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab.
+1.	Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab.
 
-2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from the left sidebar.
+2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from the left side pane.
 
 3.	Navigate to the bottom section under **Advanced protection**, click on **Just-in-time VM access** (You should see unprotected status number).
 
@@ -66,7 +66,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 Application control helps you deal with malicious and/or unauthorized software, by allowing only specific applications to run on your machines.
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from the left sidebar.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from the left side pane.
 
 2.	Navigate to the bottom section under Advanced protection, click on **Adaptive application control**
 
@@ -85,7 +85,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 File integrity monitoring (FIM), also known as change monitoring, examines operating system files, Windows registries, application software, Linux system files, and more. It detects and reports changes that might indicate an attack.
 It maps the current state of these items with the state during the previous scan and alerts you if any suspicious modifications have been made. To enable FIM, follow the instructions below:
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from the left sidebar.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from the left side pane.
 
 2.	Navigate to the bottom section under Advanced protection, click on the **File Integrity Monitoring** tile.
 
