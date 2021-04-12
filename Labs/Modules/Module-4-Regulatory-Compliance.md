@@ -16,7 +16,7 @@ Azure Security Center helps streamline the process for meeting regulatory compli
 
 Security Center continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards applied to your subscriptions.
 
-1.	Launch **Azure Portal** using the desktop icon on the **JumpVM** and login with the Azure credentials from the Lab **Environment Details** tab if you are not logged in already.
+1.	Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab if you are not logged in already.
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, from the overview page select the **Regulatory Compliance** tile (this pilar is also available from the left sidebar under the Cloud Security section).
 
@@ -91,7 +91,7 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 6.	Enter **Custom Benchmark Policy** as Description.
 
-7.	Select **Category**. You can decide to use the existing one (for example: Security Center) or to create your own one. *The recommended approach is to use a custom one so you can quickly filter policy definitions and initiatives when needed (for example: Contoso)*.
+7.	Select **Category**. You can decide to use the existing one (for example: Security Center) or to create your own one. The recommended approach is to use a custom one so you can quickly filter policy definitions and initiatives when needed (for example: Contoso).
 
 8.	Provide **Version** number. Each policy definition and initiative contain a version in its metadata section. You can decide to have major versions (1.0), minor version (1.1) and so.
 
@@ -144,7 +144,7 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 23.	Follow the **on-screen instructions to assign it on the desired scope**. If you decide to include parameters in your initiative here is where you can do it. Click on **Review + create** to start the validation process and then click on **Create**.
 
-24.	Now your new security benchmark is displayed in regulatory compliance along with the built-in regulatory standards.
+24.	After some time your new custom benchmark is displayed in Regulatory compliance along with the built-in regulatory standards.
 
 ### Summary
 
