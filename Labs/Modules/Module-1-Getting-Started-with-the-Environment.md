@@ -12,11 +12,11 @@ You will be performing the following activities to achieve the goal.
 
 ## Exercise 1: Log in to Azure Portal
 
-In this exercise, you will learn how to login to the Azure Portal in the JumpVM using user credentials provided under the Environment Details to access the Azure Portal
+In this exercise, you will learn how to login to the Azure Portal in the labvm-xxxxxx using user credentials provided under the Environment Details to access the Azure Portal
 
 ### Instructions 
 
-1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **JumpVM**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the JumpVM load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into JumpVM using the credentials provided in the **Environment Details** tab.
+1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-xxxxxx**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the labvm-xxxxxx load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
 
 2. All user credentials for accessing the **Azure Portal** can be viewed under the **Environment Details** tab for ease of access. Do note that the same information will also be sent to your registered email address. 
 
@@ -24,7 +24,7 @@ In this exercise, you will learn how to login to the Azure Portal in the JumpVM 
 
 ### Login to Azure Portal 
 
-1. In the JumpVM, Launch **Azure Portal** using the desktop icon.  
+1. In the labvm, Launch **Azure Portal** using the desktop icon.  
 
 2. Now you should be on the **Microsoft Azure** login screen. Enter the following username and click on **Next**.  
 
