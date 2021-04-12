@@ -23,10 +23,10 @@ In this exercise, You will get an overview of an index of Azure Policy built-in 
 
 Note: This policy is enabled by default on your subscription as per Azure Security Center recommendations. This is the default set of policies monitored by Azure Security Center. It is automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
 
-6.	To view the policy, click on **ASC Default**.
+6.	To view the policy, click on **ASC Default (subscription...)**.
 
-> ❗ Important: <br>
-> You should see a different subscription GUID on your environment
+> ❗ **Note**: <br>
+> Note: the assignment name will have GUID of the subscription in your lab environment.
 
 7.	On the **Edit Initiative Assignment** page, click on **Parameters**.
 
@@ -48,7 +48,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 2.	From the left navigation pane, under the **Authoring** section, click on **Definitions**. This is where you can explore the built-in policy definitions and initiatives.
 
-3.	From the top menu, use the filter button and check the Category **Security Center**(Uncheck remaining) and set the Definitions Type as **Initiative**
+3.	From the top menu, use the filter ribbon and seclect **Security Center** from the category filter and set the Definitions Type as **Initiative**
 
 4.	You can now see two built-in initiatives used by Azure Security Center:
     -	*Azure Security Benchmark*
@@ -58,7 +58,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 5.	Notice the number of policies included in each initiative (policies column)
 
-6.	To see current assignments, click on **Assignment** from the left navigation pane. Policy initiatives have a different name for the assignment, for example:
+6.	To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the assignment, for example:
 
     - *ASC Default (subscription: dd82589b-444c-45a8-863a-816243ce017d)*
 
@@ -75,7 +75,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 2.	Select **Recommendations** from the left navigation pane.
 
-3.	Go to the bottom of the page and expand **Secure management ports** security control from the list.
+3.	Expand **Secure management ports** security control from the list.
 
 4.	Select the **Management ports should be closed on your virtual machines** recommendation.
 
