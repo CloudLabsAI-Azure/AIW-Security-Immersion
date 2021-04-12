@@ -210,7 +210,7 @@ Add each policy one by one:
 
 ***Add a custom initiative to your subscription***
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then from the left sside pane and under the **Management** section select **Security policy**.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then from the left side pane under the **Management** section select **Security policy**.
 
 2.	Select your subscription as a scope for your custom initiative.
 
