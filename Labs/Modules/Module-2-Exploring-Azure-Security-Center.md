@@ -14,7 +14,7 @@ You will be performing the following activities to achieve the goal.
 
 In Azure Security Center, You will be interacting with the Security Center dashboard which provides a unified view into the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
 
-1. Launch **Azure Portal** using the desktop icon on the JumpVM and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
+1. Launch **Azure Portal** using the desktop icon on the labvm and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
 
 2. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it.
 
