@@ -11,53 +11,51 @@ Azure Security Center generates detailed security alerts and recommendations. Yo
 
 Continuous export lets you fully customize what will be exported, and where it will go. Even though the feature is called continuous, there's also an option to export weekly snapshots of secure score or regulatory compliance data.
 
-1.	Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab
+1.	Search for**Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Pricing & settings** under the **Management** tab in the left side pane.
 
-2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Pricing & settings** under the **Management** tab in the left side pane.
-
-3.	Select **Your Subscription**.
+2.	Select **Your Subscription**.
 
    ![Pricing & settings page](../Images/asc-pricing-settings-sub.gif?raw=true)
 
-4.	From the Azure Defender plans side pane, click on **Continuous export** under the **Settings** section.
+3.	From the Azure Defender plans side pane, click on **Continuous export** under the **Settings** section.
 
-5.	Here you can configure the streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
+4.	Here you can configure the streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
 
-6.	Select the **Log Analytics workspace** option.
+5.	Select the **Log Analytics workspace** option.
 
    ![continuous-export](../Images/continuous-export.png)
 
-7.	Under the **Exported data types** section of the **Continuous export** page, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
+6.	Under the **Exported data types** section of the **Continuous export** page, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
 
-8.	Under the **Export configuration** section of the **Continuous export** page, select the resource group: *asclab* from the drop down menu.
+7.	Under the **Export configuration** section of the **Continuous export** page, select the resource group: *asclab* from the drop down menu.
 
-9.	Under the **Export target** section, select the target Log Analytics workspace: *asclab-la-{DeploymentID}*
+8.	Under the **Export target** section, select the target Log Analytics workspace: *asclab-la-{DeploymentID}*
 
    **Note**: Deployment ID can be obtained from the Lab Environment Details tab.
 
-10. Click on the **Save** button on the top menu.
+9. Click on the **Save** button on the top menu.
 
     ![Continuous export settings page](../Images/asc-continuous-export-settings.gif?raw=true)
 
 > Note: Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
-11. Type **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
+10. Search for **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
-12. Click on the **asclab-la-{DeploymentID}** workspace.
+11. Click on the **asclab-la-{DeploymentID}** workspace.
 
-13. From the left side pane, click on the **Logs** button under the **General** section.
+12. From the left side pane, click on the **Logs** button under the **General** section.
 
-14. On the welcome page, click on the **Get Started** button and then close the **Queries** window.
+13. On the welcome page, click on the **Get Started** button and then close the **Queries** window.
 
    ![Continuous export settings page](../Images/log-analytic-started.png)
 
    ![Continuous export settings page](../Images/log-analytic-started2.png)
 
-15. From the left pane select the **Tables** tab and **enable** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
+14. From the left pane select the **Tables** tab and **enable** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
 
    ![Tables page](../Images/showtables.png)
 
-16. Query the tables to validate data streaming - For example, Click on **Tables (1)** expand **Security and Audit (2)** double click on **Security Event (3)** to open in the query window. Now click on **Run (4)** and see the results below.
+15. Query the tables to validate data streaming - For example, Click on **Tables (1)** expand **Security and Audit (2)** double click on **Security Event (3)** to open in the query window. Now click on **Run (4)** and see the results below.
 
    ![Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
 > **Note:** Since the continuous export was just enabled, you may need to wait for sometime for new events to show up.
@@ -66,7 +64,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 Integration with Azure Sentinel will enable centralized monitoring of alerts and discovery data. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
-1. Type **Azure Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
+1. Search for **Azure Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
 
 2.	On the **Azure Sentinel** blade, click on the **Create Azure Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by Security Center.
 
