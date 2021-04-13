@@ -81,11 +81,11 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 Previously, we explored the Secure Score tile on the overview page. Now let’s dive into this capability and the associated recommendations. Azure Security Center mimics the work of a security analyst, reviewing the security recommendations and applying advanced algorithms to determine how crucial each recommendation is. Azure Security Center constantly reviews the active recommendation and calculates the score based on them. All findings are aggregated into a single score (Secure Score) which measures your current security posture of your subscription/s; the higher the score, the lower the identified risk level.
 Exploring secure score
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it.
+1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it.
 
-2.	From the left navigation pane, under the **Cloud Security** section, Select **Secure Score**.
+2. From the left navigation pane, under the **Cloud Security** section, Select **Secure Score**.
 
-3.	On the Security Center | Secure Score page, review your current **Overall Secure Score**.
+3. On the Security Center | Secure Score page, review your current **Overall Secure Score**.
 
 > ⭐ Notice: <br>
 > The score is shown as a percentage value, you can also see the points based on which the score is calculated, next to the percentage. See the following example:
@@ -135,7 +135,7 @@ Exploring secure score
 
 ![](../Images/m2ex2.step6.png)
 
-  **Note**: It takes few hours for all the data to be loaded, In case if you don't see the above option in the list that means it is not populated yet in the recommendations. You can continue to the next exercise and verify this after some time
+> **Note**: It takes few hours for all the data to be loaded, In case if you don't see the above option in the list that means it is not populated yet in the recommendations. You can continue to the next exercise and verify this after some time
 
 7. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it.
 
@@ -164,6 +164,7 @@ Exploring secure score
       }
     }
     ```
+    
   ![Recommendation top menu](../Images/quick-fix-logic.png)
 
 12. Click on close button present in the bottom of template window.
@@ -192,7 +193,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
    ![Remediate a resource](../Images/inventory.png)
 
-   **Note**: In your environment, these numbers may not be the same, since it varies in time
+> **Note**: In your environment, these numbers may not be the same, since it varies in time
 
 3. Notice the total number of resources, The total number of resources are the ones that are connected to the Security Center and NOT the total number of resources that you have in your subscriptions.
 
@@ -210,11 +211,11 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
    ![Remediate a resource](../Images/linux-vm.png)
 
-9.	On the resource health pane for **asclab-linux**, review the virtual machine information alongside the recommendation list.
+9. On the resource health pane for **asclab-linux**, review the virtual machine information alongside the recommendation list.
 
     ![Remediate a resource](../Images/ex3.step9(1).png)
 
-    **Note**: It will take few hours for all the recommendations to get loaded.
+> **Note**: It will take few hours for all the recommendations to get loaded.
 
 10. Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (Unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
 
@@ -224,7 +225,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 11.	From the filter menu, select the **Resource Group** filter and **select all** under the Value. Again from the filter menu, select **Recommendations**, uncheck the **select all** option under the Value and then select the **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
 
-    **Note**: If you don't see **Auditing on SQL Server should be enabled** in search that means it is not loaded yet to recommendations, Note down this step number and verify this after some time.
+> **Note**: If you don't see **Auditing on SQL Server should be enabled** in search that means it is not loaded yet to recommendations, Note down this step number and verify this after some time.
 
 12.	Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
@@ -234,9 +235,9 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 * Assign `Environment` as the name and  `Production` as the value.
 * Click **Save**.
 
-    **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this after some time.
+> **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this after some time.
 
-    ![Inventory: Assign tags](../Images/asc-inventory-assign-tags.gif?raw=true)
+   ![Inventory: Assign tags](../Images/asc-inventory-assign-tags.gif?raw=true)
 
 13. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
