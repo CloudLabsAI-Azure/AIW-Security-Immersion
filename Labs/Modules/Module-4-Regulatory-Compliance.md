@@ -85,7 +85,7 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 1. In the search box located on the top of the Azure Portal page, search for Policy and click on it.
 
-   ![Add CIS 1.1.0 (New) Standard](../Images/m3ex2.step1.png.png)
+   ![Add CIS 1.1.0 (New) Standard](../Images/m3ex2.step1.png)
 
 2.	From the left pane of the **Policy** page, select **Definitions**.
 
