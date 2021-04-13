@@ -9,53 +9,55 @@ In this module, we will guide you through the current Security Center policies s
 
 In this exercise, You will get an overview of an index of Azure Policy built-in policy definitions related to Azure Security Center and about initiatives, policies, and how they relate to the Security Center's recommendation.
 
-1.  Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab if not logged in already.
+1. On **Security Center** page, click on **Security policy** from the left navigation pane under the **Management** section and click on the Azure subscription.
 
-2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+    ![](../Images/m3ex1.step1.png)
 
-3.	Click on **Security policy** from the left navigation pane under the **Management** section.
-
-4.	On the Policy Management page, select **Azure subscription**.
-
-5.	By default, there is 1 assignment at the **Security center default policy** which is **ASC default**.
+2.	By default, there is 1 assignment at the **Security center default policy** which is **ASC default**.
 
     ![Security center default policy](../Images/asc-default-policy-subscription.png)
 
 Note: This policy is enabled by default on your subscription as per Azure Security Center recommendations. This is the default set of policies monitored by Azure Security Center. It is automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
 
-6.	To view the policy, click on **ASC Default (subscription...)**.
+3.	To view the policy, click on **ASC Default (subscription...)**.
 
 > Note: the assignment name will have GUID of the subscription in your lab environment.
 
-7.	On the **Edit Initiative Assignment** page, click on **Parameters**.
+4.	On the **Edit Initiative Assignment** page, click on **Parameters**.
 
-8.	On the **Network Security Groups on the subnet level should be enabled**, change the action to **AuditIfNotExists** to enable monitoring of NSGs on subnets.
+    ![](../Images/m3ex1.step4.png)
+    
+5.	On the **Network Security Groups on the subnet level should be enabled**, change the action to **AuditIfNotExists** to enable monitoring of NSGs on subnets, and click on **Review + save**. You may need to scroll down.
 
-9.	Click on **Review + save**.
+    ![](../Images/m3ex1.step5.png)
 
-10.	On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists**
+6.	On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists**
 
     ![Modifying Security Center default policy assignment](../Images/asc-default-policy-nsg-recommendation.png)
 
-11.	Click on **Save**. Wait for the policy update to complete successfully.
+7.	Click on **Save**. Wait for the policy update to complete successfully.
 
 ### Exercise 2: Explore Azure Policy
 
 Azure Policy keeps track of compliance for your Azure resources based on policy definitions you assign, these are called policy assignments. By default, Microsoft provides many built-in definitions that you can leverage as you see fit.
 
-1.	Type **Policy** in the search box located on the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **labvm-xxxxxx** and navigate to this link https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade.
+1.	Type **Policy** in the search box located on the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **labvm-xxxxxx** and navigate to this link ```https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade```.
 
-2.	From the left navigation pane, under the **Authoring** section, click on **Definitions**. This is where you can explore the built-in policy definitions and initiatives.
+    ![](../Images/m3ex2.step1.png)
 
-3.	From the top menu, use the filter ribbon and select **Security Center** from the category filter and set the Definitions Type as **Initiative**
+2.	From the left navigation pane, under the **Authoring** section, click on **Definitions(1)**. This is where you can explore the built-in policy definitions and initiatives.
+
+3.	From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative(2)** and select **Security Center(3)** from the _Category_ filter.
+
+    ![policy assignment](../Images/m3ex2.step3.png)	
 
 4.	You can now see two built-in initiatives used by Azure Security Center:
     -	*Azure Security Benchmark*
     -	*[Preview]: Enable Data Protection Suite*
 
-    ![policy assignment](../Images/policy.png)
+    ![policy assignment](../Images/m3ex2.step4.png)
 
-5.	Notice the number of policies included in each initiative (policies column)
+5.	Notice the number of policies included in each initiative (policies column).
 
 6.	To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the assignments, for example:
 
@@ -72,21 +74,21 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-2.	Select **Recommendations** from the left navigation pane.
+2.	Select **Recommendations(1)** from the left navigation pane.
 
-3.	Expand **Secure management ports** security control from the list.
+3.	Expand **Secure management ports(2)** security control from the list.
 
-4.	Select the **Management ports should be closed on your virtual machines** recommendation.
+4.	Select the **Management ports should be closed on your virtual machines(3)** recommendation.
 
     ![policy assignment](../Images/secure-management-ports.png)
 
    **Note**: If you don't see the above option that means it is not loaded yet to the control list, Note down this step number and verify this after some time.
 
-5.	On the list of **Unhealthy resources** under **Affected resources**, see the current resources: *asclab-win* and *asclab-linux*.
+5.	Expand the **Affected resources** bar, review the0 current resources under **Unhealthy resources** - **asclab-win** and **asclab-linux**.
 
 6.	Select the **asclab-win** resource and then click on **Exempt**.
 
-    ![Create exemption](../Images/asc-management-ports-resource-exemption.gif?raw=true)
+    ![](../Images/m3ex3.step6.png)
 
 7.	The **Exempt pane** opens:
     - Name: **ASC-Management ports should be closed on your virtual machines**.
@@ -94,7 +96,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
     - Select **Waiver** as exemption category.
     - Click on **Create**.
 
-![Exempt tab](../Images/exempt-scope.png)
+    ![](../Images/m3ex3.step7.png)
 
 > ⭐ Good to know: <br>
 > **Mitigated** - This issue isn't relevant to the resource because it's been handled by a different tool or process than the one being suggested
@@ -113,7 +115,11 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 10.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
 
-11.	Type **Policy** in the search box located on the top of the Azure Portal page and click on it. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there.
+11. In the search box located on the top of the Azure Portal page, search for **Policy** and click on it. 
+
+    ![](../Images/m3ex2.step1.png)
+
+12. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there.
 
     ![Exempttion tab](../Images/exemptions-policy.png)
 
@@ -121,28 +127,28 @@ Note: Exemptions is a premium Azure policy capability that's offered for Azure D
 
 In this exercise, you will learn how to use Azure Policy to do some of the more common tasks related to assigning, denying, and managing policies across your organization.
 
-1.	Type **Security Center** in the search box located on the top of the Azure Portal page and click on it..
+1. In the search box located on the top of the Azure Portal page, search for **Security Center** and click on it.
 
-2.	From the left side pane of **Security Center**, select **Recommendations** under **General**.
+2. From the left side pane of **Security Center**, select **Recommendations** under **General**.
 
-3.	On recommendations filters, set the **Response actions** as **Deny**.
+3. Scroll down to recommendations filters, set the **Response actions** as **Deny**.
 
     ![Auditing on SQL server should be enabled](../Images/asc-recommendations-filters-deny.gif?raw=true)
 
-4.	From the filtered recommendations list, select **Secure transfer to storage accounts should be enabled**.
+4. From the filtered recommendations list, select **Secure transfer to storage accounts should be enabled**.
 
-5.	From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
+5. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
 > ❗ Important: <br>
 > Security misconfigurations are a major cause of security incidents.
 
-  ![Secure Transfer](../Images/secure-transfer.png)
+   ![Secure Transfer](../Images/secure-transfer.png)
 
-6.	On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
+6. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
-    ![Prevent resource creation](../Images/asc-storage-deny-policy.gif?raw=true)
+    ![](../Images/m3ex4.step6.png)
 
-7.	Go back to the **recommendations view**, set the **Response action** filter as **Select All**. In the search box, type **Auditing**. Click on the recommendation **Auditing on SQL server should be enabled**.
+7.	Go back to the **recommendations view**, set the **Response action** filter as **Select All**. Then type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
 
     ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
@@ -153,17 +159,25 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 * Under the **Basics** tab under the Scope header, select the ellipse icon (...) to select your subscription and click on the **Select**
 * Then click on **Next**
 
-  ![Sql Auditing](../Images/auditing-create.png)
+    ![](../Images/m3ex4.step9.png)
 
-10. Next, under the **Parameters** tab leave the retention days to default value populated and select the resource group **asclab** from the drop down menu.
+10. In the **Parameters** tab, leave the *Effect* and *Retention days* with default values.
 
-* Select **Review + create** to assign the policy to your subscription.
-* Click **Create**
+    - Select the resource group **asclab** from the drop down menu
+    - Select **Review + create** to assign the policy to your subscription.
+    - Click **Create**
 
-  ![Sql Auditing](../Images/auditing-create1.png)
+    ![](../Images/m3ex4.step10.png)
 
-11. On the **Auditing on SQL server should be enabled** page, **select** the **SQL Server resource (1)** found on the **unhealthy resources** tab of **Affected resources** named **<inject key="SQL Server" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** and click **Fix (2)**. Change the **retention days (3)** parameter to 180 and then click **Fix 1 resource (4)**. By doing both operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
+11. On the **Auditing on SQL server should be enabled** page, perform the following steps:
 
+    - Select the **SQL Server resource (1)** found on the **unhealthy resources** tab of **Affected resources** named **<inject key="SQL Server" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** 
+    - click **Fix (2)**
+    - Change the **retention days (3)** parameter to 180 
+    - Click **Fix 1 resource (4)**. 
+    
+By performing above mentioned operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
+<br>
     ![Sql Auditing](../Images/auditing-fix-create.png)
 
 12.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/prevent-misconfigurations#recommendations-with-denyenforce-options "Recommendations with deny/enforce options") to view a full list of recommendations with deny/enforce options along with a detailed explanation of this capability.
@@ -176,27 +190,31 @@ A custom policy definition allows customers to define their own rules for using 
 
 ***Create a custom initiative using Azure Policy***
 
-1.	Type Policy in the search box located on the top of the Azure Portal page and click to open it or navigate to https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade
+1.	In the search box located on the top of the Azure Portal page, search for **Policy** and click on it. 
 
-2.	Select **Definitions** from the left navigation pane.
+    ![](../Images/m3ex2.step1.png)
 
-3.	From the top menu, select **+Initiative definition** to add a new initiative
+2.	Select **Definitions(1)** from the left navigation pane.
+
+3.	From the top menu, select **+ Initiative definition(2)** to add a new initiative
+
+    ![](../Images/m3ex5step3.png)
 
 4.	On the New Initiative definition page, select the following:
-    - Initiative location: Your Subscription
+    - Initiative location: Select your Subscription
     - Name: **Contoso Security Benchmark**
     - Description: Baseline for security policies to appear alongside the built-in recommendations
-    - Category: select Create new and type: **Contoso**
+    - Category: Select **Create new** and type: **Contoso**
     - Version: **1**
     - Click **Next**
   
-    ![Policy initiative definition settings page](../Images/asc-new-policy-initiative-definition.gif?raw=true)
+    ![Policy initiative definition settings page](../Images/m3ex5step4.png)
 
 5.	On the Policies tab, select **Add policy definition(s) (1)**.
 
 6.	The Add policy definition(s) pane opens: <br>
 Add each policy one by one:
-      Search and select the **below policy (2)** definitions and Click on **Add (4)**
+      Search and select the **below policy definitions (2)** and click on **Add (4)**
     - *Managed identity should be used in your Function App*
     - *Custom subscription owner roles should not exist*
     - *Public network access on Azure SQL Database should be disabled*
@@ -209,7 +227,9 @@ Add each policy one by one:
 
 ***Add a custom initiative to your subscription***
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it then from the left side pane under the **Management** section select **Security policy**.
+1. In the search box located on the top of the Azure Portal page, search for **Security Center** and click on it.
+
+2.	On **Security Center** page, from the left side pane under the **Management** section select **Security policy**.
 
 2.	Select your subscription as a scope for your custom initiative.
 
