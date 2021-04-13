@@ -128,7 +128,7 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 
 7.  Verify both permissions are **Consented**
 
-![Consent2](../Images/m6ex3step6.png)
+![Consent2](../Images/m6ex3step7.png)
 
 8.	Click on the **Run query** button. You should now see a sample response preview in JSON format.
 
