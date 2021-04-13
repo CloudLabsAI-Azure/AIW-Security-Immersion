@@ -186,10 +186,10 @@ Every security program includes multiple workflows for incident response. The pr
 
 17. Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by selecting in the list:
 
-Recommendation: `Properties Display Name`</br>
-Description: `Properties Metadata Description`</br>
-Status: `Properties Status Code`</br>
-Link to recommendation: `Properties Links Azure Portal Uri`</br>
+   - Recommendation: `Properties Display Name`</br>
+   - Description: `Properties Metadata Description`</br>
+   - Status: `Properties Status Code`</br>
+   - Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
 18. Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
 
