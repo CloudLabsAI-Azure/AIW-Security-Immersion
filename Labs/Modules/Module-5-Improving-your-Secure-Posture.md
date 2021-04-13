@@ -37,11 +37,11 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 9.	A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources** 
 
-10.	Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
+10. Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
 > **Note:** You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
 
-11.	Ensure the VM extension is deployed on the relevant machines:
+11. Ensure the VM extension is deployed on the relevant machines:
     - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
     - Select **asclab-win(1)**. next, click on **Extensions(2)** under the **Settings** section.
     - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
@@ -54,7 +54,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 > **Note:** There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
 
-13.	The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on the ASC console within 24 hours.
+13. The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on the ASC console within 24 hours.
 
 ### Exercise 2: Vulnerability assessment for Containers
 
@@ -82,15 +82,15 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 Run the following two script blocks:
 
-```
-echo FROM mcr.microsoft.com/azuredocs/aci-helloworld > Dockerfile
-```
+   ```
+   echo FROM mcr.microsoft.com/azuredocs/aci-helloworld > Dockerfile
+   ```
 
 Modify the following script to include your container registry name in the placeholder <your container registry name>
 
-```
-az acr build --image sample/hello-world:v1 --registry <your container registry name> --file Dockerfile .
-```
+   ```
+   az acr build --image sample/hello-world:v1 --registry <your container registry name> --file Dockerfile .
+   ```
 
 ![Build Linux container in Cloud Shell](../Images/asc-build-linux-container-cloud-shell.gif?raw=true)
 
@@ -193,7 +193,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 18. Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
 
-![Logic App worklfow](../Images/outlook-send.png)
+   ![Logic App worklfow](../Images/outlook-send.png)
 
 **Create a new workflow automation instance**
 
@@ -217,7 +217,7 @@ Every security program includes multiple workflows for incident response. The pr
         - Logic App name: *Send-RecommendationsChanges*
     Click **Create** to complete the task.
 
-![](../Images/workflow-automation.png)
+   ![](../Images/workflow-automation.png)
 
 4.	Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations.
 
@@ -227,21 +227,21 @@ Once you start to get email notifications, you can disable the automation by sel
 
 5. Once the automation is automatically triggered, you should expect the email message to look like the screenshot below:
 
-![Workflow automation generated email message](../Images/m5ex3step5.png)
+   ![Workflow automation generated email message](../Images/m5ex3step5.png)
 
 6.	Test/trigger your automation manually:
     - On the Security Center pane, click on **Recommendations (1)** from the **General** section.
     
     - Under **Remediate vulnerabilities (2)** look for recommendation **Azure Defender for SQL should be enabled on your SQL servers (3)** and click on it.
 
-    ![](../Images/trigger-logic-app.png)
+   ![](../Images/trigger-logic-app.png)
 
     - Select resource **asclab-sql-xxx** (here xxx is unique ID) and then click on the **Trigger Logic App** button.
     - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
     - You should receive an email, verify in your inbox. On the labvm-xxxxxx open a new tab in web browser and navigate to https://outlook.office365.com.
 
 
-  ![](../Images/trigger-logic-app1.png)
+   ![](../Images/trigger-logic-app1.png)
 
 ### Exercise 4: Accessing your secure score via ARG
 Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
@@ -253,27 +253,27 @@ Azure Secure Score data is available in ARG so you can query and calculate your 
 
 2.	Paste the following KQL query and then select **Run query**.
 
-```
-SecurityResources
-| where type == 'microsoft.security/securescores'
-| extend current = properties.score.current, max = todouble(properties.score.max)
-| project subscriptionId, current, max, percentage = ((current / max)*100)
-```
+   ```
+   SecurityResources
+   | where type == 'microsoft.security/securescores'
+   | extend current = properties.score.current, max = todouble(properties.score.max)
+   | project subscriptionId, current, max, percentage = ((current / max)*100)
+   ```
 
-![](../Images/run-query1.png)
+   ![](../Images/run-query1.png)
 
 3.	You should now see your subscription ID listed here along with the current score (in points), the max score and the score in percentage.
 
 4.	To return the status of all the security controls, select **New query**. Next, paste the following KQL query and click on **Run query**:
 
-```
-SecurityResources
-| where type == 'microsoft.security/securescores/securescorecontrols'
-| extend SecureControl = properties.displayName, unhealthy = properties.unhealthyResourceCount, currentscore = properties.score.current, maxscore = properties.score.max
-| project SecureControl , unhealthy, currentscore, maxscore
-```
+   ```
+   SecurityResources
+   | where type == 'microsoft.security/securescores/securescorecontrols'
+   | extend SecureControl = properties.displayName, unhealthy = properties.unhealthyResourceCount, currentscore = properties.score.current, maxscore = properties.score.max
+   | project SecureControl , unhealthy, currentscore, maxscore
+   ```
 
-![](../Images/run-query2.png)
+   ![](../Images/run-query2.png)
 
 More details on the [official article](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls) or on the [blog post](https://techcommunity.microsoft.com/t5/azure-security-center/querying-your-secure-score-across-multiple-subscriptions-in/ba-p/1749193)
 
