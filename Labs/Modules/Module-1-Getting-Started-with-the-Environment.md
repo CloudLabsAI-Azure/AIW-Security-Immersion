@@ -63,7 +63,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
    ![Overview: Inventory tile](../Images/get-started.png)
 
->Note: You may have to scroll down to find the **Upgrade** button.
+> **Note:** You may have to scroll down to find the **Upgrade** button.
 
 3. Click on **Install agents**, if the button is greyed out, then it's already set to **On**.
 
