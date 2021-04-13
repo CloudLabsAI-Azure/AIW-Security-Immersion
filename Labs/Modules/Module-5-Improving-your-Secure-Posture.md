@@ -11,9 +11,9 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 **Explore vulnerability assessment recommendations:**
 
-1.	Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab, if you are not logged in already.
+1.	On **Security Center** page, click on **Security policy** present under the **Management** section.
 
-2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Recommendations (1)** from the left side pane.
+2.	Click on **Recommendations (1)** from the left side pane.
 
 3.	Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities).
 
@@ -39,7 +39,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 10.	Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
-   > Note: You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
+> **Note:** You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
 
 11.	Ensure the VM extension is deployed on the relevant machines:
     - Type **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
@@ -52,7 +52,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
    ![](../Images/linux-ext.png)
 
-> Note: There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
+> **Note:** There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
 
 13.	The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on the ASC console within 24 hours.
 
@@ -166,7 +166,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 12. From the list of actions, select **Send an email (V2)** action to add it to the Designer.
 
-> Note: you will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
+> **Note:** You will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
 13.	In the Send an email (V2), add the email address used for performing the lab in the **To** field.
 
