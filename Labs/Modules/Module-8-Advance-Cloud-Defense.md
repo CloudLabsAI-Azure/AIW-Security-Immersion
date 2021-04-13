@@ -20,13 +20,13 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 3.	Navigate to the bottom section under **Advanced protection**, click on **Just-in-time VM access** (You should see unprotected status number).
 
-![Advanced protection options](../Images/asc-defender-advanced-protection-jit.gif?raw=true)
+![Advanced protection options](../Images/m8ex1.step3.png)
 
 4.	When you are in the **Just-in-time VM access** page, select the **Not configured** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
 
 5.	Select **asclab-win** and then click on the **Enable JIT on 1 VM** button.
 
-![Enable JIT on Windows VM](../Images/asc-enable-jit-win-vm.gif?raw=true)
+![Enable JIT on Windows VM](../Images/m8ex1.step5.png)
 
 6.	On the **JIT VM access configuration** page, keep just the **3389 (RDP) port** and remove all the other ports listed. To remove, click on the ellipses icon (...) for each port and then click on **Delete**.
 
@@ -46,7 +46,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 12. On the **Connect with RDP** section, click on the **Download RDP file anyway** button. Alternatively, from the VM blade, look for the Public IP address and try to connect using RDP.
 
-   ![download-anyway](../Images/download-anyway.png)
+   ![download-anyway](../Images/m8ex1.step12)
 
 13. Click on the downloaded file to initiate a remote connection to the server. On the warning message, ignore the message by clicking on **Connect**.
 
@@ -54,7 +54,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 15. Return to the VM blade **Connect** page, On the **Source IP**, select **My IP** and then click on **Request access**. You should now see the following message: *Access approved on port 3389 from the selected IPs. You can now connect.*
 
-   ![request-access](../Images/request-access.png)
+   ![request-access](../Images/m8ex1.step15.png)
 
 16. Try to connect again to validate your JIT access to the VM. Use the same file you downloaded previously.
 
@@ -70,7 +70,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 
 2.	Navigate to the bottom section under Advanced protection, click on **Adaptive application control**
 
-![Adaptive Application Control1](../Images/adaptive-application-control.png)
+![Adaptive Application Control1](../Images/m8ex2.step2.png)
 
 3.	The Adaptive application controls page opens with your VMs grouped into the following tabs: Configured, Recommended and No recommendation.
 
@@ -89,7 +89,7 @@ It maps the current state of these items with the state during the previous scan
 
 2.	Navigate to the bottom section under Advanced protection, click on the **File Integrity Monitoring** tile.
 
-![File Integrity Monitoring1](../Images/File-Integrity-Monitoring.png)
+![File Integrity Monitoring1](../Images/m8ex3.step2.png)
 
 3.	On the **File Integrity Monitoring** page, select the **Log Analytics workspace listed** `asclab-la-{DeploymentID}` (or just by clicking on the Enable button - it indicates that File Integrity Monitoring is not enabled for the selected workspace).
 
@@ -99,7 +99,7 @@ It maps the current state of these items with the state during the previous scan
 
 5.	Click on **Enable File Integrity Monitoring** button.
 
-![File Integrity Monitoring2](../Images/File-Integrity-Monitoring2.png)
+![File Integrity Monitoring2](../Images/m8ex3.step5.png)
 
 ### Summary
 
