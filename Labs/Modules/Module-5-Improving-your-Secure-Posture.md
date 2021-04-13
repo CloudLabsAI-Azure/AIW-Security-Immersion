@@ -42,7 +42,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 > **Note:** You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
 
 11.	Ensure the VM extension is deployed on the relevant machines:
-    - Type **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
+    - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
     - Select **asclab-win(1)**. next, click on **Extensions(2)** under the **Settings** section.
     - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
@@ -62,7 +62,7 @@ Azure Security Center scans images in your Azure Container Registry (ACR) that a
 
 To simulate a container registry image with vulnerabilities, we will use ACR tasks commands and sample image:
 
-1. Type **Container registries** in the search box located on the top of the **Azure Portal** page and click on it, or click [here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerRegistry%2Fregistries).
+1. Search for **Container registries** in the search box located on the top of the **Azure Portal** page and click on it, or click [here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerRegistry%2Fregistries).
 
 2. Copy the name or your container registry, for example: *asclabcrktfvrxcne4kki*
 
@@ -98,9 +98,9 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
 8. The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
-9.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then click on **Recommendations (1)** from the left side pane under the **General** section.
+9.	Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-10. Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys) (2)**.
+10. Click on **Recommendations (1)** from the left side pane under the **General** section. Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys) (2)**.
 
     ![](../Images/acr.png)
 
@@ -132,7 +132,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 **Create a new Logic App:**
 
-1.	Type **Logic Apps** in the search box located on the top of the **Azure Portal** page and click on it, or [click here](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Logic%2Fworkflows).
+1.	Search for **Logic Apps** in the search box located on the top of the **Azure Portal** page and click on it, or [click here](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Logic%2Fworkflows).
 
 2.	Click on **+Add** and select **Consumption** to create a new Logic App.
 
@@ -156,7 +156,7 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/open-logic-app.png)
 
-10. Type **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered** from the list of **Triggers**
+10. Search for **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered** from the list of **Triggers**
 
     ![](../Images/triggered.png)
 
@@ -197,9 +197,9 @@ Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
 **Create a new workflow automation instance**
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workflow automation (1)** under **Management** section from the left side pane.
+1.	Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-2.	Click on **Add workflow automation (2)**.
+2.	Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **Add workflow automation (2)**.
 
 3.	A pane appears on the right side. Enter the following for each field:
     - General:
@@ -247,7 +247,7 @@ Once you start to get email notifications, you can disable the automation by sel
 Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
 Azure Secure Score data is available in ARG so you can query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
 
-1.	Type **arg** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
+1.	Search for **arg** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
 
 ![Resource Graph Explorer](../Images/m5ex4step1.png)
 
