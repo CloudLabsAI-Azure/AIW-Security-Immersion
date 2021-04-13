@@ -46,7 +46,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
     - Select **asclab-win(1)**. next, click on **Extensions(2)** under the **Settings** section.
     - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
-   ![](../Images/win-ext.png)
+   ![](../Images/m5ex1step11.png)
 
 12. Repeat the above step (step10) for **asclab-linux** – you should expect to see a different name for the extension on the Linux platform: `LinuxAgent.AzureSecurityCenter`.
 
