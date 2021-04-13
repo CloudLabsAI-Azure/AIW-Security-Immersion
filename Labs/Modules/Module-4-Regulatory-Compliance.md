@@ -16,11 +16,13 @@ Azure Security Center helps streamline the process for meeting regulatory compli
 
 Security Center continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards applied to your subscriptions.
 
-1.	Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab if you are not logged in already.
+1.	Navigate to Security Center in the Azure portal(perform if not already on the Security center page).
 
-2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, from the overview page select the **Regulatory Compliance** tile (this pilar is also available on the left side under the Cloud Security section).
+2.	On the overview page select the **Regulatory Compliance(1)** tile (this pilar is also available on the left side under the Cloud Security section).
 
-3.	Once the Regulatory Compliance dashboard opens you can see the compliance standards currently assigned to your subscription.
+3.	Once the **Regulatory Compliance dashboard(2)** opens you can see the compliance standards currently assigned to your subscription.
+
+   ![](../Images/m4ex1.step3.png)
 
 4.	On the top strip, notice the number of **Passed vs. failed controls** across standards.
 
@@ -48,14 +50,18 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
 You can add additional industry standards (represented as compliance packages) such as IST SP 800-53 R4, SWIFT CSP CSCF-v2020, UK Official and more.
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, select **Regulatory Compliance** from the left side pane. Now select **Manage compliance policies** from the top menu bar.
+1.	On **Regulatory Compliance** page, select **Manage compliance policies** from the top menu bar.
 
     ![Manage compliance policies](../Images/manage-compliance-policies.png)
 
 2.	Select **Your Subscription** under the Policy management header.
 
+   ![](../Images/m4ex2step2.png)
+
 3.	In the **Industry & regulatory standards** section, notice the out of the box standards. Click on **Add more standards**.
 
+   ![](../Images/m4ex2step3.png)
+   
 4.	On the **Add regulatory compliance standards** window, locate the **Azure CIS 1.1.0** standard and click on **Add**.
 
     ![Manage compliance policies](../Images/add-more-standards.png)
@@ -77,7 +83,9 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 * Security requirements represented as custom recommendations, listed under the recommendation list.
 * Track compliance status using regulatory compliance dashboard.
 
-1. Type **Policy** in the search box located on the top of the **Azure Portal** page and click on it. Alternately, you can navigate to the policy section by clicking on this [link](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview).
+1. In the search box located on the top of the Azure Portal page, search for Policy and click on it.
+
+   ![Add CIS 1.1.0 (New) Standard](../Images/m3ex2.step1.png.png)
 
 2.	From the left pane of the **Policy** page, select **Definitions**.
 
