@@ -30,7 +30,7 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
 6.	Locate and expand the **A13 Communications security** compliance control. Click on the compliance domain **A13.2. Information transfer** and expand **A13.2.1. Information transfer policies and procedures** – Observe both _failed_ status.
 
-   ![Remmediate function app](../Images/communications-security.png)
+   ![Remmediate function app](../Images/m4ex1step6.png)
 
 7.	You can also remediate assessments in this section. Click on the first assessment **Function App should only be accessible over HTTPS**.
 
@@ -69,7 +69,7 @@ You can add additional industry standards (represented as compliance packages) s
 
 6.	**Azure CIS 1.1.0 (New)** should now be listed on the standards list.
 
-    ![Add CIS 1.1.0 (New) Standard](../Images/asc-azure-cis-new-standard.gif?raw=true)
+    ![Add CIS 1.1.0 (New) Standard](../Images/m4ex2step6.png)
 
 ### Exercise 3: Creating your own benchmark
 
