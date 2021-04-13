@@ -7,7 +7,7 @@ In this module, we will guide you through the current Security Center policies s
 
 ### Exercise 1: Overview of the ASC policy
 
-In this exercise, You will get an overview of an index of Azure Policy built-in policy definitions related to Azure Security Center and about initiatives, policies, and how they relate to the Security Center's recommendation.
+In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Azure Security Center and about initiatives, policies, and how they relate to the Security Center's recommendation.
 
 1. On **Security Center** page, click on **Security policy** from the left navigation pane under the **Management** section and click on the Azure subscription.
 
