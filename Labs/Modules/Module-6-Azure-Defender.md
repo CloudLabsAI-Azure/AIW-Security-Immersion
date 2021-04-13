@@ -27,23 +27,23 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
     - On the **Azure Defender plan**s, keep only **Virtual Machines** selected.
     - Click on the **Create sample alerts** button to trigger the alert simulation for VMs.
 
-![Create sample virtual machine security alerts](../Images/asc-create-sample-security-alerts-vm.gif?raw=true)
+    ![](../Images/m6ex1step3.png)
 
 4.	You will see Sample alerts creation in progress, wait for the process to complete. Now you can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
 
 5.	On the **Security Center | Security alerts** page, you should now see 5 different sample events for a resource named `Sample-VM`. Each alert has the Sample alert banner next to it.
 
-![View sample virtual machine security alerts](../Images/asc-view-sample-security-alerts-vm.gif?raw=true)
+    ![](../Images/m6ex1step5.png)
 
 6.	Click on the **Digital currency mining related behavior detected** alert.
 
 7.	After the details pane opens, notice the alert properties at the top (severity, status, and time) along with the alerts description and affected resources. At the bottom section, you can see the kill chain intent of the alert based on the MITRE ATT&CK® framework. This specific alert is at the *Execution* phase.
 
-![Create sample virtual machine security alerts](../Images/Alert-Description.png)
+    ![Create sample virtual machine security alerts](../Images/m6ex1step7.png)
 
 8.	To explore the full details of the alert, click on **View full details**. When you are done return to the **Security alerts** page.
 
-![Create sample virtual machine security alerts](../Images/Alert-Description-Details.png)
+    ![Create sample virtual machine security alerts](../Images/m6ex1step8.png)
 
 9.	Create an alert simulation for Key Vaults:
     - On the Security alerts page, click on the **sample alerts** button.
@@ -63,7 +63,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 14.	At the top menu, dismiss the alert by changing the status from Active to **Dismissed** and click on **OK**.
 
-![Create sample virtual machine security alerts](../Images/TOR-alert-dismiss.png)
+![Create sample virtual machine security alerts](../Images/m6ex1step13.png)
 
 > Note: You can choose to trigger sample alerts for additional Azure Defender plans.
 
@@ -76,7 +76,7 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 2.	Select **High volume of operations in a Key Vault** alert and then click on **Take action**.
 
-![Create sample virtual machine security alerts](../Images/Highvolume-Alert-Description-.png)
+![Create sample virtual machine security alerts](../Images/m6ex2step2.png)
 
 3.	Expand the **Suppress similar alerts** under the Take action section and click on **Create Suppression Rule**.
 
@@ -92,7 +92,7 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 7. You can change your existing suppression rules or create new ones: On the **Security alerts** page from the top menu, select **Suppression rules**. 
 
-![Create sample virtual machine security alerts](../Images/alert-suppression.png)
+![Create sample virtual machine security alerts](../Images/m6ex2step7.png)
 
 8. Click on the rule you have recently created: `Testing-AutoDismiss-KV`.
 
@@ -100,7 +100,7 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 10. To view the dismissed alerts: Navigate to Security alerts the main page and to the filters section. Change the **Status (1)** filter value to show only **Dismissed (2)** items and click **Ok (3)**.
 
-![Create sample virtual machine security alerts](../Images/suppression-filter-options.png)
+![Create sample virtual machine security alerts](../Images/m6ex2step10.png)
 
 ### Exercise 3: Accessing Security Alerts using Graph Security API
 
@@ -116,19 +116,19 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 
 4.	Click on **Try It (1)** then click on the **User icon (2)** to login. You need to login using the credentials provided in the **Environment Details** tab.
 
-![Create sample virtual machine security alerts](../Images/rest-tryit.png)
+![Create sample virtual machine security alerts](../Images/m6ex3step4.png)
 
-![Create sample virtual machine security alerts](../Images/rest-execute-login.png)
+![Create sample virtual machine security alerts](../Images/m6ex3step4(1).png)
 
 5.  Click on **Accept** to allow access.
 
-![Consent-Accept](../Images/consent-accept.png)
+![Consent-Accept](../Images/m6ex3step5.png)
 
 6.  Now click on **Modify Permissions (Preview)** and wait for two permissions to load. Scroll to the right side of permissions then click on **Consent**, do this for both permissions. When prompted for login, login using credentials provided in the **Environment Details** tab, click on **Accept** for each permission to get **Consented**
 
     > **Note** : If you are not able to get **Consented**, please resize the browser window.
 
-![Consent](../Images/consent.png)
+![Consent](../Images/m6ex3step6.png)
 
 7.  Verify both permissions are **Consented**
 
