@@ -78,7 +78,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 
 ![Adaptive Application Control2](../Images/adaptive-application-control-new.png)
 
->Note: First-time users will not get any group information under the Group Name section. It is because Security Center needs at least two weeks of data to define the unique recommendations per group of machines. 
+> **Note:**First-time users will not get any group information under the Group Name section. It is because Security Center needs at least two weeks of data to define the unique recommendations per group of machines. 
 
 ### Exercise 3: File Integrity Monitoring
 
@@ -93,7 +93,7 @@ It maps the current state of these items with the state during the previous scan
 
 3.	On the **File Integrity Monitoring** page, select the **Log Analytics workspace listed** `asclab-la-{DeploymentID}` (or just by clicking on the Enable button - it indicates that File Integrity Monitoring is not enabled for the selected workspace).
 
-    **Note**: Deployment ID can be obtained from the Lab Environment output page.
+> **Note**: Deployment ID can be obtained from the Lab Environment output page.
 
 4.	On the Enable File Integrity Monitoring window, review the default **recommended settings** for Windows files, Registry and Linux files.
 
