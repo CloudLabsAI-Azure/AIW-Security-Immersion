@@ -77,7 +77,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 ### Configure the data collection settings in ASC
 
-1.	In **Pricing and settings** present under **Management** section, select the Log Analytics workspace named **<inject key="log analytics workspace" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
+1. In **Pricing and settings** present under **Management** section, select the Log Analytics workspace named **<inject key="log analytics workspace" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
 
    ![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
 
@@ -109,7 +109,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 10. Click on **Apply**.
 
-11. And after all the configurations are made click on **Save** on the Settings | Auto provisioning page.
+11. Once all the configurations are made, click on **Save** on the Settings | Auto provisioning page.
 
 <br>
 
