@@ -23,7 +23,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 5.	Select the **Log Analytics workspace** option.
 
-   ![continuous-export](../Images/continuous-export.png)
+   ![continuous-export](../Images/m7ex1step5.png)
 
 6.	Under the **Exported data types** section of the **Continuous export** page, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
 
@@ -31,23 +31,23 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 8.	Under the **Export target** section, select the target Log Analytics workspace: *asclab-la-{DeploymentID}*
 
-   **Note**: Deployment ID can be obtained from the Lab Environment Details tab.
+> **Note**: Deployment ID can be obtained from the Lab Environment Details tab.
 
-9. Click on the **Save** button on the top menu.
+9. Click on the **Save**.
 
-    ![Continuous export settings page](../Images/asc-continuous-export-settings.gif?raw=true)
+    ![Continuous export settings page](../Images/m7ex1step9.png)
 
-> Note: Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
+> **Note:** Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
 10. Search for **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
 11. Click on the **asclab-la-{DeploymentID}** workspace.
 
-12. From the left side pane, click on the **Logs** button under the **General** section.
+12. From the left side pane, click on the **Logs(1)** button under the **General** section.
 
-13. On the welcome page, click on the **Get Started** button and then close the **Queries** window.
+13. On the welcome page, click on the **Get Started(2)** button and then close the **Queries** window.
 
-   ![Continuous export settings page](../Images/log-analytic-started.png)
+   ![Continuous export settings page](../Images/m7ex1step13.png)
 
    ![Continuous export settings page](../Images/log-analytic-started2.png)
 
@@ -88,7 +88,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 9. Select the **Azure Defender (2)** connector and then click on **Open connector page (3)**.
 
-    ![ASC pricing & settings page](../Images/Azure-defender-open.png)
+    ![ASC pricing & settings page](../Images/m7ex2step9.png)
 
 10. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
 
@@ -98,7 +98,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
     ![Enable incidents](../Images/asc-sentinel-enable-incidents.png)
  
- >Note: You may have to scroll down to find the option.
+ > **Note:** You may have to scroll down to find the option.
 
 ### Summary
 
