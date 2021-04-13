@@ -94,31 +94,31 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 
 ![Build Linux container in Cloud Shell](../Images/asc-build-linux-container-cloud-shell.gif?raw=true)
 
-7. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s
+7. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s.
 
 8. The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
 9.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then click on **Recommendations (1)** from the left side pane under the **General** section.
 
-10.	Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys) (2)**.
+10. Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys) (2)**.
 
     ![](../Images/acr.png)
 
-11.	On the recommendation page, notice the following details at the upper section:
+11. On the recommendation page, notice the following details at the upper section:
 
-    - Unhealthy registries: *1/1*
-    - Severity: *High*
-    - Total vulnerabilities: *expect to see more than 2 vulnerabilities*
+    - Unhealthy registries: **1/1**
+    - Severity: **High**
+    - Total vulnerabilities: **expect to see more than 2 vulnerabilities**
 
    ![](../Images/acr2.png)
 
-12.	Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
+12. Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
 
     ![](../Images/affectedresources..png)
 
-13.	On the **Security Checks** section, notice the number of vulnerabilities.
+13. On the **Security Checks** section, notice the number of vulnerabilities.
 
-14.	Click on the first security check to open the **XXXXXX- User(s) with Blank Password** pane.
+14. Click on the first security check to open the **XXXXXX- User(s) with Blank Password** pane.
 
     >XXXXXX is the ID of the security finding.
 
@@ -156,11 +156,11 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/open-logic-app.png)
 
-10.	Type **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered** from the list of **Triggers**
+10. Type **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered** from the list of **Triggers**
 
     ![](../Images/triggered.png)
 
-11.	Click on the **new step** button and type **Outlook send**.
+11. Click on the **new step** button and type **Outlook send**.
 
     ![](../Images/newstep.png)
 
@@ -168,30 +168,30 @@ Every security program includes multiple workflows for incident response. The pr
 
 > **Note:** You will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
-13.	In the Send an email (V2), add the email address used for performing the lab in the **To** field.
+13. In the Send an email (V2), add the email address used for performing the lab in the **To** field.
 
 > Later, you will use the same email address to check if you have received an email using workflow automation feature.
 
-14.	Click in the **Subject box**, then type: **Recommendation changed:**
+14. Click in the **Subject box**, then type: **Recommendation changed:**
 
-15.	Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on the **Dynamic content** tab and then select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
+15. Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on the **Dynamic content** tab and then select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
 
-16.	Click into the Body text box and type the following:
+16. Click into the Body text box and type the following:
 
-**The following recommendation has been changed**</br>
-**Recommendation:**</br>
-**Description:**</br>
-**Status:**</br>
-**Link to recommendation:**</br>
+   - **The following recommendation has been changed**</br>
+   - **Recommendation:**</br>
+   - **Description:**</br>
+   - **Status:**</br>
+   - **Link to recommendation:**</br>
 
-17.	Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by selecting in the list:
+17. Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by selecting in the list:
 
 Recommendation: `Properties Display Name`</br>
 Description: `Properties Metadata Description`</br>
 Status: `Properties Status Code`</br>
 Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
-18.	Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
+18. Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
 
 ![Logic App worklfow](../Images/outlook-send.png)
 
