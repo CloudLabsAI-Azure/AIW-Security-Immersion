@@ -66,7 +66,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 2. Copy the name or your container registry, for example: *asclabcrktfvrxcne4kki*
 
-   ![acr-select](../Images/acr-select.png)
+   ![acr-select](../Images/m5ex2step2.png)
 
 3. In the Azure portal, open the **Cloud Shell** pane by selecting the toolbar icon directly to the right of the search textbox or click on [Azure Cloud Shell](https://shell.azure.com/).
 
@@ -227,7 +227,7 @@ Once you start to get email notifications, you can disable the automation by sel
 
 5. Once the automation is automatically triggered, you should expect the email message to look like the screenshot below:
 
-![Workflow automation generated email message](../Images/asc-workflow-automation-automated-email.gif?raw=true)
+![Workflow automation generated email message](../Images/m5ex3step5.png)
 
 6.	Test/trigger your automation manually:
     - On the Security Center pane, click on **Recommendations (1)** from the **General** section.
@@ -249,7 +249,7 @@ Azure Secure Score data is available in ARG so you can query and calculate your 
 
 1.	Type **arg** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
 
-![Resource Graph Explorer](../Images/asc-resource-graph-explorer.gif?raw=true)
+![Resource Graph Explorer](../Images/m5ex4step1.png)
 
 2.	Paste the following KQL query and then select **Run query**.
 
