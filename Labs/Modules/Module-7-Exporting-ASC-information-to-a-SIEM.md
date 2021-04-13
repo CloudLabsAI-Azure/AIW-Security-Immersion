@@ -84,21 +84,19 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 6. Select the workspace **asclab-la-{DeploymentID}** on the **Azure Sentinel** page. 
 
-7. Next, select the **News and guides** option from the General section of the **Azure Sentinel** page.
+7.	From Azure Sentinel side pane, click on the **Data connectors (1)** under the **Configuration** section.
 
-8.	From Azure Sentinel side pane, click on the **Data connectors (1)** under the **Configuration** section.
+8.	On the **Data connectors** page, use the search field and type: *Azure Defender*.
 
-9.	On the **Data connectors** page, use the search field and type: *Azure Defender*.
-
-10. Select the **Azure Defender (2)** connector and then click on **Open connector page (3)**.
+9. Select the **Azure Defender (2)** connector and then click on **Open connector page (3)**.
 
     ![ASC pricing & settings page](../Images/Azure-defender-open.png)
 
-11. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
+10. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
 
     ![Connect Azure Security Center to Azure Sentinel](../Images/connected.png)
 
-12. On the Create incidents (recommended) click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
+11. On the Create incidents (recommended) click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
 
     ![Enable incidents](../Images/asc-sentinel-enable-incidents.png)
  
