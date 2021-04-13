@@ -61,9 +61,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 14.	At the top menu, dismiss the alert by changing the status from Active to **Dismissed** and click on **OK**.
 
-![Create sample virtual machine security alerts](../Images/m6ex1step13.png)
-
-> Note: You can choose to trigger sample alerts for additional Azure Defender plans.
+> **Note:** You can choose to trigger sample alerts for additional Azure Defender plans.
 
 ### Exercise 2: Alert suppression
 
