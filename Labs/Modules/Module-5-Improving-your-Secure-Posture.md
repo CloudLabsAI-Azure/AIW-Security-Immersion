@@ -138,7 +138,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 3.	On the Basics tab, select your subscription and resource group **asclab**.
 
-4.	On the Logic app name field enter *Send-RecommendationsChanges*.
+4.	On the Logic app name field enter **Send-RecommendationsChanges**.
 
 5.	Select location, for example: **East US** (it’s recommended to use the same region as used in the previous exercises).
 
