@@ -19,7 +19,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 > **Note:** This policy is enabled by default on your subscription as per Azure Security Center recommendations. This is the default set of policies monitored by Azure Security Center. It is automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
 
-3.	To view the policy, click on **ASC Default (subscription...)**.
+3. To view the policy, click on **ASC Default (subscription...)**.
 
 > **Note:** the assignment name will have GUID of the subscription in your lab environment.
 
