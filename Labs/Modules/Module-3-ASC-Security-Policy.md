@@ -84,7 +84,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 > **Note**: If you don't see the above option that means it is not loaded yet to the control list, Note down this step number and verify this after some time.
 
-5. Expand the **Affected resources** bar, review the0 current resources under **Unhealthy resources** - **asclab-win** and **asclab-linux**.
+5. Expand the **Affected resources** bar, review the current resources under **Unhealthy resources** - **asclab-win** and **asclab-linux**.
 
 6. Select the **asclab-win** resource and then click on **Exempt**.
 
