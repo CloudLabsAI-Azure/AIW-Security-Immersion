@@ -139,6 +139,9 @@ In this exercise, You will create the ASC default policy in security policy unde
    Please note that you need to replace your subscription ID of you environment with the Assignment Name.
    
     ![Enable Azure Defender on the workspace level](../Images/3.png)
+    
+     ![Enable Azure Defender on the workspace level](../Images/4.png)
+    
 
 
 ## Summary
