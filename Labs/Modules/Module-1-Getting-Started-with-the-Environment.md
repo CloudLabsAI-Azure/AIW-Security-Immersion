@@ -119,6 +119,28 @@ In this exercise, you will be getting started with the functionality of Azure Se
 > * You can enable the Azure Defender trial for 30-days on a subscription-only, if not previously used.
 
 
+## Exercise 2: Creating ASC Default policy.
+
+In this exercise, You will create the ASC default policy in security policy under  Securiy Center.
+
+1. From Azure Portal, Search for scurity center and select it.
+
+1. Now after opening Security center, from left side menu select security policy and select you subscription,
+
+    ![Enable Azure Defender on the workspace level](../Images/1.png)
+    
+1. Under the Security policy now click on assign policy.
+
+    ![Enable Azure Defender on the workspace level](../Images/2.png)
+    
+1. Now on **Azure Securiy Benchpark** windows enter the **Assignment Name** in the below format and after entering the name, Click on **Review + Create** button to create the policy
+   - ASC Default (subscription: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
+  
+   Please note that you need to replace your subscription ID of you environment with the Assignment Name.
+   
+    ![Enable Azure Defender on the workspace level](../Images/3.png)
+
+
 ## Summary
 
   In this module, you have learned how to enable Azure Defender. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
