@@ -52,7 +52,7 @@ You can add additional industry standards (represented as compliance packages) s
 
 1.	On **Regulatory Compliance** page, select **Manage compliance policies** from the top menu bar.
 
-    ![Manage compliance policies](../Images/manage-compliance-policies.png)
+   ![Manage compliance policies](../Images/manage-compliance-policies.png)
 
 2.	Select **Your Subscription** under the Policy management header.
 
@@ -64,18 +64,18 @@ You can add additional industry standards (represented as compliance packages) s
    
 4.	On the **Add regulatory compliance standards** window, locate the **Azure CIS 1.1.0** standard and click on **Add**.
 
-    ![Manage compliance policies](../Images/add-more-standards.png)
+   ![Manage compliance policies](../Images/add-more-standards.png)
 
 5.	Click on **Review + create** and then **Create**.
 
-    ![Review + create](../Images/add-more-standards-create.png)
+   ![Review + create](../Images/add-more-standards-create.png)
 
 > ❗ Important: <br>
 > It will take a while until the change takes an effect (approximately 2-3 hours).
 
 6.	**Azure CIS 1.1.0 (New)** should now be listed on the standards list.
 
-    ![Add CIS 1.1.0 (New) Standard](../Images/m4ex2step6.png)
+   ![Add CIS 1.1.0 (New) Standard](../Images/m4ex2step6.png)
 
 ### Exercise 3: Creating your own benchmark
 
@@ -91,7 +91,7 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 3.	From the top menu, select **+ initiative definition** to create a new policy set definition.
 
-    ![Benchmark Policy](../Images/benchmark-policy.png)
+   ![Benchmark Policy](../Images/benchmark-policy.png)
 
 4.	Under the **Basics** tab, select your Subscription.
 
@@ -109,7 +109,7 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 10. Once you do that, you will be able to create a New Group. For this demonstration, we will name it **Group 1**. Next, click on **Create new** under Subgroup and name it **Sub-group1** and provide a description. Please note that additional metadata can be used as well. The location of the policyMetadata object that has additional details about the control and compliance domain. Click on **Save** to create the new group.
 
-![Group create](../Images/group-policy.png)
+   ![Group create](../Images/group-policy.png)
   
 11. Repeat the process to create an additional group, for example: **Group 2**.
 
