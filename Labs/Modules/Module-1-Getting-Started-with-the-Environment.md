@@ -59,13 +59,11 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 2. Click on the **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, select your **subscription (3)** and click **Upgrade (4)**.
 
+   > **Note:** If you are not able to see subscription then it means your subscription is already upgraded, in this case you can skip step 2, 3 and continue from step 4.
+
    ![Overview: Inventory tile](../Images/get-started-1.png)
 
    ![Overview: Inventory tile](../Images/get-started.png)
-
- > **Note:** If you are not able to see subscription then it means your subscription is already upgraded, in this case you can select the workspace "asclab-la-DID" and then click on upgrade.
-
-   ![Overview: Inventory tile](../Images/upgradeagents1.png)
 
 3. Click on **Install agents**. 
 
