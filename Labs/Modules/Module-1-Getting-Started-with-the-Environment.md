@@ -18,15 +18,15 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-xxxxxx**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-xxxxxx** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
 
-![](../Images/ex1.inst-a.png)
+   ![](../Images/ex1.inst-a.png)
 
 2. All user credentials for accessing the **Azure Portal** can be viewed under the **Environment Details** tab for ease of access. Do note that the same information will also be sent to your registered email address. 
 
-![](../Images/ex1.inst-b.png)
+   ![](../Images/ex1.inst-b.png)
 
 3. The Lab Guide can also be opened on a separate window by selecting the **Split Window** icon in the bottom right corner. This will result in the window detaching from the right side providing more on-screen space for your virtual machine.
 
-![](../Images/ex1.inst-c.png)
+   ![](../Images/ex1.inst-c.png)
 
 ### Login to Azure Portal 
 
@@ -63,17 +63,21 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
    ![Overview: Inventory tile](../Images/get-started.png)
 
-> **Note:** You may have to scroll down to find the **Upgrade** button.
+ > **Note:** If you are not able to see subscription then it means your subscription is already upgraded, in this case you can select the workspace "asclab-la-DID" and then click on upgrade.
 
-3. Click on **Install agents**, if the button is greyed out, then it's already set to **On**.
+   ![Overview: Inventory tile](../Images/upgradeagents1.png)
+
+3. Click on **Install agents**. 
 
    ![install-agents](../Images/installagents.png)
+   
+   > **Note:** If the button is greyed out, then it's already set to **On** and agents are already installed in this case you can move on to the next step.
+
+   ![install-agents](../Images/installagents1.png)
 
 4. Return to Azure security Center blade and click on **Pricing & settings** under the **Management** section from the left pane.
 
 5. Your subscription should be listed here and the **Azure Defender plan** should appear **On** (if it does not, close your browser session and open a new one).
-
-> Notice that you enabled Azure Defender at a subscription level, but Log Analytics workspace pricing is still set **Off** (means Azure Defender is OFF).
 
 ### Configure the data collection settings in ASC
 
