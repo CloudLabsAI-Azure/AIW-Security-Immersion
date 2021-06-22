@@ -35,7 +35,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 9. Click on the **Save**.
 
-    ![Continuous export settings page](../Images/m7ex1step9.png)
+   ![Continuous export settings page](../Images/m7ex1step9.png)
 
 > **Note:** Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
@@ -88,7 +88,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 9. Select the **Azure Defender (2)** connector and then click on **Open connector page (3)**.
 
-    ![ASC pricing & settings page](../Images/m7ex2step9.png)
+   ![ASC pricing & settings page](../Images/m7ex2step9.png)
 
 10. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
 
