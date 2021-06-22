@@ -230,7 +230,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 Once you start to get email notifications, you can disable the automation by selecting the workflow and clicking on **Disable**.
 
-> Please be aware that if your trigger is a recommendation that has "sub-recommendations” / “nested recommendations”, the logic app will not trigger for every new security finding when the status of the parent has changed.
+> Please be aware that if your trigger is a recommendation that has "sub-recommendations" / "nested recommendations", the logic app will not trigger for every new security finding when the status of the parent has changed.
 
 5. Once the automation is automatically triggered, you should expect the email message to look like the screenshot below:
 
@@ -238,17 +238,17 @@ Once you start to get email notifications, you can disable the automation by sel
 
 6.	Test/trigger your automation manually:
 
-    - On the Security Center pane, click on **Recommendations (1)** from the **General** section.
+   - On the Security Center pane, click on **Recommendations (1)** from the **General** section.
     
-    - Under **Remediate vulnerabilities (2)** look for recommendation **Azure Defender for SQL should be enabled on your SQL servers (3)** and click on it.
+   - Under **Remediate vulnerabilities (2)** look for recommendation **Azure Defender for SQL should be enabled on your SQL servers (3)** and click on it.
 
       ![](../Images/trigger-logic-app.png)
 
-    - Select resource **asclab-sql-xxx** (here xxx is unique ID) and then click on the **Trigger Logic App** button.
+   - Select resource **asclab-sql-xxx** (here xxx is unique ID) and then click on the **Trigger Logic App** button.
     
-    - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
+   - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
     
-    - You should receive an email, verify in your inbox. On the labvm-xxxxxx open a new tab in web browser and navigate to https://outlook.office365.com.
+   - You should receive an email, verify in your inbox. On the labvm-xxxxxx open a new tab in web browser and navigate to https://outlook.office365.com.
 
 
     ![](../Images/trigger-logic-app1.png)
