@@ -215,11 +215,11 @@ Every security program includes multiple workflows for incident response. The pr
       - Recommendation severity: *All severities selected*
       - Recommendation state: *All states selected*
     
-    - **Actions**:
+   - **Actions**:
       - Show Logic App instances from the following subscriptions: *Your Subscription*
       - Logic App name: *Send-RecommendationsChanges*
      
-    Click **Create** to complete the task.
+   Click **Create** to complete the task.
 
    ![](../Images/workflow-automation.png)
 
