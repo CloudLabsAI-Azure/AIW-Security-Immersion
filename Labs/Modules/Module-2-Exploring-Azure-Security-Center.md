@@ -46,7 +46,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 8. Go back to the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
-  > Note: It takes few hours for all the secure score data to be loaded, you can continue to the next exercise and verify this after some time.
+  > Note: It takes few hours for all the secure score data to be loaded, it has dependency on Azure. You can continue to the next steps and verify this after some time.
 
   ![Overview: Secure Score tile](../Images/asc-overview-secure-score-tile1.png?raw=true)
 
