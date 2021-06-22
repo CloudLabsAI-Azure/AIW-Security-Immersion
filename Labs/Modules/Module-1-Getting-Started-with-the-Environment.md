@@ -135,7 +135,7 @@ In this exercise, You will create the ASC default policy in security policy unde
 
     ![Enable Azure Defender on the workspace level](../Images/2.png)
     
-1. Now on **Azure Securiy Benchpark** windows enter the **Assignment Name** in the below format and after entering the name, Click on **Review + Create** button to create the policy
+1. Now on **Azure Securiy Benchmark** windows enter the **Assignment Name** in the below format and after entering the name, Click on **Review + Create** button to create the policy
    - ASC Default (subscription: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
   
    Please note that you need to replace your subscription ID of you environment with the Assignment Name.
