@@ -203,19 +203,19 @@ Every security program includes multiple workflows for incident response. The pr
 
 3.	A pane appears on the right side. Enter the following for each field:
     
-   - **General**:
-      - Name: **Send-RecommendationsChanges**
+   **General**:
+     - Name: **Send-RecommendationsChanges**
       - Description: **Send email message when a recommendation is created or triggered**
       - Subscription: *Your Subscription*
       - Resource group: **asclab**
       
-   - **Trigger conditions**:
+   **Trigger conditions**:
       - Select Security Center data types: *Security Center recommendations*
       - Recommendations name: *All recommendations selected*
       - Recommendation severity: *All severities selected*
       - Recommendation state: *All states selected*
     
-   - **Actions**:
+   **Actions**:
       - Show Logic App instances from the following subscriptions: *Your Subscription*
       - Logic App name: *Send-RecommendationsChanges*
      
