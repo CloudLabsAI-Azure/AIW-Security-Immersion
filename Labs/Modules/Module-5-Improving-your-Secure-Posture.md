@@ -146,15 +146,15 @@ Every security program includes multiple workflows for incident response. The pr
 
 7.	Select **Review + Create** and then click on **Create**.
 
-    ![](../Images/logic-app.png)
+   ![](../Images/logic-app.png)
 
 8.	When the **Deployment** is completed click on **Go to resource**
 
-    ![](../Images/gotoresource.png)
+   ![](../Images/gotoresource.png)
 
 9.	After the Logic Apps Designer opens, select **Blank Logic App**.
 
-    ![](../Images/open-logic-app.png)
+   ![](../Images/open-logic-app.png)
 
 10. Search for **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered** from the list of **Triggers**
 
