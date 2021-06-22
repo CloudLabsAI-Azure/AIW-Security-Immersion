@@ -33,6 +33,8 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 6.	Locate and expand the **A13 Communications security** compliance control. Click on the compliance domain **A13.2. Information transfer** and expand **A13.2.1. Information transfer policies and procedures** – Observe both _failed_ status.
 
    ![Remmediate function app](../Images/m4ex1step6.png)
+   
+   > **Note** : If you don't see the failed status it means that fixes  are already applied, you can skip steps 6-8 and continue with next steps.
 
 7.	You can also remediate assessments in this section. Click on the first assessment **Function App should only be accessible over HTTPS**.
 
