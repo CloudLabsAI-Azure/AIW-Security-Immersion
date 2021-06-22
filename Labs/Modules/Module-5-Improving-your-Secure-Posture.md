@@ -239,15 +239,10 @@ Once you start to get email notifications, you can disable the automation by sel
 6.	Test/trigger your automation manually:
 
     1. On the Security Center pane, click on **Recommendations (1)** from the **General** section.
-    
     2. Under **Remediate vulnerabilities (2)** look for recommendation **Azure Defender for SQL should be enabled on your SQL servers (3)** and click on it.
-
        ![](../Images/trigger-logic-app.png)
-
     3. Select resource **asclab-sql-xxx** (here xxx is unique ID) and then click on the **Trigger Logic App** button.
-    
     4. In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
-    
     5. You should receive an email, verify in your inbox. On the labvm-xxxxxx open a new tab in web browser and navigate to https://outlook.office365.com.
 
        ![](../Images/trigger-logic-app1.png)
