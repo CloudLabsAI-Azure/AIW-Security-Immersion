@@ -35,11 +35,11 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 6. After the details pane opens, notice the alert properties at the top (severity, status, and time) along with the alerts description and affected resources. At the bottom section, you can see the kill chain intent of the alert based on the MITRE ATT&CK® framework. This specific alert is at the *Execution* phase.
 
-    ![Create sample virtual machine security alerts](../Images/m6ex1step7.png)
+   ![Create sample virtual machine security alerts](../Images/m6ex1step7.png)
 
-7.	To explore the full details of the alert, click on **View full details**. When you are done return to the **Security alerts** page.
+7. To explore the full details of the alert, click on **View full details**. When you are done return to the **Security alerts** page.
 
-    ![Create sample virtual machine security alerts](../Images/m6ex1step8.png)
+   ![Create sample virtual machine security alerts](../Images/m6ex1step8.png)
 
 8.	Create an alert simulation for Key Vaults:
     - On the Security alerts page, click on the **sample alerts** button.
