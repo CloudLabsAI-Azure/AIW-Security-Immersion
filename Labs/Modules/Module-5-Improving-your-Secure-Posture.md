@@ -178,11 +178,11 @@ Every security program includes multiple workflows for incident response. The pr
 
 16. Click into the Body text box and type the following:
 
-   - **The following recommendation has been changed**</br>
-   - **Recommendation:**</br>
-   - **Description:**</br>
-   - **Status:**</br>
-   - **Link to recommendation:**</br>
+    - **The following recommendation has been changed**</br>
+    - **Recommendation:**</br>
+    - **Description:**</br>
+    - **Status:**</br>
+    - **Link to recommendation:**</br>
 
 17. Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by selecting in the list:
 
