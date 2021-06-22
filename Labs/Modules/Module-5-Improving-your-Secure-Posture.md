@@ -242,7 +242,7 @@ Once you start to get email notifications, you can disable the automation by sel
     
     - Under **Remediate vulnerabilities (2)** look for recommendation **Azure Defender for SQL should be enabled on your SQL servers (3)** and click on it.
 
-    ![](../Images/trigger-logic-app.png)
+      ![](../Images/trigger-logic-app.png)
 
     - Select resource **asclab-sql-xxx** (here xxx is unique ID) and then click on the **Trigger Logic App** button.
     
@@ -251,7 +251,7 @@ Once you start to get email notifications, you can disable the automation by sel
     - You should receive an email, verify in your inbox. On the labvm-xxxxxx open a new tab in web browser and navigate to https://outlook.office365.com.
 
 
-   ![](../Images/trigger-logic-app1.png)
+    ![](../Images/trigger-logic-app1.png)
 
 ### Exercise 4: Accessing your secure score via ARG
 Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
