@@ -39,7 +39,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 7. To explore the full details of the alert, click on **View full details**. When you are done return to the **Security alerts** page.
 
-![Create sample virtual machine security alerts](../Images/m6ex1step8.png)
+![Create sample virtual machine security alerts](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/m6ex1step8.png?raw=true)
 
 8.	Create an alert simulation for Key Vaults:
     - On the Security alerts page, click on the **sample alerts** button.
@@ -55,7 +55,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 12. Click on the **View full details** to see additional information related to the event.
 
-![Create sample virtual machine security alerts](../Images/TOR-exit-node.png)
+![Create sample virtual machine security alerts](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/TOR-exit-node.png?raw=true)
 
 13.	At the top menu, dismiss the alert by changing the status from Active to **Dismissed** and click on **OK**.
 
