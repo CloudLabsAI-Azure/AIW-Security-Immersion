@@ -125,7 +125,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 In this exercise, You will create the ASC default policy in security policy under  Securiy Center.
 
-1. From Azure Portal, Search for scurity center and select it.
+1. From Azure Portal, Search for security center and select it.
 
 1. Now after opening Security center, from left side menu select security policy and select you subscription,
 
