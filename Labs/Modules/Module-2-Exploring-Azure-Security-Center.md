@@ -19,7 +19,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 2. The Security Center Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Secure Score, Regulatory Compliance and Azure Defender**.
 
 > ❗ Important: <br>
-> It takes few minutes for all tiles on the Overview Page to update.
+> Azure Security Center takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to security center. Sometimes, it can take up to 2 hrs. or even more than that for all the tiles on the overview page to update. if it takes more time, attendees can skip the next steps in Module 2 & proceed with the next modules and can come back later and check on this.
 
   ![Azure Security Center: Overview dashboard](../Images/asc-dashboard-overview-updated.png)
 
