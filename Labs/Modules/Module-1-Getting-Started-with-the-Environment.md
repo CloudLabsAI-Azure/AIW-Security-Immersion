@@ -18,15 +18,15 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-xxxxxx**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-xxxxxx** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
 
-   ![](../Images/ex1.inst-a.png)
+   ![](../Images/av1.png)
 
 2. All user credentials for accessing the **Azure Portal** can be viewed under the **Environment Details** tab for ease of access. Do note that the same information will also be sent to your registered email address. 
 
-   ![](../Images/ex1.inst-b.png)
+   ![](../Images/av2.png)
 
 3. The Lab Guide can also be opened on a separate window by selecting the **Split Window** icon in the bottom right corner. This will result in the window detaching from the right side providing more on-screen space for your virtual machine.
 
-   ![](../Images/ex1.inst-c.png)
+   ![](../Images/av3.png)
 
 ### Login to Azure Portal 
 
