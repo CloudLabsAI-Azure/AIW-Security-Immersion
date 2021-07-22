@@ -16,7 +16,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 ### Instructions 
 
-1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-xxxxxx**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-xxxxxx** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
+1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-<inject key="DeploymentID" enableCopy="false"/>**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-<inject key="DeploymentID" enableCopy="false"/>** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
 
    ![](../Images/av1.png)
 
@@ -44,9 +44,13 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
    ![](../Images/azure-login-enter-password1.png "Enter Password") 
 
-4. First-time users are often prompted requesting access to **Stay Signed in**. If you see any such pop-up window, click on **No**.
+4. You may get a **Help us protect your account** box, on that click on **Skip for now (14 days untill this is required)** and then click on **Next** button.
 
-5. If you see any additional pop-up like, You have free **Azure Advisor recommendations!** Close the window to continue the lab. 
+   ![](../Images/protectaccountlogin.png) 
+ 
+5. First-time users are often prompted requesting access to **Stay Signed in**. If you see any such pop-up window, click on **No**.
+
+6. If you see any additional pop-up like, You have free **Azure Advisor recommendations!** Close the window to continue the lab. 
 
 
 ## Exercise 2: Enabling Azure Defender
