@@ -139,7 +139,7 @@ Exploring secure score
 
 > **Note**: It takes few hours for all the data to be loaded, if you don't see teh data in **Controls**. You can continue to the next exercise and verify this after some time
 
-7. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it.
+7. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it. You can check for other recommendations if **Encrypt data in transit** was visible in previous step and you are checking other controller, based on that you can check recommendations under other controlers.
 
    ![](../Images/ex2.step8.png)
    
