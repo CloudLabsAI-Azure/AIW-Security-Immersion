@@ -129,7 +129,7 @@ Exploring secure score
 
 ![Recommendations group by controls](../Images/asc-recommendations-group-by-controls.gif?raw=true)
 
-5. Look for the **Encrypt data in transit** security control under the **Controls**. You may have to scroll down to view it.
+5. Look for the **Encrypt data in transit** security control under the **Controls**. You may have to scroll down to view it, if you don't see **Encrypt data in transit**, you can explore the same for **other controls** and **recommendation**.
 
 ![](../Images/m2ex2.step5.png)
 
@@ -137,7 +137,7 @@ Exploring secure score
 
 ![](../Images/m2ex2.step6.png)
 
-> **Note**: It takes few hours for all the data to be loaded, In case if you don't see the above option in the list that means it is not populated yet in the recommendations. You can continue to the next exercise and verify this after some time
+> **Note**: It takes few hours for all the data to be loaded, if you don't see teh data in **Controls**. You can continue to the next exercise and verify this after some time
 
 7. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it.
 
