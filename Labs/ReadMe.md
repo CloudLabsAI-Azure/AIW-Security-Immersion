@@ -23,10 +23,10 @@ Advanced | 300+ | You have lots of experience and are looking to learn about adv
 
 ## Modules
 
-[**Module 1 – Preparing the Environment (L100)**](./Modules/Module-1-Preparing-the-Environment.md)
-- [Creating an Azure Trial Subscription](./Modules/Module-1-Preparing-the-Environment.md#exercise-1-creating-an-azure-trial-subscription)
-- [Provisioning resources (automation)](./Modules/Module-1-Preparing-the-Environment.md#exercise-2-provisioning-resources)
-- [Enabling Azure Defender](./Modules/Module-1-Preparing-the-Environment.md#exercise-3-enabling-azure-defender)
+[**Module 1 – Getting Started with the Environment (L100)**](./Modules/Module-1-Getting-Started-with-the-Environment.mdd)
+- [Creating an Azure Trial Subscription](./Modules/Module-1-Getting-Started-with-the-Environment.md#exercise-1-creating-an-azure-trial-subscription)
+- [Provisioning resources (automation)](./Modules/Module-1-Getting-Started-with-the-Environment.md#exercise-2-provisioning-resources)
+- [Enabling Azure Defender](./Modules/Module-1-Getting-Started-with-the-Environment.md#exercise-3-enabling-azure-defender)
  
 [**Module 2 – Exploring Azure Security Center (L100)**](./Modules/Module-2-Exploring-Azure-Security-Center.md)
 - [Understanding ASC dashboard](./Modules/Module-2-Exploring-Azure-Security-Center.md#exercise-1-understanding-azure-security-center-dashboard)
