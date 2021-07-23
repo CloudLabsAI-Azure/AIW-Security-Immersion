@@ -209,13 +209,13 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
    ![linux-recommendations](../Images/ex3.step7.png)
 
-8. Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**.
+8. Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**. You may not see **view resource** directly due to different screen resolution, then you have to click on ellipse(...) and then select **view resource**.
 
    ![Remediate a resource](../Images/linux-vm.png)
 
 9. On the resource health pane for **asclab-linux**, review the virtual machine information alongside the recommendation list.
 
-    ![Remediate a resource](../Images/ex3.step9(1).png)
+    ![Remediate a resource](../Images/ex3.step9(11).png)
 
 > **Note**: It will take few hours for all the recommendations to get loaded.
 
