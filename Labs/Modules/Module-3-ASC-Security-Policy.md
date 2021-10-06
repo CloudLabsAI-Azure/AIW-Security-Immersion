@@ -95,9 +95,9 @@ When working with a recommendation, you can create an exemption by clicking the 
     - Name: **ASC-Management ports should be closed on your virtual machines**.
     - Check the **Set an expiration date** option and set datetime for two days ahead on 12:00 AM.
     - Select **Waiver** as exemption category.
-    - Click on **Create**.
+    - Enter description for the **Exemption** and click on **Create**.
 
-    ![](../Images/m3ex3.step7.png)
+    ![](../Images/exempt-01.png)
 
 > ⭐ Good to know: <br>
 > **Mitigated** - This issue isn't relevant to the resource because it's been handled by a different tool or process than the one being suggested
