@@ -125,10 +125,6 @@ Exploring secure score
 > -	To get the max score, fix all recommendations for all resources in a control.
 > To understand how the score and the downstream recommendations are calculated, please visit our official [documentation](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#calculations---understanding-your-score "Understanding your score calculation").
 
-4. On the right side, switch the toggle button of **Group by Controls** to **OFF** to disable the group by controls view – now you should get a flat view of all recommendations. After viewing all the recommendations switch it back to **ON**.
-
-![Recommendations group by controls](../Images/asc-recommendations-group-by-controls.gif?raw=true)
-
 5. Look for the **Encrypt data in transit** security control under the **Controls**. You may have to scroll down to view it, if you don't see **Encrypt data in transit**, you can explore the same for **other controls** and **recommendation**.
 
 ![](../Images/m2ex2.step5.png)
