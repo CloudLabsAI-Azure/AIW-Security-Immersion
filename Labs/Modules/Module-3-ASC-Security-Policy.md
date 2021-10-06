@@ -23,11 +23,11 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 > **Note:** the assignment name will have GUID of the subscription in your lab environment.
 
-4. On the **Edit Initiative Assignment** page, click on **Parameters**.
+4. On the **Edit Initiative Assignment** page, click on **Parameters** and uncheck the box that is next to **Only show parameters that require input** to view the parameters.
 
-    ![](../Images/m3ex1.step4.png)
+    ![](../Images/defaultpolicy-01.png)
     
-5. On the **Network Security Groups on the subnet level should be enabled**, change the action to **AuditIfNotExists** to enable monitoring of NSGs on subnets, and click on **Review + save**. You may need to scroll down.
+5. On the **Edit Initiative Assignment** blade, scroll down and change the action to **AuditIfNotExists** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + save**.
 
     ![](../Images/m3ex1.step5.png)
 
@@ -219,12 +219,11 @@ Add each policy one by one:
     - *Managed identity should be used in your Function App*
     - *Custom subscription owner roles should not exist*
     - *Public network access on Azure SQL Database should be disabled*
-    - *SSH access from the Internet should be blocked*
     - *Storage accounts should restrict network access*
 
 7. Select **Review + Create (5)** and click on **Create**.
 
-   ![custom initiative](../Images/policy-definition.png)
+   ![custom initiative](../Images/defaultpolicy-02.png)
 
 ***Add a custom initiative to your subscription***
 
