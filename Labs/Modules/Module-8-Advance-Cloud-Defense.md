@@ -24,7 +24,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 4.	When you are in the **Just-in-time VM access** page, select the **Not configured** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
 
-    > **Note**: If the virtual machines `asclab-linux` and `asclab-win are present under **Unsuppoted** tab then follow the below instructions to enable **Just-in-time** VM access.
+    > **Note**: If the virtual machines `asclab-linux` and `asclab-win` are present under **Unsuppoted** tab then follow the below instructions to enable **Just-in-time VM access**.
 
      
        1. Navigate to **asclab** resource group and select **asclab-win** virtual machine.
