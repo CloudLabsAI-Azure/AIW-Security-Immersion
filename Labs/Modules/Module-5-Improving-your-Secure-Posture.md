@@ -170,7 +170,9 @@ Every security program includes multiple workflows for incident response. The pr
 
    > **Note:** You will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
-1. In the Send an email (V2), add the email address used for performing the lab in the **To** field.
+1. In the Send an email (V2), enter the below email address in the **To** field.
+   
+      * Email/Username: <inject key="AzureAdUserEmail"></inject> 
 
    > Later, you will use the same email address to check if you have received an email using workflow automation feature.
 
