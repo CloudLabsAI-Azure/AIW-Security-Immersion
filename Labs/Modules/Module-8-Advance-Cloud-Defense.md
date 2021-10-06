@@ -24,6 +24,17 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 4.	When you are in the **Just-in-time VM access** page, select the **Not configured** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
 
+    > **Note**: If the virtual machines `asclab-linux` and `asclab-win are present under **Unsuppoted** tab then follow the below instructions to enable **Just-in-time** VM access.
+
+     
+       1. Navigate to **asclab** resource group and select **asclab-win** virtual machine.
+       1. Select **Configuration** from the left-hand side menu and click on ** Enable Just-in-time**
+          ![](../Images/jit-01.png)
+       1. Navigate back to **Security Center** and select **Azure Defender** under **Cloud Security** from the left side pane then click on **Just-in-time VM access**.
+       1. Review the **Configured** tab, now you should see your VM configured: `asclab-win`
+    
+    > If you have followed above instructions to enable **Just-in-time VM access**, you can skip the Steps 5-8 and continue from Step9.
+    
 5.	Select **asclab-win** and then click on the **Enable JIT on 1 VM** button.
 
 ![Enable JIT on Windows VM](../Images/m8ex1.step5.png)
