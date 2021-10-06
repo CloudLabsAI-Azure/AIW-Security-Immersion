@@ -27,7 +27,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 6.	Under the **Exported data types** section of the **Continuous export** page, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
 
-7.	Under the **Export configuration** section of the **Continuous export** page, select the resource group: *asclab* from the drop down menu.
+7.	Under the **Export configuration** section of the **Continuous export** page, select the resource group: **asclab** from the drop down menu.
 
 8.	Under the **Export target** section, select the target Log Analytics workspace: *asclab-la-{DeploymentID}*
 
