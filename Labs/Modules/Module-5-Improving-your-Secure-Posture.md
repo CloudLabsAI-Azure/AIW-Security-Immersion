@@ -31,9 +31,9 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
    ![](../Images/fix-asclab-win.png)
 
-8.	On the **Choose a vulnerability assessment solution** select **Recommended: Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers) (1)**. Click on  **Proceed (2)**.
+8.	On the **Choose a vulnerability assessment solution** select **Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers) (1)**. Click on  **Proceed (2)**.
 
-   ![](../Images/proceed.png)
+   ![](../Images/proceed-01.png)
 
 9.	A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources** 
 
@@ -134,49 +134,51 @@ Every security program includes multiple workflows for incident response. The pr
 
 1.	Search for **Logic Apps** in the search box located on the top of the **Azure Portal** page and click on it, or [click here](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Logic%2Fworkflows).
 
-2.	Click on **+Add** and select **Consumption** to create a new Logic App.
+1.	Click on **+Add** to create a new Logic App.
 
-3.	On the Basics tab, select your subscription and resource group **asclab**.
+1.	On the Basics tab, select your subscription and resource group **asclab**.
+   
+1. Under **Instance details ** section, select **Type** as **Consumption**.   
 
-4.	On the Logic app name field enter **Send-RecommendationsChanges**.
+1.	On the Logic app name field enter **Send-RecommendationsChanges**.
 
-5.	Select location, for example: **East US** (it’s recommended to use the same region as used in the previous exercises).
+1.	Select location, for example: **East US** (it’s recommended to use the same region as used in the previous exercises).
 
-6.	Ensure the **Enable log analytics** option is unchecked.
+1.	Select **No** for **Enable log analytics** option.
 
-7.	Select **Review + Create** and then click on **Create**.
+1.	Select **Review + Create** and then click on **Create**.
 
-   ![](../Images/logic-app.png)
+    ![](../Images/logicapp-01.png)
 
-8.	When the **Deployment** is completed click on **Go to resource**
+1.	When the **Deployment** is completed click on **Go to resource**
 
-   ![](../Images/gotoresource.png)
+    ![](../Images/gotoresource.png)
 
-9.	After the Logic Apps Designer opens, select **Blank Logic App**.
+1.	After the Logic Apps Designer opens, select **Blank Logic App**.
 
-   ![](../Images/open-logic-app.png)
+    ![](../Images/open-logic-app.png)
 
-10. Search for **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered** from the list of **Triggers**
+1. Search for **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered** from the list of **Triggers**
 
     ![](../Images/triggered.png)
 
-11. Click on the **new step** button and type **Outlook send**.
+1. Click on the **new step** button and type **Outlook send**.
 
     ![](../Images/newstep.png)
 
-12. From the list of actions, select **Send an email (V2)** action to add it to the Designer.
+1. From the list of actions, select **Send an email (V2)** action to add it to the Designer.
 
-> **Note:** You will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
+   > **Note:** You will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
-13. In the Send an email (V2), add the email address used for performing the lab in the **To** field.
+1. In the Send an email (V2), add the email address used for performing the lab in the **To** field.
 
-> Later, you will use the same email address to check if you have received an email using workflow automation feature.
+   > Later, you will use the same email address to check if you have received an email using workflow automation feature.
 
-14. Click in the **Subject box**, then type: **Recommendation changed:**
+1. Click in the **Subject box**, then type: **Recommendation changed:**
 
-15. Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on the **Dynamic content** tab and then select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
+1. Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on the **Dynamic content** tab and then select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
 
-16. Click into the Body text box and type the following:
+1. Click into the Body text box and type the following:
 
     - **The following recommendation has been changed**</br>
     - **Recommendation:**</br>
@@ -184,14 +186,14 @@ Every security program includes multiple workflows for incident response. The pr
     - **Status:**</br>
     - **Link to recommendation:**</br>
 
-17. Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by selecting in the list:
+1. Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by selecting in the list:
 
    - Recommendation: `Properties Display Name`</br>
    - Description: `Properties Metadata Description`</br>
    - Status: `Properties Status Code`</br>
    - Link to recommendation: `Properties Links Azure Portal Uri`</br>
 
-18. Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
+1. Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
 
    ![Logic App worklfow](../Images/outlook-send.png)
 
