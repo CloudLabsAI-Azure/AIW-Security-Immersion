@@ -19,7 +19,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 2. The Security Center Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Secure Score, Regulatory Compliance and Azure Defender**.
 
 > ❗ Important: <br>
-> Azure Security Center takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to security center. Sometimes, it can take up to 2 hrs. or even more than that for all the tiles on the overview page to update. if it takes more time, attendees can skip the next steps in Module 2 & proceed with the next modules and can come back later and check on this. we are looking at various approaches to optimize this experience for future workshops.
+> Azure Security Center takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to security center. Sometimes, it can take up to 24 hours or even more than that for all the tiles on the overview page to update. if it takes more time, attendees can skip the next steps in Module 2 & proceed with the next modules and can come back later and check on this. we are looking at various approaches to optimize this experience for future workshops.
 
   ![Azure Security Center: Overview dashboard](../Images/asc-dashboard-overview-updated.png)
 
@@ -46,7 +46,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 8. Go back to the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
-  > Note: It takes few hours for all the secure score data to be loaded, it has dependency on Azure. You can continue to the next steps and verify this after some time.
+  > Note: It can take few hours for all the secure score data to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
 
   ![Overview: Secure Score tile](../Images/asc-overview-secure-score-tile1.png?raw=true)
 
@@ -133,7 +133,7 @@ Exploring secure score
 
 ![](../Images/m2ex2.step6.png)
 
-> **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Controls**. You can continue to the next exercise and verify this after some time
+> **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Controls**. You can continue to the next exercise and verify this later.
 
 7. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it. You can check for other recommendations if **Encrypt data in transit** was visible in previous step and you are checking other controller, based on that you can check recommendations under other controlers.
 
@@ -177,7 +177,9 @@ Exploring secure score
 
   ![](../Images/ex2.step13.png)
   
-15. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. Note: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
+15. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. 
+    
+    > **Note**: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
 
 > **Info**: In the recommendation list, you can now see some recommendations flagged as in preview. They aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
@@ -213,7 +215,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
     ![Remediate a resource](../Images/ex3.step9(11).png)
 
-> **Note**: It will take few hours for all the recommendations to get loaded.
+> **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
 10. Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (Unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
 
@@ -223,7 +225,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 11.	From the filter menu, select the **Resource Group** filter and **select all** under the Value. Again from the filter menu, select **Recommendations**, uncheck the **select all** option under the Value and then select the **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
 
-> **Note**: If you don't see **Auditing on SQL Server should be enabled** in search that means it is not loaded yet to recommendations, Note down this step number and verify this after some time.
+> **Note**: If you don't see **Auditing on SQL Server should be enabled** in search that means it is not loaded yet to recommendations and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Recommendations**. You can note down this step number and verify this later.
 
 12.	Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
@@ -233,7 +235,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 * Assign `Environment` as the name and  `Production` as the value.
 * Click **Save**.
 
-> **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this after some time.
+> **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this later.
 
    ![Inventory: Assign tags](../Images/asc-inventory-assign-tags.gif?raw=true)
 
