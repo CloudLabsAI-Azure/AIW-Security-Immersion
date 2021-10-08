@@ -83,7 +83,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
     ![policy assignment](../Images/secure-management-ports.png)
 
-> **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Recommendations**, you can note down this step number then continue to the next exercise and verify this later.
+> **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
 5. Expand the **Affected resources** bar, review the current resources under **Unhealthy resources** - **asclab-win** and **asclab-linux**.
 
