@@ -21,6 +21,8 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
    ![](../Images/remediate-blade.png)
 
+  > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+
 5.	Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
 
 6.	Click to expand **Remediation steps (1)** – then click on the **Quick fix logic (2)** option to expose an automatic remediation script content (ARM template). Once done, **Close (3)** this window.
