@@ -46,7 +46,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 8. Go back to the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
-  > Note: It can take few hours for all the secure score data to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
+  > Note: It can take upto 24 hours for all the secure score data to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
 
   ![Overview: Secure Score tile](../Images/asc-overview-secure-score-tile1.png?raw=true)
 
@@ -63,10 +63,12 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 12. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark(2), ISO 27001, PCI DSS 3.2.1 and SOC TSP(3)**. Click on **Show all 4 (4)** to check the compliance status.
  
- >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones.
+ >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones. 
 
    ![Overview: Regulatory Compliance tile](../Images/regulatorycompliance.png)
    
+   > Note: It can take upto 24 hours for compliance status to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
+
 13. Next Click on **Inventory** from the **General** section of the Security Center. It shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
 
 > ❗ Important: <br>
