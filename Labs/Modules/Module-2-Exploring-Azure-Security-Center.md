@@ -133,9 +133,10 @@ Exploring secure score
 
 ![](../Images/m2ex2.step6.png)
 
-> **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Controls**. You can continue to the next exercise and verify this later.
-
 7. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it. You can check for other recommendations if **Encrypt data in transit** was visible in previous step and you are checking other controller, based on that you can check recommendations under other controlers.
+
+   > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Controls**, you can continue to the next exercise and verify this later.
+
 
    ![](../Images/ex2.step8.png)
    
