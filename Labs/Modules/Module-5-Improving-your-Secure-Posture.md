@@ -17,7 +17,9 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 3.	Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities).
 
-4.	Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here. If you don’t, you will need **24 hours** to have the recommendation with the assessment.
+4.	Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here.
+
+  > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
    ![](../Images/remediate-blade.png)
 
@@ -101,6 +103,9 @@ Modify the following script to include your container registry name in the place
 9.	Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
 10. Click on **Recommendations (1)** from the left side pane under the **General** section. Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys) (2)**.
+   
+     > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+
 
     ![](../Images/acr.png)
 
@@ -245,6 +250,8 @@ Once you start to get email notifications, you can disable the automation by sel
    - On the Security Center pane, click on **Recommendations (1)** from the **General** section.
    - Under **Remediate vulnerabilities (2)** look for recommendation **Azure Defender for SQL should be enabled on your SQL servers (3)** and click on it.
    
+      > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+
      ![](../Images/trigger-logic-app.png)
      
    - Select resource **asclab-sql-xxx** (here xxx is unique ID) and then click on the **Trigger Logic App** button.

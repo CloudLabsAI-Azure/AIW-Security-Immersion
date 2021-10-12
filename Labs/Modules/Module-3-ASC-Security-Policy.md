@@ -81,9 +81,9 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 4. Select the **Management ports should be closed on your virtual machines(3)** recommendation.
 
-    ![policy assignment](../Images/secure-management-ports.png)
+    > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-> **Note**: If you don't see the above option that means it is not loaded yet to the control list, Note down this step number and verify this after some time.
+    ![policy assignment](../Images/secure-management-ports.png)
 
 5. Expand the **Affected resources** bar, review the current resources under **Unhealthy resources** - **asclab-win** and **asclab-linux**.
 
@@ -138,6 +138,8 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 4. From the filtered recommendations list, select **Secure transfer to storage accounts should be enabled**.
 
+  > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+
 5. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
 > ❗ Important: <br>
@@ -150,6 +152,9 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
     ![](../Images/m3ex4.step6.png)
 
 7. Go back to the **recommendations view**, set the **Response action** filter as **Select All**. Then type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
+
+   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+
 
     ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
