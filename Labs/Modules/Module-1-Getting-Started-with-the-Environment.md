@@ -77,9 +77,11 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
    ![install-agents](../Images/installagents1.png)
 
-4. Return to Azure security Center blade and click on **Pricing & settings** under the **Management** section from the left pane.
+4. Return to Azure security Center blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**..
 
-5. Your subscription should be listed here and the **Azure Defender plan** should appear **On** (if it does not, close your browser session and open a new one).
+   ![Template deployment completed](../Images/m1e2s3.png)
+
+5. Your subscription should be listed here and the **Azure Defender plan** should appear **On**.
 
 ### Configure the data collection settings in ASC
 
@@ -93,7 +95,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 3. Go back to the **Security center | Pricing & settings** page and select your **Azure subscription**.
 
-4. Navigate to **Auto provisioning (1)** under the Settings section.
+4. From **Settings |Azure Defender Plans** page, Navigate to **Auto provisioning (1)** under the Settings section.
 
 5. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
 
