@@ -139,11 +139,11 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 1. In the search box located on the top of the Azure Portal page, search for **Security Center** and click on it.
 
-2. From the left side pane of **Security Center**, select **Recommendations** under **General**.
+2. From the left side pane of **Microsoft Defender for Cloud**, select **Recommendations** under **General**.
 
 3. Scroll down to recommendations filters, set the **Response actions** as **Deny**.
 
-    ![Auditing on SQL server should be enabled](../Images/asc-recommendations-filters-deny.gif?raw=true)
+   ![Auditing on SQL server should be enabled](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/asc-recommendations-filters-deny.gif?raw=true)
 
 4. From the filtered recommendations list, select **Secure transfer to storage accounts should be enabled**.
 
@@ -178,11 +178,12 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 10. In the **Parameters** tab, leave the *Effect* and *Retention days* with default values.
 
+    - **Uncheck** Only show parameters that need input or review
     - Select the resource group **asclab** from the drop down menu
     - Select **Review + create** to assign the policy to your subscription.
     - Click **Create**
 
-    ![](../Images/m3ex4.step10.png)
+    ![](../Images/m3fs5.png)
 
 11. On the **Auditing on SQL server should be enabled** page, perform the following steps:
 
