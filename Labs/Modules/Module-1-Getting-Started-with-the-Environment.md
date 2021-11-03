@@ -65,9 +65,9 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
    > **Note:** If you are not able to see subscription then it means your subscription is already upgraded, in this case you can skip step 2, 3 and continue from step 4.
 
-   ![Overview: Inventory tile](../Images/get-started-1.png)
+   ![Overview: Inventory tile](../Images/m1e2s2.1.png)
 
-   ![Overview: Inventory tile](../Images/get-started.png)
+   ![Overview: Inventory tile](../Images/m1e2s2.2.png)
 
 3. Click on **Install agents**. 
 
@@ -77,9 +77,11 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
    ![install-agents](../Images/installagents1.png)
 
-4. Return to Azure security Center blade and click on **Pricing & settings** under the **Management** section from the left pane.
+4. Return to Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
-5. Your subscription should be listed here and the **Azure Defender plan** should appear **On** (if it does not, close your browser session and open a new one).
+   ![Template deployment completed](../Images/m1e2s3.png)
+
+5. Your subscription should be listed here and the **Azure Defender plan** should appear **On**.
 
 ### Configure the data collection settings in ASC
 
@@ -93,7 +95,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 3. Go back to the **Security center | Pricing & settings** page and select your **Azure subscription**.
 
-4. Navigate to **Auto provisioning (1)** under the Settings section.
+4. From **Settings |Azure Defender Plans** page, Navigate to **Auto provisioning (1)** under the Settings section.
 
 5. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
 
@@ -124,38 +126,24 @@ In this exercise, you will be getting started with the functionality of Azure Se
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Azure Defender.
 > * You can enable the Azure Defender trial for 30-days on a subscription-only, if not previously used.
 
-
 ## Exercise 2: Creating ASC Default policy.
 
 In this exercise, You will create the ASC default policy in security policy under  Securiy Center.
 
 1. From Azure Portal, search for **security center** and select it.
 
-1. Now after opening Security center, from left side menu select **Security policy** and select your **subscription**,
+1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
-    ![Enable Azure Defender on the workspace level](../Images/1.png)
-    
-1. Under the Security policy, click on assign policy.
-
-    ![Enable Azure Defender on the workspace level](../Images/2.png)
-    
-1. Now on **Azure Security Benchmark** windows enter the **Assignment Name** in the below format and after entering the name, Click on **Review + Create** button.
-   - ASC Default (subscription: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
-  
-   Please note that you need to replace your subscription ID of you environment with the Assignment Name.
+   ![Template deployment completed](../Images/m1e2s3.png)
    
-    ![Enable Azure Defender on the workspace level](../Images/3.png)
+1. 1. In **Environment Settings** page, Select your subscription.
 
-1. Click on **Create** to create the policy.
+   ![Template deployment completed](../Images/m1e2.1s2.png)
+   
+1. Click on **Security Policy (1)** You'll notice that in security center default policy (2) the **ASC Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
 
-    ![Enable Azure Defender on the workspace level](../Images/asb-create.png)
+   ![Template deployment completed](../Images/m1e2.1s3.png)
     
-1. Now, varify **Security center default policy** under security policy blade.
-    
-    ![Enable Azure Defender on the workspace level](../Images/asb-varify.png)
-    
-
-
 ## Summary
 
   In this module, you have learned how to enable Azure Defender. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
