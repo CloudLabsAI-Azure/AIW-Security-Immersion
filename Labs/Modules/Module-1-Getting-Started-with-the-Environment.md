@@ -77,7 +77,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
    ![install-agents](../Images/installagents1.png)
 
-4. Return to Azure security Center blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
+4. Return to Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
    ![Template deployment completed](../Images/m1e2s3.png)
 
@@ -132,7 +132,7 @@ In this exercise, You will create the ASC default policy in security policy unde
 
 1. From Azure Portal, search for **security center** and select it.
 
-1. In Azure security Center blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
+1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
    ![Template deployment completed](../Images/m1e2s3.png)
    
