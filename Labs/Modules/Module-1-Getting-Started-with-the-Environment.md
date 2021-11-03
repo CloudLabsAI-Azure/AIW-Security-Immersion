@@ -140,7 +140,7 @@ In this exercise, You will create the ASC default policy in security policy unde
 
    ![Template deployment completed](../Images/m1e2.1s2.png)
    
-1. Click on **Security Policy (1)** fYou'll notice that in security center default policy (2) the **ASC Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
+1. Click on **Security Policy (1)** You'll notice that in security center default policy (2) the **ASC Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
 
    ![Template deployment completed](../Images/m1e2.1s3.png)
     
