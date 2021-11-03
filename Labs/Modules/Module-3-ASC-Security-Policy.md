@@ -63,10 +63,10 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 4. You can now see three built-in initiatives used by Azure Security Center:
     -	*Azure Security Benchmark*
-    -	*[Preview]: Enable Data Protection Suite*
+    -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
 
-    ![policy assignment](../Images/m3ex2.step4new.png)
+    ![policy assignment](../Images/m3fs2.png)
 
 5. Notice the number of policies included in each initiative (policies column).
 
