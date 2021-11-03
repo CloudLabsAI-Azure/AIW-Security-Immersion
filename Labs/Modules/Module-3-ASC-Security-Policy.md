@@ -121,7 +121,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 9. Refresh tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
 
-    ![Exempttion tab](../Images/not-applicable-resource-tab.png)
+    ![Exempttion tab](../Images/m3fs4.png)
 
 10.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
 
