@@ -126,7 +126,6 @@ In this exercise, you will be getting started with the functionality of Azure Se
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Azure Defender.
 > * You can enable the Azure Defender trial for 30-days on a subscription-only, if not previously used.
 
-
 ## Exercise 2: Creating ASC Default policy.
 
 In this exercise, You will create the ASC default policy in security policy under  Securiy Center.
@@ -141,7 +140,7 @@ In this exercise, You will create the ASC default policy in security policy unde
 
    ![Template deployment completed](../Images/m1e2.1s2.png)
    
-1. You'll notice that the **ASC Default policy** has been created automatically. Explore the policy by clicking on the policy.
+1. Click on **Security Policy (1)** fYou'll notice that in security center default policy (2) the **ASC Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
 
    ![Template deployment completed](../Images/m1e2.1s3.png)
     
