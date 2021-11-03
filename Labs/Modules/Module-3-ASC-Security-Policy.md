@@ -244,23 +244,31 @@ Add each policy one by one:
 
 1. In the search box located on the top of the Azure Portal page, search for **Security Center** and click on it.
 
-2. On **Security Center** page, from the left side pane under the **Management** section select **Security policy**.
+2. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
-3. Select your subscription as a scope for your custom initiative.
+   ![Template deployment completed](../Images/m1e2s3.png)
+   
+3. In **Environment Settings** page, Select your subscription.
+
+   ![Template deployment completed](../Images/m1e2.1s2.png)
+   
+4. Click on **Security Policy (1)**.
+
+   ![Template deployment completed](../Images/m3fs7.png)
 
 > **Note:** You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Security Center.
 
-4. On the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
+5. On the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
 
     ![Add custom initiative](../Images/custom-initiatives.png)
 
-5. Your newly created initiative is listed: **Contoso Security Benchmark**. Select **Add**.
+6. Your newly created initiative is listed: **Contoso Security Benchmark**. Select **Add**.
 
     ![Assign custom initiative](../Images/asc-assign-custom-initiative.gif?raw=true)
 
-6. On the **Assign Initiative** page, select **Review + Create** and then **Create**.
+7. On the **Assign Initiative** page, select **Review + Create** and then **Create**.
 
-7. Your custom initiative is now assigned.
+8. Your custom initiative is now assigned.
 
 ### Summary
 
