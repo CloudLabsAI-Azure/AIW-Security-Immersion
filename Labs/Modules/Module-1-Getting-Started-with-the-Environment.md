@@ -65,9 +65,9 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
    > **Note:** If you are not able to see subscription then it means your subscription is already upgraded, in this case you can skip step 2, 3 and continue from step 4.
 
-   ![Overview: Inventory tile](../Images/get-started-1.png)
+   ![Overview: Inventory tile](../Images/m1e2s2.1.png)
 
-   ![Overview: Inventory tile](../Images/get-started.png)
+   ![Overview: Inventory tile](../Images/m1e2s2.2.png)
 
 3. Click on **Install agents**. 
 
