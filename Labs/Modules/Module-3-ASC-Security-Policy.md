@@ -188,13 +188,13 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 11. On the **Auditing on SQL server should be enabled** page, perform the following steps:
 
     - Select the **SQL Server resource (1)** found on the **unhealthy resources** tab of **Affected resources** named **<inject key="SQL Server" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** 
-    - click **Fix (2)**
-    - Change the **retention days (3)** parameter to 180 
+    - click on **Fix (2)**
+    - Select the **asclab-la-XXXXXX** workspace from the dropdown
     - Click **Fix 1 resource (4)**. 
     
 By performing above mentioned operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
 <br>
-    ![Sql Auditing](../Images/auditing-fix-create.png)
+    ![Sql Auditing](../Images/m3fs6.png)
 
 12.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/prevent-misconfigurations#recommendations-with-denyenforce-options "Recommendations with deny/enforce options") to view a full list of recommendations with deny/enforce options along with a detailed explanation of this capability.
 
