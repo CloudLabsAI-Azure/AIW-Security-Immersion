@@ -77,7 +77,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
    ![install-agents](../Images/installagents1.png)
 
-4. Return to Azure security Center blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**..
+4. Return to Azure security Center blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
    ![Template deployment completed](../Images/m1e2s3.png)
 
@@ -133,31 +133,18 @@ In this exercise, You will create the ASC default policy in security policy unde
 
 1. From Azure Portal, search for **security center** and select it.
 
-1. Now after opening Security center, from left side menu select **Security policy** and select your **subscription**,
+1. In Azure security Center blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
-    ![Enable Azure Defender on the workspace level](../Images/1.png)
-    
-1. Under the Security policy, click on assign policy.
-
-    ![Enable Azure Defender on the workspace level](../Images/2.png)
-    
-1. Now on **Azure Security Benchmark** windows enter the **Assignment Name** in the below format and after entering the name, Click on **Review + Create** button.
-   - ASC Default (subscription: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
-  
-   Please note that you need to replace your subscription ID of you environment with the Assignment Name.
+   ![Template deployment completed](../Images/m1e2s3.png)
    
-    ![Enable Azure Defender on the workspace level](../Images/3.png)
+1. 1. In **Environment Settings** page, Select your subscription.
 
-1. Click on **Create** to create the policy.
+   ![Template deployment completed](../Images/m1e2.1s2.png)
+   
+1. You'll notice that the **ASC Default policy** has been created automatically. Explore the policy by clicking on the policy.
 
-    ![Enable Azure Defender on the workspace level](../Images/asb-create.png)
+   ![Template deployment completed](../Images/m1e2.1s3.png)
     
-1. Now, varify **Security center default policy** under security policy blade.
-    
-    ![Enable Azure Defender on the workspace level](../Images/asb-varify.png)
-    
-
-
 ## Summary
 
   In this module, you have learned how to enable Azure Defender. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
