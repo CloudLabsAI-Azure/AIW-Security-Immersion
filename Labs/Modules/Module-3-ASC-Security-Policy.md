@@ -9,10 +9,20 @@ In this module, we will guide you through the current Security Center policies s
 
 In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Azure Security Center and about initiatives, policies, and how they relate to the Security Center's recommendation.
 
-1. On **Security Center** page, click on **Security policy** present under the **Management** section, and click on the Azure subscription.
+1. From Azure Portal, search for **security center** and select it.
 
-    ![](../Images/m3ex1.step1.png)
+1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
+   ![Template deployment completed](../Images/m1e2s3.png)
+   
+1. 1. In **Environment Settings** page, Select your subscription.
+
+   ![Template deployment completed](../Images/m1e2.1s2.png)
+   
+1. Click on **Security Policy**.
+
+   ![Template deployment completed](../Images/m3fs1.png)
+   
 2. By default, there is 1 assignment at the **Security center default policy** which is **ASC default**.
 
     ![Security center default policy](../Images/asc-default-policy-subscription.png)
