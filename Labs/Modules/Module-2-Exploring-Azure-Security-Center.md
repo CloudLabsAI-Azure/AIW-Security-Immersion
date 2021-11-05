@@ -44,13 +44,17 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 > ⭐ Good to know: <br>
 > The higher the score, the lower the identified risk level.
 
-9. From the **Security Center** page Select the  **Azure Defender** from the **Cloud Security** section.
+9. From the **Security Center** page Select the  **Workload Protections** from the **Cloud Security** section.
+
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/workload.png?raw=true)
 
 10. On the **Workload Protections** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
 
     ![Overview: Azure Defender tile](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/workload%20protection.png?raw=true)
 
 11. Next, select the **Regulatory Compliance** from the **Cloud Security** section of the Security Center page.
+
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/regulatory.png?raw=true)
 
 12. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark(2), ISO 27001, PCI DSS 3.2.1 and SOC TSP(3)**. Click on **Show all 4 (4)** to check the compliance status.
  
