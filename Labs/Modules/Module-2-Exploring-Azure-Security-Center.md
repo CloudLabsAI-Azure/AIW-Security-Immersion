@@ -171,9 +171,11 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it. From the left navigation pane, under the **General** section, select the **Inventory** button.
 
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/inventory1.png?raw=true)
+    
 2. Hover to the **Summaries strip** at the top of the page.
 
-   ![Remediate a resource](../Images/inventory.png)
+   ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/inventory1.1.png?raw=true)
 
 > **Note**: In your environment, these numbers may not be the same, since it varies in time
 
@@ -189,11 +191,11 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 8. Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**. You may not see **view resource** directly due to different screen resolution, then you have to click on ellipse(...) and then select **view resource**.
 
-   ![Remediate a resource](../Images/linux-vm.png)
+   ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/viewres.png?raw=true)
 
 9. On the resource health pane for **asclab-linux**, review the virtual machine information alongside the recommendation list.
 
-    ![Remediate a resource](../Images/ex3.step9(11).png)
+    ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/healthpreview.png?raw=true)
 
 > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
