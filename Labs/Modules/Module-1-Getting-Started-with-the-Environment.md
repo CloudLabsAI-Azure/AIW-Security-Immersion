@@ -93,7 +93,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 2. On the **Settings |Azure Defender Plans** page, select **Azure Defender on** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
 
-   ![Enable Azure Defender on the workspace level](../Images/asc-enable-defender-workspace.gif?raw=true)
+   ![Enable Azure Defender on the workspace level](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/enable%20defender.png?raw=true)
 
 3. Go back to the **Security center | Pricing & settings** page and select your **Azure subscription**.
 
