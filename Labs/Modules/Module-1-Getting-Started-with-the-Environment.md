@@ -150,6 +150,17 @@ In this exercise, You will create the ASC default policy in security policy unde
 1. Click on **Security Policy (1)** You'll notice that in security center default policy (2) the **ASC Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
 
    ![Template deployment completed](../Images/m1e2.1s3.png)
+   
+   > **Note** : Incase if you don't see default policy, follow the below steps:
+     
+     - Under **Security center default policy**, click on **Assign Policy**
+
+        ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/assignapolicy.png?raw=true)
+     - Under **Basics** tab, enter the **Assignment name** as **ASC default**.
+      
+       ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/assisgnmentname.png?raw=true)
+      
+    - Click on **Review + Create**, followed by **Create**.
     
 ## Summary
 
