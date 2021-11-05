@@ -97,7 +97,9 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 3. Go back to the **Security center | Pricing & settings** page and select your **Azure subscription**.
 
-4. From **Settings |Azure Defender Plans** page, Navigate to **Auto provisioning (1)** under the Settings section.
+4. From **Settings |Azure Defender Plans** page, Navigate to **Auto provisioning** under the Settings section.
+
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/auto%20provision.png?raw=true)
 
 5. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
 
