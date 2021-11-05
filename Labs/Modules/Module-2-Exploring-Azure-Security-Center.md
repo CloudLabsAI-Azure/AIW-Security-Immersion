@@ -109,7 +109,7 @@ Exploring secure score
 
    ![Recommendations view](../Images/ex2.step5.png)
 
-**Exploring Security Controls and Recommendations**
+ **Exploring Security Controls and Recommendations**
 
 1. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
 
