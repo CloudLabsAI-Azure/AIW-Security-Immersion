@@ -41,11 +41,10 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![](../Images/m3ex1.step5.png)
 
-6. On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists**
+6. On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists** and click on **Save**. Wait for the policy update to complete successfully.
 
     ![Modifying Security Center default policy assignment](../Images/asc-default-policy-nsg-recommendation.png)
 
-7. Click on **Save**. Wait for the policy update to complete successfully.
 
 ### Exercise 2: Explore Azure Policy
 
