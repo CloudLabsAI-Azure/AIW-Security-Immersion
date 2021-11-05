@@ -139,11 +139,11 @@ In this exercise, You will create the ASC default policy in security policy unde
 
 1. From Azure Portal, search for **security center** and select it.
 
-1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
+1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (3)**.
 
    ![Template deployment completed](../Images/m1e2s3.png)
    
-1. 1. In **Environment Settings** page, Select your subscription.
+1. In **Environment Settings** page, Select your subscription.
 
    ![Template deployment completed](../Images/m1e2.1s2.png)
    
