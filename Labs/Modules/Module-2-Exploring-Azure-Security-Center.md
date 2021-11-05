@@ -119,23 +119,6 @@ Exploring secure score
 
    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/csv%20report.png?raw=true)
 
-3. The second part of the page contains a list of all recommendations grouped by security **Controls**:
-
-> ⭐ Notice: <br>
-> -	Each security control is a logical group of related security recommendations and represents a "security risk" that you should prioritize and mitigate.
-> -	Each control has its own score which contributes to the overall secure score.
-> -	Address the recommendations in each control, focusing on the controls worth the most points.
-> -	To get the max score, fix all recommendations for all resources in a control.
-> To understand how the score and the downstream recommendations are calculated, please visit our official [documentation](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#calculations---understanding-your-score "Understanding your score calculation").
-
-5. Look for the **Encrypt data in transit** security control under the **Controls**. You may have to scroll down to view it, if you don't see **Encrypt data in transit**, you can explore the same for **other controls** and **recommendation**.
-
-![](../Images/m2ex2.step5.png)
-
-6. Notice its max score is around 4 and the potential increase for the score. You should have more than three recommendations within this control.
-
-![](../Images/m2ex2.step6.png)
-
 7. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it. You can check for other recommendations if **Encrypt data in transit** was visible in previous step and you are checking other controller, based on that you can check recommendations under other controlers.
 
    > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Controls**, you can continue to the next exercise and verify this later.
@@ -146,7 +129,7 @@ Exploring secure score
 > ⭐ Notice: <br>
 > For some recommendations, a Quick Fix option is also available. Quick Fix allows you to remediate a group of resources quickly whenever possible with a single click. This option is only available for supported recommendations and enables you to quickly improve your secure score and increase the security in your environment.
 
-8. On the top section, notice the following:
+1. On the top section, notice the following:
 
 - Title of the recommendation: **Secure transfer to storage accounts should be enabled**
 - Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
