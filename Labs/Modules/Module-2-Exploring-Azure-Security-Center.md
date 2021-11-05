@@ -35,16 +35,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
    ![Azure Security Center: Dashboard](../Images/asc-dashboard.png)
 
-6. From the top menu bar, **click** on **Azure subscriptions**.
-
-7. On the **Coverage** page, note that your Subscription is listed under the **Fully covered** tab – which means that your subscription is covered by Azure Defender. (you should also see a message: *Looking good! The subscriptions below are fully protected*)
-
-   ![Azure Security Center: Coverage](../Images/m2ex1.step8.png)
-
-> ⭐ Good to know: <br>
-> This page shows a list of subscriptions and their coverage type. You can use this page to find subscriptions that are not covered by Azure Security Center and identify “shadow IT” subscriptions.
-
-8. Go back to the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
+8. On the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
   > Note: It can take upto 24 hours for all the secure score data to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
 
@@ -55,9 +46,9 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 9. From the **Security Center** page Select the  **Azure Defender** from the **Cloud Security** section.
 
-10. On the **Azure Defender** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
+10. On the **Workload Protections** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
 
-    ![Overview: Azure Defender tile](../Images/azure-defender.png)
+    ![Overview: Azure Defender tile](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/workload%20protection.png?raw=true)
 
 11. Next, select the **Regulatory Compliance** from the **Cloud Security** section of the Security Center page.
 
