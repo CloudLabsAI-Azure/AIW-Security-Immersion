@@ -118,16 +118,10 @@ Exploring secure score
 2. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated recommendations. You can use this file for pivoting and reporting.
 
    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/csv%20report.png?raw=true)
-
-7. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it. You can check for other recommendations if **Encrypt data in transit** was visible in previous step and you are checking other controller, based on that you can check recommendations under other controlers.
-
-   > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Controls**, you can continue to the next exercise and verify this later.
-
-
-   ![](../Images/ex2.step8.png)
    
-> ⭐ Notice: <br>
-> For some recommendations, a Quick Fix option is also available. Quick Fix allows you to remediate a group of resources quickly whenever possible with a single click. This option is only available for supported recommendations and enables you to quickly improve your secure score and increase the security in your environment.
+3. Under **Recommendation**, select **Storage account public access should be disallowed**.
+
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/recommendation.png?raw=true)
 
 1. On the top section, notice the following:
 
@@ -135,8 +129,9 @@ Exploring secure score
 - Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
 - Severity indicator: **High**
 - Freshness interval: **30 Min** 
+- Tactics and techniques: **Initial Access**
 
-![Recommendation top menu](../Images/ex2.step9.png)
+![Recommendation top menu](../Images/ex2.stacc public access.png)
 
 9. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s either by following the step-by-step instructions, use the provided ARM template in the next step, or REST API to automate the process.
 
