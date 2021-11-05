@@ -82,7 +82,11 @@ Exploring secure score
 
 1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it.
 
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/security%20center.png?raw=true)
+
 2. From the left navigation pane, under the **Cloud Security** section, Select **Secure Score**.
+
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/securescor.png?raw=true)
 
 3. On the Security Center | Secure Score page, review your current **Overall Secure Score**.
 
