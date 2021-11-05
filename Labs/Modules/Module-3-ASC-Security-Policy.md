@@ -84,10 +84,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-2. Select **Recommendations(1)** from the left navigation pane.
-
-
-4. Select the **Management ports should be closed on your virtual machines(3)** recommendation.
+2. Select **Recommendations(1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines(2)** recommendation.
 
     > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
@@ -188,7 +185,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
     - Select the **SQL Server resource (1)** found on the **unhealthy resources** tab of **Affected resources** named **<inject key="SQL Server" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** 
     - click on **Fix (2)**
-    - Select the **asclab-la-XXXXXX** workspace from the dropdown
+    - Select the **asclab-la-XXXXXX (3)** workspace from the dropdown
     - Click **Fix 1 resource (4)**. 
     
 By performing above mentioned operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
