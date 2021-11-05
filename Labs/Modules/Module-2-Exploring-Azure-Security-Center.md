@@ -125,7 +125,7 @@ Exploring secure score
 
 1. On the top section, notice the following:
 
-- Title of the recommendation: **Secure transfer to storage accounts should be enabled**
+- Title of the recommendation: **Storage account public access should be disallowed**
 - Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
 - Severity indicator: **High**
 - Freshness interval: **30 Min** 
@@ -145,7 +145,7 @@ Exploring secure score
     }
     ```
     
-  ![Recommendation top menu](../Images/quick-fix-logic.png)
+  ![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/autoscript.png?raw=true)
 
 12. Click on close button present in the bottom of template window.
 
@@ -153,7 +153,7 @@ Exploring secure score
 
 13. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**.
 
-  ![](../Images/ex2.step12(2).png)
+  ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/affectedresources.png?raw=true)
   
 14. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
 
