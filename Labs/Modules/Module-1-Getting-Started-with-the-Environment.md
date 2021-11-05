@@ -114,7 +114,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
    ![workspace configuration](../Images/connectazurevms.png)
 
-8. When **Apply changes to existing VMs?** popup window is prompted, select **Existing and new VMs**.
+8. If **Apply changes to existing VMs?** popup window is prompted, select **Existing and new VMs**.
 
    ![Apply changes](../Images/applychanges.png)
 
