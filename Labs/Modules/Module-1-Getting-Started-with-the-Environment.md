@@ -118,13 +118,13 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
    ![Apply changes](../Images/applychanges.png)
 
-9. Next, under the **Store additional raw data - Windows security events** section, select the **All Events** option.
+9. Next, under the **Store additional raw data - Windows security events** section, select the **All Events (1)** option and click on **Apply (2)**.
 
     ![Enable Azure Defender on the workspace level](../Images/allevents.png)
 
-10. Click on **Apply**.
+10. Once all the configurations are made, click on **Save** on the Settings | Auto provisioning page.
 
-11. Once all the configurations are made, click on **Save** on the Settings | Auto provisioning page.
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/save%20extension.png?raw=true)
 
 <br>
 
