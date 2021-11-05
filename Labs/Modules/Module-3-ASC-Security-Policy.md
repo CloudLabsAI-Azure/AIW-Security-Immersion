@@ -262,9 +262,15 @@ Add each policy one by one:
 
     ![Assign custom initiative](../Images/asc-assign-custom-initiative.gif?raw=true)
 
-7. On the **Assign Initiative** page, select **Review + Create** and then **Create**.
+7. On the **Assign Initiative** page leave everything as default and select **Review + Create**.
+   
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/custom.png?raw=true)
+   
+8. Now click on **Create**
 
-8. Your custom initiative is now assigned.
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/createini.png?raw=true)
+   
+10. Your custom initiative is now assigned.
 
 ### Summary
 
