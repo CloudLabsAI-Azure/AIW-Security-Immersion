@@ -117,6 +117,8 @@ Exploring secure score
 
 2. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated recommendations. You can use this file for pivoting and reporting.
 
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/csv%20report.png?raw=true)
+
 3. The second part of the page contains a list of all recommendations grouped by security **Controls**:
 
 > ⭐ Notice: <br>
