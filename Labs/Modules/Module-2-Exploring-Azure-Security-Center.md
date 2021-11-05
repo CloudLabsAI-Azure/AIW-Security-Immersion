@@ -231,7 +231,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 16. From the top menu, click on **Open query**.
 
-    ![Inventory: Assign tags](../Images/open-query.png)
+    ![Inventory: Assign tags](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/downloadcsvreport.png?raw=true)
 
 17. On the **Azure Resource Graph Explorer** blade, click on **Run Query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs and here it gets very powerful.
  
