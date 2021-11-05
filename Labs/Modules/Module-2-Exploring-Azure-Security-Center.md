@@ -131,7 +131,7 @@ Exploring secure score
 - Freshness interval: **30 Min** 
 - Tactics and techniques: **Initial Access**
 
-![Recommendation top menu](../Images/ex2.stacc public access.png)
+![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/stacc%20public%20access.png?raw=true)
 
 9. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s either by following the step-by-step instructions, use the provided ARM template in the next step, or REST API to automate the process.
 
