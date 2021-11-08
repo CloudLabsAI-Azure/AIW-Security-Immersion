@@ -105,9 +105,9 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 ![Create sample virtual machine security alerts](../Images/m6ex2step7.png)
 
-8. Click on the rule you have recently created: `Testing-AutoDismiss-KV`.
+8. Click on the rule you have recently created: `Testing-AutoDismiss-KV` and change the expiration to be a month ahead from the current date. Next, click on **Apply**.
 
-9. Change the expiration to be a month ahead from the current date. Next, click on **Apply**.
+  ![](../Images/editsuppression.png)
 
 10. To view the dismissed alerts: Navigate to Security alerts the main page and to the filters section. Change the **Status (1)** filter value to show only **Dismissed (2)** items and click **Ok (3)**.
 
