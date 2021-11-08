@@ -64,13 +64,11 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 10. Search for **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
-11. Click on the **asclab-la-{DeploymentID}** workspace.
+11. Click on the **asclab-la-{DeploymentID} (1)** workspace and select **Logs(2)** button under the **General** section.
 
-12. From the left side pane, click on the **Logs(1)** button under the **General** section.
+     ![](../Images/LAW3.png) 
 
-13. On the welcome page, click on the **Get Started(2)** button and then close the **Queries** window.
-
-   ![Continuous export settings page](../Images/m7ex1step13.png)
+13. On the welcome page, close the **Queries** window.
 
    ![Continuous export settings page](../Images/log-analytic-started2.png)
 
