@@ -216,6 +216,8 @@ Every security program includes multiple workflows for incident response. The pr
 
 2.	Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **Add workflow automation (2)**.
 
+      ![](../Images/workflow.png)
+
 3.	A pane appears on the right side. Enter the following for each field:
     
    - General:
