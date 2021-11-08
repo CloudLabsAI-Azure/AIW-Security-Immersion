@@ -115,11 +115,11 @@ Modify the following script to include your container registry name in the place
     - Severity: **High**
     - Total vulnerabilities: **expect to see more than 2 vulnerabilities**
 
-   ![](../Images/acr2.png)
+   ![](../Images/vulnerabilities.png)
 
 12. Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
 
-    ![](../Images/affectedresources..png)
+    ![](../Images/containerregistry.png)
 
 13. On the **Security Checks** section, notice the number of vulnerabilities.
 
@@ -127,7 +127,7 @@ Modify the following script to include your container registry name in the place
 
     >XXXXXX is the ID of the security finding.
 
-    ![](../Images/securitychecks.png)
+    ![](../Images/securitycheck1.png)
 
 Notice the vulnerability description, general information (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
 
