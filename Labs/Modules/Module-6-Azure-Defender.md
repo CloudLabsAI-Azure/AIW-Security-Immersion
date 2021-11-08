@@ -19,11 +19,13 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 2. Create an alert simulation for VM:
     - On the Security alerts page, click on the **Sample alerts** button. You will be navigated to **Create sample alerts (Preview)** window.
     
-    ![](../Images/m6ex1step3.png)
+    ![](../Images/securityalert.png)
     
     - Select **Your Subscription**.
     - On the **Azure Defender plan**s, keep only **Virtual Machines** selected.
     - Click on the **Create sample alerts** button to trigger the alert simulation for VMs.
+
+     ![](../Images/createalerts1.png)
 
 3. You will see Sample alerts creation in progress, wait for the process to complete. Now you can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
 
