@@ -45,9 +45,14 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 8.	Create an alert simulation for Key Vaults:
     - On the Security alerts page, click on the **sample alerts** button.
+
+     ![](../Images/securityalert.png)
+     
     - Select **Your Subscription**.
     - On the Azure Defender plans, keep only **Key Vaults** selected.
     - Click **Create sample alerts** button to trigger the alert simulation for Key Vaults.
+
+     ![](../Images/keyvalut%20alert.png)
     
 9.	After the Sample alerts creating in progress appear, wait for the process to complete. You can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
 
