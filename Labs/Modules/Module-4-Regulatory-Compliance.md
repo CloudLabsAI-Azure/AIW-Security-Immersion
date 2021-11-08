@@ -33,6 +33,14 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 6.	Expand the **Contoso Security Benchmark** compliance control. Click on the **Managed identity should be used in your function app**
 
    ![Remmediate function app](../Images/CSB1.png)
+   
+7. Under **Managed identity should be used in your function app** tab, expand **Affected resources**.
+
+   ![](../Images/affectedresources1.png)
+   
+1. Now under **Healthy resources (1)**, you can observe the **Function app (2)**.
+
+   ![](../Images/healthyresources.png)
 
 7.	You can also remediate assessments in this section. Click on the first assessment **Function App should only be accessible over HTTPS**.
 
