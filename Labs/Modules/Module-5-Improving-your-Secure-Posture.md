@@ -11,17 +11,15 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 **Explore vulnerability assessment recommendations:**
 
-1.	On **Security Center** page, click on **Security policy** present under the **Management** section.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-2.	Click on **Recommendations (1)** from the left side pane.
-
-3.	Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities).
-
-4.	Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here.
+     ![](../Images/security%20center.png)
+     
+3.	Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here.
 
   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-   ![](../Images/remediate-blade.png)
+   ![](../Images/recomendations1.png)
 
 5.	Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
 
