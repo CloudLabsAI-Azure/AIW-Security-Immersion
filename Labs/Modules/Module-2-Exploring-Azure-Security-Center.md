@@ -60,7 +60,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
  
  >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones. 
 
-   ![Overview: Regulatory Compliance tile](../Images/regulatorycompliance.png)
+   ![Overview: Regulatory Compliance tile](../Images/msdefender4.png)
    
    > Note: It can take upto 24 hours for compliance status to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
 
@@ -70,7 +70,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 > Unmonitored VMs are considered as virtual machines that have Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
 
 
-![Overview: Inventory tile](../Images/inventory-tile.png)
+![Overview: Inventory tile](../Images/msdefender5.png)
 
 
 ### Exercise 2: Exploring Secure Score and Recommendations
@@ -113,7 +113,7 @@ Exploring secure score
 
 1. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
 
-   ![Recommendations view](../Images/Recommendations.png)
+   ![Recommendations view](../Images/msdefender6.png)
 
 2. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated recommendations. You can use this file for pivoting and reporting.
 
