@@ -30,9 +30,17 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 4.	Here you can configure the streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
 
-5.	Select the **Log Analytics workspace** option.
+5.	Select the **Log Analytics workspace (1)** option and follow the below steps:
 
-   ![continuous-export](../Images/m7ex1step5.png)
+    - Exported data types:
+
+        - Enable **Security recommendations (2)**
+
+        - Enable **Secure score (3)**
+
+        - Enable **Security alerts (4)**
+
+     ![continuous-export](../Images/LAW1.png)
 
 6.	Under the **Exported data types** section of the **Continuous export** page, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
 
