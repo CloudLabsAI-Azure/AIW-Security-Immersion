@@ -42,12 +42,6 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
    ![](../Images/healthyresources.png)
 
-7.	You can also remediate assessments in this section. Click on the first assessment **Function App should only be accessible over HTTPS**.
-
-8.	On the recommendation *Function App should only be accessible over HTTPS*, select the unhealthy resource under the Affected resources named **<inject key="Function App" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** and click on **Fix**. Confirm the action by selecting **Fix 1 resource**.
-
-   ![Remmediate function app](../Images/asc-remmediate-function-app.png)
-
 9.	Return to the dashboard. Here, you can export the regulatory standard compliance status report as a PDF or CSV file. From the top menu bar, click on **Download report**.
 
 10. On the Report standard dropdown menu, select **PCI DSS 3.2.1** and format as **PDF**. Click on **Download**
