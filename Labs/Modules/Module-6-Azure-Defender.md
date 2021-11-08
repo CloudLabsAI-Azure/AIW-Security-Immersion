@@ -58,13 +58,13 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 10.	On the alerts page, you should now see 5 different sample events for a resource named `Sample-KV`. Each alert has the `Sample alert` banner next to it.
 
-11.	Click on the **Access from a TOR exit node to a Key Vault** alert.
-
-12. Click on the **View full details** to see additional information related to the event.
+11.	Select **Access from a TOR exit node to a Key Vault** alert then click on the **View full details** to see additional information related to the event.
 
 ![Create sample virtual machine security alerts](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/TOR-exit-node.png?raw=true)
 
 13.	At the top menu, dismiss the alert by changing the status from Active to **Dismissed** and click on **OK**.
+
+    ![](../Images/dismiss.png)
 
 > **Note:** You can choose to trigger sample alerts for additional Azure Defender plans.
 
