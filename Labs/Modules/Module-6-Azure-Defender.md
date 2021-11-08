@@ -81,13 +81,23 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 3. Expand the **Suppress similar alerts** under the Take action section and click on **Create Suppression Rule**.
 
-4. After the **New suppression rule** pane opens, provide a rule name: *Testing-AutoDismiss-KV*.
+  ![](../Images/supress.png)
 
-5. On the reason field, select **Other** and leave a comment: *Lab 6 exercise*.
+4. After the **New suppression rule** pane opens, enter the following details:
 
-6. Set rule expiration to be tomorrow (just a day ahead). **Click Apply and wait 10 minutes for the new rule to be applied.**
+   - Rule name: Enter **Testing-AutoDismiss-KV (1)**
+   
+   - State: **Enabled (2)**
+  
+   - Reason: **Other (3)**
+   
+   - Comment : **Lab 6 exercise (4)**
 
-    ![Create sample virtual machine security alerts](../Images/Create-Suppression-Rule1.png)
+   - Set rule expiration to be tomorrow (just a day ahead)**(5)**
+  
+   - Click on **Apply (6)** and wait 10 minutes for the new rule to be applied.
+
+    ![Create sample virtual machine security alerts](../Images/new-susp-rule.png)
 
 > **Note:** you can create suppression rules on a management group level by using a built-in policy definition named Deploy - Configure suppression rules for Azure Security Center alerts in Azure Policy. To suppress alerts at the subscription level, you can use the Azure portal or REST APIs.
 
