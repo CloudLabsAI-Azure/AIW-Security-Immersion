@@ -26,7 +26,9 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
 ![Regulatory compliance assessment and standards](../Images/asc-regulatory-compliance-assessment-standards.png)
 
-5.	On the main page, select **ISO 27001** standard. Notice the different compliance controls mapped to assessments.
+5.	On the main page, select **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
+
+   ![Contoso Security Benchmark](../Images/CSB.png)
 
 6.	Locate and expand the **A13 Communications security** compliance control. Click on the compliance domain **A13.2. Information transfer** and expand **A13.2.1. Information transfer policies and procedures** – Observe both _failed_ status.
 
