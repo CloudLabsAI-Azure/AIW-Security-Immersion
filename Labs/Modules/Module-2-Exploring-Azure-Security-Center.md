@@ -21,7 +21,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 > ❗ Important: <br>
 > Azure Security Center takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to security center. Sometimes, it can take up to 24 hours or even more than that for all the tiles on the overview page to update. if it takes more time, attendees can skip the next steps in Module 2 & proceed with the next modules and can come back later and check on this. we are looking at various approaches to optimize this experience for future workshops.
 
-  ![Azure Security Center: Overview dashboard](../Images/asc-dashboard-overview-updated.png)
+  ![Azure Security Center: Overview dashboard](../Images/msdefender.png)
 
 3. Note that the **Subscriptions** icon on the **top menu bar** allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
 
