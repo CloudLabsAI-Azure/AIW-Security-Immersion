@@ -44,7 +44,11 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
 9.	Return to the dashboard. Here, you can export the regulatory standard compliance status report as a PDF or CSV file. From the top menu bar, click on **Download report**.
 
-10. On the Report standard dropdown menu, select **PCI DSS 3.2.1** and format as **PDF**. Click on **Download**
+   ![](../Images/downloadreport.png)
+
+10. On the Report standard dropdown menu, select **PCI DSS 3.2.1 (1)** and format as **PDF (2)**. Click on **Download (3)**.
+
+   ![](../Images/downloadrepo1.png)
 
 11. A local PDF file is now stored on your machine. Open the **PCI DSS 3.2.1 Compliance Report** and explore it – This report summarizes the status of those assessments on your environment, as mapped to the associated controls.
 
