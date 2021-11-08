@@ -176,6 +176,8 @@ Every security program includes multiple workflows for incident response. The pr
     ![](../Images/newstep.png)
 
 1. From the list of actions, select **Send an email (V2)** action to add it to the Designer.
+     
+     ![](../Images/emailv2.png)
 
    > **Note:** You will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
