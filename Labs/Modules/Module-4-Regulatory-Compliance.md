@@ -152,7 +152,11 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 17. You should now see your new initiative listed here – **Custom Benchmark** along with the additional metadata (scope, category, etc.)
 
+   ![](../Images/customben.png)
+
 18. To assign your new security policy, type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+
+   ![](../Images/security center.png)
 
 19. From the left navigation pane, under the **Management** section, click on **Security policy (1)**.
 
