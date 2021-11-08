@@ -58,11 +58,11 @@ You can add additional industry standards (represented as compliance packages) s
 
 1.	On **Regulatory Compliance** page, select **Manage compliance policies** from the top menu bar.
 
-   ![Manage compliance policies](../Images/manage-compliance-policies.png)
+   ![Manage compliance policies](../Images/manage.png)
 
 2.	Select **Your Subscription** under the Policy management header.
 
-   ![](../Images/m4ex2step2.png)
+   ![](../Images/envset.png)
 
 3.	In the **Industry & regulatory standards** section, notice the out of the box standards. Click on **Add more standards**.
 
