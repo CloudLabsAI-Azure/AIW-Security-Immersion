@@ -99,15 +99,19 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
    ![Benchmark Policy](../Images/benchmark-policy.png)
 
-4.	Under the **Basics** tab, select your Subscription.
+4.	Under the **Basics** tab, enter the following steps:
 
-5.	Provide **Custom Benchmark** as Name.
+   - Initiative location : select your **Subscription (1)**
+    
+   - Name : Enter **Custom Benchmark (2)**
 
-6.	Enter **Custom Benchmark Policy** as Description.
+   - Description: Enter **Custom Benchmark Policy (3)**
 
-7.	Select **Category**. Here, you can use an existing one (for example: Security Center).
+   - Category : Click **Use existing (4)** and Select **Security center (5)** from drop-down list.
 
-8.	Provide **Version** number. Each policy definition and initiative contain a version in its metadata section. You can decide to have major versions (1.0), minor version (1.1) and so.
+   - Version : Enter **1 (6)**. Each policy definition and initiative contain a version in its metadata section. You can decide to have major versions (1.0), minor version (1.1) and so.
+
+   - Click on **Next (7)**
 
    ![Benchmark Next](../Images/benchmark-create.png)
 
