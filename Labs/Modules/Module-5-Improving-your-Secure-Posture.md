@@ -226,13 +226,17 @@ Every security program includes multiple workflows for incident response. The pr
      * Description: **Send email message when a recommendation is created or triggered**
      * Subscription: **Your Subscription**
      * Resource group: **asclab**
+
+      ![](../Images/general.png)
       
    - Trigger conditions:
    
-     * Select Security Center data types: **Security Center recommendations**
+     * Select Security Center data types: **Recommendation**
      * Recommendations name: **All recommendations selected**
      * Recommendation severity: **All severities selected**
      * Recommendation state: **All states selected**
+
+      ![](../Images/trigger.png)
     
    - Actions:
    
@@ -241,7 +245,7 @@ Every security program includes multiple workflows for incident response. The pr
      
    Click **Create** to complete the task.
 
-   ![](../Images/workflow-automation.png)
+   ![](../Images/actions.png)
 
 4.	Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations.
 
