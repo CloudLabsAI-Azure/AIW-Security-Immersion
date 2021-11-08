@@ -34,13 +34,32 @@ Continuous export lets you fully customize what will be exported, and where it w
 
     - Exported data types:
 
-        - Enable **Security recommendations (2)**
+        - Check the box next to  **Security recommendations (2)**
 
-        - Enable **Secure score (3)**
+        - Check the box next to **Secure score (3)**
 
-        - Enable **Security alerts (4)**
+        - Check the box next to **Security alerts (4)**
 
      ![continuous-export](../Images/LAW1.png)
+     
+     - Export frequency:
+
+        - Check the box next to **Streaming updates (5)** and **Snapshots (Preview) (6)**
+
+     - Export configuration:
+
+          - Resource group: Select **asclab (7)** from drop-down list
+
+     - Export target:
+
+          - Subscription : Select your **Subscription (8)**
+
+          - Select target workspace: Select **asclab-la-{DeploymentID} (9)**
+
+     -  Click on **Save (10)**
+
+        ![](../Images/LAW2.png)
+
 
 6.	Under the **Exported data types** section of the **Continuous export** page, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
 
