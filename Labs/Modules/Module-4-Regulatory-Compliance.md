@@ -63,10 +63,10 @@ You can add additional industry standards (represented as compliance packages) s
 2.	Select **Your Subscription** under the Policy management header.
 
    ![](../Images/envset.png)
+   
+3. Under **Settings** tab, select **Security Policy (1)**, then expand **Industry & regulatory standards** and click on **Add more standards (2)**.
 
-3.	In the **Industry & regulatory standards** section, notice the out of the box standards. Click on **Add more standards**.
-
-   ![](../Images/m4ex2step3.png)
+   ![](../Images/addmore.png)
    
 4.	On the **Add regulatory compliance standards** window, locate the **Azure CIS 1.1.0** standard and click on **Add**.
 
