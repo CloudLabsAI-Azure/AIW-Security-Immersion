@@ -141,17 +141,21 @@ Every security program includes multiple workflows for incident response. The pr
 
 1.	Click on **+Add** to create a new Logic App.
 
-1.	On the Basics tab, select your subscription and resource group **asclab**.
-   
-1. Under **Instance details ** section, select **Type** as **Consumption**.   
+1.	On the Basics tab, enter the following details:
+     
+     - Subscription : Select your **Subscription** 
+      
+     - Resource group:  **asclab**.
+    
+     - Under **Instance details**, select **Type** as **Consumption**.   
+ 
+     - Logic app name: Enter **Send-RecommendationsChanges**.
 
-1.	On the Logic app name field enter **Send-RecommendationsChanges**.
+     - Location : Select the location of your **Resource group**
+     
+     - Enable log analytics : Select **No**
 
-1.	Select location, for example: **East US** (it’s recommended to use the same region as used in the previous exercises).
-
-1.	Select **No** for **Enable log analytics** option.
-
-1.	Select **Review + Create** and then click on **Create**.
+     - Select **Review + Create** and then click on **Create**.
 
     ![](../Images/logicapp-01.png)
 
