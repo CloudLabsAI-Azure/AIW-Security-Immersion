@@ -60,20 +60,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
         ![](../Images/LAW2.png)
 
-
-6.	Under the **Exported data types** section of the **Continuous export** page, select **Security recommendations, Secure score (Preview) and Security alerts** – as you can see, all recommendations, severities, controls, and alerts are selected.
-
-7.	Under the **Export configuration** section of the **Continuous export** page, select the resource group: **asclab** from the drop down menu.
-
-8.	Under the **Export target** section, select the target Log Analytics workspace: *asclab-la-{DeploymentID}*
-
-> **Note**: Deployment ID can be obtained from the Lab Environment Details tab.
-
-9. Click on the **Save**.
-
-   ![Continuous export settings page](../Images/m7ex1step9.png)
-
-> **Note:** Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
+     > **Note:** Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
 10. Search for **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
