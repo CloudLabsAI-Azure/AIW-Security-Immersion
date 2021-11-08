@@ -11,11 +11,18 @@ Azure Security Center generates detailed security alerts and recommendations. Yo
 
 Continuous export lets you fully customize what will be exported, and where it will go. Even though the feature is called continuous, there's also an option to export weekly snapshots of secure score or regulatory compliance data.
 
-1.	Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it. Next, click on **Pricing & settings** under the **Management** tab in the left side pane.
+1.  Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-2.	Select **Your Subscription**.
+     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/security%20center.png?raw=true)
+     
+1. Under **Microsoft Defender for Cloud** page, click on **Getting started (1)**, and navigate to **Install agents (2)** then select **Pricing & settings page (3)**.
 
-   ![Pricing & settings page](../Images/asc-pricing-settings-sub.gif?raw=true)
+    ![](../Images/pricingandsetting.png)
+    
+1. Select **Your Subscription** under the Environment settings.
+
+   ![](../Images/envset.png)
+
 
 3.	From the Azure Defender plans side pane, click on **Continuous export** under the **Settings** section.
 
