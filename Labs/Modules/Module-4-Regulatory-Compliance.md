@@ -138,7 +138,7 @@ Once you create your custom initiative, ASC allows you to add it as a security p
     -	Azure Backup should be enabled for Virtual Machines
     -	Audit VMs that do not use managed disks
 
-![Group create](../Images/add-policy.png)
+![Group create](../Images/policydef.png)
 
 14. Every policy on the list, has its definition name, reference ID and the associated group. However, you do need to define a group for each policy. To do so, click on the **… (1)** to open the context menu and select **Edit groups (2)**.
 
