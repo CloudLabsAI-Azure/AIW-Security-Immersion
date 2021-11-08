@@ -60,7 +60,7 @@ You can add additional industry standards (represented as compliance packages) s
 
    ![Manage compliance policies](../Images/manage.png)
 
-2.	Select **Your Subscription** under the Policy management header.
+2.	Select **Your Subscription** under the Environment settings.
 
    ![](../Images/envset.png)
    
@@ -157,16 +157,18 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 18. To assign your new security policy, type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
      ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/security%20center.png?raw=true)
+     
+1. Under **Microsoft Defender for Cloud** page, click on **Getting started (1)**, and navigate to **Install agents (2)** then select **Pricing & settings page (3)**.
 
-19. From the left navigation pane, under the **Management** section, click on **Security policy (1)**.
+    ![](../Images/pricingandsetting.png)
+    
+1. Select **Your Subscription** under the Environment settings.
 
-20. Select a **Subscription (2)** to assign your new security policy.
+   ![](../Images/envset.png)
+   
+1. Under **Settings** tab, select **Security Policy (1)**, then expand **Your custom initiatives** and click on **Add custom initiatives (2)**.
 
-  ![security policy](../Images/security-policy.png)
-
-21. On the **Security policy** page, navigate to the **Your custom initiatives** section and select **Add a custom initiative**. 
-
-  ![Add a custom initiative](../Images/add-a-custom-initiative.png)
+   ![](../Images/customeini.png)
 
 22. On **Add custom initiative** window, your new standard should be listed. Custom Benchmark initiative can be added by clicking on **Add** button. Once assigned, it will be listed in the Recommendations blade and will be added in the **Regulatory Compliance** dashboard too.
 
