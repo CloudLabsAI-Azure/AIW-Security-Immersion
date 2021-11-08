@@ -25,15 +25,15 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 3. Note that the **Subscriptions** icon on the **top menu bar** allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
 
-   ![Azure Security Center: subscriptions](../Images/asc-subscriptions.png)
+   ![Azure Security Center: subscriptions](../Images/msdefender1.png)
 
 4. Click on the **What’s new** button – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
 
-   ![Azure Security Center: what's new](../Images/asc-whatsnew.png)
+   ![Azure Security Center: what's new](../Images/msdefender2.png)
 
 5. Note the **high-level numbers** at the top menu; This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active recommendations and Security alerts.**
 
-   ![Azure Security Center: Dashboard](../Images/asc-dashboard.png)
+   ![Azure Security Center: Dashboard](../Images/msdefender3.png)
 
 8. On the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
