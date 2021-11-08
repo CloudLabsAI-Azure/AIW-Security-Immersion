@@ -117,9 +117,17 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 9.	On the **Initiative definition** blade click on **Groups**, in this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create Group**.
 
-10. Once you do that, you will be able to create a New Group. For this demonstration, we will name it **Group 1**. Next, click on **Create new** under Subgroup and name it **Sub-group1** and provide a description. Please note that additional metadata can be used as well. The location of the policyMetadata object that has additional details about the control and compliance domain. Click on **Save** to create the new group.
+   ![](../Images/creategroup.png)
+   
+10. Under **Create group**, enter the following details:
 
-   ![Group create](../Images/group-policy.png)
+    - Name : **Group-1 (1)**
+
+    - Subgroup : Click on **Create new (2)** and enter the name as **Sub-group1 (3)**. You can also provide a description. Please note that additional metadata can be used as well. The location of the policyMetadata object that has additional details about the control and compliance domain.
+    
+    - Click on **Save (4)** to create the new group.  
+
+     ![Group create](../Images/createagroup.png)
   
 11. Repeat the process to create an additional group, for example: **Group 2**.
 
