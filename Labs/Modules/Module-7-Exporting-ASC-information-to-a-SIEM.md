@@ -87,6 +87,8 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 1. Search for **Azure Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
 
+    ![](../Images/Azuresenitel.png)
+
 2.	On the **Azure Sentinel** blade, click on the **Create Azure Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by Security Center.
 
    ![connect-workspace1](../Images/sentinel.png)
