@@ -108,6 +108,8 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 8. Click on the rule you have recently created: `Testing-AutoDismiss-KV` and change the expiration to be a month ahead from the current date. Next, click on **Apply**.
 
   ![](../Images/editsuppression.png)
+  
+  > **Note** : If you receive any pop-up stating the **Warning** alert, click on **OK**
 
 10. To view the dismissed alerts: Navigate to Security alerts the main page and to the filters section. Change the **Status (1)** filter value to show only **Dismissed (2)** items and click **Ok (3)**.
 
