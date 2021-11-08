@@ -107,7 +107,7 @@ Modify the following script to include your container registry name in the place
      > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
 
-    ![](../Images/acr.png)
+    ![](../Images/vulnarability.png)
 
 11. On the recommendation page, notice the following details at the upper section:
 
