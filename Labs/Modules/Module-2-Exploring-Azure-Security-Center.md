@@ -35,16 +35,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
    ![Azure Security Center: Dashboard](../Images/asc-dashboard.png)
 
-6. From the top menu bar, **click** on **Azure subscriptions**.
-
-7. On the **Coverage** page, note that your Subscription is listed under the **Fully covered** tab – which means that your subscription is covered by Azure Defender. (you should also see a message: *Looking good! The subscriptions below are fully protected*)
-
-   ![Azure Security Center: Coverage](../Images/m2ex1.step8.png)
-
-> ⭐ Good to know: <br>
-> This page shows a list of subscriptions and their coverage type. You can use this page to find subscriptions that are not covered by Azure Security Center and identify “shadow IT” subscriptions.
-
-8. Go back to the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
+8. On the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
   > Note: It can take upto 24 hours for all the secure score data to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
 
@@ -53,13 +44,17 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 > ⭐ Good to know: <br>
 > The higher the score, the lower the identified risk level.
 
-9. From the **Security Center** page Select the  **Azure Defender** from the **Cloud Security** section.
+9. From the **Security Center** page Select the  **Workload Protections** from the **Cloud Security** section.
 
-10. On the **Azure Defender** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/workload.png?raw=true)
 
-    ![Overview: Azure Defender tile](../Images/azure-defender.png)
+10. On the **Workload Protections** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
+
+    ![Overview: Azure Defender tile](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/workload%20protection.png?raw=true)
 
 11. Next, select the **Regulatory Compliance** from the **Cloud Security** section of the Security Center page.
+
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/regulatory.png?raw=true)
 
 12. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark(2), ISO 27001, PCI DSS 3.2.1 and SOC TSP(3)**. Click on **Show all 4 (4)** to check the compliance status.
  
@@ -87,7 +82,11 @@ Exploring secure score
 
 1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it.
 
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/security%20center.png?raw=true)
+
 2. From the left navigation pane, under the **Cloud Security** section, Select **Secure Score**.
+
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/securescor.png?raw=true)
 
 3. On the Security Center | Secure Score page, review your current **Overall Secure Score**.
 
@@ -110,7 +109,7 @@ Exploring secure score
 
    ![Recommendations view](../Images/ex2.step5.png)
 
-**Exploring Security Controls and Recommendations**
+ **Exploring Security Controls and Recommendations**
 
 1. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
 
@@ -118,41 +117,21 @@ Exploring secure score
 
 2. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated recommendations. You can use this file for pivoting and reporting.
 
-3. The second part of the page contains a list of all recommendations grouped by security **Controls**:
-
-> ⭐ Notice: <br>
-> -	Each security control is a logical group of related security recommendations and represents a "security risk" that you should prioritize and mitigate.
-> -	Each control has its own score which contributes to the overall secure score.
-> -	Address the recommendations in each control, focusing on the controls worth the most points.
-> -	To get the max score, fix all recommendations for all resources in a control.
-> To understand how the score and the downstream recommendations are calculated, please visit our official [documentation](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#calculations---understanding-your-score "Understanding your score calculation").
-
-5. Look for the **Encrypt data in transit** security control under the **Controls**. You may have to scroll down to view it, if you don't see **Encrypt data in transit**, you can explore the same for **other controls** and **recommendation**.
-
-![](../Images/m2ex2.step5.png)
-
-6. Notice its max score is around 4 and the potential increase for the score. You should have more than three recommendations within this control.
-
-![](../Images/m2ex2.step6.png)
-
-7. Search for the **Secure transfer to storage accounts should be enabled** recommendation and select it. You can check for other recommendations if **Encrypt data in transit** was visible in previous step and you are checking other controller, based on that you can check recommendations under other controlers.
-
-   > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Controls**, you can continue to the next exercise and verify this later.
-
-
-   ![](../Images/ex2.step8.png)
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/csv%20report.png?raw=true)
    
-> ⭐ Notice: <br>
-> For some recommendations, a Quick Fix option is also available. Quick Fix allows you to remediate a group of resources quickly whenever possible with a single click. This option is only available for supported recommendations and enables you to quickly improve your secure score and increase the security in your environment.
+3. Under **Recommendation**, select **Storage account public access should be disallowed**.
 
-8. On the top section, notice the following:
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/recommendation.png?raw=true)
 
-- Title of the recommendation: **Secure transfer to storage accounts should be enabled**
+1. On the top section, notice the following:
+
+- Title of the recommendation: **Storage account public access should be disallowed**
 - Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
 - Severity indicator: **High**
 - Freshness interval: **30 Min** 
+- Tactics and techniques: **Initial Access**
 
-![Recommendation top menu](../Images/ex2.step9.png)
+![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/stacc%20public%20access.png?raw=true)
 
 9. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s either by following the step-by-step instructions, use the provided ARM template in the next step, or REST API to automate the process.
 
@@ -166,7 +145,7 @@ Exploring secure score
     }
     ```
     
-  ![Recommendation top menu](../Images/quick-fix-logic.png)
+  ![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/autoscript.png?raw=true)
 
 12. Click on close button present in the bottom of template window.
 
@@ -174,7 +153,7 @@ Exploring secure score
 
 13. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**.
 
-  ![](../Images/ex2.step12(2).png)
+  ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/affectedresources.png?raw=true)
   
 14. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
 
@@ -192,9 +171,11 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it. From the left navigation pane, under the **General** section, select the **Inventory** button.
 
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/inventory1.png?raw=true)
+    
 2. Hover to the **Summaries strip** at the top of the page.
 
-   ![Remediate a resource](../Images/inventory.png)
+   ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/inventory1.1.png?raw=true)
 
 > **Note**: In your environment, these numbers may not be the same, since it varies in time
 
@@ -204,19 +185,17 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 5. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with Log Analytics agent deployed but with health issues. Since we enabled the auto-provisioning in the previous module, all existing VMs are covered and connected, which means they are monitored.
 
-6. Use the **Filter by name** box to search for **linux** **(1)**. You should now see a filtered view containing your desired resource: **asclab-linux**
-
-7. Hover on the red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**.. You should expect to see **Active-xx of xx Recommendations** – these are the active recommendations you must attend.
+6. Use the **Filter by name** box to search for **linux** **(1)**. You should now see a filtered view containing your desired resource: **asclab-linux**. Hover on the red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**.. You should expect to see **Active-xx of xx Recommendations** – these are the active recommendations you must attend.
 
    ![linux-recommendations](../Images/ex3.step7.png)
 
 8. Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**. You may not see **view resource** directly due to different screen resolution, then you have to click on ellipse(...) and then select **view resource**.
 
-   ![Remediate a resource](../Images/linux-vm.png)
+   ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/viewres.png?raw=true)
 
 9. On the resource health pane for **asclab-linux**, review the virtual machine information alongside the recommendation list.
 
-    ![Remediate a resource](../Images/ex3.step9(11).png)
+    ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/healthpreview.png?raw=true)
 
 > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
@@ -252,7 +231,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 16. From the top menu, click on **Open query**.
 
-    ![Inventory: Assign tags](../Images/open-query.png)
+    ![Inventory: Assign tags](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/downloadcsvreport.png?raw=true)
 
 17. On the **Azure Resource Graph Explorer** blade, click on **Run Query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs and here it gets very powerful.
  

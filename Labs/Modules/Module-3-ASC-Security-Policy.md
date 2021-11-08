@@ -41,11 +41,10 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![](../Images/m3ex1.step5.png)
 
-6. On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists**
+6. On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists** and click on **Save**. Wait for the policy update to complete successfully.
 
     ![Modifying Security Center default policy assignment](../Images/asc-default-policy-nsg-recommendation.png)
 
-7. Click on **Save**. Wait for the policy update to complete successfully.
 
 ### Exercise 2: Explore Azure Policy
 
@@ -85,10 +84,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-2. Select **Recommendations(1)** from the left navigation pane.
-
-
-4. Select the **Management ports should be closed on your virtual machines(3)** recommendation.
+2. Select **Recommendations(1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines(2)** recommendation.
 
     > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
@@ -158,7 +154,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 6. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
-    ![](../Images/m3ex4.step6.png)
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/change%20to%20deny.png?raw=true)
 
 7. Go back to the **recommendations view**, set the **Response action** filter as **Select All**. Then type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
 
@@ -189,7 +185,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
     - Select the **SQL Server resource (1)** found on the **unhealthy resources** tab of **Affected resources** named **<inject key="SQL Server" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** 
     - click on **Fix (2)**
-    - Select the **asclab-la-XXXXXX** workspace from the dropdown
+    - Select the **asclab-la-XXXXXX (3)** workspace from the dropdown
     - Click **Fix 1 resource (4)**. 
     
 By performing above mentioned operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
@@ -266,9 +262,15 @@ Add each policy one by one:
 
     ![Assign custom initiative](../Images/asc-assign-custom-initiative.gif?raw=true)
 
-7. On the **Assign Initiative** page, select **Review + Create** and then **Create**.
+7. On the **Assign Initiative** page leave everything as default and select **Review + Create**.
+   
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/custom.png?raw=true)
+   
+8. Now click on **Create**
 
-8. Your custom initiative is now assigned.
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/createini.png?raw=true)
+   
+10. Your custom initiative is now assigned.
 
 ### Summary
 

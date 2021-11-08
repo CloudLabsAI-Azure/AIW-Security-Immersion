@@ -61,6 +61,8 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 1. Type **Security Center** in the search box on top of the **Azure Portal** and click to open it.
 
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/security%20center.png?raw=true)
+
 2. Click on the **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, select your **subscription (3)** and click **Upgrade (4)**.
 
    > **Note:** If you are not able to see subscription then it means your subscription is already upgraded, in this case you can skip step 2, 3 and continue from step 4.
@@ -91,33 +93,38 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 2. On the **Settings |Azure Defender Plans** page, select **Azure Defender on** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
 
-   ![Enable Azure Defender on the workspace level](../Images/asc-enable-defender-workspace.gif?raw=true)
+   ![Enable Azure Defender on the workspace level](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/enable%20defender.png?raw=true)
 
 3. Go back to the **Security center | Pricing & settings** page and select your **Azure subscription**.
 
-4. From **Settings |Azure Defender Plans** page, Navigate to **Auto provisioning (1)** under the Settings section.
+4. From **Settings |Azure Defender Plans** page, Navigate to **Auto provisioning** under the Settings section.
+
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/auto%20provision.png?raw=true)
 
 5. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
 
-6. Click on **Edit configuration (3)** under the **Configuration** header of Log Analytics agent for Azure VMs extension. A new window of Extension deployment configuration is opened.
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/auto%20provision1.png?raw=true)
+    
+6. Click on **Edit configuration** under the **Configuration** header of Log Analytics agent for Azure VMs extension. A new window of Extension deployment configuration is opened.
 
-  ![auto-provisioning](../Images/ex2.step6.png)
+  ![auto-provisioning](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/edit%20configuration.png?raw=true)
+  
 
 7. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **asclab-la-{DeploymentID} (2)** from the drop down menu.
 
    ![workspace configuration](../Images/connectazurevms.png)
 
-8. When **Apply changes to existing VMs?** popup window is prompted, select **Existing and new VMs**.
+8. If **Apply changes to existing VMs?** popup window is prompted, select **Existing and new VMs**.
 
    ![Apply changes](../Images/applychanges.png)
 
-9. Next, under the **Store additional raw data - Windows security events** section, select the **All Events** option.
+9. Next, under the **Store additional raw data - Windows security events** section, select the **All Events (1)** option and click on **Apply (2)**.
 
     ![Enable Azure Defender on the workspace level](../Images/allevents.png)
 
-10. Click on **Apply**.
+10. Once all the configurations are made, click on **Save** on the Settings | Auto provisioning page.
 
-11. Once all the configurations are made, click on **Save** on the Settings | Auto provisioning page.
+   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/save%20extension.png?raw=true)
 
 <br>
 
@@ -132,17 +139,28 @@ In this exercise, You will create the ASC default policy in security policy unde
 
 1. From Azure Portal, search for **security center** and select it.
 
-1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
+1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (3)**.
 
    ![Template deployment completed](../Images/m1e2s3.png)
    
-1. 1. In **Environment Settings** page, Select your subscription.
+1. In **Environment Settings** page, Select your subscription.
 
    ![Template deployment completed](../Images/m1e2.1s2.png)
    
 1. Click on **Security Policy (1)** You'll notice that in security center default policy (2) the **ASC Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
 
    ![Template deployment completed](../Images/m1e2.1s3.png)
+   
+   > **Note** : Incase if you don't see default policy, follow the below steps:
+     
+     - Under **Security center default policy**, click on **Assign Policy**
+
+        ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/assignapolicy.png?raw=true)
+     - Under **Basics** tab, enter the **Assignment name** as **ASC default**.
+      
+       ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/assisgnmentname.png?raw=true)
+      
+    - Click on **Review + Create**, followed by **Create**.
     
 ## Summary
 
