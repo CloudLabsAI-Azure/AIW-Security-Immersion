@@ -30,11 +30,9 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
    ![Contoso Security Benchmark](../Images/CSB.png)
 
-6.	Locate and expand the **A13 Communications security** compliance control. Click on the compliance domain **A13.2. Information transfer** and expand **A13.2.1. Information transfer policies and procedures** – Observe both _failed_ status.
+6.	Expand the **Contoso Security Benchmark** compliance control. Click on the **Managed identity should be used in your function app**
 
-   ![Remmediate function app](../Images/m4ex1step6.png)
-   
-   > **Note** : If you don't see the failed status it means that fixes  are already applied, you can skip steps 6-8 and continue with next steps.
+   ![Remmediate function app](../Images/CSB1.png)
 
 7.	You can also remediate assessments in this section. Click on the first assessment **Function App should only be accessible over HTTPS**.
 
