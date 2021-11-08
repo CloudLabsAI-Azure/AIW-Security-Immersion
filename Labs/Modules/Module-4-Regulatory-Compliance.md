@@ -18,11 +18,9 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
 1.	Navigate to Security Center in the Azure portal(perform if not already on the Security center page).
 
-2.	On the overview page select the **Regulatory Compliance(1)** tile (this pilar is also available on the left side under the Cloud Security section).
+2.	On the overview page select the **Regulatory Compliance(1)** tile (this pilar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard(2)** opens you can see the compliance standards currently assigned to your subscription.
 
-3.	Once the **Regulatory Compliance dashboard(2)** opens you can see the compliance standards currently assigned to your subscription.
-
-   ![](../Images/m4ex1.step3.png)
+   ![](../Images/msdefender7.png)
 
 4.	On the top strip, notice the number of **Passed vs. failed controls** across standards.
 
