@@ -24,7 +24,9 @@ Continuous export lets you fully customize what will be exported, and where it w
    ![](../Images/envset.png)
 
 
-3.	From the Azure Defender plans side pane, click on **Continuous export** under the **Settings** section.
+3.	Under **Settings** section, click on **Continuous export**.
+
+    ![](../Images/continuousexport.png)
 
 4.	Here you can configure the streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
 
