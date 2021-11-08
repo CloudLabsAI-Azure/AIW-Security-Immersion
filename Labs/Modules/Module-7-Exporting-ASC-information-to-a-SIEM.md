@@ -105,13 +105,14 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 6. Select the workspace **asclab-la-{DeploymentID}** on the **Azure Sentinel** page. 
 
-7.	From Azure Sentinel side pane, click on the **Data connectors (1)** under the **Configuration** section.
+7. From Azure Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
 
-8.	On the **Data connectors** page, use the search field and type: *Azure Defender*.
+   ![](../Images/dataconnectors.png)
+    
 
-9. Select the **Azure Defender (2)** connector and then click on **Open connector page (3)**.
+8.	On the **Data connectors** page, use the search field and type: *Azure Information Protection (Preview)*. Select the **Azure Information Protection (Preview)** connector and then click on **Open connector page **.
 
-   ![ASC pricing & settings page](../Images/m7ex2step9.png)
+   ![ASC pricing & settings page](../Images/infoprotection.png)
 
 10. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
 
