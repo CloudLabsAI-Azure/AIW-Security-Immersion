@@ -35,7 +35,9 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
    ![](../Images/proceed-01.png)
 
-9.	A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources** 
+9.	A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources**.
+
+    ![](../Images/fixingresources.png)
 
 10. Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
