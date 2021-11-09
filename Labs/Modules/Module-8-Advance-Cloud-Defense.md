@@ -16,7 +16,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 1.	Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab.
 
-2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from the left side pane.
+2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
 
 3.	Navigate to the bottom section under **Advanced protection**, click on **Just-in-time VM access** (You should see unprotected status number).
 
