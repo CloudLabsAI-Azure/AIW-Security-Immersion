@@ -15,48 +15,48 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
     ![](../Images/security%20center.png)
      
-3. Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here.
+1. Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here.
 
-  > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
     ![](../Images/recomendations1.png)
 
-5. Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
+1. Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
 
-6. Click to expand **Remediation steps (1)** – then click on the **Quick fix logic (2)** option to expose an automatic remediation script content (ARM template). Once done, **Close (3)** this window.
+1. Click to expand **Remediation steps (1)** – then click on the **Quick fix logic (2)** option to expose an automatic remediation script content (ARM template). Once done, **Close (3)** this window.
 
     ![](../Images/quick-logic.png)
 
-7. From the **unhealthy resources (1)** tab, select both **asclab-win** and **aslab-linux** **(2)** virtual machines. Click on  **Fix (3)**.
+1. From the **unhealthy resources (1)** tab, select both **asclab-win** and **aslab-linux** **(2)** virtual machines. Click on  **Fix (3)**.
 
     ![](../Images/fix-asclab-win.png)
 
-8. On the **Choose a vulnerability assessment solution** select **Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers) (1)**. Click on  **Proceed (2)**.
+1. On the **Choose a vulnerability assessment solution** select **Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers) (1)**. Click on  **Proceed (2)**.
 
     ![](../Images/proceed-01.png)
 
-9. A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources**.
+1. A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources**.
 
     ![](../Images/fixingresources.png)
 
-10. Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
+1. Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
-> **Note:** You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
+   > **Note:** You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
 
-11. Ensure the VM extension is deployed on the relevant machines:
+1. Ensure the VM extension is deployed on the relevant machines:
     - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
     - Select **asclab-win(1)**. next, click on **Extensions(2)** under the **Settings** section.
     - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
     ![](../Images/m5ex1step11.png)
 
-12. Repeat the above step (step10) for **asclab-linux** – you should expect to see a different name for the extension on the Linux platform: `LinuxAgent.AzureSecurityCenter`.
+1. Repeat the above step (step10) for **asclab-linux** – you should expect to see a different name for the extension on the Linux platform: `LinuxAgent.AzureSecurityCenter`.
 
      ![](../Images/linux-ext.png)
 
-> **Note:** There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
+    > **Note:** There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
 
-13. The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on the ASC console within 24 hours.
+1. The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on the ASC console within 24 hours.
 
 ### Exercise 2: Vulnerability assessment for Containers
 
@@ -81,20 +81,20 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 5. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
 
 6. Build a Linux container image from the hello-world image hosted at Microsoft Container Registry and push it to the existing Azure Container Registry instance on your subscription:
+ 
+   Run the following two script blocks:
 
-Run the following two script blocks:
+    ```
+    echo FROM mcr.microsoft.com/azuredocs/aci-helloworld > Dockerfile
+    ```
 
-   ```
-   echo FROM mcr.microsoft.com/azuredocs/aci-helloworld > Dockerfile
-   ```
+   Modify the following script to include your container registry name in the placeholder <your container registry name>
 
-Modify the following script to include your container registry name in the placeholder <your container registry name>
+    ```
+    az acr build --image sample/hello-world:v1 --registry <your container registry name> --file Dockerfile .
+    ```
 
-   ```
-   az acr build --image sample/hello-world:v1 --registry <your container registry name> --file Dockerfile .
-   ```
-
-  ![Build Linux container in Cloud Shell](../Images/asc-build-linux-container-cloud-shell.gif?raw=true)
+    ![Build Linux container in Cloud Shell](../Images/asc-build-linux-container-cloud-shell.gif?raw=true)
 
 7. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s.
 
@@ -129,7 +129,7 @@ Modify the following script to include your container registry name in the place
 
      ![](../Images/securitycheck1.png)
 
-Notice the vulnerability description, general information (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
+   Notice the vulnerability description, general information (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
 
 ### Exercise 3: Automate recommendations with workflow automation
 
@@ -185,7 +185,7 @@ Every security program includes multiple workflows for incident response. The pr
    
       * Email/Username: <inject key="AzureAdUserEmail"></inject> 
 
-   > Later, you will use the same email address to check if you have received an email using workflow automation feature.
+    > Later, you will use the same email address to check if you have received an email using workflow automation feature.
 
 1. Click in the **Subject box**, then type: **Recommendation changed:**
 
@@ -245,13 +245,13 @@ Every security program includes multiple workflows for incident response. The pr
      
    Click **Create** to complete the task.
 
-    ![](../Images/actions.png)
+     ![](../Images/actions.png)
 
 4. Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations.
 
-Once you start to get email notifications, you can disable the automation by selecting the workflow and clicking on **Disable**.
+  Once you start to get email notifications, you can disable the automation by selecting the workflow and clicking on **Disable**.
 
-> Please be aware that if your trigger is a recommendation that has "sub-recommendations" / "nested recommendations", the logic app will not trigger for every new security finding when the status of the parent has changed.
+  > Please be aware that if your trigger is a recommendation that has "sub-recommendations" / "nested recommendations", the logic app will not trigger for every new security finding when the status of the parent has changed.
 
 5. Once the automation is automatically triggered, you should expect the email message to look like the screenshot below:
 
