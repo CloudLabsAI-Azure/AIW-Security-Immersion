@@ -112,6 +112,8 @@ It maps the current state of these items with the state during the previous scan
 
 > **Note**: Deployment ID can be obtained from the Lab Environment output page.
 
+ ![](../Images/FIM.png)
+
 4.	On the Enable File Integrity Monitoring window, review the default **recommended settings** for Windows files, Registry and Linux files.
 
 5.	Click on **Enable File Integrity Monitoring** button.
