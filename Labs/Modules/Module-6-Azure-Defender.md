@@ -56,13 +56,13 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
     
 9. After the Sample alerts creating in progress appear, wait for the process to complete. You can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
 
-10.	On the alerts page, you should now see 5 different sample events for a resource named `Sample-KV`. Each alert has the `Sample alert` banner next to it.
+10. On the alerts page, you should now see 5 different sample events for a resource named `Sample-KV`. Each alert has the `Sample alert` banner next to it.
 
-11.	Select **Access from a TOR exit node to a Key Vault** alert then click on the **View full details** to see additional information related to the event.
+11. Select **Access from a TOR exit node to a Key Vault** alert then click on the **View full details** to see additional information related to the event.
 
      ![Create sample virtual machine security alerts](../Images/TOR-exit-node.png)
 
-12.	At the top menu, dismiss the alert by changing the status from Active to **Dismissed** and click on **OK**.
+12. At the top menu, dismiss the alert by changing the status from Active to **Dismissed** and click on **OK**.
 
      ![add](../Images/dismiss.png)
 
