@@ -225,7 +225,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 14. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Azure Defender (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again click on **Ok**
 
-    ![Inventory: Assign tags](../Images/download-csv.png)
+    ![Inventory: Assign tags](../Images/inventory2.png)
 
 15. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Azure Defender plan (when applicable).
 
