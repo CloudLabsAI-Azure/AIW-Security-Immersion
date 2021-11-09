@@ -62,11 +62,9 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
      ![Create sample virtual machine security alerts](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Images/TOR-exit-node.png)
 
-13.	At the top menu, dismiss the alert by changing the status from Active to **Dismissed** and click on **OK**.
+12.	At the top menu, dismiss the alert by changing the status from Active to **Dismissed** and click on **OK**.
 
      ![add](../Images/dismiss.png)
-
-    > **Note:** You can choose to trigger sample alerts for additional Azure Defender plans.
 
 ### Exercise 2: Alert suppression
 
