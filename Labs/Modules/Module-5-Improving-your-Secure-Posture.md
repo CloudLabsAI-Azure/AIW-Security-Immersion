@@ -103,11 +103,10 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 9. Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
 10. Click on **Recommendations (1)** from the left side pane under the **General** section. Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys) (2)**.
-   
+ 
+     ![asd](../Images/vulnarability.png)
+
     > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
-
-
-    ![](../Images/vulnarability.png)
 
 11. On the recommendation page, notice the following details at the upper section:
 
