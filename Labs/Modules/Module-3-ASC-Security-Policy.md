@@ -29,7 +29,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Security center default policy](../Images/asc-default-policy-subscription.png)
 
-> **Note:** This policy is enabled by default on your subscription as per Azure Security Center recommendations. This is the default set of policies monitored by Azure Security Center. It is automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
+    > **Note:** This policy is enabled by default on your subscription as per Azure Security Center recommendations. This is the default set of policies monitored by Azure Security Center. It is automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
 
 3. To view the policy, click on **ASC Default (subscription...)**.
 
@@ -82,7 +82,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 Resource exemption will allow increased granularity for you to fine-tune recommendations by providing the ability to exempt certain resources from evaluation.
 When working with a recommendation, you can create an exemption by clicking the ellipsis menu on the right side and then select create an exemption.
 
-> **Note:** Exemptions is a premium Azure policy capability that's offered for Azure Defender customers with no additional cost. For other users, charges may apply in the future.
+   > **Note:** Exemptions is a premium Azure policy capability that's offered for Azure Defender customers with no additional cost. For other users, charges may apply in the future.
 
 1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
@@ -145,7 +145,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 4. From the filtered recommendations list, select **Secure transfer to storage accounts should be enabled**.
 
-  > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
 5. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
@@ -161,7 +161,6 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 7. Go back to the **recommendations view**, set the **Response action** filter as **Select All**. Then type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
 
    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
-
 
     ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
