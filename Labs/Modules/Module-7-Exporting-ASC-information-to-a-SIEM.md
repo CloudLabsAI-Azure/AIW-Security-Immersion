@@ -53,7 +53,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
       - Subscription : Select your **Subscription (8)**
 
-       - Select target workspace: Select **asclab-la-{DeploymentID} (9)**
+      - Select target workspace: Select **asclab-la-{DeploymentID} (9)**
 
      -  Click on **Save (10)**
 
