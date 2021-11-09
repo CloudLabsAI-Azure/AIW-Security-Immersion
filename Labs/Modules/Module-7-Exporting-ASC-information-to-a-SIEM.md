@@ -110,9 +110,9 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
    ![](../Images/dataconnectors.png)
     
 
-8.	On the **Data connectors** page, use the search field and type: *Azure Information Protection (Preview)*. Select the **Azure Information Protection (Preview)** connector and then click on **Open connector page **.
+8.	On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Microsoft Defender for Cloud** connector and then click on **Open connector page **.
 
-   ![ASC pricing & settings page](../Images/infoprotection.png)
+   ![ASC pricing & settings page](../Images/defender.png)
 
 10. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
 
