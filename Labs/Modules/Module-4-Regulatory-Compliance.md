@@ -18,39 +18,39 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
 1.	Navigate to Security Center in the Azure portal(perform if not already on the Security center page).
 
-2.	On the overview page select the **Regulatory Compliance(1)** tile (this pilar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard(2)** opens you can see the compliance standards currently assigned to your subscription.
+1.	On the overview page select the **Regulatory Compliance(1)** tile (this pilar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard(2)** opens you can see the compliance standards currently assigned to your subscription.
 
-   ![](../Images/msdefender7.png)
+    ![](../Images/msdefender7.png)
 
-4.	On the top strip, notice the number of **Passed vs. failed controls** across standards.
+1.	On the top strip, notice the number of **Passed vs. failed controls** across standards.
 
-![Regulatory compliance assessment and standards](../Images/asc-regulatory-compliance-assessment-standards.png)
+    ![Regulatory compliance assessment and standards](../Images/asc-regulatory-compliance-assessment-standards.png)
 
-5.	On the main page, select **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
+1.	On the main page, select **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
 
-   ![Contoso Security Benchmark](../Images/CSB.png)
+    ![Contoso Security Benchmark](../Images/CSB.png)
 
-6.	Expand the **Contoso Security Benchmark** compliance control. Click on the **Managed identity should be used in your function app**
+1.	Expand the **Contoso Security Benchmark** compliance control. Click on the **Managed identity should be used in your function app**
 
-   ![Remmediate function app](../Images/CSB1.png)
+    ![Remmediate function app](../Images/CSB1.png)
    
-7. Under **Managed identity should be used in your function app** tab, expand **Affected resources**.
+1. Under **Managed identity should be used in your function app** tab, expand **Affected resources**.
 
-   ![](../Images/affectedresources1.png)
+    ![](../Images/affectedresources1.png)
    
 1. Now under **Healthy resources (1)**, you can observe the **Function app (2)**.
 
-   ![](../Images/healthyresources.png)
+    ![](../Images/healthyresources.png)
 
-9.	Return to the dashboard. Here, you can export the regulatory standard compliance status report as a PDF or CSV file. From the top menu bar, click on **Download report**.
+1.	Return to the dashboard. Here, you can export the regulatory standard compliance status report as a PDF or CSV file. From the top menu bar, click on **Download report**.
 
-   ![](../Images/downloadreport.png)
+    ![](../Images/downloadreport.png)
 
-10. On the Report standard dropdown menu, select **PCI DSS 3.2.1 (1)** and format as **PDF (2)**. Click on **Download (3)**.
+1. On the Report standard dropdown menu, select **PCI DSS 3.2.1 (1)** and format as **PDF (2)**. Click on **Download (3)**.
 
-   ![](../Images/downloadrepo1.png)
+     ![](../Images/downloadrepo1.png)
 
-11. A local PDF file is now stored on your machine. Open the **PCI DSS 3.2.1 Compliance Report** and explore it – This report summarizes the status of those assessments on your environment, as mapped to the associated controls.
+1. A local PDF file is now stored on your machine. Open the **PCI DSS 3.2.1 Compliance Report** and explore it – This report summarizes the status of those assessments on your environment, as mapped to the associated controls.
 
 ### Exercise 2: Adding new standards
 
@@ -58,30 +58,30 @@ You can add additional industry standards (represented as compliance packages) s
 
 1.	On **Regulatory Compliance** page, select **Manage compliance policies** from the top menu bar.
 
-   ![Manage compliance policies](../Images/manage.png)
+    ![Manage compliance policies](../Images/manage.png)
 
 2.	Select **Your Subscription** under the Environment settings.
 
-   ![](../Images/envset.png)
+    ![](../Images/envset.png)
    
 3. Under **Settings** tab, select **Security Policy (1)**, then expand **Industry & regulatory standards** and click on **Add more standards (2)**.
 
-   ![](../Images/addmore.png)
+    ![](../Images/addmore.png)
    
 4.	On the **Add regulatory compliance standards** window, locate the **Azure CIS 1.1.0** standard and click on **Add**.
 
-   ![Manage compliance policies](../Images/add-more-standards.png)
+    ![Manage compliance policies](../Images/add-more-standards.png)
 
 5.	Click on **Review + create** and then **Create**.
 
-   ![Review + create](../Images/add-more-standards-create.png)
+    ![Review + create](../Images/add-more-standards-create.png)
 
 > ❗ Important: <br>
 > It will take a while until the change takes an effect (approximately 2-3 hours).
 
 6.	**Azure CIS 1.1.0 (New)** should now be listed on the standards list.
 
-   ![Add CIS 1.1.0 (New) Standard](../Images/m4ex2step6.png)
+    ![Add CIS 1.1.0 (New) Standard](../Images/m4ex2step6.png)
 
 ### Exercise 3: Creating your own benchmark
 
@@ -91,15 +91,15 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
 1. In the search box located on the top of the Azure Portal page, search for Policy and click on it.
 
-   ![Add CIS 1.1.0 (New) Standard](../Images/m3ex2.step1.png)
+    ![Add CIS 1.1.0 (New) Standard](../Images/m3ex2.step1.png)
 
-2.	From the left pane of the **Policy** page, select **Definitions**.
+1.	From the left pane of the **Policy** page, select **Definitions**.
 
-3.	From the top menu, select **+ initiative definition** to create a new policy set definition.
+1.	From the top menu, select **+ initiative definition** to create a new policy set definition.
 
-   ![Benchmark Policy](../Images/benchmark-policy.png)
+    ![Benchmark Policy](../Images/benchmark-policy.png)
 
-4.	Under the **Basics** tab, enter the following steps:
+1.	Under the **Basics** tab, enter the following steps:
 
    - Initiative location : select your **Subscription (1)**
     
@@ -113,13 +113,13 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
    - Click on **Next (7)**
 
-   ![Benchmark Next](../Images/benchmark-create.png)
+    ![Benchmark Next](../Images/benchmark-create.png)
 
-9.	On the **Initiative definition** blade click on **Groups**, in this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create Group**.
+1.	On the **Initiative definition** blade click on **Groups**, in this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create Group**.
 
-   ![](../Images/creategroup.png)
+    ![](../Images/creategroup.png)
    
-10. Under **Create group**, enter the following details:
+1. Under **Create group**, enter the following details:
 
     - Name : **Group-1 (1)**
 
@@ -129,32 +129,32 @@ Once you create your custom initiative, ASC allows you to add it as a security p
 
      ![Group create](../Images/createagroup.png)
   
-11. Repeat the process to create an additional group, for example: **Group 2**.
+1. Repeat the process to create an additional group, for example: **Group 2**.
 
-12. Now you should have two groups to help you organize your policies within the initiative.
+1. Now you should have two groups to help you organize your policies within the initiative.
 
-13. On the **Initiative definition** blade, click on the **Policies** tab. Here you can add policy definitions, both built-in and custom. Click **Add policy definition(s)**. Select your desired polices, if you create a benchmark, you can also leverage existing policy definitions from **Microsoft managed** tab. For example, you can choose the following policies and select **Add**:
+1. On the **Initiative definition** blade, click on the **Policies** tab. Here you can add policy definitions, both built-in and custom. Click **Add policy definition(s)**. Select your desired polices, if you create a benchmark, you can also leverage existing policy definitions from **Microsoft managed** tab. For example, you can choose the following policies and select **Add**:
     -	Audit virtual machines without disaster recovery configured
     -	Azure Backup should be enabled for Virtual Machines
     -	Audit VMs that do not use managed disks
 
-![Group create](../Images/policydef.png)
+     ![Group create](../Images/policydef.png)
 
-14. Every policy on the list, has its definition name, reference ID and the associated group. However, you do need to define a group for each policy. To do so, click on the **… (1)** to open the context menu and select **Edit groups (2)**.
+1. Every policy on the list, has its definition name, reference ID and the associated group. However, you do need to define a group for each policy. To do so, click on the **… (1)** to open the context menu and select **Edit groups (2)**.
 
-   ![edit group](../Images/edit-group.png)
+     ![edit group](../Images/edit-group.png)
 
-15. Make sure all policies are associated to a group. Please notice that policies can be associated to multiple groups. Here we are selecting **Group 1 (1)** and select **Save (2)**.
+1. Make sure all policies are associated to a group. Please notice that policies can be associated to multiple groups. Here we are selecting **Group 1 (1)** and select **Save (2)**.
 
-    ![edit group](../Images/edit-group1.png)
+     ![edit group](../Images/edit-group1.png)
 
-16. You can assign policy and initiative parameters to be used during the assignment process. Skip this section and click on **Review + Create** to validate your settings. Then, click on **Create**
+1. You can assign policy and initiative parameters to be used during the assignment process. Skip this section and click on **Review + Create** to validate your settings. Then, click on **Create**
 
-17. You should now see your new initiative listed here – **Custom Benchmark** along with the additional metadata (scope, category, etc.)
+1. You should now see your new initiative listed here – **Custom Benchmark** along with the additional metadata (scope, category, etc.)
 
-   ![](../Images/customben.png)
+     ![](../Images/customben.png)
 
-18. To assign your new security policy, type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+1. To assign your new security policy, type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
      ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/security%20center.png?raw=true)
      
@@ -164,19 +164,19 @@ Once you create your custom initiative, ASC allows you to add it as a security p
     
 1. Select **Your Subscription** under the Environment settings.
 
-   ![](../Images/envset.png)
+    ![](../Images/envset.png)
    
 1. Under **Settings** tab, select **Security Policy (1)**, then expand **Your custom initiatives** and click on **Add custom initiatives (2)**.
 
-   ![](../Images/customeini.png)
+    ![](../Images/customeini.png)
 
-22. On **Add custom initiative** window, your new standard should be listed. Custom Benchmark initiative can be added by clicking on **Add** button. Once assigned, it will be listed in the Recommendations blade and will be added in the **Regulatory Compliance** dashboard too.
+1. On **Add custom initiative** window, your new standard should be listed. Custom Benchmark initiative can be added by clicking on **Add** button. Once assigned, it will be listed in the Recommendations blade and will be added in the **Regulatory Compliance** dashboard too.
 
-  ![Custom Initiative](../Images/custom-initiative.png)
+   ![Custom Initiative](../Images/custom-initiative.png)
 
-23. Follow the **on-screen instructions to assign it on the desired scope**. If you decide to include parameters in your initiative here is where you can do it. Click on **Review + create** to start the validation process and then click on **Create**.
+1. Follow the **on-screen instructions to assign it on the desired scope**. If you decide to include parameters in your initiative here is where you can do it. Click on **Review + create** to start the validation process and then click on **Create**.
 
-24. After some time your new custom benchmark is displayed in Regulatory compliance dashboard along with the built-in regulatory standards.
+1. After some time your new custom benchmark is displayed in Regulatory compliance dashboard along with the built-in regulatory standards.
 
 ### Summary
 
