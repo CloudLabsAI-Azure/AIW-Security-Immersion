@@ -99,17 +99,17 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
    > **Note:** you can create suppression rules on a management group level by using a built-in policy definition named Deploy - Configure suppression rules for Azure Security Center alerts in Azure Policy. To suppress alerts at the subscription level, you can use the Azure portal or REST APIs.
 
-7. You can change your existing suppression rules or create new ones: On the **Security alerts** page from the top menu, select **Suppression rules**. 
+5. You can change your existing suppression rules or create new ones: On the **Security alerts** page from the top menu, select **Suppression rules**. 
 
     ![Create sample virtual machine security alerts](../Images/m6ex2step7.png)
 
-8. Click on the rule you have recently created: `Testing-AutoDismiss-KV` and change the expiration to be a month ahead from the current date. Next, click on **Apply**.
+6. Click on the rule you have recently created: `Testing-AutoDismiss-KV` and change the expiration to be a month ahead from the current date. Next, click on **Apply**.
 
     ![](../Images/editsuppression.png)
   
   > **Note** : If you receive any pop-up stating the **Warning** alert, click on **OK**
 
-10. To view the dismissed alerts: Navigate to Security alerts the main page and to the filters section. Change the **Status (1)** filter value to show only **Dismissed (2)** items and click **Ok (3)**.
+7. To view the dismissed alerts: Navigate to Security alerts the main page and to the filters section. Change the **Status (1)** filter value to show only **Dismissed (2)** items and click **Ok (3)**.
 
      ![Create sample virtual machine security alerts](../Images/m6ex2step10.png)
 
