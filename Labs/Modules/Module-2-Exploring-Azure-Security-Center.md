@@ -188,57 +188,55 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
     ![linux-recommendations](../Images/ex3.step7.png)
 
-8. Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**. You may not see **view resource** directly due to different screen resolution, then you have to click on ellipse(...) and then select **view resource**.
+7. Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**. You may not see **view resource** directly due to different screen resolution, then you have to click on ellipse(...) and then select **view resource**.
 
     ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/viewres.png?raw=true)
 
-9. On the resource health pane for **asclab-linux**, review the virtual machine information alongside the recommendation list.
+8. On the resource health pane for **asclab-linux**, review the virtual machine information alongside the recommendation list.
 
     ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/healthpreview.png?raw=true)
 
     > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
-10. Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (Unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
+9. Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (Unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
 
      ![Remediate a resource](../Images/filter-rg.png)
 
     > **Note:** The list can be filtered and sorted.
 
-11. From the filter menu, select the **Resource Group** filter and **select all** under the Value. Again from the filter menu, select **Recommendations**, uncheck the **select all** option under the Value and then select the **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
+10. From the filter menu, select the **Resource Group** filter and **select all** under the Value. Again from the filter menu, select **Recommendations**, uncheck the **select all** option under the Value and then select the **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
 
     > **Note**: If you don't see **Auditing on SQL Server should be enabled** in search resultsthat means it is not loaded yet to recommendations and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Recommendations**, you can note down this step number then continue to the next exercise and verify this later.
 
-12. Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
+11. Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
-* Filter the **Resource type** column to include only **App Services**: Select the **Resource type** filter and select **app services** under the Value and Click on **OK**
-* **Select** the checkboxes of the two app services named *asclab-fa-xx* and *asclab-app-xx*. (Here **xx** is the unique id of resource).
-* From the top menu, click **Assign tags**
-* Assign `Environment` as the name and  `Production` as the value.
-* Click **Save**.
+  * Filter the **Resource type** column to include only **App Services**: Select the **Resource type** filter and select **app services** under the Value and Click on **OK**
+  * **Select** the checkboxes of the two app services named *asclab-fa-xx* and *asclab-app-xx*. (Here **xx** is the unique id of resource).
+  * From the top menu, click **Assign tags**
+  * Assign `Environment` as the name and  `Production` as the value.
+  * Click **Save**.
 
-> **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this later.
+  > **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this later.
 
-   ![Inventory: Assign tags](../Images/assigntagsv1.gif?raw=true)
+    ![Inventory: Assign tags](../Images/assigntagsv1.gif?raw=true)
    
- 
+12. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
-13. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
-
-14. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Azure Defender (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again click on **Ok**
+13. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Azure Defender (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again click on **Ok**
 
     ![Inventory: Assign tags](../Images/inventory2.png)
 
-15. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Azure Defender plan (when applicable).
+14. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Azure Defender plan (when applicable).
 
-16. From the top menu, click on **Open query**.
+15. From the top menu, click on **Open query**.
 
     ![Inventory: Assign tags](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/downloadcsvreport.png?raw=true)
 
-17. On the **Azure Resource Graph Explorer** blade, click on **Run Query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs and here it gets very powerful.
+16. On the **Azure Resource Graph Explorer** blade, click on **Run Query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs and here it gets very powerful.
  
     ![Inventory: Assign tags](../Images/run-query.png)
 
-18. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as *asc-filtered-query* and select **save**.
+17. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as *asc-filtered-query* and select **save**.
 
 > ⭐ Good to know: <br>
 > The Inventory dashboard is fully built on top of Azure Resource Graph (ARG) which stores all of ASC security posture data and leveraging its powerful KQL engine.
