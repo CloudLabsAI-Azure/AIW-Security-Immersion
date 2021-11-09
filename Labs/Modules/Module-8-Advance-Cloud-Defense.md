@@ -37,7 +37,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
        1. Navigate back to **Security Center** and select **Workload protections** under **Cloud Security** from the left side pane then click on **Just-in-time VM access**.
        1. Review the **Configured** tab, now you should see your VM configured: `asclab-win`
 
-         ![](../Images/justintime1.png)
+           ![](../Images/justintime1.png)
     
     > If you have followed above instructions to enable **Just-in-time VM access**, you can skip the Steps 5-8 and continue from Step9.
     
