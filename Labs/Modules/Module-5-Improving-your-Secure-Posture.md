@@ -11,31 +11,31 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 **Explore vulnerability assessment recommendations:**
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-     ![](../Images/security%20center.png)
+    ![](../Images/security%20center.png)
      
-3.	Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here.
+3. Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here.
 
   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-   ![](../Images/recomendations1.png)
+    ![](../Images/recomendations1.png)
 
-5.	Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
+5. Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
 
-6.	Click to expand **Remediation steps (1)** – then click on the **Quick fix logic (2)** option to expose an automatic remediation script content (ARM template). Once done, **Close (3)** this window.
+6. Click to expand **Remediation steps (1)** – then click on the **Quick fix logic (2)** option to expose an automatic remediation script content (ARM template). Once done, **Close (3)** this window.
 
-   ![](../Images/quick-logic.png)
+    ![](../Images/quick-logic.png)
 
-7.	From the **unhealthy resources (1)** tab, select both **asclab-win** and **aslab-linux** **(2)** virtual machines. Click on  **Fix (3)**.
+7. From the **unhealthy resources (1)** tab, select both **asclab-win** and **aslab-linux** **(2)** virtual machines. Click on  **Fix (3)**.
 
-   ![](../Images/fix-asclab-win.png)
+    ![](../Images/fix-asclab-win.png)
 
-8.	On the **Choose a vulnerability assessment solution** select **Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers) (1)**. Click on  **Proceed (2)**.
+8. On the **Choose a vulnerability assessment solution** select **Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers) (1)**. Click on  **Proceed (2)**.
 
-   ![](../Images/proceed-01.png)
+    ![](../Images/proceed-01.png)
 
-9.	A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources**.
+9. A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources**.
 
     ![](../Images/fixingresources.png)
 
@@ -48,11 +48,11 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
     - Select **asclab-win(1)**. next, click on **Extensions(2)** under the **Settings** section.
     - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
-   ![](../Images/m5ex1step11.png)
+    ![](../Images/m5ex1step11.png)
 
 12. Repeat the above step (step10) for **asclab-linux** – you should expect to see a different name for the extension on the Linux platform: `LinuxAgent.AzureSecurityCenter`.
 
-   ![](../Images/linux-ext.png)
+     ![](../Images/linux-ext.png)
 
 > **Note:** There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
 
@@ -68,11 +68,11 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 2. Copy the name or your container registry, for example: *asclabcrktfvrxcne4kki*
 
-   ![acr-select](../Images/m5ex2step2.png)
+    ![acr-select](../Images/m5ex2step2.png)
 
 3. In the Azure portal, open the **Cloud Shell** pane by selecting the toolbar icon directly to the right of the search textbox or click on [Azure Cloud Shell](https://shell.azure.com/).
 
-   ![cloudshell-select](../Images/ex4-cloudshell.png)
+    ![cloudshell-select](../Images/ex4-cloudshell.png)
 
 4. If prompted to select either Bash or PowerShell, select **Bash**.
 
@@ -80,7 +80,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 5. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
 
-6.	Build a Linux container image from the hello-world image hosted at Microsoft Container Registry and push it to the existing Azure Container Registry instance on your subscription:
+6. Build a Linux container image from the hello-world image hosted at Microsoft Container Registry and push it to the existing Azure Container Registry instance on your subscription:
 
 Run the following two script blocks:
 
@@ -94,13 +94,13 @@ Modify the following script to include your container registry name in the place
    az acr build --image sample/hello-world:v1 --registry <your container registry name> --file Dockerfile .
    ```
 
-![Build Linux container in Cloud Shell](../Images/asc-build-linux-container-cloud-shell.gif?raw=true)
+  ![Build Linux container in Cloud Shell](../Images/asc-build-linux-container-cloud-shell.gif?raw=true)
 
 7. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s.
 
 8. The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
-9.	Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+9. Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
 10. Click on **Recommendations (1)** from the left side pane under the **General** section. Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys) (2)**.
    
@@ -115,11 +115,11 @@ Modify the following script to include your container registry name in the place
     - Severity: **High**
     - Total vulnerabilities: **expect to see more than 2 vulnerabilities**
 
-   ![](../Images/vulnerabilities.png)
+     ![](../Images/vulnerabilities.png)
 
 12. Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
 
-    ![](../Images/containerregistry.png)
+     ![](../Images/containerregistry.png)
 
 13. On the **Security Checks** section, notice the number of vulnerabilities.
 
@@ -127,7 +127,7 @@ Modify the following script to include your container registry name in the place
 
     >XXXXXX is the ID of the security finding.
 
-    ![](../Images/securitycheck1.png)
+     ![](../Images/securitycheck1.png)
 
 Notice the vulnerability description, general information (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
 
@@ -137,11 +137,11 @@ Every security program includes multiple workflows for incident response. The pr
 
 **Create a new Logic App:**
 
-1.	Search for **Logic Apps** in the search box located on the top of the **Azure Portal** page and click on it, or [click here](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Logic%2Fworkflows).
+1. Search for **Logic Apps** in the search box located on the top of the **Azure Portal** page and click on it, or [click here](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Logic%2Fworkflows).
 
-1.	Click on **+Add** to create a new Logic App.
+1. Click on **+Add** to create a new Logic App.
 
-1.	On the Basics tab, enter the following details:
+1. On the Basics tab, enter the following details:
      
      - Subscription : Select your **Subscription** 
       
@@ -157,13 +157,13 @@ Every security program includes multiple workflows for incident response. The pr
 
      - Select **Review + Create** and then click on **Create**.
 
-    ![](../Images/logicapp-01.png)
+      ![](../Images/logicapp-01.png)
 
-1.	When the **Deployment** is completed click on **Go to resource**
+1. When the **Deployment** is completed click on **Go to resource**
 
     ![](../Images/gotoresource.png)
 
-1.	After the Logic Apps Designer opens, select **Blank Logic App**.
+1. After the Logic Apps Designer opens, select **Blank Logic App**.
 
     ![](../Images/open-logic-app.png)
 
@@ -177,7 +177,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 1. From the list of actions, select **Send an email (V2)** action to add it to the Designer.
      
-     ![](../Images/emailv2.png)
+    ![](../Images/emailv2.png)
 
    > **Note:** You will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
@@ -208,17 +208,17 @@ Every security program includes multiple workflows for incident response. The pr
 
 1. Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
 
-   ![Logic App worklfow](../Images/outlook-send.png)
+    ![Logic App worklfow](../Images/outlook-send.png)
 
 **Create a new workflow automation instance**
 
-1.	Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+1. Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-2.	Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **Add workflow automation (2)**.
+2. Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **Add workflow automation (2)**.
 
-      ![](../Images/workflow.png)
+    ![](../Images/workflow.png)
 
-3.	A pane appears on the right side. Enter the following for each field:
+3. A pane appears on the right side. Enter the following for each field:
     
    - General:
    
@@ -245,9 +245,9 @@ Every security program includes multiple workflows for incident response. The pr
      
    Click **Create** to complete the task.
 
-   ![](../Images/actions.png)
+    ![](../Images/actions.png)
 
-4.	Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations.
+4. Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations.
 
 Once you start to get email notifications, you can disable the automation by selecting the workflow and clicking on **Disable**.
 
@@ -255,9 +255,9 @@ Once you start to get email notifications, you can disable the automation by sel
 
 5. Once the automation is automatically triggered, you should expect the email message to look like the screenshot below:
 
-   ![Workflow automation generated email message](../Images/m5ex3step5.png)
+    ![Workflow automation generated email message](../Images/m5ex3step5.png)
 
-6.	Test/trigger your automation manually:
+6. Test/trigger your automation manually:
 
    - On the Security Center pane, click on **Recommendations (1)** from the **General** section.
    - Under **Remediate vulnerabilities (2)** look for recommendation **Azure Kubernetes Service clusters should have the Azure Policy Add-on for Kubernetes installed (3)** and click on it.
@@ -276,33 +276,33 @@ Once you start to get email notifications, you can disable the automation by sel
 Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
 Azure Secure Score data is available in ARG so you can query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
 
-1.	Search for **arg** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
+1. Search for **arg** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
 
-![Resource Graph Explorer](../Images/m5ex4step1.png)
+    ![Resource Graph Explorer](../Images/m5ex4step1.png)
 
-2.	Paste the following KQL query and then select **Run query**.
+2. Paste the following KQL query and then select **Run query**.
 
-   ```
-   SecurityResources
-   | where type == 'microsoft.security/securescores'
-   | extend current = properties.score.current, max = todouble(properties.score.max)
-   | project subscriptionId, current, max, percentage = ((current / max)*100)
-   ```
+     ```
+     SecurityResources
+     | where type == 'microsoft.security/securescores'
+     | extend current = properties.score.current, max = todouble(properties.score.max)
+     | project subscriptionId, current, max, percentage = ((current / max)*100)
+     ```
 
-   ![](../Images/run-query1.png)
+    ![](../Images/run-query1.png)
 
-3.	You should now see your subscription ID listed here along with the current score (in points), the max score and the score in percentage.
+3. You should now see your subscription ID listed here along with the current score (in points), the max score and the score in percentage.
 
-4.	To return the status of all the security controls, select **New query**. Next, paste the following KQL query and click on **Run query**:
+4. To return the status of all the security controls, select **New query**. Next, paste the following KQL query and click on **Run query**:
 
-   ```
-   SecurityResources
-   | where type == 'microsoft.security/securescores/securescorecontrols'
-   | extend SecureControl = properties.displayName, unhealthy = properties.unhealthyResourceCount, currentscore = properties.score.current, maxscore = properties.score.max
-   | project SecureControl , unhealthy, currentscore, maxscore
-   ```
+     ```
+     SecurityResources
+     | where type == 'microsoft.security/securescores/securescorecontrols'
+     | extend SecureControl = properties.displayName, unhealthy = properties.unhealthyResourceCount, currentscore = properties.score.current, maxscore = properties.score.max
+     | project SecureControl , unhealthy, currentscore, maxscore
+     ```
 
-   ![](../Images/run-query2.png)
+     ![](../Images/run-query2.png)
 
 More details on the [official article](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls) or on the [blog post](https://techcommunity.microsoft.com/t5/azure-security-center/querying-your-secure-score-across-multiple-subscriptions-in/ba-p/1749193)
 
