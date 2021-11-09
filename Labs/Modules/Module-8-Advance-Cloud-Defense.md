@@ -18,6 +18,8 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
 
+     ![](../Images/workloadprotection1.png)
+
 3.	Navigate to the bottom section under **Advanced protection**, click on **Just-in-time VM access** (You should see unprotected status number).
 
 ![Advanced protection options](../Images/m8ex1.step3.png)
