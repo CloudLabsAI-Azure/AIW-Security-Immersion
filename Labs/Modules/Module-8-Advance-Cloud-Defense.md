@@ -83,7 +83,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 Application control helps you deal with malicious and/or unauthorized software, by allowing only specific applications to run on your machines.
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from the left side pane.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
 
 2.	Navigate to the bottom section under Advanced protection, click on **Adaptive application control**
 
