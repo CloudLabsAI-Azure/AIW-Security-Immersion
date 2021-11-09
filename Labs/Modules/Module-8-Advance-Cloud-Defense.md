@@ -16,7 +16,9 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 1.	Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab.
 
-2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from the left side pane.
+2.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
+
+     ![](../Images/workloadprotection1.png)
 
 3.	Navigate to the bottom section under **Advanced protection**, click on **Just-in-time VM access** (You should see unprotected status number).
 
@@ -24,14 +26,18 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 4.	When you are in the **Just-in-time VM access** page, select the **Not configured** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
 
+     ![](../Images/justintime.png)
+
     > **Note**: If the virtual machines `asclab-linux` and `asclab-win` are present under **Unsuppoted** tab then follow the below instructions to enable **Just-in-time VM access**.
 
      
        1. Navigate to **asclab** resource group and select **asclab-win** virtual machine.
        1. Select **Configuration** from the left-hand side menu and click on **Enable Just-in-time**
           ![](../Images/jit-01.png)
-       1. Navigate back to **Security Center** and select **Azure Defender** under **Cloud Security** from the left side pane then click on **Just-in-time VM access**.
+       1. Navigate back to **Security Center** and select **Workload protections** under **Cloud Security** from the left side pane then click on **Just-in-time VM access**.
        1. Review the **Configured** tab, now you should see your VM configured: `asclab-win`
+
+           ![](../Images/justintime1.png)
     
     > If you have followed above instructions to enable **Just-in-time VM access**, you can skip the Steps 5-8 and continue from Step9.
     
@@ -77,7 +83,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 Application control helps you deal with malicious and/or unauthorized software, by allowing only specific applications to run on your machines.
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from the left side pane.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
 
 2.	Navigate to the bottom section under Advanced protection, click on **Adaptive application control**
 
@@ -96,7 +102,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 File integrity monitoring (FIM), also known as change monitoring, examines operating system files, Windows registries, application software, Linux system files, and more. It detects and reports changes that might indicate an attack.
 It maps the current state of these items with the state during the previous scan and alerts you if any suspicious modifications have been made. To enable FIM, follow the instructions below:
 
-1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Azure Defender** under **Cloud Security** from the left side pane.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
 
 2.	Navigate to the bottom section under Advanced protection, click on the **File Integrity Monitoring** tile.
 
@@ -105,6 +111,8 @@ It maps the current state of these items with the state during the previous scan
 3.	On the **File Integrity Monitoring** page, select the **Log Analytics workspace listed** `asclab-la-{DeploymentID}` (or just by clicking on the Enable button - it indicates that File Integrity Monitoring is not enabled for the selected workspace).
 
 > **Note**: Deployment ID can be obtained from the Lab Environment output page.
+
+ ![](../Images/FIM.png)
 
 4.	On the Enable File Integrity Monitoring window, review the default **recommended settings** for Windows files, Registry and Linux files.
 

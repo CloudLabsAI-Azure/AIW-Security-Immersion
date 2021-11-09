@@ -11,17 +11,15 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 **Explore vulnerability assessment recommendations:**
 
-1.	On **Security Center** page, click on **Security policy** present under the **Management** section.
+1.	Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
 
-2.	Click on **Recommendations (1)** from the left side pane.
-
-3.	Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities).
-
-4.	Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here.
+     ![](../Images/security%20center.png)
+     
+3.	Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here.
 
   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-   ![](../Images/remediate-blade.png)
+   ![](../Images/recomendations1.png)
 
 5.	Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
 
@@ -37,7 +35,9 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
    ![](../Images/proceed-01.png)
 
-9.	A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources** 
+9.	A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources**.
+
+    ![](../Images/fixingresources.png)
 
 10. Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
@@ -107,7 +107,7 @@ Modify the following script to include your container registry name in the place
      > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
 
-    ![](../Images/acr.png)
+    ![](../Images/vulnarability.png)
 
 11. On the recommendation page, notice the following details at the upper section:
 
@@ -115,11 +115,11 @@ Modify the following script to include your container registry name in the place
     - Severity: **High**
     - Total vulnerabilities: **expect to see more than 2 vulnerabilities**
 
-   ![](../Images/acr2.png)
+   ![](../Images/vulnerabilities.png)
 
 12. Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
 
-    ![](../Images/affectedresources..png)
+    ![](../Images/containerregistry.png)
 
 13. On the **Security Checks** section, notice the number of vulnerabilities.
 
@@ -127,7 +127,7 @@ Modify the following script to include your container registry name in the place
 
     >XXXXXX is the ID of the security finding.
 
-    ![](../Images/securitychecks.png)
+    ![](../Images/securitycheck1.png)
 
 Notice the vulnerability description, general information (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
 
@@ -141,17 +141,21 @@ Every security program includes multiple workflows for incident response. The pr
 
 1.	Click on **+Add** to create a new Logic App.
 
-1.	On the Basics tab, select your subscription and resource group **asclab**.
-   
-1. Under **Instance details ** section, select **Type** as **Consumption**.   
+1.	On the Basics tab, enter the following details:
+     
+     - Subscription : Select your **Subscription** 
+      
+     - Resource group:  **asclab**.
+    
+     - Under **Instance details**, select **Type** as **Consumption**.   
+ 
+     - Logic app name: Enter **Send-RecommendationsChanges**.
 
-1.	On the Logic app name field enter **Send-RecommendationsChanges**.
+     - Location : Select the location of your **Resource group**
+     
+     - Enable log analytics : Select **No**
 
-1.	Select location, for example: **East US** (it’s recommended to use the same region as used in the previous exercises).
-
-1.	Select **No** for **Enable log analytics** option.
-
-1.	Select **Review + Create** and then click on **Create**.
+     - Select **Review + Create** and then click on **Create**.
 
     ![](../Images/logicapp-01.png)
 
@@ -172,6 +176,8 @@ Every security program includes multiple workflows for incident response. The pr
     ![](../Images/newstep.png)
 
 1. From the list of actions, select **Send an email (V2)** action to add it to the Designer.
+     
+     ![](../Images/emailv2.png)
 
    > **Note:** You will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
@@ -210,6 +216,8 @@ Every security program includes multiple workflows for incident response. The pr
 
 2.	Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **Add workflow automation (2)**.
 
+      ![](../Images/workflow.png)
+
 3.	A pane appears on the right side. Enter the following for each field:
     
    - General:
@@ -218,13 +226,17 @@ Every security program includes multiple workflows for incident response. The pr
      * Description: **Send email message when a recommendation is created or triggered**
      * Subscription: **Your Subscription**
      * Resource group: **asclab**
+
+      ![](../Images/general.png)
       
    - Trigger conditions:
    
-     * Select Security Center data types: **Security Center recommendations**
+     * Select Security Center data types: **Recommendation**
      * Recommendations name: **All recommendations selected**
      * Recommendation severity: **All severities selected**
      * Recommendation state: **All states selected**
+
+      ![](../Images/trigger.png)
     
    - Actions:
    
@@ -233,7 +245,7 @@ Every security program includes multiple workflows for incident response. The pr
      
    Click **Create** to complete the task.
 
-   ![](../Images/workflow-automation.png)
+   ![](../Images/actions.png)
 
 4.	Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations.
 
@@ -248,17 +260,17 @@ Once you start to get email notifications, you can disable the automation by sel
 6.	Test/trigger your automation manually:
 
    - On the Security Center pane, click on **Recommendations (1)** from the **General** section.
-   - Under **Remediate vulnerabilities (2)** look for recommendation **Azure Defender for SQL should be enabled on your SQL servers (3)** and click on it.
+   - Under **Remediate vulnerabilities (2)** look for recommendation **Azure Kubernetes Service clusters should have the Azure Policy Add-on for Kubernetes installed (3)** and click on it.
    
       > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-     ![](../Images/trigger-logic-app.png)
+     ![](../Images/recomendations2.png)
      
-   - Select resource **asclab-sql-xxx** (here xxx is unique ID) and then click on the **Trigger Logic App** button.
+   - Select resource *asclab-aks* and then click on the **Trigger Logic App** button.
    - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
    - You should receive an email, verify in your inbox. On the labvm-xxxxxx open a new tab in web browser and navigate to https://outlook.office365.com.
 
-     ![](../Images/trigger-logic-app1.png)
+     ![](../Images/triggerlogicapp.png)
 
 ### Exercise 4: Accessing your secure score via ARG
 Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.

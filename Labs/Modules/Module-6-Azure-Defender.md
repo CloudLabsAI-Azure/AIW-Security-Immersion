@@ -19,11 +19,13 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 2. Create an alert simulation for VM:
     - On the Security alerts page, click on the **Sample alerts** button. You will be navigated to **Create sample alerts (Preview)** window.
     
-    ![](../Images/m6ex1step3.png)
+    ![](../Images/securityalert.png)
     
     - Select **Your Subscription**.
     - On the **Azure Defender plan**s, keep only **Virtual Machines** selected.
     - Click on the **Create sample alerts** button to trigger the alert simulation for VMs.
+
+     ![](../Images/createalerts1.png)
 
 3. You will see Sample alerts creation in progress, wait for the process to complete. Now you can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
 
@@ -43,21 +45,26 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 8.	Create an alert simulation for Key Vaults:
     - On the Security alerts page, click on the **sample alerts** button.
+
+     ![](../Images/securityalert.png)
+     
     - Select **Your Subscription**.
     - On the Azure Defender plans, keep only **Key Vaults** selected.
     - Click **Create sample alerts** button to trigger the alert simulation for Key Vaults.
+
+     ![](../Images/keyvalut%20alert.png)
     
 9.	After the Sample alerts creating in progress appear, wait for the process to complete. You can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
 
 10.	On the alerts page, you should now see 5 different sample events for a resource named `Sample-KV`. Each alert has the `Sample alert` banner next to it.
 
-11.	Click on the **Access from a TOR exit node to a Key Vault** alert.
-
-12. Click on the **View full details** to see additional information related to the event.
+11.	Select **Access from a TOR exit node to a Key Vault** alert then click on the **View full details** to see additional information related to the event.
 
 ![Create sample virtual machine security alerts](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/TOR-exit-node.png?raw=true)
 
 13.	At the top menu, dismiss the alert by changing the status from Active to **Dismissed** and click on **OK**.
+
+    ![](../Images/dismiss.png)
 
 > **Note:** You can choose to trigger sample alerts for additional Azure Defender plans.
 
@@ -74,13 +81,23 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 3. Expand the **Suppress similar alerts** under the Take action section and click on **Create Suppression Rule**.
 
-4. After the **New suppression rule** pane opens, provide a rule name: *Testing-AutoDismiss-KV*.
+  ![](../Images/supress.png)
 
-5. On the reason field, select **Other** and leave a comment: *Lab 6 exercise*.
+4. After the **New suppression rule** pane opens, enter the following details:
 
-6. Set rule expiration to be tomorrow (just a day ahead). **Click Apply and wait 10 minutes for the new rule to be applied.**
+   - Rule name: Enter **Testing-AutoDismiss-KV (1)**
+   
+   - State: **Enabled (2)**
+  
+   - Reason: **Other (3)**
+   
+   - Comment : **Lab 6 exercise (4)**
 
-    ![Create sample virtual machine security alerts](../Images/Create-Suppression-Rule1.png)
+   - Set rule expiration to be tomorrow (just a day ahead)**(5)**
+  
+   - Click on **Apply (6)** and wait 10 minutes for the new rule to be applied.
+
+    ![Create sample virtual machine security alerts](../Images/new-susp-rule.png)
 
 > **Note:** you can create suppression rules on a management group level by using a built-in policy definition named Deploy - Configure suppression rules for Azure Security Center alerts in Azure Policy. To suppress alerts at the subscription level, you can use the Azure portal or REST APIs.
 
@@ -88,9 +105,11 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 ![Create sample virtual machine security alerts](../Images/m6ex2step7.png)
 
-8. Click on the rule you have recently created: `Testing-AutoDismiss-KV`.
+8. Click on the rule you have recently created: `Testing-AutoDismiss-KV` and change the expiration to be a month ahead from the current date. Next, click on **Apply**.
 
-9. Change the expiration to be a month ahead from the current date. Next, click on **Apply**.
+  ![](../Images/editsuppression.png)
+  
+  > **Note** : If you receive any pop-up stating the **Warning** alert, click on **OK**
 
 10. To view the dismissed alerts: Navigate to Security alerts the main page and to the filters section. Change the **Status (1)** filter value to show only **Dismissed (2)** items and click **Ok (3)**.
 

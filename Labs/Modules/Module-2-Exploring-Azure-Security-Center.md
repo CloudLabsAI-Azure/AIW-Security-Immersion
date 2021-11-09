@@ -21,19 +21,19 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 > ❗ Important: <br>
 > Azure Security Center takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to security center. Sometimes, it can take up to 24 hours or even more than that for all the tiles on the overview page to update. if it takes more time, attendees can skip the next steps in Module 2 & proceed with the next modules and can come back later and check on this. we are looking at various approaches to optimize this experience for future workshops.
 
-  ![Azure Security Center: Overview dashboard](../Images/asc-dashboard-overview-updated.png)
+  ![Azure Security Center: Overview dashboard](../Images/msdefender.png)
 
 3. Note that the **Subscriptions** icon on the **top menu bar** allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
 
-   ![Azure Security Center: subscriptions](../Images/asc-subscriptions.png)
+   ![Azure Security Center: subscriptions](../Images/msdefender1.png)
 
 4. Click on the **What’s new** button – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
 
-   ![Azure Security Center: what's new](../Images/asc-whatsnew.png)
+   ![Azure Security Center: what's new](../Images/msdefender2.png)
 
 5. Note the **high-level numbers** at the top menu; This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active recommendations and Security alerts.**
 
-   ![Azure Security Center: Dashboard](../Images/asc-dashboard.png)
+   ![Azure Security Center: Dashboard](../Images/msdefender3.png)
 
 8. On the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
@@ -60,7 +60,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
  
  >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones. 
 
-   ![Overview: Regulatory Compliance tile](../Images/regulatorycompliance.png)
+   ![Overview: Regulatory Compliance tile](../Images/msdefender4.png)
    
    > Note: It can take upto 24 hours for compliance status to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
 
@@ -70,7 +70,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 > Unmonitored VMs are considered as virtual machines that have Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
 
 
-![Overview: Inventory tile](../Images/inventory-tile.png)
+![Overview: Inventory tile](../Images/msdefender5.png)
 
 
 ### Exercise 2: Exploring Secure Score and Recommendations
@@ -113,7 +113,7 @@ Exploring secure score
 
 1. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
 
-   ![Recommendations view](../Images/Recommendations.png)
+   ![Recommendations view](../Images/msdefender6.png)
 
 2. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated recommendations. You can use this file for pivoting and reporting.
 
@@ -219,13 +219,15 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 > **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this later.
 
-   ![Inventory: Assign tags](../Images/asc-inventory-assign-tags.gif?raw=true)
+   ![Inventory: Assign tags](../Images/assigntagsv1.gif?raw=true)
+   
+ 
 
 13. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
 14. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Azure Defender (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again click on **Ok**
 
-    ![Inventory: Assign tags](../Images/download-csv.png)
+    ![Inventory: Assign tags](../Images/inventory2.png)
 
 15. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Azure Defender plan (when applicable).
 

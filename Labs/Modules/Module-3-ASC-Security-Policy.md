@@ -11,6 +11,8 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 1. From Azure Portal, search for **security center** and select it.
 
+    ![](../Images/security%20center.png)
+
 1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
    ![Template deployment completed](../Images/m1e2s3.png)
