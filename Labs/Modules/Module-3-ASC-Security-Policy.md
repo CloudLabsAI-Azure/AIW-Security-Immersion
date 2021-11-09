@@ -92,13 +92,13 @@ When working with a recommendation, you can create an exemption by clicking the 
 
     ![policy assignment](../Images/m3fs3.png)
 
-5. Expand the **Affected resources** bar, review the current resources under **Unhealthy resources** - **asclab-win**, **labvm-xxxxxx**, and **asclab-linux**.
+3. Expand the **Affected resources** bar, review the current resources under **Unhealthy resources** - **asclab-win**, **labvm-xxxxxx**, and **asclab-linux**.
 
-6. Select the **asclab-win** resource and then click on **Exempt**.
+4. Select the **asclab-win** resource and then click on **Exempt**.
 
     ![](../Images/m3ex3.step6.png)
 
-7. The **Exempt pane** opens:
+5. The **Exempt pane** opens:
     - Name: **ASC-Management ports should be closed on your virtual machines**.
     - Check the **Set an expiration date** option and set datetime for two days ahead on 12:00 AM.
     - Select **Waiver** as exemption category.
@@ -106,28 +106,28 @@ When working with a recommendation, you can create an exemption by clicking the 
 
     ![](../Images/exempt-01.png)
 
-> ⭐ Good to know: <br>
-> **Mitigated** - This issue isn't relevant to the resource because it's been handled by a different tool or process than the one being suggested
-> **Waiver** - Accepting the risk for this resource
+  > ⭐ Good to know: <br>
+  > **Mitigated** - This issue isn't relevant to the resource because it's been handled by a different tool or process than the one being suggested
+  > **Waiver** - Accepting the risk for this resource
 
-8. It might take up to **30 min for the exemption to take effect**. Once this happens:
+6. It might take up to **30 min for the exemption to take effect**. Once this happens:
     - The resource doesn't impact your secure score.
     - The resource is listed in the Not applicable tab of the recommendation details page
     - The information strip at the top of the recommendation details page lists the number of exempted resources: **1**
     
     <br>
 
-9. Refresh tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
+7. Refresh tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
 
     ![Exempttion tab](../Images/m3fs4.png)
 
-10.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
+8.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
 
-11. In the search box located on the top of the Azure Portal page, search for **Policy** and click on it. 
+9. In the search box located on the top of the Azure Portal page, search for **Policy** and click on it. 
 
     ![](../Images/m3ex2.step1.png)
 
-12. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there.
+10. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there.
 
     ![Exempttion tab](../Images/exemptions-policy.png)
 
