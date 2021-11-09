@@ -43,7 +43,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
     ![Create sample virtual machine security alerts](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/m6ex1step8.png?raw=true)
 
-8.	Create an alert simulation for Key Vaults:
+8. Create an alert simulation for Key Vaults:
     - On the Security alerts page, click on the **sample alerts** button.
 
      ![](../Images/securityalert.png)
@@ -54,7 +54,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
      ![](../Images/keyvalut%20alert.png)
     
-9.	After the Sample alerts creating in progress appear, wait for the process to complete. You can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
+9. After the Sample alerts creating in progress appear, wait for the process to complete. You can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
 
 10.	On the alerts page, you should now see 5 different sample events for a resource named `Sample-KV`. Each alert has the `Sample alert` banner next to it.
 
@@ -99,7 +99,7 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
     ![Create sample virtual machine security alerts](../Images/new-susp-rule.png)
 
-> **Note:** you can create suppression rules on a management group level by using a built-in policy definition named Deploy - Configure suppression rules for Azure Security Center alerts in Azure Policy. To suppress alerts at the subscription level, you can use the Azure portal or REST APIs.
+   > **Note:** you can create suppression rules on a management group level by using a built-in policy definition named Deploy - Configure suppression rules for Azure Security Center alerts in Azure Policy. To suppress alerts at the subscription level, you can use the Azure portal or REST APIs.
 
 7. You can change your existing suppression rules or create new ones: On the **Security alerts** page from the top menu, select **Suppression rules**. 
 
@@ -139,7 +139,7 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 
 6. Now click on **Modify Permissions (Preview)** and wait for two permissions to load. Scroll to the right side of permissions then click on **Consent**, do this for both permissions. When prompted for login, login using credentials provided in the **Environment Details** tab, click on **Accept** for each permission to get **Consented**
 
-> **Note** : If you are not able to get **Consented**, please resize the browser window.
+   > **Note** : If you are not able to get **Consented**, please resize the browser window.
  
     ![Consent](../Images/m6ex3step6.png)
 
