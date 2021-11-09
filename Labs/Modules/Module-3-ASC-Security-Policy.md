@@ -15,15 +15,15 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
-   ![Template deployment completed](../Images/m1e2s3.png)
+    ![Template deployment completed](../Images/m1e2s3.png)
    
-1. 1. In **Environment Settings** page, Select your subscription.
+1. In **Environment Settings** page, Select your subscription.
 
-   ![Template deployment completed](../Images/m1e2.1s2.png)
+    ![Template deployment completed](../Images/m1e2.1s2.png)
    
 1. Click on **Security Policy**.
 
-   ![Template deployment completed](../Images/m3fs1.png)
+    ![Template deployment completed](../Images/m3fs1.png)
    
 2. By default, there is 1 assignment at the **Security center default policy** which is **ASC default**.
 
@@ -33,7 +33,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 3. To view the policy, click on **ASC Default (subscription...)**.
 
-> **Note:** the assignment name will have GUID of the subscription in your lab environment.
+     > **Note:** the assignment name will have GUID of the subscription in your lab environment.
 
 4. On the **Edit Initiative Assignment** page, click on **Parameters** and uncheck the box that is next to **Only show parameters that require input** to view the parameters.
 
@@ -141,7 +141,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 3. Scroll down to recommendations filters, set the **Response actions** as **Deny**.
 
-   ![Auditing on SQL server should be enabled](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/asc-recommendations-filters-deny.gif?raw=true)
+    ![Auditing on SQL server should be enabled](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/asc-recommendations-filters-deny.gif?raw=true)
 
 4. From the filtered recommendations list, select **Secure transfer to storage accounts should be enabled**.
 
@@ -149,10 +149,10 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 5. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
-> ❗ Important: <br>
-> Security misconfigurations are a major cause of security incidents.
+   > ❗ Important: <br>
+   > Security misconfigurations are a major cause of security incidents.
 
-   ![Secure Transfer](../Images/secure-transfer.png)
+     ![Secure Transfer](../Images/secure-transfer.png)
 
 6. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
@@ -176,12 +176,12 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 10. In the **Parameters** tab, leave the *Effect* and *Retention days* with default values.
 
-    - **Uncheck** Only show parameters that need input or review
-    - Select the resource group **asclab** from the drop down menu
-    - Select **Review + create** to assign the policy to your subscription.
-    - Click **Create**
+     - **Uncheck** Only show parameters that need input or review
+     - Select the resource group **asclab** from the drop down menu
+     - Select **Review + create** to assign the policy to your subscription.
+     - Click **Create**
 
-    ![](../Images/m3fs5.png)
+      ![](../Images/m3fs5.png)
 
 11. On the **Auditing on SQL server should be enabled** page, perform the following steps:
 
@@ -192,7 +192,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
     
 By performing above mentioned operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
 <br>
-    ![Sql Auditing](../Images/m3fs6.png)
+      ![Sql Auditing](../Images/m3fs6.png)
 
 12.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/prevent-misconfigurations#recommendations-with-denyenforce-options "Recommendations with deny/enforce options") to view a full list of recommendations with deny/enforce options along with a detailed explanation of this capability.
 
@@ -236,7 +236,7 @@ Add each policy one by one:
 
 7. Select **Review + Create (5)** and click on **Create**.
 
-   ![custom initiative](../Images/defaultpolicy-02.png)
+    ![custom initiative](../Images/defaultpolicy-02.png)
 
 ***Add a custom initiative to your subscription***
 
@@ -244,15 +244,15 @@ Add each policy one by one:
 
 2. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
-   ![Template deployment completed](../Images/m1e2s3.png)
+    ![Template deployment completed](../Images/m1e2s3.png)
    
 3. In **Environment Settings** page, Select your subscription.
 
-   ![Template deployment completed](../Images/m1e2.1s2.png)
+    ![Template deployment completed](../Images/m1e2.1s2.png)
    
 4. Click on **Security Policy (1)**.
 
-   ![Template deployment completed](../Images/m3fs7.png)
+    ![Template deployment completed](../Images/m3fs7.png)
 
 > **Note:** You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Security Center.
 
@@ -266,11 +266,11 @@ Add each policy one by one:
 
 7. On the **Assign Initiative** page leave everything as default and select **Review + Create**.
    
-   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/custom.png?raw=true)
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/custom.png?raw=true)
    
 8. Now click on **Create**
 
-   ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/createini.png?raw=true)
+    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/createini.png?raw=true)
    
 10. Your custom initiative is now assigned.
 
