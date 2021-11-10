@@ -31,9 +31,9 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
     ![](../Images/fix-asclab-win.png)
 
-1. On the **Choose a vulnerability assessment solution** select **Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers) (1)**. Click on  **Proceed (2)**.
+1. On the **Choose a vulnerability assessment solution** select **Deploy integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers) (1)**. Click on  **Proceed (2)**.
 
-    ![](../Images/proceed-01.png)
+    ![](../Images/CS-mod5-step6.png)
 
 1. A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources**.
 
