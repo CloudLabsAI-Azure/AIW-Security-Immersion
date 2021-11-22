@@ -59,9 +59,9 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 ### Subscription upgrade and agents installation
 
-1. Type **Security Center** in the search box on top of the **Azure Portal** and click to open it.
+1. Type **Defender for Cloud** in the search box on top of the **Azure Portal** and click to open it.
 
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/security%20center.png?raw=true)
+    ![](../Images/defendernew.png)
 
 1. Click on the **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, select your **subscription (3)** and click **Upgrade (4)**.
 
