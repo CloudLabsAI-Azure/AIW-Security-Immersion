@@ -94,7 +94,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 1. From **Settings |Azure Defender Plans** page, Navigate to **Auto provisioning** under the Settings section.
 
-    ![](../Images/security.png?raw=true)
+    ![](../Images/security2.png?raw=true)
 
 1. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
 
@@ -138,7 +138,7 @@ In this exercise, You will create the ASC default policy in security policy unde
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-1. Click on **Security Policy (1)** You'll notice that in security center default policy (2) the **ASC Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
+1. Click on **Security Policy (1)** You'll notice that in **Default initiative** (2) the **ASC Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
 
     ![Template deployment completed](../Images/security5.png)
    
