@@ -84,7 +84,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 1. Return to Microsoft Defender for Cloud blade and Click on the **Environment settings**(1), under **Management** section, select the Log Analytics workspace named **<inject key="log analytics workspace" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
 
-    ![Template deployment completed](../Images/asc-workspace-pricing-settings.gif?raw=true)
+    ![Template deployment completed](../Images/security1.png?raw=true)
 
 1. On the **Settings |Azure Defender Plans** page, select **Azure Defender on** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
 
@@ -94,7 +94,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
 1. From **Settings |Azure Defender Plans** page, Navigate to **Auto provisioning** under the Settings section.
 
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/auto%20provision.png?raw=true)
+    ![](../Images/security.png?raw=true)
 
 1. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
 
@@ -146,11 +146,11 @@ In this exercise, You will create the ASC default policy in security policy unde
      
      - Under **Default initiative**, click on **Assign Policy**
 
-        ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/assignapolicy.png?raw=true)
+        ![](../Images/security3.png?raw=true)
         
      - Under **Basics** tab, enter the **Assignment name** as **ASC default**.
       
-       ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/assisgnmentname.png?raw=true)
+       ![](../Images/security4.png?raw=true)
       
     - Click on **Review + Create**, followed by **Create**.
     
