@@ -156,6 +156,8 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 6. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
+   **Note**: If you unable to eedit the query. Click on the eclipse and select **change to Audit** and retry the step
+
     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/change%20to%20deny.png?raw=true)
 
 7. Go back to the **recommendations view**, set the **Response action** filter as **Select All**. Then type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
