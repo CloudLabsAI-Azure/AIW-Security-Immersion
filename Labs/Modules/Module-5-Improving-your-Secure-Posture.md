@@ -100,7 +100,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 8. The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
-9. Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+9. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
 10. Click on **Recommendations (1)** from the left side pane under the **General** section. Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys) (2)**.
  
