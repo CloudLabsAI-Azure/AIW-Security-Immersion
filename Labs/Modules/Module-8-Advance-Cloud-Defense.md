@@ -82,7 +82,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 Application control helps you deal with malicious and/or unauthorized software, by allowing only specific applications to run on your machines.
 
-1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
+1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
 
 2. Navigate to the bottom section under Advanced protection, click on **Adaptive application control**
 
@@ -101,7 +101,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 File integrity monitoring (FIM), also known as change monitoring, examines operating system files, Windows registries, application software, Linux system files, and more. It detects and reports changes that might indicate an attack.
 It maps the current state of these items with the state during the previous scan and alerts you if any suspicious modifications have been made. To enable FIM, follow the instructions below:
 
-1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
+1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
 
 2. Navigate to the bottom section under Advanced protection, click on the **File Integrity Monitoring** tile.
 
