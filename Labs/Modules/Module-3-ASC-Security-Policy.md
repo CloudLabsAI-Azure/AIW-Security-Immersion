@@ -9,9 +9,9 @@ In this module, we will guide you through the current Security Center policies s
 
 In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Azure Security Center and about initiatives, policies, and how they relate to the Security Center's recommendation.
 
-1. From Azure Portal, search for **security center** and select it.
+1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
-    ![](../Images/security%20center.png)
+    ![](../Images/m3e1s1.png)
 
 1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
