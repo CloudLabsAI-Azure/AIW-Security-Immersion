@@ -67,7 +67,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
 
-    ![policy assignment](../Images/m3fs2.png)
+    ![policy assignment](../Images/m3e2s4.png)
 
 5. Notice the number of policies included in each initiative (policies column).
 
