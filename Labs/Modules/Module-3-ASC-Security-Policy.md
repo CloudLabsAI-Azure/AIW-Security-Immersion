@@ -239,7 +239,7 @@ Add each policy one by one:
 
 ***Add a custom initiative to your subscription***
 
-1. In the search box located on the top of the Azure Portal page, search for **Security Center** and click on it.
+1. In the search box located on the top of the Azure Portal page, search for **Microsoft Defender for Cloud** and click on it.
 
 2. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
