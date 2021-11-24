@@ -84,7 +84,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
    > **Note:** Exemptions is a premium Azure policy capability that's offered for Azure Defender customers with no additional cost. For other users, charges may apply in the future.
 
-1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
 2. Select **Recommendations(1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines(2)** recommendation.
 
