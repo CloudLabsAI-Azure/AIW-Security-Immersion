@@ -160,7 +160,13 @@ Once you create your custom initiative, ASC allows you to add it as a security p
      
 1. Under **Microsoft Defender for Cloud** page, click on **Getting started (1)**, and navigate to **Install agents (2)** then select **Pricing & settings page (3)**.
 
-    ![](../Images/pricingandsetting.png)
+   ![](../Images/pricingandsetting.png)
+    
+   >**Note**: If you are unable to find **Pricing & settings page**, Please follow the below step.
+
+   - From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
+
+     ![Template deployment completed](../Images/m2e1s3.1.png)
     
 1. Select **Your Subscription** under the Environment settings.
 
