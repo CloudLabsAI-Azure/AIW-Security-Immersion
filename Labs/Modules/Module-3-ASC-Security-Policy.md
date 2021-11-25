@@ -9,9 +9,9 @@ In this module, we will guide you through the current Security Center policies s
 
 In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Azure Security Center and about initiatives, policies, and how they relate to the Security Center's recommendation.
 
-1. From Azure Portal, search for **security center** and select it.
+1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
-    ![](../Images/security%20center.png)
+    ![](../Images/m3e1s1.png)
 
 1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
@@ -67,7 +67,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
 
-    ![policy assignment](../Images/m3fs2.png)
+    ![policy assignment](../Images/m3e2s4.png)
 
 5. Notice the number of policies included in each initiative (policies column).
 
@@ -84,7 +84,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
    > **Note:** Exemptions is a premium Azure policy capability that's offered for Azure Defender customers with no additional cost. For other users, charges may apply in the future.
 
-1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
 2. Select **Recommendations(1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines(2)** recommendation.
 
@@ -155,6 +155,8 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
      ![Secure Transfer](../Images/secure-transfer.png)
 
 6. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
+
+   **Note**: If you unable to eedit the query. Click on the eclipse and select **change to Audit** and retry the step
 
     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/change%20to%20deny.png?raw=true)
 
@@ -239,7 +241,7 @@ Add each policy one by one:
 
 ***Add a custom initiative to your subscription***
 
-1. In the search box located on the top of the Azure Portal page, search for **Security Center** and click on it.
+1. In the search box located on the top of the Azure Portal page, search for **Microsoft Defender for Cloud** and click on it.
 
 2. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 

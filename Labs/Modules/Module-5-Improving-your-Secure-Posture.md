@@ -45,10 +45,10 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 1. Ensure the VM extension is deployed on the relevant machines:
     - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
-    - Select **asclab-win(1)**. next, click on **Extensions(2)** under the **Settings** section.
+    - Select **asclab-win(1)**. next, click on **Extensions + applications(2)** under the **Settings** section.
     - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
-    ![](../Images/m5ex1step11.png)
+    ![](../Images/m5e1s9.png)
 
 1. Repeat the above step (step10) for **asclab-linux** – you should expect to see a different name for the extension on the Linux platform: `LinuxAgent.AzureSecurityCenter`.
 
@@ -100,7 +100,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 8. The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
-9. Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+9. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
 10. Click on **Recommendations (1)** from the left side pane under the **General** section. Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys) (2)**.
  

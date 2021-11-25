@@ -85,13 +85,13 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 Integration with Azure Sentinel will enable centralized monitoring of alerts and discovery data. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
-1. Search for **Azure Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
+1. Search for **Microsoft Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
 
-    ![](../Images/Azuresenitel.png)
+    ![](../Images/m7e2s1.png)
 
-2. On the **Azure Sentinel** blade, click on the **Create Azure Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by Security Center.
+2. On the **Microsoft Sentinel** blade, click on the **Create Azure Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by Security Center.
  
-    ![connect-workspace1](../Images/sentinel.png)
+    ![connect-workspace1](../Images/m7e2s2.png)
 
 3. On the **Add Azure Sentinel to a workspace**, select **asclab-la-{DeploymentID}** workspace. Click on **Add**.
 
@@ -110,7 +110,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
     ![](../Images/dataconnectors.png)
     
 
-8. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Microsoft Defender for Cloud** connector and then click on **Open connector page **.
+8. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Microsoft Defender for Cloud** connector and then click on **Open connector page**.
 
     ![ASC pricing & settings page](../Images/defender.png)
 
