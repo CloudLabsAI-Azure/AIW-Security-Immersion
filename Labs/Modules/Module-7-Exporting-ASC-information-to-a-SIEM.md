@@ -1,13 +1,13 @@
-# Module 7 – Exporting ASC information to a SIEM
+# Module 7 – Exporting Microsoft Defender for Cloud information to a SIEM
 
 
 ## Overview
 
-In this module, you will configure the continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings. Moreover, you will learn how to enable the integration between Azure Security Center and Azure Sentinel.
+In this module, you will configure the continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings. Moreover, you will learn how to enable the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
 
 ### Exercise 1: Using continuous export
 
-Azure Security Center generates detailed security alerts and recommendations. You can view them in the portal or through programmatic tools. You might also need to export some or all of this information for tracking with other monitoring tools in your environment.
+Microsoft Defender for Cloud generates detailed security alerts and recommendations. You can view them in the portal or through programmatic tools. You might also need to export some or all of this information for tracking with other monitoring tools in your environment.
 
 Continuous export lets you fully customize what will be exported, and where it will go. Even though the feature is called continuous, there's also an option to export weekly snapshots of secure score or regulatory compliance data.
 
@@ -87,31 +87,31 @@ Continuous export lets you fully customize what will be exported, and where it w
   
    > **Note:** Since the continuous export was just enabled, you may need to wait for sometime for new events to show up.
 
-### Exercise 2: Integration with Azure Sentinel
+### Exercise 2: Integration with Microsoft Sentinel
 
-Integration with Azure Sentinel will enable centralized monitoring of alerts and discovery data. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
+Integration with Microsoft Sentinel will enable centralized monitoring of alerts and discovery data. Integrating with Microsoft Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
 1. Search for **Microsoft Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
 
     ![](../Images/m7e2s1.png)
 
-2. On the **Microsoft Sentinel** blade, click on the **Create Azure Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by Security Center.
+2. On the **Microsoft Sentinel** blade, click on the **Create Microsoft Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by Security Center.
  
     ![connect-workspace1](../Images/m7e2s2.png)
 
-3. On the **Add Azure Sentinel to a workspace**, select **asclab-la-{DeploymentID}** workspace. Click on **Add**.
+3. On the **Add Microsoft Sentinel to a workspace**, select **asclab-la-{DeploymentID}** workspace. Click on **Add**.
 
     ![Add sentinel](../Images/sentineladd.png)
 
-4. Adding Azure Sentinel to workspace asclab-la-{DeploymentID} is now in progress. This process will take few minutes to complete. 
+4. Adding Microsoft Sentinel to workspace asclab-la-{DeploymentID} is now in progress. This process will take few minutes to complete. 
 
-5. Once the deployment of workspace is completed you will get a notification **Successfully added Azure Sentinel**. Refresh the web browser page to see the workspace listed on Azure Sentinel page.
+5. Once the deployment of workspace is completed you will get a notification **Successfully added Microsoft Sentinel**. Refresh the web browser page to see the workspace listed on Microsoft Sentinel page.
 
    ![Add sentinel](../Images/sentinelws.png)
 
-6. Select the workspace **asclab-la-{DeploymentID}** on the **Azure Sentinel** page. 
+6. Select the workspace **asclab-la-{DeploymentID}** on the **Microsoft Sentinel** page. 
 
-7. From Azure Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
+7. From Microsoft Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
 
     ![](../Images/dataconnectors.png)
     
@@ -122,7 +122,7 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 9. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
 
-    ![Connect Azure Security Center to Azure Sentinel](../Images/connected.png)
+    ![Connect Microsoft Defender for Cloud to Microsoft Sentinel](../Images/connected.png)
 
 10. On the Create incidents (recommended) click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
 
@@ -132,6 +132,6 @@ Integration with Azure Sentinel will enable centralized monitoring of alerts and
 
 ### Summary
 
-In this lab you have completed configuring continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings and enable the integration between Azure Security Center and Azure Sentinel.
+In this lab you have completed configuring continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings and enable the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
