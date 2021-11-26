@@ -12,7 +12,7 @@ You will be performing the following activities to achieve the goal.
 
 ### Exercise 1: Understanding Regulatory Compliance dashboard
 
-Azure Security Center helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard. The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
+Microsoft Defender for Cloud helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard. The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
 Security Center continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards applied to your subscriptions.
 
@@ -85,7 +85,7 @@ You can add additional industry standards (represented as compliance packages) s
 
 ### Exercise 3: Creating your own benchmark
 
-Once you create your custom initiative, ASC allows you to add it as a security policy and provides two main benefits:
+Once you create your custom initiative, Microsoft Defender for Cloud allows you to add it as a security policy and provides two main benefits:
 * Security requirements represented as custom recommendations, listed under the recommendation list.
 * Track compliance status using regulatory compliance dashboard.
 
