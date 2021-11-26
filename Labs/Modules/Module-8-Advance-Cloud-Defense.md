@@ -94,7 +94,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 
     ![Adaptive Application Control2](../Images/adaptive-application-control-new.png)
 
-    >**Note:** First-time users will not get any group information under the Group Name section. It is because Security Center needs at least two weeks of data to define the unique recommendations per group of machines. 
+    >**Note:** First-time users will not get any group information under the Group Name section. It is because Microsoft Defender  for Cloud needs at least two weeks of data to define the unique recommendations per group of machines. 
 
 ### Exercise 3: File Integrity Monitoring
 
@@ -121,4 +121,4 @@ It maps the current state of these items with the state during the previous scan
 
 ### Summary
 
-  * In this module, you have completed exploring different **Security Center** features - **Used JIT to reduce the attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**. You have reached the end of the lab.
+  * In this module, you have completed exploring different **Microsoft Defender  for Cloud** features - **Used JIT to reduce the attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**. You have reached the end of the lab.
