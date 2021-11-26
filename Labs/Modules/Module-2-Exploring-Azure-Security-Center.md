@@ -1,8 +1,8 @@
-# Module 2 - Exploring Azure Security Center
+# Module 2 - Exploring Microsoft Defender for Cloud
 
 ### Overview
 
-In this exercise, you will explore the Azure Security Center Dashboard features overview.
+In this exercise, you will explore the Microsoft Defender for Cloud Dashboard features overview.
 
 You will be performing the following activities to achieve the goal.
 
@@ -10,30 +10,30 @@ You will be performing the following activities to achieve the goal.
 * Exploring Security Controls and Recommendations
 * Exploring the Inventory capability
 
-### Exercise 1: Understanding Azure Security Center dashboard
+### Exercise 1: Understanding Microsoft Defender for Cloud dashboard
 
-In Azure Security Center, You will be interacting with the Security Center dashboard which provides a unified view into the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
+In Microsoft Defender for Cloud, You will be interacting with the Security Center dashboard which provides a unified view into the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
 
 1. Navigate to **Microsoft Defender for Cloud** in the Azure portal(perform if not already on the Security center page).
 
 2. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Secure Score, Regulatory Compliance and Azure Defender**.
 
    > ❗ Important: <br>
-   > Azure Security Center takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to security center. Sometimes, it can take up to 24 hours or even more than that for all the tiles on the overview page to update. if it takes more time, attendees can skip the next steps in Module 2 & proceed with the next modules and can come back later and check on this. we are looking at various approaches to optimize this experience for future workshops.
+   > Microsoft Defender for Cloud takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to security center. Sometimes, it can take up to 24 hours or even more than that for all the tiles on the overview page to update. if it takes more time, attendees can skip the next steps in Module 2 & proceed with the next modules and can come back later and check on this. we are looking at various approaches to optimize this experience for future workshops.
 
-    ![Azure Security Center: Overview dashboard](../Images/msdefender.png)
+    ![Microsoft Defender for Cloud: Overview dashboard](../Images/msdefender.png)
 
 3. Note that the **Subscriptions** icon on the **top menu bar** allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
 
-    ![Azure Security Center: subscriptions](../Images/msdefender1.png)
+    ![Microsoft Defender for Cloud: subscriptions](../Images/msdefender1.png)
 
 4. Click on the **What’s new** button – a new tab will open with the latest release notes where you can stay updated on the new features, bug fixes and more.
 
-    ![Azure Security Center: what's new](../Images/msdefender2.png)
+    ![Microsoft Defender for Cloud: what's new](../Images/msdefender2.png)
 
 5. Note the **high-level numbers** at the top menu; This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active recommendations and Security alerts.**
 
-    ![Azure Security Center: Dashboard](../Images/msdefender3.png)
+    ![Microsoft Defender for Cloud: Dashboard](../Images/msdefender3.png)
 
 6. On the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
@@ -76,7 +76,7 @@ In Azure Security Center, You will be interacting with the Security Center dashb
 
 **Exploring Secure Score**
 
-Previously, we explored the Secure Score tile on the overview page. Now let’s dive into this capability and the associated recommendations. Azure Security Center mimics the work of a security analyst, reviewing the security recommendations and applying advanced algorithms to determine how crucial each recommendation is. Azure Security Center constantly reviews the active recommendation and calculates the score based on them. All findings are aggregated into a single score (Secure Score) which measures your current security posture of your subscription/s; the higher the score, the lower the identified risk level.
+Previously, we explored the Secure Score tile on the overview page. Now let’s dive into this capability and the associated recommendations. Microsoft Defender for Cloud mimics the work of a security analyst, reviewing the security recommendations and applying advanced algorithms to determine how crucial each recommendation is. Microsoft Defender for Cloud constantly reviews the active recommendation and calculates the score based on them. All findings are aggregated into a single score (Secure Score) which measures your current security posture of your subscription/s; the higher the score, the lower the identified risk level.
 Exploring secure score
 
 1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it.
@@ -166,7 +166,7 @@ Exploring secure score
 
 ### Exercise 3: Exploring the Inventory capability
 
-Asset inventory dashboard allows you to get a single pane of glass view to all your resources covered by Azure Security Center. It also provides per-resource visibility to all Security Center’s information and additional resource details including security posture and protection status. Since this dashboard is based on Azure Resource Graph (ARG), you can run queries across subscriptions at a large scale, quickly and easily.
+Asset inventory dashboard allows you to get a single pane of glass view to all your resources covered by Microsoft Defender for Cloud. It also provides per-resource visibility to all Security Center’s information and additional resource details including security posture and protection status. Since this dashboard is based on Azure Resource Graph (ARG), you can run queries across subscriptions at a large scale, quickly and easily.
 
 1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click to open it. From the left navigation pane, under the **General** section, select the **Inventory** button.
 
@@ -244,6 +244,6 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 ### Summary
 
-  In this module, you have explored **Azure Security Center dashboard**, **Secure Score and Recommendations** & **Inventory capability**. 
+  In this module, you have explored **Microsoft Defender for Cloud dashboard**, **Secure Score and Recommendations** & **Inventory capability**. 
   
   Now you can move on to the next module by clicking on the Next button at the bottom right of this screen.
