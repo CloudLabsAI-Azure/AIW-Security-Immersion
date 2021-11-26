@@ -7,7 +7,7 @@ This module will walk you through the process to use the vulnerability assessmen
 
 ### Exercise 1: Vulnerability assessment for VMs
 
-With Azure Defender for servers, you can quickly deploy the integrated vulnerability assessment solution (powered by Qualys) with no additional configuration or extra costs. Once the vulnerability assessment scanner is deployed, it continually assesses all the installed applications on a virtual machine to find vulnerabilities and presents its findings in the Azure Security Center console. When a machine is found that doesn't have a vulnerability assessment solution deployed, Azure Security Center generates a recommendation that looks like this: _A vulnerability assessment solution should be enabled on your virtual machines._ To remediate a resource, you can click on the **Quick Fix** button to deploy the necessary VM extension.
+With Azure Defender for servers, you can quickly deploy the integrated vulnerability assessment solution (powered by Qualys) with no additional configuration or extra costs. Once the vulnerability assessment scanner is deployed, it continually assesses all the installed applications on a virtual machine to find vulnerabilities and presents its findings in the Microsoft Defender for Cloud console. When a machine is found that doesn't have a vulnerability assessment solution deployed, Microsoft Defender for Cloud generates a recommendation that looks like this: _A vulnerability assessment solution should be enabled on your virtual machines._ To remediate a resource, you can click on the **Quick Fix** button to deploy the necessary VM extension.
 
 **Explore vulnerability assessment recommendations:**
 
@@ -39,7 +39,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
     ![](../Images/fixingresources.png)
 
-1. Remediation is now in process. Azure Security Center will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
+1. Remediation is now in process. Microsoft Defender for Cloud will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
    > **Note:** You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
 
@@ -56,11 +56,11 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
     > **Note:** There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
 
-1. The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on the ASC console within 24 hours.
+1. The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on the Microsoft Defender for Cloud console within 24 hours.
 
 ### Exercise 2: Vulnerability assessment for Containers
 
-Azure Security Center scans images in your Azure Container Registry (ACR) that are pushed and imported into the registry, it also contains any other images pulled within the last 30 days. Then, it exposes detailed findings per image. All vulnerabilities can be found in the following recommendation: **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys).**
+Microsoft Defender for Cloud scans images in your Azure Container Registry (ACR) that are pushed and imported into the registry, it also contains any other images pulled within the last 30 days. Then, it exposes detailed findings per image. All vulnerabilities can be found in the following recommendation: **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys).**
 
 To simulate a container registry image with vulnerabilities, we will use ACR tasks commands and sample image:
 
@@ -166,7 +166,7 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/open-logic-app.png)
 
-1. Search for **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered** from the list of **Triggers**
+1. Search for **Security Center** in the search box and select **When an Microsoft Defender for Cloud Recommendation is created or triggered** from the list of **Triggers**
 
     ![](../Images/triggered.png)
 
