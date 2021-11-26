@@ -2,12 +2,12 @@
 
 ## Overview
 
-In this exercise, you will learn how to enable Azure Defender in your subscription
+In this exercise, you will learn how to enable Microsoft Defender for Cloud in your subscription
 
 You will be performing the following activities to achieve the goal.
 
   - Login to Azure Portal to access your subscription
-  - Upgrade your subscription to enable Azure Defender Plan
+  - Upgrade your subscription to enable Microsoft Defender for Cloud Plan
   - Configure data collection in Microsoft Defender for Cloud
 
 ## Exercise 1: Log in to Azure Portal
@@ -53,9 +53,9 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 1. If you see any additional pop-up like, You have free **Azure Advisor recommendations!** Close the window to continue the lab. 
 
 
-## Exercise 2: Enabling Azure Defender
+## Exercise 2: Enabling Microsoft Defender for Cloud
 
-In this exercise, you will be getting started with the functionality of Azure Microsoft Defender for Cloud and how to enable Azure Defender on a subscription.
+In this exercise, you will be getting started with the functionality of Azure Microsoft Defender for Cloud and how to enable Microsoft Defender for Cloud on a subscription.
 
 ### Subscription upgrade and agents installation
 
@@ -86,13 +86,13 @@ In this exercise, you will be getting started with the functionality of Azure Mi
 
     ![Template deployment completed](../Images/security1.png?raw=true)
 
-1. On the **Settings |Azure Defender Plans** page, select **Azure Defender on** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Azure Defender plan.
+1. On the **Settings |Microsoft Defender for Cloud Plans** page, select **Microsoft Defender for Cloud on** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Microsoft Defender for Cloud plan.
 
-    ![Enable Azure Defender on the workspace level](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/enable%20defender.png?raw=true)
+    ![Enable Microsoft Defender for Cloud on the workspace level](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/enable%20defender.png?raw=true)
 
 1. Go back to the **Microsoft Defender for Cloud | Environment settings** page and select your **Azure subscription**.
 
-1. From **Settings |Azure Defender Plans** page, Navigate to **Auto provisioning** under the Settings section.
+1. From **Settings |Microsoft Defender for Cloud Plans** page, Navigate to **Auto provisioning** under the Settings section.
 
     ![](../Images/auto%20provision.png?raw=true)
 
@@ -115,7 +115,7 @@ In this exercise, you will be getting started with the functionality of Azure Mi
 
 1. Next, under the **Store additional raw data - Windows security events** section, select the **All Events (1)** option and click on **Apply (2)**.
 
-    ![Enable Azure Defender on the workspace level](../Images/allevents.png)
+    ![Enable Microsoft Defender for Cloud on the workspace level](../Images/allevents.png)
 
 1. Once all the configurations are made, click on **Save** on the Settings | Auto provisioning page.
 
@@ -125,8 +125,8 @@ In this exercise, you will be getting started with the functionality of Azure Mi
 
 > Please notice:
 > * To get the full functionality of Microsoft Defender for Cloud, both subscription and Log Analytics workspace should be enabled for Defender. Once you enable it,  the required Log Analytics solutions will be added to the workspace.
-> * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Azure Defender.
-> * You can enable the Azure Defender trial for 30-days on a subscription-only, if not previously used.
+> * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Microsoft Defender for Cloud.
+> * You can enable the Microsoft Defender for Cloud trial for 30-days on a subscription-only, if not previously used.
 
 ## Exercise 2: Creating Microsoft Defender for Cloud Default policy.
 
@@ -156,4 +156,4 @@ In this exercise, You will create the Microsoft Defender for Cloud default polic
     
 ## Summary
 
-  In this module, you have learned how to enable Azure Defender. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
+  In this module, you have learned how to enable Microsoft Defender for Cloud. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
