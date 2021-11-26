@@ -2,7 +2,7 @@
 
 ### Overview
 
-In this exercise, you will be exploring the Azure Defender features for Advanced Cloud Defense
+In this exercise, you will be exploring the Microsoft Defender for Cloud features for Advanced Cloud Defense
 
 You will be performing the following activities to achieve the goal.
 
