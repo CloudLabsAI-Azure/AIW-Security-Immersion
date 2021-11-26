@@ -16,7 +16,7 @@ Microsoft Defender for Cloud helps streamline the process for meeting regulatory
 
 Security Center continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards applied to your subscriptions.
 
-1. Navigate to **Microsoft Defender for Cloud** in the Azure portal(perform if not already on the Security center page).
+1. Navigate to **Microsoft Defender for Cloud** in the Azure portal(perform if not already on the Microsoft Defender for Cloud).
 
 1. On the overview page select the **Regulatory Compliance(1)** tile (this pilar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard(2)** opens you can see the compliance standards currently assigned to your subscription.
 
