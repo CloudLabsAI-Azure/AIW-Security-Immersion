@@ -130,7 +130,7 @@ In this exercise, you will be getting started with the functionality of Azure Mi
 
 ## Exercise 2: Creating ASC Default policy.
 
-In this exercise, You will create the ASC default policy in security policy under  Securiy Center.
+In this exercise, You will create the ASC default policy in security policy under  Microsoft Defender for Cloud.
 
 1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
    
