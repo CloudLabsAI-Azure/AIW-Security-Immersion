@@ -3,11 +3,11 @@
 
 ## Overview
 
-In this module, we will guide you through the current Security Center policies set by Azure. Also, we will walk you through the methods to enable or disable the Security policies. 
+In this module, we will guide you through the current Microsoft Defender for Cloud policies set by Azure. Also, we will walk you through the methods to enable or disable the Security policies. 
 
 ### Exercise 1: Overview of the Microsoft Defender for Cloud policy
 
-In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to the Security Center's recommendation.
+In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to the Microsoft Defender for Cloud's recommendation.
 
 1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
@@ -31,11 +31,11 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/m3fs1.png)
    
-2. By default, there is 1 assignment at the **Security center default policy** which is **Microsoft Defender for Cloud default**.
+2. By default, there is 1 assignment at the **Microsoft Defender for Cloud default policy** which is **Microsoft Defender for Cloud default**.
 
-    ![Security center default policy](../Images/asc-default-policy-subscription.png)
+    ![Microsoft Defender for Cloud default policy](../Images/asc-default-policy-subscription.png)
 
-    > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
+    > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
 
 3. To view the policy, click on **Microsoft Defender for Cloud Default (subscription...)**.
 
@@ -51,7 +51,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 6. On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists** and click on **Save**. Wait for the policy update to complete successfully.
 
-    ![Modifying Security Center default policy assignment](../Images/asc-default-policy-nsg-recommendation.png)
+    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/asc-default-policy-nsg-recommendation.png)
 
 
 ### Exercise 2: Explore Azure Policy
@@ -64,7 +64,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 2. From the left navigation pane, under the **Authoring** section, click on **Definitions(1)**. This is where you can explore the built-in policy definitions and initiatives.
 
-3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative(2)** and select **Security Center(3)** from the _Category_ filter.
+3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative(2)** and select **Microsoft Defender for Cloud(3)** from the _Category_ filter.
 
     ![policy assignment](../Images/m3ex2.step3.png)	
 
@@ -261,7 +261,7 @@ Add each policy one by one:
 
     ![Template deployment completed](../Images/m3fs7.png)
 
-> **Note:** You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Security Center.
+> **Note:** You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Microsoft Defender for Cloud.
 
 5. On the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
 
@@ -283,6 +283,6 @@ Add each policy one by one:
 
 ### Summary
 
-In this module, you have completed Exploring **Security Center** features, **ASC default policy, Azure Policy, Created resource exemption, Created policy enforcement and deny,** and **Created custom policy**.
+In this module, you have completed Exploring **Microsoft Defender for Cloud** features, **ASC default policy, Azure Policy, Created resource exemption, Created policy enforcement and deny,** and **Created custom policy**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
