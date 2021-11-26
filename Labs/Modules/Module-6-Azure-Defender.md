@@ -2,7 +2,7 @@
 
 ### Overview
 
-In this exercise, you will explore Azure Defender and Security Center features
+In this exercise, you will explore Microsoft Defender  for Cloud's features:
 
 You will be performing the following activities to achieve the goal.
 
@@ -22,7 +22,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
     ![](../Images/securityalert.png)
     
     - Select **Your Subscription**.
-    - On the **Azure Defender plan**s, keep only **Virtual Machines** selected.
+    - On the **Microsoft Defender  for Cloud plan**s, keep only **Virtual Machines** selected.
     - Click on the **Create sample alerts** button to trigger the alert simulation for VMs.
 
      ![](../Images/createalerts1.png)
@@ -49,7 +49,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
      ![](../Images/securityalert.png)
      
     - Select **Your Subscription**.
-    - On the Azure Defender plans, keep only **Key Vaults** selected.
+    - On the Microsoft Defender  for Cloud plans, keep only **Key Vaults** selected.
     - Click **Create sample alerts** button to trigger the alert simulation for Key Vaults.
 
      ![](../Images/keyvalut%20alert.png)
