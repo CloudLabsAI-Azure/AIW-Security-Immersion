@@ -105,7 +105,7 @@ In this exercise, you will be getting started with the functionality of Azure Mi
     ![auto-provisioning](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/edit%20configuration.png?raw=true)
   
 
-1. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **Microsoft Defender for Cloudlab-la-{DeploymentID} (2)** from the drop down menu.
+1. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **asclab-la-{DeploymentID} (2)** from the drop down menu.
 
     ![workspace configuration](../Images/connectazurevms.png)
 
