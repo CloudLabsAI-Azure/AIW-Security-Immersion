@@ -5,9 +5,9 @@
 
 In this module, we will guide you through the current Security Center policies set by Azure. Also, we will walk you through the methods to enable or disable the Security policies. 
 
-### Exercise 1: Overview of the ASC policy
+### Exercise 1: Overview of the Microsoft Defender for Cloud policy
 
-In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Azure Security Center and about initiatives, policies, and how they relate to the Security Center's recommendation.
+In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to the Security Center's recommendation.
 
 1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
@@ -31,13 +31,13 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/m3fs1.png)
    
-2. By default, there is 1 assignment at the **Security center default policy** which is **ASC default**.
+2. By default, there is 1 assignment at the **Security center default policy** which is **Microsoft Defender for Cloud default**.
 
     ![Security center default policy](../Images/asc-default-policy-subscription.png)
 
-    > **Note:** This policy is enabled by default on your subscription as per Azure Security Center recommendations. This is the default set of policies monitored by Azure Security Center. It is automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
+    > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
 
-3. To view the policy, click on **ASC Default (subscription...)**.
+3. To view the policy, click on **Microsoft Defender for Cloud Default (subscription...)**.
 
      > **Note:** the assignment name will have GUID of the subscription in your lab environment.
 
@@ -68,7 +68,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
     ![policy assignment](../Images/m3ex2.step3.png)	
 
-4. You can now see three built-in initiatives used by Azure Security Center:
+4. You can now see three built-in initiatives used by Microsoft Defender for Cloud:
     -	*Azure Security Benchmark*
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
