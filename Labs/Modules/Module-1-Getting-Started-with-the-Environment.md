@@ -8,7 +8,7 @@ You will be performing the following activities to achieve the goal.
 
   - Login to Azure Portal to access your subscription
   - Upgrade your subscription to enable Azure Defender Plan
-  - Configure data collection in ASC
+  - Configure data collection in Microsoft Defender for Cloud
 
 ## Exercise 1: Log in to Azure Portal
 
@@ -79,7 +79,7 @@ In this exercise, you will be getting started with the functionality of Azure Mi
 
     ![install-agents](../Images/installagents1.png)
 
-### Configure the data collection settings in ASC
+### Configure the data collection settings in Microsoft Defender for Cloud
 
 
 1. Return to Microsoft Defender for Cloud blade and Click on the **Environment settings**(1), under **Management** section, select the Log Analytics workspace named **<inject key="log analytics workspace" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
@@ -105,7 +105,7 @@ In this exercise, you will be getting started with the functionality of Azure Mi
     ![auto-provisioning](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/edit%20configuration.png?raw=true)
   
 
-1. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **asclab-la-{DeploymentID} (2)** from the drop down menu.
+1. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **Microsoft Defender for Cloudlab-la-{DeploymentID} (2)** from the drop down menu.
 
     ![workspace configuration](../Images/connectazurevms.png)
 
@@ -128,9 +128,9 @@ In this exercise, you will be getting started with the functionality of Azure Mi
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Azure Defender.
 > * You can enable the Azure Defender trial for 30-days on a subscription-only, if not previously used.
 
-## Exercise 2: Creating ASC Default policy.
+## Exercise 2: Creating Microsoft Defender for Cloud Default policy.
 
-In this exercise, You will create the ASC default policy in security policy under  Microsoft Defender for Cloud.
+In this exercise, You will create the Microsoft Defender for Cloud default policy in security policy under  Microsoft Defender for Cloud.
 
 1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
    
@@ -138,7 +138,7 @@ In this exercise, You will create the ASC default policy in security policy unde
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-1. Click on **Security Policy (1)** You'll notice that in **Default initiative** (2) the **ASC Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
+1. Click on **Security Policy (1)** You'll notice that in **Default initiative** (2) the **Microsoft Defender for Cloud Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
 
     ![Template deployment completed](../Images/security5.png)
    
@@ -148,7 +148,7 @@ In this exercise, You will create the ASC default policy in security policy unde
 
         ![](../Images/security3.png?raw=true)
         
-     - Under **Basics** tab, enter the **Assignment name** as **ASC default**.
+     - Under **Basics** tab, enter the **Assignment name** as **Microsoft Defender for Cloud default**.
       
        ![](../Images/security4.png?raw=true)
       
