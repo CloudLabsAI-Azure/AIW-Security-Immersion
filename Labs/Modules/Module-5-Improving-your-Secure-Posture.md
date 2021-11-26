@@ -7,7 +7,7 @@ This module will walk you through the process to use the vulnerability assessmen
 
 ### Exercise 1: Vulnerability assessment for VMs
 
-With Azure Defender for servers, you can quickly deploy the integrated vulnerability assessment solution (powered by Qualys) with no additional configuration or extra costs. Once the vulnerability assessment scanner is deployed, it continually assesses all the installed applications on a virtual machine to find vulnerabilities and presents its findings in the Microsoft Defender for Cloud console. When a machine is found that doesn't have a vulnerability assessment solution deployed, Microsoft Defender for Cloud generates a recommendation that looks like this: _A vulnerability assessment solution should be enabled on your virtual machines._ To remediate a resource, you can click on the **Quick Fix** button to deploy the necessary VM extension.
+With Microsoft Defender for servers, you can quickly deploy the integrated vulnerability assessment solution (powered by Qualys) with no additional configuration or extra costs. Once the vulnerability assessment scanner is deployed, it continually assesses all the installed applications on a virtual machine to find vulnerabilities and presents its findings in the Microsoft Defender for Cloud console. When a machine is found that doesn't have a vulnerability assessment solution deployed, Microsoft Defender for Cloud generates a recommendation that looks like this: _A vulnerability assessment solution should be enabled on your virtual machines._ To remediate a resource, you can click on the **Quick Fix** button to deploy the necessary VM extension.
 
 **Explore vulnerability assessment recommendations:**
 
@@ -31,7 +31,7 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
     ![](../Images/fix-asclab-win.png)
 
-1. On the **Choose a vulnerability assessment solution** select **Deploy integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers) (1)**. Click on  **Proceed (2)**.
+1. On the **Choose a vulnerability assessment solution** select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for servers) (1)**. Click on  **Proceed (2)**.
 
     ![](../Images/CS-mod5-step6.png)
 
@@ -132,7 +132,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 ### Exercise 3: Automate recommendations with workflow automation
 
-Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Security Center events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
+Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Microsoft Defender for Cloud events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
 
 **Create a new Logic App:**
 
@@ -166,7 +166,7 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/open-logic-app.png)
 
-1. Search for **Security Center** in the search box and select **When an Microsoft Defender for Cloud Recommendation is created or triggered** from the list of **Triggers**
+1. Search for **Microsoft Defender for Cloud** in the search box and select **When an Microsoft Defender for Cloud Recommendation is created or triggered** from the list of **Triggers**
 
     ![](../Images/triggered.png)
 
@@ -230,7 +230,7 @@ Every security program includes multiple workflows for incident response. The pr
       
    - Trigger conditions:
    
-     * Select Security Center data types: **Recommendation**
+     * Select Microsoft Defender for Cloud data types: **Recommendation**
      * Recommendations name: **All recommendations selected**
      * Recommendation severity: **All severities selected**
      * Recommendation state: **All states selected**
@@ -308,6 +308,6 @@ More details on the [official article](https://docs.microsoft.com/en-us/azure/se
 
 ### Summary
 
-  * In this module, you have completed exploring more **Security Center** features - **Vulnerability assessment for VMs**, **Vulnerability assessment for Containers**, **Automated recommendations with workflow automation** and **Accessed your secure score via ARG**.
+  * In this module, you have completed exploring more **Microsoft Defender for Cloud** features - **Vulnerability assessment for VMs**, **Vulnerability assessment for Containers**, **Automated recommendations with workflow automation** and **Accessed your secure score via ARG**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
