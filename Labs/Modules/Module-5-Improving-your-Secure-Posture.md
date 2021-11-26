@@ -11,9 +11,9 @@ With Azure Defender for servers, you can quickly deploy the integrated vulnerabi
 
 **Explore vulnerability assessment recommendations:**
 
-1. Type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
-    ![](../Images/security%20center.png)
+    ![](../Images/m3e1s1.png)
      
 1. Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here.
 
@@ -211,7 +211,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 **Create a new workflow automation instance**
 
-1. Search for **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+1. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
 2. Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **Add workflow automation (2)**.
 
@@ -258,7 +258,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 6. Test/trigger your automation manually:
 
-   - On the Security Center pane, click on **Recommendations (1)** from the **General** section.
+   - On the Microsoft Defender for Cloud panel, click on **Recommendations (1)** from the **General** section.
    - Under **Remediate vulnerabilities (2)** look for recommendation **Azure Kubernetes Service clusters should have the Azure Policy Add-on for Kubernetes installed (3)** and click on it.
    
       > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.

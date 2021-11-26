@@ -16,6 +16,12 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
     ![Template deployment completed](../Images/m1e2s3.png)
+    
+   >**Note**: If you are unable to find **Pricing & settings page**, Please follow the below step.
+
+   - From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
+
+     ![Template deployment completed](../Images/m2e1s3.1.png)
    
 1. In **Environment Settings** page, Select your subscription.
 
@@ -135,7 +141,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 In this exercise, you will learn how to use Azure Policy to do some of the more common tasks related to assigning, denying, and managing policies across your organization.
 
-1. In the search box located on the top of the Azure Portal page, search for **Security Center** and click on it.
+1. In the search box located on the top of the Azure Portal page, search for **Microsoft Defender for Cloud** and click on it.
 
 2. From the left side pane of **Microsoft Defender for Cloud**, select **Recommendations** under **General**.
 
@@ -156,7 +162,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 6. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
-   **Note**: If you unable to eedit the query. Click on the eclipse and select **change to Audit** and retry the step
+   **Note**: If you unable to edit the query. Click on the eclipse and select **change to Audit** and retry the step
 
     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/change%20to%20deny.png?raw=true)
 

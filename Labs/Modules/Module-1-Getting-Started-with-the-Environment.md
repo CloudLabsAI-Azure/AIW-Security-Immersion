@@ -55,7 +55,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 ## Exercise 2: Enabling Azure Defender
 
-In this exercise, you will be getting started with the functionality of Azure Security Center and Azure Defender and how to enable Azure Defender on a subscription.
+In this exercise, you will be getting started with the functionality of Azure Microsoft Defender for Cloud and how to enable Azure Defender on a subscription.
 
 ### Subscription upgrade and agents installation
 
@@ -90,7 +90,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 
     ![Enable Azure Defender on the workspace level](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/enable%20defender.png?raw=true)
 
-1. Go back to the **Security center | Environment settings** page and select your **Azure subscription**.
+1. Go back to the **Microsoft Defender for Cloud | Environment settings** page and select your **Azure subscription**.
 
 1. From **Settings |Azure Defender Plans** page, Navigate to **Auto provisioning** under the Settings section.
 
@@ -124,7 +124,7 @@ In this exercise, you will be getting started with the functionality of Azure Se
 <br>
 
 > Please notice:
-> * To get the full functionality of Azure Security Center and Azure Defender, both subscription and Log Analytics workspace should be enabled for Defender. Once you enable it,  the required Log Analytics solutions will be added to the workspace.
+> * To get the full functionality of Microsoft Defender for Cloud, both subscription and Log Analytics workspace should be enabled for Defender. Once you enable it,  the required Log Analytics solutions will be added to the workspace.
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Azure Defender.
 > * You can enable the Azure Defender trial for 30-days on a subscription-only, if not previously used.
 
