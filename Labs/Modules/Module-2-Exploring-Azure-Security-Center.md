@@ -6,7 +6,7 @@ In this exercise, you will explore the Microsoft Defender for Cloud Dashboard fe
 
 You will be performing the following activities to achieve the goal.
 
-* Overview of Microsoft Defender for Clouder dashboard features **Azure Secure Score, Regulatory Compliance and Azure Defender**.
+* Overview of Microsoft Defender for Clouder dashboard features **Azure Secure Score, Regulatory Compliance and Microsoft Defender  for Cloud**.
 * Exploring Security Controls and Recommendations
 * Exploring the Inventory capability
 
@@ -16,7 +16,7 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
 
 1. Navigate to **Microsoft Defender for Cloud** in the Azure portal(perform if not already on the Microsoft Defender for Cloud page).
 
-2. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Secure Score, Regulatory Compliance and Azure Defender**.
+2. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Secure Score, Regulatory Compliance and Microsoft Defender  for Cloud**.
 
    > ❗ Important: <br>
    > Microsoft Defender for Cloud takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. Sometimes, it can take up to 24 hours or even more than that for all the tiles on the overview page to update. if it takes more time, attendees can skip the next steps in Module 2 & proceed with the next modules and can come back later and check on this. we are looking at various approaches to optimize this experience for future workshops.
@@ -50,7 +50,7 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
 
 8. On the **Workload Protections** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
 
-     ![Overview: Azure Defender tile](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/workload%20protection.png?raw=true)
+     ![Overview: Microsoft Defender  for Cloud tile](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/workload%20protection.png?raw=true)
 
 9. Next, select the **Regulatory Compliance** from the **Cloud Security** section of the Microsoft Defender for Cloud page.
 
@@ -222,11 +222,11 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
    
 12. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
-13. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Azure Defender (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again click on **Ok**
+13. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again click on **Ok**
 
     ![Inventory: Assign tags](../Images/inventory2.png)
 
-14. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Azure Defender plan (when applicable).
+14. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Microsoft Defender  for Cloud plan (when applicable).
 
 15. From the top menu, click on **Open query**.
 
