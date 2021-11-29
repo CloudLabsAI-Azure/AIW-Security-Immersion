@@ -58,7 +58,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 2. From the left navigation pane, under the **Authoring** section, click on **Definitions(1)**. This is where you can explore the built-in policy definitions and initiatives.
 
-3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative(2)** and select **Microsoft Defender for Cloud(3)** from the _Category_ filter.
+3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative(2)** and select **Security Center(3)** from the _Category_ filter.
 
     ![policy assignment](../Images/m3ex2.step3.png)	
 
@@ -241,21 +241,23 @@ Add each policy one by one:
 
 ***Add a custom initiative to your subscription***
 
-1. In the search box located on the top of the Azure Portal page, search for **Microsoft Defender for Cloud** and click on it.
+1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
-2. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
+    ![](../Images/m3e1s1.png)
 
-    ![Template deployment completed](../Images/m1e2s3.png)
+2. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
+
+    ![Template deployment completed](../Images/m2e1s3.1.png)
    
 3. In **Environment Settings** page, Select your subscription.
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-4. Click on **Security Policy (1)**.
+4. Click on **Security Policy**.
 
-    ![Template deployment completed](../Images/m3fs7.png)
+    ![Template deployment completed](../Images/m3e1s4.3.png)
 
-> **Note:** You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Microsoft Defender for Cloud.
+    >**Note:** You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Microsoft Defender for Cloud.
 
 5. On the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
 
