@@ -73,9 +73,9 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 6. To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the assignments, for example:
 
-    - *ASC Default (subscription: dd82589b-444c-45a8-863a-816243ce017d)*
+    - *Microsoft Defender for Cloud default*
 
-7. Click on **ASC Default** to see the assignment details.
+7. Click on **Microsoft Defender for Cloud default** to see the assignment details.
 
 ### Exercise 3: Create resource exemption for a recommendation
 
