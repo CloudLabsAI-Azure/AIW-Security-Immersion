@@ -148,7 +148,7 @@ In this exercise, You will create the Microsoft Defender for Cloud default polic
 
         ![](../Images/security3.png?raw=true)
         
-     - Under **Basics** tab, enter the **Assignment name** as **Microsoft Defender for Cloud default**.
+     - Under **Basics** tab, enter the **Assignment name** as **ASC default**.
       
        ![](../Images/security4.png?raw=true)
       
