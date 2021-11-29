@@ -31,21 +31,21 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
 
-1. To view the policy, click on **Microsoft Defender for Cloud Default (subscription...)**.
+1. To view the policy, click on **Microsoft Defender for Cloud Default**.
 
      > **Note:** the assignment name will have GUID of the subscription in your lab environment.
 
 1. On the **Edit Initiative Assignment** page, click on **Parameters** and uncheck the box that is next to **Only show parameters that require input** to view the parameters.
 
-    ![](../Images/defaultpolicy-01.png)
+    ![](../Images/m3e1s7.png)
     
 1. On the **Edit Initiative Assignment** blade, scroll down and change the action to **AuditIfNotExists** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + save**.
 
-    ![](../Images/m3ex1.step5.png)
+    ![](../Images/m3e1s8.png)
 
 1. On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists** and click on **Save**. Wait for the policy update to complete successfully.
 
-    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/asc-default-policy-nsg-recommendation.png)
+    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/m3e1s9.png)
 
 
 ### Exercise 2: Explore Azure Policy
