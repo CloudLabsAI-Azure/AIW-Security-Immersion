@@ -11,7 +11,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
-    ![](../Images/defendernew.png)
+    ![](../Images/m3e1s1.png)
 
 1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
 
