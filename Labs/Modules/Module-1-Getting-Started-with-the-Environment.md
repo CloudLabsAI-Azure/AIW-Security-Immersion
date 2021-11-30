@@ -128,7 +128,7 @@ In this exercise, you will be getting started with the functionality of Azure Mi
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Microsoft Defender for Cloud.
 > * You can enable the Microsoft Defender for Cloud trial for 30-days on a subscription-only, if not previously used.
 
-## Exercise 2: Creating Microsoft Defender for Cloud Default policy.
+## Exercise 3: Creating Microsoft Defender for Cloud Default policy.
 
 In this exercise, You will create the Microsoft Defender for Cloud default policy in security policy under  Microsoft Defender for Cloud.
 
