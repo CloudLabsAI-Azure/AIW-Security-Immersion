@@ -11,17 +11,11 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
-    ![](../Images/defendernew.png)
+    ![](../Images/m3e1s1.png)
 
-1. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
+1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
 
-    ![Template deployment completed](../Images/m1e2s3.png)
-    
-   >**Note**: If you are unable to find **Pricing & settings page**, Please follow the below step.
-
-   - From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
-
-     ![Template deployment completed](../Images/m2e1s3.1.png)
+    ![Template deployment completed](../Images/m2e1s3.1.png)
    
 1. In **Environment Settings** page, Select your subscription.
 
@@ -29,29 +23,29 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
    
 1. Click on **Security Policy**.
 
-    ![Template deployment completed](../Images/m3fs1.png)
+    ![Template deployment completed](../Images/m3e1s4.3.png)
    
-2. By default, there is 1 assignment at the **Microsoft Defender for Cloud default policy** which is **Microsoft Defender for Cloud default**.
+1. By default, there is 1 assignment at the **Microsoft Defender for Cloud default policy** which is **Microsoft Defender for Cloud default**.
 
-    ![Microsoft Defender for Cloud default policy](../Images/asc-default-policy-subscription.png)
+    ![Microsoft Defender for Cloud default policy](../Images/m3e1s5.1.png)
 
     > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
 
-3. To view the policy, click on **Microsoft Defender for Cloud Default (subscription...)**.
+1. To view the policy, click on **Microsoft Defender for Cloud Default**.
 
      > **Note:** the assignment name will have GUID of the subscription in your lab environment.
 
-4. On the **Edit Initiative Assignment** page, click on **Parameters** and uncheck the box that is next to **Only show parameters that require input** to view the parameters.
+1. On the **Edit Initiative Assignment** page, click on **Parameters** and uncheck the box that is next to **Only show parameters that require input** to view the parameters.
 
-    ![](../Images/defaultpolicy-01.png)
+    ![](../Images/m3e1s7.png)
     
-5. On the **Edit Initiative Assignment** blade, scroll down and change the action to **AuditIfNotExists** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + save**.
+1. On the **Edit Initiative Assignment** blade, scroll down and change the action to **AuditIfNotExists** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + save**.
 
-    ![](../Images/m3ex1.step5.png)
+    ![](../Images/m3e1s8.png)
 
-6. On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists** and click on **Save**. Wait for the policy update to complete successfully.
+1. On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists** and click on **Save**. Wait for the policy update to complete successfully.
 
-    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/asc-default-policy-nsg-recommendation.png)
+    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/m3e1s9.png)
 
 
 ### Exercise 2: Explore Azure Policy
@@ -64,7 +58,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 2. From the left navigation pane, under the **Authoring** section, click on **Definitions(1)**. This is where you can explore the built-in policy definitions and initiatives.
 
-3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative(2)** and select **Microsoft Defender for Cloud(3)** from the _Category_ filter.
+3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative(2)** and select **Security Center(3)** from the _Category_ filter.
 
     ![policy assignment](../Images/m3ex2.step3.png)	
 
@@ -79,9 +73,9 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 6. To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the assignments, for example:
 
-    - *ASC Default (subscription: dd82589b-444c-45a8-863a-816243ce017d)*
+    - *Microsoft Defender for Cloud default*
 
-7. Click on **ASC Default** to see the assignment details.
+7. Click on **Microsoft Defender for Cloud default** to see the assignment details.
 
 ### Exercise 3: Create resource exemption for a recommendation
 
@@ -247,21 +241,23 @@ Add each policy one by one:
 
 ***Add a custom initiative to your subscription***
 
-1. In the search box located on the top of the Azure Portal page, search for **Microsoft Defender for Cloud** and click on it.
+1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
-2. In Microsoft Defender for Cloud blade and Click on the **Getting started (1)** from the left pane. Click on the **Install agents (2)** tab, Click on **Pricing & settings page (4)**.
+    ![](../Images/m3e1s1.png)
 
-    ![Template deployment completed](../Images/m1e2s3.png)
+2. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
+
+    ![Template deployment completed](../Images/m2e1s3.1.png)
    
 3. In **Environment Settings** page, Select your subscription.
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-4. Click on **Security Policy (1)**.
+4. Click on **Security Policy**.
 
-    ![Template deployment completed](../Images/m3fs7.png)
+    ![Template deployment completed](../Images/m3e1s4.3.png)
 
-> **Note:** You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Microsoft Defender for Cloud.
+    >**Note:** You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Microsoft Defender for Cloud.
 
 5. On the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
 

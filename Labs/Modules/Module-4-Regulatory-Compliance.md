@@ -154,19 +154,17 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
     ![](../Images/customben.png)
 
-1. To assign your new security policy, type **Security Center** in the search box located on the top of the **Azure Portal** page and click on it.
+1. To assign your new security policy, type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/security%20center.png?raw=true)
+    ![](../Images/m3e1s1.png)
      
-1. Under **Microsoft Defender for Cloud** page, click on **Getting started (1)**, and navigate to **Install agents (2)** then select **Pricing & settings page (3)**.
+1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
 
-   ![](../Images/pricingandsetting.png)
-    
-   >**Note**: If you are unable to find **Pricing & settings page**, Please follow the below step.
+    ![Template deployment completed](../Images/m2e1s3.1.png)
+   
+1. In **Environment Settings** page, Select your subscription.
 
-   - From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
-
-     ![Template deployment completed](../Images/m2e1s3.1.png)
+    ![Template deployment completed](../Images/m1e2.1s2.png)
     
 1. Select **Your Subscription** under the Environment settings.
 

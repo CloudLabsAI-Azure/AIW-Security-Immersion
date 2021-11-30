@@ -14,20 +14,14 @@ Continuous export lets you fully customize what will be exported, and where it w
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
     ![](../Images/m3e1s1.png)
-     
-1. Under **Microsoft Defender for Cloud** page, click on **Getting started (1)**, and navigate to **Install agents (2)** then select **Pricing & settings page (3)**.
 
-   ![](../Images/pricingandsetting.png)
-    
-   >**Note**: If you are unable to find **Pricing & settings page**, Please follow the below step.
+1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
 
-   - From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
-
-     ![Template deployment completed](../Images/m2e1s3.1.png)
+    ![Template deployment completed](../Images/m2e1s3.1.png)
     
 1. Select **Your Subscription** under the Environment settings.
 
-   ![](../Images/envset.png)
+    ![](../Images/envset.png)
 
 1. Under **Settings** section, click on **Continuous export**.
 
