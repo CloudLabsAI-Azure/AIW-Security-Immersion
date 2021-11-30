@@ -83,6 +83,16 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 4. After the **New suppression rule** pane opens, enter the following details:
 
+   - Subscription: **Select** your subscription (1)
+   
+   - Alerts: Select **All (2)** and click on plus sign to add an entity.
+        - Column 1: **Azure resource (3)**
+        - Column 2: Select **Resource id (4)** from the dropdown
+        - Column 3: Select **Contains (5)** from the dropdown
+        - Column 4: Enter **asclab-kv (6)**
+
+    ![](../Images/m6e2s4.1.png)
+
    - Rule name: Enter **Testing-AutoDismiss-KV (1)**
    
    - State: **Enabled (2)**
