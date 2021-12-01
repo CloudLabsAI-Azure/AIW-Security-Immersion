@@ -154,10 +154,14 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 7. Verify both permissions are **Consented**
 
     ![Consent2](../Images/m6ex3step7.png)
+    
+8. Replace the endpoint URL with the following endpoint URL :`https://graph.microsoft.com/v1.0/security/alerts?$top=5` **(1)**. This query returns a list of top five security alerts using Graph Security API.
 
-8. Click on the **Run query** button. You should now see a sample response preview in JSON format.
+    ![Create sample virtual machine security alerts](../Images/m6e3s8.png)    
 
-    ![Create sample virtual machine security alerts](../Images/get.png)
+9. Click on the **Run query** button. You should now see a sample response preview in JSON format.
+
+    ![Create sample virtual machine security alerts](../Images/m6e3s9.png)
 
 ### Summary
 
