@@ -8,3 +8,8 @@
 
 * Direct access for few options like Security policy, Pricing and Settings from the Azure Portal has been removed.
 
+
+### 30 November 2021
+
+* New steps and screenshots are added to update the endpoint URL in Module 6 Exercise 3 step 8, which will output a list of top 5 security alarts using Graph Security API.
+
