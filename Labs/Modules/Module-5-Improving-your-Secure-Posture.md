@@ -15,13 +15,13 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
 
     ![](../Images/m3e1s1.png)
      
-1. Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **A vulnerability assessment solution should be enabled on your virtual machines (3)** recommendation listed here.
+1. Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **Machines should have a vulnerability assessment solution (3)** recommendation listed here.
 
     > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-    ![](../Images/recomendations1.png)
+    ![](../Images/updatess.png)
 
-1. Click on **A vulnerability assessment solution should be enabled on your virtual machines** recommendation and open it.
+1. Click on **Machines should have a vulnerability assessment solution** recommendation and open it.
 
 1. Click to expand **Remediation steps (1)** – then click on the **Quick fix logic (2)** option to expose an automatic remediation script content (ARM template). Once done, **Close (3)** this window.
 
