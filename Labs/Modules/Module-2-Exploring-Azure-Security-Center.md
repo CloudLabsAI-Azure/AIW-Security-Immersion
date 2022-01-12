@@ -118,9 +118,9 @@ Exploring secure score
 
     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/csv%20report.png?raw=true)
    
-3. Under **Recommendation**, select **Storage account public access should be disallowed**.
+3. Under **Recommendation**, Click on **Manage access and permissions** and select **Storage account public access should be disallowed** from the drop down list.
 
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/recommendation.png?raw=true)
+    ![](../Images/dirsto.png)
 
 1. On the top section, notice the following:
 
