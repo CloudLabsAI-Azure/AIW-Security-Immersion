@@ -6,7 +6,7 @@ In this exercise, you will explore the Microsoft Defender for Cloud Dashboard fe
 
 You will be performing the following activities to achieve the goal.
 
-* Overview of Microsoft Defender for Clouder dashboard features **Azure Secure Score, Regulatory Compliance and Microsoft Defender  for Cloud**.
+* Overview of Microsoft Defender for Cloud dashboard features **Secure Score in Microsoft Defender for Cloud, Regulatory Compliance and Microsoft Defender for Cloud**.
 * Exploring Security Controls and Recommendations
 * Exploring the Inventory capability
 
