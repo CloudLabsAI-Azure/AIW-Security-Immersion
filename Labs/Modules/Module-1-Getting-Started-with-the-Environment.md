@@ -32,6 +32,10 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 1. In the **labvm**, Launch **Azure Portal** using the desktop icon.  
 
+1. Click on **Start without you data** to open the edge without singing in.
+
+   ![](../Images/edgenew.png "Enter Email") 
+
 1. Now you should be on the **Microsoft Azure** login screen. Enter the following username and click on **Next**.  
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject> 
