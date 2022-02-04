@@ -19,7 +19,7 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
 2. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Secure Score, Regulatory Compliance and Microsoft Defender  for Cloud**.
 
    > ❗ Important: <br>
-   > Microsoft Defender for Cloud takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. Sometimes, it can take up to 24 hours or even more than that for all the tiles on the overview page to update. if it takes more time, attendees can skip the next steps in Module 2 & proceed with the next modules and can come back later and check on this. we are looking at various approaches to optimize this experience for future workshops.
+   > Microsoft Defender for Cloud takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. As we have already enabled the Microsoft defender for cloud in this tenant the data should be available now. 
 
     ![Microsoft Defender for Cloud: Overview dashboard](../Images/msdefender.png)
 
@@ -36,8 +36,6 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
     ![Microsoft Defender for Cloud: Dashboard](../Images/msdefender3.png)
 
 6. On the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
-
-    > Note: It can take upto 24 hours for all the secure score data to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
 
     ![Overview: Secure Score tile](../Images/asc-overview-secure-score-tile1.png?raw=true)
 
@@ -62,8 +60,7 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
 
      ![Overview: Regulatory Compliance tile](../Images/msdefender4.png)
    
-     > Note: It can take upto 24 hours for compliance status to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
-
+    
 11. Next Click on **Inventory** from the **General** section of the Microsoft Defender for Cloud. It shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
 
      > ❗ Important: <br>
@@ -106,7 +103,7 @@ Exploring secure score
 
 6. Close the **View recommendations** page to return to **Recommendations** page.
 
-    ![Recommendations view](../Images/ex2.step5.png)
+    ![Recommendations view](../Images/new_secure.png)
 
  **Exploring Security Controls and Recommendations**
 
@@ -196,8 +193,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
     ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/healthpreview.png?raw=true)
 
-    > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
-
+    
 9. Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (Unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
 
      ![Remediate a resource](../Images/filter-rg.png)
@@ -206,8 +202,9 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 10. From the filter menu, select the **Resource Group** filter and **select all** under the Value. Again from the filter menu, select **Recommendations**, uncheck the **select all** option under the Value and then select the **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
 
-    > **Note**: If you don't see **Auditing on SQL Server should be enabled** in search resultsthat means it is not loaded yet to recommendations and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Recommendations**, you can note down this step number then continue to the next exercise and verify this later.
+   ![Remediate a resource](../Images/sqlaudit.png)
 
+    
 11. Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
   * Filter the **Resource type** column to include only **App Services**: Select the **Resource type** filter and select **app services** under the Value and Click on **OK**
@@ -215,8 +212,6 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
   * From the top menu, click **Assign tags**
   * Assign `Environment` as the name and  `Production` as the value.
   * Click **Save**.
-
-   > **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this later.
 
    ![Inventory: Assign tags](../Images/assigntagsv1.gif?raw=true)
    
@@ -228,9 +223,11 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 14. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Microsoft Defender  for Cloud plan (when applicable).
 
+   ![Inventory: Assign tags](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/downloadcsvreport.png?raw=true)
+
 15. From the top menu, click on **Open query**.
 
-    ![Inventory: Assign tags](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/downloadcsvreport.png?raw=true)
+    ![Inventory: Assign tags](../Images/query.png)
 
 16. On the **Azure Resource Graph Explorer** blade, click on **Run Query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs and here it gets very powerful.
  
