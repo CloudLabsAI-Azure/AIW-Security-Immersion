@@ -267,6 +267,7 @@ Every security program includes multiple workflows for incident response. The pr
    - Select resource *asclab-aks* and then click on the **Trigger Logic App** button.
    - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
    - You should receive an email, verify in your inbox. On the labvm-xxxxxx open a new tab in web browser and navigate to https://outlook.office365.com.
+   >Note: If the logic app is not available, please wait for sometime or comeback later to this step to perform as this can take approx. 20-30 minutes to fetch the logic app.
 
      ![](../Images/triggerlogicapp.png)
 
