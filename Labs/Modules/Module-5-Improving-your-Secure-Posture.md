@@ -17,8 +17,6 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
      
 1. Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **Machines should have a vulnerability assessment solution (3)** recommendation listed here.
 
-    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
-
     ![](../Images/updatess.png)
 
 1. Click on **Machines should have a vulnerability assessment solution** recommendation and open it.
@@ -102,11 +100,11 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 9. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
-10. Click on **Recommendations (1)** from the left side pane under the **General** section. Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys) (2)**.
+10. Click on **Recommendations (1)** from the left side pane under the **General** section. Expand **Remediate vulnerabilities** security control and select **Container registry images should have vulnerability findings resolved**.
  
-     ![asd](../Images/vulnarability.png)
+     ![asd](../Images/container.png)
 
-    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 1 hours.
 
 11. On the recommendation page, notice the following details at the upper section:
 
@@ -114,11 +112,11 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
     - Severity: **High**
     - Total vulnerabilities: **expect to see more than 2 vulnerabilities**
 
-     ![](../Images/vulnerabilities.png)
+     ![](../Images/cont.png)
 
 12. Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab**xxx** here xxx is unique ID).
 
-     ![](../Images/containerregistry.png)
+     ![](../Images/cont2.png)
 
 13. On the **Security Checks** section, notice the number of vulnerabilities.
 
@@ -126,7 +124,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
     >XXXXXX is the ID of the security finding.
 
-     ![](../Images/securitycheck1.png)
+     ![](../Images/cont3.png)
 
    Notice the vulnerability description, general information (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
 
@@ -241,6 +239,7 @@ Every security program includes multiple workflows for incident response. The pr
    
      * Show Logic App instances from the following subscriptions: **Your Subscription**
      * Logic App name: **Send-RecommendationsChanges**
+     >Note: You might have to click on refresh button if the logicapp is not visible. 
      
    Click **Create** to complete the task.
 
