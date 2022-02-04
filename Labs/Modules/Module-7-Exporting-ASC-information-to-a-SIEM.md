@@ -27,7 +27,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
     ![](../Images/continuousexport.png)
 
-1. Here you can configure the streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
+1. Here you can configure the streaming export setting of Microsoft Defender for cloud data to multiple export targets either Event Hub or Log Analytics workspace.
 
 1. Select the **Log Analytics workspace (1)** option and follow the below steps:
 
@@ -59,7 +59,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
         ![](../Images/LAW2.png)
 
-     > **Note:** Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
+     > **Note:** Exporting Microsoft Defender for Cloud's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
 1. Search for **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
@@ -69,15 +69,17 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 1. On the welcome page, close the **Queries** window.
 
-    [Continuous export settings page](../Images/log-analytic-started2.png)
+    [Continuous export settings page](../Images/log1.png)
+    
+     [Continuous export settings page](../Images/log2.png)
 
 1. From the left pane select the **Tables** tab and **enable** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
 
-    [Tables page](../Images/showtables.png)
+    [Tables page](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Images/showtables.png)
 
 1. Query the tables to validate data streaming - For example, Click on **Tables (1)** expand **Security and Audit (2)** double click on **Security Event (3)** to open in the query window. Now click on **Run (4)** and see the results below.
 
-    [Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
+    [Respective tables in the Log Analytics workspace](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Images/Log-editor-tables.png)
   
    > **Note:** Since the continuous export was just enabled, you may need to wait for sometime for new events to show up.
 
@@ -89,7 +91,7 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 
     ![](../Images/m7e2s1.png)
 
-2. On the **Microsoft Sentinel** blade, click on the **Create Microsoft Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by Security Center.
+2. On the **Microsoft Sentinel** blade, click on the **Create Microsoft Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by Microsoft Defender for Cloud.
  
     ![connect-workspace1](../Images/m7e2s2.png)
 
@@ -99,15 +101,11 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 
 4. Adding Microsoft Sentinel to workspace asclab-la-{DeploymentID} is now in progress. This process will take few minutes to complete. 
 
-5. Once the deployment of workspace is completed you will get a notification **Successfully added Microsoft Sentinel**. Refresh the web browser page to see the workspace listed on Microsoft Sentinel page.
-
-   ![Add sentinel](../Images/sentinelws.png)
-
-6. Select the workspace **asclab-la-{DeploymentID}** on the **Microsoft Sentinel** page. 
+5. Once the deployment is completed, you will be directly redirected to Microsoft Sentinel.
 
 7. From Microsoft Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
 
-    ![](../Images/dataconnectors.png)
+    ![](../Images/sentinel.png)
     
 
 8. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Microsoft Defender for Cloud** connector and then click on **Open connector page**.
