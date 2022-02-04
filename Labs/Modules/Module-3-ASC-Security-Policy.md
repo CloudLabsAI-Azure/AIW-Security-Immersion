@@ -25,7 +25,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/m3e1s4.3.png)
    
-1. By default, there is 1 assignment at the **Microsoft Defender for Cloud default policy** which is **Microsoft Defender for Cloud default**.
+1. By default, there is one security policy assignment which is **Microsoft Defender for Cloud Default**.
 
     ![Microsoft Defender for Cloud default policy](../Images/m3e1s5.1.png)
 
@@ -77,7 +77,9 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 7. Click on **Microsoft Defender for Cloud default** to see the assignment details.
 
-### Exercise 3: Create resource exemption for a recommendation
+### Exercise 3: Create resource exemption for a recommendation (Read Only)
+
+ 
 
 Resource exemption will allow increased granularity for you to fine-tune recommendations by providing the ability to exempt certain resources from evaluation.
 When working with a recommendation, you can create an exemption by clicking the ellipsis menu on the right side and then select create an exemption.
