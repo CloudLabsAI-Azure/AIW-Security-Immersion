@@ -12,7 +12,7 @@ You will be performing the following activities to achieve the goal.
 
 ### Exercise 1: Alert validation
 
-In this exercise, we will cover the new Alert Simulation as Alerts are the notifications that Security Center generates when it detects threats on your resources. It prioritizes and lists the alerts along with the information needed to quickly investigate the problem. Security Center also provides recommendations for how you can remediate an attack.
+In this exercise, we will cover the new Alert Simulation as Alerts are the notifications that Microsoft Defender for Cloud generates when it detects threats on your resources. It prioritizes and lists the alerts along with the information needed to quickly investigate the problem. Microsoft Defender for Cloud also provides recommendations for how you can remediate an attack.
 
 1. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it. Next, select **Security alerts** under **General** tab from left side pane or by using this [link](https://portal.azure.com/?feature.argsecurityalerts=true&feature.customportal=false#blade/Microsoft_Azure_Security/SecurityMenuBlade/7)
 
@@ -131,7 +131,7 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 
 1. In your **labvm-xxxxxx** open a new browser window and navigate to https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0 page.
 
-2. Scroll down to the **Example** section for a request or aletrnatively you can open this URL https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0&tabs=http#example in your **labvm-xxxxxx** browser window.
+2. Scroll down to the **Example** section for a request or alternatively you can open this URL https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0&tabs=http#example in your **labvm-xxxxxx** browser window.
 
 3. On the HTTP tab, review the endpoint URL: `https://graph.microsoft.com/v1.0/security/alerts`.
 
@@ -165,6 +165,6 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 
 ### Summary
 
-In this module, you have completed exploring more **Security Center** features - **Alert validation**, **Alert suppression** and **Accessed Security Alerts using Graph Security API**.
+In this module, you have completed exploring more **Microsoft Defender for Cloud** features - **Alert validation**, **Alert suppression** and **Accessed Security Alerts using Graph Security API**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
