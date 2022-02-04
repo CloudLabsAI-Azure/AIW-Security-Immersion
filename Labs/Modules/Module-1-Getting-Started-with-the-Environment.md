@@ -57,11 +57,13 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 1. If you see any additional pop-up like, You have free **Azure Advisor recommendations!** Close the window to continue the lab. 
 
 
-## Exercise 2: Enabling Microsoft Defender for Cloud
+## Exercise 2: Enabling Microsoft Defender for Cloud (Read Only)
+
+ >Note: Please note that we have already enabled the Microsoft Defencder for Cloud. As the data recommendations will take some time to reflect in portal after enabling the Microsoft Defender for Cloud.
 
 In this exercise, you will be getting started with the functionality of Microsoft Defender for Cloud and how to enable Microsoft Defender for Cloud on a subscription.
 
-### Subscription upgrade and agents installation
+### Subscription upgrade and agents installation (Read Only)
 
 1. Type **Microsoft Defender for Cloud** in the search box on top of the **Azure Portal** and click to open it.
 
@@ -69,7 +71,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
 1. Click on the **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, select your **subscription (3)** and click **Upgrade (4)**.
 
-    > **Note:** If you are not able to see subscription then it means your subscription is already upgraded, in this case you can skip step 2, 3 and continue from step 4.
+    > **Note:** You will not be able to see the subscription here as we have already enabled the defender for you in this envrionment
 
     ![Overview: Inventory tile](../Images/m1e2s2.1.png)
 
@@ -83,7 +85,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![install-agents](../Images/installagents1.png)
 
-### Configure the data collection settings in Microsoft Defender for Cloud
+### Configure the data collection settings in Microsoft Defender for Cloud (Read Only)
 
 
 1. Return to Microsoft Defender for Cloud blade and Click on the **Environment settings**(1), under **Management** section, select the Log Analytics workspace named **<inject key="log analytics workspace" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
@@ -132,7 +134,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Microsoft Defender for Cloud.
 > * You can enable the Microsoft Defender for Cloud trial for 30-days on a subscription-only, if not previously used.
 
-## Exercise 3: Creating Microsoft Defender for Cloud Default policy.
+## Exercise 3: Creating Microsoft Defender for Cloud Default policy. (Read Only)
 
 In this exercise, You will create the Microsoft Defender for Cloud default policy in security policy under  Microsoft Defender for Cloud.
 
@@ -152,7 +154,7 @@ In this exercise, You will create the Microsoft Defender for Cloud default polic
 
         ![](../Images/security3.png?raw=true)
         
-     - Under **Basics** tab, enter the **Assignment name** as **Microsoft Defender for Cloud default <Subscription ID>**.
+     - Under **Basics** tab, enter the **Assignment name** as **Defender for Cloud default <Subscription ID>**.
       
        ![](../Images/m1e1s3.3.1.png?raw=true)
       
