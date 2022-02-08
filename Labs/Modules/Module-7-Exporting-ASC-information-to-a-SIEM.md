@@ -69,17 +69,17 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 1. On the welcome page, close the **Queries** window.
 
-    [Continuous export settings page](../Images/log1.png)
+    ![Continuous export settings page](../Images/log1.png)
     
-     [Continuous export settings page](../Images/log2.png)
+     ![Continuous export settings page](../Images/log2.png)
 
 1. From the left pane select the **Tables** tab and **enable** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
 
-    [Tables page](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Images/showtables.png)
+    ![Tables page](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Images/showtables.png)
 
 1. Query the tables to validate data streaming - For example, Click on **Tables (1)** expand **Security and Audit (2)** double click on **Security Event (3)** to open in the query window. Now click on **Run (4)** and see the results below.
 
-    [Respective tables in the Log Analytics workspace](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Images/Log-editor-tables.png)
+    ![Respective tables in the Log Analytics workspace](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Images/Log-editor-tables.png)
   
    > **Note:** Since the continuous export was just enabled, you may need to wait for sometime for new events to show up.
 
