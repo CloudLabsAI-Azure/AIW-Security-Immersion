@@ -73,7 +73,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     > **Note:** You will not be able to see the subscription here as we have already enabled the defender for you in this envrionment
 
-    ![Overview: Inventory tile](../Images/m1e2s2.1.png)
+    ![Overview: Inventory tile](../Images/m1-upgrade.png)
 
     ![Overview: Inventory tile](../Images/m1e2s2.2.png)
 
