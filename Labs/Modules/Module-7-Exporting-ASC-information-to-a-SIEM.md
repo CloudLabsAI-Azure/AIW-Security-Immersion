@@ -25,7 +25,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 1. Under **Settings** section, click on **Continuous export**.
 
-    ![](../Images/continuousexport.png)
+    ![](../Images/m7-auto-provisioning.png)
 
 1. Here you can configure the streaming export setting of Microsoft Defender for cloud data to multiple export targets either Event Hub or Log Analytics workspace.
 
