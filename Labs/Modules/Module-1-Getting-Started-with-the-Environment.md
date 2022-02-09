@@ -24,7 +24,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
     ![](../Images/av2.png)
 
-1. The Lab Guide can also be opened on a separate window by selecting the **Split Window** icon in the bottom right corner. This will result in the window detaching from the right side providing more on-screen space for your virtual machine.
+1. The Lab Guide can also be opened on a separate window by selecting the **Split Window** icon in the bottom right corner. This will result in the window detaching from the right side providing more on-screen space for your virtual machine. Also it will increase the screenshtos resolution and you can have a better view for the larger screenshots.
 
     ![](../Images/av3.png)
 
