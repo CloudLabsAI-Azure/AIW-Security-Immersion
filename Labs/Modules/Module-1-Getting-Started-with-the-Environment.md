@@ -16,7 +16,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 ### Instructions 
 
-1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-<inject key="DeploymentID" enableCopy="false"/>**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-<inject key="DeploymentID" enableCopy="false"/>** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
+1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-<inject key="DeploymentID" enableCopy="false"/>**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-<inject key="DeploymentID" enableCopy="false"/>** load up on the left side of the screen, navigate to the **Resources** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
 
     ![](../Images/av1.png)
 
@@ -32,9 +32,13 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 1. In the **labvm**, Launch **Azure Portal** using the desktop icon.  
 
-1. Click on **Start without you data** to open the edge without singing in.
+1. Click on **Start without you data** to open the edge browser.
 
    ![](../Images/edgenew.png "Enter Email") 
+   
+1. Click on **Confirm and start browsing** to open the edge without singing in.
+
+   ![](../Images/edge2.png "Enter Email") 
 
 1. Now you should be on the **Microsoft Azure** login screen. Enter the following username and click on **Next**.  
 
@@ -73,7 +77,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     > **Note:** You will not be able to see the subscription here as we have already enabled the defender for you in this envrionment
 
-    ![Overview: Inventory tile](../Images/m1e2s2.1.png)
+    ![Overview: Inventory tile](../Images/m1-upgrade.png)
 
     ![Overview: Inventory tile](../Images/m1e2s2.2.png)
 
@@ -100,11 +104,11 @@ In this exercise, you will be getting started with the functionality of Microsof
 
 1. From **Settings |Microsoft Defender for Cloud Plans** page, Navigate to **Auto provisioning** under the Settings section.
 
-    ![](../Images/auto%20provision.png?raw=true)
+    ![](../Images/m2-auto-provisioning.png)
 
 1. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
 
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/auto%20provision1.png?raw=true)
+    ![](../Images/m2-auto-provisioning2.png)
     
 1. Click on **Edit configuration** under the **Configuration** header of Log Analytics agent for Azure VMs extension. A new window of Extension deployment configuration is opened.
 
