@@ -96,11 +96,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![Template deployment completed](../Images/security1.png?raw=true)
 
-1. On the **Settings | Defender plans** page, select **Enable all Microsoft Defender for Cloud plans** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Microsoft Defender for Cloud plan.
-
-    ![Enable Microsoft Defender for Cloud on the workspace level](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/enable%20defender.png?raw=true)
-
-1. Go back to the **Microsoft Defender for Cloud | Environment settings** page and select your **Azure subscription**.
+1. Go to the **Microsoft Defender for Cloud | Environment settings** page and select your **Azure subscription**.
 
 1. From **Settings |Microsoft Defender for Cloud Plans** page, Navigate to **Auto provisioning** under the Settings section.
 
