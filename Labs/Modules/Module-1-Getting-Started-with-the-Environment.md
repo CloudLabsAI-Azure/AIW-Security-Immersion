@@ -63,7 +63,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 ## Exercise 2: Enabling Microsoft Defender for Cloud (Read Only)
 
- >Note: Please note that we have already enabled the Microsoft Defencder for Cloud. As the data recommendations will take some time to reflect in portal after enabling the Microsoft Defender for Cloud.
+ >Note: Please note that we have already enabled the Microsoft Defender for Cloud. As the data recommendations will take some time to reflect in portal after enabling the Microsoft Defender for Cloud.
 
 In this exercise, you will be getting started with the functionality of Microsoft Defender for Cloud and how to enable Microsoft Defender for Cloud on a subscription.
 
