@@ -111,13 +111,9 @@ In this exercise, you will be getting started with the functionality of Microsof
     ![auto-provisioning](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/edit%20configuration.png?raw=true)
   
 
-1. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **asclab-la-{DeploymentID} (2)** from the drop down menu.
+1. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **asclab-la-{DeploymentID} (2)** from the drop down menu if not already selected.
 
     ![workspace configuration](../Images/connectazurevms.png)
-
-1. If **Apply changes to existing VMs?** popup window is prompted, select **Existing and new VMs**.
-
-    ![Apply changes](../Images/applychanges.png)
 
 1. Next, under the **Store additional raw data - Windows security events** section, select the **All Events (1)** option and click on **Apply (2)**.
 
