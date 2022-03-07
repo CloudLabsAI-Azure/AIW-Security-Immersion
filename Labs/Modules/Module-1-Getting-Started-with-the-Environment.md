@@ -89,7 +89,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![install-agents](../Images/installagents1.png)
 
-### Configure the data collection settings in Microsoft Defender for Cloud (Read Only)
+### Configure the data collection settings in Microsoft Defender for Cloud.
 
 
 1. Return to Microsoft Defender for Cloud blade and Click on the **Environment settings**(1), under **Management** section, select the Log Analytics workspace named **<inject key="log analytics workspace" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
