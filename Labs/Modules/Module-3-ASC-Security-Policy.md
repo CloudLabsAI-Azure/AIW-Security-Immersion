@@ -29,7 +29,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Microsoft Defender for Cloud default policy](../Images/m3e1s5.1.png)
 
-    > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies.
+    > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies. Also if you see one more policy with ASC default name, please ignore that.
 
 1. To view the policy, click on **Microsoft Defender for Cloud Default**.
 
