@@ -67,7 +67,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 In this exercise, you will be getting started with the functionality of Microsoft Defender for Cloud and how to enable Microsoft Defender for Cloud on a subscription.
 
-### Subscription upgrade and agents installation (Read Only)
+### Subscription upgrade and agents installation.
 
 1. Type **Microsoft Defender for Cloud** in the search box on top of the **Azure Portal** and click to open it.
 
