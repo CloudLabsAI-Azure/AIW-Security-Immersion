@@ -129,35 +129,19 @@ Exploring secure score
 
    ![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/stacc%20public%20access.png?raw=true)
 
-9. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s either by following the step-by-step instructions, use the provided ARM template in the next step, or REST API to automate the process.
+9. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s.
 
-10. Expand the **Remediation Steps (1)** menu on the **Secure transfer to storage accounts should be enabled** page and Click on the **Quick fix logic (2)**, notice the automatic remediation script content (ARM Template) as shown below:
-
-      ```json
-      {
-      "properties": {
-        "supportsHttpsTrafficOnly": true
-      }
-      }
-      ```
-    
-      ![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/autoscript.png?raw=true)
-
-12. Click on close button present in the bottom of template window.
-
-     ![](../Images/ex2.step12.png)
-
-13. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**.
+10. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**. This will automatically apply the remediation on the selected resource.
 
      ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/affectedresources.png?raw=true)
   
-14. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
+11. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
 
      ![](../Images/ex2.step13.png)
   
-15. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. 
+12. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. 
     
-    > **Note**: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
+    > **Note**: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab. You can move to next task and come back later to check on this.
 
     > **Info**: In the recommendation list, you can now see some recommendations flagged as in preview. They aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
