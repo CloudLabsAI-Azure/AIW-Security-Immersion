@@ -68,8 +68,9 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
     -	*Azure Security Benchmark*
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
+    -	[Preview]: Deploy Microsoft Defender for Endpoint agent
 
-    ![policy assignment](../Images/m3e2s4.png)
+    ![policy assignment](../Images/m3e2s4s.png)
 
 5. Notice the number of policies included in each initiative (policies column).
 
