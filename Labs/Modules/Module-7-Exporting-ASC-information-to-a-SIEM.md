@@ -107,7 +107,7 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 
 7. From Microsoft Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
 
-    ![](../Images/dataconnectors.png)
+    ![](../Images/microsoft-senitinel-latest.png)
     
 
 8. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Microsoft Defender for Cloud** connector and then click on **Open connector page**.
