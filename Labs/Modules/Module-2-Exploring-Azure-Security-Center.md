@@ -126,7 +126,7 @@ Exploring secure score
 
    - Title of the recommendation: **Storage account public access should be disallowed**
    - Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
-   - Severity indicator: **High**
+   - Severity indicator: **Medium**
    - Freshness interval: **30 Min** 
    - Tactics and techniques: **Initial Access**
 
