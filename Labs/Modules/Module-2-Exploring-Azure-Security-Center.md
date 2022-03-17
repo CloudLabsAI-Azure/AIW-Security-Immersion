@@ -126,7 +126,7 @@ Exploring secure score
 
    - Title of the recommendation: **Storage account public access should be disallowed**
    - Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
-   - Severity indicator: **High**
+   - Severity indicator: **Medium**
    - Freshness interval: **30 Min** 
    - Tactics and techniques: **Initial Access**
 
@@ -138,8 +138,8 @@ Exploring secure score
 
       ```json
       {
-      "properties": {
-        "supportsHttpsTrafficOnly": true
+       "properties": {
+       "allowBlobPublicAccess": false
       }
       }
       ```
@@ -148,7 +148,7 @@ Exploring secure score
 
 12. Click on close button present in the bottom of template window.
 
-     ![](../Images/ex2.step12.png)
+     ![](../Images/medium-quick-fix-logic.png)
 
 13. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**.
 
@@ -224,13 +224,13 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 13. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again click on **Ok**
 
-    ![Inventory: Assign tags](../Images/inventory2.png)
+    ![Inventory: Assign tags](../Images/inventory-filter-step13.png)
 
 14. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Microsoft Defender  for Cloud plan (when applicable).
 
 15. From the top menu, click on **Open query**.
 
-    ![Inventory: Assign tags](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/downloadcsvreport.png?raw=true)
+    ![Inventory: Assign tags](../Images/inventory-open-query-new.png)
 
 16. On the **Azure Resource Graph Explorer** blade, click on **Run Query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs and here it gets very powerful.
  

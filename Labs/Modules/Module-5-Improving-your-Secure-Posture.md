@@ -144,19 +144,19 @@ Every security program includes multiple workflows for incident response. The pr
      
      - Subscription : Select your **Subscription** 
       
-     - Resource group:  **asclab**.
-    
-     - Under **Instance details**, select **Type** as **Consumption**.   
+     - Resource group:  **asclab**.   
  
      - Logic app name: Enter **Send-RecommendationsChanges**.
 
      - Location : Select the location of your **Resource group**
      
      - Enable log analytics : Select **No**
+    
+     - Plane Type: **Consumption**.
 
      - Select **Review + Create** and then click on **Create**.
 
-      ![](../Images/logicapp-01.png)
+      ![](../Images/logic-app-latest-step3.png)
 
 1. When the **Deployment** is completed click on **Go to resource**
 
