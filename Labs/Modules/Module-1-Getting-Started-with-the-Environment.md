@@ -84,7 +84,9 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![Template deployment completed](../Images/security1.png?raw=true)
 
-1. Go back to the **Microsoft Defender for Cloud | Environment settings** page and select your **Azure subscription**.
+1. Go to the **Microsoft Defender for Cloud** and Click on the **Environment settings** page and select your **Azure subscription**.
+
+    ![Template deployment completed](../Images/security111.png)
 
 1. From **Settings |Microsoft Defender for Cloud Plans** page, Navigate to **Auto provisioning** under the Settings section.
 
