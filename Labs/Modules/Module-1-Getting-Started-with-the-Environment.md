@@ -67,7 +67,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     > **Note:** If you are not able to see Log Analytics workspace then it means your subscription is already upgraded, in this case you can skip step 2, 3 and continue from step 4. Also you might have to wait for few seconds to have the upgrade button visible.
 
-    ![Overview: Inventory tile](../Images/newlaw.1.png)    
+    ![Overview: Inventory tile](../Images/newlaw.png)    
 
 1. Click on **Install agents**. 
 
@@ -83,10 +83,6 @@ In this exercise, you will be getting started with the functionality of Microsof
 1. Return to Microsoft Defender for Cloud blade and Click on the **Environment settings**(1), under **Management** section, select the Log Analytics workspace named **<inject key="log analytics workspace" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
 
     ![Template deployment completed](../Images/security1.png?raw=true)
-
-1. On the **Settings | Defender plans** page, select **Enable all Microsoft Defender for Cloud plans** and click **Save**. Now both subscription and Log Analytics workspace should be set to **On** for the Microsoft Defender for Cloud plan.
-
-    ![Enable Microsoft Defender for Cloud on the workspace level](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/enable%20defender.png?raw=true)
 
 1. Go back to the **Microsoft Defender for Cloud | Environment settings** page and select your **Azure subscription**.
 
@@ -106,10 +102,6 @@ In this exercise, you will be getting started with the functionality of Microsof
 1. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **asclab-la-{DeploymentID} (2)** from the drop down menu.
 
     ![workspace configuration](../Images/connectazurevms.png)
-
-1. If **Apply changes to existing VMs?** popup window is prompted, select **Existing and new VMs**.
-
-    ![Apply changes](../Images/applychanges.png)
 
 1. Next, under the **Store additional raw data - Windows security events** section, select the **All Events (1)** option and click on **Apply (2)**.
 
