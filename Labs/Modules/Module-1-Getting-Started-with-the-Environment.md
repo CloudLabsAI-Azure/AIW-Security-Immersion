@@ -80,10 +80,6 @@ In this exercise, you will be getting started with the functionality of Microsof
 ### Configure the data collection settings in Microsoft Defender for Cloud
 
 
-1. Return to Microsoft Defender for Cloud blade and Click on the **Environment settings**(1), under **Management** section, select the Log Analytics workspace named **<inject key="log analytics workspace" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />**
-
-    ![Template deployment completed](../Images/security1.png?raw=true)
-
 1. Go to the **Microsoft Defender for Cloud** and Click on the **Environment settings** page and select your **Azure subscription**.
 
     ![Template deployment completed](../Images/security111.png)
