@@ -24,6 +24,8 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
 1. On the main page, select **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
 
+    >Note: It might take upto 30 minutes to refelect the  contoso security benchmark after adding the custom initiatives. if this is not available for you, you can skip this exercise and continue with next exercise and can check on this later.
+
     ![Contoso Security Benchmark](../Images/CSB.png)
 
 1. Expand the **Contoso Security Benchmark** compliance control. Click on the **Managed identity should be used in your function app**
