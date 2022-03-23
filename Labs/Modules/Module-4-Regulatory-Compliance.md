@@ -20,11 +20,7 @@ Security Center continuously assesses your hybrid cloud environment to analyze t
 
 1. On the overview page select the **Regulatory Compliance(1)** tile (this pilar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard(2)** opens you can see the compliance standards currently assigned to your subscription.
 
-    ![](../Images/msdefender7.png)
-
-1. On the top strip, notice the number of **Passed vs. failed controls** across standards.
-
-    ![Regulatory compliance assessment and standards](../Images/asc-regulatory-compliance-assessment-standards.png)
+    ![](../Images/regcom.png)
 
 1. On the main page, select **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
 
