@@ -80,7 +80,7 @@ Exploring secure score
 
     ![](../Images/m3e1s1.png)
 
-2. From the left navigation pane, under the **Cloud Security** section, Select **Secure Score**.
+2. From the left navigation pane, under the **Cloud Security** section, Select **Secure posture**.
 
     ![](../Images/securescor1.png)
 
