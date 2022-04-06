@@ -19,9 +19,9 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
 2. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Secure Score, Regulatory Compliance and Microsoft Defender  for Cloud**.
 
    > ❗ Important: <br>
-   > Microsoft Defender for Cloud takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. Sometimes, it can take up to 24 hours or even more than that for all the tiles on the overview page to update. if it takes more time, attendees can skip the next steps in Module 2 & proceed with the next modules and can come back later and check on this. we are looking at various approaches to optimize this experience for future workshops.
+   > Microsoft Defender for Cloud takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. As we have already enabled the Microsoft defender for cloud in this tenant the data should be available now. 
 
-    ![Microsoft Defender for Cloud: Overview dashboard](../Images/msdefender.png)
+    ![Microsoft Defender for Cloud: Overview dashboard](../Images/msdefender-1.png)
 
 3. Note that the **Subscriptions** icon on the **top menu bar** allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
 
@@ -37,39 +37,36 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
 
 6. On the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
-    > Note: It can take upto 24 hours for all the secure score data to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
-
-    ![Overview: Secure Score tile](../Images/asc-overview-secure-score-tile1.png?raw=true)
+    ![Overview: Secure Score tile](../Images/asc-overview-secure-score-tile2.png)
 
     > ⭐ Good to know: <br>
     > The higher the score, the lower the identified risk level.
 
 7. From the **Microsoft Defender for Cloud** page Select the  **Workload Protections** from the **Cloud Security** section.
 
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/workload.png?raw=true)
+    ![](../Images/workload1.png)
 
 8. On the **Workload Protections** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
 
-     ![Overview: Microsoft Defender  for Cloud tile](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/workload%20protection.png?raw=true)
+     ![Overview: Microsoft Defender  for Cloud tile](../Images/workload%20protection1.png)
 
 9. Next, select the **Regulatory Compliance** from the **Cloud Security** section of the Microsoft Defender for Cloud page.
 
-     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/regulatory.png?raw=true)
+     ![](../Images/regulatory1.png)
 
 10. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark(2), ISO 27001, PCI DSS 3.2.1 and SOC TSP(3)**. Click on **Show all 4 (4)** to check the compliance status.
  
      >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones. 
 
-     ![Overview: Regulatory Compliance tile](../Images/msdefender4.png)
+     ![Overview: Regulatory Compliance tile](../Images/msdefender4.1.png)
    
-     > Note: It can take upto 24 hours for compliance status to be loaded, it has dependency on Azure. You can continue to the next steps and verify this later.
-
+    
 11. Next Click on **Inventory** from the **General** section of the Microsoft Defender for Cloud. It shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
 
      > ❗ Important: <br>
      > Unmonitored VMs are considered as virtual machines that have Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
 
-    ![Overview: Inventory tile](../Images/msdefender5.png)
+    ![Overview: Inventory tile](../Images/msdefender5.1.png)
 
 
 ### Exercise 2: Exploring Secure Score and Recommendations
@@ -85,7 +82,7 @@ Exploring secure score
 
 2. From the left navigation pane, under the **Cloud Security** section, Select **Secure Score**.
 
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/securescor.png?raw=true)
+    ![](../Images/securescor1.png)
 
 3. On the Microsoft Defender for Cloud | Secure Score page, review your current **Overall Secure Score**.
 
@@ -106,7 +103,7 @@ Exploring secure score
 
 6. Close the **View recommendations** page to return to **Recommendations** page.
 
-    ![Recommendations view](../Images/ex2.step5.png)
+    ![Recommendations view](../Images/new_secure.png)
 
  **Exploring Security Controls and Recommendations**
 
@@ -116,51 +113,35 @@ Exploring secure score
 
 2. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated recommendations. You can use this file for pivoting and reporting.
 
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/csv%20report.png?raw=true)
+    ![](../Images/csv%20report1.png)
    
 3. Under **Recommendation**, Click on **Manage access and permissions** and select **Storage account public access should be disallowed** from the drop down list.
 
-    ![](../Images/dirsto.png)
+    ![](../Images/dirsto1.png)
 
 1. On the top section, notice the following:
 
    - Title of the recommendation: **Storage account public access should be disallowed**
    - Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
-   - Severity indicator: **Medium**
+   - Severity indicator: **High**
    - Freshness interval: **30 Min** 
    - Tactics and techniques: **Initial Access**
 
    ![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/stacc%20public%20access.png?raw=true)
 
-9. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s either by following the step-by-step instructions, use the provided ARM template in the next step, or REST API to automate the process.
+9. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s.
 
-10. Expand the **Remediation Steps (1)** menu on the **Secure transfer to storage accounts should be enabled** page and Click on the **Quick fix logic (2)**, notice the automatic remediation script content (ARM Template) as shown below:
-
-      ```json
-      {
-       "properties": {
-       "allowBlobPublicAccess": false
-      }
-      }
-      ```
-    
-      ![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/autoscript.png?raw=true)
-
-12. Click on close button present in the bottom of template window.
-
-     ![](../Images/medium-quick-fix-logic.png)
-
-13. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**.
+10. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**. This will automatically apply the remediation on the selected resource.
 
      ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/affectedresources.png?raw=true)
   
-14. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
+11. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
 
      ![](../Images/ex2.step13.png)
   
-15. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. 
+12. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. 
     
-    > **Note**: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab.
+    > **Note**: It can take several minutes after remediation completes to see the resources in the 'healthy resources' tab. You can move to next task and come back later to check on this.
 
     > **Info**: In the recommendation list, you can now see some recommendations flagged as in preview. They aren’t included in the calculation of your score. They should be still remediated so that when the preview period ends, they will contribute towards your final score.
 
@@ -196,8 +177,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
     ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/healthpreview.png?raw=true)
 
-    > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
-
+    
 9. Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (Unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
 
      ![Remediate a resource](../Images/filter-rg.png)
@@ -206,8 +186,9 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 10. From the filter menu, select the **Resource Group** filter and **select all** under the Value. Again from the filter menu, select **Recommendations**, uncheck the **select all** option under the Value and then select the **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find across the list. When you are done exploring remember to clear your filter.
 
-    > **Note**: If you don't see **Auditing on SQL Server should be enabled** in search resultsthat means it is not loaded yet to recommendations and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **Recommendations**, you can note down this step number then continue to the next exercise and verify this later.
+   ![Remediate a resource](../Images/sqlaudit.png)
 
+    
 11. Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
   * Filter the **Resource type** column to include only **App Services**: Select the **Resource type** filter and select **app services** under the Value and Click on **OK**
@@ -216,21 +197,21 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
   * Assign `Environment` as the name and  `Production` as the value.
   * Click **Save**.
 
-   > **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this later.
-
    ![Inventory: Assign tags](../Images/assigntagsv1.gif?raw=true)
    
 12. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
 13. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again click on **Ok**
 
-    ![Inventory: Assign tags](../Images/inventory-filter-step13.png)
+    ![Inventory: Assign tags](../Images/inventory2.png)
 
 14. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Microsoft Defender  for Cloud plan (when applicable).
 
+   ![Inventory: Assign tags](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/downloadcsvreport.png?raw=true)
+
 15. From the top menu, click on **Open query**.
 
-    ![Inventory: Assign tags](../Images/inventory-open-query-new.png)
+    ![Inventory: Assign tags](../Images/query.png)
 
 16. On the **Azure Resource Graph Explorer** blade, click on **Run Query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs and here it gets very powerful.
  
