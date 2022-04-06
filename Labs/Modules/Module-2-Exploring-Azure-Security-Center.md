@@ -6,7 +6,7 @@ In this exercise, you will explore the Microsoft Defender for Cloud Dashboard fe
 
 You will be performing the following activities to achieve the goal.
 
-* Overview of Microsoft Defender for Cloud dashboard features **Secure Score in Microsoft Defender for Cloud, Regulatory Compliance and Microsoft Defender for Cloud**.
+* Overview of Microsoft Defender for Cloud dashboard features **Security posture in Microsoft Defender for Cloud, Regulatory Compliance and Microsoft Defender for Cloud**.
 * Exploring Security Controls and Recommendations
 * Exploring the Inventory capability
 
@@ -16,7 +16,7 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
 
 1. Navigate to **Microsoft Defender for Cloud** in the Azure portal(perform if not already on the Microsoft Defender for Cloud page).
 
-2. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Secure Score, Regulatory Compliance and Microsoft Defender  for Cloud**.
+2. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as- **Security osture, Regulatory Compliance and Microsoft Defender  for Cloud**.
 
    > ❗ Important: <br>
    > Microsoft Defender for Cloud takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. As we have already enabled the Microsoft defender for cloud in this tenant the data should be available now. 
@@ -69,9 +69,9 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
     ![Overview: Inventory tile](../Images/msdefender5.png)
 
 
-### Exercise 2: Exploring Secure Score and Recommendations
+### Exercise 2: Exploring Security posture and Recommendations
 
-**Exploring Secure Score**
+**Exploring Security posture**
 
 Previously, we explored the Secure Score tile on the overview page. Now let’s dive into this capability and the associated recommendations. Microsoft Defender for Cloud mimics the work of a security analyst, reviewing the security recommendations and applying advanced algorithms to determine how crucial each recommendation is. Microsoft Defender for Cloud constantly reviews the active recommendation and calculates the score based on them. All findings are aggregated into a single score (Secure Score) which measures your current security posture of your subscription/s; the higher the score, the lower the identified risk level.
 Exploring secure score
@@ -80,7 +80,7 @@ Exploring secure score
 
     ![](../Images/m3e1s1.png)
 
-2. From the left navigation pane, under the **Cloud Security** section, Select **Secure Score**.
+2. From the left navigation pane, under the **Cloud Security** section, Select **Security posture**.
 
     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/securescor.png?raw=true)
 
@@ -225,6 +225,6 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 ### Summary
 
-  In this module, you have explored **Microsoft Defender for Cloud dashboard**, **Secure Score and Recommendations** & **Inventory capability**. 
+  In this module, you have explored **Microsoft Defender for Cloud dashboard**, **Security posture and Recommendations** & **Inventory capability**. 
   
   Now you can move on to the next module by clicking on the Next button at the bottom right of this screen.
