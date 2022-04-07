@@ -20,7 +20,7 @@ Microsoft Defender for cloud continuously assesses your hybrid cloud environment
 
 1. On the overview page select the **Regulatory Compliance(1)** tile (this pilar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard(2)** opens you can see the compliance standards currently assigned to your subscription.
 
-    ![](../Images/regcom.png)
+    ![](../Images/regcom1.png)
 
 1. On the main page, select **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
 
