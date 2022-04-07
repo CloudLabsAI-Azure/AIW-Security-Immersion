@@ -96,11 +96,11 @@ Exploring secure score
 
 4. The bottom section lists the subscriptions and their current secure scores. To view the recommendations behind the score, click on **View recommendations**.
   
-    ![Recommendations view](../Images/view-recommendations.png)
+    ![Recommendations view](../Images/md2ex2stp4.png)
 
 5. Close the **View recommendations** page to return to **Recommendations** page.
 
-    ![Recommendations view](../Images/new_secure.png)
+    ![Recommendations view](../Images/md2ex2stp5.png)
 
  **Exploring Security Controls and Recommendations**
 
