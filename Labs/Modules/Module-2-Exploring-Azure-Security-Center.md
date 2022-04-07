@@ -35,7 +35,7 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
 
     ![Microsoft Defender for Cloud: Dashboard](../Images/msdefender3.png)
 
-6. On the **Overview** page, and look at the **Secure Score** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
+6. On the **Overview** page, and look at the **Security posture** tile, you can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to drill down view across subscriptions.
 
     ![Overview: Secure Score tile](../Images/asc-overview-secure-score-tile2.png)
 
@@ -93,21 +93,18 @@ Exploring secure score
    > 
    > For more information on how the score is calculated, [refer to the secure score documentation page](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#how-your-secure-score-is-calculated).
 
-4. Again on the Microsoft Defender for Cloud | Secure Score page observe the tile **Subscriptions with the lowest scores** – This score helps in determining which subscription needs your attention. Since this demo is based on a single subscription, you will see only one.
 
-    ![Subscriptions with lowest scores](../Images/subscore.png)
-
-5. The bottom section lists the subscriptions and their current secure scores. To view the recommendations behind the score, click on **View recommendations**.
+4. The bottom section lists the subscriptions and their current secure scores. To view the recommendations behind the score, click on **View recommendations**.
   
     ![Recommendations view](../Images/view-recommendations.png)
 
-6. Close the **View recommendations** page to return to **Recommendations** page.
+5. Close the **View recommendations** page to return to **Recommendations** page.
 
     ![Recommendations view](../Images/new_secure.png)
 
  **Exploring Security Controls and Recommendations**
 
-1. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
+6. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
 
     ![Recommendations view](../Images/msdefender6.png)
 
@@ -115,11 +112,11 @@ Exploring secure score
 
     ![](../Images/csv%20report1.png)
    
-3. Under **Recommendation**, Click on **Manage access and permissions** and select **Storage account public access should be disallowed** from the drop down list.
+7. Under **Recommendation**, Click on **Manage access and permissions** and select **Storage account public access should be disallowed** from the drop down list.
 
     ![](../Images/dirsto1.png)
 
-1. On the top section, notice the following:
+8. On the top section, notice the following:
 
    - Title of the recommendation: **Storage account public access should be disallowed**
    - Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
