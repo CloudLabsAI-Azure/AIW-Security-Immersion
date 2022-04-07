@@ -23,21 +23,23 @@ Advanced | 300+ | You have lots of experience and are looking to learn about adv
 
 ## Modules
 
-[**Module 1 – Preparing the Environment (L100)**](./Modules/Module-1-Preparing-the-Environment.md)
-- [Creating an Azure Trial Subscription](./Modules/Module-1-Preparing-the-Environment.md#exercise-1-creating-an-azure-trial-subscription)
-- [Provisioning resources (automation)](./Modules/Module-1-Preparing-the-Environment.md#exercise-2-provisioning-resources)
-- [Enabling Azure Defender](./Modules/Module-1-Preparing-the-Environment.md#exercise-3-enabling-azure-defender)
- 
+[**Getting started with the Environment (L100)**](./Modules/Module-1-Getting-Started-with-the-Environment.md)
+- [Log in to Azure Portal](./Modules/Module-1-Getting-Started-with-the-Environment.md#exercise-1-log-in-to-azure-portal)
+- [Enabling Azure Defender for Cloud](./Modules/Module-1-Getting-Started-with-the-Environment.md#exercise-2-enabling-microsoft-defender-for-cloud) 
+- [Creating Microsoft Defender for Cloud Default policy](./Modules/Module-1-Getting-Started-with-the-Environment.md#exercise-3-creating-microsoft-defender-for-cloud-default-policy)
+
+
 [**Module 2 – Exploring Azure Security Center (L100)**](./Modules/Module-2-Exploring-Azure-Security-Center.md)
 - [Understanding ASC dashboard](./Modules/Module-2-Exploring-Azure-Security-Center.md#exercise-1-understanding-azure-security-center-dashboard)
 - [Exploring Secure Score and Recommendations](./Modules/Module-2-Exploring-Azure-Security-Center.md#exercise-2-exploring-secure-score-and-recommendations)
 - [Exploring the Inventory capability](./Modules/Module-2-Exploring-Azure-Security-Center.md#exercise-3-exploring-the-inventory-capability)
  
+ 
 [**Module 3 – ASC Security Policy (L200)**](./Modules/Module-3-ASC-Security-Policy.md)
-- [Overview of the ASC policy](./Modules/Module-3-ASC-Security-Policy.md#exercise-1-overview-of-the-asc-policy)
+- [Overview of the ASC policy](./Modules/Module-3-ASC-Security-Policy.md#exercise-1-overview-of-the-microsoft-defender-for-cloud-policy) 
 - [Explore Azure Policy](./Modules/Module-3-ASC-Security-Policy.md#exercise-2-explore-azure-policy)
 - [Create resource exemption for a recommendation](./Modules/Module-3-ASC-Security-Policy.md#exercise-3-create-resource-exemption-for-a-recommendation)
-- [Create a policy enforcement and deny](./Modules/Module-3-ASC-Security-Policy.md#exercise-4-create-a-policy-enforcement-and-deny)
+- [Create a policy enforcement and deny](./Modules/Module-3-ASC-Security-Policy.md#exercise-4-create-policy-enforcement-and-deny) 
 - [Create a custom policy](./Modules/Module-3-ASC-Security-Policy.md#exercise-5-create-a-custom-policy)
 
 [**Module 4 – Regulatory Compliance (L200)**](./Modules/Module-4-Regulatory-Compliance.md)
