@@ -250,7 +250,7 @@ Add each policy one by one:
 
 2. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
 
-    ![Template deployment completed](../Images/m2e1s3.1.png)
+    ![Template deployment completed](../Images/m2e1s3.2.png)
    
 3. In **Environment Settings** page, Select your subscription.
 
