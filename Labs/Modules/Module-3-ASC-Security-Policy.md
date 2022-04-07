@@ -62,15 +62,14 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative(2)** and select **Security Center(3)** from the _Category_ filter.
 
-    ![policy assignment](../Images/defination.png)	
+    ![policy assignment](../Images/m3ex2.step3.png)	
 
 4. You can now see three built-in initiatives used by Microsoft Defender for Cloud:
     -	*Azure Security Benchmark*
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
-    -	[Preview]: Deploy Microsoft Defender for Endpoint agent
 
-    ![policy assignment](../Images/m3e2s4s.png)
+    ![policy assignment](../Images/m3e2s4.png)
 
 5. Notice the number of policies included in each initiative (policies column).
 
@@ -80,9 +79,8 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 7. Click on **Microsoft Defender for Cloud default** to see the assignment details.
 
-### Exercise 3: Create resource exemption for a recommendation (Read Only)
 
- 
+### Exercise 3: Create resource exemption for a recommendation
 
 Resource exemption will allow increased granularity for you to fine-tune recommendations by providing the ability to exempt certain resources from evaluation.
 When working with a recommendation, you can create an exemption by clicking the ellipsis menu on the right side and then select create an exemption.
@@ -93,13 +91,15 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 2. Select **Recommendations(1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines(2)** recommendation.
 
-    ![policy assignment](../Images/portsnew1.png)
+    > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+
+    ![policy assignment](../Images/m3fs3.png)
 
 3. Expand the **Affected resources** bar, review the current resources under **Unhealthy resources** - **asclab-win**, **labvm-xxxxxx**, and **asclab-linux**.
 
 4. Select the **asclab-win** resource and then click on **Exempt**.
 
-    ![](../Images/exempt.png)
+    ![](../Images/m3ex3.step6.png)
 
 5. The **Exempt pane** opens:
     - Name: **ASC-Management ports should be closed on your virtual machines**.
@@ -132,7 +132,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 10. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there.
 
-    ![Exempttion tab](../Images/exemtion.png)
+    ![Exempttion tab](../Images/exemptions-policy.png)
 
 ### Exercise 4: Create policy enforcement and deny
 
@@ -142,20 +142,20 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 2. From the left side pane of **Microsoft Defender for Cloud**, select **Recommendations** under **General**.
 
-3. From the search recommendations bar search for **Secure transfer to storage accounts should be enabled** and select it. 
+3. Scroll down to recommendations filters, set the **Response actions** as **Deny**.
 
-   > **Note**: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
- 
-   ![Secure Transfer](../Images/md3ex4stp3.png)
-   
-   
+    ![Auditing on SQL server should be enabled](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/asc-recommendations-filters-deny.gif?raw=true)
+
+4. From the filtered recommendations list, select **Secure transfer to storage accounts should be enabled**.
+
+   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
 5. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
    > ❗ Important: <br>
    > Security misconfigurations are a major cause of security incidents.
 
-     ![Secure Transfer](../Images/deny.png)
+     ![Secure Transfer](../Images/secure-transfer.png)
 
 6. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
@@ -165,15 +165,15 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 7. Go back to the **recommendations view**, set the **Response action** filter as **Select All**. Then type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
 
-   ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
+   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+
+    ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
 8. On the **Auditing on SQL server should be enabled** page, from the top menu bar, click on the **Enforce** button. This option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
 
-   ![Auditing on SQL server should be enabled](../Images/enforce.png)
-
 9. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
 
-* Under the **Basics** tab under the Scope header, select the ellipse icon (...) to select your subscription and click on the **Select**, Do not select you resource group.
+* Under the **Basics** tab under the Scope header, select the ellipse icon (...) to select your subscription and click on the **Select**
 * Then click on **Next**
 
     ![](../Images/m3ex4.step9.png)
@@ -198,7 +198,10 @@ By performing above mentioned operations, you can now ensure your existing resou
 <br>
       ![Sql Auditing](../Images/m3fs6.png)
 
-12.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
+12.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/prevent-misconfigurations#recommendations-with-denyenforce-options "Recommendations with deny/enforce options") to view a full list of recommendations with deny/enforce options along with a detailed explanation of this capability.
+
+13.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
+
 
 ### Exercise 5: Create a custom policy
 
@@ -237,7 +240,7 @@ Add each policy one by one:
 
 7. Select **Review + Create (5)** and click on **Create**.
 
-    ![custom initiative](../Images/initiative.png)
+    ![custom initiative](../Images/defaultpolicy-02.png)
 
 ***Add a custom initiative to your subscription***
 
