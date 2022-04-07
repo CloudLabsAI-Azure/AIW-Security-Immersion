@@ -14,17 +14,17 @@ You will be performing the following activities to achieve the goal.
 
 Microsoft Defender for Cloud helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard. The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
-Security Center continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards applied to your subscriptions.
+Microsoft Defender for cloud continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards applied to your subscriptions.
 
 1. Navigate to **Microsoft Defender for Cloud** in the Azure portal(perform if not already on the Microsoft Defender for Cloud).
 
 1. On the overview page select the **Regulatory Compliance(1)** tile (this pilar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard(2)** opens you can see the compliance standards currently assigned to your subscription.
 
-    ![](../Images/regcom.png)
+    ![](../Images/regcom1.png)
 
 1. On the main page, select **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
 
-    >Note: It might take upto 30 minutes to refelect the  contoso security benchmark after adding the custom initiatives. if this is not available for you, you can skip this exercise and continue with next exercise and can check on this later.
+   >Note: It might take upto 30 minutes to refelect the  contoso security benchmark after adding the custom initiatives. if this is not available for you, you can skip this exercise and continue with next exercise and can check on this later.
 
     ![Contoso Security Benchmark](../Images/CSB.png)
 
@@ -56,13 +56,13 @@ You can add additional industry standards (represented as compliance packages) s
 
 1. On **Regulatory Compliance** page, select **Manage compliance policies** from the top menu bar.
 
-    ![Manage compliance policies](../Images/manage.png)
+    ![Manage compliance policies](../Images/manage1.png)
 
 2. Select **Your Subscription** under the Environment settings.
 
     ![](../Images/envset.png)
    
-3. Under **Settings** tab, select **Security Policy (1)**, then expand **Industry & regulatory standards** and click on **Add more standards (2)**.
+3. Under **Policy Settings** tab, select **Security Policy (1)**, then expand **Industry & regulatory standards** and click on **Add more standards (2)**.
 
     ![](../Images/addmore.png)
    
@@ -71,6 +71,8 @@ You can add additional industry standards (represented as compliance packages) s
     ![Manage compliance policies](../Images/add-more-standards.png)
 
 5. Click on **Review + create** and then **Create**.
+
+   >Note: If it fails to create then please click on previous button on deployment page and start the deployment again.
 
     ![Review + create](../Images/add-more-standards-create.png)
 
@@ -158,17 +160,13 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
      
 1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
 
-    ![Template deployment completed](../Images/m2e1s3.1.png)
+    ![Template deployment completed](../Images/m2e1s3.2.png)
    
-1. In **Environment Settings** page, Select your subscription.
+1. On the **Environment Settings** page, select your subscription.
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
-    
-1. Select **Your Subscription** under the Environment settings.
-
-    ![](../Images/envset.png)
    
-1. Under **Settings** tab, select **Security Policy (1)**, then expand **Your custom initiatives** and click on **Add custom initiatives (2)**.
+1. Under **Policy Settings** tab, select **Security Policy (1)**, then expand **Your custom initiatives** and click on **Add custom initiatives (2)**.
 
     ![](../Images/customeini.png)
 
@@ -182,6 +180,6 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
 ### Summary
 
-In this module, you have completed Exploring **Security Center** features - **Regulatory Compliance dashboard**, **Added new standards** and **Created your own benchmark**.
+In this module, you have completed Exploring **Microsoft defender for cloud** features - **Regulatory Compliance dashboard**, **Added new standards** and **Created your own benchmark**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.

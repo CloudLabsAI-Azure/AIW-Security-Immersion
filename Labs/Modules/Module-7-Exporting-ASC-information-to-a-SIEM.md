@@ -17,7 +17,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
 
-    ![Template deployment completed](../Images/m2e1s3.1.png)
+    ![Template deployment completed](../Images/m2e1s3.2.png)
     
 1. Select **Your Subscription** under the Environment settings.
 
@@ -53,7 +53,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
       - Subscription : Select your **Subscription (8)**
 
-      - Select target workspace: Select **asclab-la-{DeploymentID} (9)**
+      - Select target workspace: Select **asclab-la-<inject key="Deployment ID" enableCopy="false" /> (9)**
 
      -  Click on **Save (10)**
 
@@ -63,21 +63,21 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 1. Search for **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
-1. Click on the **asclab-la-{DeploymentID} (1)** workspace and select **Logs(2)** button under the **General** section.
+1. Click on the **asclab-la-<inject key="Deployment ID" enableCopy="false" /> (1)** workspace and select **Logs(2)** button under the **General** section.
 
     ![](../Images/LAW3.png) 
 
 1. On the welcome page, close the **Queries** window.
 
-    [Continuous export settings page](../Images/log-analytic-started2.png)
+    ![Continuous export settings page](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/log-analytic-started2.png?raw=true)
 
 1. From the left pane select the **Tables** tab and **enable** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
 
-    [Tables page](../Images/showtables.png)
+    ![Tables page](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/showtables.png?raw=true)
 
 1. Query the tables to validate data streaming - For example, Click on **Tables (1)** expand **Security and Audit (2)** double click on **Security Event (3)** to open in the query window. Now click on **Run (4)** and see the results below.
 
-    [Respective tables in the Log Analytics workspace](../Images/Log-editor-tables.png)
+    ![Respective tables in the Log Analytics workspace](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/Log-editor-tables.png?raw=true)
   
    > **Note:** Since the continuous export was just enabled, you may need to wait for sometime for new events to show up.
 
@@ -93,7 +93,7 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
  
     ![connect-workspace1](../Images/m7e2s2.png)
 
-3. On the **Add Microsoft Sentinel to a workspace**, select **asclab-la-{DeploymentID}** workspace. Click on **Add**.
+3. On the **Add Microsoft Sentinel to a workspace**, select **asclab-la-<inject key="Deployment ID" enableCopy="false" />** workspace. Click on **Add**.
 
     ![Add sentinel](../Images/sentineladd.png)
 
@@ -103,7 +103,7 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 
    ![Add sentinel](../Images/sentinelws.png)
 
-6. Select the workspace **asclab-la-{DeploymentID}** on the **Microsoft Sentinel** page. 
+6. Select the workspace **asclab-la-<inject key="Deployment ID" enableCopy="false" />** on the **Microsoft Sentinel** page. 
 
 7. From Microsoft Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
 

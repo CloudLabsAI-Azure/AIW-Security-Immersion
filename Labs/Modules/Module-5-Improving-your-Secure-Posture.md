@@ -19,7 +19,7 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
 
     > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-    ![](../Images/updatess.png)
+    ![](../Images/updatess1.png)
 
 1. Click on **Machines should have a vulnerability assessment solution** recommendation and open it.
 
@@ -150,9 +150,9 @@ Every security program includes multiple workflows for incident response. The pr
 
      - Location : Select the location of your **Resource group**
      
-     - Enable log analytics : Select **No**
-    
      - Plane Type: **Consumption**.
+     
+     - Enable log analytics : Select **No**
 
      - Select **Review + Create** and then click on **Create**.
 
@@ -215,7 +215,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 2. Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **Add workflow automation (2)**.
 
-    ![](../Images/workflow.png)
+    ![](../Images/workflow1.png)
 
 3. A pane appears on the right side. Enter the following for each field:
     
@@ -263,7 +263,7 @@ Every security program includes multiple workflows for incident response. The pr
    
       > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-     ![](../Images/recomendations2.png)
+     ![](../Images/recomendations2.1.png)
      
    - Select resource *asclab-aks* and then click on the **Trigger Logic App** button.
    - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
