@@ -89,7 +89,7 @@ Exploring secure score
    > ⭐ Notice: <br>
    > The score is shown as a percentage value, you can also see the points based on which the score is calculated, next to the percentage. See the following example:
    > 
-   > ![Overall Secure Score](../Images/ex2.step3.png)
+   > ![Overall Secure Score](../Images/md2ex2stp3.png)
    > 
    > For more information on how the score is calculated, [refer to the secure score documentation page](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#how-your-secure-score-is-calculated).
 
@@ -204,7 +204,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 14. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Microsoft Defender  for Cloud plan (when applicable).
 
-   ![Inventory: Assign tags](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/downloadcsvreport.png?raw=true)
+    ![Inventory: Assign tags](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/downloadcsvreport.png?raw=true)
 
 15. From the top menu, click on **Open query**.
 
