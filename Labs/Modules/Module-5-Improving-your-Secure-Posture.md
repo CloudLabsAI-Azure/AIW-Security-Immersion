@@ -263,7 +263,7 @@ Every security program includes multiple workflows for incident response. The pr
    
       > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-     ![](../Images/recomendations2.png)
+     ![](../Images/recomendations2.1.png)
      
    - Select resource *asclab-aks* and then click on the **Trigger Logic App** button.
    - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
