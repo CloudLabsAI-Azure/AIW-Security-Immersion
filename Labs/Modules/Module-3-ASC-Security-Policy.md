@@ -142,11 +142,13 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 2. From the left side pane of **Microsoft Defender for Cloud**, select **Recommendations** under **General**.
 
-3. Scroll down to recommendations filters, set the **Response actions** as **Deny**.
+3. From the search recommendations bar search for **Secure transfer to storage accounts should be enabled** and select it. 
 
-    ![Auditing on SQL server should be enabled](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/asc-recommendations-filters-deny.gif?raw=true)
-
-4. From the filtered recommendations list, select **Secure transfer to storage accounts should be enabled**.
+   > **Note**: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+ 
+   ![Secure Transfer](../Images/md3ex4stp3.png)
+   
+   
 
 5. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
