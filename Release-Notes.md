@@ -1,5 +1,12 @@
 # Release Notes
 
+### 7 April 2022
+
+- Minor updates in the lab guide.
+- Updated the screenshots and instructions in the lab guide as per new UI of **Microsoft Defender for Cloud** in all the modules.
+
+------------
+
 ### 9 November 2021
 
 * As the UI got updated for Security Center in Azure Portal, added new screenshots and instructions and updated the lab guide with latest version.
@@ -8,6 +15,7 @@
 
 * Direct access for few options like Security policy, Pricing and Settings from the Azure Portal has been removed.
 
+------------
 
 ### 30 November 2021
 
