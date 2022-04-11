@@ -1,4 +1,4 @@
-# Welcome to Azure Security Center Labs
+# Welcome to Microsoft defender for Cloud Labs
 
 <p align="center">
 <img src="./Images/asc-labs-logo.png?raw=true">
