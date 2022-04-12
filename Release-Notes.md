@@ -3,6 +3,7 @@
 ### 7 April 2022
 
 - Minor updates in the lab guide.
+- Now the **Secure Score** is called as **Security posture** in Azure Portal.
 - Updated the screenshots and instructions in the lab guide as per new UI of **Microsoft Defender for Cloud** in all the modules.
 
 ------------
