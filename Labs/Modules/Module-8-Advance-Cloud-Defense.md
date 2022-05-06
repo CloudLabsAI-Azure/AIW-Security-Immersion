@@ -74,7 +74,10 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 16. Try to connect again to validate your JIT access to the VM. Use the same file you downloaded previously.
 
-17. Now you should get the prompt for the local admin credentials. Login using the **VM Username** and **VM Password** credentials listed under the **Resource Group: asclab** section of **Environment details** tab.
+17. Now you should get the prompt for the local admin credentials. Login using the below credentials.
+ 
+      - **VM Username**: <inject key="VM Username"></inject>  and
+      - **VM Password**: <inject key="VM Password"></inject>
 
 18. You **are now connected to asclab-win** server. Close the remote control session/log off.
 
@@ -107,7 +110,7 @@ It maps the current state of these items with the state during the previous scan
 
     ![File Integrity Monitoring1](../Images/m8ex3.step2.png)
 
-3. On the **File Integrity Monitoring** page, select the **Log Analytics workspace listed** `asclab-la-{DeploymentID}` (or just by clicking on the Enable button - it indicates that File Integrity Monitoring is not enabled for the selected workspace).
+3. On the **File Integrity Monitoring** page, select the listed **Log Analytics workspace** named **asclab-la-labvm-<inject key="DeploymentID" enableCopy="false"/>** (or just by clicking on the Enable button - it indicates that File Integrity Monitoring is not enabled for the selected workspace).
 
    > **Note**: Deployment ID can be obtained from the Lab Environment output page.
 

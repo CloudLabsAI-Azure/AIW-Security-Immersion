@@ -166,13 +166,13 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/open-logic-app.png)
 
-1. Search for **Security Center** in the search box and select **When an Azure Security Center Recommendation is created or triggered** from the list of **Triggers**
+1. Search for **Security Center** in the search box and select **When an Microsoft Defender for Cloud Recommendation is created or triggered** from the list of **Triggers**
 
-    ![](../Images/triggered.png)
+    ![](../Images/triggered1.png)
 
 1. Click on the **new step** button and type **Outlook send**.
 
-    ![](../Images/newstep.png)
+    ![](../Images/newstep1.png)
 
 1. From the list of actions, select **Send an email (V2)** action to add it to the Designer.
      
