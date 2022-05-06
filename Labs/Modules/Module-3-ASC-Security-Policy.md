@@ -23,15 +23,15 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
    
 1. Click on **Security Policy**.
 
-    ![Template deployment completed](../Images/m3e1s4.3.png)
+    ![Template deployment completed](../Images/m3e1s4.3.1.png)
    
-1. By default, there is one security policy assignment which is **Microsoft Defender for Cloud Default**.
+1. By default, there is one security policy assignment which is **Defender for Cloud Default**.
 
-    ![Microsoft Defender for Cloud default policy](../Images/m3e1s5.1.png)
+    ![Microsoft Defender for Cloud default policy](../Images/m3e1s5.1.1.png)
 
     > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies. Also if you see one more policy with ASC default name, please ignore that.
 
-1. To view the policy, click on **Microsoft Defender for Cloud Default**.
+1. To view the policy, click on **Defender for Cloud Default**.
 
      > **Note:** the assignment name will have GUID of the subscription in your lab environment.
 
@@ -39,15 +39,15 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
    >Note: This will take a while to load the required parameters.
    
-    ![](../Images/m3e1s7.png)
+    ![](../Images/m3e1s7.1.png)
     
 1. On the **Edit Initiative Assignment** blade, scroll down and change the action to **AuditIfNotExists** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + save**.
 
-    ![](../Images/m3e1s8.png)
+    ![](../Images/m3e1s8.1.png)
 
 1. On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists** and click on **Save**. Wait for the policy update to complete successfully.
 
-    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/m3e1s9.png)
+    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/m3e1s9.1.png)
 
 
 ### Exercise 2: Explore Azure Policy
@@ -75,9 +75,9 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 6. To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the assignments, for example:
 
-    - *Microsoft Defender for Cloud default*
+    - *Defender for Cloud default*
 
-7. Click on **Microsoft Defender for Cloud default** to see the assignment details.
+7. Click on **Defender for Cloud default** to see the assignment details.
 
 
 ### Exercise 3: Create resource exemption for a recommendation
