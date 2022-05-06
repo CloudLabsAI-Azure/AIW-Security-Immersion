@@ -79,10 +79,9 @@ In this exercise, you will be getting started with the functionality of Microsof
 
 ### Configure the data collection settings in Microsoft Defender for Cloud
 
-
 1. Go to the **Microsoft Defender for Cloud** and Click on the **Environment settings** page and select your **Azure subscription**.
 
-    ![Template deployment completed](../Images/security1.1.png)
+    ![Template deployment completed](../Images/security1.2.png)
 
 1. From **Settings |Microsoft Defender for Cloud Plans** page, Navigate to **Auto provisioning** under the Settings section.
 
