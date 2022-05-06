@@ -106,7 +106,7 @@ Exploring secure score
 
 6. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
 
-    ![Recommendations view](../Images/msdefender6.png)
+    ![Recommendations view](../Images/msdefender6.1.png)
 
 2. From the top menu, click on the **Download CSV report** button – this allows you to get a snapshot of your resources, their health status and the associated recommendations. You can use this file for pivoting and reporting.
 
@@ -120,7 +120,7 @@ Exploring secure score
 
    - Title of the recommendation: **Storage account public access should be disallowed**
    - Top menu controls: **Exempt**, **Deny**, **View policy definition** and **Open query**
-   - Severity indicator: **High**
+   - Severity indicator: **Medium**
    - Freshness interval: **30 Min** 
    - Tactics and techniques: **Initial Access**
 
