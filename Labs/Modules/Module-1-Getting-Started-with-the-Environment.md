@@ -128,7 +128,7 @@ In this exercise, You will create the Microsoft Defender for Cloud default polic
    
 1. Click on **Security Policy (1)** You'll notice that in **Default initiative** (2) the **Microsoft Defender for Cloud Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
 
-    ![Template deployment completed](../Images/dfpolicy.png)
+    ![Template deployment completed](../Images/dfpolicy.1.png)
    
    > **Note** : Incase if you don't see default policy, follow the below steps:
      
