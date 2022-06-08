@@ -64,7 +64,7 @@ You can add additional industry standards (represented as compliance packages) s
    
 3. Under **Policy Settings** tab, select **Security Policy (1)**, then expand **Industry & regulatory standards** and click on **Add more standards (2)**.
 
-    ![](../Images/addmore.png)
+    ![](../Images/security-policy-standards.png)
    
 4. On the **Add regulatory compliance standards** window, locate the **Azure CIS 1.1.0** standard and click on **Add**.
 
@@ -168,7 +168,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
    
 1. Under **Policy Settings** tab, select **Security Policy (1)**, then expand **Your custom initiatives** and click on **Add custom initiatives (2)**.
 
-    ![](../Images/customeini.png)
+    ![](../Images/security-policy-custom.png)
 
 1. On **Add custom initiative** window, your new standard should be listed. Custom Benchmark initiative can be added by clicking on **Add** button. Once assigned, it will be listed in the Recommendations blade and will be added in the **Regulatory Compliance** dashboard too.
 
