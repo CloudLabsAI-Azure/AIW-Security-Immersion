@@ -207,7 +207,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 1. Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
 
-    ![Logic App worklfow](../Images/outlook-send.png)
+    ![Logic App worklfow](../Images/logic-app-latest.png)
 
 **Create a new workflow automation instance**
 

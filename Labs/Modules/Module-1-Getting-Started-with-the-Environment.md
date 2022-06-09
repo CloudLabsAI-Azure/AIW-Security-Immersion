@@ -85,11 +85,11 @@ In this exercise, you will be getting started with the functionality of Microsof
 
 1. From **Settings |Microsoft Defender for Cloud Plans** page, Navigate to **Auto provisioning** under the Settings section.
 
-    ![](../Images/auto%20provision.png?raw=true)
+    ![](../Images/settings-auto-provisioning.png)
 
 1. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
 
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/auto%20provision1.png?raw=true)
+    ![](../Images/auto-log-on.png)
     
 1. Click on **Edit configuration** under the **Configuration** header of Log Analytics agent for Azure VMs extension. A new window of Extension deployment configuration is opened.
 
