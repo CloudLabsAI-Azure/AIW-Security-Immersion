@@ -19,7 +19,7 @@ Advanced | 300+ | You have lots of experience and are looking to learn about adv
 
 ## Last release notes
 
-* Version 1.0 - General availability of Azure Security Center labs
+* Version 1.0 - General availability of Microsoft Defender for Cloud labs
 
 ## Modules
 
