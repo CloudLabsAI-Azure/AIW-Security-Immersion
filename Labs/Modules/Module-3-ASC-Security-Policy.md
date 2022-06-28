@@ -89,17 +89,17 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
-2. Select **Recommendations(1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines(2)** recommendation.
+2. Select **Recommendations(1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines(2)** recommendation under **Secure management porta** section. You can search it using the search box.
 
     > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-    ![policy assignment](../Images/m3fs3.png)
+    ![policy assignment](../Images/secureportfix.png)
 
 3. Expand the **Affected resources** bar, review the current resources under **Unhealthy resources** - **asclab-win**, **labvm-xxxxxx**, and **asclab-linux**.
 
 4. Select the **asclab-win** resource and then click on **Exempt**.
 
-    ![](../Images/m3ex3.step6.png)
+    ![](../Images/exemptfix1.png)
 
 5. The **Exempt pane** opens:
     - Name: **ASC-Management ports should be closed on your virtual machines**.
