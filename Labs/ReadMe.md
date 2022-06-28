@@ -29,14 +29,14 @@ Advanced | 300+ | You have lots of experience and are looking to learn about adv
 - [Creating Microsoft Defender for Cloud Default policy](./Modules/Module-1-Getting-Started-with-the-Environment.md#exercise-3-creating-microsoft-defender-for-cloud-default-policy)
 
 
-[**Module 2 – Exploring Azure Security Center (L100)**](./Modules/Module-2-Exploring-Azure-Security-Center.md)
-- [Understanding ASC dashboard](./Modules/Module-2-Exploring-Azure-Security-Center.md#exercise-1-understanding-azure-security-center-dashboard)
+[**Module 2 – Exploring Microsoft Defender for Cloud (L100)**](./Modules/Module-2-Exploring-Azure-Security-Center.md)
+- [Understanding Defender for cloud dashboard](./Modules/Module-2-Exploring-Azure-Security-Center.md#exercise-1-understanding-azure-security-center-dashboard)
 - [Exploring Secure Score and Recommendations](./Modules/Module-2-Exploring-Azure-Security-Center.md#exercise-2-exploring-secure-score-and-recommendations)
 - [Exploring the Inventory capability](./Modules/Module-2-Exploring-Azure-Security-Center.md#exercise-3-exploring-the-inventory-capability)
  
  
-[**Module 3 – ASC Security Policy (L200)**](./Modules/Module-3-ASC-Security-Policy.md)
-- [Overview of the ASC policy](./Modules/Module-3-ASC-Security-Policy.md#exercise-1-overview-of-the-microsoft-defender-for-cloud-policy) 
+[**Module 3 – Defender for Cloud Policy (L200)**](./Modules/Module-3-ASC-Security-Policy.md)
+- [Overview of the Defender for Cloud  policy](./Modules/Module-3-ASC-Security-Policy.md#exercise-1-overview-of-the-microsoft-defender-for-cloud-policy) 
 - [Explore Azure Policy](./Modules/Module-3-ASC-Security-Policy.md#exercise-2-explore-azure-policy)
 - [Create resource exemption for a recommendation](./Modules/Module-3-ASC-Security-Policy.md#exercise-3-create-resource-exemption-for-a-recommendation)
 - [Create a policy enforcement and deny](./Modules/Module-3-ASC-Security-Policy.md#exercise-4-create-policy-enforcement-and-deny) 
@@ -72,7 +72,6 @@ Advanced | 300+ | You have lots of experience and are looking to learn about adv
 
 Acronym | Meaning | Description
 ------- | --- | -----------
-ASC | Azure Security Center | Built-in free service which offer limited security for your Azure resources only
 CSPM | Cloud Security Posture Management | Automates the identification and remediation of risks across cloud infrastructures. CSPM is Security Center is available for free to all Azure users. The free experience includes CSPM features such as secure score, detection of security misconfigurations in your Azure machines, asset inventory, and more.
 CWP | Cloud Workload Protection | Provides workload-centric security protection solutions such as servers, app service, storage, database and more. All CWP capabilities are covered under Azure Defender.
 JIT | Just-in-time | Feature to reduce exposure to attacks while providing easy access when you need to connect to a VM
