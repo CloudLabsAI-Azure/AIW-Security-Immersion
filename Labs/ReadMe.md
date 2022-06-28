@@ -1,7 +1,7 @@
 # Welcome to Microsoft defender for Cloud Labs
 
 <p align="center">
-<img src="./Images/asc-labs-logo.png?raw=true">
+<img src="./Images/asc-labs-logo2.png?raw=true">
 </p>
 
 ## Introduction
