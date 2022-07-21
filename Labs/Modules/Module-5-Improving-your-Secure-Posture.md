@@ -138,7 +138,11 @@ Every security program includes multiple workflows for incident response. The pr
 
 1. Search for **Logic Apps** in the search box located on the top of the **Azure Portal** page and click on it, or [click here](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Logic%2Fworkflows).
 
+    ![](../Images/M5-ex3-1.png)
+    
 1. Click on **+Add** to create a new Logic App.
+    
+    ![](../Images/M5-ex3-2.png)
 
 1. On the Basics tab, enter the following details:
      
