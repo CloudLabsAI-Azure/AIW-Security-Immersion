@@ -216,6 +216,8 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 17. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as *asc-filtered-query* and select **save**.
 
+   ![Inventory: Assign tags](../Images/M2-EX3-17.png)
+
 > ⭐ Good to know: <br>
 > The Inventory dashboard is fully built on top of Azure Resource Graph (ARG) which stores all of Microsoft Defender for Cloud security posture data and leveraging its powerful KQL engine.
 > It enables you to reach deep insights quickly and easily on top of Microsoft Defender for Cloud data and cross-reference with any other resource properties.
