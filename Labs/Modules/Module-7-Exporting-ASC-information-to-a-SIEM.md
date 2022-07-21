@@ -91,7 +91,7 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 
 2. On the **Microsoft Sentinel** blade, click on the **Create Microsoft Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by Security Center.
  
-    ![connect-workspace1](../Images/m7e2s2.png)
+    ![connect-workspace1](../Images/M7-Ex2-2.png)
 
 3. On the **Add Microsoft Sentinel to a workspace**, select **asclab-la-<inject key="Deployment ID" enableCopy="false" />** workspace. Click on **Add**.
 
