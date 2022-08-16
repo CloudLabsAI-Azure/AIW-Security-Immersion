@@ -79,6 +79,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 7. Click on **Defender for Cloud default** to see the assignment details.
 
+   ![policy assignment](../Images/m3-Ex2-7.png) 
 
 ### Exercise 3: Create resource exemption for a recommendation
 
@@ -132,7 +133,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 10. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there.
 
-    ![Exempttion tab](../Images/exemptions-policy.png)
+    ![Exempttion tab](../Images/m3-Ex3-10.png)
 
 ### Exercise 4: Create policy enforcement and deny
 
