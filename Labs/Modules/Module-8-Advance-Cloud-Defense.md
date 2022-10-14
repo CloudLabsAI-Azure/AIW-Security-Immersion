@@ -110,7 +110,7 @@ It maps the current state of these items with the state during the previous scan
 
     ![File Integrity Monitoring1](../Images/m8ex3.step2.png)
 
-3. On the **File Integrity Monitoring** page, select the listed **Log Analytics workspace** named **asclab-la-labvm-<inject key="DeploymentID" enableCopy="false"/>** (or just by clicking on the Enable button - it indicates that File Integrity Monitoring is not enabled for the selected workspace).
+3. On the **File Integrity Monitoring** page, select the listed **Log Analytics workspace** named **asclab-la-<inject key="DeploymentID" enableCopy="false"/>** (or just by clicking on the Enable button - it indicates that File Integrity Monitoring is not enabled for the selected workspace).
 
    > **Note**: Deployment ID can be obtained from the Lab Environment output page.
 
