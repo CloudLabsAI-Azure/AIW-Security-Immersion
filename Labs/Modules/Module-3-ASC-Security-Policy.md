@@ -62,7 +62,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative(2)** and select **Security Center(3)** from the _Category_ filter.
 
-    ![policy assignment](../Images/m3ex2.step3.png)	
+    ![policy assignment](../Images/secure-M3-Ex2-S3.png)	
 
 4. You can now see three built-in initiatives used by Microsoft Defender for Cloud:
     -	*Azure Security Benchmark*
