@@ -23,7 +23,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
    
 1. Click on **Security Policy**.
 
-    ![Template deployment completed](../Images/m3e1s4.3.1.png)
+    ![Template deployment completed](../Images/secure-M3-Ex1-S4.png)
    
 1. By default, there is one security policy assignment which is **Defender for Cloud Default**.
 
