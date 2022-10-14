@@ -235,7 +235,7 @@ A custom policy definition allows customers to define their own rules for using 
 6. The Add policy definition(s) pane opens: <br>
 Add each policy one by one:
       Search and select the **below policy definitions (2)** and click on **Add (4)**
-    - *Managed identity should be used in your Function App*
+    - *Function apps should use managed identity*
     - *Public network access on Azure SQL Database should be disabled*
     - *Storage accounts should restrict network access*
 
