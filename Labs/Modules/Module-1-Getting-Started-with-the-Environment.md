@@ -83,30 +83,22 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![Template deployment completed](../Images/security1.2.png)
 
-1. From **Settings |Microsoft Defender for Cloud Plans** page, Navigate to **Auto provisioning** under the Settings section.
+1. From **Settings | Defender Plans** page, Navigate to  **Settings & monitoring**.
 
-    ![](../Images/settings-auto-provisioning.png)
+    ![](../Images/secure-3.png)
 
-1. On the **Settings | Auto provisioning** page under the **Auto provisioning - Extensions** header, toggle the status of **Log Analytics agent for Azure VMs (2)** to **On** (if it is not already set to On)
+1. On the **Settings & monitoring** toggle the status of **Log Analytics agent/Azure Monitor agent** to **On** (if it is not already set to On). Click on **Edit configuration** under the **Configuration** header of Log Analytics agent/Azure Monitor agent.
 
-    ![](../Images/auto-log-on.png)
+    ![](../Images/secure-2.png)
     
-1. Click on **Edit configuration** under the **Configuration** header of Log Analytics agent for Azure VMs extension. A new window of Extension deployment configuration is opened.
+1. A new window of Auto-provisioning configuration is opened. Select **Log Analytics Agent (Default)** for **Agent type**, under **Workspace selection** select **Custom workspace** and choose your workspace from the drop-down menu and click **Apply**.
 
-    ![auto-provisioning](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/edit%20configuration.png?raw=true)
+     ![](../Images/secure-1.png)
   
 
-1. On the **Extension deployment configuration** blade under the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace (1)** option and then select your workspace **asclab-la-{DeploymentID} (2)** from the drop down menu.
+1. Once all the configurations are made, click on **Continue**.
+    ![](../Images/secure-4.png)
 
-    ![workspace configuration](../Images/connectazurevms.png)
-
-1. Next, under the **Store additional raw data - Windows security events** section, select the **All Events (1)** option and click on **Apply (2)**.
-
-    ![Enable Microsoft Defender for Cloud on the workspace level](../Images/allevents.png)
-
-1. Once all the configurations are made, click on **Save** on the Settings | Auto provisioning page.
-
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/save%20extension.png?raw=true)
 
 <br>
 

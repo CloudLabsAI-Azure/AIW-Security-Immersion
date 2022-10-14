@@ -23,7 +23,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
    
 1. Click on **Security Policy**.
 
-    ![Template deployment completed](../Images/m3e1s4.3.1.png)
+    ![Template deployment completed](../Images/secure-M3-Ex1-S4.png)
    
 1. By default, there is one security policy assignment which is **Defender for Cloud Default**.
 
@@ -62,7 +62,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative(2)** and select **Security Center(3)** from the _Category_ filter.
 
-    ![policy assignment](../Images/m3ex2.step3.png)	
+    ![policy assignment](../Images/secure-M3-Ex2-S3.png)	
 
 4. You can now see three built-in initiatives used by Microsoft Defender for Cloud:
     -	*Azure Security Benchmark*
@@ -235,7 +235,7 @@ A custom policy definition allows customers to define their own rules for using 
 6. The Add policy definition(s) pane opens: <br>
 Add each policy one by one:
       Search and select the **below policy definitions (2)** and click on **Add (4)**
-    - *Managed identity should be used in your Function App*
+    - *Function apps should use managed identity*
     - *Public network access on Azure SQL Database should be disabled*
     - *Storage accounts should restrict network access*
 
