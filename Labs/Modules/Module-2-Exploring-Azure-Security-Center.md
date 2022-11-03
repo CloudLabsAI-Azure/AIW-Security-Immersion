@@ -93,15 +93,6 @@ Exploring secure score
    > 
    > For more information on how the score is calculated, [refer to the secure score documentation page](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#how-your-secure-score-is-calculated).
 
-
-4. The bottom section lists the subscriptions and their current secure scores. To view the recommendations behind the score, click on **View recommendations**.
-  
-    ![Recommendations view](../Images/md2ex2stp4.png)
-
-5. Close the **View recommendations** page to return to **Recommendations** page.
-
-    ![Recommendations view](../Images/md2ex2stp5.png)
-
  **Exploring Security Controls and Recommendations**
 
 6. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
@@ -176,7 +167,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
     > **Note**: It could take up-to 24 hours for all the recommendations to show up. And it is possible that during the lab time this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
-9. Go back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (Unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
+9. Navigate back to the Inventory page and clear the search keyword **linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (Unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
 
      ![Remediate a resource](../Images/filter-rg.png)
 
@@ -188,7 +179,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 11. Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
-  * Filter the **Resource type** column to include only **App Services**: Select the **Resource type** filter and select **app services** under the Value and Click on **OK**
+  * Filter the **Resource type** column to include only **App Services or web services**: Select the **Resource type** filter and select **app services** under the Value and Click on **OK**
   * **Select** the checkboxes of the two app services named *asclab-fa-xx* and *asclab-app-xx*. (Here **xx** is the unique id of resource).
   * From the top menu, click **Assign tags**
   * Assign `Environment` as the name and  `Production` as the value.
