@@ -143,7 +143,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 2. From the left side pane of **Microsoft Defender for Cloud**, select **Recommendations** under **General**.
 
-4. From the filtered recommendations list, select **Secure transfer to storage accounts should be enabled**.
+4. Select the **Secure transfer to storage accounts should be enabled** under **Encrypt data in transit** section. You can search it using the search box.
 
    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
