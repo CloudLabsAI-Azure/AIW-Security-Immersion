@@ -122,12 +122,12 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 1. Under **Create group**, enter the following details:
 
     - Name : **Group-1 (1)**
-
-    - Subgroup : Click on **Create new (2)** and enter the name as **Sub-group1 (3)**. You can also provide a description. Please note that additional metadata can be used as well. The location of the policyMetadata object that has additional details about the control and compliance domain.
+    - Display name : **Group-1 (2)**
+    - Subgroup : Click on **Create new (3)** and enter the name as **Sub-group1 (4)**. You can also provide a description. Please note that additional metadata can be used as well. The location of the policyMetadata object that has additional details about the control and compliance domain.
     
-    - Click on **Save (4)** to create the new group.  
+    - Click on **Save (5)** to create the new group.  
 
-     ![Group create](../Images/createagroup.png)
+     ![Group create](../Images/createagroup.1.png)
   
 1. Repeat the process to create an additional group, for example: **Group 2**.
 
