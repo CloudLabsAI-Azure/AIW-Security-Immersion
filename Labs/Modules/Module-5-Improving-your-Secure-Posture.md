@@ -252,9 +252,9 @@ Every security program includes multiple workflows for incident response. The pr
 
 4. Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations.
 
-  Once you start to get email notifications, you can disable the automation by selecting the workflow and clicking on **Disable**.
+   Once you start to get email notifications, you can disable the automation by selecting the workflow and clicking on **Disable**.
 
-  > Please be aware that if your trigger is a recommendation that has "sub-recommendations" / "nested recommendations", the logic app will not trigger for every new security finding when the status of the parent has changed.
+   > Please be aware that if your trigger is a recommendation that has "sub-recommendations" / "nested recommendations", the logic app will not trigger for every new security finding when the status of the parent has changed.
 
 5. Once the automation is automatically triggered, you should expect the email message to look like the screenshot below:
 
