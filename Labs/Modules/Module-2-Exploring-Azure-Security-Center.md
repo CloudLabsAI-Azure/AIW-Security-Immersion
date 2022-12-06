@@ -191,19 +191,13 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
    
 12. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
-13. From the filter pane, remove the **Security findings** filter if you added in the previous step then select **Defender  for Cloud (1)** filter and set value to **On** and click on **OK**. On the **Resource Groups (2)** select **asclab** (Unselect remaining) and again click on **Ok**
+13. From the filter pane, remove the **Security findings** filter if you added in the previous step then from the top menu, click on **Open query**.
 
-    ![Inventory: Assign tags](../Images/inventory-filter-step13.png)
-
-14. From the top menu bar, click on **Download CSV report (3)**. You will get a snapshot to work on it offline already filtered. You can also right-click on any of the resources and upgrade to Microsoft Defender  for Cloud plan (when applicable).
-
-15. From the top menu, click on **Open query**.
-
-    ![Inventory: Assign tags](../Images/inventory-open-query-new.png)
+    ![Inventory: Assign tags](../Images/inventory-open-query-new.1.png)
 
 16. On the **Azure Resource Graph Explorer** blade, click on **Run Query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs and here it gets very powerful.
  
-    ![Inventory: Assign tags](../Images/run-query.png)
+    ![Inventory: Assign tags](../Images/run-query.1.png)
 
 17. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as *asc-filtered-query* and select **save**.
 
