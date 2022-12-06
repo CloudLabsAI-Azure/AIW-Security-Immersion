@@ -160,7 +160,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/change%20to%20deny.png?raw=true)
 
-7. Go back to the **recommendations view**, set the **Response action** filter as **Select All**. Then type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
+7. Go back to the **recommendations view**, type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
 
    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
