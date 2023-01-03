@@ -18,7 +18,7 @@ Microsoft Defender for cloud continuously assesses your hybrid cloud environment
 
 1. Navigate to **Microsoft Defender for Cloud** in the Azure portal(perform if not already on the Microsoft Defender for Cloud).
 
-1. On the overview page select the **Regulatory Compliance(1)** tile (this pilar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard(2)** opens you can see the compliance standards currently assigned to your subscription.
+1. On the overview page select the **Regulatory Compliance (1)** tile (this pilar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard (2)** opens you can see the compliance standards currently assigned to your subscription.
 
     ![](../Images/regcom1.png)
 
@@ -101,15 +101,15 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
 1. Under the **Basics** tab, enter the following steps:
 
-   - Initiative location : select your **Subscription (1)**
+   - Initiative location: select your **Subscription (1)**
     
-   - Name : Enter **Custom Benchmark (2)**
+   - Name: Enter **Custom Benchmark (2)**
 
    - Description: Enter **Custom Benchmark Policy (3)**
 
-   - Category : Click **Use existing (4)** and Select **Security center (5)** from drop-down list.
+   - Category: Click **Use existing (4)** and Select **Security center (5)** from drop-down list.
 
-   - Version : Enter **1 (6)**. Each policy definition and initiative contain a version in its metadata section. You can decide to have major versions (1.0), minor version (1.1) and so.
+   - Version: Enter **1 (6)**. Each policy definition and initiative contain a version in its metadata section. You can decide to have major versions (1.0), minor version (1.1) and so.
 
    - Click on **Next (7)**
 
@@ -121,9 +121,9 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
    
 1. Under **Create group**, enter the following details:
 
-    - Name : **Group-1 (1)**
-    - Display name : **Group-1 (2)**
-    - Subgroup : Click on **Create new (3)** and enter the name as **Sub-group1 (4)**. You can also provide a description. Please note that additional metadata can be used as well. The location of the policyMetadata object that has additional details about the control and compliance domain.
+    - Name: **Group-1 (1)**
+    - Display name: **Group-1 (2)**
+    - Subgroup: Click on **Create new (3)** and enter the name as **Sub-group1 (4)**. You can also provide a description. Please note that additional metadata can be used as well. The location of the policyMetadata object that has additional details about the control and compliance domain.
     
     - Click on **Save (5)** to create the new group.  
 
