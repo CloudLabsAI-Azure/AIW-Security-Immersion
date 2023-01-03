@@ -45,7 +45,7 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
 
 1. Ensure the VM extension is deployed on the relevant machines:
     - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
-    - Select **asclab-win(1)**. next, click on **Extensions + applications(2)** under the **Settings** section.
+    - Select **asclab-win (1)**. next, click on **Extensions + applications (2)** under the **Settings** section.
     - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
     ![](../Images/m5e1s9.png)
@@ -146,17 +146,17 @@ Every security program includes multiple workflows for incident response. The pr
 
 1. On the Basics tab, enter the following details:
      
-     - Subscription : Select your **Subscription** 
+     - Subscription: Select your **Subscription** 
       
      - Resource group:  **asclab**.   
  
      - Logic app name: Enter **Send-RecommendationsChanges**.
 
-     - Location : Select the location of your **Resource group**
+     - Location: Select the location of your **Resource group**
      
      - Plane Type: **Consumption**.
      
-     - Enable log analytics : Select **No**
+     - Enable log analytics: Select **No**
 
      - Select **Review + Create** and then click on **Create**.
 
@@ -170,7 +170,7 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/open-logic-app.png)
 
-1. Search for **Security Center** in the search box and select **When an Microsoft Defender for Cloud Recommendation is created or triggered** from the list of **Triggers**
+1. Search for **Security Center** in the search box and select **When a Microsoft Defender for Cloud Recommendation is created or triggered** from the list of **Triggers**
 
     ![](../Images/triggered1.png)
 

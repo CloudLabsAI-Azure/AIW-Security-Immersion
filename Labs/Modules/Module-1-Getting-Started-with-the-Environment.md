@@ -16,7 +16,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 ### Instructions 
 
-1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-<inject key="DeploymentID" enableCopy="false"/>**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-<inject key="DeploymentID" enableCopy="false"/>** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
+1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-<inject key="DeploymentID" enableCopy="false"/>**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-<inject key="DeploymentID" enableCopy="false"/>** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternatively, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
 
     ![](../Images/av1.png)
 
@@ -44,7 +44,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
     ![](../Images/azure-login-enter-password1.png "Enter Password") 
 
-1. You may get a **Help us protect your account** box, on that click on **Skip for now (14 days untill this is required)** and then click on **Next** button.
+1. You may get a **Help us protect your account** box, on that click on **Skip for now (14 days until this is required)** and then click on **Next** button.
 
     ![](../Images/protectaccountlogin.png) 
  
@@ -125,7 +125,7 @@ In this exercise, You will create the Microsoft Defender for Cloud default polic
 
     ![Template deployment completed](../Images/dfpolicy.1.png)
    
-   > **Note** : Incase if you don't see default policy, follow the below steps:
+   > **Note**: Incase if you don't see the default policy, follow the below steps:
      
      - Under **Default initiative**, click on **Assign Policy**
 

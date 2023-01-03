@@ -46,7 +46,7 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
 
     ![](../Images/workload1.png)
 
-8. On the **Workload Protections** **(1)**, under Cloud Security, you can see the coverage of your **connected resources(2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
+8. On the **Workload Protections (1)**, under Cloud Security, you can see the coverage of your **connected resources (2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)** which means **full protection**. Additionally, you can also view the recent **security alerts (4)**, color-coded by severity.
 
      ![Overview: Microsoft Defender  for Cloud tile](../Images/workload%20protection1.png)
 
@@ -54,7 +54,7 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
 
      ![](../Images/regulatory1.png)
 
-10. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark(2), ISO 27001, PCI DSS 3.2.1 and SOC TSP(3)**. Click on **Show all 4 (4)** to check the compliance status.
+10. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark (2), ISO 27001, PCI DSS 3.2.1 and SOC TSP(3)**. Click on **Show all 4 (4)** to check the compliance status.
  
      >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones. 
 
@@ -95,7 +95,7 @@ Exploring secure score
 
  **Exploring Security Controls and Recommendations**
 
-6. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status**(both completed security controls and recommendations) and **Resource health** (by severity).
+6. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status** (both completed security controls and recommendations) and **Resource health** (by severity).
 
     ![Recommendations view](../Images/msdefender6.1.png)
 

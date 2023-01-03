@@ -51,7 +51,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
      - Export target:
 
-      - Subscription : Select your **Subscription (8)**
+      - Subscription: Select your **Subscription (8)**
 
       - Select target workspace: Select **asclab-la-<inject key="Deployment ID" enableCopy="false" /> (9)**
 
@@ -63,7 +63,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
 1. Search for **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
-1. Click on the **asclab-la-<inject key="Deployment ID" enableCopy="false" /> (1)** workspace and select **Logs(2)** button under the **General** section.
+1. Click on the **asclab-la-<inject key="Deployment ID" enableCopy="false" /> (1)** workspace and select **Logs (2)** button under the **General** section.
 
     ![](../Images/LAW3.png) 
 

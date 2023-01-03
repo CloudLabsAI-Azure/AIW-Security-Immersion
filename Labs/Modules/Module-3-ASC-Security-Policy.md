@@ -1,6 +1,5 @@
 # Module 3 - Security Policy
 
-
 ## Overview
 
 In this module, we will guide you through the current Microsoft Defender for Cloud policies set by Azure. Also, we will walk you through the methods to enable or disable the Security policies. 
@@ -58,9 +57,9 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
     ![](../Images/m3ex2.step1.png)
 
-2. From the left navigation pane, under the **Authoring** section, click on **Definitions(1)**. This is where you can explore the built-in policy definitions and initiatives.
+2. From the left navigation pane, under the **Authoring** section, click on **Definitions (1)**. This is where you can explore the built-in policy definitions and initiatives.
 
-3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative(2)** and select **Security Center(3)** from the _Category_ filter.
+3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative (2)** and select **Security Center (3)** from the _Category_ filter.
 
     ![policy assignment](../Images/secure-M3-Ex2-S3.png)	
 
@@ -90,7 +89,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
-2. Select **Recommendations(1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines(2)** recommendation under **Secure management ports** section. You can search it using the search box.
+2. Select **Recommendations (1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines (2)** recommendation under **Secure management ports** section. You can search it using the search box.
 
     > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
@@ -143,37 +142,41 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 2. From the left side pane of **Microsoft Defender for Cloud**, select **Recommendations** under **General**.
 
-4. Select the **Secure transfer to storage accounts should be enabled** under **Encrypt data in transit** section. You can search it using the search box.
+3. Select the **Secure transfer to storage accounts should be enabled** under **Encrypt data in transit** section. You can search it using the search box.
 
    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-5. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
+4. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
    > ❗ Important: <br>
    > Security misconfigurations are a major cause of security incidents.
 
      ![Secure Transfer](../Images/secure-transfer.png)
 
-6. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
+5. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
    **Note**: If you unable to edit the query. Click on the eclipse and select **change to Audit** and retry the step
 
     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/change%20to%20deny.png?raw=true)
 
-7. Go back to the **recommendations view**, type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
+6. Go back to the **recommendations view**, type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
 
    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
     ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
-8. On the **Auditing on SQL server should be enabled** page, from the top menu bar, click on the **Enforce** button. This option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
+7. On the **Auditing on SQL server should be enabled** page, from the top menu bar, click on the **Enforce** button. This option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
 
-9. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
+8. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
 
 * Under the **Basics** tab under the Scope header, select the ellipse icon (...) to select your subscription and click on the **Select**
-* Then click on **Next**
+* Then click on **Next**.
 
-    ![](../Images/m3ex4.step9.png)
+    ![](../Images/neew2.png)
+    
+9. In the **Advanced** tab leave it by default and Click on **Next**.
+
+    ![](../Images/neew3.png)
 
 10. In the **Parameters** tab, leave the *Effect* and *Retention days* with default values.
 
@@ -182,7 +185,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
      - Select **Review + create** to assign the policy to your subscription.
      - Click **Create**
 
-      ![](../Images/m3fs5.png)
+      ![](../Images/neew4.png)
 
 11. On the **Auditing on SQL server should be enabled** page, perform the following steps:
 
@@ -210,9 +213,9 @@ A custom policy definition allows customers to define their own rules for using 
 
     ![](../Images/m3ex2.step1.png)
 
-2. Select **Definitions(1)** from the left navigation pane.
+2. Select **Definitions (1)** from the left navigation pane.
 
-3. From the top menu, select **+ Initiative definition(2)** to add a new initiative
+3. From the top menu, select **+ Initiative definition (2)** to add a new initiative
 
     ![](../Images/m3ex5step3.png)
 
@@ -269,7 +272,7 @@ Add each policy one by one:
 
 7. On the **Assign Initiative** page leave everything as default and select **Review + Create**.
    
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/custom.png?raw=true)
+    ![custom initiative](../Images/neew5.png)
    
 8. Now click on **Create**
 
