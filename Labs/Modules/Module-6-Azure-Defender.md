@@ -99,9 +99,9 @@ In the previous step, we used the dismiss option to manually dismiss a single al
   
    - Reason: **Other (3)**
    
-   - Comment : **Lab 6 exercise (4)**
+   - Comment: **Lab 6 exercise (4)**
 
-   - Set rule expiration to be tomorrow (just a day ahead)**(5)**
+   - Set rule expiration to be tomorrow (just a day ahead) **(5)**
   
    - Click on **Apply (6)** and wait 10 minutes for the new rule to be applied.
 
@@ -117,7 +117,7 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
     ![](../Images/editsuppression.png)
   
-  > **Note** : If you receive any pop-up stating the **Warning** alert, click on **OK**
+  > **Note**: If you receive any pop-up stating the **Warning** alert, click on **OK**
 
 7. To view the dismissed alerts: Navigate to Security alerts the main page and to the filters section. Change the **Status (1)** filter value to show only **Dismissed (2)** items and click **Ok (3)**.
 
@@ -131,7 +131,7 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 
 1. In your **labvm-xxxxxx** open a new browser window and navigate to https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0 page.
 
-2. Scroll down to the **Example** section for a request or aletrnatively you can open this URL https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0&tabs=http#example in your **labvm-xxxxxx** browser window.
+2. Scroll down to the **Example** section for a request or alternatively you can open this URL https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0&tabs=http#example in your **labvm-xxxxxx** browser window.
 
 3. On the HTTP tab, review the endpoint URL: `https://graph.microsoft.com/v1.0/security/alerts`.
 
@@ -147,7 +147,7 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 
 6. Now click on **Modify Permissions (Preview)** and wait for two permissions to load. Scroll to the right side of permissions then click on **Consent**, do this for both permissions. When prompted for login, login using credentials provided in the **Environment Details** tab, click on **Accept** for each permission to get **Consented**
 
-   > **Note** : If you are not able to get **Consented**, please resize the browser window.
+   > **Note**: If you are not able to get **Consented**, please resize the browser window.
  
     ![Consent](../Images/m6ex3step6.png)
 
