@@ -74,7 +74,7 @@ You can add additional industry standards (represented as compliance packages) s
 
    >Note: If it fails to create then please click on previous button on deployment page and start the deployment again.
 
-    ![Review + create](../Images/add-more-standards-create.png)
+    ![Review + create](../Images/neew6.png)
 
   > ❗ Important: <br>
   > It will take a while until the change takes an effect (approximately 2-3 hours).
