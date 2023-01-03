@@ -6,7 +6,7 @@ In this exercise, you will be exploring the Microsoft Defender for Cloud feature
 
 You will be performing the following activities to achieve the goal.
 
-* Using JIT(Just In Time access to VMs) to reduce the attack surface
+* Using JIT (Just In Time access to VMs) to reduce the attack surface
 * Using Application control to deal with malicious and/or unauthorized software
 * Using File integrity monitoring (FIM) to monitor Operating System files
 
@@ -26,7 +26,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 4. When you are in the **Just-in-time VM access** page, select the **Not configured** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
     
-    > **Note**: If the virtual machines `asclab-linux` and `asclab-win` are present under **Unsuppoted** tab then follow the below instructions to enable **Just-in-time VM access**.
+    > **Note**: If the virtual machines `asclab-linux` and `asclab-win` are present under **Unsupported** tab then follow the below instructions to enable **Just-in-time VM access**.
     ![](../Images/justintime.png)
 
     - Navigate to **asclab** resource group and select **asclab-win** virtual machine.
