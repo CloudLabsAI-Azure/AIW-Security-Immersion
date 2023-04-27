@@ -6,7 +6,7 @@ In this exercise, you will explore the Microsoft Defender for Cloud Dashboard fe
 
 You will be performing the following activities to achieve the goal.
 
-* Overview of Microsoft Defender for Cloud dashboard features **Secure Score in Microsoft Defender for Cloud, Regulatory Compliance and Microsoft Defender for Cloud**.
+* Overview of Microsoft Defender for Cloud dashboard features **Secure Posture and Regulatory Compliance and Microsoft Defender for Cloud**.
 * Exploring Security Controls and Recommendations
 * Exploring the Inventory capability
 
@@ -54,18 +54,16 @@ In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defe
 
      ![](../Images/regulatory1.png)
 
-10. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Azure Security Benchmark (2), ISO 27001, PCI DSS 3.2.1 and SOC TSP(3)**. Click on **Show all 4 (4)** to check the compliance status.
+10. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards which are **Microsoft cloud security benchmark (2)**.
  
-     >Clicking on this tile will redirect you to the Regulatory Compliance dashboard – where you can add additional standards and explore the current ones. 
-
-     ![Overview: Regulatory Compliance tile](../Images/msdefender4.1.png)
-   
-    
+     ![Overview: Regulatory Compliance tile](../Images/c4.png)
+     
 11. Next Click on **Inventory** from the **General** section of the Microsoft Defender for Cloud. It shows the number of unmonitored VMs alongside the total covered resources - **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
 
      > ❗ Important: <br>
      > Unmonitored VMs are considered as virtual machines that have Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
-
+     > 
+     > **Note:** If in case there are any resources under Unmonitored resources then please proceed further with the Exercise 2 and come back later to check on the same. 
     ![Overview: Inventory tile](../Images/msdefender5.1.png)
 
 
@@ -121,11 +119,11 @@ Exploring secure score
 
 10. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**. This will automatically apply the remediation on the selected resource.
 
-     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/affectedresources.png?raw=true)
+     ![](../Images/c2.png)
   
 11. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
 
-     ![](../Images/ex2.step13.png)
+     ![](../Images/c3.png)
   
 12. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources. 
     
@@ -179,7 +177,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
 11. Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
-  * Filter the **Resource type** column to include only **App Services or web services**: Select the **Resource type** filter and select **app services** under the Value and Click on **OK**
+  * Filter the **Resource type** column to include only **App Services or web services**: Select the **Resource type** filter and select **app services and web services** under the Value and Click on **OK**
   * **Select** the checkboxes of the two app services named *asclab-fa-xx* and *asclab-app-xx*. (Here **xx** is the unique id of resource).
   * From the top menu, click **Assign tags**
   * Assign `Environment` as the name and  `Production` as the value.
@@ -187,7 +185,7 @@ Asset inventory dashboard allows you to get a single pane of glass view to all y
 
    > **Note**: If you don't see App Services in Resource type filter that means it is not loaded yet to recommendations, Note down this step number and verify this later.
 
-   ![Inventory: Assign tags](../Images/assigntagsv1.gif?raw=true)
+   ![Inventory: Assign tags](../Images/c6.gif?raw=true)
    
 12. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
