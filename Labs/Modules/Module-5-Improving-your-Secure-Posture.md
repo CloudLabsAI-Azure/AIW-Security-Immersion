@@ -33,7 +33,7 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
 
 1. On the **Choose a vulnerability assessment solution** select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for servers) (1)**. Click on  **Proceed (2)**.
 
-    ![](../Images/CS-mod5-step6.png)
+    ![](../Images/c7.png)
 
 1. A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources**.
 
@@ -48,11 +48,11 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
     - Select **asclab-win (1)**. next, click on **Extensions + applications (2)** under the **Settings** section.
     - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
-    ![](../Images/m5e1s9.png)
+    ![](../Images/c8.png)
 
-1. Repeat the above step (step10) for **asclab-linux** – you should expect to see a different name for the extension on the Linux platform: `LinuxAgent.AzureSecurityCenter`.
+1. Repeat the above step (step 9) for **asclab-linux** – you should expect to see a different name for the extension on the Linux platform: `LinuxAgent.AzureSecurityCenter`.
 
-     ![](../Images/linux-ext.png)
+     ![](../Images/c9.png)
 
     > **Note:** There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
 
@@ -211,7 +211,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 1. Verify that Your Logic App looks like the below screenshot and then click on **Save** in the Logic App Designer.
 
-    ![Logic App worklfow](../Images/logic-app-latest.png)
+    ![Logic App worklfow](../Images/c10.png)
 
 **Create a new workflow automation instance**
 
