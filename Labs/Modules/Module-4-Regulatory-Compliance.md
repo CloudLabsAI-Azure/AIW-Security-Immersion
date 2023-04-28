@@ -20,7 +20,7 @@ Microsoft Defender for cloud continuously assesses your hybrid cloud environment
 
 1. On the overview page select the **Regulatory Compliance (1)** tile (this pilar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard (2)** opens you can see the compliance standards currently assigned to your subscription.
 
-    ![](../Images/regcom1.png)
+    ![](../Images/c11.png)
 
 1. On the main page, select **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
 
@@ -44,11 +44,11 @@ Microsoft Defender for cloud continuously assesses your hybrid cloud environment
 
     ![](../Images/downloadreport.png)
 
-1. On the Report standard dropdown menu, select **PCI DSS 3.2.1 (1)** and format as **PDF (2)**. Click on **Download (3)**.
+1. On the Report standard dropdown menu, select **Microsoft cloud security benchmark** and format as **PDF*. Click on **Download**.
 
-    ![](../Images/downloadrepo1.png)
+    ![](../Images/c12.png)
 
-1. A local PDF file is now stored on your machine. Open the **PCI DSS 3.2.1 Compliance Report** and explore it – This report summarizes the status of those assessments on your environment, as mapped to the associated controls.
+1. A local PDF file is now stored on your machine. Open the **Microsoft cloud security benchmark Compliance Report** and explore it – This report summarizes the status of those assessments on your environment, as mapped to the associated controls.
 
 ### Exercise 2: Adding new standards
 
@@ -56,7 +56,7 @@ You can add additional industry standards (represented as compliance packages) s
 
 1. On **Regulatory Compliance** page, select **Manage compliance policies** from the top menu bar.
 
-    ![Manage compliance policies](../Images/manage1.png)
+    ![Manage compliance policies](../Images/c13.png)
 
 2. Select **Your Subscription** under the Environment settings.
 

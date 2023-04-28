@@ -44,9 +44,9 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
     ![](../Images/azure-login-enter-password1.png "Enter Password") 
 
-1. You may get a **Help us protect your account** box, on that click on **Skip for now (14 days until this is required)** and then click on **Next** button.
+1. You may get a **Help us protect your account** box, on that click on **Ask later**.
 
-    ![](../Images/protectaccountlogin.png) 
+    ![](../Images/c1.png) 
  
 1. First-time users are often prompted requesting access to **Stay Signed in**. If you see any such pop-up window, click on **No**.
 
