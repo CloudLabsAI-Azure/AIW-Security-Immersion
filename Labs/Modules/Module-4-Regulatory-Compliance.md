@@ -109,11 +109,9 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
    - Category : Click **Use existing (4)** and Select **Security center (5)** from drop-down list.
 
-   - Version : Enter **1 (6)**. Each policy definition and initiative contain a version in its metadata section. You can decide to have major versions (1.0), minor version (1.1) and so.
+   - Click on **Next (6)**
 
-   - Click on **Next (7)**
-
-    ![Benchmark Next](../Images/benchmark-create.png)
+    ![Benchmark Next](../Images/M4-EX3-S4.png)
 
 1. On the **Initiative definition** blade click on **Groups**, in this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create Group**.
 
@@ -122,12 +120,14 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 1. Under **Create group**, enter the following details:
 
     - Name : **Group-1 (1)**
-
-    - Subgroup : Click on **Create new (2)** and enter the name as **Sub-group1 (3)**. You can also provide a description. Please note that additional metadata can be used as well. The location of the policyMetadata object that has additional details about the control and compliance domain.
+    
+    - Display Name : **Group-1 (1)**
+    
+    - Category : Click on **Create new (2)** and enter the name as **Sub-group1 (3)**. You can also provide a description. Please note that additional metadata can be used as well. The location of the policyMetadata object that has additional details about the control and compliance domain.
     
     - Click on **Save (4)** to create the new group.  
 
-     ![Group create](../Images/createagroup.png)
+     ![Group create](../Images/M4-EX3-S6.png)
   
 1. Repeat the process to create an additional group, for example: **Group 2**.
 
