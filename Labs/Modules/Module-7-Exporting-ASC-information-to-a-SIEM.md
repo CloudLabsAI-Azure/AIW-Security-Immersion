@@ -43,7 +43,7 @@ Continuous export lets you fully customize what will be exported, and where it w
      
      - Export frequency:
 
-     - Check the box next to **Streaming updates (5)** and **Snapshots (Preview) (6)**
+     - Check the box next to **Streaming updates (5)** and **Snapshots (6)**
 
      - Export configuration:
 
@@ -57,7 +57,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
      -  Click on **Save (10)**
 
-        ![](../Images/LAW2.png)
+        ![](../Images/M7-EX1-S7.png)
 
      > **Note:** Exporting Microsoft Defender for Cloud's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
