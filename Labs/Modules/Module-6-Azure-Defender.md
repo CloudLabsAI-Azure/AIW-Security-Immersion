@@ -137,7 +137,7 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 
 4. Click on **Try It (1)** then click on the **User icon (2)** to login. You need to login using the credentials provided in the **Environment Details** tab.
 
-    ![Create sample virtual machine security alerts](../Images/m6ex3step4.png)
+    ![Create sample virtual machine security alerts](../Images/M6-EX3-S4.png)
 
     ![Create sample virtual machine security alerts](../Images/m6ex3step4(1).png)
 
