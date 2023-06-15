@@ -65,7 +65,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
     ![policy assignment](../Images/defination.png)	
 
 4. You can now see three built-in initiatives used by Microsoft Defender for Cloud:
-    -	*Azure Security Benchmark*
+    -	*Microsoft cloud security benchmark*
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
     -	[Preview]: Deploy Microsoft Defender for Endpoint agent
