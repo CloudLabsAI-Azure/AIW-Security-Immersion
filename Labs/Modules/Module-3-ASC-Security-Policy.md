@@ -4,7 +4,7 @@
 
 In this module, we will guide you through the current Microsoft Defender for Cloud policies set by Azure. Also, we will walk you through the methods to enable or disable the Security policies. 
 
-### Exercise 1: Overview of the Microsoft Defender for Cloud policy
+### Exercise 1: Overview of the Microsoft Defender for Cloud Policy
 
 In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to the Microsoft Defender for Cloud's recommendation.
 
@@ -12,7 +12,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![](../Images/m3e1s1.png)
 
-1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
+1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able to see the subscription.
 
     ![Template deployment completed](../Images/m2e1s3.2.png)
    
@@ -28,11 +28,11 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Microsoft Defender for Cloud default policy](../Images/m3e1s5.1.1.png)
 
-    > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies. Also if you see one more policy with ASC default name, please ignore that.
+    > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies. Also if you see one more policy with an ASC default name, please ignore that.
 
 1. To view the policy, click on **Defender for Cloud Default**.
 
-     > **Note:** the assignment name will have GUID of the subscription in your lab environment.
+     > **Note:** The assignment name will have the GUID of the subscription in your lab environment.
 
 1. On the **Edit Initiative Assignment** page, click on **Parameters** and uncheck the box that is next to **Only show parameters that require input** to view the parameters.
 
@@ -53,7 +53,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 Azure Policy keeps track of compliance for your Azure resources based on policy definitions you assign, these are called policy assignments. By default, Microsoft provides many built-in definitions that you can leverage as you see fit.
 
-1. Type **Policy** in the search box located on the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **labvm-xxxxxx** and navigate to this link ```https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade```.
+1. Type **Policy** in the search box located at the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **labvm-xxxxxx** and navigate to this link ```https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade```.
 
     ![](../Images/m3ex2.step1.png)
 
@@ -83,15 +83,15 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 ### Exercise 3: Create resource exemption for a recommendation
 
 Resource exemption will allow increased granularity for you to fine-tune recommendations by providing the ability to exempt certain resources from evaluation.
-When working with a recommendation, you can create an exemption by clicking the ellipsis menu on the right side and then select create an exemption.
+When working with a recommendation, you can create an exemption by clicking the ellipsis menu on the right side and then selecting Create an exemption.
 
    > **Note:** Exemptions is a premium Azure policy capability that's offered for Azure Defender customers with no additional cost. For other users, charges may apply in the future.
 
-1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
+1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
 
-2. Select **Recommendations (1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines (2)** recommendation under **Secure management ports** section. You can search it using the search box.
+2. Select **Recommendations (1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines (2)** recommendation under the **Secure management ports** section. You can search it using the search box.
 
-    > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+    > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
     ![policy assignment](../Images/secureportfix.png)
 
@@ -103,7 +103,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 5. The **Exempt pane** opens:
     - Name: **ASC-Management ports should be closed on your virtual machines**.
-    - Check the **Set an expiration date** option and set datetime for two days ahead on 12:00 AM.
+    - Check the **Set an expiration date** option and set the datetime for two days ahead at 12:00 AM.
     - Select **Waiver** as exemption category.
     - Enter **ASC-Management ports should be closed on your virtual machines** for the Exemption description and click on **Create**.
 
@@ -120,13 +120,13 @@ When working with a recommendation, you can create an exemption by clicking the 
     
     <br>
 
-7. Refresh tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
+7. Refresh the tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
 
     ![Exempttion tab](../Images/m3fs4.png)
 
-8.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy blade as well.
+8.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy Blade as well.
 
-9. In the search box located on the top of the Azure Portal page, search for **Policy** and click on it. 
+9. In the search box located at the top of the Azure Portal page, search for **Policy** and click on it. 
 
     ![](../Images/m3ex2.step1.png)
 
@@ -138,13 +138,13 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 In this exercise, you will learn how to use Azure Policy to do some of the more common tasks related to assigning, denying, and managing policies across your organization.
 
-1. In the search box located on the top of the Azure Portal page, search for **Microsoft Defender for Cloud** and click on it.
+1. In the search box located at the top of the Azure Portal page, search for **Microsoft Defender for Cloud** and click on it.
 
 2. From the left side pane of **Microsoft Defender for Cloud**, select **Recommendations** under **General**.
 
 3. Select the **Secure transfer to storage accounts should be enabled** under **Encrypt data in transit** section. You can search it using the search box.
 
-   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
 4. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
@@ -155,13 +155,13 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 5. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
-   **Note**: If you unable to edit the query. Click on the eclipse and select **change to Audit** and retry the step
+   **Note**: If you are unable to edit the query. Click on the eclipse select **change to Audit** and retry the step
 
     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/change%20to%20deny.png?raw=true)
 
 6. Go back to the **recommendations view**, type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
 
-   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
     ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
@@ -181,7 +181,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 10. In the **Parameters** tab, leave the *Effect* and *Retention days* with default values.
 
      - **Uncheck** Only show parameters that need input or review
-     - Select the resource group **asclab** from the drop down menu
+     - Select the resource group **asclab** from the drop-down menu
      - Select **Review + create** to assign the policy to your subscription.
      - Click **Create**
 
@@ -203,11 +203,11 @@ By performing above mentioned operations, you can now ensure your existing resou
 
 ### Exercise 5: Create a custom policy
 
-A custom policy definition allows customers to define their own rules for using Azure. Whatever the business driver for creating a custom policy, the steps are the same for defining the new the custom policy.
+A custom policy definition allows customers to define their own rules for using Azure. Whatever the business driver for creating a custom policy, the steps are the same for defining the new custom policy.
 
 ***Create a custom initiative using Azure Policy***
 
-1. In the search box located on the top of the Azure Portal page, search for **Policy** and click on it. 
+1. In the search box located at the top of the Azure Portal page, search for **Policy** and click on it. 
 
     ![](../Images/m3ex2.step1.png)
 
@@ -218,7 +218,7 @@ A custom policy definition allows customers to define their own rules for using 
     ![](../Images/m3ex5step3.png)
 
 4. On the New Initiative definition page, select the following:
-    - Initiative location: Select your Subscription
+    - Initiative Location: Select your Subscription
     - Name: **Contoso Security Benchmark**
     - Description: Baseline for security policies to appear alongside the built-in recommendations
     - Category: Select **Create new** and type: **Contoso**
@@ -245,7 +245,7 @@ Add each policy one by one:
 
     ![](../Images/m3e1s1.png)
 
-2. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able see the subscription.
+2. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able to see the subscription.
 
     ![Template deployment completed](../Images/m2e1s3.2.png)
    
