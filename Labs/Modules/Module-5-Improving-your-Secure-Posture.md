@@ -3,21 +3,21 @@
 
 ## Overview
 
-This module will walk you through the process to use the vulnerability assessment for Virtual Machines and Containers, along with the usage of Workflow Automation and data query.
+This module will walk you through the process of using the vulnerability assessment for Virtual Machines and Containers, along with the usage of Workflow Automation and data query.
 
-### Exercise 1: Vulnerability assessment for VMs
+### Exercise 1: Vulnerability Assessment for VMs
 
 With Microsoft Defender for servers, you can quickly deploy the integrated vulnerability assessment solution (powered by Qualys) with no additional configuration or extra costs. Once the vulnerability assessment scanner is deployed, it continually assesses all the installed applications on a virtual machine to find vulnerabilities and presents its findings in the Microsoft Defender for Cloud console. When a machine is found that doesn't have a vulnerability assessment solution deployed, Microsoft Defender for Cloud generates a recommendation that looks like this: _A vulnerability assessment solution should be enabled on your virtual machines._ To remediate a resource, you can click on the **Quick Fix** button to deploy the necessary VM extension.
 
 **Explore vulnerability assessment recommendations:**
 
-1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
+1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
 
     ![](../Images/m3e1s1.png)
      
 1. Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **Machines should have a vulnerability assessment solution (3)** recommendation listed here.
 
-    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
     ![](../Images/updatess1.png)
 
@@ -31,7 +31,7 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
 
     ![](../Images/fix-asclab-win.png)
 
-1. On the **Choose a vulnerability assessment solution** select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for servers) (1)**. Click on  **Proceed (2)**.
+1. On the **Choose a vulnerability assessment solution** select **Deploy the integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for servers) (1)**. Click on  **Proceed (2)**.
 
     ![](../Images/c7.png)
 
@@ -39,14 +39,14 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
 
     ![](../Images/fixingresources.png)
 
-1. Remediation is now in process. Microsoft Defender for Cloud will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using Azure activity log. **Wait for 5-10 minutes for the process to complete**.
+1. Remediation is now in process. Microsoft Defender for Cloud will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using the Azure activity log. **Wait for 5-10 minutes for the process to complete**.
 
    > **Note:** You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
 
 1. Ensure the VM extension is deployed on the relevant machines:
     - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
     - Select **asclab-win (1)**. next, click on **Extensions + applications (2)** under the **Settings** section.
-    - Ensure that `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
+    - Ensure that the `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
     ![](../Images/c8.png)
 
@@ -54,11 +54,11 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
 
      ![](../Images/c9.png)
 
-    > **Note:** There are multiple ways you can automate the process where you need to achieve at scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
+    > **Note:** There are multiple ways you can automate the process where you need to achieve at-scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
 
-1. The VA agent will now collect all required artifacts, send them to Qualys Cloud and findings will be presented back on the Microsoft Defender for Cloud console within 24 hours.
+1. The VA agent will now collect all required artifacts, and send them to Qualys Cloud and findings will be presented back on the Microsoft Defender for Cloud console within 24 hours.
 
-### Exercise 2: Vulnerability assessment for Containers
+### Exercise 2: Vulnerability Assessment for Containers
 
 Microsoft Defender for Cloud scans images in your Azure Container Registry (ACR) that are pushed and imported into the registry, it also contains any other images pulled within the last 30 days. Then, it exposes detailed findings per image. All vulnerabilities can be found in the following recommendation: **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys).**
 
@@ -98,7 +98,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 7. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s.
 
-8. The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
+8. The scan completes typically within a few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
 9. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
@@ -106,9 +106,9 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
  
      ![asd](../Images/secure-M5-Ex2-S10.1.png)
 
-    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-11. On the recommendation page, notice the following details at the upper section:
+11. On the recommendation page, notice the following details in the upper section:
 
     - Unhealthy registries: **1/1**
     - Severity: **High**
@@ -132,7 +132,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 ### Exercise 3: Automate recommendations with workflow automation
 
-Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Microsoft Defender for Cloud events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
+Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real time with Microsoft Defender for Cloud events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
 
 **Create a new Logic App:**
 
@@ -178,7 +178,7 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/newstep1.png)
 
-1. From the list of actions, select **Send an email (V2)** action to add it to the Designer.
+1. From the list of actions, select the **Send an email (V2)** action to add it to the Designer.
      
     ![](../Images/emailv2.png)
 
@@ -188,7 +188,7 @@ Every security program includes multiple workflows for incident response. The pr
    
       * Email/Username: <inject key="AzureAdUserEmail"></inject> 
 
-    > Later, you will use the same email address to check if you have received an email using workflow automation feature.
+    > Later, you will use the same email address to check if you have received an email using the workflow automation feature.
 
 1. Click in the **Subject box**, then type: **Recommendation changed:**
 
@@ -263,15 +263,15 @@ Every security program includes multiple workflows for incident response. The pr
 6. Test/trigger your automation manually:
 
    - On the Microsoft Defender for Cloud panel, click on **Recommendations (1)** from the **General** section.
-   - Under **Remediate vulnerabilities (2)** look for recommendation **Azure Kubernetes Service clusters should have the Azure Policy Add-on for Kubernetes installed (3)** and click on it.
+   - Under **Remediate vulnerabilities (2)** look for recommendations **Azure Kubernetes Service clusters should have the Azure Policy Add-on for Kubernetes installed (3)** and click on it.
    
-      > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up-to 24 hours for all the recommendations to show up. It is possible that during the lab time this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+      > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
      ![](../Images/recomendations2.1.png)
      
    - Select resource *asclab-aks* and then click on the **Trigger Logic App** button.
    - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
-   - You should receive an email, verify in your inbox. On the labvm-xxxxxx open a new tab in web browser and navigate to https://outlook.office365.com.
+   - You should receive an email, verifying in your inbox. On the labvm-xxxxxx open a new tab in the web browser and navigate to https://outlook.office365.com.
 
      ![](../Images/triggerlogicapp.png)
 
