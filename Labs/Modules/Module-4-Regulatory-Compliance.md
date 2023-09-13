@@ -109,7 +109,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
    - Category: Click **Use existing (4)** and Select **Security center (5)** from drop-down list.
 
-   - Click on **Next (7)**
+   - Click on **Next (6)**
 
     ![Benchmark Next](../Images/Sh4.png)
 
