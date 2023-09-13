@@ -222,10 +222,9 @@ A custom policy definition allows customers to define their own rules for using 
     - Name: **Contoso Security Benchmark**
     - Description: Baseline for security policies to appear alongside the built-in recommendations
     - Category: Select **Create new** and type: **Contoso**
-    - Version: **1**
     - Click **Next**
   
-    ![Policy initiative definition settings page](../Images/m3ex5step4.png)
+    ![Policy initiative definition settings page](../Images/Sh1.png)
 
 5. On the Policies tab, select **Add policy definition(s) (1)**.
 
