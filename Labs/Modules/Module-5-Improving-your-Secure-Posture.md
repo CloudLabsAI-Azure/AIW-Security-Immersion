@@ -31,7 +31,7 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
 
     ![](../Images/fix-asclab-win.png)
 
-1. On the **Choose a vulnerability assessment solution** select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for servers) (1)**. Click on  **Proceed (2)**.
+1. On the **Choose a vulnerability assessment solution** select **Deploy the integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for servers) (1)**. Click on  **Proceed (2)**.
 
     ![](../Images/c7.png)
 
