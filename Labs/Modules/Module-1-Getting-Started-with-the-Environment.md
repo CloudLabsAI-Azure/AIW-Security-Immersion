@@ -1,4 +1,4 @@
-# Module 1 – Getting started with the Environment
+# Module 1 – Getting Started with the Environment
 
 ## Overview
 
@@ -6,7 +6,7 @@ In this exercise, you will learn how to enable Microsoft Defender for Cloud in y
 
 You will be performing the following activities to achieve the goal.
 
-  - Login to Azure Portal to access your subscription
+  - Log in to Azure Portal to access your subscription
   - Upgrade your subscription to enable Microsoft Defender for Cloud Plan
   - Configure data collection in Microsoft Defender for Cloud
 
@@ -48,7 +48,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
     ![](../Images/c1.png) 
  
-1. First-time users are often prompted requesting access to **Stay Signed in**. If you see any such pop-up window, click on **No**.
+1. First-time users are often prompted to request access to **Stay Signed in**. If you see any such pop-up window, click on **No**.
 
 1. If you see any additional pop-up like, You have free **Azure Advisor recommendations!** Close the window to continue the lab. 
 
@@ -57,7 +57,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 In this exercise, you will be getting started with the functionality of Microsoft Defender for Cloud and how to enable Microsoft Defender for Cloud on a subscription.
 
-### Subscription upgrade and agents installation
+### Subscription upgrade and agent installation
 
 1. Type **Microsoft Defender for Cloud** in the search box on top of the **Azure Portal** and click to open it.
 
@@ -65,7 +65,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
 1. Click on the **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, select your **Log Analytics workspace as asclab-la-XXXXX (3)** and click **Upgrade (4)**.
 
-    > **Note:** If you are not able to see Log Analytics workspace then it means your subscription is already upgraded, in this case you can skip step 2, 3 and continue from step 4. Also you might have to wait for few seconds to have the upgrade button visible.
+    > **Note:** If you are not able to see Log Analytics workspace then it means your subscription is already upgraded, In this case, you can skip steps 2, and 3 and continue from step 4. Also, you might have to wait for a few seconds to have the upgrade button visible.
 
     ![Overview: Inventory tile](../Images/newlaw.png)    
 
@@ -87,7 +87,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![](../Images/secure-3.png)
 
-1. On the **Settings & monitoring** toggle the status of **Log Analytics agent/Azure Monitor agent** to **On** (if it is not already set to On). Click on **Edit configuration** under the **Configuration** header of Log Analytics agent/Azure Monitor agent.
+1. On the **Settings & monitoring** toggle the status of **Log Analytics agent/Azure Monitor agent** to **On** (if it is not already set to On). Click on **Edit configuration** under the **Configuration** header of the Log Analytics agent/Azure Monitor agent.
 
     ![](../Images/secure-2.png)
     
@@ -109,7 +109,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 > Please notice:
 > * To get the full functionality of Microsoft Defender for Cloud, both subscription and Log Analytics workspace should be enabled for Defender. Once you enable it,  the required Log Analytics solutions will be added to the workspace.
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Microsoft Defender for Cloud.
-> * You can enable the Microsoft Defender for Cloud trial for 30-days on a subscription-only, if not previously used.
+> * You can enable the Microsoft Defender for Cloud trial for 30 days on a subscription-only, if not previously used.
 
 ## Exercise 3: Creating Microsoft Defender for Cloud Default policy.
 
@@ -117,7 +117,7 @@ In this exercise, You will create the Microsoft Defender for Cloud default polic
 
 1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
    
-1. In Microsoft Defender for Cloud blade and Click on the  **Environment Settings** and select your subscription.
+1. In Microsoft Defender for Cloud blade Click on the  **Environment Settings** and select your subscription.
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
