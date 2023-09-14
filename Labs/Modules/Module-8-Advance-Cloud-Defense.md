@@ -56,21 +56,21 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 10. Select the virtual machine **asclab-win**.
 
-11. From the top menu, click on **Connect** button and then select **RDP**.
+11. From the left side menu, click on **Connect** button and then select **Native RDP**.
 
-     ![Windows VM - Connect RDP](../Images/asc-win-vm-connect-rdp.gif?raw=true)
+     ![Windows VM - Connect RDP](../Images/Mod8E1S11.png)
 
-12. On the **Connect with RDP** section, click on the **Download RDP file anyway** button. Alternatively, from the VM blade, look for the Public IP address and try to connect using RDP.
+12. On the **Native RDP** section, click on the **Download RDP file** button. Alternatively, from the VM blade, look for the Public IP address and try to connect using RDP.
 
-     ![download-anyway](../Images/m8ex1.step12.png)
+     ![download-anyway](../Images/ModE1S12.png)
 
 13. Click on the downloaded file to initiate a remote connection to the server. On the warning message, ignore the message by clicking on **Connect**.
 
 14. You should see the following error message: *Remote Desktop can't connect to the remote computer*. In this scenario, remote access to the server is not enabled. Close the popup window to continue.
 
-15. Return to the VM blade **Connect** page, On the **Source IP**, select **My IP** and then click on **Request access**. You should now see the following message: *Access approved on port 3389 from the selected IPs. You can now connect.*
+15. Return to the VM blade **Connect** page, click on R**equest access** under **Just in time policy** and select **Local machine IP** and then click on **Request access**. The access should be approved in a minute. 
 
-     ![request-access](../Images/m8ex1.step15.png)
+     ![request-access](../Images/Mod8E1S15.png)
 
 16. Try to connect again to validate your JIT access to the VM. Use the same file you downloaded previously.
 
