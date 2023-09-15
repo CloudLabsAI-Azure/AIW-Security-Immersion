@@ -113,44 +113,49 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 8. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Microsoft Defender for Cloud** connector and then click on **Open connector page**.
 
     ![ASC pricing & settings page](../Images/defender.png)
-   >**Note**: If you didn't find Microsoft Defender for the cloud, follow the below steps; otherwise, continue from step 12.
+   >**Note**: If you didn't find Microsoft Defender for the cloud, follow the below steps; otherwise, continue from step 11.
 
-10. Click the **Content Hub (1)** on the **Microsoft Sentinel** blade, search for **Microsoft Defender (2)**, select **Microsoft Defender for Cloud (3)**, and click **Install (4)**.
+9. Click the **Content Hub (1)** on the **Microsoft Sentinel** blade, search for **Microsoft Defender (2)**, select **Microsoft Defender for Cloud (3)**, and click **Install (4)**.
 
+    ![](../Images/Sh5.png)
 
-11. Navigate to the **Data connectors** tab; you should now see Microsoft Defender for Cloud is present. Select the **Microsoft Defender for Cloud** connector and then click on **Open connector page**.
-    
+10. Navigate to the **Data connectors** tab; you should now see Microsoft Defender for Cloud is present. Select the **Microsoft Defender for Cloud** connector and then click on **Open connector page**.
 
-12. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
+    ![ASC pricing & settings page](../Images/defender.png)
+
+11. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
 
     ![Connect Microsoft Defender for Cloud to Microsoft Sentinel](../Images/connected.png)
 
-13. On the Create incidents (recommended) click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
+12. On the Create incidents (recommended) click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
 
      ![Enable incidents](../Images/asc-sentinel-enable-incidents.png)
  
     > **Note:** You may have to scroll down to find the option.
-    > **Note:** If you are unable to enable the create incidents button, follow the below steps:
+    
+    > **Note:** If you are unable to Enable the create incidents button, follow the below steps:
+
+      ![](../Images/Sh6.png)
 
     
-14. In the Azure portal under Microsoft Sentinel, select **Analytics (1)**. Select the **Rule templates (2)** tab to see all of the analytics rule templates. search for **Create incident (3)** and select **Create incidents based on Microsoft Defender for Cloud (4)**, and click on **Create rule (5)**.
+13. In the Azure portal under Microsoft Sentinel, select **Analytics (1)**. Select the **Rule templates (2)** tab to see all of the analytics rule templates. search for **Create incident (3)** and select **Create incidents based on Microsoft Defender for Cloud (4)**, and click on **Create rule (5)**.
 
-    ![](../Images/S7.png)
+    ![](../Images/Sh7.png)
 
-15. On the **Analytics rule wizard - Create a new Microsoft Security rule** pane, You can modify the rule details, and choose to filter the alerts that will create incidents by alert severity or by text contained in the alert’s name. For example, if you choose Microsoft Defender for Cloud in the Microsoft security service field and choose High in the Filter by Severity field, only high-severity security alerts will automatically create incidents in Microsoft Sentinel.
+14. On the **Analytics rule wizard - Create a new Microsoft Security rule** pane, You can modify the rule details, and choose to filter the alerts that will create incidents by alert severity or by text contained in the alert’s name. For example, if you choose Microsoft Defender for Cloud in the Microsoft security service field and choose High in the Filter by Severity field, only high-severity security alerts will automatically create incidents in Microsoft Sentinel.
 
-    ![](../Images/S8.png)
+    ![](../Images/Sh8.png)
 
-16. Click on **Review + Create** and click on **Save** button.
+15. Click on **Review + Create** and click on **Save** button.
 
-    ![](../Images/S9.png)
+    ![](../Images/Sh9.png)
 
-17. Navigate back to the **Data connectors** tab; Select the **Microsoft Defender for Cloud** connector and then click on **Open connector page**. you will see that Create incidents (recommended) is **Enabled**.
+16. Navigate back to the **Data connectors** tab; Select the **Microsoft Defender for Cloud** connector and then click on **Open connector page**. You will see that Create incidents (recommended) is **Enabled**.
 
-    ![](../Images/S10.png)
+    ![](../Images/Sh10.png)
 
 ### Summary
 
-In this lab you have completed configuring continuous export for Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings and enabling the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
+In this lab you have completed configuring continuous export for the Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings and enabling the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
