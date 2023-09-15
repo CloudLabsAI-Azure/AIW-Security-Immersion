@@ -7,17 +7,17 @@ In this exercise, you will explore Microsoft Defender  for Cloud's features:
 You will be performing the following activities to achieve the goal.
 
 * Creating Sample Alerts
-* Creating suppression rule to automatically dismiss similar alerts
+* Creating a suppression rule to automatically dismiss similar alerts
 * Accessing Security Alerts using Graph Security API
 
 ### Exercise 1: Alert validation
 
-In this exercise, we will cover the new Alert Simulation as Alerts are the notifications that Security Center generates when it detects threats on your resources. It prioritizes and lists the alerts along with the information needed to quickly investigate the problem. Security Center also provides recommendations for how you can remediate an attack.
+In this exercise, we will cover the new Alert Simulation as Alerts are the notifications that the Security Center generates when it detects threats on your resources. It prioritizes and lists the alerts along with the information needed to quickly investigate the problem. Security Center also provides recommendations for how you can remediate an attack.
 
-1. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it. Next, select **Security alerts** under **General** tab from left side pane or by using this [link](https://portal.azure.com/?feature.argsecurityalerts=true&feature.customportal=false#blade/Microsoft_Azure_Security/SecurityMenuBlade/7)
+1. Search for **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it. Next, select **Security alerts** under the **General** tab from the left side pane or by using this [link](https://portal.azure.com/?feature.argsecurityalerts=true&feature.customportal=false#blade/Microsoft_Azure_Security/SecurityMenuBlade/7)
 
 2. Create an alert simulation for VM:
-    - On the Security alerts page, click on the **Sample alerts** button. You will be navigated to **Create sample alerts (Preview)** window.
+    - On the Security Alerts page, click on the **Sample alerts** button. You will be navigated to the **Create sample alerts (Preview)** window.
     
     ![](../Images/securityalert.png)
     
@@ -27,7 +27,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
      ![](../Images/createalerts1.png)
 
-3. You will see Sample alerts creation in progress, wait for the process to complete. Now you can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
+3. You will see Sample alert creation in progress, wait for the process to complete. Now you can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
 
 4. On the **Microsoft Defender for Cloud | Security alerts** page, you should now see 5 different sample events for a resource named `Sample-VM`. Each alert has the Sample alert banner next to it.
 
@@ -35,7 +35,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 5. Click on the **Digital currency mining related behavior detected** alert.
 
-6. After the details pane opens, notice the alert properties at the top (severity, status, and time) along with the alerts description and affected resources. At the bottom section, you can see the kill chain intent of the alert based on the MITRE ATT&CK® framework. This specific alert is at the *Execution* phase.
+6. After the details pane opens, notice the alert properties at the top (severity, status, and time) along with the alert's description and affected resources. At the bottom section, you can see the kill chain intent of the alert based on the MITRE ATT&CK® framework. This specific alert is in the *Execution* phase.
 
     ![Create sample virtual machine security alerts](../Images/m6ex1step7.png)
 
@@ -44,13 +44,13 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
     ![Create sample virtual machine security alerts](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/m6ex1step8.png?raw=true)
 
 8. Create an alert simulation for Key Vaults:
-    - On the Security alerts page, click on the **sample alerts** button.
+    - On the Security Alerts page, click on the **sample alerts** button.
 
      ![](../Images/securityalert.png)
      
     - Select **Your Subscription**.
     - On the Microsoft Defender  for Cloud plans, keep only **Key Vaults** selected.
-    - Click **Create sample alerts** button to trigger the alert simulation for Key Vaults.
+    - Click the **Create sample alerts** button to trigger the alert simulation for Key Vaults.
 
      ![](../Images/keyvalut%20alert.png)
     
@@ -85,7 +85,7 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
    - Subscription: **Select** your subscription (1)
    
-   - Alerts: Select **All (2)** and click on plus sign to add an entity.
+   - Alerts: Select **All (2)** and click on the plus sign to add an entity.
         - Column 1: **Azure resource (3)**
         - Column 2: Select **Resource id (4)** from the dropdown
         - Column 3: Select **Contains (5)** from the dropdown
@@ -107,27 +107,27 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
     ![Create sample virtual machine security alerts](../Images/new-susp-rule.png)
 
-   > **Note:** you can create suppression rules on a management group level by using a built-in policy definition named Deploy - Configure suppression rules for Microsoft Defender for Cloud alerts in Azure Policy. To suppress alerts at the subscription level, you can use the Azure portal or REST APIs.
+   > **Note:** You can create suppression rules on a management group level by using a built-in policy definition named Deploy - Configure suppression rules for Microsoft Defender for Cloud alerts in Azure Policy. To suppress alerts at the subscription level, you can use the Azure portal or REST APIs.
 
 5. You can change your existing suppression rules or create new ones: On the **Security alerts** page from the top menu, select **Suppression rules**. 
 
     ![Create sample virtual machine security alerts](../Images/m6ex2step7.png)
 
-6. Click on the rule you have recently created: `Testing-AutoDismiss-KV` and change the expiration to be a month ahead from the current date. Next, click on **Apply**.
+6. Click on the rule you have recently created: `Testing-AutoDismiss-KV` and change the expiration to a month ahead of the current date. Next, click on **Apply**.
 
     ![](../Images/editsuppression.png)
   
   > **Note**: If you receive any pop-up stating the **Warning** alert, click on **OK**
 
-7. To view the dismissed alerts: Navigate to Security alerts the main page and to the filters section. Change the **Status (1)** filter value to show only **Dismissed (2)** items and click **Ok (3)**.
+7. To view the dismissed alerts: Navigate to Security Alerts on the main page and to the filters section. Change the **Status (1)** filter value to show only **Dismissed (2)** items and click **Ok (3)**.
 
      ![Create sample virtual machine security alerts](../Images/m6ex2step10.png)
 
 ### Exercise 3: Accessing Security Alerts using Graph Security API
 
-You can also query security alerts data using REST APIs, such as the Microsoft Graph Security API that provides a unified interface and schema to integrate with security solutions from Microsoft and Partners.
+You can also query security alert data using REST APIs, such as the Microsoft Graph Security API that provides a unified interface and schema to integrate with security solutions from Microsoft and Partners.
 
-In this exercise, we will use one of the endpoints which allow retrieving a list of alert objects.
+In this exercise, we will use one of the endpoints which allows retrieving a list of alert objects.
 
 1. In your **labvm-xxxxxx** open a new browser window and navigate to https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-1.0 page.
 
@@ -135,7 +135,7 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 
 3. On the HTTP tab, review the endpoint URL: `https://graph.microsoft.com/v1.0/security/alerts`.
 
-4. Click on **Try It (1)** then click on the **User icon (2)** to login. You need to login using the credentials provided in the **Environment Details** tab.
+4. Click on **Try It (1)** then click on the **User icon (2)** to login. You need to log in using the credentials provided in the **Environment Details** tab.
 
     ![Create sample virtual machine security alerts](../Images/m6ex3step4.png)
 
@@ -155,7 +155,7 @@ In this exercise, we will use one of the endpoints which allow retrieving a list
 
     ![Consent2](../Images/m6ex3step7.png)
     
-8. Replace the endpoint URL with the following endpoint URL :`https://graph.microsoft.com/v1.0/security/alerts?$top=5` **(1)**. This query returns a list of top five security alerts using Graph Security API.
+8. Replace the endpoint URL with the following endpoint URL:`https://graph.microsoft.com/v1.0/security/alerts?$top=5` **(1)**. This query returns a list of the top five security alerts using Graph Security API.
 
     ![Create sample virtual machine security alerts](../Images/m6e3s8.png)    
 
