@@ -14,7 +14,7 @@ You will be performing the following activities to achieve the goal.
 
 In the simplest terms, the “attack surface” is the sum total of resources exposed to exploit within your enterprise. Defending the attack surface was a lot less complicated when a defined corporate “perimeter” existed, neatly separating a company’s assets from the outside world using **Just-in-time VM access**.
 
-1. Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and login with the Azure credentials from the Lab **Environment Details** tab.
+1. Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and log in with the Azure credentials from the Lab **Environment Details** tab.
 
 2. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
 
@@ -26,7 +26,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 4. When you are in the **Just-in-time VM access** page, select the **Not configured** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
     
-    > **Note**: If the virtual machines `asclab-linux` and `asclab-win` are present under **Unsupported** tab then follow the below instructions to enable **Just-in-time VM access**.
+    > **Note**: If the virtual machines `asclab-linux` and `asclab-win` are present under the **Unsupported** tab then follow the below instructions to enable **Just-in-time VM access**.
     ![](../Images/justintime.png)
 
     - Navigate to **asclab** resource group and select **asclab-win** virtual machine.
@@ -40,7 +40,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
            ![](../Images/justintime1.png)
     
 5. Select **asclab-win** and then click on the **Enable JIT on 1 VM** button.
-    > If you have followed above instructions to enable **Just-in-time VM access**, you can skip the Steps 5-8 and continue from Step9.
+    > If you have followed the above instructions to enable **Just-in-time VM access**, you can skip Steps 5-8 and continue from Step 9.
     
     ![Enable JIT on Windows VM](../Images/m8ex1.step5.png)
 
@@ -52,7 +52,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 8. Review the **Configured** tab, now you should see your VM configured: `asclab-win`.
 
-9. Type **Virtual machines** in the search box located on the top of the Azure Portal page and click on it.
+9. Type **Virtual machines** in the search box located at the top of the Azure Portal page and click on it.
 
 10. Select the virtual machine **asclab-win**.
 
@@ -68,7 +68,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 14. You should see the following error message: *Remote Desktop can't connect to the remote computer*. In this scenario, remote access to the server is not enabled. Close the popup window to continue.
 
-15. Return to the VM blade **Connect** page, click on R**equest access** under **Just in time policy** and select **Local machine IP** and then click on **Request access**. The access should be approved in a minute. 
+15. Return to the VM blade **Connect** page, click on **Request access** under **Just in time policy** and select **Local machine IP** and then click on **Request access**. The access should be approved in a minute. 
 
      ![request-access](../Images/Mod8E1S15.png)
 
@@ -76,7 +76,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 17. Now you should get the prompt for the local admin credentials. Login using the below credentials.
  
-      - **VM Username**: <inject key="VM Username"></inject>  and
+      - **VM Username**: <inject key="VM Username"></inject>
       - **VM Password**: <inject key="VM Password"></inject>
 
 18. You **are now connected to asclab-win** server. Close the remote control session/log off.
@@ -91,13 +91,13 @@ Application control helps you deal with malicious and/or unauthorized software, 
 
     ![Adaptive Application Control1](../Images/m8ex2.step2.png)
 
-3. The Adaptive application controls page opens with your VMs grouped into the following tabs: Configured, Recommended and No recommendation.
+3. The Adaptive application controls page opens with your VMs grouped into the following tabs: Configured, Recommended and No Recommendation.
 
 4. Click on the **Recommended** tab.
 
     ![Adaptive Application Control2](../Images/adaptive-application-control-new.png)
 
-    >**Note:** First-time users will not get any group information under the Group Name section. It is because Microsoft Defender  for Cloud needs at least two weeks of data to define the unique recommendations per group of machines. 
+    >**Note:** First-time users will not get any group information under the Group Name section. This is because Microsoft Defender  for Cloud needs at least two weeks of data to define the unique recommendations per group of machines. 
 
 ### Exercise 3: File Integrity Monitoring
 
@@ -106,7 +106,7 @@ It maps the current state of these items with the state during the previous scan
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
 
-2. Navigate to the bottom section under Advanced protection, click on the **File Integrity Monitoring** tile.
+2. Navigate to the bottom section under Advanced Protection, and click on the **File Integrity Monitoring** tile.
 
     ![File Integrity Monitoring1](../Images/m8ex3.step2.png)
 
