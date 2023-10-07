@@ -3,19 +3,25 @@
 ### 13 September 2023
 
  - Minor updates in the lab.   
-   - Enhanced lab guide instructions and updated screenshots with latest UI from Microsoft Azure for better user experience.
+   - Enhanced lab guide instructions and updated screenshots with the latest UI from Microsoft Azure for better user experience.
+--------------
 
+### 15 June 2023
+
+ - Minor updates in the lab.   
+   - Enhanced lab guide instructions and updated screenshots with the latest UI from Microsoft Azure for better user experience.
+     
 ### 6 May 2022
 
 - Minor updates in the lab guide.
-   - Updated the screenshots and instructions in the lab guide as per new UI of **Microsoft Defender for Cloud** and Logic App.
-   - Updated few instructions for better user experience.
+   - Updated the screenshots and instructions in the lab guide as per the new UI of **Microsoft Defender for Cloud** and Logic App.
+   - Updated a few instructions for better user experience.
 
 ### 7 April 2022
 
 - Minor updates in the lab guide.
   - Now the **Secure Score** is called as **Security posture** in Azure Portal.
-  - Updated the screenshots and instructions in the lab guide as per new UI of **Microsoft Defender for Cloud** in all the modules.
+  - Updated the screenshots and instructions in the lab guide as per the new UI of **Microsoft Defender for Cloud** in all the modules.
 
 ------------
 
