@@ -145,15 +145,15 @@ In this exercise, we will use one of the endpoints which allows retrieving a lis
 
     ![Consent-Accept](../Images/m6ex3step5.png)
 
-6. Now click on **Modify Permissions** and wait for two permissions to load. Scroll to the right side of permissions then click on **Consent**, do this for both permissions. When prompted for login, login using credentials provided in the **Environment Details** tab, click on **Accept** for each permission to get **Consented**
+6. Now click on **Modify permissions** and wait for two permissions to load. Scroll to the right side of permissions then click on **Consent**, do this for both permissions. When prompted for login, login using credentials provided in the **Environment Details** tab, click on **Accept** for each permission to get **Consented**
 
    > **Note**: If you are not able to get **Consented**, please resize the browser window.
  
-    ![Consent](../Images/m6ex3step6.png)
+    ![Consent](../Images/Sh11.png)
 
-7. Verify both permissions are **Consented**
+7. Verify that the status is grayed out for both permissions.
 
-    ![Consent2](../Images/m6ex3step7.png)
+    ![Consent2](../Images/Sh12.png)
     
 8. Replace the endpoint URL with the following endpoint URL:`https://graph.microsoft.com/v1.0/security/alerts?$top=5` **(1)**. This query returns a list of the top five security alerts using Graph Security API.
 
