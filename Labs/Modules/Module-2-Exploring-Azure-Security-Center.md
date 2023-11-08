@@ -197,7 +197,7 @@ Asset inventory dashboard allows you to get a single pane of glass view of all y
  
     ![Inventory: Assign tags](../Images/run-query.1.png)
 
-17. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as *asc-filtered-query* and select **save**.
+17. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as **asc-filtered-query** and select **Save**.
 
    ![Inventory: Assign tags](../Images/M2-EX3-17.png)
 
