@@ -163,7 +163,7 @@ Asset inventory dashboard allows you to get a single pane of glass view of all y
 
     ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/healthpreview.png?raw=true)
 
-    > **Note**: It could take up to 24 hours for all the recommendations to show up. And it is possible that during the lab time, this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
+    > **Note**: It could take up to 24 hours for all the recommendations to show up. And it is possible that during lab time, this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
 9. Navigate back to the Inventory page and clear the search keyword **Linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (Unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources which are monitored with active recommendations.
 
@@ -189,7 +189,7 @@ Asset inventory dashboard allows you to get a single pane of glass view of all y
    
 12. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
-13. From the filter pane, remove the **Security findings** filter if you added in the previous step then from the top menu, click on **Open query**.
+13. From the filter pane, remove the **Security findings** filter you added in the previous step then from the top menu, click on **Open query**.
 
     ![Inventory: Assign tags](../Images/inventory-open-query-new.1.png)
 
@@ -202,7 +202,7 @@ Asset inventory dashboard allows you to get a single pane of glass view of all y
    ![Inventory: Assign tags](../Images/M2-EX3-17.png)
 
 > ⭐ Good to know: <br>
-> The Inventory dashboard is fully built on top of Azure Resource Graph (ARG) which stores all of Microsoft Defender for Cloud security posture data and leveraging its powerful KQL engine.
+> The Inventory dashboard is fully built on top of Azure Resource Graph (ARG) which stores all of Microsoft Defender for Cloud security posture data and leverages its powerful KQL engine.
 > It enables you to reach deep insights quickly and easily on top of Microsoft Defender for Cloud data and cross-reference with any other resource properties.
 
 ### Summary
