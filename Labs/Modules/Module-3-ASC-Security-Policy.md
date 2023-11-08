@@ -107,7 +107,7 @@ When working with a recommendation, you can create an exemption by clicking the 
     - Select **Waiver** as exemption category.
     - Enter **ASC-Management ports should be closed on your virtual machines** for the Exemption description and click on **Create**.
 
-    ![](../Images/exempt-01.png)
+        ![](../Images/exempt-01.png)
 
   > ⭐ Good to know: <br>
   > **Mitigated** - This issue isn't relevant to the resource because it's been handled by a different tool or process than the one being suggested
@@ -185,7 +185,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
      - Select **Review + create** to assign the policy to your subscription.
      - Click **Create**
 
-      ![](../Images/neew4.png)
+        ![](../Images/neew4.png)
 
 11. On the **Auditing on SQL server should be enabled** page, perform the following steps:
 
@@ -224,7 +224,7 @@ A custom policy definition allows customers to define their own rules for using 
     - Category: Select **Create new** and type: **Contoso**
     - Click **Next**
   
-    ![Policy initiative definition settings page](../Images/Sh1.png)
+        ![Policy initiative definition settings page](../Images/Sh1.png)
 
 5. On the Policies tab, select **Add policy definition(s) (1)**.
 

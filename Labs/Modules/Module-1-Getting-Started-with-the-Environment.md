@@ -113,11 +113,11 @@ In this exercise, you will be getting started with the functionality of Microsof
 
 ## Exercise 3: Creating Microsoft Defender for Cloud Default policy.
 
-In this exercise, You will create the Microsoft Defender for Cloud default policy in security policy under  Microsoft Defender for Cloud.
+In this exercise, You will create the Microsoft Defender for Cloud default policy in the security policy under  Microsoft Defender for Cloud.
 
 1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
    
-1. In Microsoft Defender for Cloud blade Click on the  **Environment Settings** and select your subscription.
+1. In Microsoft Defender for Cloud blade, Click on the  **Environment Settings** and select your subscription.
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    

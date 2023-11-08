@@ -27,9 +27,10 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
 
     ![](../Images/quick-logic.png)
 
-1. From the **unhealthy resources (1)** tab, select both **asclab-win** and **aslab-linux** **(2)** virtual machines. Click on  **Fix (3)**.
+1. From the **Unhealthy resources (1)** tab, select both **asclab-win** and **aslab-linux** **(2)** virtual machines. Click on  **Fix (3)**.
 
     ![](../Images/fix-asclab-win.png)
+    
 
 1. On the **Choose a vulnerability assessment solution** select **Deploy the integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for servers) (1)**. Click on  **Proceed (2)**.
 
@@ -48,7 +49,7 @@ With Microsoft Defender for servers, you can quickly deploy the integrated vulne
     - Select **asclab-win (1)**. next, click on **Extensions + applications (2)** under the **Settings** section.
     - Ensure that the `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
   
-    ![](../Images/c8.png)
+        ![](../Images/c8.png)
 
 1. Repeat the above step (step 9) for **asclab-linux** – you should expect to see a different name for the extension on the Linux platform: `LinuxAgent.AzureSecurityCenter`.
 
@@ -96,7 +97,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
     ![Build Linux container in Cloud Shell](../Images/asc-build-linux-container-cloud-shell.gif?raw=true)
 
-7. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s.
+7. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 37s.
 
 8. The scan completes typically within a few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
@@ -114,7 +115,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
     - Severity: **High**
     - Total vulnerabilities: **expect to see more than 2 vulnerabilities**
 
-     ![](../Images/secure-M5-Ex2-S11.png)
+        ![](../Images/secure-M5-Ex2-S11.png)
 
 12. Expand the **Affected resources (1)** section and notice the **Unhealthy registries** count which shows **1 container registry (2)** (asclab**xxx** here xxx is unique ID).
 
@@ -132,7 +133,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 ### Exercise 3: Automate recommendations with workflow automation
 
-Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real time with Microsoft Defender for Cloud events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
+Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Microsoft Defender for Cloud events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
 
 **Create a new Logic App:**
 
@@ -160,7 +161,7 @@ Every security program includes multiple workflows for incident response. The pr
 
      - Select **Review + Create** and then click on **Create**.
 
-      ![](../Images/logic-app-latest-step3.png)
+        ![](../Images/logic-app-latest-step3.png)
 
 1. When the **Deployment** is completed click on **Go to resource**
 
@@ -215,7 +216,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 **Create a new workflow automation instance**
 
-1. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
+1. Search for **Microsoft Defender for Cloud** in the search box at the top of the **Azure Portal** page and click on it.
 
 2. Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **Add workflow automation (2)**.
 
@@ -230,7 +231,7 @@ Every security program includes multiple workflows for incident response. The pr
      * Subscription: **Your Subscription**
      * Resource group: **asclab**
 
-      ![](../Images/general.png)
+        ![](../Images/general.png)
       
    - Trigger conditions:
    
@@ -239,7 +240,7 @@ Every security program includes multiple workflows for incident response. The pr
      * Recommendation severity: **All severities selected**
      * Recommendation state: **All states selected**
 
-      ![](../Images/trigger.png)
+        ![](../Images/trigger.png)
     
    - Actions:
    

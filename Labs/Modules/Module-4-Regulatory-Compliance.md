@@ -10,7 +10,7 @@ You will be performing the following activities to achieve the goal.
 * Adding new standards to Compliance policies
 * Creating a custom benchmark
 
-### Exercise 1: Understanding Regulatory Compliance dashboard
+### Exercise 1: Understanding Regulatory Compliance Dashboard
 
 Microsoft Defender for Cloud helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard. The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
@@ -95,7 +95,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
 1. From the left pane of the **Policy** page, select **Definitions**.
 
-1. From the top menu, select **+ initiative definition** to create a new policy set definition.
+1. From the top menu, select **+ Initiative definition** to create a new policy set definition.
 
     ![Benchmark Policy](../Images/benchmark-policy.png)
 
@@ -111,7 +111,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
    - Click on **Next (6)**
 
-    ![Benchmark Next](../Images/Sh4.png)
+        ![Benchmark Next](../Images/Sh4.png)
 
 1. On the **Initiative definition** blade click on **Groups**, In this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create Group**.
 
@@ -125,7 +125,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
     
     - Click on **Save (5)** to create the new group.  
 
-     ![Group create](../Images/createagroup.1.png)
+        ![Group create](../Images/createagroup.1.png)
   
 1. Repeat the process to create an additional group, for example, **Group 2**.
 
@@ -136,7 +136,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
     -	Azure Backup should be enabled for Virtual Machines
     -	Audit VMs that do not use managed disks
 
-     ![Group create](../Images/policydef.png)
+        ![Group create](../Images/policydef.png)
 
 1. Every policy on the list, has its definition name, reference ID and the associated group. However, you do need to define a group for each policy. To do so, click on the **… (1)** to open the context menu and select **Edit groups (2)**.
 
