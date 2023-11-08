@@ -133,7 +133,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 ### Exercise 3: Automate recommendations with workflow automation
 
-Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real time with Microsoft Defender for Cloud events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
+Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Microsoft Defender for Cloud events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
 
 **Create a new Logic App:**
 
@@ -216,7 +216,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 **Create a new workflow automation instance**
 
-1. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
+1. Search for **Microsoft Defender for Cloud** in the search box at the top of the **Azure Portal** page and click on it.
 
 2. Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **Add workflow automation (2)**.
 
