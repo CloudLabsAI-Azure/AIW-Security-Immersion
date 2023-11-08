@@ -28,7 +28,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![](../Images/res.png)
+   ![](../Images/Sh13.png)
  
 ## **Let's Get Started with Azure Portal**
  
@@ -128,7 +128,8 @@ In this exercise, You will create the Microsoft Defender for Cloud default polic
 1. Click on **Security Policy (1)** You'll notice that in **Default initiative** (2) the **Microsoft Defender for Cloud Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
 
     ![Template deployment completed](../Images/dfpolicy.1.png)
-   
+
+   > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies. Also if you see one more policy with an ASC default name, please ignore that.
    > **Note**: Incase if you don't see the default policy, follow the below steps:
      
      - Under **Default initiative**, click on **Assign Policy**
