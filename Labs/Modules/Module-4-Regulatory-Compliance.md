@@ -10,7 +10,7 @@ You will be performing the following activities to achieve the goal.
 * Adding new standards to Compliance policies
 * Creating a custom benchmark
 
-### Exercise 1: Understanding Regulatory Compliance dashboard
+### Exercise 1: Understanding Regulatory Compliance Dashboard
 
 Microsoft Defender for Cloud helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard. The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
