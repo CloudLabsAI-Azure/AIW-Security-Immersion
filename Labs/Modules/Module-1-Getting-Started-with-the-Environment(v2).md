@@ -40,13 +40,13 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
    
-   ![](../Images/azure-login-enter-email.png "Enter Email") 
+        ![](../Images/azure-login-enter-email.png "Enter Email") 
  
 3. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-   ![](../Images/azure-login-enter-password1.png "Enter Password") 
+        ![](../Images/azure-login-enter-password1.png "Enter Password") 
  
 1. You may get a **Help us protect your account** box, on that click on **Ask later**.
 

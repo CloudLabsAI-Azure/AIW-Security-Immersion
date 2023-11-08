@@ -113,7 +113,7 @@ Exploring secure score
    - Freshness interval: **30 Min** 
    - Tactics and techniques: **Initial Access**
 
-   ![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/stacc%20public%20access.png?raw=true)
+        ![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/stacc%20public%20access.png?raw=true)
 
 9. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resource/s.
 
@@ -199,7 +199,7 @@ Asset inventory dashboard allows you to get a single pane of glass view of all y
 
 17. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as **asc-filtered-query** and select **Save**.
 
-   ![Inventory: Assign tags](../Images/M2-EX3-17.png)
+    ![Inventory: Assign tags](../Images/M2-EX3-17.png)
 
 > ⭐ Good to know: <br>
 > The Inventory dashboard is fully built on top of Azure Resource Graph (ARG) which stores all of Microsoft Defender for Cloud security posture data and leverages its powerful KQL engine.
