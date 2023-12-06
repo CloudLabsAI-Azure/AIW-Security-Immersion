@@ -30,7 +30,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 ### Login to Azure Portal 
 
-1. In the **labvm**, Launch **Azure Portal** using the desktop icon.  
+1. In the **labvm**, Launch **Azure Portal** using the desktop icon.
 
 1. Now you should be on the **Microsoft Azure** login screen. Enter the following username and click on **Next**.  
 
@@ -44,13 +44,13 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
         ![](../Images/azure-login-enter-password1.png "Enter Password") 
 
-1. You may get a **Help us protect your account** box, on that click on **Ask later**.
+1. You may get a **Help us protect your account** box; on that, click on **Ask later**.
 
     ![](../Images/c1.png) 
  
 1. First-time users are often prompted to request access to **Stay Signed in**. If you see any such pop-up window, click on **No**.
 
-1. If you see any additional pop-up like, You have free **Azure Advisor recommendations!** Close the window to continue the lab. 
+1. If you see any additional pop-up like, You have free **Azure Advisor recommendations!** Close the window to continue the lab.
 
 
 ## Exercise 2: Enabling Microsoft Defender for Cloud
@@ -63,9 +63,9 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![](../Images/m3e1s1.png)
 
-1. Click on the **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, select your **Log Analytics workspace as asclab-la-XXXXX (3)** and click **Upgrade (4)**.
+1. Click on **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, select your **Log Analytics workspace as asclab-la-XXXXX (3)**, and click **Upgrade (4)**.
 
-    > **Note:** If you are not able to see Log Analytics workspace then it means your subscription is already upgraded, In this case, you can skip steps 2, and 3 and continue from step 4. Also, you might have to wait for a few seconds to have the upgrade button visible.
+    > **Note:** If you are not able to see the Log Analytics workspace, then it means your subscription is already upgraded, In this case, you can skip steps 2, and 3 and continue from step 4. Also, you might have to wait for a few seconds to have the upgrade button visible.
 
     ![Overview: Inventory tile](../Images/newlaw.png)    
 
@@ -73,7 +73,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![install-agents](../Images/installagents.png)
    
-    > **Note:** If the button is greyed out, then it's already set to **On** and agents are already installed in this case you can move on to the next step.
+    > **Note:** If the button is greyed out, then it's already set to **On** and agents are already installed. In this case you can move on to the next step.
 
     ![install-agents](../Images/installagents1.png)
 
