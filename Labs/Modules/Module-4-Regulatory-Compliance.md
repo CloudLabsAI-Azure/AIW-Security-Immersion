@@ -62,7 +62,7 @@ You can add additional industry standards (represented as compliance packages) s
 
     ![](../Images/envset.png)
    
-3. Select **Security policies (1)**, in the search bar search for **CIS Microsoft Azure Foundations Benchmark v1.1.0 (2)**, click on the toggle to change the status to **On (3)**
+3. Select **Security policies (1)**, in the search bar search for **CIS Microsoft Azure Foundations Benchmark v1.1.0 (2)**, click on the toggle button to change the status to **On (3)**
 
     ![](../Images/Sh33.png)
 
@@ -96,7 +96,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
         ![Benchmark Next](../Images/Sh4.png)
 
-1. On the **Initiative definition** blade click on **Groups**, In this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create Group**.
+1. On the **Initiative definition** blade click on **Groups**, In this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create group**.
 
     ![](../Images/creategroup.png)
    
@@ -131,9 +131,9 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
 1. You can assign policy and initiative parameters to be used during the assignment process. Skip this section and click on **Review + Create** to validate your settings. Then, click on **Create**
 
-1. You should now see your new initiative listed here – **Custom Benchmark** along with the additional metadata (scope, category, etc.)
+1. You should now see your new initiative listed here **Custom Benchmark** along with the additional metadata (scope, category, etc.)
 
-    ![](../Images/customben.png)
+    ![](../Images/Sh34.png)
 
 1. To assign your new security policy, type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
 
@@ -147,17 +147,11 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-1. Under **Policy Settings** tab, select **Security Policy (1)**, then expand **Your custom initiatives** and click on **Add custom initiatives (2)**.
+1. Select **Security policies (1)**, in the search bar search for **Custom Benchmark (2)**, click on the toggle button to change the status to **On (3)**
 
-    ![](../Images/security-policy-custom.png)
+    ![Template deployment completed](../Images/Sh35.png)
 
-1. On the **Add custom initiative** window, your new standard should be listed. Custom Benchmark initiative can be added by clicking on the **Add** button. Once assigned, it will be listed in the Recommendations blade and will be added to the **Regulatory Compliance** dashboard too.
-
-    ![Custom Initiative](../Images/custom-initiative.png)
-
-1. Follow the **on-screen instructions to assign it to the desired scope**. If you decide to include parameters in your initiative here is where you can do it. Click on **Review + create** to start the validation process and then click on **Create**.
-
-1. After some time your new custom benchmark is displayed in the Regulatory compliance dashboard along with the built-in regulatory standards.
+1. Your custom initiative is now assigned.
 
 ### Summary
 
