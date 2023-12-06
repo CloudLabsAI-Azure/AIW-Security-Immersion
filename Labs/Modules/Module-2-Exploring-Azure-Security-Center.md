@@ -78,7 +78,7 @@ Exploring secure score
 
     ![](../Images/m3e1s1.png)
 
-2. From the left navigation pane, under the **Cloud Security** section, Select **Secure posture**.
+2. From the left navigation pane, under the **Cloud Security** section, Select **Security posture**.
 
     ![](../Images/securescor1.png)
 
@@ -91,7 +91,7 @@ Exploring secure score
    > 
    > For more information on how the score is calculated, [refer to the secure score documentation page](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#how-your-secure-score-is-calculated).
 
- **Exploring Security Controls and Recommendations**
+    **Exploring Security Controls and Recommendations**
 
 6. On the **Recommendations (1)** page, pay attention to the first part of the page; the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status** (both completed security controls and recommendations) and **Resource health** (by severity).
 
@@ -155,7 +155,7 @@ Asset inventory dashboard allows you to get a single pane of glass view of all y
 
     ![linux-recommendations](../Images/ex3.step7.png)
 
-7. Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**. You may not see **view resource** directly due to different screen resolutions, then you have to click on ellipse(...) and then select **view resource**.
+7. Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. you can also right-click on any resource and select **view resource**. You may not see **View resource** directly due to different screen resolutions, then you have to click on ellipse(...) and then select **View resource**.
 
     ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/viewres.png?raw=true)
 
@@ -193,7 +193,7 @@ Asset inventory dashboard allows you to get a single pane of glass view of all y
 
     ![Inventory: Assign tags](../Images/inventory-open-query-new.1.png)
 
-16. On the **Azure Resource Graph Explorer** blade, click on **Run Query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs and here it gets very powerful.
+16. On the **Azure Resource Graph Explorer** blade, click on **Run query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs and here it gets very powerful.
  
     ![Inventory: Assign tags](../Images/run-query.1.png)
 
