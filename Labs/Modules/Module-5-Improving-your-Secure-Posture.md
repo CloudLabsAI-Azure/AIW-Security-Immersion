@@ -97,7 +97,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
     ![Build Linux container in Cloud Shell](../Images/asc-build-linux-container-cloud-shell.gif?raw=true)
 
-7. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 37s.
+7. Wait for a successful execution message to appear. For example: Run ID: cf1 was successful after 10s.
 
 8. The scan completes typically within a few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
@@ -141,7 +141,7 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/M5-ex3-1.png)
     
-1. Click on **+Add** to create a new Logic App.
+1. Click on **+ Add** to create a new Logic App.
     
     ![](../Images/M5-ex3-2.png)
 
@@ -175,7 +175,7 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/triggered1.png)
 
-1. Click on the **new step** button and type **Outlook send**.
+1. Click on the **+ New step** button and type **Outlook send**.
 
     ![](../Images/newstep1.png)
 
@@ -218,7 +218,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 1. Search for **Microsoft Defender for Cloud** in the search box at the top of the **Azure Portal** page and click on it.
 
-2. Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **Add workflow automation (2)**.
+2. Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **+ Add workflow automation (2)**.
 
     ![](../Images/workflow1.png)
 
@@ -245,6 +245,7 @@ Every security program includes multiple workflows for incident response. The pr
    - Actions:
    
      * Show Logic App instances from the following subscriptions: **Your Subscription**
+
      * Logic App name: **Send-RecommendationsChanges**
      
    Click **Create** to complete the task.
@@ -280,7 +281,7 @@ Every security program includes multiple workflows for incident response. The pr
 Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
 Azure Secure Score data is available in ARG so you can query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
 
-1. Search for **arg** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
+1. Search for **Resource Graph Explorer** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
 
     ![Resource Graph Explorer](../Images/m5ex4step1.png)
 
