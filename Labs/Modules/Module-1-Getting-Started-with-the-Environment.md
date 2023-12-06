@@ -97,6 +97,7 @@ In this exercise, you will be getting started with the functionality of Microsof
   
 
 1. Once all the configurations are made, click on **Continue**.
+
     ![](../Images/secure-4.png)
     
 1. Click on **Save**. 

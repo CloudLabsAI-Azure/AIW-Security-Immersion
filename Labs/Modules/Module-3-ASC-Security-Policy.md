@@ -20,33 +20,50 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-1. Click on **Security Policy**.
+1. Click on **Security policies (1)** under Settings By default, there is one security policy assignment which is **Microsft cloud security benchmark**.
 
-    ![Template deployment completed](../Images/secure-M3-Ex1-S4.png)
-   
-1. By default, there is one security policy assignment which is **Defender for Cloud Default**.
-
-    ![Microsoft Defender for Cloud default policy](../Images/m3e1s5.1.1.png)
+    ![Template deployment completed](../Images/Sh14.png)
 
     > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies. Also if you see one more policy with an ASC default name, please ignore that.
 
-1. To view the policy, click on **Defender for Cloud Default**.
+1. To view the policy, click on **Microsft cloud security benchmark** and select **View in Azure Policy**.
+
+    ![Template deployment completed](../Images/Sh19.png)
+
+    ![Template deployment completed](../Images/Sh20.png)
 
      > **Note:** The assignment name will have the GUID of the subscription in your lab environment.
 
-1. On the **Edit Initiative Assignment** page, click on **Parameters** and uncheck the box that is next to **Only show parameters that require input** to view the parameters.
+1. On the **Basics** tab, Click on **...** under Scope.
 
-   >Note: This will take a while to load the required parameters.
+    ![Template deployment completed](../Images/Sh25.png)
+
+1. Under the **Scope** blade, select your **Subscription (1)** from the drop-down list, select Resource Group as **asclab (2)** and click on **Save (3)**.
+
+    ![Template deployment completed](../Images/Sh26.png)
+
+1. Click on **Next**.
+
+    ![Template deployment completed](../Images/Sh27.png)
+
+
+1. On the **Advanced** tab, leave it as default click on **Next**.
+
+    ![Template deployment completed](../Images/Sh28.png)
+
+1. On the **Parameters (1)** tab and uncheck the box that is next to **Only show parameters that need input or review (2)** to view the parameters.
+
+   > **Note:** This will take a while to load the required parameters.
    
-    ![](../Images/m3e1s7.1.png)
+    ![](../Images/Sh22.png)
     
-1. On the **Edit Initiative Assignment** blade, scroll down and change the action to **AuditIfNotExists** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + save**.
+1. On the **Assign initiative** blade, scroll down and change the action to **AuditIfNotExists** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + create**.
 
-    ![](../Images/m3e1s8.1.png)
+    ![](../Images/Sh23.png)
 
-1. On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists** and click on **Save**. Wait for the policy update to complete successfully.
+1. On the **Review + create** tab, review the configuration and click on **Create**.
 
-    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/m3e1s9.1.png)
+    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/Sh24.png)
 
 
 ### Exercise 2: Explore Azure Policy
