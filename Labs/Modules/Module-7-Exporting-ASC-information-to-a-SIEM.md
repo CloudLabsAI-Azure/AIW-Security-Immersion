@@ -1,6 +1,5 @@
 # Module 7 – Exporting Microsoft Defender for Cloud information to a SIEM
 
-
 ## Overview
 
 In this module, you will configure the continuous export for the Log Analytics workspace, exporting security alerts, recommendations, secure scores, and security findings. Moreover, you will learn how to enable the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
@@ -9,13 +8,13 @@ In this module, you will configure the continuous export for the Log Analytics w
 
 Microsoft Defender for Cloud generates detailed security alerts and recommendations. You can view them in the portal or through programmatic tools. You might also need to export some or all of this information for tracking with other monitoring tools in your environment.
 
-Continuous export lets you fully customize what will be exported, and where it will go. Even though the feature is called continuous, there's also an option to export weekly snapshots of secure score or regulatory compliance data.
+Continuous export lets you fully customize what will be exported and where it will go. Even though the feature is called continuous, there's also an option to export weekly snapshots of secure score or regulatory compliance data.
 
 1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
 
     ![](../Images/m3e1s1.png)
 
-1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able to see the subscription.
+1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here, you'll be able to see the subscription.
 
     ![Template deployment completed](../Images/m2e1s3.2.png)
     
@@ -27,7 +26,7 @@ Continuous export lets you fully customize what will be exported, and where it w
 
     ![](../Images/Sh36.png)
 
-1. Here you can configure the streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
+1. Here, you can configure the streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
 
 1. Select the **Log Analytics workspace (1)** option and follow the below steps:
 
@@ -71,11 +70,11 @@ Continuous export lets you fully customize what will be exported, and where it w
 
     ![Continuous export settings page](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/log-analytic-started2.png?raw=true)
 
-1. From the left pane select the **Tables** tab and **enable** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
+1. From the left pane, select the **Tables** tab and **enable** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
 
     ![Tables page](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/showtables.png?raw=true)
 
-1. Query the tables to validate data streaming - For example, Click on **Tables (1)** expand **Security and Audit (2)** double click on **Security Event (3)** to open in the query window. Now click on **Run (4)** and see the results below.
+1. Query the tables to validate data streaming - For example, click on **Tables (1)**, expand **Security and Audit (2)** double-click on **Security Event (3)** to open the query window. Now click on **Run (4)** and see the results below.
 
     ![Respective tables in the Log Analytics workspace](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/Log-editor-tables.png?raw=true)
   
@@ -128,13 +127,13 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 
     ![Connect Microsoft Defender for Cloud to Microsoft Sentinel](../Images/connected.png)
 
-13. On the Create incidents (recommended) click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
+13. On the Create incidents (recommended), click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
 
      ![Enable incidents](../Images/asc-sentinel-enable-incidents.png)
  
     > **Note:** You may have to scroll down to find the option.
     
-    > **Note:** If you are unable to Enable the create incidents button, follow the below steps:
+    > **Note:** If you are unable to **Enable** the create incidents button, follow the below steps:
 
       ![](../Images/Sh39.png)
 
@@ -143,7 +142,7 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 
     ![](../Images/Sh7.png)
 
-15. On the **Analytics rule wizard - Create a new Microsoft Security rule** pane, You can modify the rule details, and choose to filter the alerts that will create incidents by alert severity or by text contained in the alert’s name. For example, if you choose Microsoft Defender for Cloud in the Microsoft security service field and choose High in the Filter by Severity field, only high-severity security alerts will automatically create incidents in Microsoft Sentinel.
+15. On the **Analytics rule wizard - Create a new Microsoft Security rule** pane, You can modify the rule details and choose to filter the alerts that will create incidents by alert severity or by text contained in the alert’s name. For example, if you choose Microsoft Defender for Cloud in the Microsoft security service field and choose High in the Filter by Severity field, only high-severity security alerts will automatically create incidents in Microsoft Sentinel.
 
     ![](../Images/Sh8.png)
 
@@ -151,12 +150,12 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 
     ![](../Images/Sh9.png)
 
-17. Navigate back to the **Data connectors** tab; Select the **Subscription-based Microsoft Defender for Cloud (Legacy)** connector and then click on **Open connector page**. You will see that Create incidents (recommended) is **Enabled**.
+17. Navigate back to the **Data connectors** tab; select the **Subscription-based Microsoft Defender for Cloud (Legacy)** connector, and then click on **Open connector page**. You will see that Create incidents (recommended) is **Enabled**.
 
     ![](../Images/Sh40.png)
 
 ### Summary
 
-In this lab you have completed configuring continuous export for the Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings and enabling the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
+In this lab you have completed configuring continuous export for the Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings, and enabling the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
