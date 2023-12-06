@@ -159,7 +159,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 3. Select the **Secure transfer to storage accounts should be enabled** under **Encrypt data in transit** section. You can search it using the search box.
 
-   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+   > **Note**: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
 4. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
@@ -176,7 +176,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 6. Go back to the **recommendations view**, type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
 
-   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+   > **Note**: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
     ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
@@ -184,10 +184,10 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 8. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
 
-* Under the **Basics** tab under the Scope header, select the ellipse icon (...) to select your subscription and click on the **Select**
-* Then click on **Next**.
+    * Under the **Basics** tab under the Scope header, select the ellipse icon **(...)** to select your subscription and click on the **Select**.
+    * Then click on **Next**.
 
-    ![](../Images/neew2.png)
+        ![](../Images/neew2.png)
     
 9. In the **Advanced** tab leave it by default and Click on **Next**.
 
@@ -235,7 +235,7 @@ A custom policy definition allows customers to define their own rules for using 
 4. On the New Initiative definition page, select the following:
     - Initiative Location: Select your Subscription
     - Name: **Contoso Security Benchmark**
-    - Description: Baseline for security policies to appear alongside the built-in recommendations
+    - Description: **Baseline for security policies to appear alongside the built-in recommendations**
     - Category: Select **Create new** and type: **Contoso**
     - Click **Next**
   
@@ -268,29 +268,11 @@ Add each policy one by one:
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-4. Click on **Security Policy**.
+4. Click on **Security policies (1)**. In the search bar, search for **Contoso Security Benchmark (2)**. Click on the toggle buttom to change the status to **On (3)**.
 
-    ![Template deployment completed](../Images/m3e1s4.3.png)
-
-    >**Note:** You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Microsoft Defender for Cloud.
-
-5. On the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
-
-    ![Add custom initiative](../Images/custom-initiatives.png)
-
-6. Your newly created initiative is listed: **Contoso Security Benchmark**. Select **Add**.
-
-    ![Assign custom initiative](../Images/asc-assign-custom-initiative.gif?raw=true)
-
-7. On the **Assign Initiative** page leave everything as default and select **Review + Create**.
+    ![Template deployment completed](../Images/Sh32.png)
    
-    ![custom initiative](../Images/neew5.png)
-   
-8. Now click on **Create**
-
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/createini.png?raw=true)
-   
-10. Your custom initiative is now assigned.
+5. Your custom initiative is now assigned.
 
 ### Summary
 
