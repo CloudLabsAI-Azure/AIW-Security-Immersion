@@ -74,28 +74,26 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
     ![](../Images/m3ex2.step1.png)
 
-2. From the left navigation pane, under the **Authoring** section, click on **Definitions (1)**. This is where you can explore the built-in policy definitions and initiatives.
+2. From the left navigation pane, under the **Authoring** section, click on **Definitions (1)**. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative (2)** and select **Security Center (3)** from the _Category_ filter and click on **Apply (5)**.
 
-3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative (2)** and select **Security Center (3)** from the _Category_ filter.
-
-    ![policy assignment](../Images/secure-M3-Ex2-S3.png)	
+    ![policy assignment](../Images/Sh29.png)	
 
 4. You can now see three built-in initiatives used by Microsoft Defender for Cloud:
     -	*Azure Security Benchmark*
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
 
-    ![policy assignment](../Images/m3e2s4.png)
+        ![policy assignment](../Images/Sh30.png)
 
 5. Notice the number of policies included in each initiative (policies column).
 
 6. To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the assignments, for example:
 
-    - *Defender for Cloud default*
+    - *ASC Default*
 
-7. Click on **Defender for Cloud default** to see the assignment details.
+7. Click on **ASC Default** to see the assignment details.
 
-   ![policy assignment](../Images/m3-Ex2-7.png) 
+   ![policy assignment](../Images/Sh31.png) 
 
 ### Exercise 3: Create resource exemption for a recommendation
 
@@ -121,7 +119,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 5. The **Exempt pane** opens:
     - Name: **ASC-Management ports should be closed on your virtual machines**.
     - Check the **Set an expiration date** option and set the datetime for two days ahead at 12:00 AM.
-    - Select **Waiver** as exemption category.
+    - Select **Waiver (risk accepted)** as exemption category.
     - Enter **ASC-Management ports should be closed on your virtual machines** for the Exemption description and click on **Create**.
 
         ![](../Images/exempt-01.png)
