@@ -19,7 +19,7 @@ In Microsoft Defender for Cloud, you will be interacting with the Microsoft Defe
 2. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as **Secure Score, Regulatory Compliance, and Microsoft Defender for Cloud**.
 
    > ❗ Important: <br>
-   > Microsoft Defender for Cloud takes time to populate information such as secure scores, compliance, recommendations, etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. As we have already enabled Microsoft Defender for the cloud in this tenant the data should be available now. 
+   > Microsoft Defender for Cloud takes time to populate information such as secure scores, compliance, recommendations, etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. As we have already enabled Microsoft Defender for the cloud in this tenant, the data should be available now.
 
     ![Microsoft Defender for Cloud: Overview dashboard](../Images/msdefender-1.png)
 
