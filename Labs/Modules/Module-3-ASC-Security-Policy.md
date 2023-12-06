@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this module, we will guide you through the current Microsoft Defender for Cloud policies set by Azure. Also, we will walk you through the methods to enable or disable the Security policies. 
+In this module, we will guide you through the current Microsoft Defender for Cloud policies set by Azure. Also, we will walk you through the methods to enable or disable the Security policies.
 
 ### Exercise 1: Overview of the Microsoft Defender for Cloud Policy
 
@@ -173,9 +173,9 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/change%20to%20deny.png?raw=true)
 
-6. Go back to the **recommendations view**, type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
+6. Go back to the **recommendations view**, type **Auditing** in the search box,. Click on the recommendation **Auditing on SQL server should be enabled**.
 
-   > **Note**: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+   > **Note**: If you don't see the above recommendation, that means it is not loaded yet, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
     ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
@@ -188,7 +188,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
         ![](../Images/neew2.png)
     
-9. In the **Advanced** tab leave it by default and Click on **Next**.
+9. In the **Advanced** tab, leave it by default and click on **Next**.
 
     ![](../Images/neew3.png)
 
@@ -206,9 +206,9 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
     - Select the **SQL Server resource (1)** found on the **unhealthy resources** tab of **Affected resources** named **<inject key="SQL Server" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** 
     - click on **Fix (2)**
     - Select the **asclab-la-XXXXXX (3)** workspace from the dropdown
-    - Click **Fix 1 resource (4)**. 
+    - Click **Fix 1 resource (4)**
     
-By performing above mentioned operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
+By performing the above mentioned operations, you can now ensure that your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
 <br>
       ![Sql Auditing](../Images/m3fs6.png)
       
@@ -267,7 +267,7 @@ Add each policy one by one:
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-4. Click on **Security policies (1)**. In the search bar, search for **Contoso Security Benchmark (2)**. Click on the toggle buttom to change the status to **On (3)**.
+4. Click on **Security policies (1)**. In the search bar, search for **Contoso Security Benchmark (2)**. Click on the toggle button to change the status to **On (3)**.
 
     ![Template deployment completed](../Images/Sh32.png)
    
