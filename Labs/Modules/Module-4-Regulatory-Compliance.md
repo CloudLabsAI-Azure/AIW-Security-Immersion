@@ -4,7 +4,7 @@
 
 In this exercise, you will learn about Regulatory Compliance features
 
-You will be performing the following activities to achieve the goal.
+You will be performing the following activities to achieve the goal:
 
 * Exploring Regulatory Compliance dashboard
 * Adding new standards to Compliance policies
@@ -12,19 +12,19 @@ You will be performing the following activities to achieve the goal.
 
 ### Exercise 1: Understanding Regulatory Compliance Dashboard
 
-Microsoft Defender for Cloud helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard. The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
+Microsoft Defender for Cloud helps streamline the process of meeting regulatory compliance requirements using the regulatory compliance dashboard. The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
 Microsoft Defender for Cloud continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards applied to your subscriptions.
 
-1. Navigate to **Microsoft Defender for Cloud** in the Azure portal(perform if not already on the Microsoft Defender for Cloud).
+1. Navigate to **Microsoft Defender for Cloud** in the Azure portal (perform if not already on the Microsoft Defender for Cloud).
 
-1. On the overview page select the **Regulatory Compliance (1)** tile (this pillar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard (2)** opens you can see the compliance standards currently assigned to your subscription.
+1. On the overview page, select the **Regulatory Compliance (1)** tile (this pillar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard (2)** opens, you can see the compliance standards currently assigned to your subscription.
 
     ![](../Images/c11.png)
 
 1. On the main page, select the **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
 
-   >Note: It might take up to 30 minutes to reflect the Contoso security benchmark after adding the custom initiatives. if this is not available for you, you can skip this exercise and continue with the next exercise and can check on this later.
+   > **Note**: It might take up to 30 minutes to reflect the Contoso security benchmark after adding the custom initiatives. If this is not available for you, you can skip this exercise and continue with the next exercise. and can check on this later.
 
     ![Contoso Security Benchmark](../Images/CSB.png)
 
@@ -52,7 +52,7 @@ Microsoft Defender for Cloud continuously assesses your hybrid cloud environment
 
 ### Exercise 2: Adding new standards
 
-You can add additional industry standards (represented as compliance packages) such as IST SP 800-53 R4, SWIFT CSP CSCF-v2020, UK Official and more.
+You can add additional industry standards (represented as compliance packages) such as IST SP 800-53 R4, SWIFT CSP CSCF-v2020, UK Official, and more.
 
 1. On **Regulatory Compliance** page, select **Manage compliance policies** from the top menu bar.
 
@@ -62,7 +62,7 @@ You can add additional industry standards (represented as compliance packages) s
 
     ![](../Images/envset.png)
    
-3. Select **Security policies (1)**, in the search bar search for **CIS Microsoft Azure Foundations Benchmark v1.1.0 (2)**, click on the toggle button to change the status to **On (3)**
+3. Select **Security policies (1)** in the search bar, search for **CIS Microsoft Azure Foundations Benchmark v1.1.0 (2)** and click on the toggle button to change the status to **On (3)**
 
     ![](../Images/Sh33.png)
 
@@ -115,6 +115,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 1. Now you should have two groups to help you organize your policies within the initiative.
 
 1. On the **Initiative definition** blade, click on the **Policies** tab. Here you can add policy definitions, both built-in and custom. Click **Add policy definition(s)**. Select your desired policies, If you create a benchmark, you can also leverage existing policy definitions from the **Microsoft managed** tab. For example, you can choose the following policies and select **Add**:
+   
     -	Audit virtual machines without disaster recovery configured
     -	Azure Backup should be enabled for Virtual Machines
     -	Audit VMs that do not use managed disks
