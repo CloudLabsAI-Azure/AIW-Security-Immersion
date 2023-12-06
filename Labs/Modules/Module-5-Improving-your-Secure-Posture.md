@@ -1,69 +1,14 @@
 # Module 5 - Improving your Secure Posture
 
-
 ## Overview
 
 This module will walk you through the process of using the vulnerability assessment for Virtual Machines and Containers, along with the usage of Workflow Automation and data query.
 
-### Exercise 1: Vulnerability Assessment for VMs
+### Exercise 1: Vulnerability Assessment for Containers
 
-With Microsoft Defender for servers, you can quickly deploy the integrated vulnerability assessment solution (powered by Qualys) with no additional configuration or extra costs. Once the vulnerability assessment scanner is deployed, it continually assesses all the installed applications on a virtual machine to find vulnerabilities and presents its findings in the Microsoft Defender for Cloud console. When a machine is found that doesn't have a vulnerability assessment solution deployed, Microsoft Defender for Cloud generates a recommendation that looks like this: _A vulnerability assessment solution should be enabled on your virtual machines._ To remediate a resource, you can click on the **Quick Fix** button to deploy the necessary VM extension.
+Microsoft Defender for Cloud scans images in your Azure Container Registry (ACR) that are pushed and imported into the registry, it also contains any other images pulled within the last 30 days. Then, it exposes detailed findings per image. All vulnerabilities can be found in the following recommendations: **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys).**
 
-**Explore vulnerability assessment recommendations:**
-
-1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
-
-    ![](../Images/m3e1s1.png)
-     
-1. Click on **Recommendations (1)** from the left side pane. Expand **Remediate vulnerabilities (2)** security control (which contains all recommendations related to security vulnerabilities). Make sure you have **Machines should have a vulnerability assessment solution (3)** recommendation listed here.
-
-    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
-
-    ![](../Images/updatess1.png)
-
-1. Click on **Machines should have a vulnerability assessment solution** recommendation and open it.
-
-1. Click to expand **Remediation steps (1)** – then click on the **Quick fix logic (2)** option to expose an automatic remediation script content (ARM template). Once done, **Close (3)** this window.
-
-    ![](../Images/quick-logic.png)
-
-1. From the **Unhealthy resources (1)** tab, select both **asclab-win** and **aslab-linux** **(2)** virtual machines. Click on  **Fix (3)**.
-
-    ![](../Images/fix-asclab-win.png)
-    
-
-1. On the **Choose a vulnerability assessment solution** select **Deploy the integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for servers) (1)**. Click on  **Proceed (2)**.
-
-    ![](../Images/c7.png)
-
-1. A window of **Fixing resources** will open, on this page review the list of VMs and click on **Fix 2 resources**.
-
-    ![](../Images/fixingresources.png)
-
-1. Remediation is now in process. Microsoft Defender for Cloud will deploy the Qualys VM extension on the selected VMs, so you track the status using the notification area or by using the Azure activity log. **Wait for 5-10 minutes for the process to complete**.
-
-   > **Note:** You can find a list of supported operating systems [here](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#deploy-the-integrated-scanner-to-your-azure-and-hybrid-machines).
-
-1. Ensure the VM extension is deployed on the relevant machines:
-    - Search for **Virtual Machines** in the search box located on the top of the **Azure Portal** page and click on it.
-    - Select **asclab-win (1)**. next, click on **Extensions + applications (2)** under the **Settings** section.
-    - Ensure that the `WindowsAgent.AzureSecurityCenter` extension is installed and the status is **Provisioning succeeded**.
-  
-        ![](../Images/c8.png)
-
-1. Repeat the above step (step 9) for **asclab-linux** – you should expect to see a different name for the extension on the Linux platform: `LinuxAgent.AzureSecurityCenter`.
-
-     ![](../Images/c9.png)
-
-    > **Note:** There are multiple ways you can automate the process where you need to achieve at-scale deployment. More details are available on our [documentation](https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm#automate-at-scale-deployments) and on [blog](https://techcommunity.microsoft.com/t5/azure-security-center/built-in-vulnerability-assessment-for-vms-in-azure-security/ba-p/1577947).
-
-1. The VA agent will now collect all required artifacts, and send them to Qualys Cloud and findings will be presented back on the Microsoft Defender for Cloud console within 24 hours.
-
-### Exercise 2: Vulnerability Assessment for Containers
-
-Microsoft Defender for Cloud scans images in your Azure Container Registry (ACR) that are pushed and imported into the registry, it also contains any other images pulled within the last 30 days. Then, it exposes detailed findings per image. All vulnerabilities can be found in the following recommendation: **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys).**
-
-To simulate a container registry image with vulnerabilities, we will use ACR tasks commands and sample image:
+To simulate a container registry image with vulnerabilities, we will use ACR task commands and a sample image:
 
 1. Search for **Container registries** in the search box located on the top of the **Azure Portal** page and click on it, or click [here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerRegistry%2Fregistries).
 
@@ -71,7 +16,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
     ![acr-select](../Images/m5ex2step2.png)
 
-3. In the Azure portal, open the **Cloud Shell** pane by selecting the toolbar icon directly to the right of the search textbox or click on [Azure Cloud Shell](https://shell.azure.com/).
+3. In the Azure portal, open the **Cloud Shell** pane by selecting the toolbar icon directly to the right of the search textbox or clicking on [Azure Cloud Shell](https://shell.azure.com/).
 
     ![cloudshell-select](../Images/ex4-cloudshell.png)
 
@@ -79,7 +24,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
     ![cloudshell-select](../Images/bash.png)
 
-5. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
+5. When prompted, click **Create storage** and wait for the Azure Cloud Shell to initialize. 
 
 6. Build a Linux container image from the hello-world image hosted at Microsoft Container Registry and push it to the existing Azure Container Registry instance on your subscription:
  
@@ -97,7 +42,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
     ![Build Linux container in Cloud Shell](../Images/asc-build-linux-container-cloud-shell.gif?raw=true)
 
-7. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 37s.
+7. Wait for a successful execution message to appear. For example: Run ID: cf1 was successful after 10s.
 
 8. The scan completes typically within a few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the Recommendations page.
 
@@ -107,7 +52,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
  
      ![asd](../Images/secure-M5-Ex2-S10.1.png)
 
-    > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+    > **Note**: If you don't see the above recommendation that means it is not loaded yet, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number, then continue to the next exercise and verify this later.
 
 11. On the recommendation page, notice the following details in the upper section:
 
@@ -131,7 +76,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
    Notice the vulnerability description, general information (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
 
-### Exercise 3: Automate recommendations with workflow automation
+### Exercise 2: Automate recommendations with workflow automation
 
 Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Microsoft Defender for Cloud events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
 
@@ -141,7 +86,7 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/M5-ex3-1.png)
     
-1. Click on **+Add** to create a new Logic App.
+1. Click on **+ Add** to create a new Logic App.
     
     ![](../Images/M5-ex3-2.png)
 
@@ -149,7 +94,7 @@ Every security program includes multiple workflows for incident response. The pr
      
      - Subscription: Select your **Subscription** 
       
-     - Resource group:  **asclab**.   
+     - Resource group:  **asclab** 
  
      - Logic app name: Enter **Send-RecommendationsChanges**.
 
@@ -175,7 +120,7 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/triggered1.png)
 
-1. Click on the **new step** button and type **Outlook send**.
+1. Click on the **+ New step** button and type **Outlook send**.
 
     ![](../Images/newstep1.png)
 
@@ -218,7 +163,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 1. Search for **Microsoft Defender for Cloud** in the search box at the top of the **Azure Portal** page and click on it.
 
-2. Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **Add workflow automation (2)**.
+2. Select **Workflow automation (1)** under **Management** section from the left side pane, and click on **+ Add workflow automation (2)**.
 
     ![](../Images/workflow1.png)
 
@@ -245,6 +190,7 @@ Every security program includes multiple workflows for incident response. The pr
    - Actions:
    
      * Show Logic App instances from the following subscriptions: **Your Subscription**
+
      * Logic App name: **Send-RecommendationsChanges**
      
    Click **Create** to complete the task.
@@ -276,11 +222,11 @@ Every security program includes multiple workflows for incident response. The pr
 
      ![](../Images/triggerlogicapp.png)
 
-### Exercise 4: Accessing your secure score via ARG
+### Exercise 3: Accessing your secure score via ARG
 Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
 Azure Secure Score data is available in ARG so you can query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
 
-1. Search for **arg** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
+1. Search for **Resource Graph Explorer** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
 
     ![Resource Graph Explorer](../Images/m5ex4step1.png)
 
@@ -295,7 +241,7 @@ Azure Secure Score data is available in ARG so you can query and calculate your 
 
     ![](../Images/run-query1.png)
 
-3. You should now see your subscription ID listed here along with the current score (in points), the max score and the score in percentage.
+3. You should now see your subscription ID listed here, along with the current score (in points), the max score and the score in percentage.
 
 4. To return the status of all the security controls, select **New query**. Next, paste the following KQL query and click on **Run query**:
 
@@ -313,6 +259,6 @@ More details on the [official article](https://docs.microsoft.com/en-us/azure/se
 
 ### Summary
 
-  * In this module, you have completed exploring more **Microsoft Defender for Cloud** features - **Vulnerability assessment for VMs**, **Vulnerability assessment for Containers**, **Automated recommendations with workflow automation** and **Accessed your secure score via ARG**.
+In this module, you have completed exploring more **Microsoft Defender for Cloud** features - **Vulnerability assessment for Containers**, **Automated recommendations with workflow automation** and **Accessed your secure score via ARG**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.

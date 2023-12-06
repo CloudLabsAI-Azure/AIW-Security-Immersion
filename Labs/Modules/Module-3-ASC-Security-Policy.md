@@ -2,51 +2,67 @@
 
 ## Overview
 
-In this module, we will guide you through the current Microsoft Defender for Cloud policies set by Azure. Also, we will walk you through the methods to enable or disable the Security policies. 
+In this module, we will guide you through the current Microsoft Defender for Cloud policies set by Azure. Also, we will walk you through the methods to enable or disable the Security policies.
 
 ### Exercise 1: Overview of the Microsoft Defender for Cloud Policy
 
-In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to the Microsoft Defender for Cloud's recommendation.
+In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to Microsoft Defender for Cloud's recommendation.
 
-1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
+1. From the Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
     ![](../Images/m3e1s1.png)
 
-1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able to see the subscription.
+1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here, you'll be able to see the subscription.
 
     ![Template deployment completed](../Images/m2e1s3.2.png)
    
-1. In **Environment Settings** page, Select your subscription.
+1. In **Environment Settings** page, select your subscription.
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-1. Click on **Security Policy**.
+1. Click on **Security policies (1)** under Settings By default, there is one security policy assignment which is **Microsft cloud security benchmark**.
 
-    ![Template deployment completed](../Images/secure-M3-Ex1-S4.png)
-   
-1. By default, there is one security policy assignment which is **Defender for Cloud Default**.
+    ![Template deployment completed](../Images/Sh14.png)
 
-    ![Microsoft Defender for Cloud default policy](../Images/m3e1s5.1.1.png)
+    > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies. Also, if you see one more policy with an ASC default name, please ignore that.
 
-    > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies. Also if you see one more policy with an ASC default name, please ignore that.
+1. To view the policy, click on **Microsft cloud security benchmark** and select **View in Azure Policy**.
 
-1. To view the policy, click on **Defender for Cloud Default**.
+    ![Template deployment completed](../Images/Sh19.png)
+
+    ![Template deployment completed](../Images/Sh20.png)
 
      > **Note:** The assignment name will have the GUID of the subscription in your lab environment.
 
-1. On the **Edit Initiative Assignment** page, click on **Parameters** and uncheck the box that is next to **Only show parameters that require input** to view the parameters.
+1. On the **Basics** tab, Click on **...** under Scope.
 
-   >Note: This will take a while to load the required parameters.
+    ![Template deployment completed](../Images/Sh25.png)
+
+1. Under the **Scope** blade, select your **Subscription (1)** from the drop-down list, select Resource Group as **asclab (2)**, and click on **Save (3)**.
+
+    ![Template deployment completed](../Images/Sh26.png)
+
+1. Click on **Next**.
+
+    ![Template deployment completed](../Images/Sh27.png)
+
+1. On the **Advanced** tab, leave it as default and click on **Next**.
+
+    ![Template deployment completed](../Images/Sh28.png)
+
+1. On the **Parameters (1)** tab, uncheck the box next to **Only show parameters that need input or review (2)** to view the parameters.
+
+   > **Note:** This will take a while to load the required parameters.
    
-    ![](../Images/m3e1s7.1.png)
+    ![](../Images/Sh22.png)
     
-1. On the **Edit Initiative Assignment** blade, scroll down and change the action to **AuditIfNotExists** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + save**.
+1. On the **Assign initiative** blade, scroll down and change the action to **AuditIfNotExists** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + create**.
 
-    ![](../Images/m3e1s8.1.png)
+    ![](../Images/Sh23.png)
 
-1. On the Review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists** and click on **Save**. Wait for the policy update to complete successfully.
+1. On the **Review + create** tab, review the configuration and click on **Create**.
 
-    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/m3e1s9.1.png)
+    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/Sh24.png)
 
 
 ### Exercise 2: Explore Azure Policy
@@ -57,28 +73,26 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
     ![](../Images/m3ex2.step1.png)
 
-2. From the left navigation pane, under the **Authoring** section, click on **Definitions (1)**. This is where you can explore the built-in policy definitions and initiatives.
+2. From the left navigation pane, under the **Authoring** section, click on **Definitions (1)**. From the top menu, use the filter ribbon, set the _Definitions Type_ as **Initiative (2)**, select **Security Center (3)** from the _Category_ filter, and click on **Apply (5)**.
 
-3. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative (2)** and select **Security Center (3)** from the _Category_ filter.
-
-    ![policy assignment](../Images/secure-M3-Ex2-S3.png)	
+    ![policy assignment](../Images/Sh29.png)	
 
 4. You can now see three built-in initiatives used by Microsoft Defender for Cloud:
     -	*Azure Security Benchmark*
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
 
-    ![policy assignment](../Images/m3e2s4.png)
+        ![policy assignment](../Images/Sh30.png)
 
 5. Notice the number of policies included in each initiative (policies column).
 
 6. To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the assignments, for example:
 
-    - *Defender for Cloud default*
+    - *ASC Default*
 
-7. Click on **Defender for Cloud default** to see the assignment details.
+7. Click on **ASC Default** to see the assignment details.
 
-   ![policy assignment](../Images/m3-Ex2-7.png) 
+   ![policy assignment](../Images/Sh31.png) 
 
 ### Exercise 3: Create resource exemption for a recommendation
 
@@ -104,7 +118,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 5. The **Exempt pane** opens:
     - Name: **ASC-Management ports should be closed on your virtual machines**.
     - Check the **Set an expiration date** option and set the datetime for two days ahead at 12:00 AM.
-    - Select **Waiver** as exemption category.
+    - Select **Waiver (risk accepted)** as exemption category.
     - Enter **ASC-Management ports should be closed on your virtual machines** for the Exemption description and click on **Create**.
 
         ![](../Images/exempt-01.png)
@@ -144,7 +158,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 3. Select the **Secure transfer to storage accounts should be enabled** under **Encrypt data in transit** section. You can search it using the search box.
 
-   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+   > **Note**: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
 4. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
@@ -159,9 +173,9 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
     ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/change%20to%20deny.png?raw=true)
 
-6. Go back to the **recommendations view**, type **Auditing** in the search box, . Click on the recommendation **Auditing on SQL server should be enabled**.
+6. Go back to the **recommendations view**, type **Auditing** in the search box,. Click on the recommendation **Auditing on SQL server should be enabled**.
 
-   > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+   > **Note**: If you don't see the above recommendation, that means it is not loaded yet, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
     ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
@@ -169,12 +183,12 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 8. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
 
-* Under the **Basics** tab under the Scope header, select the ellipse icon (...) to select your subscription and click on the **Select**
-* Then click on **Next**.
+    * Under the **Basics** tab under the Scope header, select the ellipse icon **(...)** to select your subscription and click on the **Select**.
+    * Then click on **Next**.
 
-    ![](../Images/neew2.png)
+        ![](../Images/neew2.png)
     
-9. In the **Advanced** tab leave it by default and Click on **Next**.
+9. In the **Advanced** tab, leave it by default and click on **Next**.
 
     ![](../Images/neew3.png)
 
@@ -192,9 +206,9 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
     - Select the **SQL Server resource (1)** found on the **unhealthy resources** tab of **Affected resources** named **<inject key="SQL Server" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** 
     - click on **Fix (2)**
     - Select the **asclab-la-XXXXXX (3)** workspace from the dropdown
-    - Click **Fix 1 resource (4)**. 
+    - Click **Fix 1 resource (4)**
     
-By performing above mentioned operations, you can now ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
+By performing the above mentioned operations, you can now ensure that your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
 <br>
       ![Sql Auditing](../Images/m3fs6.png)
       
@@ -220,7 +234,7 @@ A custom policy definition allows customers to define their own rules for using 
 4. On the New Initiative definition page, select the following:
     - Initiative Location: Select your Subscription
     - Name: **Contoso Security Benchmark**
-    - Description: Baseline for security policies to appear alongside the built-in recommendations
+    - Description: **Baseline for security policies to appear alongside the built-in recommendations**
     - Category: Select **Create new** and type: **Contoso**
     - Click **Next**
   
@@ -253,29 +267,11 @@ Add each policy one by one:
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-4. Click on **Security Policy**.
+4. Click on **Security policies (1)**. In the search bar, search for **Contoso Security Benchmark (2)**. Click on the toggle button to change the status to **On (3)**.
 
-    ![Template deployment completed](../Images/m3e1s4.3.png)
-
-    >**Note:** You must add custom standards at the subscription level (or higher) for them to be evaluated and displayed in Microsoft Defender for Cloud.
-
-5. On the Security policy page, under **Your custom initiatives**, click **Add a custom initiative**.
-
-    ![Add custom initiative](../Images/custom-initiatives.png)
-
-6. Your newly created initiative is listed: **Contoso Security Benchmark**. Select **Add**.
-
-    ![Assign custom initiative](../Images/asc-assign-custom-initiative.gif?raw=true)
-
-7. On the **Assign Initiative** page leave everything as default and select **Review + Create**.
+    ![Template deployment completed](../Images/Sh32.png)
    
-    ![custom initiative](../Images/neew5.png)
-   
-8. Now click on **Create**
-
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/createini.png?raw=true)
-   
-10. Your custom initiative is now assigned.
+5. Your custom initiative is now assigned.
 
 ### Summary
 

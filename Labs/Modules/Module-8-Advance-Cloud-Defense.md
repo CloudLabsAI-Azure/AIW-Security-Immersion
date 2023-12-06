@@ -4,9 +4,9 @@
 
 In this exercise, you will be exploring the Microsoft Defender for Cloud features for Advanced Cloud Defense
 
-You will be performing the following activities to achieve the goal.
+You will be performing the following activities to achieve the goal:
 
-* Using JIT (Just In Time access to VMs) to reduce the attack surface
+* Using JIT (just-in-time access to VMs) to reduce the attack surface
 * Using Application control to deal with malicious and/or unauthorized software
 * Using File integrity monitoring (FIM) to monitor Operating System files
 
@@ -20,13 +20,13 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
     ![](../Images/m3e1s1.png)
 
-3. Navigate to the bottom section under **Advanced protection**, click on **Just-in-time VM access** (You should see unprotected status number).
+3. Navigate to the bottom section under **Advanced protection** and click on **Just-in-time VM access** (You should see am unprotected status number).
 
     ![Advanced protection options](../Images/m8ex1.step3.png)
 
-4. When you are in the **Just-in-time VM access** page, select the **Not configured** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
+4. When you are on the **Just-in-time VM access** page, select the **Not configured** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
     
-    > **Note**: If the virtual machines `asclab-linux` and `asclab-win` are present under the **Unsupported** tab then follow the below instructions to enable **Just-in-time VM access**.
+    > **Note**: If the virtual machines `asclab-linux` and `asclab-win` are present under the **Unsupported** tab, then follow the below instructions to enable **Just-in-time VM access**.
     ![](../Images/justintime.png)
 
     - Navigate to **asclab** resource group and select **asclab-win** virtual machine.
@@ -34,7 +34,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
        
            ![](../Images/jit-01.png)
        
-       - Navigate back to **Microsoft Defender for Cloud** and select **Workload protections** under **Cloud Security** from the left side pane then click on **Just-in-time VM access**.
+       - Navigate back to **Microsoft Defender for Cloud** and select **Workload protections** under **Cloud Security** from the left side pane, then click on **Just-in-time VM access**.
        - Review the **Configured** tab, now you should see your VM configured: `asclab-win`
 
            ![](../Images/justintime1.png)
@@ -97,7 +97,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 
     ![Adaptive Application Control2](../Images/adaptive-application-control-new.png)
 
-    >**Note:** First-time users will not get any group information under the Group Name section. This is because Microsoft Defender  for Cloud needs at least two weeks of data to define the unique recommendations per group of machines. 
+    >**Note:** First-time users will not get any group information under the Group Name section. This is because Microsoft Defender for Cloud needs at least two weeks of data to define the unique recommendations per group of machines. 
 
 ### Exercise 3: File Integrity Monitoring
 
@@ -116,12 +116,12 @@ It maps the current state of these items with the state during the previous scan
 
    ![](../Images/FIM.png)
 
-4. On the Enable File Integrity Monitoring window, review the default **recommended settings** for Windows files, Registry and Linux files.
+4. On the Enable File Integrity Monitoring window, review the default **recommended settings** for Windows files, registry files, and Linux files.
 
-5. Click on **Enable File Integrity Monitoring** button.
+5. Click on the **Enable File Integrity Monitoring** button.
 
     ![File Integrity Monitoring2](../Images/m8ex3.step5.png)
 
 ### Summary
 
-  * In this module, you have completed exploring different **Microsoft Defender  for Cloud** features - **Used JIT to reduce the attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**. You have reached the end of the lab.
+  * In this module, you have completed exploring different **Microsoft Defender for Cloud** features - **Used JIT to reduce the attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**. You have reached the end of the lab.
