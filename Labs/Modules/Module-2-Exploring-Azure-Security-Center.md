@@ -2,9 +2,9 @@
 
 ### Overview
 
-In this exercise, you will explore the Microsoft Defender for Cloud Dashboard features overview.
+In this exercise, you will explore the Microsoft Defender for Cloud Dashboard feature overview.
 
-You will be performing the following activities to achieve the goal.
+You will be performing the following activities to achieve the goal:
 
 * Overview of Microsoft Defender for Cloud dashboard features **Secure Posture and Regulatory Compliance and Microsoft Defender for Cloud**.
 * Exploring Security Controls and Recommendations
@@ -12,11 +12,11 @@ You will be performing the following activities to achieve the goal.
 
 ### Exercise 1: Understanding Microsoft Defender for Cloud Dashboard
 
-In Microsoft Defender for Cloud, You will be interacting with the Microsoft Defender for Cloud dashboard which provides a unified view into the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
+In Microsoft Defender for Cloud, you will be interacting with the Microsoft Defender for Cloud dashboard, which provides a unified view of the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
 
-1. Navigate to **Microsoft Defender for Cloud** in the Azure portal(perform if not already on the Microsoft Defender for Cloud page).
+1. Navigate to **Microsoft Defender for Cloud** in the Azure portal (perform if not already on the Microsoft Defender for Cloud page).
 
-2. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as **Secure Score, Regulatory Compliance and Microsoft Defender  for Cloud**.
+2. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as **Secure Score, Regulatory Compliance, and Microsoft Defender for Cloud**.
 
    > ❗ Important: <br>
    > Microsoft Defender for Cloud takes time to populate information such as secure score, compliance, recommendations etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. As we have already enabled the Microsoft Defender for cloud in this tenant the data should be available now. 
