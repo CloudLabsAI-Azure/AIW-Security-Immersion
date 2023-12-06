@@ -65,7 +65,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
 1. Click on **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, select your **Log Analytics workspace as asclab-la-XXXXX (3)**, and click **Upgrade (4)**.
 
-    > **Note:** If you are not able to see the Log Analytics workspace, then it means your subscription is already upgraded, In this case, you can skip steps 2, and 3 and continue from step 4. Also, you might have to wait for a few seconds to have the upgrade button visible.
+    > **Note:** If you are not able to see the Log Analytics workspace, then it means your subscription is already upgraded. In this case, you can skip steps 2, and 3 and continue from step 4. Also, you might have to wait for a few seconds to have the upgrade button visible.
 
     ![Overview: Inventory tile](../Images/newlaw.png)    
 
@@ -73,21 +73,21 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![install-agents](../Images/installagents.png)
    
-    > **Note:** If the button is greyed out, then it's already set to **On** and agents are already installed. In this case you can move on to the next step.
+    > **Note:** If the button is greyed out, then it's already set to **On** and agents are already installed. In this case, you can move on to the next step.
 
     ![install-agents](../Images/installagents1.png)
 
 ### Configure the data collection settings in Microsoft Defender for Cloud
 
-1. Go to the **Microsoft Defender for Cloud** and Click on the **Environment settings** page and select your **Azure subscription**.
+1. Go to the **Microsoft Defender for Cloud** page, click on the **Environment settings** page, and select your **Azure subscription**.
 
     ![Template deployment completed](../Images/security1.2.png)
 
-1. From **Settings | Defender Plans** page, Navigate to  **Settings & monitoring**.
+1. From the **Settings | Defender Plans** page, navigate to **Settings & monitoring**.
 
     ![](../Images/secure-3.png)
 
-1. On the **Settings & monitoring** toggle the status of **Log Analytics agent/Azure Monitor agent** to **On** (if it is not already set to On). Click on **Edit configuration** under the **Configuration** header of the Log Analytics agent/Azure Monitor agent.
+1. On the **Settings & monitoring** tab, toggle the status of **Log Analytics agent/Azure Monitor agent** to **On** (if it is not already set to On). Click on **Edit configuration** under the **Configuration** header of the Log Analytics agent/Azure Monitor agent.
 
     ![](../Images/secure-2.png)
     
@@ -108,17 +108,17 @@ In this exercise, you will be getting started with the functionality of Microsof
 <br>
 
 > Please notice:
-> * To get the full functionality of Microsoft Defender for Cloud, both subscription and Log Analytics workspace should be enabled for Defender. Once you enable it,  the required Log Analytics solutions will be added to the workspace.
+> * To get the full functionality of Microsoft Defender for Cloud, both the subscription and Log Analytics workspace should be enabled for Defender. Once you enable it,  the required Log Analytics solutions will be added to the workspace.
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Microsoft Defender for Cloud.
-> * You can enable the Microsoft Defender for Cloud trial for 30 days on a subscription-only, if not previously used.
+> * You can enable the Microsoft Defender for Cloud trial for 30 days on a subscription-only basis if it has not previously been used.
 
-## Exercise 3: Creating Microsoft Defender for Cloud Default policy.
+## Exercise 3: Creating Microsoft Defender for Cloud Default Policy
 
-In this exercise, You will create the Microsoft Defender for Cloud default policy in the security policy under  Microsoft Defender for Cloud.
+In this exercise, you will create the Microsoft Defender for Cloud default policy in the security policy under Microsoft Defender for Cloud.
 
-1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
+1. From the Azure Portal, search for **Microsoft Defender for Cloud** and select it.
    
-1. In Microsoft Defender for Cloud blade, Click on the  **Environment Settings** and select your subscription.
+1. In Microsoft Defender for Cloud Blade, click on the **Environment Settings** and select your subscription.
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
@@ -126,8 +126,8 @@ In this exercise, You will create the Microsoft Defender for Cloud default polic
 
     ![Template deployment completed](../Images/Sh14.png)
    
-   > **Note**: Verify that Toggle button status for Microsoft cloud security benchmark is set to **On**.
+   > **Note**: Verify that the Toggle button status for the Microsoft cloud security benchmark is set to **On**.
     
 ## Summary
 
-  In this module, you have learned how to enable Microsoft Defender for Cloud. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
+In this module, you have learned how to enable Microsoft Defender for Cloud. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
