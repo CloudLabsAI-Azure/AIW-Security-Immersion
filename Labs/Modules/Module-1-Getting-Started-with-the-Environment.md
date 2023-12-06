@@ -18,15 +18,15 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-<inject key="DeploymentID" enableCopy="false"/>**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-<inject key="DeploymentID" enableCopy="false"/>** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternatively, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
 
-    ![](../Images/av1.png)
+    ![](../Images/Sh16.png)
 
 1. All user credentials for accessing the **Azure Portal** can be viewed under the **Environment Details** tab for ease of access. Do note that the same information will also be sent to your registered email address. 
 
-    ![](../Images/av2.png)
+    ![](../Images/Sh17.png)
 
 1. The Lab Guide can also be opened on a separate window by selecting the **Split Window** icon in the bottom right corner. This will result in the window detaching from the right side providing more on-screen space for your virtual machine.
 
-    ![](../Images/av3.png)
+    ![](../Images/Sh18.png)
 
 ### Login to Azure Portal 
 
@@ -36,13 +36,13 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject> 
 
-   ![](../Images/azure-login-enter-email.png "Enter Email") 
+        ![](../Images/azure-login-enter-email.png "Enter Email") 
 
 1. Enter the following password and click on **Sign in**. 
 
    * Password: <inject key="AzureAdUserPassword"></inject> 
 
-    ![](../Images/azure-login-enter-password1.png "Enter Password") 
+        ![](../Images/azure-login-enter-password1.png "Enter Password") 
 
 1. You may get a **Help us protect your account** box, on that click on **Ask later**.
 
@@ -99,7 +99,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 1. Once all the configurations are made, click on **Continue**.
     ![](../Images/secure-4.png)
     
-1. Click on Save. 
+1. Click on **Save**. 
 
     ![](../Images/1.1.png)
 
@@ -121,21 +121,11 @@ In this exercise, You will create the Microsoft Defender for Cloud default polic
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-1. Click on **Security Policy (1)** You'll notice that in **Default initiative** (2) the **Microsoft Defender for Cloud Default policy (3)** has been created automatically. Explore the policy by clicking on the policy.
+1. Click on **Security policies (1)** under Settings You'll notice that **Microsoft cloud security benchmark (2)** has been created automatically. Explore the policy by clicking on the policy.
 
-    ![Template deployment completed](../Images/dfpolicy.1.png)
+    ![Template deployment completed](../Images/Sh14.png)
    
-   > **Note**: Incase if you don't see the default policy, follow the below steps:
-     
-     - Under **Default initiative**, click on **Assign Policy**
-
-        ![](../Images/security3.png?raw=true)
-        
-     - Under **Basics** tab, enter the **Assignment name** as **Microsoft Defender for Cloud default <Subscription ID>**.
-      
-       ![](../Images/m1e1s3.3.1.png?raw=true)
-      
-    - Click on **Review + Create**, followed by **Create**.
+   > **Note**: Verify that Toggle button status for Microsoft cloud security benchmark is set to **On**.
     
 ## Summary
 
