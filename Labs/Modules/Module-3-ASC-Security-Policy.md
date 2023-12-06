@@ -6,17 +6,17 @@ In this module, we will guide you through the current Microsoft Defender for Clo
 
 ### Exercise 1: Overview of the Microsoft Defender for Cloud Policy
 
-In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to the Microsoft Defender for Cloud's recommendation.
+In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to Microsoft Defender for Cloud's recommendation.
 
-1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
+1. From the Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
     ![](../Images/m3e1s1.png)
 
-1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able to see the subscription.
+1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here, you'll be able to see the subscription.
 
     ![Template deployment completed](../Images/m2e1s3.2.png)
    
-1. In **Environment Settings** page, Select your subscription.
+1. In **Environment Settings** page, select your subscription.
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
@@ -24,7 +24,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/Sh14.png)
 
-    > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies. Also if you see one more policy with an ASC default name, please ignore that.
+    > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies. Also, if you see one more policy with an ASC default name, please ignore that.
 
 1. To view the policy, click on **Microsft cloud security benchmark** and select **View in Azure Policy**.
 
@@ -38,7 +38,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/Sh25.png)
 
-1. Under the **Scope** blade, select your **Subscription (1)** from the drop-down list, select Resource Group as **asclab (2)** and click on **Save (3)**.
+1. Under the **Scope** blade, select your **Subscription (1)** from the drop-down list, select Resource Group as **asclab (2)**, and click on **Save (3)**.
 
     ![Template deployment completed](../Images/Sh26.png)
 
@@ -46,12 +46,11 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/Sh27.png)
 
-
-1. On the **Advanced** tab, leave it as default click on **Next**.
+1. On the **Advanced** tab, leave it as default and click on **Next**.
 
     ![Template deployment completed](../Images/Sh28.png)
 
-1. On the **Parameters (1)** tab and uncheck the box that is next to **Only show parameters that need input or review (2)** to view the parameters.
+1. On the **Parameters (1)** tab, uncheck the box next to **Only show parameters that need input or review (2)** to view the parameters.
 
    > **Note:** This will take a while to load the required parameters.
    
@@ -74,7 +73,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
     ![](../Images/m3ex2.step1.png)
 
-2. From the left navigation pane, under the **Authoring** section, click on **Definitions (1)**. From the top menu use the filter ribbon, set the _Definitions Type_ as **Initiative (2)** and select **Security Center (3)** from the _Category_ filter and click on **Apply (5)**.
+2. From the left navigation pane, under the **Authoring** section, click on **Definitions (1)**. From the top menu, use the filter ribbon, set the _Definitions Type_ as **Initiative (2)**, select **Security Center (3)** from the _Category_ filter, and click on **Apply (5)**.
 
     ![policy assignment](../Images/Sh29.png)	
 
