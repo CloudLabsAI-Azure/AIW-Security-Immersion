@@ -58,30 +58,13 @@ You can add additional industry standards (represented as compliance packages) s
 
     ![Manage compliance policies](../Images/c13.png)
 
-2. Select **Your Subscription** under the Environment settings.
+2. Select your **Subscription** under the Environment settings.
 
     ![](../Images/envset.png)
    
-3. Under **Policy Settings** tab, select **Security Policy (1)**, then expand **Industry & regulatory standards** and click on **Add more standards (2)**.
+3. Select **Security policies (1)**, in the search bar search for **CIS Microsoft Azure Foundations Benchmark v1.1.0 (2)**, click on the toggle to change the status to **On (3)**
 
-    ![](../Images/security-policy-standards.png)
-   
-4. On the **Add regulatory compliance standards** window, locate the **CIS Azure Foundations v1.1.0** standard and click on **Add**.
-
-    ![Manage compliance policies](../Images/Sh2.png)
-
-5. Click on **Review + create** and then **Create**.
-
-   >Note: If it fails to create then please click on the previous button on the deployment page and start the deployment again.
-
-    ![Review + create](../Images/neew6.png)
-
-  > ❗ Important: <br>
-  > It will take a while until the change takes effect (approximately 2-3 hours).
-
-6. **CIS Azure Foundations v1.1.0** should now be listed on the standards list.
-
-     ![Add CIS 1.1.0 (New) Standard](../Images/Sh3.png)
+    ![](../Images/Sh33.png)
 
 ### Exercise 3: Creating your own benchmark
 
@@ -107,7 +90,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
    - Description: Enter **Custom Benchmark Policy (3)**
 
-   - Category: Click **Use existing (4)** and Select **Security center (5)** from drop-down list.
+   - Category: Click **Use existing (4)** and Select **Security Center (5)** from drop-down list.
 
    - Click on **Next (6)**
 
