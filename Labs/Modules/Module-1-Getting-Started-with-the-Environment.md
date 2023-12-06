@@ -4,7 +4,7 @@
 
 In this exercise, you will learn how to enable Microsoft Defender for Cloud in your subscription
 
-You will be performing the following activities to achieve the goal.
+You will be performing the following activities to achieve the goal:
 
   - Log in to Azure Portal to access your subscription
   - Upgrade your subscription to enable Microsoft Defender for Cloud Plan
@@ -16,7 +16,7 @@ In this exercise, you will learn how to login to the Azure Portal in the labvm-x
 
 ### Instructions 
 
-1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **labvm-<inject key="DeploymentID" enableCopy="false"/>**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-<inject key="DeploymentID" enableCopy="false"/>** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternatively, you can directly RDP into labvm using the credentials provided in the **Environment Details** tab.
+1. After the environment is provisioned successfully, your browser will load up the **Lab Guide** along with a virtual machine called **labvm-<inject key="DeploymentID" enableCopy="false"/>**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the **labvm-<inject key="DeploymentID" enableCopy="false"/>** load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternatively, you can directly RDP into LabVM using the credentials provided in the **Environment Details** tab.
 
     ![](../Images/Sh16.png)
 
