@@ -31,9 +31,9 @@ In Microsoft Defender for Cloud, you will be interacting with the Microsoft Defe
 
     ![Microsoft Defender for Cloud: what's new](../Images/msdefender2.png)
 
-5. Note the **high-level numbers** at the top menu. This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active recommendations and Security alerts.**
+5. Note the **high-level numbers** at the top menu. This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active secure score recommendations and Security alerts.**
 
-    ![Microsoft Defender for Cloud: Dashboard](../Images/msdefender3.png)
+    ![Microsoft Defender for Cloud: Dashboard](../Images/mod1-ex3-1.png)
 
 6. On the **Overview** page, look at the **Security posture** tile. You can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to a drill-down view across subscriptions.
 
@@ -93,9 +93,9 @@ Exploring secure score
 
     **Exploring Security Controls and Recommendations**
 
-6. On the **Recommendations (1)** page, pay attention to the first part of the page, the **summary view (2)**. It includes the current **Secure Score**, progress on the **Recommendations status** (both completed security controls and recommendations), and **Resource health** (by severity).
+6. On the **Recommendations (1)** page, pay attention to the first part of the page, the **summary view (2)**. It includes the progress on the **Recommendations status** (both completed security controls and recommendations), and **Resource health** (by severity).
 
-    ![Recommendations view](../Images/msdefender6.1.png)
+    ![Recommendations view](../Images/mod2-ex2-1.png)
 
 2. From the top menu, click on the **Download CSV report** button; this allows you to get a snapshot of your resources, their health status, and the associated recommendations. You can use this file for pivoting and reporting.
 
