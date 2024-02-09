@@ -101,9 +101,9 @@ Exploring secure score
 
     ![](../Images/csv%20report1.png)
    
-7. Under **Recommendation**, click on **Manage access and permissions** and select **Storage account public access should be disallowed** from the drop-down list.
+7. Under **Recommendation**, search and select **Storage account public access should be disallowed** from the list.
 
-    ![](../Images/dirsto1.png)
+    ![](../Images/mod2-ex2-3.png)
 
 8. On the top section, notice the following:
 
