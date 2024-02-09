@@ -96,7 +96,7 @@ Every security program includes multiple workflows for incident response. The pr
       
      - Resource group:  **asclab** 
  
-     - Logic app name: Enter **Send-RecommendationsChanges**.
+     - Logic app name: Enter **Send-RecommendationsChanges<inject key="DeploymentID" enableCopy="false"/>**.
 
      - Location: Select the location of your **Resource group**
      
@@ -112,7 +112,7 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/gotoresource.png)
 
-1. After the Logic Apps Designer opens, select **Blank Logic App**.
+1. After the Logic Apps Designer opens, select **Logic app designer** from the left panel. Scroll down and choose **Blank Logic App**.
 
     ![](../Images/open-logic-app.png)
 
@@ -180,7 +180,7 @@ Every security program includes multiple workflows for incident response. The pr
       
    - Trigger conditions:
    
-     * Select Microsoft Defender for Cloud data types: **Recommendation**
+     * Select Defender for Cloud data types: **Recommendation**
      * Recommendations name: **All recommendations selected**
      * Recommendation severity: **All severities selected**
      * Recommendation state: **All states selected**
@@ -191,7 +191,7 @@ Every security program includes multiple workflows for incident response. The pr
    
      * Show Logic App instances from the following subscriptions: **Your Subscription**
 
-     * Logic App name: **Send-RecommendationsChanges**
+     * Logic App name: **Send-RecommendationsChanges<inject key="DeploymentID" enableCopy="false"/>**
      
    Click **Create** to complete the task.
 
@@ -210,14 +210,14 @@ Every security program includes multiple workflows for incident response. The pr
 6. Test/trigger your automation manually:
 
    - On the Microsoft Defender for Cloud panel, click on **Recommendations (1)** from the **General** section.
-   - Under **Remediate vulnerabilities (2)** look for recommendations **Azure Kubernetes Service clusters should have the Azure Policy Add-on for Kubernetes installed (3)** and click on it.
+   - **Search(2)** and select **Azure Kubernetes Service clusters should have the Azure Policy Add-on for Kubernetes installed (3)** and click on it.
    
       > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-     ![](../Images/recomendations2.1.png)
+     ![](../Images/mod5-ex2-2.png)
      
    - Select resource *asclab-aks* and then click on the **Trigger Logic App** button.
-   - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges) then click on **Trigger**.
+   - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges<inject key="DeploymentID" enableCopy="false"/>) then click on **Trigger**.
    - You should receive an email, verifying in your inbox. On the labvm-xxxxxx open a new tab in the web browser and navigate to https://outlook.office365.com.
 
      ![](../Images/triggerlogicapp.png)

@@ -42,7 +42,7 @@ Continuous export lets you fully customize what will be exported and where it wi
      
      - Export Frequency:
 
-     - Check the box next to **Streaming updates (5)** and **Snapshots (Preview) (6)**
+     - Check the box next to **Streaming updates (5)** and **Snapshots(6)**
 
      - Export configuration:
 

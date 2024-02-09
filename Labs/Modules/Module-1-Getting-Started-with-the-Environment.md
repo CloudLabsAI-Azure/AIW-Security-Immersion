@@ -91,9 +91,9 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![](../Images/secure-2.png)
     
-1. A new window of Auto-provisioning configuration is opened. Select **Log Analytics Agent (Default)** for **Agent type**, under **Workspace selection** select **Custom workspace** and choose your workspace from the drop-down menu and click **Apply**.
+1. A new window of Auto-provisioning configuration is opened. Under **Workspace selection** select **Custom workspace** and choose your workspace from the drop-down menu and click **Apply**.
 
-     ![](../Images/secure-1.png)
+     ![](../Images/mod1-ex2-2.png)
   
 
 1. Once all the configurations are made, click on **Continue**.

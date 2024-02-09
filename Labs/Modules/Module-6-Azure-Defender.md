@@ -22,7 +22,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
         ![](../Images/securityalert.png)
     
     - Select **Your Subscription**.
-    - On the **Microsoft Defender for Cloud plans**, keep only **Virtual Machines** selected.
+    - On the **Defender for Cloud plans**, keep only **Virtual Machines** selected.
     - Click on the **Create sample alerts** button to trigger the alert simulation for VMs.
 
         ![](../Images/createalerts1.png)
