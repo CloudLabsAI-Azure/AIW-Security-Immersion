@@ -26,7 +26,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     > **Note:** This policy is enabled by default on your subscription as per Microsoft Defender for Cloud recommendations. This is the default set of policies monitored by Microsoft Defender for Cloud. It is automatically assigned as part of onboarding to Microsoft Defender for Cloud. The default assignment contains only audit policies. For more information, please visit https://aka.ms/ascpolicies. Also, if you see one more policy with an ASC default name, please ignore that.
 
-1. To view the policy, click on **Microsft cloud security benchmark** and select **View in Azure Policy**.
+1. To view the policy, click on **Microsft cloud security benchmark** and select **View in Azure Policy** and then click on **Assign**.
 
     ![Template deployment completed](../Images/Sh19.png)
 
@@ -38,7 +38,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/Sh25.png)
 
-1. Under the **Scope** blade, select your **Subscription (1)** from the drop-down list, select Resource Group as **asclab (2)**, and click on **Save (3)**.
+1. Under the **Scope** blade, select your **Subscription (1)** from the drop-down list, select Resource Group as **asclab (2)**, and click on **Select (3)**.
 
     ![Template deployment completed](../Images/Sh26.png)
 
@@ -103,7 +103,7 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
 
-2. Select **Recommendations (1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines (2)** recommendation under the **Secure management ports** section. You can search it using the search box.
+2. Select **Recommendations (1)** from the left navigation pane. Select the **Management ports should be closed on your virtual machines (2)** recommendation. You can search it using the search box.
 
     > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
