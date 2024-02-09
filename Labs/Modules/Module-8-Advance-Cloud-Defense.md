@@ -68,7 +68,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 14. You should see the following error message: *Remote Desktop can't connect to the remote computer*. In this scenario, remote access to the server is not enabled. Close the popup window to continue.
 
-15. Return to the VM blade **Connect** page, click on **Request access** under **Just in time policy** and select **Local machine IP** and then click on **Request access**. The access should be approved in a minute. 
+15. Return to the VM blade **Connect** page, click on **Request access** under **Request just-in-time access** and select **Local machine IP** and then click on **Request access**. The access should be approved in a minute. 
 
      ![request-access](../Images/Mod8E1S15.png)
 
@@ -116,7 +116,7 @@ It maps the current state of these items with the state during the previous scan
 
    ![](../Images/FIM.png)
 
-4. On the Enable File Integrity Monitoring window, review the default **recommended settings** for Windows files, registry files, and Linux files.
+4. On the Enable File Integrity Monitoring window, review the default **recommended settings** for Windows files, Registry, and Linux files.
 
 5. Click on the **Enable File Integrity Monitoring** button.
 
