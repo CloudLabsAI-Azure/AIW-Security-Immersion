@@ -96,7 +96,7 @@ Every security program includes multiple workflows for incident response. The pr
       
      - Resource group:  **asclab** 
  
-     - Logic app name: Enter **Send-RecommendationsChanges**.
+     - Logic app name: Enter **Send-RecommendationsChanges<inject key="DeploymentID" enableCopy="false"/>**.
 
      - Location: Select the location of your **Resource group**
      
@@ -112,7 +112,7 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/gotoresource.png)
 
-1. After the Logic Apps Designer opens, select **Blank Logic App**.
+1. After the Logic Apps Designer opens, select **Logic app designer** from the left panel. Scroll down and choose **Blank Logic App**.
 
     ![](../Images/open-logic-app.png)
 
