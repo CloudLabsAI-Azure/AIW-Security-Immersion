@@ -104,11 +104,11 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
     - Name: **Group-1 (1)**
     - Display name: **Group-1 (2)**
-    - Subgroup: Click on **Create new (3)** and enter the name as **Sub-group1 (4)**. You can also provide a description. Please note that additional metadata can be used as well. The location of the policy metadata object that has additional details about the control and compliance domain.
+    - Category: Click on **Create new (3)** and enter the name as **Sub-group1 (4)**. You can also provide a description. Please note that additional metadata can be used as well. The location of the policy metadata object that has additional details about the control and compliance domain.
     
     - Click on **Save (5)** to create the new group.  
 
-        ![Group create](../Images/createagroup.1.png)
+        ![Group create](../Images/sgp1.png)
   
 1. Repeat the process to create an additional group, for example, **Group 2**.
 
@@ -120,7 +120,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
     -	Azure Backup should be enabled for Virtual Machines
     -	Audit VMs that do not use managed disks
 
-        ![Group create](../Images/policydef.png)
+    ![Group create](../Images/policydef.png)
 
 1. Every policy on the list, has its definition name, reference ID and the associated group. However, you do need to define a group for each policy. To do so, click on the **… (1)** to open the context menu and select **Edit groups (2)**.
 
