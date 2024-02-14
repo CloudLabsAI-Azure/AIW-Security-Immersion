@@ -50,6 +50,8 @@ In Microsoft Defender for Cloud, you will be interacting with the Microsoft Defe
 
      ![Overview: Microsoft Defender  for Cloud tile](../Images/workload%20protection1.png)
 
+   >**Note**: Resource coverage will take about 5-6 hrs to change the status to **fully covered 100%**.
+
 9. Next, select **Regulatory Compliance** from the **Cloud Security** section of the Microsoft Defender for Cloud page.
 
      ![](../Images/regulatory1.png)
