@@ -103,7 +103,7 @@ Exploring secure score
 
     ![](../Images/csv%20report1.png)
    
-7. Under **Recommendation**, search and select **Storage account public access should be disallowed** from the list.
+7. Under **Recommendation**, search and select **Storage account public access should be disallowed** recommendation from the **All recommendations** list.
 
     ![](../Images/mod2-ex2-3.png)
 
