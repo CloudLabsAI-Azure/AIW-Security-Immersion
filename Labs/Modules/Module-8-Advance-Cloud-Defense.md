@@ -76,7 +76,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 17. Now you should get the prompt for the local admin credentials. Login using the below credentials.
  
-      - **VM Username**: <inject key="VM Username"></inject>
+      - **VM Username**: demouser
       - **VM Password**: <inject key="VM Password"></inject>
 
 18. You **are now connected to asclab-win** server. Close the remote control session/log off.
