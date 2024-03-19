@@ -128,8 +128,7 @@ In this exercise, you will create the Microsoft Defender for Cloud default polic
 
     ![Template deployment completed](../Images/Sh14.png)
    
-   > **Note**: Verify that the Toggle button status for the Microsoft cloud security benchmark is set to **On**.
-    
+   > **Note**: Verify that the Toggle button status for the Microsoft cloud security benchmark is set to **On**. If the status option isn't visible, try zooming out in your browser.
 ## Summary
 
 In this module, you have learned how to enable Microsoft Defender for Cloud. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
