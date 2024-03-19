@@ -137,7 +137,7 @@ In this exercise, we will use one of the endpoints that allows retrieving a list
 
 4. Click on **Try It (1)**, then click on the **User icon (2)** to login. You need to log in using the credentials provided in the **Environment Details** tab.
 
-    ![Create sample virtual machine security alerts](../Images/m6ex3step4.png)
+    ![Create sample virtual machine security alerts](../Images/lab5-11.png)
 
     ![Create sample virtual machine security alerts](../Images/m6ex3step4(1).png)
 
@@ -162,6 +162,13 @@ In this exercise, we will use one of the endpoints that allows retrieving a list
 9. Click on the **Run query** button. You should now see a sample response preview in JSON format.
 
     ![Create sample virtual machine security alerts](../Images/m6e3s9.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Summary
 
