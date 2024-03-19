@@ -20,7 +20,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
     ![](../Images/m3e1s1.png)
 
-3. Navigate to the bottom section under **Advanced protection** and click on **Just-in-time VM access** (You should see am unprotected status number).
+3. Navigate to the bottom section under **Advanced protection** and click on **Just-in-time VM access** (You should see unprotected status number).
 
     ![Advanced protection options](../Images/m8ex1.step3.png)
 
@@ -68,7 +68,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 14. You should see the following error message: *Remote Desktop can't connect to the remote computer*. In this scenario, remote access to the server is not enabled. Close the popup window to continue.
 
-15. Return to the VM blade **Connect** page, click on **Request access** under **Request just-in-time access** and select **Local machine IP** and then click on **Request access**. The access should be approved in a minute. 
+15. Return to the VM blade **Connect** page, click on **Request access** under **Request just-in-time access**, select **Local machine IP** and then click on **Request access**. The access should be approved in a minute. 
 
      ![request-access](../Images/Mod8E1S15.png)
 
@@ -121,6 +121,13 @@ It maps the current state of these items with the state during the previous scan
 5. Click on the **Enable File Integrity Monitoring** button.
 
     ![File Integrity Monitoring2](../Images/m8ex3.step5.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Summary
 
