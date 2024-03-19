@@ -100,11 +100,11 @@ Every security program includes multiple workflows for incident response. The pr
 
      - Location: Select the location of your **Resource group**
      
-     - Plane Type: **Consumption**.
+     - Plan Type: **Consumption**.
      
      - Enable log analytics: Select **No**
 
-     - Select **Review + Create** and then click on **Create**.
+     - Select **Review + create** and then click on **Create**.
 
         ![](../Images/logic-app-latest-step3.png)
 
@@ -112,13 +112,13 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/gotoresource.png)
 
-1. After the Logic Apps Designer opens, select **Logic app designer** from the left panel. Scroll down and choose **Blank Logic App**.
+1. Select **Logic app designer** from the left panel. Scroll down and choose **Blank Logic App**.
 
     ![](../Images/open-logic-app.png)
 
 1. Search for **Security Center** in the search box and select **When a Microsoft Defender for Cloud Recommendation is created or triggered** from the list of **Triggers**
 
-    ![](../Images/triggered1.png)
+    ![](../Images/lab5-1.png)
 
 1. Click on the **+ New step** button and type **Outlook send**.
 
@@ -130,7 +130,7 @@ Every security program includes multiple workflows for incident response. The pr
 
    > **Note:** You will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
-1. In the Send an email (V2), enter the below email address in the **To** field.
+1. In the Send an email (V2), select **Sign in**. Select the email address to sign in and enter the below email address in the **To** field.
    
       * Email/Username: <inject key="AzureAdUserEmail"></inject> 
 
@@ -138,7 +138,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 1. Click in the **Subject box**, then type: **Recommendation changed:**
 
-1. Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on the **Dynamic content** tab and then select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
+1. Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on the **Dynamic content** tab and then search and select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
 
 1. Click into the Body text box and type the following:
 
@@ -148,7 +148,7 @@ Every security program includes multiple workflows for incident response. The pr
     - **Status:**</br>
     - **Link to recommendation:**</br>
 
-1. Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by selecting in the list:
+1. Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by searching and selecting in the list:
 
    - Recommendation: `Properties Display Name`</br>
    - Description: `Properties Metadata Description`</br>
