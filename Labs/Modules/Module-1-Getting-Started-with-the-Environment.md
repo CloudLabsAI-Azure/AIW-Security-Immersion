@@ -63,15 +63,17 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![](../Images/m3e1s1.png)
 
-1. Click on **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, select your **Log Analytics workspace as asclab-la-XXXXX (3)**, and click **Upgrade (4)**.
+1. Click on **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, scroll down select your **Log Analytics workspace as asclab-la-XXXXX (3)**, and click **Upgrade (4)**.
 
     > **Note:** If you are not able to see the Log Analytics workspace, then it means your subscription is already upgraded. In this case, you can skip steps 2, and 3 and continue from step 4. Also, you might have to wait for a few seconds to have the upgrade button visible.
 
-    ![Overview: Inventory tile](../Images/newlaw.png)    
+    ![Overview: Inventory tile](../Images/lab1-1.png)
 
-1. Click on **Install agents**. 
+    ![Overview: Inventory tile](../Images/lab1-2.png) 
 
-    ![install-agents](../Images/installagents.png)
+1. Refresh the browser and under Install agents tab, select your subscription and click on **Install agents**. 
+
+    ![install-agents](../Images/lab1-3.png)
    
     > **Note:** If the button is greyed out, then it's already set to **On** and agents are already installed. In this case, you can move on to the next step.
 
