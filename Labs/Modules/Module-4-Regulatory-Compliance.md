@@ -24,7 +24,7 @@ Microsoft Defender for Cloud continuously assesses your hybrid cloud environment
 
 1. On the main page, select the **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
 
-   > **Note**: It might take up to 30 minutes to reflect the Contoso security benchmark after adding the custom initiatives. If this is not available for you, you can skip this exercise and continue with the next exercise. and can check on this later.
+   > **Note**: It might take up to 30 minutes to reflect the Contoso security benchmark after adding the custom initiatives. If this is not available for you, you can skip this exercise and continue with the next exercise and can check on this later.
 
     ![Contoso Security Benchmark](../Images/CSB.png)
 
@@ -130,7 +130,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
      ![edit group](../Images/edit-group1.png)
 
-1. You can assign policy and initiative parameters to be used during the assignment process. Skip this section and click on **Review + Create** to validate your settings. Then, click on **Create**
+1. You can assign policy and initiative parameters to be used during the assignment process. Skip this section and click on **Review + create** to validate your settings. Then, click on **Create**
 
 1. You should now see your new initiative listed here **Custom Benchmark** along with the additional metadata (scope, category, etc.)
 
@@ -152,7 +152,25 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
     ![Template deployment completed](../Images/Sh35.png)
 
+1. Click on **...** for Contoso Benchmark and select **View in Azure Policy**. In the Contoso Benchmark page, select **Assign**.
+
+    ![](../Images/lab4-2.png)
+
+    ![](../Images/lab4-3.png)
+
+1. In the Basics tab of Contoso Security Benchmark, under scope provide your subscription and select **Review + create** and then **Create**.
+
+    ![](../Images/lab4-4.png)
+   
 1. Your custom initiative is now assigned.
+
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Summary
 
