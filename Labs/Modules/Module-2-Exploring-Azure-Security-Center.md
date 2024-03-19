@@ -139,7 +139,7 @@ Asset inventory dashboard allows you to get a single pane of glass view of all y
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it. From the left navigation pane, under the **General** section, select the **Inventory** button.
 
-    ![](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/inventory1.png?raw=true)
+     ![](../Images/lab2-2.png)
     
 2. Hover to the **Summaries strip** at the top of the page.
 
@@ -173,13 +173,13 @@ Asset inventory dashboard allows you to get a single pane of glass view of all y
 
     > **Note:** The list can be filtered and sorted.
 
-10. From the filter menu, select the **Resource Group** filter and **select all** under the Value. Again, from the filter menu, select **Recommendations**, uncheck the **select all** option under the Value, and then select **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find items across the list. When you are done exploring, remember to clear your filter.
+10. From the filter menu, select the **Resource Group** filter and **select all** under the Value and click on **Ok**. Again, from the filter menu, select **Recommendations**, uncheck the **Select all** option under the Value, and then select **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find items across the list. When you are done exploring, remember to clear your filter.
 
     > **Note**: If you don't see **Auditing on SQL Server should be enabled** in search results, that means it is not loaded yet for recommendations, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. If you don't see the data in **Recommendations**, you can note down this step number, then continue to the next exercise and verify this later.
 
 11. Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
-  * Filter the **Resource type** column to include only **App Services or web services**: Select the **Resource type** filter and select **app services and web services** under the Value and Click on **OK**
+  * Filter the **Resource types** column to include only **App Services or web services**: Select the **Resource type** filter and select **function apps and web apps** under the Value and Click on **OK**
   * **Select** the checkboxes of the two app services named *asclab-fa-xx* and *asclab-app-xx*. (Here **xx** is the unique ID of resource).
   * From the top menu, click **Assign tags**
   * Assign `Environment` as the name and  `Production` as the value.
