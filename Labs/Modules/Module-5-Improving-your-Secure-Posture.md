@@ -48,9 +48,9 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 9. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
-10. Click on **Recommendations (1)** from the left side pane under the **General** section. Expand **Remediate vulnerabilities** security control and select **Container registry images should have vulnerability findings resolved (2)**.
+10. Click on **Recommendations (1)** from the left side pane under the **General** section. Under All recommendations, search and select **Azure registry container images should have vulnerabilities resolved(2)**.
  
-     ![asd](../Images/secure-M5-Ex2-S10.1.png)
+     ![asd](../Images/lab5-14.png)
 
     > **Note**: If you don't see the above recommendation that means it is not loaded yet, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number, then continue to the next exercise and verify this later.
 
@@ -60,11 +60,11 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
     - Severity: **High**
     - Total vulnerabilities: **expect to see more than 2 vulnerabilities**
 
-        ![](../Images/secure-M5-Ex2-S11.png)
+        ![](../Images/lab5-13.png)
 
 12. Expand the **Affected resources (1)** section and notice the **Unhealthy registries** count which shows **1 container registry (2)** (asclab**xxx** here xxx is unique ID).
 
-     ![](../Images/secure-M5-Ex2-S12.png)
+     ![](../Images/lab5-15.png)
 
 13. On the **Security Checks** section, notice the number of vulnerabilities.
 
