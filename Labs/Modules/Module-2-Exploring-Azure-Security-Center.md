@@ -78,7 +78,7 @@ Exploring secure score
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it.
 
-    ![](../Images/m3e1s1.png)
+    ![](../Images/lab-all.png)
 
 2. From the left navigation pane, under the **Cloud Security** section, select **Security posture**.
 
