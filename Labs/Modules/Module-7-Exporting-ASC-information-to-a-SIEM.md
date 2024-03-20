@@ -78,7 +78,7 @@ Continuous export lets you fully customize what will be exported and where it wi
 
     ![Respective tables in the Log Analytics workspace](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/Log-editor-tables.png?raw=true)
   
-   > **Note:** Since the continuous export was just enabled, you may need to wait for some time for new events to show up.
+   > **Note:** Since the continuous export was just enabled, you may need to wait for some time for new events to show up. It could require up to few hours to provide the information. If you don't see any result, please return later to check again.
 
 ### Exercise 2: Integration with Microsoft Sentinel
 
