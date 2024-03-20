@@ -176,7 +176,7 @@ Every security program includes multiple workflows for incident response. The pr
      * Subscription: **Your Subscription**
      * Resource group: **asclab**
 
-        ![](../Images/general.png)
+        ![](../Images/lab5-2.png)
       
    - Trigger conditions:
    
@@ -185,7 +185,7 @@ Every security program includes multiple workflows for incident response. The pr
      * Recommendation severity: **All severities selected**
      * Recommendation state: **All states selected**
 
-        ![](../Images/trigger.png)
+        ![](../Images/lab5-3.png)
     
    - Actions:
    
@@ -195,7 +195,7 @@ Every security program includes multiple workflows for incident response. The pr
      
    Click **Create** to complete the task.
 
-     ![](../Images/actions.png)
+     ![](../Images/lab5-4.png)
 
 4. Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations.
 
