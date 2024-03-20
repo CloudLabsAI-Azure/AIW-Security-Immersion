@@ -28,7 +28,7 @@ Microsoft Defender for Cloud continuously assesses your hybrid cloud environment
 
     ![Contoso Security Benchmark](../Images/CSB.png)
 
-1. Expand the **Contoso Security Benchmark** compliance control. Click on the **Managed identity should be used in your function app**
+1. Expand the **Contoso Security Benchmark** compliance control. Click on the **Managed identity should be used in function apps**
 
     ![Remmediate function app](../Images/CSB1.png)
    
