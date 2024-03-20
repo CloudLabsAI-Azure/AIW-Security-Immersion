@@ -186,11 +186,11 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
     * Under the **Basics** tab under the Scope header, select the ellipse icon **(...)** to select your subscription and click on the **Select**.
     * Then click on **Next**.
 
-        ![](../Images/neew2.png)
+        ![](../Images/lab3-8.png)
     
 9. In the **Advanced** tab, leave it by default and click on **Next**.
 
-    ![](../Images/neew3.png)
+      ![](../Images/lab3-9.png)
 
 10. In the **Parameters** tab, leave the *Effect* and *Retention days* with default values.
 
@@ -199,7 +199,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
      - Select **Review + create** to assign the policy to your subscription.
      - Click **Create**
 
-        ![](../Images/neew4.png)
+        ![](../Images/lab3-10.png)
 
 11. On the **Auditing on SQL server should be enabled** page, perform the following steps:
 
