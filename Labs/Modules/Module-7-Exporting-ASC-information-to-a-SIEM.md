@@ -12,7 +12,7 @@ Continuous export lets you fully customize what will be exported and where it wi
 
 1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
 
-    ![](../Images/m3e1s1.png)
+    ![](../Images/lab-all.png)
 
 1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here, you'll be able to see the subscription.
 
