@@ -133,7 +133,7 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
  
     > **Note:** You may have to scroll down to find the option.
     
-    > **Note:** If you are unable to **Enable** the create incidents button, follow the below steps:
+    > **Note:** If you cannot see the **Enable** button in the Create incidents option, follow the below steps:
     
 14. In the Azure portal under Microsoft Sentinel, select **Analytics (1)**. Select the **Rule templates (2)** tab to see all of the analytics rule templates. search for **Create incident (3)** and select **Create incidents based on Microsoft Defender for Cloud (4)**, and click on **Create rule (5)**.
 
