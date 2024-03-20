@@ -10,7 +10,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 1. From the Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
-    ![](../Images/m3e1s1.png)
+    ![](../Images/lab-all.png)
 
 1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here, you'll be able to see the subscription.
 
@@ -257,7 +257,7 @@ Add each policy one by one:
 
 1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
-    ![](../Images/m3e1s1.png)
+    ![](../Images/lab-all.png)
 
 2. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able to see the subscription.
 
