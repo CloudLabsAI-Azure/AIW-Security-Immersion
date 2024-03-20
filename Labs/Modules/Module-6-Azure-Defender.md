@@ -25,7 +25,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
     - On the **Defender for Cloud plans**, keep only **Virtual Machines** selected.
     - Click on the **Create sample alerts** button to trigger the alert simulation for VMs.
 
-        ![](../Images/createalerts1.png)
+        ![](../Images/lab6-1.png)
 
 3. You will see sample alert creation in progress; wait for the process to complete. Now you can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
 
@@ -52,7 +52,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
     - On the Microsoft Defender  for Cloud plans, keep only **Key Vaults** selected.
     - Click the **Create sample alerts** button to trigger the alert simulation for Key Vaults.
 
-        ![](../Images/keyvalut%20alert.png)
+        ![](../Images/lab6-2.png)
     
 9. After the Sample alerts creating in progress appear, wait for the process to complete. You can track the progress by opening the notification center or on the activity log (this process usually takes 2 minutes to complete)
 
@@ -64,7 +64,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 12. At the top menu, dismiss the alert by changing the status from Active to **Dismissed** and click on **OK**.
 
-     ![add](../Images/dismiss.png)
+     ![add](../Images/lab6-3.png)
 
 ### Exercise 2: Alert suppression
 
@@ -79,7 +79,7 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 3. Expand the **Suppress similar alerts** under the Take action section and click on **Create Suppression Rule**.
 
-    ![](../Images/supress.png)
+    ![](../Images/lab6-4.png)
 
 4. After the **New suppression rule** pane opens, enter the following details:
 
@@ -115,7 +115,7 @@ In the previous step, we used the dismiss option to manually dismiss a single al
 
 6. Click on the rule you have recently created: `Testing-AutoDismiss-KV` and change the expiration to a month ahead of the current date. Next, click on **Apply**.
 
-    ![](../Images/editsuppression.png)
+    ![](../Images/lab6-5.png)
   
     > **Note**: If you receive any pop-up stating the **Warning** alert, click on **OK**
 
