@@ -248,6 +248,8 @@ Azure Secure Score data is available in ARG so you can query and calculate your 
 
     ![](../Images/run-query1.png)
 
+   > **Note:** It could require up to few hours for ARG to provide the information. If you don't see any result, please return later to check again.
+
 3. You should now see your subscription ID listed here, along with the current score (in points), the max score and the score in percentage.
 
 4. To return the status of all the security controls, select **New query**. Next, paste the following KQL query and click on **Run query**:
@@ -260,6 +262,8 @@ Azure Secure Score data is available in ARG so you can query and calculate your 
      ```
 
      ![](../Images/run-query2.png)
+
+   > **Note:** It could require up to few hours for ARG to provide the information. If you don't see any result, please return later to check again.
 
 More details on the [official article](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls) or on the [blog post](https://techcommunity.microsoft.com/t5/azure-security-center/querying-your-secure-score-across-multiple-subscriptions-in/ba-p/1749193)
 
