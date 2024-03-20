@@ -89,9 +89,9 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![](../Images/secure-3.png)
 
-1. On the **Settings & monitoring** tab, toggle the status of **Log Analytics agent/Azure Monitor agent** to **On** (if it is not already set to On). Click on **Edit configuration** under the **Configuration** header of the Log Analytics agent/Azure Monitor agent.
+1. On the **Settings & monitoring** tab, toggle the status of **Log Analytics agent** to **On** (if it is not already set to On). Click on **Edit configuration** under the **Configuration** header of the Log Analytics agent/Azure Monitor agent.
 
-    ![](../Images/secure-2.png)
+    ![](../Images/lab1-4.png)
     
 1. A new window of Auto-provisioning configuration is opened. Under **Workspace selection** select **Custom workspace** and choose your workspace from the drop-down menu and click **Apply**.
 
