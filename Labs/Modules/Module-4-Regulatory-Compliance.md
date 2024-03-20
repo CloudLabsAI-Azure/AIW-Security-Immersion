@@ -24,13 +24,13 @@ Microsoft Defender for Cloud continuously assesses your hybrid cloud environment
 
 1. On the main page, select the **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
 
-   > **Note**: It might take up to 30 minutes to reflect the Contoso security benchmark after adding the custom initiatives. If this is not available for you, you can skip this exercise and continue with the next exercise and can check on this later.
+   > **Note**: It might take up to 24 hours to reflect the Contoso security benchmark after adding the custom initiatives. If this is not available for you, you can skip this exercise and continue with the next exercise and can check on this later.
 
-    ![Contoso Security Benchmark](../Images/CSB.png)
+    ![Contoso Security Benchmark](../Images/lab4-6.png)
 
 1. Expand the **Contoso Security Benchmark** compliance control. Click on the **Managed identity should be used in function apps**
 
-    ![Remmediate function app](../Images/CSB1.png)
+    ![Remmediate function app](../Images/lab4-5.png)
    
 1. Under **Managed identity should be used in your function app** tab, expand **Affected resources**.
 
@@ -98,7 +98,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
 1. On the **Initiative definition** blade click on **Groups**, In this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create group**.
 
-    ![](../Images/creategroup.png)
+    ![](../Images/lab4-1.png)
    
 1. Under **Create group**, enter the following details:
 
