@@ -19,7 +19,7 @@ In Microsoft Defender for Cloud, you will be interacting with the Microsoft Defe
 2. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as **Secure Score, Regulatory Compliance, and Microsoft Defender for Cloud**.
 
    > ❗ Important: <br>
-   > Microsoft Defender for Cloud takes time to populate information such as secure scores, compliance, recommendations, etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. As we have already enabled Microsoft Defender for the cloud in this tenant, the data should be available now.
+   > Microsoft Defender for Cloud takes time to populate information such as secure scores, compliance, recommendations, etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. It could require up to 24 hours for all the information to appear. If you don't see it, please return later to check again.
 
     ![Microsoft Defender for Cloud: Overview dashboard](../Images/msdefender-1.png)
 
@@ -86,6 +86,7 @@ Exploring secure score
 
 3. On the Microsoft Defender for Cloud | Secure Score page, review your current **Overall Secure Score**.
 
+     > **Note:** It could require up to 24 hours for secure score to appear. If you don't see it, please return later to check again.
    > ⭐ Notice: <br>
    > The score is shown as a percentage value; you can also see the points based on which the score is calculated next to the percentage. See the following example:
    > 
@@ -122,7 +123,9 @@ Exploring secure score
 10. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**. This will automatically apply the remediation to the selected resource.
 
      ![](../Images/c2.png)
-  
+
+       > **Note:** If storage account has already been moved to the **Healthy resources** tab, then move on to the next exercise.
+
 11. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
 
      ![](../Images/c3.png)
