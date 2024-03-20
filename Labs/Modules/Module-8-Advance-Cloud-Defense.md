@@ -27,7 +27,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 4. When you are on the **Just-in-time VM access** page, select the **Not configured** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
     
     > **Note**: If the virtual machines `asclab-linux` and `asclab-win` are present under the **Unsupported** tab, then follow the below instructions to enable **Just-in-time VM access**.
-    ![](../Images/justintime.png)
+    ![](../Images/lab8-1.png)
 
     - Navigate to **asclab** resource group and select **asclab-win** virtual machine.
        - Select **Configuration** from the left-hand side menu and click on **Enable Just-in-time**
@@ -42,7 +42,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 5. Select **asclab-win** and then click on the **Enable JIT on 1 VM** button.
     > If you have followed the above instructions to enable **Just-in-time VM access**, you can skip Steps 5-8 and continue from Step 9.
     
-    ![Enable JIT on Windows VM](../Images/m8ex1.step5.png)
+    ![Enable JIT on Windows VM](../Images/lab8-2.png)
 
 6. On the **JIT VM access configuration** page, keep just the **3389 (RDP) port** and remove all the other ports listed. To remove, click on the ellipses icon (...) for each port and then click on **Delete**.
 
@@ -56,13 +56,19 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 10. Select the virtual machine **asclab-win**.
 
-11. From the left side menu, click on **Connect** button and then select **Native RDP**.
+11. From the left side menu, click on **Connect** button and then in the **Native RDP** tab choose **Select**.
 
-     ![Windows VM - Connect RDP](../Images/Mod8E1S11.png)
+     ![Windows VM - Connect RDP](../Images/lab8-5.png)
+
+    > **Note**: If you get a pop up window saying **Your Virtual machine is stopped** then select **Start VM**
 
 12. On the **Native RDP** section, click on the **Download RDP file** button. Alternatively, from the VM blade, look for the Public IP address and try to connect using RDP.
 
      ![download-anyway](../Images/ModE1S12.png)
+
+    > **Note**: If you get a Downloads notification, select **Keep**
+
+     ![download-anyway](../Images/lab8-7.png)
 
 13. Click on the downloaded file to initiate a remote connection to the server. On the warning message, ignore the message by clicking on **Connect**.
 
@@ -95,7 +101,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 
 4. Click on the **Recommended** tab.
 
-    ![Adaptive Application Control2](../Images/adaptive-application-control-new.png)
+    ![Adaptive Application Control2](../Images/lab8-8.png)
 
     >**Note:** First-time users will not get any group information under the Group Name section. This is because Microsoft Defender for Cloud needs at least two weeks of data to define the unique recommendations per group of machines. 
 
