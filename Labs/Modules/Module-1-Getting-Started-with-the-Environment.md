@@ -61,7 +61,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
 1. Type **Microsoft Defender for Cloud** in the search box on top of the **Azure Portal** and click to open it.
 
-    ![](../Images/m3e1s1.png)
+    ![](../Images/lab-all.png)
 
 1. Click on **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, scroll down select your **Log Analytics workspace as asclab-la-XXXXX (3)**, and click **Upgrade (4)**.
 
