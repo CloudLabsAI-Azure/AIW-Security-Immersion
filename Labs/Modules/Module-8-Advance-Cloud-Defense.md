@@ -18,16 +18,16 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 2. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
 
-    ![](../Images/m3e1s1.png)
+    ![](../Images/lab-all.png)
 
-3. Navigate to the bottom section under **Advanced protection** and click on **Just-in-time VM access** (You should see am unprotected status number).
+3. Navigate to the bottom section under **Advanced protection** and click on **Just-in-time VM access** (You should see unprotected status number).
 
     ![Advanced protection options](../Images/m8ex1.step3.png)
 
 4. When you are on the **Just-in-time VM access** page, select the **Not configured** tab. You should see virtual machines listed: `asclab-linux` and `asclab-win`.
     
     > **Note**: If the virtual machines `asclab-linux` and `asclab-win` are present under the **Unsupported** tab, then follow the below instructions to enable **Just-in-time VM access**.
-    ![](../Images/justintime.png)
+    ![](../Images/lab8-1.png)
 
     - Navigate to **asclab** resource group and select **asclab-win** virtual machine.
        - Select **Configuration** from the left-hand side menu and click on **Enable Just-in-time**
@@ -42,7 +42,7 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 5. Select **asclab-win** and then click on the **Enable JIT on 1 VM** button.
     > If you have followed the above instructions to enable **Just-in-time VM access**, you can skip Steps 5-8 and continue from Step 9.
     
-    ![Enable JIT on Windows VM](../Images/m8ex1.step5.png)
+    ![Enable JIT on Windows VM](../Images/lab8-2.png)
 
 6. On the **JIT VM access configuration** page, keep just the **3389 (RDP) port** and remove all the other ports listed. To remove, click on the ellipses icon (...) for each port and then click on **Delete**.
 
@@ -56,19 +56,25 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 10. Select the virtual machine **asclab-win**.
 
-11. From the left side menu, click on **Connect** button and then select **Native RDP**.
+11. From the left side menu, click on **Connect** button and then in the **Native RDP** tab choose **Select**.
 
-     ![Windows VM - Connect RDP](../Images/Mod8E1S11.png)
+     ![Windows VM - Connect RDP](../Images/lab8-5.png)
+
+    > **Note**: If you get a pop up window saying **Your Virtual machine is stopped** then select **Start VM**
 
 12. On the **Native RDP** section, click on the **Download RDP file** button. Alternatively, from the VM blade, look for the Public IP address and try to connect using RDP.
 
      ![download-anyway](../Images/ModE1S12.png)
 
+    > **Note**: If you get a Downloads notification, select **Keep**
+
+     ![download-anyway](../Images/lab8-7.png)
+
 13. Click on the downloaded file to initiate a remote connection to the server. On the warning message, ignore the message by clicking on **Connect**.
 
 14. You should see the following error message: *Remote Desktop can't connect to the remote computer*. In this scenario, remote access to the server is not enabled. Close the popup window to continue.
 
-15. Return to the VM blade **Connect** page, click on **Request access** under **Request just-in-time access** and select **Local machine IP** and then click on **Request access**. The access should be approved in a minute. 
+15. Return to the VM blade **Connect** page, click on **Request access** under **Request just-in-time access**, select **Local machine IP** and then click on **Request access**. The access should be approved in a minute. 
 
      ![request-access](../Images/Mod8E1S15.png)
 
@@ -95,7 +101,7 @@ Application control helps you deal with malicious and/or unauthorized software, 
 
 4. Click on the **Recommended** tab.
 
-    ![Adaptive Application Control2](../Images/adaptive-application-control-new.png)
+    ![Adaptive Application Control2](../Images/lab8-8.png)
 
     >**Note:** First-time users will not get any group information under the Group Name section. This is because Microsoft Defender for Cloud needs at least two weeks of data to define the unique recommendations per group of machines. 
 
@@ -121,6 +127,13 @@ It maps the current state of these items with the state during the previous scan
 5. Click on the **Enable File Integrity Monitoring** button.
 
     ![File Integrity Monitoring2](../Images/m8ex3.step5.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Summary
 

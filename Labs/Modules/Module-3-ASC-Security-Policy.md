@@ -10,7 +10,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 1. From the Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
-    ![](../Images/m3e1s1.png)
+    ![](../Images/lab-all.png)
 
 1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here, you'll be able to see the subscription.
 
@@ -20,7 +20,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/m1e2.1s2.png)
    
-1. Click on **Security policies (1)** under Settings By default, there is one security policy assignment which is **Microsft cloud security benchmark**.
+1. Click on **Security policies (1)** under Settings. By default, there is one security policy assignment which is **Microsft cloud security benchmark**.
 
     ![Template deployment completed](../Images/Sh14.png)
 
@@ -73,7 +73,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
     ![](../Images/m3ex2.step1.png)
 
-2. From the left navigation pane, under the **Authoring** section, click on **Definitions (1)**. From the top menu, use the filter ribbon, set the _Definitions Type_ as **Initiative (2)**, select **Security Center (3)** from the _Category_ filter, and click on **Apply (5)**.
+2. From the left navigation pane, under the **Authoring** section, click on **Definitions (1)**. From the top menu, use the filter ribbon, set the _Definition Type_ as **Initiative (2)**, select **Security Center (3)** from the _Category_ filter, and click on **Apply (5)**.
 
     ![policy assignment](../Images/Sh29.png)	
 
@@ -186,11 +186,11 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
     * Under the **Basics** tab under the Scope header, select the ellipse icon **(...)** to select your subscription and click on the **Select**.
     * Then click on **Next**.
 
-        ![](../Images/neew2.png)
+        ![](../Images/lab3-8.png)
     
 9. In the **Advanced** tab, leave it by default and click on **Next**.
 
-    ![](../Images/neew3.png)
+      ![](../Images/lab3-9.png)
 
 10. In the **Parameters** tab, leave the *Effect* and *Retention days* with default values.
 
@@ -199,7 +199,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
      - Select **Review + create** to assign the policy to your subscription.
      - Click **Create**
 
-        ![](../Images/neew4.png)
+        ![](../Images/lab3-10.png)
 
 11. On the **Auditing on SQL server should be enabled** page, perform the following steps:
 
@@ -249,7 +249,7 @@ Add each policy one by one:
     - *Public network access on Azure SQL Database should be disabled*
     - *Storage accounts should restrict network access*
 
-7. Select **Review + Create (5)** and click on **Create**.
+7. Select **Review + create (5)** and click on **Create**.
 
     ![custom initiative](../Images/defaultpolicy-02.png)
 
@@ -257,7 +257,7 @@ Add each policy one by one:
 
 1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
-    ![](../Images/m3e1s1.png)
+    ![](../Images/lab-all.png)
 
 2. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able to see the subscription.
 
@@ -270,8 +270,26 @@ Add each policy one by one:
 4. Click on **Security policies (1)**. In the search bar, search for **Contoso Security Benchmark (2)**. Click on the toggle button to change the status to **On (3)**.
 
     ![Template deployment completed](../Images/Sh32.png)
+
+5. Click on **...** for Contoso Security Benchmark and select **View in Azure Policy**. In the Contoso Security Benchmark page, select **Assign**.
+
+    ![](../Images/lab3-5.png)
+
+    ![](../Images/lab3-6.png)
+
+6. In the Basics tab of Contoso Security Benchmark, under scope provide your subscription and select **Review + create** and then **Create**.
+
+    ![](../Images/lab3-7.png)
    
-5. Your custom initiative is now assigned.
+7. Your custom initiative is now assigned.
+
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Summary
 

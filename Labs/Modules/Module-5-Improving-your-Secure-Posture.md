@@ -48,9 +48,9 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 9. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
 
-10. Click on **Recommendations (1)** from the left side pane under the **General** section. Expand **Remediate vulnerabilities** security control and select **Container registry images should have vulnerability findings resolved (2)**.
+10. Click on **Recommendations (1)** from the left side pane under the **General** section. Under All recommendations, search and select **Azure registry container images should have vulnerabilities resolved(2)**.
  
-     ![asd](../Images/secure-M5-Ex2-S10.1.png)
+     ![asd](../Images/lab5-14.png)
 
     > **Note**: If you don't see the above recommendation that means it is not loaded yet, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number, then continue to the next exercise and verify this later.
 
@@ -60,11 +60,11 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
     - Severity: **High**
     - Total vulnerabilities: **expect to see more than 2 vulnerabilities**
 
-        ![](../Images/secure-M5-Ex2-S11.png)
+        ![](../Images/lab5-13.png)
 
 12. Expand the **Affected resources (1)** section and notice the **Unhealthy registries** count which shows **1 container registry (2)** (asclab**xxx** here xxx is unique ID).
 
-     ![](../Images/secure-M5-Ex2-S12.png)
+     ![](../Images/lab5-15.png)
 
 13. On the **Security Checks** section, notice the number of vulnerabilities.
 
@@ -100,11 +100,11 @@ Every security program includes multiple workflows for incident response. The pr
 
      - Location: Select the location of your **Resource group**
      
-     - Plane Type: **Consumption**.
+     - Plan Type: **Consumption**.
      
      - Enable log analytics: Select **No**
 
-     - Select **Review + Create** and then click on **Create**.
+     - Select **Review + create** and then click on **Create**.
 
         ![](../Images/logic-app-latest-step3.png)
 
@@ -112,13 +112,13 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/gotoresource.png)
 
-1. After the Logic Apps Designer opens, select **Logic app designer** from the left panel. Scroll down and choose **Blank Logic App**.
+1. Select **Logic app designer** from the left panel. Scroll down and choose **Blank Logic App**.
 
     ![](../Images/open-logic-app.png)
 
 1. Search for **Security Center** in the search box and select **When a Microsoft Defender for Cloud Recommendation is created or triggered** from the list of **Triggers**
 
-    ![](../Images/triggered1.png)
+    ![](../Images/lab5-1.png)
 
 1. Click on the **+ New step** button and type **Outlook send**.
 
@@ -130,7 +130,7 @@ Every security program includes multiple workflows for incident response. The pr
 
    > **Note:** You will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
-1. In the Send an email (V2), enter the below email address in the **To** field.
+1. In the Send an email (V2), select **Sign in**. Select the email address to sign in and enter the below email address in the **To** field.
    
       * Email/Username: <inject key="AzureAdUserEmail"></inject> 
 
@@ -138,7 +138,7 @@ Every security program includes multiple workflows for incident response. The pr
 
 1. Click in the **Subject box**, then type: **Recommendation changed:**
 
-1. Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on the **Dynamic content** tab and then select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
+1. Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on the **Dynamic content** tab and then search and select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
 
 1. Click into the Body text box and type the following:
 
@@ -148,7 +148,7 @@ Every security program includes multiple workflows for incident response. The pr
     - **Status:**</br>
     - **Link to recommendation:**</br>
 
-1. Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by selecting in the list:
+1. Click just after each section, to get your cursor in the right place. In the **dynamic content box**, match each line to the following content by searching and selecting in the list:
 
    - Recommendation: `Properties Display Name`</br>
    - Description: `Properties Metadata Description`</br>
@@ -176,7 +176,7 @@ Every security program includes multiple workflows for incident response. The pr
      * Subscription: **Your Subscription**
      * Resource group: **asclab**
 
-        ![](../Images/general.png)
+        ![](../Images/lab5-2.png)
       
    - Trigger conditions:
    
@@ -185,7 +185,7 @@ Every security program includes multiple workflows for incident response. The pr
      * Recommendation severity: **All severities selected**
      * Recommendation state: **All states selected**
 
-        ![](../Images/trigger.png)
+        ![](../Images/lab5-3.png)
     
    - Actions:
    
@@ -195,7 +195,7 @@ Every security program includes multiple workflows for incident response. The pr
      
    Click **Create** to complete the task.
 
-     ![](../Images/actions.png)
+     ![](../Images/lab5-4.png)
 
 4. Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations.
 
@@ -222,6 +222,13 @@ Every security program includes multiple workflows for incident response. The pr
 
      ![](../Images/triggerlogicapp.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ### Exercise 3: Accessing your secure score via ARG
 Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
 Azure Secure Score data is available in ARG so you can query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
@@ -241,6 +248,8 @@ Azure Secure Score data is available in ARG so you can query and calculate your 
 
     ![](../Images/run-query1.png)
 
+   > **Note:** It could require up to few hours for ARG to provide the information. If you don't see any result, please return later to check again.
+
 3. You should now see your subscription ID listed here, along with the current score (in points), the max score and the score in percentage.
 
 4. To return the status of all the security controls, select **New query**. Next, paste the following KQL query and click on **Run query**:
@@ -253,6 +262,8 @@ Azure Secure Score data is available in ARG so you can query and calculate your 
      ```
 
      ![](../Images/run-query2.png)
+
+   > **Note:** It could require up to few hours for ARG to provide the information. If you don't see any result, please return later to check again.
 
 More details on the [official article](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls) or on the [blog post](https://techcommunity.microsoft.com/t5/azure-security-center/querying-your-secure-score-across-multiple-subscriptions-in/ba-p/1749193)
 

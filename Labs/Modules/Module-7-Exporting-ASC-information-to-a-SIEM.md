@@ -12,7 +12,7 @@ Continuous export lets you fully customize what will be exported and where it wi
 
 1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
 
-    ![](../Images/m3e1s1.png)
+    ![](../Images/lab-all.png)
 
 1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here, you'll be able to see the subscription.
 
@@ -78,7 +78,7 @@ Continuous export lets you fully customize what will be exported and where it wi
 
     ![Respective tables in the Log Analytics workspace](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/Log-editor-tables.png?raw=true)
   
-   > **Note:** Since the continuous export was just enabled, you may need to wait for some time for new events to show up.
+   > **Note:** Since the continuous export was just enabled, you may need to wait for some time for new events to show up. It could require up to few hours to provide the information. If you don't see any result, please return later to check again.
 
 ### Exercise 2: Integration with Microsoft Sentinel
 
@@ -133,10 +133,7 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
  
     > **Note:** You may have to scroll down to find the option.
     
-    > **Note:** If you are unable to **Enable** the create incidents button, follow the below steps:
-
-      ![](../Images/Sh39.png)
-
+    > **Note:** If you cannot see the **Enable** button in the Create incidents option, follow the below steps:
     
 14. In the Azure portal under Microsoft Sentinel, select **Analytics (1)**. Select the **Rule templates (2)** tab to see all of the analytics rule templates. search for **Create incident (3)** and select **Create incidents based on Microsoft Defender for Cloud (4)**, and click on **Create rule (5)**.
 
@@ -146,13 +143,16 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 
     ![](../Images/Sh8.png)
 
-16. Click on **Review + Create** and click on **Save** button.
+16. Click on **Next: Automated response >** and then click on **Next: Review + Create >** and click on **Save** button.
 
     ![](../Images/Sh9.png)
 
-17. Navigate back to the **Data connectors** tab; select the **Subscription-based Microsoft Defender for Cloud (Legacy)** connector, and then click on **Open connector page**. You will see that Create incidents (recommended) is **Enabled**.
-
-    ![](../Images/Sh40.png)
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Summary
 
