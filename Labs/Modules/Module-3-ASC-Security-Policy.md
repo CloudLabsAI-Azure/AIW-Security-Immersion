@@ -69,7 +69,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 Azure Policy keeps track of compliance for your Azure resources based on policy definitions you assign, these are called policy assignments. By default, Microsoft provides many built-in definitions that you can leverage as you see fit.
 
-1. Type **Policy** in the search box located at the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **labvm-xxxxxx** and navigate to this link ```https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade```.
+1. Type **Policy** in the search box located at the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **labvm-<inject key="DeploymentID" enableCopy="false"/>** and navigate to this link ```https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade```.
 
     ![](../Images/m3ex2.step1.png)
 
@@ -103,17 +103,15 @@ When working with a recommendation, you can create an exemption by clicking the 
 
 1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
 
-2. Select **Recommendations (1)** from the left navigation pane. Search and select the **Management ports should be closed on your virtual machines (2)** recommendation from the **All recommendations** tab. You can search it using the search box.
+2. Select **Recommendations (1)** from the left navigation pane. Search and select the **Management ports should be closed on your virtual machines (2)** recommendation from the **All recommendations** tab, select the **asclab-win** resource. You can search it using the search box.
 
     > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-    ![policy assignment](../Images/mod3-ex1-2.png)
+    ![policy assignment](../Images/asc-win.png)
 
-3. Expand the **Affected resources** bar, review the current resources under **Unhealthy resources** - **asclab-win**, **labvm-xxxxxx**, and **asclab-linux**.
+4. From the right-navigation pane click on **Exempt**.
 
-4. Select the **asclab-win** resource and then click on **Exempt**.
-
-    ![](../Images/exemptfix1.png)
+    ![](../Images/exempt.png)
 
 5. The **Exempt pane** opens:
     - Name: **ASC-Management ports should be closed on your virtual machines**.
@@ -123,9 +121,9 @@ When working with a recommendation, you can create an exemption by clicking the 
 
         ![](../Images/exempt-01.png)
 
-  > ⭐ Good to know: <br>
-  > **Mitigated** - This issue isn't relevant to the resource because it's been handled by a different tool or process than the one being suggested
-  > **Waiver** - Accepting the risk for this resource
+        > ⭐ Good to know: <br>
+        > **Mitigated** - This issue isn't relevant to the resource because it's been handled by a different tool or process than the one being suggested
+        > **Waiver** - Accepting the risk for this resource
 
 6. It might take up to **30 min for the exemption to take effect**. Once this happens:
     - The resource doesn't impact your secure score.
