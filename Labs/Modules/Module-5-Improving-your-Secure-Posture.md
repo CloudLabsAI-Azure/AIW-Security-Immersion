@@ -228,8 +228,6 @@ Every security program includes multiple workflows for incident response. The pr
      
     - You should receive an email, verifying in your inbox. On the labvm-xxxxxx open a new tab in the web browser and navigate to https://outlook.office365.com.
 
-       ![](../Images/triggerlogicapp.png)
-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
 - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
