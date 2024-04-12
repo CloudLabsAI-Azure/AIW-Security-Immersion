@@ -112,9 +112,11 @@ Every security program includes multiple workflows for incident response. The pr
 
     ![](../Images/gotoresource.png)
 
-1. Select **Logic app designer** from the left panel. Scroll down and choose **Blank Logic App**.
+ then click on "Enable Legacy Designer." Once the "Legacy designer" popup appears, proceed by clicking on it.
+ 
+1. Select **Logic app designer** from the left panel then click on **Enable Legacy Designer**. Once the **Legacy designer** popup appears, proceed by clicking on it. Scroll down and choose **Blank Logic App**. 
 
-    ![](../Images/open-logic-app.png)
+   ![](../Images/open-logic-app.png)
 
 1. Search for **Security Center** in the search box and select **When a Microsoft Defender for Cloud Recommendation is created or triggered** from the list of **Triggers**
 
@@ -214,13 +216,19 @@ Every security program includes multiple workflows for incident response. The pr
    
       > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-     ![](../Images/mod5-ex2-2.png)
+     ![](../Images/Im1.png)
      
-   - Select resource *asclab-aks* and then click on the **Trigger Logic App** button.
-   - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges<inject key="DeploymentID" enableCopy="false"/>) then click on **Trigger**.
-   - You should receive an email, verifying in your inbox. On the labvm-xxxxxx open a new tab in the web browser and navigate to https://outlook.office365.com.
+   - In **Take action** tab under **Workflow automation** click on the **Trigger Logic App** button.
 
-     ![](../Images/triggerlogicapp.png)
+      ![](../Images/Im2.png)
+     
+   - In the Trigger a logic app blade, select the Logic App you created in the previous step (Send-RecommendationsChanges<inject key="DeploymentID" enableCopy="false"/>) then click on **Trigger**.
+
+       ![](../Images/Im3.png)
+     
+    - You should receive an email, verifying in your inbox. On the labvm-xxxxxx open a new tab in the web browser and navigate to https://outlook.office365.com.
+
+       ![](../Images/triggerlogicapp.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
