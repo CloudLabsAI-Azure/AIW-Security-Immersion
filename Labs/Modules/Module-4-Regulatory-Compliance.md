@@ -97,8 +97,6 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
         ![Benchmark Next](../Images/Sh4.png)
 
 1. On the **Initiative definition** blade click on **Groups**, In this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create group**.
-
-    ![](../Images/lab4-1.png)
    
 1. Under **Create group**, enter the following details:
 
