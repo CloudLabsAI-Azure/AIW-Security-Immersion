@@ -162,6 +162,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
    
 1. Your custom initiative is now assigned.
 
+<validation step ="43e608d1-6cbd-48c7-b0f4-c513e7959b3c" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
