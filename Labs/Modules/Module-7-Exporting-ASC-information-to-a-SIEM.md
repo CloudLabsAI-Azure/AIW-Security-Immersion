@@ -153,7 +153,7 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
+    <validation step ="7e41d4bf-2844-4d09-90f0-4888044c5912" />
 ### Summary
 
 In this lab you have completed configuring continuous export for the Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings, and enabling the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
