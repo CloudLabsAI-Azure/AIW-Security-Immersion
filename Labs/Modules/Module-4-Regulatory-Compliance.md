@@ -169,7 +169,7 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
+    <validation step ="01bad42a-6d4b-485f-82db-daba1ae8150b" />
 ### Summary
 
 In this module, you have completed Exploring **Microsoft Defender for cloud** features - **Regulatory Compliance dashboard**, **Added new standards** and **Created your own benchmark**.
