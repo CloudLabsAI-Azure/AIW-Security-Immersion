@@ -281,6 +281,8 @@ Add each policy one by one:
    
 7. Your custom initiative is now assigned.
 
+### Validation:
+
 <validation step ="5a49fc4d-d90b-4be3-9ac6-17a8d1b0bbf6" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
