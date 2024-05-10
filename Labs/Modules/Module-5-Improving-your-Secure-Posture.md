@@ -234,7 +234,7 @@ Every security program includes multiple workflows for incident response. The pr
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-    <validation step ="f595c19a-c61d-4b60-84e3-8d01720d5aab" />
+    <validation step ="845d2579-8c67-4525-a137-b105568741c7" />
 ### Exercise 3: Accessing your secure score via ARG
 Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
 Azure Secure Score data is available in ARG so you can query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
