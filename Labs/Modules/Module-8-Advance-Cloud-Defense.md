@@ -134,7 +134,7 @@ It maps the current state of these items with the state during the previous scan
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-    <validation step ="8ba9720a-5e88-4ba2-aa52-3bfa9dccc864" />
+    <validation step ="1e2354f0-1f25-4c38-a196-008d267eca18" />
 ### Summary
 
   * In this module, you have completed exploring different **Microsoft Defender for Cloud** features - **Used JIT to reduce the attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**. You have reached the end of the lab.
