@@ -30,9 +30,9 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
     ![](../Images/lab8-1.png)
 
     - Navigate to **asclab** resource group and select **asclab-win** virtual machine.
-       - Select **Configuration** from the left-hand side menu and click on **Enable Just-in-time**
+       - Select **Configuration** from the left-hand side menu in **Settings** and click on **Enable Just-in-time**
        
-           ![](../Images/jit-01.png)
+           ![](../Images/M8E1S4-i.png)
        
        - Navigate back to **Microsoft Defender for Cloud** and select **Workload protections** under **Cloud Security** from the left side pane, then click on **Just-in-time VM access**.
        - Review the **Configured** tab, now you should see your VM configured: `asclab-win`
