@@ -128,13 +128,15 @@ It maps the current state of these items with the state during the previous scan
 
     ![File Integrity Monitoring2](../Images/m8ex3.step5.png)
 
+<validation step="1e2354f0-1f25-4c38-a196-008d267eca18" />
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
 - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-    <validation step ="1e2354f0-1f25-4c38-a196-008d267eca18" />
+    
 ### Summary
 
   * In this module, you have completed exploring different **Microsoft Defender for Cloud** features - **Used JIT to reduce the attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**. You have reached the end of the lab.
