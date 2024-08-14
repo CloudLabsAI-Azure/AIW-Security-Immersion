@@ -4,9 +4,17 @@
 
 This module will walk you through the process of using the vulnerability assessment for Virtual Machines and Containers, along with the usage of Workflow Automation and data query.
 
+## Objectives
+
+- Exercise 1: Vulnerability Assessment for Containers
+- Exercise 2: Automate recommendations with workflow automation
+- Exercise 3: Accessing your secure score via ARG
+
 ### Exercise 1: Vulnerability Assessment for Containers
 
 Microsoft Defender for Cloud scans images in your Azure Container Registry (ACR) that are pushed and imported into the registry, it also contains any other images pulled within the last 30 days. Then, it exposes detailed findings per image. All vulnerabilities can be found in the following recommendations: **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys).**
+
+In this exercise, you will work on vulnerablity assessment for containers by uploading a image to your conatiner registry.
 
 To simulate a container registry image with vulnerabilities, we will use ACR task commands and a sample image:
 
@@ -78,7 +86,9 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
 ### Exercise 2: Automate recommendations with workflow automation
 
-Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Microsoft Defender for Cloud events (security alerts or recommendations). In this lab, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
+Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Microsoft Defender for Cloud events (security alerts or recommendations). 
+
+In this Exercise, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
 
 **Create a new Logic App:**
 
@@ -90,6 +100,10 @@ Every security program includes multiple workflows for incident response. The pr
     
     ![](../Images/M5-ex3-2.png)
 
+1. On the **Create logic app** page, select **Consumption** plan and click on **select**.
+
+    ![](../Images/newimg5.png)
+
 1. On the Basics tab, enter the following details:
      
      - Subscription: Select your **Subscription** 
@@ -99,14 +113,12 @@ Every security program includes multiple workflows for incident response. The pr
      - Logic app name: Enter **Send-RecommendationsChanges<inject key="DeploymentID" enableCopy="false"/>**.
 
      - Location: Select the location of your **Resource group**
-     
-     - Plan Type: **Consumption**.
-     
+        
      - Enable log analytics: Select **No**
 
      - Select **Review + create** and then click on **Create**.
 
-        ![](../Images/logic-app-latest-step3.png)
+        ![](../Images/newimg6.png)
 
 1. When the **Deployment** is completed click on **Go to resource**
 
@@ -239,7 +251,8 @@ Every security program includes multiple workflows for incident response. The pr
     
 ### Exercise 3: Accessing your secure score via ARG
 Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
-Azure Secure Score data is available in ARG so you can query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
+
+In this exercise, you will query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
 
 1. Search for **Resource Graph Explorer** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
 
@@ -276,7 +289,7 @@ Azure Secure Score data is available in ARG so you can query and calculate your 
 More details on the [official article](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls) or on the [blog post](https://techcommunity.microsoft.com/t5/azure-security-center/querying-your-secure-score-across-multiple-subscriptions-in/ba-p/1749193)
 
 
-### Summary
+## Summary
 
 In this module, you have completed exploring more **Microsoft Defender for Cloud** features - **Vulnerability assessment for Containers**, **Automated recommendations with workflow automation** and **Accessed your secure score via ARG**.
 

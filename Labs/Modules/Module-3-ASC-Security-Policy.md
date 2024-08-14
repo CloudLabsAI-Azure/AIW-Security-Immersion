@@ -4,6 +4,15 @@
 
 In this module, we will guide you through the current Microsoft Defender for Cloud policies set by Azure. Also, we will walk you through the methods to enable or disable the Security policies.
 
+## Objectives
+In this module, you will perform: 
+
+- Exercise 1: Overview of the Microsoft Defender for Cloud Policy
+- Exercise 2: Explore Azure Policy
+- Exercise 3: Create resource exemption for a recommendation
+- Exercise 4: Create policy enforcement and deny
+- Exercise 5: Create a custom policy
+
 ### Exercise 1: Overview of the Microsoft Defender for Cloud Policy
 
 In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to Microsoft Defender for Cloud's recommendation.
@@ -69,6 +78,8 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 Azure Policy keeps track of compliance for your Azure resources based on policy definitions you assign, these are called policy assignments. By default, Microsoft provides many built-in definitions that you can leverage as you see fit.
 
+In this exercise, you will be exploring azure policy and verify the built-in initiatives by microsoft defender for cloud.
+
 1. Type **Policy** in the search box located at the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **labvm-<inject key="DeploymentID" enableCopy="false"/>** and navigate to this link ```https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade```.
 
     ![](../Images/m3ex2.step1.png)
@@ -77,7 +88,7 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
     ![policy assignment](../Images/Sh29.png)	
 
-4. You can now see three built-in initiatives used by Microsoft Defender for Cloud:
+4. You can now see built-in initiatives used by Microsoft Defender for Cloud which includes :
     -	*Azure Security Benchmark*
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
@@ -97,7 +108,8 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 ### Exercise 3: Create resource exemption for a recommendation
 
 Resource exemption will allow increased granularity for you to fine-tune recommendations by providing the ability to exempt certain resources from evaluation.
-When working with a recommendation, you can create an exemption by clicking the ellipsis menu on the right side and then selecting Create an exemption.
+
+In this exercise, you will create an exemption by clicking the ellipsis menu on the right side and then selecting Create an exemption.
 
    > **Note:** Exemptions is a premium Azure policy capability that's offered for Azure Defender customers with no additional cost. For other users, charges may apply in the future.
 
@@ -158,12 +170,12 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
    > **Note**: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
-4. From the top menu bar, click on the **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
+4. From the right-navigation pane, scroll down and click on **Deny** button. 
 
    > ❗ Important: <br>
    > Security misconfigurations are a major cause of security incidents.
 
-     ![Secure Transfer](../Images/secure-transfer.png)
+     ![Secure Transfer](../Images/newimg3.png)
 
 5. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
 
@@ -181,7 +193,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 8. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
 
-    * Under the **Basics** tab under the Scope header, select the ellipse icon **(...)** to select your subscription and click on the **Select**.
+    * Under the **Basics** tab under the Scope header, select the ellipse icon **(...)** to select your subscription and  select the **asclab** for resource group and click on the **Select**.
     * Then click on **Next**.
 
         ![](../Images/lab3-8.png)
@@ -193,11 +205,9 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 10. In the **Parameters** tab, leave the *Effect* and *Retention days* with default values.
 
      - **Uncheck** Only show parameters that need input or review
-     - Select the resource group **asclab** from the drop-down menu
+     - Leave options to default.
      - Select **Review + create** to assign the policy to your subscription.
      - Click **Create**
-
-        ![](../Images/lab3-10.png)
 
 11. On the **Auditing on SQL server should be enabled** page, perform the following steps:
 
@@ -206,9 +216,9 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
     - Select the **asclab-la-XXXXXX (3)** workspace from the dropdown
     - Click **Fix 1 resource (4)**
     
-By performing the above mentioned operations, you can now ensure that your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
-<br>
-      ![Sql Auditing](../Images/m3fs6.png)
+    By performing the above mentioned operations, you can now ensure that your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
+    <br>
+        ![Sql Auditing](../Images/m3fs6.png)
       
 12.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
 
@@ -216,6 +226,8 @@ By performing the above mentioned operations, you can now ensure that your exist
 ### Exercise 5: Create a custom policy
 
 A custom policy definition allows customers to define their own rules for using Azure. Whatever the business driver for creating a custom policy, the steps are the same for defining the new custom policy.
+
+In this exercise, you will be creating a custom initiative using azure policy and will learn to assign it. 
 
 ***Create a custom initiative using Azure Policy***
 
