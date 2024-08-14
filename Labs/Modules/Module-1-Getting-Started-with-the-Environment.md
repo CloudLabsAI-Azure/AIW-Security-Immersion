@@ -2,13 +2,15 @@
 
 ## Overview
 
-In this exercise, you will learn how to enable Microsoft Defender for Cloud in your subscription
+In this module, you will learn how to enable Microsoft Defender for Cloud in your subscription
+
+## Objectives
 
 You will be performing the following activities to achieve the goal:
 
-  - Log in to Azure Portal to access your subscription
-  - Upgrade your subscription to enable Microsoft Defender for Cloud Plan
-  - Configure data collection in Microsoft Defender for Cloud
+  - Exercise 1: Log in to Azure Portal
+  - Exercise 2: Enabling Microsoft Defender for Cloud
+  - Exercise 3: Creating Microsoft Defender for Cloud Default Policy
 
 ## Exercise 1: Log in to Azure Portal
 

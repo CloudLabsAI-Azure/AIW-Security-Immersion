@@ -2,17 +2,21 @@
 
 ### Overview
 
-In this exercise, you will be exploring the Microsoft Defender for Cloud features for Advanced Cloud Defense
+In this module, you will be exploring the Microsoft Defender for Cloud features for Advanced Cloud Defense
+
+## Objectives
 
 You will be performing the following activities to achieve the goal:
 
-* Using JIT (just-in-time access to VMs) to reduce the attack surface
-* Using Application control to deal with malicious and/or unauthorized software
-* Using File integrity monitoring (FIM) to monitor Operating System files
+* Exercise 1: Using JIT to reduce the attack surface
+* Exercise 2: Adaptive Application Control
+* Exercise 3: File Integrity Monitoring
 
 ### Exercise 1: Using JIT to reduce the attack surface
 
 In the simplest terms, the “attack surface” is the sum total of resources exposed to exploit within your enterprise. Defending the attack surface was a lot less complicated when a defined corporate “perimeter” existed, neatly separating a company’s assets from the outside world using **Just-in-time VM access**.
+
+In this exercise, you will be using Just In Time access (JIT) to access your virtual machine.
 
 1. Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and log in with the Azure credentials from the Lab **Environment Details** tab.
 
@@ -91,6 +95,8 @@ In the simplest terms, the “attack surface” is the sum total of resources ex
 
 Application control helps you deal with malicious and/or unauthorized software, by allowing only specific applications to run on your machines.
 
+In this exercise, you will be using adaptive control in workload protection in Microsft defender for cloud.
+
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
 
 2. Navigate to the bottom section under Advanced protection, click on **Adaptive application control**
@@ -108,6 +114,9 @@ Application control helps you deal with malicious and/or unauthorized software, 
 ### Exercise 3: File Integrity Monitoring
 
 File integrity monitoring (FIM), also known as change monitoring, examines operating system files, Windows registries, application software, Linux system files, and more. It detects and reports changes that might indicate an attack.
+
+In this exercise, you will be working with the file integrity monitoring under workload protection in Microsft defender for cloud.
+
 It maps the current state of these items with the state during the previous scan and alerts you if any suspicious modifications have been made. To enable FIM, follow the instructions below:
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
@@ -137,6 +146,6 @@ It maps the current state of these items with the state during the previous scan
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     
-### Summary
+## Summary
 
-  * In this module, you have completed exploring different **Microsoft Defender for Cloud** features - **Used JIT to reduce the attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**. You have reached the end of the lab.
+In this module, you have completed exploring different **Microsoft Defender for Cloud** features - **Used JIT to reduce the attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**. You have reached the end of the lab.

@@ -2,17 +2,19 @@
 
 ### Overview
 
-In this exercise, you will explore the Microsoft Defender for Cloud Dashboard feature overview.
+In this module, you will explore the Microsoft Defender for Cloud Dashboard feature overview.
+
+## Objectives
 
 You will be performing the following activities to achieve the goal:
 
-* Overview of Microsoft Defender for Cloud dashboard features **Secure Posture and Regulatory Compliance and Microsoft Defender for Cloud**.
-* Exploring Security Controls and Recommendations
-* Exploring the Inventory capability
+* Exercise 1: Understanding Microsoft Defender for Cloud Dashboard
+* Exercise 2: Exploring Secure Score and Recommendations
+* Exercise 3: Exploring the Inventory Capability
 
 ### Exercise 1: Understanding Microsoft Defender for Cloud Dashboard
 
-In Microsoft Defender for Cloud, you will be interacting with the Microsoft Defender for Cloud dashboard, which provides a unified view of the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
+In this exercise, you will be interacting with the Microsoft Defender for Cloud dashboard, which provides a unified view of the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
 
 1. Navigate to **Microsoft Defender for Cloud** in the Azure portal (perform if not already on the Microsoft Defender for Cloud page).
 
@@ -73,7 +75,9 @@ In Microsoft Defender for Cloud, you will be interacting with the Microsoft Defe
 
 **Exploring Secure Score**
 
-Previously, we explored the Secure Score tile on the overview page. Now let’s dive into this capability and the associated recommendations. Microsoft Defender for Cloud mimics the work of a security analyst, reviewing the security recommendations and applying advanced algorithms to determine how crucial each recommendation is. Microsoft Defender for Cloud constantly reviews the active recommendations and calculates the score based on them. All findings are aggregated into a single score (Secure Score), which measures the current security posture of your subscription(s); the higher the score, the lower the identified risk level.
+Previously, we explored the Secure Score tile on the overview page. 
+
+In this exercise you will dive into this capability and the associated recommendations. Microsoft Defender for Cloud mimics the work of a security analyst, reviewing the security recommendations and applying advanced algorithms to determine how crucial each recommendation is. Microsoft Defender for Cloud constantly reviews the active recommendations and calculates the score based on them. All findings are aggregated into a single score (Secure Score), which measures the current security posture of your subscription(s); the higher the score, the lower the identified risk level.
 Exploring secure score
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it.
@@ -96,7 +100,8 @@ Exploring secure score
 
     **Exploring Security Controls and Recommendations**
 
-6. On the **Recommendations (1)** page, pay attention to the first part of the page, the **summary view (2)**. It includes the progress on the **Recommendations status** (both completed security controls and recommendations), and **Resource health** (by severity).
+
+6. On the **Recommendations (1)** page, use the **Switch to classic view** button at the top menu and pay attention to the first part of the page, the **summary view (2)**. It includes the progress on the **Recommendations status** (both completed security controls and recommendations), and **Resource health** (by severity).
 
     ![Recommendations view](../Images/mod2-ex2-1.png)
 
@@ -139,6 +144,8 @@ Exploring secure score
 ### Exercise 3: Exploring the Inventory Capability
 
 Asset inventory dashboard allows you to get a single pane of glass view of all your resources covered by Microsoft Defender for Cloud. It also provides per-resource visibility to all Microsoft Defender for Cloud’s information and additional resource details, including security posture and protection status. Since this dashboard is based on the Azure Resource Graph (ARG), you can run queries across subscriptions at a large scale quickly and easily.
+
+In this exercise, you will be exploring the Inventory capabality in the Microsoft defender for cloud.
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it. From the left navigation pane, under the **General** section, select the **Inventory** button.
 

@@ -4,11 +4,18 @@
 
 In this module, you will configure the continuous export for the Log Analytics workspace, exporting security alerts, recommendations, secure scores, and security findings. Moreover, you will learn how to enable the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
 
+## Objectives
+
+- Exercise 1: Using continuous export
+- Exercise 2: Integration with Microsoft Sentinel
+
 ### Exercise 1: Using continuous export
 
 Microsoft Defender for Cloud generates detailed security alerts and recommendations. You can view them in the portal or through programmatic tools. You might also need to export some or all of this information for tracking with other monitoring tools in your environment.
 
 Continuous export lets you fully customize what will be exported and where it will go. Even though the feature is called continuous, there's also an option to export weekly snapshots of secure score or regulatory compliance data.
+
+In this exercise, you will be creating log analytics workspace in Microsoft defender for cloud.
 
 1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
 
@@ -83,6 +90,8 @@ Continuous export lets you fully customize what will be exported and where it wi
 ### Exercise 2: Integration with Microsoft Sentinel
 
 Integration with Microsoft Sentinel will enable centralized monitoring of alerts and discovery data. Integrating with Microsoft Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
+
+In this exercise, you will be integrating the workspace which is previously created integrating it with Microsoft sentinel.
 
 1. Search for **Microsoft Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
 

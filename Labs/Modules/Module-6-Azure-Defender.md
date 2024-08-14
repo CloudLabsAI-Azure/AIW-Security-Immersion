@@ -2,13 +2,15 @@
 
 ### Overview
 
-In this exercise, you will explore Microsoft Defender for Cloud's features:
+In this module, you will explore Microsoft Defender for Cloud's features
+
+## Objectives
 
 You will be performing the following activities to achieve the goal:
 
-* Creating Sample Alerts
-* Creating a suppression rule to automatically dismiss similar alerts
-* Accessing Security Alerts using Graph Security API
+* Exercise 1: Alert validation
+* Exercise 2: Alert suppression
+* Exercise 3: Accessing Security Alerts using Graph Security API
 
 ### Exercise 1: Alert validation
 
@@ -70,6 +72,8 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 When a single alert isn't interesting or relevant, you can manually dismiss it.
 In the previous step, we used the dismiss option to manually dismiss a single alert. However, you can use the suppression rules feature to automatically dismiss similar alerts in the future.
+
+In this exercise, you will be working on alert supression in Microsoft defender for cloud security alerts.
 
 1. Search for **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it, then select **Security alerts** under **General** from the left side pane.
 
@@ -172,7 +176,7 @@ In this exercise, we will use one of the endpoints that allows retrieving a list
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     
-### Summary
+## Summary
 
 In this module, you have completed exploring more **Security Center** features - **Alert validation**, **Alert suppression** and **Accessed Security Alerts using Graph Security API**.
 
