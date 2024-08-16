@@ -2,19 +2,23 @@
 
 ### Overview
 
-In this exercise, you will learn about Regulatory Compliance features
+In this module, you will learn about Regulatory Compliance features
+
+## Objectives
 
 You will be performing the following activities to achieve the goal:
 
-* Exploring Regulatory Compliance dashboard
-* Adding new standards to Compliance policies
-* Creating a custom benchmark
+* Exercise 1: Understanding Regulatory Compliance Dashboard
+* Exercise 2: Adding new standards
+* Exercise 3: Creating your own benchmark
 
 ### Exercise 1: Understanding Regulatory Compliance Dashboard
 
 Microsoft Defender for Cloud helps streamline the process of meeting regulatory compliance requirements using the regulatory compliance dashboard. The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
 Microsoft Defender for Cloud continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards applied to your subscriptions.
+
+In this exercise, you will get a walkthrough on regulatory compliance dashboard in Microsoft defender for cloud.
 
 1. Navigate to **Microsoft Defender for Cloud** in the Azure portal (perform if not already on the Microsoft Defender for Cloud).
 
@@ -54,6 +58,8 @@ Microsoft Defender for Cloud continuously assesses your hybrid cloud environment
 
 You can add additional industry standards (represented as compliance packages) such as IST SP 800-53 R4, SWIFT CSP CSCF-v2020, UK Official, and more.
 
+In this exercise, you will be enabling CIS Microsoft Azure Foundations Benchmark v1.1.0 policy.
+
 1. On **Regulatory Compliance** page, select **Manage compliance policies** from the top menu bar.
 
     ![Manage compliance policies](../Images/c13.png)
@@ -71,6 +77,8 @@ You can add additional industry standards (represented as compliance packages) s
 Once you create your custom initiative, Microsoft Defender for Cloud allows you to add it as a security policy and provides two main benefits:
 * Security requirements represented as custom recommendations, listed under the recommendation list.
 * Track compliance status using the regulatory compliance dashboard.
+
+In this exercise, you will be creating your own bechmark and will be assigning it.
 
 1. In the search box located at the top of the Azure Portal page, search for Policy and click on it.
 
@@ -171,7 +179,8 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     <validation step ="01bad42a-6d4b-485f-82db-daba1ae8150b" />
-### Summary
+
+## Summary
 
 In this module, you have completed Exploring **Microsoft Defender for cloud** features - **Regulatory Compliance dashboard**, **Added new standards** and **Created your own benchmark**.
 
