@@ -46,7 +46,7 @@ The architecture for securing cloud environments with Microsoft Defender for Clo
 
 ## Architecture Diagram
 
-   ![Azure portal with a cloud shell pane]()
+   ![Azure portal with a cloud shell pane](../Images/secure-hybrid%20cloud.JPG)
 
 ## Explanation of Components
 
