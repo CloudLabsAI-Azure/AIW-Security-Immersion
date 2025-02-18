@@ -80,7 +80,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
     >XXXXXX is the ID of the security finding.
 
-     ![](../Images/secure-M5-Ex2-S13.png)
+     ![](../Images/secure-M5-Ex2-S13-1.png)
 
    Notice the vulnerability description, general information (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
 
@@ -124,11 +124,13 @@ In this Exercise, you will create a new Logic App and then trigger it automatica
 
     ![](../Images/gotoresource.png)
 
- then click on "Enable Legacy Designer." Once the "Legacy designer" popup appears, proceed by clicking on it.
- 
-1. Select **Logic app designer** from the left panel then click on **Enable Legacy Designer**. Once the **Legacy designer** popup appears, proceed by clicking on it. Scroll down and choose **Blank Logic App**. 
+1. In the Overview page, go to **Get started(1)** and select **Choose template(2)** under Start from template. 
 
-   ![](../Images/open-logic-app.png)
+    ![](../Images/choose-template.png)
+
+1. Scroll down and choose **Blank Logic App**.
+
+   ![](../Images/open-blank-logic-app.png)
 
 1. Search for **Security Center** in the search box and select **When a Microsoft Defender for Cloud Recommendation is created or triggered** from the list of **Triggers**
 

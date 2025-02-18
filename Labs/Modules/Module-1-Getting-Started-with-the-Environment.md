@@ -65,49 +65,15 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![](../Images/lab-all.png)
 
-1. Click on **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, scroll down select your **Log Analytics workspace as asclab-la-XXXXX (3)**, and click **Upgrade (4)**.
+1. Scroll down in overview page of Microsoft Defender for Cloud, click on **Click here to upgrade**.
 
     > **Note:** If you are not able to see the Log Analytics workspace, then it means your subscription is already upgraded. In this case, you can skip steps 2, and 3 and continue from step 4. Also, you might have to wait for a few seconds to have the upgrade button visible.
 
-    ![Overview: Inventory tile](../Images/lab1-1.png)
+    ![Overview: Inventory tile](../Images/lab1-ex2-1.png)
 
-    ![Overview: Inventory tile](../Images/lab1-2.png) 
+1. On **Getting started page,** scroll down select your **Log Analytics workspace as asclab-la-XXXXX**, and click **Upgrade.** 
 
-1. Refresh the browser and under Install agents tab, select your subscription and click on **Install agents**. 
-
-    ![install-agents](../Images/lab1-3.png)
-   
-    > **Note:** If the button is greyed out, then it's already set to **On** and agents are already installed. In this case, you can move on to the next step.
-
-    ![install-agents](../Images/installagents1.png)
-
-### Configure the data collection settings in Microsoft Defender for Cloud
-
-1. Go to the **Microsoft Defender for Cloud** page, click on the **Environment settings** page, and select your **Azure subscription**.
-
-    ![Template deployment completed](../Images/security1.2.png)
-
-1. From the **Settings | Defender Plans** page, navigate to **Settings & monitoring**.
-
-    ![](../Images/secure-3.png)
-
-1. On the **Settings & monitoring** tab, toggle the status of **Log Analytics agent** to **On** (if it is not already set to On). Click on **Edit configuration** under the **Configuration** header of the Log Analytics agent/Azure Monitor agent.
-
-    ![](../Images/lab1-4.png)
-    
-1. A new window of Auto-provisioning configuration is opened. Under **Workspace selection** select **Custom workspace** and choose your workspace from the drop-down menu and click **Apply**.
-
-     ![](../Images/mod1-ex2-2.png)
-  
-
-1. Once all the configurations are made, click on **Continue**.
-
-    ![](../Images/secure-4.png)
-    
-1. Click on **Save**. 
-
-    ![](../Images/1.1.png)
-
+    ![Overview: Inventory tile](../Images/lab1-ex2-2.png)
 
 <br>
 
