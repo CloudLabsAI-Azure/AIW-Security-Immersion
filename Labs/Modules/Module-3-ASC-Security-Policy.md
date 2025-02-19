@@ -144,9 +144,9 @@ In this exercise, you will create an exemption by clicking the ellipsis menu on 
     
     <br>
 
-7. Refresh the tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
+7. Refresh the tab and in **Recommendations blade (1)**, search for **Management ports should be closed on your virtual machines(2)**, and in Status filter, select **Exempted(3)** and click on **Apply(4)**.
 
-    ![Exempttion tab](../Images/m3fs4.png)
+    ![Exempttion tab](../Images/lab3-ex3-7.png)
 
 8.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy Blade as well.
 
@@ -191,12 +191,12 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 7. On the **Auditing on SQL server should be enabled** page, from the top menu bar, click on the **Enforce** button. This option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
 
-8. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
+8. Once the **Auditing on SQL server should be enabled** pane opens with all of the policy configuration options, select the following configuration settings:
 
     * Under the **Basics** tab under the Scope header, select the ellipse icon **(...)** to select your subscription and  select the **asclab** for resource group and click on the **Select**.
     * Then click on **Next**.
 
-        ![](../Images/lab3-8.png)
+        ![](../Images/lab3-ex4-8.png)
     
 9. In the **Advanced** tab, leave it by default and click on **Next**.
 
@@ -217,8 +217,8 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
     - Click **Fix 1 resource (4)**
     
     By performing the above mentioned operations, you can now ensure that your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
-    <br>
-        ![Sql Auditing](../Images/m3fs6.png)
+    
+    ![Sql Auditing](../Images/m3fs6.png)
       
 12.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
 

@@ -62,7 +62,7 @@ In this exercise, we will cover the new Alert Simulation as Alerts are the notif
 
 11. Select **Access from a TOR exit node to a Key Vault** alert then click on the **View full details** to see additional information related to the event.
 
-     ![Create sample virtual machine security alerts](../Images/TOR-exit-node.png)
+     ![Create sample virtual machine security alerts](../Images/TOR-exit-node-1.png)
 
 12. At the top menu, dismiss the alert by changing the status from Active to **Dismissed** and click on **OK**.
 

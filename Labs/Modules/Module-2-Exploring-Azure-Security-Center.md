@@ -33,9 +33,9 @@ In this exercise, you will be interacting with the Microsoft Defender for Cloud 
 
     ![Microsoft Defender for Cloud: what's new](../Images/msdefender2.png)
 
-5. Note the **high-level numbers** at the top menu. This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active secure score recommendations and Security alerts.**
+5. Note the **high-level numbers** at the top menu. This view allows you to see a summary of your **Azure subscriptions, Assessed resources, and Security alerts.**
 
-    ![Microsoft Defender for Cloud: Dashboard](../Images/mod1-ex3-1.png)
+    ![Microsoft Defender for Cloud: Dashboard](../Images/lab2-ex1-4.png)
 
 6. On the **Overview** page, look at the **Security posture** tile. You can see your current score along with the number of **Completed controls and Completed recommendations**. Clicking on this tile will redirect you to a drill-down view across subscriptions.
 
@@ -44,7 +44,7 @@ In this exercise, you will be interacting with the Microsoft Defender for Cloud 
     > ⭐ Good to know: <br>
     > The higher the score, the lower the identified risk level.
 
-7. From the **Microsoft Defender for Cloud** page Select the **Workload Protections** from the **Cloud Security** section.
+7. From the **Microsoft Defender for Cloud** page, select the **Workload Protections** from the **Cloud Security** section.
 
     ![](../Images/workload1.png)
 
@@ -78,7 +78,6 @@ In this exercise, you will be interacting with the Microsoft Defender for Cloud 
 Previously, we explored the Secure Score tile on the overview page. 
 
 In this exercise you will dive into this capability and the associated recommendations. Microsoft Defender for Cloud mimics the work of a security analyst, reviewing the security recommendations and applying advanced algorithms to determine how crucial each recommendation is. Microsoft Defender for Cloud constantly reviews the active recommendations and calculates the score based on them. All findings are aggregated into a single score (Secure Score), which measures the current security posture of your subscription(s); the higher the score, the lower the identified risk level.
-Exploring secure score
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it.
 
@@ -121,7 +120,7 @@ Exploring secure score
    - Freshness interval: **30 Min** 
    - Tactics and techniques: **Initial Access**
 
-        ![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/stacc%20public%20access.png?raw=true)
+    ![Recommendation top menu](../Images/)
 
 9. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resources.
 
@@ -153,7 +152,7 @@ In this exercise, you will be exploring the Inventory capabality in the Microsof
     
 2. Hover to the **Summaries strip** at the top of the page.
 
-    ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/inventory1.1.png?raw=true)
+    ![Remediate a resource]()
 
     > **Note**: In your environment, these numbers may not be the same since they vary in time
 

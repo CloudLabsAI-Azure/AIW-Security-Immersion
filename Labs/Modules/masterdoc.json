@@ -1,0 +1,45 @@
+[
+    {
+      "Name": "Microsoft Security Immersion Workshop: Secure Hybrid Cloud",
+      "Language": "English",
+      "BaseURL": "https://github.com/Azure/Azure-Security-Center/tree/master/Labs",
+      "Files": [
+        {
+          "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Modules/GettingStarted.md",
+          "Order": 1
+        },
+        {
+          "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Modules/Module-1-Getting-Started-with-the-Environment.md",
+          "Order": 2
+        },
+        {
+          "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Modules/Module-2-Exploring-Azure-Security-Center.md",
+          "Order": 3
+        },
+        {
+          "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Modules/Module-3-ASC-Security-Policy.md",
+          "Order": 4
+        },
+        {
+          "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Modules/Module-4-Regulatory-Compliance.md",
+          "Order": 5
+        },
+        {
+          "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Modules/Module-5-Improving-your-Secure-Posture.md",
+          "Order": 6
+        },
+        {
+          "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Modules/Module-6-Azure-Defender.md",
+          "Order": 7
+        },
+        {
+          "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Modules/Module-7-Exporting-ASC-information-to-a-SIEM.md",
+          "Order": 8
+        },
+        {
+          "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Modules/Module-8-Advance-Cloud-Defense.md",
+          "Order": 9
+        }
+      ]
+    }
+  ]  
