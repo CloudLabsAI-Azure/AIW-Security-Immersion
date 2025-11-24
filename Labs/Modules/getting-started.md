@@ -1,16 +1,12 @@
-# Unified Security and Compliance with Microsoft Defender XDR and Purview
-
-### Overall Estimated Duration: 6 Hours
+# Secure Hybrid Cloud
 
 ## Overview
 
-In this lab, you will explore Microsoft Defender for Office 365 and Microsoft Defender XDR to implement layered protection against phishing, malware, and advanced email threats. You will begin by enabling Microsoft Defender Cloud Security Posture Management (CSPM) and configuring both standard and strict preset security policies. Next, you will create custom Anti-Phishing and Safe Links policies, set up alert rules, and simulate phishing and malware attacks using Attack Simulation Training to evaluate user awareness.
-
-You will then analyze threats using Threat Explorer and real-time detections, investigate user activity, and remediate incidents using Defender XDR through both automated and manual actions. In the later part of the lab, you will transition to Microsoft Purview to focus on information protection by creating and publishing sensitivity labels, configuring message encryption, and classifying files using the Unified Labeling Client. Finally, you will implement and investigate Data Loss Prevention (DLP) policies and alerts to strengthen compliance and ensure end-to-end data security across the Microsoft 365 ecosystem.
+In this lab, you will learn how to secure hybrid cloud environments using Microsoft Defender for Cloud (formerly Azure Security Center). You will start by enabling Defender for Cloud on your Azure subscription and configuring data collection settings. Next, you will explore the Defender for Cloud dashboard, understand secure scores, recommendations, and inventory capabilities. You will then dive into security policies, regulatory compliance assessments, and methods to improve your secure posture. The lab covers enabling Azure Defender plans for advanced threat protection, exporting security data to a SIEM system, and implementing advanced cloud defense strategies. By the end, you will have hands-on experience in monitoring, assessing, and enhancing the security of your hybrid cloud workloads.
 
 ## Objective 
 
-This lab provides hands-on experience in securing, classifying, and monitoring organizational data using Microsoft Defender for Office 365, Microsoft Defender XDR, and Microsoft Purview. Participants will learn to configure threat protection policies, simulate and analyze phishing and malware attacks, and remediate incidents using automated investigation workflows. The lab also covers creating and publishing sensitivity labels, configuring message encryption, and implementing Data Loss Prevention (DLP) policies and alerts. By completing these exercises, participants will gain practical skills to strengthen data security, compliance, and threat response across Microsoft 365 environments.
+This lab provides practical experience in securing hybrid cloud environments with Microsoft Defender for Cloud. Participants will learn to enable and configure Defender for Cloud, assess security posture through dashboards and recommendations, manage security policies, ensure regulatory compliance, and implement advanced threat protection. The lab also covers integrating security insights with SIEM systems and applying advanced defense techniques to protect Azure, on-premises, and multi-cloud resources.
 
 ## Prerequisites
 
@@ -28,36 +24,9 @@ Participants should have:
 
   - Understanding of Microsoft 365 Defender portal.
   
-
-## Architecture
-
-This architecture flow illustrates the complete security lifecycle for protecting organizational data using Microsoft Defender and Microsoft Purview. It starts with configuring threat protection policies in Microsoft Defender for Office 365 to safeguard users from phishing, malware, and malicious links. Simulated phishing and malware attacks are then executed and analyzed using Microsoft Defender XDR to evaluate detection, response, and user behavior. The workflow continues with Microsoft Purview, where sensitivity labels are created and published to classify data, followed by configuring message encryption and Data Loss Prevention (DLP) policies to protect and monitor sensitive information. Together, these integrated solutions ensure continuous protection, compliance, and visibility across the Microsoft 365 environment.
-
-## Explanation of Components
-
-- **Microsoft Defender for Office 365:** A cloud-based email filtering and threat protection service that safeguards against phishing, malware, and advanced attacks in Microsoft 365.
-
-- **Microsoft Defender XDR:** An integrated security platform that correlates signals across email, identity, endpoints, and cloud apps to detect, investigate, and respond to advanced threats.
-
-- **Cloud Security Posture Management (CSPM):** A set of tools and capabilities within Microsoft Defender to assess, monitor, and improve your organization’s cloud security posture.
-
-- **Anti-Phishing and Safe Links Policies:** Policy configurations that detect and block malicious senders, domains, and URLs, ensuring safe email and link handling.
-
-- **Attack Simulation Training:** A Defender for Office 365 feature that allows security teams to run realistic phishing and malware attack scenarios to train and assess users.
-
-- **Threat Explorer:** A real-time threat analysis tool that provides visibility into malicious emails, URLs, and attachments in your Microsoft 365 environment.
-
-- **Microsoft Purview:** The core compliance and data protection platform. It helps classify, label, monitor, and protect sensitive organizational data across Microsoft 365 services.
-
-- **Sensitivity Labels:** Used to classify and protect content in documents and emails. Labels can enforce encryption, content markings, and access restrictions.
-
-- **Data Loss Prevention (DLP) Policies:** Detect and prevent the sharing of sensitive information such as credit card numbers, personal data, or confidential business content. Policies can trigger alerts, block sharing, or assign training.
-
-- **Message Encryption:** Ensures that email content is protected by applying encryption rules, maintaining confidentiality for both internal and external communications.
-
 ## Getting Started with the Lab
  
-Welcome to your Unified Security and Compliance with Microsoft Defender XDR and Purview workshop! We've prepared a seamless environment for you to familiarize yourself to explore and understand the integrated capabilities of Microsoft Defender XDR and Microsoft Purview in strengthening organizational security and compliance. Through this lab, you will gain hands-on experience in implementing threat protection, investigating incidents, and safeguarding sensitive data across Microsoft 365 services. Let’s begin by making the most of this unified security and compliance experience!
+Welcome to your Secure Hybrid Cloud workshop! We've prepared a seamless environment for you to familiarize yourself to explore and understand the integrated capabilities of Microsoft Defender XDR and Microsoft Purview in strengthening organizational security and compliance. Through this lab, you will gain hands-on experience in implementing threat protection, investigating incidents, and safeguarding sensitive data across Microsoft 365 services. Let’s begin by making the most of this unified security and compliance experience!
 
 ## Accessing Your Lab Environment
  
