@@ -9,8 +9,7 @@ In this module, you will be exploring the Microsoft Defender for Cloud features 
 You will be performing the following activities to achieve the goal:
 
 * Exercise 1: Using JIT to reduce the attack surface
-* Exercise 2: Adaptive Application Control
-* Exercise 3: File Integrity Monitoring
+* Exercise 2: File Integrity Monitoring
 
 ### Exercise 1: Using JIT to reduce the attack surface
 
@@ -123,29 +122,9 @@ In this exercise, you will be using Just In Time access (JIT) to access your vir
 
 1. You **are now connected to asclab-win** server. Close the remote control session/log off.
 
-    ![](../Images/hyb-ex6-g42.png)
+    ![](../Images/hyb-ex6-g42.png) 
 
-### Exercise 2: Adaptive Application Control
-
-Application control helps you deal with malicious and/or unauthorized software, by allowing only specific applications to run on your machines.
-
-In this exercise, you will be using adaptive control in workload protection in Microsft defender for cloud.
-
-1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
-
-1. Navigate to the bottom section under Advanced protection, click on **Adaptive application control**
-
-    ![Adaptive Application Control1](../Images/m8ex2.step2.png)
-
-1. The Adaptive application controls page opens with your VMs grouped into the following tabs: Configured, Recommended and No Recommendation.
-
-1. Click on the **Recommended** tab.
-
-    ![Adaptive Application Control2](../Images/lab8-8.png)
-
-    >**Note:** First-time users will not get any group information under the Group Name section. This is because Microsoft Defender for Cloud needs at least two weeks of data to define the unique recommendations per group of machines. 
-
-### Exercise 3: File Integrity Monitoring
+### Exercise 2: File Integrity Monitoring
 
 File integrity monitoring (FIM), also known as change monitoring, examines operating system files, Windows registries, application software, Linux system files, and more. It detects and reports changes that might indicate an attack.
 
@@ -157,28 +136,25 @@ It maps the current state of these items with the state during the previous scan
 
 1. Navigate to the bottom section under Advanced Protection, and click on the **File Integrity Monitoring** tile.
 
-    ![File Integrity Monitoring1](../Images/m8ex3.step2.png)
+    ![File Integrity Monitoring1](../Images/hyb-ex6-g43.png)
 
-1. On the **File Integrity Monitoring** page, select the listed **Log Analytics workspace** named **asclab-la-<inject key="DeploymentID" enableCopy="false"/>** (or just by clicking on the Enable button - it indicates that File Integrity Monitoring is not enabled for the selected workspace).
+1. On the **File Integrity Monitoring** page, click **Settings** to configure FIM options.
 
-   > **Note**: Deployment ID can be obtained from the Lab Environment output page.
+    ![](../Images/hyb-ex6-g45.png)
 
-   ![](../Images/FIM.png)
+1. On the **FIM settings** page, select your **subscription** to view or modify its File Integrity Monitoring configuration.
+
+    ![](../Images/hyb-ex6-g46.png)
+
+1. On the **FIM configuration** page, select the **Log Analytics workspace** named **asclab-la-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click **Apply (2)** to enable File Integrity Monitoring.
+
+    ![](../Images/hyb-ex6-g47.png)
 
 1. On the Enable File Integrity Monitoring window, review the default **recommended settings** for Windows files, Registry, and Linux files.
 
-1. Click on the **Enable File Integrity Monitoring** button.
+1. After applying the configuration, verify that the **FIM status** is now shown as **Enabled** for your subscription.
 
-    ![File Integrity Monitoring2](../Images/m8ex3.step5.png)
-
-<validation step="1e2354f0-1f25-4c38-a196-008d267eca18" />
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    ![](../Images/hyb-ex6-g48.png)
     
 ## Summary
 
