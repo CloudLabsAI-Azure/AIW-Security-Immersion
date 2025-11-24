@@ -66,11 +66,11 @@ In this exercise, you will be enabling CIS Microsoft Azure Foundations Benchmark
 
     ![Manage compliance policies](../Images/hyb-ex3-g3.png)
 
-2. Select your **Subscription** under the Environment settings.
+1. Select your **Subscription** under the Environment settings.
 
     ![](../Images/hyb-ex3-g4.png)
    
-3. Select **Security policies (1)** in the search bar, search for **CIS Microsoft Azure Foundations Benchmark v1.1.0 (2)** and click on the toggle button to change the status to **On (3)**
+1. Select **Security policies (1)** in the search bar, search for **CIS Microsoft Azure Foundations Benchmark v1.1.0 (2)** and click on the toggle button to change the status to **On (3)**
 
     ![](../Images/Sh33.png)
 
