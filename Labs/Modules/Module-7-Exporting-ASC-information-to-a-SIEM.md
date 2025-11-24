@@ -122,7 +122,7 @@ In this exercise, you will be integrating the workspace which is previously crea
 
     ![ASC pricing & settings page](../Images/hyb-ex6-g20.png)
    
-   >**Note**: If you didn't find Microsoft Defender for the cloud, follow the below steps; otherwise, continue from step 11.
+   >**Note**: If you didn't find Microsoft Defender for the cloud, follow the below steps; otherwise, continue from step 12.
 
 1. Open a new browser tab and navigate to the **Microsoft Defender portal** at https://security.microsoft.com/.
 
