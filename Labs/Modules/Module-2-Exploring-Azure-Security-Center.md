@@ -27,11 +27,11 @@ In this exercise, you will be interacting with the Microsoft Defender for Cloud 
 
 3. Note that the **Subscriptions** icon on the **top menu bar** allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
 
-    ![Microsoft Defender for Cloud: subscriptions](../Images/msdefender1.png)
+    ![Microsoft Defender for Cloud: subscriptions](../Images/hyb-ex1-g7.png)
 
 4. Click on the **What’s new** button; a new tab will open with the latest release notes, where you can stay updated on the new features, bug fixes, and more.
 
-    ![Microsoft Defender for Cloud: what's new](../Images/msdefender2.png)
+    ![Microsoft Defender for Cloud: what's new](../Images/hyb-ex1-g9.png)
 
 5. Note the **high-level numbers** at the top menu. This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active secure score recommendations and Security alerts.**
 
@@ -56,11 +56,10 @@ In this exercise, you will be interacting with the Microsoft Defender for Cloud 
 
 9. Next, select **Regulatory Compliance** from the **Cloud Security** section of the Microsoft Defender for Cloud page.
 
-     ![](../Images/regulatory1.png)
+     ![](../Images/hyb-ex1-g16.png)
 
 10. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on a continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards, which are **Microsoft cloud security benchmark (2)**.
  
-     ![Overview: Regulatory Compliance tile](../Images/c4.png)
      
 11. Next Click on **Inventory** from the **General** section of the Microsoft Defender for Cloud. It shows the number of unmonitored VMs alongside the total covered resources; **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
 
@@ -68,7 +67,7 @@ In this exercise, you will be interacting with the Microsoft Defender for Cloud 
      > Unmonitored VMs are considered virtual machines that have a Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
      > 
      > **Note:** If in case there are any resources under Unmonitored resources, then please proceed further with Exercise 2 and come back later to check on the same. 
-    ![Overview: Inventory tile](../Images/msdefender5.1.png)
+    ![Overview: Inventory tile](../Images/hyb-ex1-g17.png)
 
 
 ### Exercise 2: Exploring Secure Score and Recommendations
@@ -82,7 +81,7 @@ Exploring secure score
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it.
 
-    ![](../Images/lab-all.png)
+    ![](../Images/hyb-ex1-g1.png)
 
 2. From the left navigation pane, under the **Cloud Security** section, select **Security posture**.
 
@@ -107,7 +106,7 @@ Exploring secure score
 
 2. From the top menu, click on the **Download CSV report** button; this allows you to get a snapshot of your resources, their health status, and the associated recommendations. You can use this file for pivoting and reporting.
 
-    ![](../Images/csv%20report1.png)
+    ![](../Images/hyb-ex1-g18.png)
    
 7. Under **Recommendation**, search and select **Storage account public access should be disallowed** recommendation from the **All recommendations** list.
 
@@ -169,17 +168,17 @@ In this exercise, you will be exploring the Inventory capabality in the Microsof
 
 7. Open the resource health pane by selecting the resource. Click on **asclab-linux**. Alternately. You can also right-click on any resource and select **View resource**. You may not see **View resource** directly due to different screen resolutions, then you have to click on ellipse(...) and then select **View resource**.
 
-    ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/viewres.png?raw=true)
+    ![Inventory: Assign tags](../Images/hyb-ex1-g31.png)
 
 8. On the resource health pane for **asclab-linux**, review the virtual machine information alongside the recommendation list.
 
-    ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/healthpreview.png?raw=true)
+    ![Inventory: Assign tags](../Images/hyb-ex1-g32.png)
 
     > **Note**: It could take up to 24 hours for all the recommendations to show up. And it is possible that during lab time, this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
 9. Navigate back to the Inventory page and clear the search keyword **Linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources that are monitored with active recommendations.
 
-     ![Remediate a resource](../Images/filter-rg.png)
+     ![Remediate a resource](../Images/hyb-ex1-g33.png)
 
     > **Note:** The list can be filtered and sorted.
 
@@ -203,15 +202,15 @@ In this exercise, you will be exploring the Inventory capabality in the Microsof
 
 13. From the filter pane, remove the **Security findings** filter you added in the previous step, and then from the top menu, click on **Open query**.
 
-    ![Inventory: Assign tags](../Images/inventory-open-query-new.1.png)
+    ![Inventory: Assign tags](../Images/hyb-ex1-g34.png)
 
 16. On the **Azure Resource Graph Explorer** blade, click on **Run query**. You should now have the same list of resources and columns as in the previous step. This query is editable for your needs, and here it gets very powerful.
  
-    ![Inventory: Assign tags](../Images/run-query.1.png)
+    ![Inventory: Assign tags](../Images/hyb-ex1-g35.png)
 
 17. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as **asc-filtered-query** and select **Save**.
 
-    ![Inventory: Assign tags](../Images/M2-EX3-17.png)
+    ![Inventory: Assign tags](../Images/hyb-ex1-g36.png)
 
 > ⭐ Good to know: <br>
 > The Inventory dashboard is fully built on top of the Azure Resource Graph (ARG) which stores all of Microsoft Defender's cloud security posture data and leverages its powerful KQL engine.
