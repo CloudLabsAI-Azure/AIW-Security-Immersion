@@ -19,15 +19,11 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
 1. From the Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
-    ![](../Images/lab-all.png)
+    ![](../Images/hyb-ex1-g1.png)
 
 1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here, you'll be able to see the subscription.
 
-    ![Template deployment completed](../Images/m2e1s3.2.png)
-   
-1. In **Environment Settings** page, select your subscription.
-
-    ![Template deployment completed](../Images/m1e2.1s2.png)
+    ![Template deployment completed](../Images/hyb-ex1-g2.png)
    
 1. Click on **Security policies (1)** under Settings. By default, there is one security policy assignment which is **Microsft cloud security benchmark**.
 

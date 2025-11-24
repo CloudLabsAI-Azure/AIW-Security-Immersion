@@ -5,7 +5,7 @@
     "BaseURL": "https://github.com/Azure/Azure-Security-Center/tree/master/Labs",
     "Files": [
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/getting-started.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Security-Immersion/main/Labs/Modules/getting-started.md",
         "Order": 1
       },
       {
