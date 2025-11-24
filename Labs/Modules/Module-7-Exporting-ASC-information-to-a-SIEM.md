@@ -19,15 +19,11 @@ In this exercise, you will be creating log analytics workspace in Microsoft defe
 
 1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
 
-    ![](../Images/lab-all.png)
+    ![](../Images/hyb-ex1-g1.png)
 
 1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here, you'll be able to see the subscription.
 
-    ![Template deployment completed](../Images/m2e1s3.2.png)
-    
-1. Select **Your Subscription** under the Environment settings.
-
-    ![](../Images/envset.png)
+    ![Template deployment completed](../Images/hyb-ex1-g2.png)
 
 1. Under **Settings** section, click on **Continuous export**.
 
@@ -45,7 +41,7 @@ In this exercise, you will be creating log analytics workspace in Microsoft defe
 
      - Check the box next to **Security alerts (4)**
 
-         ![continuous-export](../Images/LAW1.png)
+         ![continuous-export](../Images/hyb-ex6-g2.png)
      
      - Export Frequency:
 
@@ -63,28 +59,32 @@ In this exercise, you will be creating log analytics workspace in Microsoft defe
 
      -  Click on **Save (10)**
 
-        ![](../Images/LAW2.png)
+        ![](../Images/hyb-ex6-g3.png)
 
         > **Note:** Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
 1. Search for **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
+    ![](../Images/hyb-ex6-g4.png) 
+
 1. Click on the **asclab-la-<inject key="Deployment ID" enableCopy="false" /> (1)** workspace and select **Logs (2)**.
 
-    ![](../Images/Sh37.png) 
+    ![](../Images/hyb-ex6-g5.png) 
 
 1. On the welcome page, close the **Queries** window.
 
-    ![Continuous export settings page](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/log-analytic-started2.png?raw=true)
+    ![](../Images/hyb-ex6-g6.png) 
+
+    ![](../Images/hyb-ex6-g7.png) 
 
 1. From the left pane, select the **Tables** tab and **enable** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
 
-    ![Tables page](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/showtables.png?raw=true)
+    ![](../Images/hyb-ex6-g8.png) 
 
 1. Query the tables to validate data streaming - For example, click on **Tables (1)**, expand **Security and Audit (2)** double-click on **Security Event (3)** to open the query window. Now click on **Run (4)** and see the results below.
 
-    ![Respective tables in the Log Analytics workspace](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/Log-editor-tables.png?raw=true)
-  
+    ![](../Images/hyb-ex6-g9.png) 
+
    > **Note:** Since the continuous export was just enabled, you may need to wait for some time for new events to show up. It could require up to few hours to provide the information. If you don't see any result, please return later to check again.
 
 ### Exercise 2: Integration with Microsoft Sentinel
@@ -95,66 +95,50 @@ In this exercise, you will be integrating the workspace which is previously crea
 
 1. Search for **Microsoft Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
 
-    ![](../Images/m7e2s1.png)
+    ![](../Images/hyb-ex6-g10.png)
 
-2. On the **Microsoft Sentinel** blade, click on the **Create Microsoft Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by the Security Center.
+1. On the **Microsoft Sentinel** blade, click on the **Create Microsoft Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by the Security Center.
  
-    ![connect-workspace1](../Images/M7-Ex2-2.png)
+    ![connect-workspace1](../Images/hyb-ex6-g11.png)
 
-3. On the **Add Microsoft Sentinel to a workspace**, select **asclab-la-<inject key="Deployment ID" enableCopy="false" />** workspace. Click on **Add**.
+1. On the **Add Microsoft Sentinel to a workspace**, select **asclab-la-<inject key="Deployment ID" enableCopy="false" />** workspace. Click on **Add**.
 
-    ![Add sentinel](../Images/sentineladd.png)
+    ![Add sentinel](../Images/hyb-ex6-g12.png)
 
-4. Adding Microsoft Sentinel to workspace asclab-la-<inject key="Deployment ID" enableCopy="false" /> is now in progress. This process will take a few minutes to complete. 
+1. Adding Microsoft Sentinel to workspace asclab-la-<inject key="Deployment ID" enableCopy="false" /> is now in progress. This process will take a few minutes to complete. 
 
-5. Once the deployment of the workspace is completed you will get a notification **Successfully added Microsoft Sentinel**. Refresh the web browser page to see the workspace listed on the Microsoft Sentinel page.
+1. Once the deployment of the workspace is completed you will get a notification **Successfully added Microsoft Sentinel**. Refresh the web browser page to see the workspace listed on the Microsoft Sentinel page.
 
-   ![Add sentinel](../Images/sentinelws.png)
+1. Select the workspace **asclab-la-<inject key="Deployment ID" enableCopy="false" />** on the **Microsoft Sentinel** page. 
 
-6. Select the workspace **asclab-la-<inject key="Deployment ID" enableCopy="false" />** on the **Microsoft Sentinel** page. 
-
-7. From the Microsoft Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
+1. From the Microsoft Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
 
     ![](../Images/microsoft-senitinel-latest.png)
     
 
-8. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Subscription-based Microsoft Defender for Cloud (Legacy) (1)** connector and then click on **Open connector page (2)**.
+1. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Subscription-based Microsoft Defender for Cloud (Legacy) (1)** connector and then click on **Open connector page (2)**.
 
-    ![ASC pricing & settings page](../Images/Sh38.png)
+    ![ASC pricing & settings page](../Images/hyb-ex6-g19.png)
+
+    ![ASC pricing & settings page](../Images/hyb-ex6-g20.png)
    
    >**Note**: If you didn't find Microsoft Defender for the cloud, follow the below steps; otherwise, continue from step 11.
 
-10. Click the **Content hub (1)** on the **Microsoft Sentinel** blade, search for **Microsoft Defender (2)**, select **Microsoft Defender for Cloud (3)**, and click **Install (4)**.
+1. Open a new browser tab and navigate to the **Microsoft Defender portal** at https://security.microsoft.com/.
 
-    ![](../Images/Sh5.png)
+1. Click the **Content hub (1)** on the **Microsoft Sentinel** blade, search for **Microsoft Defender (2)**, select **Microsoft Defender for Cloud (3)**, and click **Install (4)**.
 
-11. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Subscription-based Microsoft Defender for Cloud (Legacy) (1)** connector and then click on **Open connector page (2)**.
+    ![](../Images/hyb-ex6-g14.png)
+
+    ![](../Images/hyb-ex6-g15.png)
+
+1. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Subscription-based Microsoft Defender for Cloud (Legacy) (1)** connector and then click on **Open connector page (2)**.
 
     ![ASC pricing & settings page](../Images/Sh38.png)
 
-12. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
+1. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
 
-    ![Connect Microsoft Defender for Cloud to Microsoft Sentinel](../Images/connected.png)
-
-13. On the Create incidents (recommended), click on the **Enable** button to create incidents automatically from all alerts generated in this connected service.
-
-     ![Enable incidents](../Images/asc-sentinel-enable-incidents.png)
- 
-    > **Note:** You may have to scroll down to find the option.
-    
-    > **Note:** If you cannot see the **Enable** button in the Create incidents option, follow the below steps:
-    
-14. In the Azure portal under Microsoft Sentinel, select **Analytics (1)**. Select the **Rule templates (2)** tab to see all of the analytics rule templates. search for **Create incident (3)** and select **Create incidents based on Microsoft Defender for Cloud (4)**, and click on **Create rule (5)**.
-
-    ![](../Images/Sh7.png)
-
-15. On the **Analytics rule wizard - Create a new Microsoft Security rule** pane, You can modify the rule details and choose to filter the alerts that will create incidents by alert severity or by text contained in the alert’s name. For example, if you choose Microsoft Defender for Cloud in the Microsoft security service field and choose High in the Filter by Severity field, only high-severity security alerts will automatically create incidents in Microsoft Sentinel.
-
-    ![](../Images/Sh8.png)
-
-16. Click on **Next: Automated response >** and then click on **Next: Review + Create >** and click on **Save** button.
-
-    ![](../Images/Sh9.png)
+    ![Connect Microsoft Defender for Cloud to Microsoft Sentinel](../Images/hyb-ex6-g21.png)
 
 <validation step="9b3b38db-6d01-4df2-a6f9-ef467daa294b" />
 
