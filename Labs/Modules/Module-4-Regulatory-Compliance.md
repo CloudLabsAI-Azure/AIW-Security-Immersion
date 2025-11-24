@@ -22,9 +22,11 @@ In this exercise, you will get a walkthrough on regulatory compliance dashboard 
 
 1. Navigate to **Microsoft Defender for Cloud** in the Azure portal (perform if not already on the Microsoft Defender for Cloud).
 
+    ![](../Images/hyb-ex1-g1.png)
+
 1. On the overview page, select the **Regulatory Compliance (1)** tile (this pillar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard (2)** opens, you can see the compliance standards currently assigned to your subscription.
 
-    ![](../Images/c11.png)
+    ![](../Images/hyb-ex3-g1.png)
 
 1. On the main page, select the **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
 
@@ -82,7 +84,7 @@ In this exercise, you will be creating your own bechmark and will be assigning i
 
 1. In the search box located at the top of the Azure Portal page, search for Policy and click on it.
 
-    ![Add CIS 1.1.0 (New) Standard](../Images/m3ex2.step1.png)
+    ![Add CIS 1.1.0 (New) Standard](../Images/hyb-ex2-g9.png)
 
 1. From the left pane of the **Policy** page, select **Definitions**.
 

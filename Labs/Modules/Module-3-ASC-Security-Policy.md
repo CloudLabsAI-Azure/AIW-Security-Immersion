@@ -35,39 +35,39 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/Sh19.png)
 
-    ![Template deployment completed](../Images/Sh20.png)
+    ![Template deployment completed](../Images/hyb-ex2-g1.png)
 
      > **Note:** The assignment name will have the GUID of the subscription in your lab environment.
 
+1. Click on **Assign initiative**.
+
+    ![Template deployment completed](../Images/hyb-ex2-g2.png)
+
 1. On the **Basics** tab, Click on **...** under Scope.
 
-    ![Template deployment completed](../Images/Sh25.png)
+    ![Template deployment completed](../Images/hyb-ex2-g3.png)
 
 1. Under the **Scope** blade, select your **Subscription (1)** from the drop-down list, select Resource Group as **asclab (2)**, and click on **Select (3)**.
 
-    ![Template deployment completed](../Images/Sh26.png)
+    ![Template deployment completed](../Images/hyb-ex2-g4.png)
 
 1. Click on **Next**.
 
-    ![Template deployment completed](../Images/Sh27.png)
-
-1. On the **Advanced** tab, leave it as default and click on **Next**.
-
-    ![Template deployment completed](../Images/Sh28.png)
+    ![Template deployment completed](../Images/hyb-ex2-g5.png)
 
 1. On the **Parameters (1)** tab, uncheck the box next to **Only show parameters that need input or review (2)** to view the parameters.
 
    > **Note:** This will take a while to load the required parameters.
    
-    ![](../Images/Sh22.png)
+    ![](../Images/hyb-ex2-g6.png)
     
 1. On the **Assign initiative** blade, scroll down and change the action to **AuditIfNotExists** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + create**.
 
-    ![](../Images/Sh23.png)
+    ![](../Images/hyb-ex2-g7.png)
 
 1. On the **Review + create** tab, review the configuration and click on **Create**.
 
-    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/Sh24.png)
+    ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/hyb-ex2-g8.png)
 
 
 ### Exercise 2: Explore Azure Policy
@@ -78,18 +78,26 @@ In this exercise, you will be exploring azure policy and verify the built-in ini
 
 1. Type **Policy** in the search box located at the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **labvm-<inject key="DeploymentID" enableCopy="false"/>** and navigate to this link ```https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade```.
 
-    ![](../Images/m3ex2.step1.png)
+    ![](../Images/hyb-ex2-g9.png)
 
-2. From the left navigation pane, under the **Authoring** section, click on **Definitions (1)**. From the top menu, use the filter ribbon, set the _Definition Type_ as **Initiative (2)**, select **Security Center (3)** from the _Category_ filter, and click on **Apply (5)**.
+2. In the **Policy** blade, do the following:
 
-    ![policy assignment](../Images/Sh29.png)	
+   - Expand **Authoring (1)**.
+   - Select **Definitions (2)**.
+   - Set **Definition type** to **Initiative (3)**.
+   - Open the **Category** filter (4).
+   - Search for **Security Center (5)**.
+   - Select **Security Center (6)**.
+   - Click **Apply (7)**.
+
+        ![policy assignment](../Images/hyb-ex2-g10.png)	
 
 4. You can now see built-in initiatives used by Microsoft Defender for Cloud which includes :
     -	*Azure Security Benchmark*
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
 
-   ![policy assignment](../Images/Sh30.png)
+        ![policy assignment](../Images/Sh30.png)
 
 5. Notice the number of policies included in each initiative (policies column).
 
@@ -99,7 +107,7 @@ In this exercise, you will be exploring azure policy and verify the built-in ini
 
 7. Click on **ASC Default** to see the assignment details.
 
-   ![policy assignment](../Images/Sh31.png) 
+   ![policy assignment](../Images/hyb-ex2-g11.png) 
 
 ### Exercise 3: Create resource exemption for a recommendation
 
