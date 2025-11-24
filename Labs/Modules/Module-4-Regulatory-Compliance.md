@@ -64,11 +64,11 @@ In this exercise, you will be enabling CIS Microsoft Azure Foundations Benchmark
 
 1. On **Regulatory Compliance** page, select **Manage compliance policies** from the top menu bar.
 
-    ![Manage compliance policies](../Images/c13.png)
+    ![Manage compliance policies](../Images/hyb-ex3-g3.png)
 
 2. Select your **Subscription** under the Environment settings.
 
-    ![](../Images/envset.png)
+    ![](../Images/hyb-ex3-g4.png)
    
 3. Select **Security policies (1)** in the search bar, search for **CIS Microsoft Azure Foundations Benchmark v1.1.0 (2)** and click on the toggle button to change the status to **On (3)**
 
@@ -86,11 +86,9 @@ In this exercise, you will be creating your own bechmark and will be assigning i
 
     ![Add CIS 1.1.0 (New) Standard](../Images/hyb-ex2-g9.png)
 
-1. From the left pane of the **Policy** page, select **Definitions**.
+1. From the left pane of the **Policy** page, select **Definitions** and from the top menu, select **+ Initiative definition** to create a new policy set definition.
 
-1. From the top menu, select **+ Initiative definition** to create a new policy set definition.
-
-    ![Benchmark Policy](../Images/benchmark-policy.png)
+    ![Benchmark Policy](../Images/hyb-ex3-g6.png)
 
 1. Under the **Basics** tab, enter the following steps:
 
@@ -104,9 +102,11 @@ In this exercise, you will be creating your own bechmark and will be assigning i
 
    - Click on **Next (6)**
 
-        ![Benchmark Next](../Images/Sh4.png)
+        ![Benchmark Next](../Images/hyb-ex3-g7.png)
 
 1. On the **Initiative definition** blade click on **Groups**, In this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create group**.
+
+    ![](../Images/hyb-ex3-g8.png)
    
 1. Under **Create group**, enter the following details:
 
@@ -116,9 +116,11 @@ In this exercise, you will be creating your own bechmark and will be assigning i
     
     - Click on **Save (5)** to create the new group.  
 
-        ![Group create](../Images/sgp1.png)
+        ![Group create](../Images/hyb-ex3-g9.png)
   
 1. Repeat the process to create an additional group, for example, **Group 2**.
+
+    ![](../Images/hyb-ex3-g10.png)
 
 1. Now you should have two groups to help you organize your policies within the initiative.
 
@@ -128,17 +130,21 @@ In this exercise, you will be creating your own bechmark and will be assigning i
     -	Azure Backup should be enabled for Virtual Machines
     -	Audit VMs that do not use managed disks
 
-    ![Group create](../Images/policydef.png)
+        ![Group create](../Images/hyb-ex3-g11.png)
+
+        ![Group create](../Images/hyb-ex3-g12.png)
 
 1. Every policy on the list, has its definition name, reference ID and the associated group. However, you do need to define a group for each policy. To do so, click on the **… (1)** to open the context menu and select **Edit groups (2)**.
 
-    ![edit group](../Images/edit-group.png)
+    ![edit group](../Images/hyb-ex3-g13.png)
 
 1. Make sure all policies are associated with a group. Please notice that policies can be associated with multiple groups. Here we are selecting **Group 1 (1)** and selecting **Save (2)**.
 
-     ![edit group](../Images/edit-group1.png)
+     ![edit group](../Images/hyb-ex3-g14.png)
 
 1. You can assign policy and initiative parameters to be used during the assignment process. Skip this section and click on **Review + create** to validate your settings. Then, click on **Create**
+
+    ![](../Images/hyb-ex3-g16.png)
 
 1. You should now see your new initiative listed here **Custom Benchmark** along with the additional metadata (scope, category, etc.)
 
@@ -146,15 +152,11 @@ In this exercise, you will be creating your own bechmark and will be assigning i
 
 1. To assign your new security policy, type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
 
-    ![](../Images/lab-all.png)
+    ![](../Images/hyb-ex1-g1.png)
      
 1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able to see the subscription.
 
-    ![Template deployment completed](../Images/m2e1s3.2.png)
-   
-1. On the **Environment Settings** page, select your subscription.
-
-    ![Template deployment completed](../Images/m1e2.1s2.png)
+    ![Template deployment completed](../Images/hyb-ex1-g2.png)
    
 1. Select **Security policies (1)**, in the search bar search for **Custom Benchmark (2)**, click on the toggle button to change the status to **On (3)**
 
@@ -164,11 +166,11 @@ In this exercise, you will be creating your own bechmark and will be assigning i
 
     ![](../Images/lab4-2.png)
 
-    ![](../Images/lab4-3.png)
+    ![](../Images/hyb-ex3-g19.png)
 
 1. In the Basics tab of Contoso Security Benchmark, under scope provide your subscription and select **Review + create** and then **Create**.
 
-    ![](../Images/lab4-4.png)
+    ![](../Images/hyb-ex3-g20.png)
    
 1. Your custom initiative is now assigned.
 
