@@ -63,7 +63,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
 1. Type **Microsoft Defender for Cloud** in the search box on top of the **Azure Portal** and click to open it.
 
-    ![](../Images/lab-all.png)
+    ![](../Images/hyb-ex1-g1.png)
 
 1. Click on **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, scroll down select your **Log Analytics workspace as asclab-la-XXXXX (3)**, and click **Upgrade (4)**.
 
@@ -85,28 +85,26 @@ In this exercise, you will be getting started with the functionality of Microsof
 
 1. Go to the **Microsoft Defender for Cloud** page, click on the **Environment settings** page, and select your **Azure subscription**.
 
-    ![Template deployment completed](../Images/security1.2.png)
+    ![Template deployment completed](../Images/hyb-ex1-g2.png)
 
 1. From the **Settings | Defender Plans** page, navigate to **Settings & monitoring**.
 
-    ![](../Images/secure-3.png)
+    ![](../Images/hyb-ex1-g3.png)
 
 1. On the **Settings & monitoring** tab, toggle the status of **Log Analytics agent** to **On** (if it is not already set to On). Click on **Edit configuration** under the **Configuration** header of the Log Analytics agent/Azure Monitor agent.
 
-    ![](../Images/lab1-4.png)
+    ![](../Images/hyb-ex1-g4.png)
     
 1. A new window of Auto-provisioning configuration is opened. Under **Workspace selection** select **Custom workspace** and choose your workspace from the drop-down menu and click **Apply**.
 
      ![](../Images/mod1-ex2-2.png)
   
 
-1. Once all the configurations are made, click on **Continue**.
+1. Once all the configurations are made, click on **Save**. 
 
-    ![](../Images/secure-4.png)
-    
-1. Click on **Save**. 
+    ![](../Images/hyb-ex1-g12.png)
 
-    ![](../Images/1.1.png)
+    ![](../Images/hyb-ex1-g13.png)
 
 
 <br>
