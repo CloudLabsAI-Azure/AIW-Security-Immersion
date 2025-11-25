@@ -245,7 +245,7 @@ In this exercise, you will be creating a custom initiative using azure policy an
 
 1. In the search box located at the top of the Azure Portal page, search for **Policy** and click on it. 
 
-    ![](../Images/m3ex2.step1.png)
+    ![](../Images/hyb-ex2-g9.png)
 
 1. Select **Definitions** from the left navigation pane, from the top menu, select **+ Initiative definition** to add a new initiative
 
@@ -283,19 +283,15 @@ Add each policy one by one:
 
     ![](../Images/hyb-ex1-g1.png)
 
-1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able to see the subscription.
+1. From **Microsoft Defender for Cloud** blade, Select **Environment settings** and select your subscription..
 
-    ![Template deployment completed](../Images/m2e1s3.2.png)
+    ![Template deployment completed](../Images/hyb-ex1-g2.png)
    
-1. In **Environment Settings** page, Select your subscription.
-
-    ![Template deployment completed](../Images/m1e2.1s2.png)
-   
-1. Click on **Security policies (1)**. In the search bar, search for **Contoso Security Benchmark (2)**. Click on the toggle button to change the status to **On (3)**.
+1. Click on **Security policies (1)**. In the search bar, search for **Contoso Security Benchmark (2)**. Click on the toggle button to change the status to **On (3)** if it is not alredey set to On.
 
     ![Template deployment completed](../Images/Sh32.png)
 
-1. Click on **...** for Contoso Security Benchmark and select **View in Azure Policy**. In the Contoso Security Benchmark page, select **Assign**.
+1. Click on **...** for Contoso Security Benchmark and select **View in Azure Policy**. In the Contoso Security Benchmark page, select **Assign initiative**.
 
     ![](../Images/lab3-5.png)
 
