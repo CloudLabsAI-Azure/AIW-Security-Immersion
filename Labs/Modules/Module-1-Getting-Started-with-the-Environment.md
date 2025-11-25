@@ -21,24 +21,6 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![](../Images/hyb-ex1-g1.png)
 
-1. Click on **Getting started (1)** from the left pane. Click on the **Upgrade (2)** tab, scroll down select your **Log Analytics workspace as asclab-la-XXXXX (3)**, and click **Upgrade (4)**.
-
-    > **Note:** If you are not able to see the Log Analytics workspace, then it means your subscription is already upgraded. In this case, you can skip steps 2, and 3 and continue from step 4. Also, you might have to wait for a few seconds to have the upgrade button visible.
-
-    ![Overview: Inventory tile](../Images/lab1-1.png)
-
-    ![Overview: Inventory tile](../Images/lab1-2.png) 
-
-1. Refresh the browser and under Install agents tab, select your subscription and click on **Install agents**. 
-
-    ![install-agents](../Images/lab1-3.png)
-   
-    > **Note:** If the button is greyed out, then it's already set to **On** and agents are already installed. In this case, you can move on to the next step.
-
-    ![install-agents](../Images/installagents1.png)
-
-### Configure the data collection settings in Microsoft Defender for Cloud
-
 1. Go to the **Microsoft Defender for Cloud** page, click on the **Environment settings** page, and select your **Azure subscription**.
 
     ![Template deployment completed](../Images/hyb-ex1-g2.png)
@@ -53,7 +35,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![](../Images/hyb-ex1-g3.png)
 
-1. On the **Settings & monitoring** tab, toggle the status of **Log Analytics agent** to **On**.
+1. On the **Settings & monitoring** tab, review the status of **Log Analytics agent**
 
     ![](../Images/hyb-ex1-g4.png)
 
