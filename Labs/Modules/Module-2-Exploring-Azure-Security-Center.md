@@ -88,7 +88,7 @@ Exploring secure score
 1. On the Microsoft Defender for Cloud | Secure Score page, review your current **Overall Secure Score**.
 
      > **Note:** It could require up to 24 hours for secure score to appear. If you don't see it, please return later to check again.
-   > ⭐ Notice: <br>
+   >  Notice: <br>
    > The score is shown as a percentage value; you can also see the points based on which the score is calculated next to the percentage. See the following example:
    > 
    > ![Overall Secure Score](../Images/md2ex2stp3.png)
@@ -97,10 +97,11 @@ Exploring secure score
 
     **Exploring Security Controls and Recommendations**
 
-
 1. On the **Recommendations (1)** page, use the **Switch to classic view** button at the top menu and pay attention to the first part of the page, the **summary view (2)**. It includes the progress on the **Recommendations status** (both completed security controls and recommendations), and **Resource health** (by severity).
 
     ![Recommendations view](../Images/mod2-ex2-1.png)
+
+    > **Note:** Your data might look different from what’s shown in the screenshots, and that’s totally expected based on your environment and available resources..
 
 1. From the top menu, click on the **Download CSV report** button; this allows you to get a snapshot of your resources, their health status, and the associated recommendations. You can use this file for pivoting and reporting.
 
@@ -109,6 +110,14 @@ Exploring secure score
 1. Under **Recommendation**, search and select **Storage account public access should be disallowed** recommendation from the **All recommendations** list.
 
     ![](../Images/mod2-ex2-3.png)
+
+    > **Note:** If you cannot find the recommendation, open the **Status** filter (1), select **All (2)**, and click **Apply (3)** to refresh the recommendation list.t.
+
+    ![](../Images/hyb-ex1-g27.png)
+
+    ![](../Images/hyb-ex1-g28.png)
+
+    > **Note:** The status of the recommendation may vary based on your environment.
 
 1. On the top section, notice the following:
 
@@ -122,17 +131,17 @@ Exploring secure score
 
 1. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resources.
 
+1. If storage account has already been moved to the **Healthy resources** tab, then move on to the next exercise.
+
 1. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**. This will automatically apply the remediation to the selected resource.
 
      ![](../Images/c2.png)
-
-       > **Note:** If storage account has already been moved to the **Healthy resources** tab, then move on to the next exercise.
 
 1. This will open a new window - **Fixing resources**, review the implications for this remediation and click on **Fix 1 resource**.
 
      ![](../Images/c3.png)
   
-1. Wait for a notification: ✅ **Remediation successful** - Successfully remediated the issues on the selected resources.
+1. Wait for a notification:  **Remediation successful** - Successfully remediated the issues on the selected resources.
     
     > **Note**: It can take several minutes after remediation is completed to see the resources in the 'healthy resources' tab. You can move on to the next task and come back later to check on this.
 
@@ -144,21 +153,17 @@ Asset inventory dashboard allows you to get a single pane of glass view of all y
 
 In this exercise, you will be exploring the Inventory capabality in the Microsoft defender for cloud.
 
-1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it. From the left navigation pane, under the **General** section, select the **Inventory** button.
-
-     ![](../Images/lab2-2.png)
+1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it.
     
-1. Hover to the **Summaries strip** at the top of the page.
+1. From the left navigation pane, under the **General** section, select the **Inventory** and hover to the **Summaries strip** at the top of the page.
 
-    ![Remediate a resource](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/inventory1.1.png?raw=true)
+     ![](../Images/hyb-ex1-g30.png)
 
     > **Note**: In your environment, these numbers may not be the same since they vary in time
 
 1. Notice the total number of resources. The total number of resources are the ones that are connected to the Microsoft Defender for Cloud, not the total number of resources that you have in your subscriptions.
 
 1. Notice the number of **unhealthy resources**, The unhealthy resources are the resources with actionable recommendations based on the selected filter.
-
-1. Notice the **unmonitored resources**, The unmonitored resources indicate if there are resources with a Log Analytics agent deployed but with health issues. Since we enabled the auto-provisioning in the previous module, all existing VMs are covered and connected, which means they are monitored.
 
 1. Use the **Filter by name** box to search for **linux** **(1)**. You should now see a filtered view containing your desired resource: **asclab-linux**. Hover on the red bar in the **recommendations** column to see a tooltip with the **active recommendations (2)**. You should expect to see **Active-xx of xx Recommendations** – these are the active recommendations you must attend.
 
