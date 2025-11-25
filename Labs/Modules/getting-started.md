@@ -7,22 +7,6 @@ In this lab, you will learn how to secure hybrid cloud environments using Micros
 ## Objective 
 
 This lab provides practical experience in securing hybrid cloud environments with Microsoft Defender for Cloud. Participants will learn to enable and configure Defender for Cloud, assess security posture through dashboards and recommendations, manage security policies, ensure regulatory compliance, and implement advanced threat protection. The lab also covers integrating security insights with SIEM systems and applying advanced defense techniques to protect Azure, on-premises, and multi-cloud resources.
-
-## Prerequisites
-
-Participants should have: 
- 
-  - Basic understanding of Microsoft 365 security architecture.
-  
-  - Familiarity with Microsoft Defender for Office 365 and Defender XDR portals.
-  
-  - Experience with configuring security policies in Microsoft 365.
-
-  - Awareness of phishing, malware, and email-based threat vectors.
-
-  - Familiarity with Microsoft Purview portal.
-
-  - Understanding of Microsoft 365 Defender portal.
   
 ## Getting Started with the Lab
  
