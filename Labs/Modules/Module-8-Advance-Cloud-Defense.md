@@ -49,7 +49,7 @@ In this exercise, you will be using Just In Time access (JIT) to access your vir
         ![](../Images/justintime1.png)
     
 1. Select **asclab-win** and then click on the **Enable JIT on 1 VM** button.
-    > If you have followed the above instructions to enable **Just-in-time VM access**, you can skip Steps 5-7 and continue from Step 13.
+    > If you have followed the above instructions to enable **Just-in-time VM access**, you can skip Steps 8-11 and continue from Step 12.
     
     ![Enable JIT on Windows VM](../Images/lab8-2.png)
 
