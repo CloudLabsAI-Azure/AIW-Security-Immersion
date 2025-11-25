@@ -162,13 +162,13 @@ In this exercise, you will be creating your own bechmark and will be assigning i
 
     ![Template deployment completed](../Images/Sh35.png)
 
-1. Click on **...** for Contoso Benchmark and select **View in Azure Policy**. In the Contoso Benchmark page, select **Assign**.
+1. Click on **...** for and select **View in Azure Policy** and select **Assign initative**.
 
     ![](../Images/lab4-2.png)
 
     ![](../Images/hyb-ex3-g19.png)
 
-1. In the Basics tab of Contoso Security Benchmark, under scope provide your subscription and select **Review + create** and then **Create**.
+1. In the Basics tab of, under scope provide your subscription and select **Review + create** and then **Create**.
 
     ![](../Images/hyb-ex3-g20.png)
    
