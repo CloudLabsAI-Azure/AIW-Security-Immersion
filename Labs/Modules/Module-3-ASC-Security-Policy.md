@@ -96,7 +96,7 @@ In this exercise, you will be exploring azure policy and verify the built-in ini
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
 
-        ![policy assignment](../Images/Sh30.png)
+    ![policy assignment](../Images/Sh30.png)
 
 1. Notice the number of policies included in each initiative (policies column).
 
