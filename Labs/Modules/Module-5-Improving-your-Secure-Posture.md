@@ -22,7 +22,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
     ![](../Images/hyb-ex4-g1.png)
 
-1. Copy the name or your container registry, for example: *asclabcrktfvrxcne4kki*
+1. Copy the name or your container registry to a notepad.
 
     ![](../Images/hyb-ex4-g2.png)
 
@@ -232,7 +232,7 @@ In this Exercise, you will create a new Logic App and then trigger it automatica
 
      ![](../Images/hyb-ex4-g31.png)
 
-1. Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations.
+1. Wait for the message **"Workflow automation created successfully. Changes may take up to 5 minutes to be reflected"** to appear. From now on, you will get email notifications for recommendations inside your outlook.
 
    Once you start to get email notifications, you can disable the automation by selecting the workflow and clicking on **Disable**.
 
