@@ -21,11 +21,11 @@ In this exercise, you will be getting started with the functionality of Microsof
 
     ![](../Images/hyb-ex1-g1.png)
 
-1. Go to the **Microsoft Defender for Cloud** page, click on the **Environment settings** page, and select your **Azure subscription**.
+1. Go to the **Microsoft Defender for Cloud** page, Under **Management (1)**  click on the **Environment settings (2)** page, and select your **Azure subscription (3)**.
 
     ![Template deployment completed](../Images/hyb-ex1-g2.png)
     
-1. Once all the configurations are made, click on **Save**. 
+1. Once all the configurations are turn **On (1)**, click on **Save (2)**. 
 
     ![](../Images/hyb-ex1-g12.png)
 
@@ -64,7 +64,7 @@ In this exercise, you will be getting started with the functionality of Microsof
 
 In this exercise, you will create the Microsoft Defender for Cloud default policy in the security policy under Microsoft Defender for Cloud.
 
-1. From the Azure Portal, search for **Microsoft Defender for Cloud** and select it.
+1. From the Azure Portal, search for **Microsoft Defender for Cloud (1)** and select **Microsoft Defender for Cloud (2)**.
 
     ![](../Images/hyb-ex1-g1.png)
    

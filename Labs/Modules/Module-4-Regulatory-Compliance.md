@@ -20,11 +20,11 @@ Microsoft Defender for Cloud continuously assesses your hybrid cloud environment
 
 In this exercise, you will get a walkthrough on regulatory compliance dashboard in Microsoft defender for cloud.
 
-1. Navigate to **Microsoft Defender for Cloud** in the Azure portal (perform if not already on the Microsoft Defender for Cloud).
+1. Navigate to **Microsoft Defender for Cloud (1)** in the Azure portal (perform if not already on the Microsoft Defender for Cloud).
 
     ![](../Images/hyb-ex1-g1.png)
 
-1. On the overview page, select the **Regulatory Compliance (1)** tile (this pillar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance dashboard (2)** opens, you can see the compliance standards currently assigned to your subscription.
+1. On the overview page, select the **Regulatory Compliance (1)** tile (this pillar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance (2)** dashboard  opens, you can see the compliance standards currently assigned to your subscription.
 
     ![](../Images/hyb-ex3-g1.png)
 
@@ -38,19 +38,17 @@ In this exercise, you will get a walkthrough on regulatory compliance dashboard 
 
     ![Remmediate function app](../Images/lab4-5.png)
    
-1. Under **Managed identity should be used in your function app** tab, expand **Affected resources**.
+1. Under **Managed identity should be enabled on function app** tab, expand **Affected resources (1)**. you can observe the **Function app (2)**.
 
     ![](../Images/affectedresources1.png)
    
-1. Now under **Healthy resources (1)**, you can observe the **Function app (2)**.
 
-    ![](../Images/healthyresources.png)
 
 1. Return to the dashboard. Here, you can export the regulatory standard compliance status report as a PDF or CSV file. From the top menu bar, click on **Download report**.
 
     ![](../Images/downloadreport.png)
 
-1. On the Report standard dropdown menu, select **Microsoft cloud security benchmark** and format as **PDF*. Click on **Download**.
+1. On the Report standard dropdown menu, select **Microsoft cloud security benchmark (1)** and format as **PDF (2)** and Scope as your **Subscription (3)**. Click on **Download (4)**.
 
     ![](../Images/c12.png)
 
@@ -62,7 +60,7 @@ You can add additional industry standards (represented as compliance packages) s
 
 In this exercise, you will be enabling CIS Microsoft Azure Foundations Benchmark v1.1.0 policy.
 
-1. On **Regulatory Compliance** page, select **Manage compliance policies** from the top menu bar.
+1. On **Regulatory Compliance (2)** under **Cloud Security (1)**, select **Manage compliance policies (3)** from the top menu bar.
 
     ![Manage compliance policies](../Images/hyb-ex3-g3.png)
 
@@ -82,11 +80,11 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
 In this exercise, you will be creating your own bechmark and will be assigning it.
 
-1. In the search box located at the top of the Azure Portal page, search for Policy and click on it.
+1. In the search box located at the top of the Azure Portal page, search for **Policy (1)** and click on it.
 
     ![Add CIS 1.1.0 (New) Standard](../Images/hyb-ex2-g9.png)
 
-1. From the left pane of the **Policy** page, select **Definitions** and from the top menu, select **+ Initiative definition** to create a new policy set definition.
+1. From the left pane of the **Policy** page, select **Definitions (2)** and from the **Authoring (1)**, select **+ Initiative definition (3)** to create a new policy set definition.
 
     ![Benchmark Policy](../Images/hyb-ex3-g6.png)
 
@@ -104,7 +102,7 @@ In this exercise, you will be creating your own bechmark and will be assigning i
 
         ![Benchmark Next](../Images/hyb-ex3-g7.png)
 
-1. On the **Initiative definition** blade click on **Groups**, In this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create group**.
+1. On the **Initiative definition** blade click on **Groups (1)**, In this section you can define your groups and subgroups to be used in your initiative. To add a new group, click on **Create group (2)**.
 
     ![](../Images/hyb-ex3-g8.png)
    
@@ -124,7 +122,7 @@ In this exercise, you will be creating your own bechmark and will be assigning i
 
 1. Now you should have two groups to help you organize your policies within the initiative.
 
-1. On the **Initiative definition** blade, click on the **Policies** tab. Here you can add policy definitions, both built-in and custom. Click **Add policy definition(s)**. Select your desired policies, If you create a benchmark, you can also leverage existing policy definitions from the **Microsoft managed** tab. For example, you can choose the following policies and select **Add**:
+1. On the **Initiative definition** blade, click on the **Policies (1)** tab. Here you can add policy definitions, both built-in and custom. Click **Add policy definition(s) (2)**. Select your desired policies, If you create a benchmark, you can also leverage existing policy definitions from the **Microsoft managed** tab. For example, you can choose the following policies and select **Add**:
    
     -	Audit virtual machines without disaster recovery configured
     -	Azure Backup should be enabled for Virtual Machines
@@ -168,7 +166,7 @@ In this exercise, you will be creating your own bechmark and will be assigning i
 
     ![](../Images/hyb-ex3-g19.png)
 
-1. In the Basics tab of, under scope provide your subscription and select **Review + create** and then **Create**.
+1. In the Basics tab of, under scope provide your **subscription (1)** and select **Review + create (2)** and then **Create**.
 
     ![](../Images/hyb-ex3-g20.png)
    

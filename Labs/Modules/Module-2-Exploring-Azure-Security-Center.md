@@ -25,13 +25,11 @@ In this exercise, you will be interacting with the Microsoft Defender for Cloud 
 
     ![Microsoft Defender for Cloud: Overview dashboard](../Images/msdefender-1.png)
 
-1. Note that the **Subscriptions** icon on the **top menu bar** allows you to view and filter subscriptions. In this lab, we will use only one subscription, but for your reference, selecting different/additional subscriptions will adjust the interface to reflect the security posture for the specified subscription.
 
-    ![Microsoft Defender for Cloud: subscriptions](../Images/hyb-ex1-g7.png)
 
 1. Click on the **What’s new** button; a new tab will open with the latest release notes, where you can stay updated on the new features, bug fixes, and more.
 
-    ![Microsoft Defender for Cloud: what's new](../Images/hyb-ex1-g9.png)
+    ![Microsoft Defender for Cloud: what's new](../Images/M2-E1-4.png)
 
 1. Note the **high-level numbers** at the top menu. This view allows you to see a summary of your **Azure subscriptions, Assessed resources, Active secure score recommendations and Security alerts.**
 
@@ -91,7 +89,7 @@ Exploring secure score
    >  Notice: <br>
    > The score is shown as a percentage value; you can also see the points based on which the score is calculated next to the percentage. See the following example:
    > 
-   > ![Overall Secure Score](../Images/md2ex2stp3.png)
+   > ![Overall Secure Score](../Images/M2-E2-3.png)
    > 
    > For more information on how the score is calculated, [refer to the secure score documentation page](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#how-your-secure-score-is-calculated).
 
@@ -107,7 +105,7 @@ Exploring secure score
 
     ![](../Images/hyb-ex1-g18.png)
    
-1. Under **Recommendation**, search and select **Storage account public access should be disallowed** recommendation from the **All recommendations** list.
+1. Under **Recommendation (1)**, search and select **Storage account public access should be disallowed (2)** recommendation from the **All recommendations (3)** list.
 
     ![](../Images/mod2-ex2-3.png)
 
@@ -155,7 +153,7 @@ In this exercise, you will be exploring the Inventory capabality in the Microsof
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it.
     
-1. From the left navigation pane, under the **General** section, select the **Inventory** and hover to the **Summaries strip** at the top of the page.
+1. From the left navigation pane, under the **General (1)** section, select the **Inventory (2)** and hover to the **Summaries strip** at the top of the page.
 
      ![](../Images/hyb-ex1-g30.png)
 
@@ -179,19 +177,19 @@ In this exercise, you will be exploring the Inventory capabality in the Microsof
 
     > **Note**: It could take up to 24 hours for all the recommendations to show up. And it is possible that during lab time, this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
 
-1. Navigate back to the Inventory page and clear the search keyword **Linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks** (unselect remaining), and click on **Ok (3)**. Using this filter, you can see all resources related to the predefined Kubernetes resources that are monitored with active recommendations.
+1. Navigate back to the Inventory page and clear the search keyword **Linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks( 3)** (unselect remaining), and click on **Apply (4)**. Using this filter, you can see all resources related to the predefined Kubernetes resources that are monitored with active recommendations.
 
      ![Remediate a resource](../Images/hyb-ex1-g33.png)
 
     > **Note:** The list can be filtered and sorted.
 
-1. From the filter menu, select the **Resource Group** filter and **select all** under the Value and click on **Ok**. Again, from the filter menu, select **Recommendations**, uncheck the **Select all** option under the Value, and then select **Auditing on SQL Server should be enabled** and click on **Ok**. You can also use the search area within the filter to better find items across the list. When you are done exploring, remember to clear your filter.
+1. From the filter menu, select the **Resource Group** filter and **select all** under the Value and click on **Apply**. Again, from the filter menu, select **Recommendations**, uncheck the **Select all** option under the Value, and then select **Auditing on SQL Server should be enabled** and click on **Apply**. You can also use the search area within the filter to better find items across the list. When you are done exploring, remember to clear your filter.
 
     > **Note**: If you don't see **Auditing on SQL Server should be enabled** in search results, that means it is not loaded yet for recommendations, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. If you don't see the data in **Recommendations**, you can note down this step number, then continue to the next exercise and verify this later.
 
 1. Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 
-  * Filter the **Resource types** column to include only **App Services or web services**: Select the **Resource type** filter and select **function apps and web apps** under the Value and Click on **OK**
+  * Filter the **Resource types** column to include only **App Services or web services**: Select the **Resource type** filter and select **function apps and web apps** under the Value and Click on **Apply**
   * **Select** the checkboxes of the two app services named *asclab-fa-xx* and *asclab-app-xx*. (Here **xx** is the unique ID of resource).
   * From the top menu, click **Assign tags**
   * Assign `Environment` as the name and  `Production` as the value.
@@ -211,7 +209,7 @@ In this exercise, you will be exploring the Inventory capabality in the Microsof
  
     ![Inventory: Assign tags](../Images/hyb-ex1-g35.png)
 
-1. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as **asc-filtered-query** and select **Save**.
+1. Save the query for later use by clicking on **Save as** from the top menu. You can use it to create periodic reports. Name the report as **asc-filtered-query (1)** and select **Save (2)**.
 
     ![Inventory: Assign tags](../Images/hyb-ex1-g36.png)
 
