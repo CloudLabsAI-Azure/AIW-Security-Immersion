@@ -8,22 +8,22 @@ In this module, you will be exploring the Microsoft Defender for Cloud features 
 
 You will be performing the following activities to achieve the goal:
 
-* Exercise 1: Using JIT to reduce the attack surface
+* Exercise 1: Using JIT to reduce the Attack surface
 * Exercise 2: File Integrity Monitoring
 
-### Exercise 1: Using JIT to reduce the attack surface
+### Exercise 1: Using JIT to reduce the Attack surface
 
-In the simplest terms, the “attack surface” is the sum total of resources exposed to exploit within your enterprise. Defending the attack surface was a lot less complicated when a defined corporate “perimeter” existed, neatly separating a company’s assets from the outside world using **Just-in-time VM access**.
+ In the simplest terms, “Attack surface” is the total set of resources and entry points exposed to potential exploitation within an enterprise. Defending the attack surface was less complicated when a defined corporate perimeter existed, separating internal assets from external networks using firewalls and network controls, while modern approaches use features like **Just-in-time VM access** to reduce exposure. 
 
 In this exercise, you will be using Just In Time access (JIT) to access your virtual machine.
 
 1. Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and log in with the Azure credentials from the Lab **Environment Details** tab.
 
-1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it.
+1. Type **Microsoft Defender for Cloud (1)** in the search box located on the top of the **Azure Portal** page and click on **Microsoft Defender for Cloud (2)**.
 
     ![](../Images/hyb-ex1-g1.png)
 
-1. Select **Workload protections** under **Cloud Security** from the left side pane.
+1. Select **Workload protections (2)** under **Cloud Security (2)** from the left side pane and select **Just in time VM access (3)**.
 
     ![](../Images/hyb-ex6-g23.png)
 
@@ -32,13 +32,13 @@ In this exercise, you will be using Just In Time access (JIT) to access your vir
     > **Note**: If the virtual machines `asclab-linux` and `asclab-win` are present under the **Unsupported** tab, then follow the below instructions to enable **Just-in-time VM access**.
     ![](../Images/hyb-ex6-g24.png)
 
-1. Navigate to **asclab** resource group and select **asclab-win** virtual machine.
+1. Type **Virtual machines (1)** in the search box located on the top of the **Azure Portal** page and click on **Virtual machines (2)**. Select **asclab-win** virtual machine.
 
     ![](../Images/hyb-ex6-g26.png)
 
     ![](../Images/hyb-ex6-g27.png)
 
-1. Select **Configuration** from the left-hand side menu in **Settings** and click on **Enable Just-in-time**
+1. Select **Configuration (2)** from the left-hand side menu in **Settings (1)** and click on **Enable Just-in-time (3)**
        
     ![](../Images/hyb-ex6-g28.png)
        
@@ -91,8 +91,18 @@ In this exercise, you will be using Just In Time access (JIT) to access your vir
 
     ![](../Images/hyb-ex6-g35.png)
 
-1. Return to the VM blade **Connect** page, click on **Request access** under **Request just-in-time access**, select **Local machine IP** and then click on **Request access**. The access should be approved in a minute. 
+1. Navigate back to **Microsoft Defender for Cloud page** under **cloud security** select **Workload Protections** and click on **Just in time VM access**. 
 
+1. Under **Configured tab (1)**, select **asclab-win (2)**, click on **Request access (3)**.
+
+    ![request-access](../Images/hyb-ex6-g36-1.png)
+
+    From **Request access (1)** under **asclab-win (2)** the **Toggle should be On (2)** and Allowed source IP should be **My IP (3)**
+
+    ![request-access](../Images/hyb-ex6-g36-2.png)
+
+ 1. Return to the VM blade **Connect** page, click on **Request JIT + Check access**.
+     
      ![request-access](../Images/hyb-ex6-g36.png)
     
 1. Verify that **JIT access** is granted and **port 3389** is accessible from the source IP, as indicated by the green checks.
@@ -132,9 +142,9 @@ In this exercise, you will be working with the file integrity monitoring under w
 
 It maps the current state of these items with the state during the previous scan and alerts you if any suspicious modifications have been made. To enable FIM, follow the instructions below:
 
-1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections** under **Cloud Security** from the left side pane.
+1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click on it, then select **Workload protections (2)** under **Cloud Security (1)** from the left side pane.
 
-1. Navigate to the bottom section under Advanced Protection, and click on the **File Integrity Monitoring** tile.
+1. Navigate to the bottom section under Advanced Protection, and click on the **File Integrity Monitoring (3)** tile.
 
     ![File Integrity Monitoring1](../Images/hyb-ex6-g43.png)
 
@@ -146,7 +156,7 @@ It maps the current state of these items with the state during the previous scan
 
     ![](../Images/hyb-ex6-g46.png)
 
-1. On the **FIM configuration** page, select the **Log Analytics workspace** named **asclab-la-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click **Apply (2)** to enable File Integrity Monitoring.
+1. On the **FIM configuration** page, select the **Workspace selection** named **asclab-la-<inject key="DeploymentID" enableCopy="false"/> (1)**, then you can review the default **Recommended to monitor - Enabled (2)** click **Apply (3)** to enable File Integrity Monitoring.
 
     ![](../Images/hyb-ex6-g47.png)
 

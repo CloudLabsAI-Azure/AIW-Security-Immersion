@@ -25,7 +25,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/hyb-ex1-g2.png)
    
-1. Click on **Security policies (1)** under Settings. By default, there is one security policy assignment which is **Microsft cloud security benchmark**.
+1. Click on **Security policies (1)** under Settings. By default, there is one security policy assignment which is **Microsft cloud security benchmark (2)**.
 
     ![Template deployment completed](../Images/Sh14.png)
 
@@ -47,7 +47,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Template deployment completed](../Images/hyb-ex2-g3.png)
 
-1. Under the **Scope** blade, select your **Subscription (1)** from the drop-down list, select Resource Group as **asclab (2)**, and click on **Select (3)**.
+1. Under the **Scope** blade, select your **Subscription ** from the drop-down list, select Resource Group as **asclab (1)**, and click on **Select (2)**.
 
     ![Template deployment completed](../Images/hyb-ex2-g4.png)
 
@@ -61,7 +61,7 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
    
     ![](../Images/hyb-ex2-g6.png)
     
-1. On the **Assign initiative** blade, scroll down and change the action to **AuditIfNotExists** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + create**.
+1. On the **Assign initiative** blade, scroll down and change the action to **AuditIfNotExists (1)** for the parameter **Network Security Groups on the subnet level should be enabled**, to enable monitoring of NSGs on subnets, and click on **Review + create (2)**.
 
     ![](../Images/hyb-ex2-g7.png)
 
@@ -92,7 +92,7 @@ In this exercise, you will be exploring azure policy and verify the built-in ini
         ![policy assignment](../Images/hyb-ex2-g10.png)	
 
 1. You can now see built-in initiatives used by Microsoft Defender for Cloud which includes :
-    -	*Azure Security Benchmark*
+    -	*Microsoft cloud security Benchmark*
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
 
@@ -100,11 +100,11 @@ In this exercise, you will be exploring azure policy and verify the built-in ini
 
 1. Notice the number of policies included in each initiative (policies column).
 
-1. To see current assignments, click on **Assignments** from the left navigation pane under **Authoring**. Policy initiatives have a different name for the assignments, for example:
+1. To see current assignments, click on **Assignments (2)** from the left navigation pane under **Authoring (1)**. Policy initiatives have a different name for the assignments, for example:
 
     - *ASC Default*
 
-1. Click on **ASC Default** to see the assignment details.
+1. Click on **ASC Default (3)** to see the assignment details.
 
    ![policy assignment](../Images/hyb-ex2-g11.png) 
 
@@ -147,7 +147,11 @@ In this exercise, you will create an exemption by clicking the ellipsis menu on 
 
         ![Exempttion tab](../Images/hyb-ex2-g14.png)
 
-1. Refresh the tab and open the **Not applicable resources** tab to review your exempted resource – you can see our resource along with the reason/description value.
+1. Click on **View recommendation for all resources**  review your exempted resource  
+
+    ![Exempttion tab](../Images/m3fs4-1.png)
+
+    - you can see your vm resources along with the reason/description value Under **Affected resources**. 
 
     ![Exempttion tab](../Images/m3fs4.png)
 
@@ -167,7 +171,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 1. In the search box located at the top of the Azure Portal page, search for **Microsoft Defender for Cloud** and click on it.
 
-1. Select **Recommendations** under **General**, search and select the **Secure transfer to storage accounts should be enabled**. You can search it using the search box.
+1. Select **Recommendations (2)** under **General (1)**, **search (3)** and select the **Secure transfer to storage accounts should be enabled (4)**. You can search it using the search box.
 
     ![](../Images/hyb-ex2-g15.png)
 
@@ -186,7 +190,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
     ![](../Images/hyb-ex2-g17.png)
 
-1. Go back to the **recommendations view**, type **Auditing** in the search box,. Click on the recommendation **Auditing on SQL server should be enabled**.
+1. Go back to the **recommendations view (2)** under **General (1)** left-pane, type **Auditing (3)** in the search box,. Click on the recommendation **Auditing on SQL server should be enabled (4)**.
 
    > **Note**: If you don't see the above recommendation, that means it is not loaded yet, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
@@ -194,11 +198,11 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
     ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
-1. On the **Auditing on SQL server should be enabled** page, from the top menu bar, click on the **Enforce** button. This option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
+1. On the **Auditing on SQL server should be enabled** page, From **Take action** tab under **Prevention** click on the **Enforce** button. This option allows you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
 
     ![](../Images/hyb-ex2-g19.png)
 
-1. Once the **Configure SQL servers to have auditing enabled** pane opens with all of the policy configuration options, select the following configuration settings:
+1. Once the **Auditing on SQL server should be enabled** pane opens with all of the policy configuration options, select the following configuration settings:
 
     * Under the **Basics** tab under the Scope header, select the ellipse icon **(...)** to select your subscription and  select the **asclab** for resource group and click on the **Select**.
     * Then click on **Next**.
@@ -209,11 +213,11 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
         ![](../Images/hyb-ex2-g22.png)
 
-1. In the **Parameters** tab, leave the *Effect* and *Retention days* with default values.
+1. In the **Parameters (1)** tab, leave the *Effect* and *Retention days* with default values.
 
-     - **Uncheck** Only show parameters that need input or review
+     - **Uncheck (2)** Only show parameters that need input or review
      - Leave options to default.
-     - Select **Review + create** to assign the policy to your subscription.
+     - Select **Review + create (3)** to assign the policy to your subscription.
 
         ![](../Images/hyb-ex2-g23.png)
 
@@ -223,14 +227,14 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 1. On the **Auditing on SQL server should be enabled** page, perform the following steps:
 
-    - Select the **SQL Server resource (1)** found on the **unhealthy resources** tab of **Affected resources** named **<inject key="SQL Server" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** 
-    - click on **Fix (2)**
-    - Select the **asclab-la-XXXXXX (3)** workspace from the dropdown
+    - Select the **Affected resources (1)**. You are able to see the resource **<inject key="SQL Server" props="{\&quot;enableCopy\&quot;:true,\&quot;style\&quot;:{\&quot;fontWeight\&quot;:\&quot;bold\&quot;}}" />** 
+    - The resource is visible now **asclab-la-XXXXXX (2)** 
+    - Check the **box (3)** 
     - Click **Fix 1 resource (4)**
     
     By performing the above mentioned operations, you can now ensure that your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
     <br>
-        ![Sql Auditing](../Images/hyb-ex2-g9.png)
+        ![Sql Auditing](../Images/hyb-ex4-10.png)
       
 1.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
 
@@ -243,37 +247,37 @@ In this exercise, you will be creating a custom initiative using azure policy an
 
 ***Create a custom initiative using Azure Policy***
 
-1. In the search box located at the top of the Azure Portal page, search for **Policy** and click on it. 
+1. In the search box located at the top of the Azure Portal page, search for **Policy (1)** and click on it. 
 
     ![](../Images/hyb-ex2-g9.png)
 
-1. Select **Definitions** from the left navigation pane, from the top menu, select **+ Initiative definition** to add a new initiative
+1. Select **Definitions (2)** from the left navigation pane under **Authoring (1)**, from the top menu, select **+ Initiative definition (3)** to add a new initiative
 
     ![](../Images/hyb-ex2-g25.png)
 
 1. On the New Initiative definition page, select the following:
-    - Initiative Location: Select your Subscription
-    - Name: **Contoso Security Benchmark**
-    - Description: **Baseline for security policies to appear alongside the built-in recommendations**
-    - Category: Select **Create new** and type: **Contoso**
-    - Click **Next**
+    - Initiative Location: Select your **Subscription (1)**
+    - Name: **Contoso Security Benchmark (2)**
+    - Description: **Baseline for security policies to appear alongside the built-in recommendations (3)**
+    - Category: Select **Create new (4)** and type: **Contoso (5)**
+    - Click **Next (6)**
   
         ![Policy initiative definition settings page](../Images/hyb-ex2-g26.png)
 
-1. On the Policies tab, select **Add policy definition(s) (1)**.
+1. On the **Policies (1)** tab, select **Add policy definition(s) (1)**.
 
     ![](../Images/hyb-ex2-g27.png)
 
 1. The Add policy definition(s) pane opens: <br>
 Add each policy one by one:
-      Search and select the **below policy definitions (2)** and click on **Add (4)**
+      Search and select the **below policy definitions ** and click on **Add (2)**
     - *Function apps should use managed identity*
     - *Public network access on Azure SQL Database should be disabled*
-    - *Storage accounts should restrict network access*
+    - ***Storage accounts should restrict network access* (1)**
 
         ![](../Images/hyb-ex2-g28.png)
 
-1. Select **Review + create (5)** and click on **Create**.
+1. Select **Review + create** and click on **Create**.
 
     ![custom initiative](../Images/hyb-ex2-g29.png)
 
@@ -297,7 +301,7 @@ Add each policy one by one:
 
     ![](../Images/hyb-ex2-g31.png)
 
-1. In the Basics tab of Contoso Security Benchmark, under scope provide your subscription and select **Review + create** and then **Create**.
+1. In the Basics tab of Contoso Security Benchmark, under scope **provide your subscription (1)** and select **Review + create (2)** and then **Create**.
 
     ![](../Images/hyb-ex2-g32.png)
 

@@ -17,11 +17,11 @@ Continuous export lets you fully customize what will be exported and where it wi
 
 In this exercise, you will be creating log analytics workspace in Microsoft defender for cloud.
 
-1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
+1. Type **Microsoft Defender for Cloud (1)** in the search box located at the top of the **Azure Portal** page and click on **Microsoft Defender for Cloud (2)**.
 
     ![](../Images/hyb-ex1-g1.png)
 
-1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here, you'll be able to see the subscription.
+1. From **Microsoft Defender for Cloud** blade, Under **Management (1)** Select **Environment settings (2)**. Here, you'll be able to see the **subscription (3)**.
 
     ![Template deployment completed](../Images/hyb-ex1-g2.png)
 
@@ -61,9 +61,9 @@ In this exercise, you will be creating log analytics workspace in Microsoft defe
 
         ![](../Images/hyb-ex6-g3.png)
 
-        > **Note:** Exporting Security Center's data also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
+        > **Note:** Exporting Defender for Cloud's data  also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
-1. Search for **Log Analytics workspaces** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
+1. Search for **Log Analytics workspaces (1)** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
 
     ![](../Images/hyb-ex6-g4.png) 
 
@@ -77,11 +77,11 @@ In this exercise, you will be creating log analytics workspace in Microsoft defe
 
     ![](../Images/hyb-ex6-g7.png) 
 
-1. From the left pane, select the **Tables** tab and **enable** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in `Security and Audit`.
+1. From the left pane, select the **Tables (1)** tab and click on **three dot icon (2)** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in **`Security and Audit` (4)**.
 
     ![](../Images/hyb-ex6-g8.png) 
 
-1. Query the tables to validate data streaming - For example, click on **Tables (1)**, expand **Security and Audit (2)** double-click on **Security Event (3)** to open the query window. Now click on **Run (4)** and see the results below.
+1. Query the tables to validate data streaming -  Expand **Security and Audit (1)** double-click on **Security Event (2)** to open the query window. Now click on **Run (3)** and see the results below.
 
     ![](../Images/hyb-ex6-g9.png) 
 
@@ -97,11 +97,11 @@ In this exercise, you will be integrating the workspace which is previously crea
 
     ![](../Images/hyb-ex6-g10.png)
 
-1. On the **Microsoft Sentinel** blade, click on the **Create Microsoft Sentinel** button – for this exercise, we’ll use the same Log Analytics workspace used by the Security Center.
+1. On the **Microsoft Sentinel** blade, click on the **Create** button – for this exercise, we’ll use the same Log Analytics workspace used by the Security Center.
  
     ![connect-workspace1](../Images/hyb-ex6-g11.png)
 
-1. On the **Add Microsoft Sentinel to a workspace**, select **asclab-la-<inject key="Deployment ID" enableCopy="false" />** workspace. Click on **Add**.
+1. On the **Add Microsoft Sentinel to a workspace**, select **asclab-la-<inject key="Deployment ID" enableCopy="false" />** workspace. **(1)** Click on **Add (2)**.
 
     ![Add sentinel](../Images/hyb-ex6-g12.png)
 
@@ -126,7 +126,7 @@ In this exercise, you will be integrating the workspace which is previously crea
 
 1. Open a new browser tab and navigate to the **Microsoft Defender portal** at https://security.microsoft.com/.
 
-1. Click the **Content hub (1)** on the **Microsoft Sentinel** blade, search for **Microsoft Defender (2)**, select **Microsoft Defender for Cloud (3)**, and click **Install (4)**.
+1. On the **Microsoft Sentinel (1)** blade, Under **Content management (2)** Click the **Content hub (3)**search for **Microsoft Defender (4)**, select **Microsoft Defender for Cloud (5)**, and click **Install**.
 
     ![](../Images/hyb-ex6-g14.png)
 

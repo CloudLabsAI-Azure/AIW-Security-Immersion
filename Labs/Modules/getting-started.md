@@ -72,46 +72,6 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
      ![rd_day1_ex1_t1_6](../Images/ex1-sigin-3.png)
 
-## Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible [Optional]
-
-1. If you see the pop-up **Stay Signed in?**, click **No**.
-
-1. If **Action required** pop-up window appears, click on **Next**.
-
-   ![](../Images/dpg11.png)
-
-1. On **Start by getting the app** page, click on **Next**.
-
-1. Click on **Next** twice.
-
-1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
-
-   ![Install](../Images/dpg12.png)
-
-   > **Note:** For iOS, open the App Store and repeat the steps.
-
-   > **Note:** Skip if already installed.
-
-1. Open the app and tap on **Scan a QR code**.
-
-1. Scan the QR code visible on the screen **(1)** and click on **Next (2)**.
-
-   ![QR code](../Images/dpg13.png)
-
-1. Enter the digit displayed on the Screen in the Authenticator app on your mobile and tap on **Yes**.
-
-1. Once the notification is approved, click on **Next**.
-
-   ![Approved](../Images/dpg14.png)
-
-1. Click on **Done**.
-
-1. If prompted to stay signed in, you can click **"No"**.
-
-1. Tap on **Finish** in the Mobile Device.
-
-   > **NOTE:** While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
-
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
 ## Support Contact
@@ -126,5 +86,6 @@ The CloudLabs support team is available 24/7, 365 days a year, via email and liv
 Now, click on **Next** from the lower right corner to move on to the next page.
 
    ![](../Images/next-xdr.png)
+
 
 ### Happy Learning!!

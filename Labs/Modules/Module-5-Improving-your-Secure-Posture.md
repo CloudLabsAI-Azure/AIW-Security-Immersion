@@ -82,19 +82,21 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
         ![](../Images/lab5-13.png)
 
-1. Expand the **Affected resources (1)** section and notice the **Unhealthy registries** count which shows **1 container registry (2)** (asclab**xxx** here xxx is unique ID).
+1. Expand the **Affected resources** section click on **view** and notice the **Unhealthy registries** count which shows **1 container registry (2)** (asclab**xxx** here xxx is unique ID). 
 
-     ![](../Images/lab5-15.png)
+     ![](../Images/lab5-15-1.png)
 
-1. On the **Security Checks** section, notice the number of vulnerabilities.
+     ![](../Images/lab5-15-2.png)
 
-1. Click on the first security check to open the **XXXXXX- User(s) with Blank Password** pane.
+1. Notice the **total vulnerabilities** and **unique CVEs**.
+
+1. Click on the **first security check (2)** to open the **XXXXXX- User(s) with Blank Password** pane.
 
     >XXXXXX is the ID of the security finding.
 
      ![](../Images/secure-M5-Ex2-S13.png)
 
-   Notice the vulnerability description, general information (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
+   Notice the vulnerability description, **general information (3)** (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
 
 ### Exercise 2: Automate recommendations with workflow automation
 
@@ -108,27 +110,29 @@ In this Exercise, you will create a new Logic App and then trigger it automatica
 
     ![](../Images/hyb-ex4-g10.png)
     
-1. Click on **+ Add** to create a new Logic App.
+1. Click on **+ Create** to create a new Logic App.
     
     ![](../Images/hyb-ex4-g11.png)
 
-1. On the **Create logic app** page, select **Consumption** plan and click on **select**.
+1. On the **Create logic app** page, select **Consumption** plan choose **Multi-tenant (1)** and click on **select (2)**.
 
     ![](../Images/hyb-ex4-g12.png)
 
 1. On the Basics tab, enter the following details:
      
-     - Subscription: Select your **Subscription** 
+     - Subscription: Select your **Subscription (1)** 
       
-     - Resource group:  **asclab** 
+     - Resource group:  **asclab (2)** 
  
-     - Logic app name: Enter **Send-RecommendationsChanges<inject key="DeploymentID" enableCopy="false"/>**.
+     - Logic app name: Enter **Send-RecommendationsChanges<inject key="DeploymentID" enableCopy="false"/> (3)**.
 
-     - Location: Select the location of your **Resource group**
+     - Location: Select the location of your **Resource group (4)**
         
-     - Enable log analytics: Select **No**
+     - Enable log analytics: Select **No (5)**
 
-     - Select **Review + create** and then click on **Create**.
+     - Workflow Type: **Stateful (6)**
+
+     - Select **Review + create (7)** and then click on **Create**.
 
         ![](../Images/hyb-ex4-g14.png)
 
@@ -158,7 +162,7 @@ In this Exercise, you will create a new Logic App and then trigger it automatica
 
    > **Note:** You will need to sign into your Outlook.com (Use Odl user from Environment details) and grant permissions for the Logic App to send email using your account.
 
-1. After signing in, enter the learner email in the **To (1)** field, type **Recommendation changed:** in the **Subject (2)** field, and use the dynamic content icon (3) to add recommendation details.
+1. After signing in, enter the learner email in the **To (1)** field, type **Recommendation changed:** in the **Subject (2)** field, and use the **dynamic content icon (3)** to add recommendation details.
    
       * Email/Username: <inject key="AzureAdUserEmail"></inject> 
 
@@ -206,29 +210,29 @@ In this Exercise, you will create a new Logic App and then trigger it automatica
     
    - General:
    
-     * Name: **Send-RecommendationsChanges**
-     * Description: **Send email message when a recommendation is created or triggered**
-     * Subscription: **Your Subscription**
-     * Resource group: **asclab**
+     * Name: **Send-RecommendationsChanges (1)**
+     * Description: **Send email message when a recommendation is created or triggered (2)**
+     * Subscription: **Your Subscription (3)**
+     * Resource group: **asclab (4)**
 
         ![](../Images/hyb-ex4-g29.png)
       
    - Trigger conditions:
    
-     * Select Defender for Cloud data types: **Recommendation**
-     * Recommendations name: **All recommendations selected**
-     * Recommendation severity: **All severities selected**
-     * Recommendation state: **All states selected**
+     * Select Defender for Cloud data types: **Recommendation (1)**
+     * Recommendations name: **All recommendations selected (2)**
+     * Recommendation severity: **All severities selected (3)**
+     * Recommendation state: **All states selected (4)**
 
         ![](../Images/hyb-ex4-g30.png)
     
    - Actions:
    
-     * Show Logic App instances from the following subscriptions: **Your Subscription**
+     * Show Logic App instances from the following subscriptions: **Your Subscription (1)**
 
-     * Logic App name: **Send-RecommendationsChanges<inject key="DeploymentID" enableCopy="false"/>**
+     * Logic App name: **Send-RecommendationsChanges<inject key="DeploymentID" enableCopy="false"/> (2)**
      
-   Click **Create** to complete the task.
+   Click **Create (3)** to complete the task.
 
      ![](../Images/hyb-ex4-g31.png)
 
@@ -244,8 +248,8 @@ In this Exercise, you will create a new Logic App and then trigger it automatica
 
 1. Test/trigger your automation manually:
 
-   - On the Microsoft Defender for Cloud panel, click on **Recommendations (1)** from the **General** section.
-   - **Search(2)** and select **Azure Kubernetes Service clusters should have the Azure Policy Add-on for Kubernetes installed (3)** and click on it.
+   - On the Microsoft Defender for Cloud panel, click on **Recommendations (2)** from the **General (1)** section.
+   - **Search(3)** and select **Azure Kubernetes Service clusters should have the Azure Policy Add-on for Kubernetes installed (4)** and click on it.
    
       > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
 
