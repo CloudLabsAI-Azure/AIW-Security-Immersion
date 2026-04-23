@@ -1,4 +1,4 @@
-# Module 5 - Improving your Secure Posture
+# Exercise 5: Improving your Secure Posture
 
 ## Overview
 
@@ -6,15 +6,15 @@ This module will walk you through the process of using the vulnerability assessm
 
 ## Objectives
 
-- Exercise 1: Vulnerability Assessment for Containers
-- Exercise 2: Automate recommendations with workflow automation
-- Exercise 3: Accessing your secure score via ARG
+- Task 1: Vulnerability Assessment for Containers
+- Task 2: Automate recommendations with workflow automation
+- Task 3: Accessing your secure score via ARG
 
-### Exercise 1: Vulnerability Assessment for Containers
+### Task 1: Vulnerability Assessment for Containers
 
 Microsoft Defender for Cloud scans images in your Azure Container Registry (ACR) that are pushed and imported into the registry, it also contains any other images pulled within the last 30 days. Then, it exposes detailed findings per image. All vulnerabilities can be found in the following recommendations: **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys).**
 
-In this exercise, you will work on vulnerablity assessment for containers by uploading a image to your conatiner registry.
+In this task, you will work on vulnerablity assessment for containers by uploading a image to your conatiner registry.
 
 To simulate a container registry image with vulnerabilities, we will use ACR task commands and a sample image:
 
@@ -72,7 +72,7 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
  
      ![asd](../Images/lab5-14.png)
 
-    > **Note**: If you don't see the above recommendation that means it is not loaded yet, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number, then continue to the next exercise and verify this later.
+    > **Note**: If you don't see the above recommendation that means it is not loaded yet, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number, then continue to the next task and verify this later.
 
 1. On the recommendation page, notice the following details in the upper section:
 
@@ -98,11 +98,11 @@ To simulate a container registry image with vulnerabilities, we will use ACR tas
 
    Notice the vulnerability description, **general information (3)** (containing the Cvss 2.0 base score, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
 
-### Exercise 2: Automate recommendations with workflow automation
+### Task 2: Automate recommendations with workflow automation
 
 Every security program includes multiple workflows for incident response. The process might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. With the help of workflow automation, you can trigger logic apps to automate processes in real-time with Microsoft Defender for Cloud events (security alerts or recommendations). 
 
-In this Exercise, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
+In this Task, you will create a new Logic App and then trigger it automatically using the workflow automation feature when there is a change with a specific recommendation.
 
 **Create a new Logic App:**
 
@@ -251,7 +251,7 @@ In this Exercise, you will create a new Logic App and then trigger it automatica
    - On the Microsoft Defender for Cloud panel, click on **Recommendations (2)** from the **General (1)** section.
    - **Search(3)** and select **Azure Kubernetes Service clusters should have the Azure Policy Add-on for Kubernetes installed (4)** and click on it.
    
-      > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+      > Note: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next task and verify this later.
 
      ![](../Images/hyb-ex4-g33.png)
      
@@ -274,10 +274,10 @@ In this Exercise, you will create a new Logic App and then trigger it automatica
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     
-### Exercise 3: Accessing your secure score via ARG
+### Task 3: Accessing your secure score via ARG
 Azure Resource Graph (ARG) provides an efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions.
 
-In this exercise, you will query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
+In this task, you will query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
 
 1. Search for **Resource Graph Explorer** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
 

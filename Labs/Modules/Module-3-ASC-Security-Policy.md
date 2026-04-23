@@ -1,4 +1,4 @@
-# Module 3 - Security Policy
+# Exercise 3: Security Policy
 
 ## Overview
 
@@ -7,15 +7,15 @@ In this module, we will guide you through the current Microsoft Defender for Clo
 ## Objectives
 In this module, you will perform: 
 
-- Exercise 1: Overview of the Microsoft Defender for Cloud Policy
-- Exercise 2: Explore Azure Policy
-- Exercise 3: Create resource exemption for a recommendation
-- Exercise 4: Create policy enforcement and deny
-- Exercise 5: Create a custom policy
+- Task 1: Overview of the Microsoft Defender for Cloud Policy
+- Task 2: Explore Azure Policy
+- Task 3: Create resource exemption for a recommendation
+- Task 4: Create policy enforcement and deny
+- Task 5: Create a custom policy
 
-### Exercise 1: Overview of the Microsoft Defender for Cloud Policy
+### Task 1: Overview of the Microsoft Defender for Cloud Policy
 
-In this exercise, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to Microsoft Defender for Cloud's recommendation.
+In this task, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to Microsoft Defender for Cloud's recommendation.
 
 1. From the Azure Portal, search for **Microsoft Defender for Cloud** and select it.
 
@@ -69,11 +69,11 @@ In this exercise, you will get an overview of an index of Azure Policy built-in 
 
     ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/hyb-ex2-g8.png)
 
-### Exercise 2: Explore Azure Policy
+### Task 2: Explore Azure Policy
 
 Azure Policy keeps track of compliance for your Azure resources based on policy definitions you assign, these are called policy assignments. By default, Microsoft provides many built-in definitions that you can leverage as you see fit.
 
-In this exercise, you will be exploring azure policy and verify the built-in initiatives by microsoft defender for cloud.
+In this task, you will be exploring azure policy and verify the built-in initiatives by microsoft defender for cloud.
 
 1. Type **Policy** in the search box located at the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **labvm-<inject key="DeploymentID" enableCopy="false"/>** and navigate to this link ```https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade```.
 
@@ -96,7 +96,7 @@ In this exercise, you will be exploring azure policy and verify the built-in ini
     -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
     -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
 
-    ![policy assignment](../Images/Sh30.png)
+        ![policy assignment](../Images/Sh30.png)
 
 1. Notice the number of policies included in each initiative (policies column).
 
@@ -108,11 +108,11 @@ In this exercise, you will be exploring azure policy and verify the built-in ini
 
    ![policy assignment](../Images/hyb-ex2-g11.png) 
 
-### Exercise 3: Create resource exemption for a recommendation
+### Task 3: Create resource exemption for a recommendation
 
 Resource exemption will allow increased granularity for you to fine-tune recommendations by providing the ability to exempt certain resources from evaluation.
 
-In this exercise, you will create an exemption by clicking the ellipsis menu on the right side and then selecting Create an exemption.
+In this task, you will create an exemption by clicking the ellipsis menu on the right side and then selecting Create an exemption.
 
    > **Note:** Exemptions is a premium Azure policy capability that's offered for Azure Defender customers with no additional cost. For other users, charges may apply in the future.
 
@@ -120,7 +120,7 @@ In this exercise, you will create an exemption by clicking the ellipsis menu on 
 
 1. Select **Recommendations (1)** from the left navigation pane. Search and select the **Management ports should be closed on your virtual machines (2)** recommendation from the **All recommendations** tab, select the **asclab-win** resource. You can search it using the search box.
 
-    > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+    > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next task and verify this later.
 
     ![policy assignment](../Images/asc-win.png)
 
@@ -165,9 +165,9 @@ In this exercise, you will create an exemption by clicking the ellipsis menu on 
 
     ![Exempttion tab](../Images/m3-Ex3-10.png)
 
-### Exercise 4: Create policy enforcement and deny
+### Task 4: Create policy enforcement and deny
 
-In this exercise, you will learn how to use Azure Policy to do some of the more common tasks related to assigning, denying, and managing policies across your organization.
+In this task, you will learn how to use Azure Policy to do some of the more common tasks related to assigning, denying, and managing policies across your organization.
 
 1. In the search box located at the top of the Azure Portal page, search for **Microsoft Defender for Cloud** and click on it.
 
@@ -175,7 +175,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
     ![](../Images/hyb-ex2-g15.png)
 
-   > **Note**: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+   > **Note**: If you don't see the above recommendation that means it is not loaded yet and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next task and verify this later.
 
 1. From the right-navigation pane, scroll down and click on **Deny** button. 
 
@@ -192,7 +192,7 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 
 1. Go back to the **recommendations view (2)** under **General (1)** left-pane, type **Auditing (3)** in the search box,. Click on the recommendation **Auditing on SQL server should be enabled (4)**.
 
-   > **Note**: If you don't see the above recommendation, that means it is not loaded yet, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next exercise and verify this later.
+   > **Note**: If you don't see the above recommendation, that means it is not loaded yet, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next task and verify this later.
 
     ![](../Images/hyb-ex2-g18.png)
 
@@ -239,11 +239,11 @@ In this exercise, you will learn how to use Azure Policy to do some of the more 
 1.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
 
 
-### Exercise 5: Create a custom policy
+### Task 5: Create a custom policy
 
 A custom policy definition allows customers to define their own rules for using Azure. Whatever the business driver for creating a custom policy, the steps are the same for defining the new custom policy.
 
-In this exercise, you will be creating a custom initiative using azure policy and will learn to assign it. 
+In this task, you will be creating a custom initiative using azure policy and will learn to assign it. 
 
 ***Create a custom initiative using Azure Policy***
 

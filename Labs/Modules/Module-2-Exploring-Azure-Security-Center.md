@@ -1,4 +1,4 @@
-# Module 2 - Exploring Microsoft Defender for Cloud
+# Exercise 2: Exploring Microsoft Defender for Cloud
 
 ### Overview
 
@@ -8,13 +8,13 @@ In this module, you will explore the Microsoft Defender for Cloud Dashboard feat
 
 You will be performing the following activities to achieve the goal:
 
-* Exercise 1: Understanding Microsoft Defender for Cloud Dashboard
-* Exercise 2: Exploring Secure Score and Recommendations
-* Exercise 3: Exploring the Inventory Capability
+* Task 1: Understanding Microsoft Defender for Cloud Dashboard
+* Task 2: Exploring Secure Score and Recommendations
+* Task 3: Exploring the Inventory Capability
 
-### Exercise 1: Understanding Microsoft Defender for Cloud Dashboard
+### Task 1: Understanding Microsoft Defender for Cloud Dashboard
 
-In this exercise, you will be interacting with the Microsoft Defender for Cloud dashboard, which provides a unified view of the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
+In this task, you will be interacting with the Microsoft Defender for Cloud dashboard, which provides a unified view of the security posture of your hybrid cloud workloads. Additionally, it shows security alerts, coverage information, and more.
 
 1. Navigate to **Microsoft Defender for Cloud** in the Azure portal (perform if not already on the Microsoft Defender for Cloud page).
 
@@ -24,8 +24,6 @@ In this exercise, you will be interacting with the Microsoft Defender for Cloud 
    > Microsoft Defender for Cloud takes time to populate information such as secure scores, compliance, recommendations, etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. It could require up to 24 hours for all the information to appear. If you don't see it, please return later to check again.
 
     ![Microsoft Defender for Cloud: Overview dashboard](../Images/msdefender-1.png)
-
-
 
 1. Click on the **What’s new** button; a new tab will open with the latest release notes, where you can stay updated on the new features, bug fixes, and more.
 
@@ -39,7 +37,7 @@ In this exercise, you will be interacting with the Microsoft Defender for Cloud 
 
     ![Overview: Secure Score tile](../Images/asc-overview-secure-score-tile2.png)
 
-    > ⭐ Good to know: <br>
+    > Good to know: <br>
     > The higher the score, the lower the identified risk level.
 
 1. From the **Microsoft Defender for Cloud** page Select the **Workload Protections** from the **Cloud Security** section.
@@ -66,13 +64,13 @@ In this exercise, you will be interacting with the Microsoft Defender for Cloud 
      > **Note:** If in case there are any resources under Unmonitored resources, then please proceed further with Exercise 2 and come back later to check on the same. 
     ![Overview: Inventory tile](../Images/hyb-ex1-g17.png)
 
-### Exercise 2: Exploring Secure Score and Recommendations
+### Task 2: Exploring Secure Score and Recommendations
 
 **Exploring Secure Score**
 
 Previously, we explored the Secure Score tile on the overview page. 
 
-In this exercise you will dive into this capability and the associated recommendations. Microsoft Defender for Cloud mimics the work of a security analyst, reviewing the security recommendations and applying advanced algorithms to determine how crucial each recommendation is. Microsoft Defender for Cloud constantly reviews the active recommendations and calculates the score based on them. All findings are aggregated into a single score (Secure Score), which measures the current security posture of your subscription(s); the higher the score, the lower the identified risk level.
+In this task you will dive into this capability and the associated recommendations. Microsoft Defender for Cloud mimics the work of a security analyst, reviewing the security recommendations and applying advanced algorithms to determine how crucial each recommendation is. Microsoft Defender for Cloud constantly reviews the active recommendations and calculates the score based on them. All findings are aggregated into a single score (Secure Score), which measures the current security posture of your subscription(s); the higher the score, the lower the identified risk level.
 Exploring secure score
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it.
@@ -85,13 +83,13 @@ Exploring secure score
 
 1. On the Microsoft Defender for Cloud | Secure Score page, review your current **Overall Secure Score**.
 
-     > **Note:** It could require up to 24 hours for secure score to appear. If you don't see it, please return later to check again.
-   >  Notice: <br>
-   > The score is shown as a percentage value; you can also see the points based on which the score is calculated next to the percentage. See the following example:
-   > 
-   > ![Overall Secure Score](../Images/M2-E2-3.png)
-   > 
-   > For more information on how the score is calculated, [refer to the secure score documentation page](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#how-your-secure-score-is-calculated).
+    > **Note:** It could require up to 24 hours for secure score to appear. If you don't see it, please return later to check again.
+    >  Notice: <br>
+    > The score is shown as a percentage value; you can also see the points based on which the score is calculated next to the percentage. See the following example:
+    > 
+    > ![Overall Secure Score](../Images/M2-E2-3.png)
+    > 
+    > For more information on how the score is calculated, [refer to the secure score documentation page](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#how-your-secure-score-is-calculated).
 
     **Exploring Security Controls and Recommendations**
 
@@ -129,7 +127,7 @@ Exploring secure score
 
 1. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resources.
 
-1. If storage account has already been moved to the **Healthy resources** tab, then move on to the next exercise.
+1. If storage account has already been moved to the **Healthy resources** tab, then move on to the next task.
 
 1. Under **Affected resources**, **select a resource** (the single **storage account** on the Unhealthy resources) and click on **Fix**. This will automatically apply the remediation to the selected resource.
 
@@ -145,11 +143,11 @@ Exploring secure score
 
     > **Info**: In the recommendation list, you can now see some recommendations flagged as in the preview. They aren’t included in the calculation of your score. They should still be remediated so that when the preview period ends, they will contribute towards your final score.
 
-### Exercise 3: Exploring the Inventory Capability
+### Task 3: Exploring the Inventory Capability
 
 Asset inventory dashboard allows you to get a single pane of glass view of all your resources covered by Microsoft Defender for Cloud. It also provides per-resource visibility to all Microsoft Defender for Cloud’s information and additional resource details, including security posture and protection status. Since this dashboard is based on the Azure Resource Graph (ARG), you can run queries across subscriptions at a large scale quickly and easily.
 
-In this exercise, you will be exploring the Inventory capabality in the Microsoft defender for cloud.
+In this task, you will be exploring the Inventory capabality in the Microsoft defender for cloud.
 
 1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it.
     
@@ -175,7 +173,7 @@ In this exercise, you will be exploring the Inventory capabality in the Microsof
 
     ![Inventory: Assign tags](../Images/hyb-ex1-g32.png)
 
-    > **Note**: It could take up to 24 hours for all the recommendations to show up. And it is possible that during lab time, this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next exercise and verify this later.
+    > **Note**: It could take up to 24 hours for all the recommendations to show up. And it is possible that during lab time, this may not show up – which is the case sometimes. If you don't see the data in **recommendations**. You can continue to the next task and verify this later.
 
 1. Navigate back to the Inventory page and clear the search keyword **Linux**. Then from the filter menu, select the **Resource Groups (1)** filter and then provide the **value (2)** **asclab-aks( 3)** (unselect remaining), and click on **Apply (4)**. Using this filter, you can see all resources related to the predefined Kubernetes resources that are monitored with active recommendations.
 
@@ -185,7 +183,7 @@ In this exercise, you will be exploring the Inventory capabality in the Microsof
 
 1. From the filter menu, select the **Resource Group** filter and **select all** under the Value and click on **Apply**. Again, from the filter menu, select **Recommendations**, uncheck the **Select all** option under the Value, and then select **Auditing on SQL Server should be enabled** and click on **Apply**. You can also use the search area within the filter to better find items across the list. When you are done exploring, remember to clear your filter.
 
-    > **Note**: If you don't see **Auditing on SQL Server should be enabled** in search results, that means it is not loaded yet for recommendations, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. If you don't see the data in **Recommendations**, you can note down this step number, then continue to the next exercise and verify this later.
+    > **Note**: If you don't see **Auditing on SQL Server should be enabled** in search results, that means it is not loaded yet for recommendations, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. If you don't see the data in **Recommendations**, you can note down this step number, then continue to the next task and verify this later.
 
 1. Tags are a very common asset management feature within Azure. With the help of this feature, resources can be tagged using a Tag name and value. These assigned tags can organize your assets and categorize them with the help of filters. Let us now assign the following Tags:
 

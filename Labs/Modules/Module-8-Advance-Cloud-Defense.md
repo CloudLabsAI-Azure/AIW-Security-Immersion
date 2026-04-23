@@ -1,4 +1,4 @@
-# Module 8 – Advance Cloud Defense
+# Exercise 8: Advance Cloud Defense
 
 ### Overview
 
@@ -8,14 +8,14 @@ In this module, you will be exploring the Microsoft Defender for Cloud features 
 
 You will be performing the following activities to achieve the goal:
 
-* Exercise 1: Using JIT to reduce the Attack surface
-* Exercise 2: File Integrity Monitoring
+* Task 1: Using JIT to reduce the Attack surface
+* Task 2: File Integrity Monitoring
 
-### Exercise 1: Using JIT to reduce the Attack surface
+### Task 1: Using JIT to reduce the Attack surface
 
  In the simplest terms, “Attack surface” is the total set of resources and entry points exposed to potential exploitation within an enterprise. Defending the attack surface was less complicated when a defined corporate perimeter existed, separating internal assets from external networks using firewalls and network controls, while modern approaches use features like **Just-in-time VM access** to reduce exposure. 
 
-In this exercise, you will be using Just In Time access (JIT) to access your virtual machine.
+In this task, you will be using Just In Time access (JIT) to access your virtual machine.
 
 1. Launch **Azure Portal** using the desktop icon on the **labvm-xxxxxx** and log in with the Azure credentials from the Lab **Environment Details** tab.
 
@@ -134,11 +134,11 @@ In this exercise, you will be using Just In Time access (JIT) to access your vir
 
     ![](../Images/hyb-ex6-g42.png) 
 
-### Exercise 2: File Integrity Monitoring
+### Task 2: File Integrity Monitoring
 
 File integrity monitoring (FIM), also known as change monitoring, examines operating system files, Windows registries, application software, Linux system files, and more. It detects and reports changes that might indicate an attack.
 
-In this exercise, you will be working with the file integrity monitoring under workload protection in Microsft defender for cloud.
+In this task, you will be working with the file integrity monitoring under workload protection in Microsft defender for cloud.
 
 It maps the current state of these items with the state during the previous scan and alerts you if any suspicious modifications have been made. To enable FIM, follow the instructions below:
 

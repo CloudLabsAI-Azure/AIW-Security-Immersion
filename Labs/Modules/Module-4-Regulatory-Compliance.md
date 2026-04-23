@@ -1,4 +1,4 @@
-# Module 4 - Regulatory Compliance
+# Exercise 4: Regulatory Compliance
 
 ### Overview
 
@@ -8,17 +8,17 @@ In this module, you will learn about Regulatory Compliance features
 
 You will be performing the following activities to achieve the goal:
 
-* Exercise 1: Understanding Regulatory Compliance Dashboard
-* Exercise 2: Adding new standards
-* Exercise 3: Creating your own benchmark
+* Task 1: Understanding Regulatory Compliance Dashboard
+* Task 2: Adding new standards
+* Task 3: Creating your own benchmark
 
-### Exercise 1: Understanding Regulatory Compliance Dashboard
+### Task 1: Understanding Regulatory Compliance Dashboard
 
 Microsoft Defender for Cloud helps streamline the process of meeting regulatory compliance requirements using the regulatory compliance dashboard. The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
 Microsoft Defender for Cloud continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards applied to your subscriptions.
 
-In this exercise, you will get a walkthrough on regulatory compliance dashboard in Microsoft defender for cloud.
+In this task, you will get a walkthrough on regulatory compliance dashboard in Microsoft defender for cloud.
 
 1. Navigate to **Microsoft Defender for Cloud (1)** in the Azure portal (perform if not already on the Microsoft Defender for Cloud).
 
@@ -30,7 +30,7 @@ In this exercise, you will get a walkthrough on regulatory compliance dashboard 
 
 1. On the main page, select the **Contoso Security Benchmark** standard. Notice the different compliance controls mapped to assessments.
 
-   > **Note**: It might take up to 24 hours to reflect the Contoso security benchmark after adding the custom initiatives. If this is not available for you, you can skip this exercise and continue with the next exercise and can check on this later.
+   > **Note**: It might take up to 24 hours to reflect the Contoso security benchmark after adding the custom initiatives. If this is not available for you, you can skip this task and continue with the next task and can check on this later.
 
     ![Contoso Security Benchmark](../Images/lab4-6.png)
 
@@ -54,11 +54,11 @@ In this exercise, you will get a walkthrough on regulatory compliance dashboard 
 
 1. A local PDF file is now stored on your machine. Open the **Microsoft Cloud security benchmark Compliance Report** and explore it – This report summarizes the status of those assessments on your environment, as mapped to the associated controls.
 
-### Exercise 2: Adding new standards
+### Task 2: Adding new standards
 
 You can add additional industry standards (represented as compliance packages) such as IST SP 800-53 R4, SWIFT CSP CSCF-v2020, UK Official, and more.
 
-In this exercise, you will be enabling CIS Microsoft Azure Foundations Benchmark v1.1.0 policy.
+In this task, you will be enabling CIS Microsoft Azure Foundations Benchmark v1.1.0 policy.
 
 1. On **Regulatory Compliance (2)** under **Cloud Security (1)**, select **Manage compliance policies (3)** from the top menu bar.
 
@@ -72,13 +72,13 @@ In this exercise, you will be enabling CIS Microsoft Azure Foundations Benchmark
 
     ![](../Images/Sh33.png)
 
-### Exercise 3: Creating your own benchmark
+### Task 3: Creating your own benchmark
 
 Once you create your custom initiative, Microsoft Defender for Cloud allows you to add it as a security policy and provides two main benefits:
 * Security requirements represented as custom recommendations, listed under the recommendation list.
 * Track compliance status using the regulatory compliance dashboard.
 
-In this exercise, you will be creating your own bechmark and will be assigning it.
+In this task, you will be creating your own bechmark and will be assigning it.
 
 1. In the search box located at the top of the Azure Portal page, search for **Policy (1)** and click on it.
 
