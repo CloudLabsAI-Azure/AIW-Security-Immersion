@@ -43,8 +43,6 @@ In this task, we will cover the new alert simulation. Alerts are notifications g
 
 1. To explore the full details of the alert, click on **View full details**. When you are done, return to the **Security alerts** page.
 
-    ![Create sample virtual machine security alerts](https://github.com/CloudLabsAI-Azure/AIW-Security-Immersion/blob/main/Labs/Images/m6ex1step8.png?raw=true)
-
 1. Create an alert simulation for Key Vaults:
     - On the Security Alerts page, click on the **sample alerts** button.
 
