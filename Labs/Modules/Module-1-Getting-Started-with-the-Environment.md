@@ -68,9 +68,9 @@ In this task, you will create the Microsoft Defender for Cloud default policy in
 
     ![](../Images/hyb-ex1-g1.png)
    
-1. In Microsoft Defender for Cloud Blade, click on the **Environment Settings** and select your subscription.
+1. Go to the **Microsoft Defender for Cloud** page, Under **Management (1)**  click on the **Environment settings (2)** page, and select your **Azure subscription (3)**.
 
-    ![Template deployment completed](../Images/m1e2.1s2.png)
+    ![Template deployment completed](../Images/hyb-ex1-g2.png)
    
 1. Click on **Security policies (1)** under Settings You'll notice that **Microsoft cloud security benchmark (2)** has been created automatically. Explore the policy by clicking on the policy.
 

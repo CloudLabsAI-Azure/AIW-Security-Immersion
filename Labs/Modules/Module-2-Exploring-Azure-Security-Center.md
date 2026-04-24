@@ -20,7 +20,7 @@ In this task, you will be interacting with the Microsoft Defender for Cloud dash
 
 1. The Microsoft Defender for Cloud Overview page provides a unified view for security professionals. This page contains detailed insights on the security posture on its dedicated dashboard and includes multiple independent cloud security pillars such as **Secure Score, Regulatory Compliance, and Microsoft Defender for Cloud**.
 
-   > ❗ Important: <br>
+   > Important: <br>
    > Microsoft Defender for Cloud takes time to populate information such as secure scores, compliance, recommendations, etc. after enabling the services and enrolling the servers to Microsoft Defender for Cloud. It could require up to 24 hours for all the information to appear. If you don't see it, please return later to check again.
 
     ![Microsoft Defender for Cloud: Overview dashboard](../Images/msdefender-1.png)
@@ -58,7 +58,7 @@ In this task, you will be interacting with the Microsoft Defender for Cloud dash
  
 1. Next Click on **Inventory** from the **General** section of the Microsoft Defender for Cloud. It shows the number of unmonitored VMs alongside the total covered resources; **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
 
-     > ❗ Important: <br>
+     > Important: <br>
      > Unmonitored VMs are considered virtual machines that have a Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
      > 
      > **Note:** If in case there are any resources under Unmonitored resources, then please proceed further with Exercise 2 and come back later to check on the same. 
@@ -122,8 +122,6 @@ Exploring secure score
    - Severity indicator: **Medium**
    - Freshness interval: **30 Min** 
    - Tactics and techniques: **Initial Access**
-
-        ![Recommendation top menu](https://github.com/Divyasri199/AIW-Security-Immersion/blob/main/Labs/Images/stacc%20public%20access.png?raw=true)
 
 1. The next important part is the **Remediation Steps** which contains the remediation logic where you can remediate the selected resources.
 

@@ -18,7 +18,7 @@ In this task, you will work on vulnerablity assessment for containers by uploadi
 
 To simulate a container registry image with vulnerabilities, we will use ACR task commands and a sample image:
 
-1. Search for **Container registries** in the search box located on the top of the **Azure Portal** page and click on it, or click [here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerRegistry%2Fregistries).
+1. Search for **Container registries** in the search box located on the top of the **Azure Portal** page and select it.
 
     ![](../Images/hyb-ex4-g1.png)
 

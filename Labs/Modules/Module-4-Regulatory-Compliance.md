@@ -41,8 +41,6 @@ In this task, you will get a walkthrough on regulatory compliance dashboard in M
 1. Under **Managed identity should be enabled on function app** tab, expand **Affected resources (1)**. you can observe the **Function app (2)**.
 
     ![](../Images/affectedresources1.png)
-   
-
 
 1. Return to the dashboard. Here, you can export the regulatory standard compliance status report as a PDF or CSV file. From the top menu bar, click on **Download report**.
 
@@ -124,9 +122,9 @@ In this task, you will be creating your own bechmark and will be assigning it.
 
 1. On the **Initiative definition** blade, click on the **Policies (1)** tab. Here you can add policy definitions, both built-in and custom. Click **Add policy definition(s) (2)**. Select your desired policies, If you create a benchmark, you can also leverage existing policy definitions from the **Microsoft managed** tab. For example, you can choose the following policies and select **Add**:
    
-    -	Audit virtual machines without disaster recovery configured
-    -	Azure Backup should be enabled for Virtual Machines
-    -	Audit VMs that do not use managed disks
+    - Audit virtual machines without disaster recovery configured
+    - Azure Backup should be enabled for Virtual Machines
+    - Audit VMs that do not use managed disks
 
         ![Group create](../Images/hyb-ex3-g11.png)
 

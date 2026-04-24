@@ -62,13 +62,13 @@ In this task, we will cover the new alert simulation. Alerts are notifications g
 
 1. On the alerts page, you should now see 5 different sample events for a resource named `Sample-KV`. Each alert has the `Sample alert` banner next to it.
 
-    > **Note :** - Key Vault sample alerts may not appear immediately in Defender for Cloud.
-    >- Alert generation time is not fixed and can take up to 24 hours or less.
-    >- Proceed with the next task and revisit later.
-    >- Once available, review the alerts and note your observations.
+    - Alert generation time is not fixed and can take up to 24 hours or less.
+    - Proceed with the next task and revisit later.
+    - Once available, review the alerts and note your observations.
 
+        ![add](../Images/hyb-ex4-g39.png)
 
-     ![add](../Images/hyb-ex4-g39.png)
+        > **Note :** - Key Vault sample alerts may not appear immediately in Defender for Cloud.
 
 1. Select **Access from a TOR exit node to a Key Vault** alert then click on the **View full details** to see additional information related to the event.
 

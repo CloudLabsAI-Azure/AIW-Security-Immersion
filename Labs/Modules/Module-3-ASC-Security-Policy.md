@@ -75,26 +75,27 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 In this task, you will be exploring azure policy and verify the built-in initiatives by microsoft defender for cloud.
 
-1. Type **Policy** in the search box located at the top of the **Azure Portal** page and click on it. Alternately, open a new browser tab in the **labvm-<inject key="DeploymentID" enableCopy="false"/>** and navigate to this link ```https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade```.
+1. Type **Policy** in the search box located at the top of the **Azure Portal** page and click on it.
 
     ![](../Images/hyb-ex2-g9.png)
 
 1. In the **Policy** blade, do the following:
 
-   - Expand **Authoring (1)**.
-   - Select **Definitions (2)**.
-   - Set **Definition type** to **Initiative (3)**.
-   - Open the **Category** filter (4).
-   - Search for **Security Center (5)**.
-   - Select **Security Center (6)**.
-   - Click **Apply (7)**.
+    - Expand **Authoring (1)**.
+    - Select **Definitions (2)**.
+    - Set **Definition type** to **Initiative (3)**.
+    - Open the **Category** filter (4).
+    - Search for **Security Center (5)**.
+    - Select **Security Center (6)**.
+    - Click **Apply (7)**.
 
         ![policy assignment](../Images/hyb-ex2-g10.png)	
 
-1. You can now see built-in initiatives used by Microsoft Defender for Cloud which includes :
-    -	*Microsoft cloud security Benchmark*
-    -	*Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
-    -	*Configure Advanced Threat Protection to be enabled on open-source relational databases*
+1. You can now see built-in initiatives used by Microsoft Defender for Cloud which includes:
+
+    - *Microsoft cloud security Benchmark*
+    - *Configure Azure Defender to be enabled on SQL Servers and SQL Managed Instance*
+    - *Configure Advanced Threat Protection to be enabled on open-source relational databases*
 
         ![policy assignment](../Images/Sh30.png)
 
@@ -136,7 +137,6 @@ In this task, you will create an exemption by clicking the ellipsis menu on the 
 
         ![](../Images/hyb-ex2-g13.png)
 
-        > Good to know: <br>
         > **Mitigated** - This issue isn't relevant to the resource because it's been handled by a different tool or process than the one being suggested
         > **Waiver** - Accepting the risk for this resource
 
@@ -231,13 +231,12 @@ In this task, you will learn how to use Azure Policy to do some of the more comm
     - The resource is visible now **asclab-la-XXXXXX (2)** 
     - Check the **box (3)** 
     - Click **Fix 1 resource (4)**
+
+       ![Sql Auditing](../Images/hyb-ex4-10.png)
     
-    By performing the above mentioned operations, you can now ensure that your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
-    <br>
-        ![Sql Auditing](../Images/hyb-ex4-10.png)
+       > **Note:** By performing the above mentioned operations, you can now ensure that your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
       
 1.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
-
 
 ### Task 5: Create a custom policy
 
