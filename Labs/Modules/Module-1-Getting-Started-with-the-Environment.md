@@ -1,4 +1,4 @@
-# Module 1 – Getting Started with the Environment
+# Exercise 1: Getting Started with the Environment
 
 ## Overview
 
@@ -8,12 +8,12 @@ In this module, you will learn how to enable Microsoft Defender for Cloud in you
 
 You will be performing the following activities to achieve the goal:
 
-  - Exercise 1: Enabling Microsoft Defender for Cloud
-  - Exercise 2: Creating Microsoft Defender for Cloud Default Policy
+  - Task 1: Enabling Microsoft Defender for Cloud
+  - Task 2: Creating Microsoft Defender for Cloud Default Policy
 
-## Exercise 1: Enabling Microsoft Defender for Cloud
+## Task 1: Enabling Microsoft Defender for Cloud
 
-In this exercise, you will be getting started with the functionality of Microsoft Defender for Cloud and how to enable Microsoft Defender for Cloud on a subscription.
+In this task, you will be getting started with the functionality of Microsoft Defender for Cloud and how to enable Microsoft Defender for Cloud on a subscription.
 
 ### Subscription upgrade and agent installation
 
@@ -60,17 +60,17 @@ In this exercise, you will be getting started with the functionality of Microsof
 > * Before clicking on the Upgrade button, you can review the total number of resources you are going to enable on Microsoft Defender for Cloud.
 > * You can enable the Microsoft Defender for Cloud trial for 30 days on a subscription-only basis if it has not previously been used.
 
-## Exercise 2: Creating Microsoft Defender for Cloud Default Policy
+## Task 2: Creating Microsoft Defender for Cloud Default Policy
 
-In this exercise, you will create the Microsoft Defender for Cloud default policy in the security policy under Microsoft Defender for Cloud.
+In this task, you will create the Microsoft Defender for Cloud default policy in the security policy under Microsoft Defender for Cloud.
 
 1. From the Azure Portal, search for **Microsoft Defender for Cloud (1)** and select **Microsoft Defender for Cloud (2)**.
 
     ![](../Images/hyb-ex1-g1.png)
    
-1. In Microsoft Defender for Cloud Blade, click on the **Environment Settings** and select your subscription.
+1. Go to the **Microsoft Defender for Cloud** page, Under **Management (1)**  click on the **Environment settings (2)** page, and select your **Azure subscription (3)**.
 
-    ![Template deployment completed](../Images/m1e2.1s2.png)
+    ![Template deployment completed](../Images/hyb-ex1-g2.png)
    
 1. Click on **Security policies (1)** under Settings You'll notice that **Microsoft cloud security benchmark (2)** has been created automatically. Explore the policy by clicking on the policy.
 
